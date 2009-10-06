@@ -75,8 +75,8 @@ def insert_file(out, file)
   insert_charm(out, curr_charm)
 end
 
-def make_html(outfilename)
-  File.open(outfilename, "w") { |out|
+def make_html(indir, outdir, outfilename)
+  File.open(outdir + "/" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms</title></head>\n")
     out.print("<style type='text/css'>")
     out.print("* { font-family: Palatino, Times, serif }")
@@ -84,10 +84,11 @@ def make_html(outfilename)
     out.print("</style></head>\n<body>\n")
     out.print("<h1>Discordian Charms</h1>\n")
 
-    Dir["?_?_*.txt"].each { |file|
+    Dir[indir + "/?_?_*.txt"].each { |file|
       section_name = /[0-9]_[0-9]_([A-Za-z_]+)/.match(file)[1].tr('_', " ")
+      pngfile = File.basename(file).sub(/\.txt/, ".png")
       out.print("<h2>", section_name, "</h2>\n")
-      out.print("<img src='", file.sub(/\.txt/, ".png"), "'/>\n")
+      out.print("<img src='", pngfile, "'/>\n")
 
       insert_file(out, file)
     }
@@ -95,7 +96,7 @@ def make_html(outfilename)
     out.print("</body></html>")
   }
 
-  File.open("framed-" + outfilename, "w") { |out|
+  File.open(outdir + "/framed-" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms</title></head>\n")
     out.print("<frameset cols='15%, 85%'>\n")
     out.print("<frame src='index-", outfilename, "'/>\n")
@@ -103,7 +104,7 @@ def make_html(outfilename)
     out.print("</frameset></html>\n")
   }
 
-  File.open("index-" + outfilename, "w") { |out|
+  File.open(outdir + "/index-" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms</title></head>\n")
     out.print("<style type='text/css'>")
     out.print("* { font-family: Palatino, Times, serif }")
@@ -111,7 +112,7 @@ def make_html(outfilename)
     out.print("</style></head>\n<body>\n")
     out.print("<h2>Discordian Charms</h2>\n")
 
-    Dir["?_?_*.txt"].each { |file|
+    Dir[indir + "/?_?_*.txt"].each { |file|
       matches = /([0-9])_([0-9])_([A-Za-z_]+)/.match(file)
       division = matches[1].to_i
       subsec = matches[2].to_i
@@ -125,15 +126,16 @@ def make_html(outfilename)
       section_name = matches[3].tr('_', " ")
       out.print("<a target='text' href='", section_name, ".html'>",
                 section_name, "</a><br/>\n")
+      pngfile = File.basename(file).sub(/\.txt/, ".png")
 
-      File.open(section_name + ".html", "w") { |section|
+      File.open(outdir + "/" + section_name + ".html", "w") { |section|
         section.print("<html><head><title>", section_name, "</title></head>\n")
         section.print("<style type='text/css'>")
         section.print("* { font-family: Palatino, Times, serif }")
         section.print("h1, h2, h3, h4, h5, h6 { font-family: 'American Typewriter', Courier, mono }")
         section.print("</style>\n<body>\n")
         section.print("<h1>", section_name, "</h1>\n")
-        section.print("<img src='", file.sub(/\.txt/, ".png"), "'/>\n")
+        section.print("<img src='", pngfile, "'/>\n")
         insert_file(section, file)
         section.print("</body></html>")
       }
@@ -144,4 +146,4 @@ def make_html(outfilename)
   }
 end
 
-make_html($*[0])
+make_html($*[0] ,$*[1], $*[2])

@@ -116,19 +116,3 @@ key: Combo-OK, Servitude
 dur: Indefinite (Special)
 dep: witd
 text: The beautiful Chaos which is life must sometimes make a trade-off between freedom and security, sacrificing some of its identity to preserve the rest.  This Charm allows other Survival Charms employed by the Anchorite to be extended to a group equal in Magnitude to the character's Essence, as long as the members focus entirely on a word, phrase or mental image which the Priest imparts to them.  This focus prevents the targets from doing anything other than physically following the Exalt and carrying out the basics needed for survival: hunting, foraging, eating, sleeping, remaining alert for predators, and reflexively defending themselves.  This effect constitutes unnatural mental influence; in most cases targets will be expected to accept it, but nonetheless the character gains a single point of Hodge.  Normal animals are assumed to consent unless they are actively hostile towards the character.  The effects also extend to objects owned by the targets, if applicable.  The motes for this Charm must be committed for as long as the other Charm effect(s) which are to be extended.  If this additional commitment ends early, the extended effects persist for one scene, after which the original Charms revert to applying only to the character himself.
-
-
-name: cop, Convergence of Parallels
-cost: 10m + (1wp per individual)
-mins: Survival 5, Ess 4
-type: Simple (Dramatic Action)
-key: Combo-OK
-dur: One day
-dep: witd
-text: Some say all roads lead to Meru, but they are wrong.  The strange, dark, twisted corners of reality lead to other, equally strange corners; and in such places are the Children of Chaos fully at home.
-
-This Charm allows the character to travel great distances quickly, but with peculiar limitations.  They may transport themselves and whatever they are able to carry, plus one more similar-sized individual for each point of Essence they possess beyond 3, plus a suitable transport animal or vehicle for the size of group travelling.  At Essence 4, a distance of up to 100 miles may be covered in a day, with each additional level of Essence multiplying the maximum distance by 4.  The end-point of the journey cannot be chosen exactly, since it is reachable so quickly only because of subtle correspondences with the point of origin.  The precisely desired final destination is likely to be around 10 miles away for each 1000 miles covered, and there are no guarantees of safe travel in those last few miles.  There is also no certainty that the mode of transport chosen at the start, e.g., a small boat, will be suitable at the end.
-
-The parallels which allow this kind of travel are capricious concepts, so it may or may not be possible to make a journey between the exact same two end-points on any given occasion.  Travellers should also be aware that their passage will leave both mundane and mystical traces: there may be witnesses at various points on a roughly straight line between the start and end of the route; and in Creation, for example, there will be tell-tale snarls in the Loom of Fate which could be used to find the destination.  However, the fragmented nature of the trail imposes an external penalty on the pursuer equal to the character's (TODO: ESSENCE / 2), rounded up.
-
-If combined with the Mantra of Necessary Union, the Willpower spent on this Charm is per dot of Magnitude of the target group and their mounts of vehicles, rather than per individual. 

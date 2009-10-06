@@ -5,7 +5,7 @@ text:
 
 name: iai, Instant Assembly*of Impressions
 cost: 4m
-mins: Inv 2, Ess 1
+mins: Investigation 2, Ess 1
 type: Simple (Speed 1, DV -0)
 key: Stackable
 dur: Indefinite
@@ -16,12 +16,52 @@ This Charm allows the character to instantly record a precise memory of the scen
 
 
 name: erm, Evidence*Reorganisation Method
-cost: 5m
-mins: Inv 3, Ess 2
-type: Simple (Dramatic Action)
-key: Combo-OK
+cost: 3m
+mins: Investigation 3, Ess 2
+type: Supplemental
+key: Combo-OK, Social
 dur: Instant
 dep: iai, exc
 text: 
 
-[TODO: Re-arrange evidence to point to someone else.  Contested rolls?  Changing one fact per point of Essence?]
+This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means requires a contested roll of the character's (Intelligence + [Investigation or Larceny]) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would.
+
+
+name: stt, Sifting Through Tells
+cost: 4m
+mins: Inv 2, Ess 2
+type: Reflexive (Step 1)
+key: Combo-OK, Social
+dur: One scene
+dep: 
+text: As a well-known old mind-bender once said, "we leak the truth from every pore".  Those of the Soft and Steady Hand can seive the words and non-verbal cues they receive from those around them to find, if not the truth, at least the holes between.
+
+Activating this Charm allows the character to recognise all deliberate lies or half-truths he observes during the scene, whether communicated verbally or by facial expression etc.  In the case of a half-truth, the character will know which parts are believed to be a lie, though not what the speaker's true belief is.  If the liar is subject to some temporary Emotion or Illusion effect which causes him to communicate something contrary to his normal beliefs, this will also be detected.  (This leaves the character in a rather confusing belief situation if they are themselves subject to the same effect, granting them an extra opportunity to shake it off if possible.)
+
+If another Charm directly contests the effects of this one, add (character's Essence) in bonus dice to oppose the other Charm.  These dice are not included in the normal limits on dice added by Charms.
+
+
+name: pds, Pattern-Disturbance Sense
+cost: 4m
+mins: Inv 3, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK
+dur: Instant
+dep: exc
+text: Right and wrong are subjective concepts, but even the madness of the Wyld knows its own natural state.
+
+This Charm instantly reveals to the character the type and location of any objects within (Essence x 10) yards which do not naturally belong where they are.  A weapon concealed under someone's bed, a raksha in Creation, or a nobleman wandering the poor quarter of some town, would stand out immediately.  On the other hand a letter hidden in a secret compartment of a desk (which contains various similar papers), a spy among an enemy's staff, or an assassin hiding in the shadows, might go undetected.
+
+Mundane attempts at concealment are useless against this Charm.  If some supernatural effect contests it, roll the character's (Investigation + Essence) against the Essence of the creator of the effect.
+
+
+name: rtsc, Reading the Soul's Compass
+cost: 5m
+mins: Investigation 4, Ess 2
+type: Simple
+key: Combo-OK, Social
+dur: Instant
+dep: exc, stt
+text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
+
+With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of 1, subtracting an external penalty of (TODO [the target's Manipulation + Socialize] / 2).  Each success reveals one Intimacy; once all Intimacies are known, further successes reveal the target's Motivation (or Motivations, in rare cases).

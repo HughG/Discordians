@@ -66,6 +66,8 @@ text: To set sail on the ocean is to put oneself at the mercy of the elements; b
 
 With Sail 3 and Essence 3, the Exalt can alternatively expend a point of Willpower to pull together the remains of a destroyed vehicle, or any suitable junk, into a serviceable raft or similar vehicle.  At least half the volume of material must be of a type which would be watertight, bouyant and so on.  The resulting craft will have one Health Level per two motes expended on its construction, all of which are at the Minor Damage (M) level (half Speed and Maneuverability, -1 external penalty to piloting rolls).  It will require only 1 crew member and be capable of carrying (Essence x 2) passengers.  The construction may optionally include a mast and, given vaguely suitable materials, even sails; it need not be water-bound: sand-ships or gliders can also be created.  The resulting craft will last as long as if it had been constructed normally.  This Charm cannot repair any damaged magical powers.
 
+[TODO: Should this be two separate Charms?  Or should I similarly do a merge'n'upgrade with rri & wmi?]
+
 [TODO: Compare the above with personal Resistance Charms?]
 
 

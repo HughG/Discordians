@@ -1,0 +1,103 @@
+name: exc, (Any Occult*Excellency)
+dep: 
+text: 
+
+
+name: sw, Spirit Whiskers
+cost: 3m
+mins: Occult 2, Ess 2
+type: Simple
+key: Combo-OK
+dur: One scene
+dep: 
+text: The Unhinged find it fairly simple to tune in to mystical vibrations.  This Charm allows the character to sense dematerialised beings, within a range of (Essence x 20) yards, in all ways except touch.  It also reveals the precise location of mystical portals between realities such as Yu-Shan, the Labyrinth and so on -- although not how to operate them.
+
+
+name: ves, Voodoo Exchange*Student
+cost: 5m + 1wp
+mins: Occult 3, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK
+dur: Instant
+dep: sw
+text: From the right angle, portals to the spirit world can be seen as revolving doors.  Given a willing target, activating this Charm allows the character to become dematerialized and the target material, or vice versa as appropriate.  The change persists until this Charm or some other effect changes things again.  This Charm may also be used on an unwilling target, but it may resist by spending a point of temporary Willpower.  The character may use this Charm in combination with an attack, in which case they can strike the target for that action only, even if they could not normally strike (de)materialized targets, and regardless of whether the target resists the exchange.
+
+
+name: etn, Ethereal Trawling Net
+cost: 4m
+mins: Occult 3, Ess 2
+type: Simple
+key: None
+dur: One scene
+dep: exc, sw
+text: Attuned as they are to the underlying fabric of multiple realities, the followers of Eris have a keen facility in perceiving significant supernatural power.  With this Charm active, the character can detect all instant or ongoing effects of Charms, Sorcery, Shaping (including Sidereal astrology) and similar supernatural effects (e.g., geomancy) in a range equal to (Essence x 5) yards.  The exact power level and nature of a single effect can be determined on a reflexive ([Perception or Wits] + Occult) roll, difficulty equal to the Essence of the source (or 3, if not applicable).
+
+
+name: asi, Anima-Suppressing*Intervention
+cost: 2m per point of target's Essence rating
+mins: Occult 4, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK, Touch
+dur: Instant
+dep: etn
+text: At times the glories of the Exalted should remain hidden.  This Charm allows the character to choose one of those times, completely suppressing the anima banner of an Exalted being and instantly deactivating any anima powers.  If the target had spent motes to active those powers, they are regained immediately.  The target may resist by making a contested (Wits + Integrity) roll against the character's ([Manipulation or Wits] + Occult).  The target may, of course, re-activate anima powers or cause their anima banner to flare again on subsequent actions.  The character may target himself with this Charm, in which case the cost is halved.
+
+
+name: rio, Ritual of*Instant Ordination
+cost: 10m + 1wp
+mins: Occult 4, Ess 3
+type: Simple
+key: Shaping
+dur: One scene
+dep: sw
+text: Why should the Discordians get all the fun?  This closely-guarded ritual allows a Wild Child to grant another willing being the ability to use one of her own Charms for the rest of the scene.  As long as the target has this Charm, she will be unable to use it, though she may recall it before the end of the scene as a reflexive action.  The target is treated as having the necessary Essence and Ability minimums, if it doesn't already, solely for the purpose of using that Charm and making any rolls it involves.  If the target does not already have a mote pool, it is treated as having 10 motes (or just enough to use the Charm once, if it costs more than 10 motes), which can only be used for the purpose of activating that Charm.
+
+
+name: cfp, Charm-Filching Prana
+cost: 10m + 1wp
+mins: Occult 5, Ess 4
+type: Simple
+key: Shaping, Touch
+dur: One scene
+dep: rio
+text: Although the Gatekeepers are unable to learn the Charms of other Exalted types (as, for instance, the Eclipse Caste Solars can do), this obscure technique allows them to temporarily ... borrow a Charm.  On applying this Charm, if the target is unwilling, they may make a contested roll of their (Wits + Integrity) against the character's ([Manipulation or Wits] + Occult) to retain their Charm.  Also, an unwilling target may spend a point of temporary Willpower to recall their Charm, at any point after the character first uses it.  Of course, a successful dodge will also cause this Charm to fail.
+
+
+name: fms, Fate-Mending Stitches
+cost: 5m per effect point + (Sidereal's Essence)wp
+mins: Occult 4, Ess 5
+type: Simple
+key: Combo-Basic, Obvious, Shaping
+dur: Instant
+dep: etn
+text: Erisians generally avoid dabbling with Fate because they know the long-term damage it can cause -- it's much easier to gloss over short-term damage.  Hence this Charm, which allows the Moonlight Lyre to undo the awkward workings of the Sidereals by lifting a destiny placed by one of their number.  The cost required depends both on the number of effect points spent on the destiny, plus the power level of the Sidereal who crafted it.  The affected individual(s) will momentarily be surrounded by a glow in the colour of the Sidereal's Maiden.  Pattern spiders will certainly notice this change, and the Sidereal is very likely to hear about it, though he or she will not automatically know the cause.
+
+
+name: tss, Triangular Circle*Sorcery
+cost: -
+mins: Occult 3, Ess 3
+type: Permanent
+key: None
+dur: Instant
+dep: 
+text: This Charm gives the Children of Eris access to Terrestrial Circle Sorcery, only they changed the name, just because.  Oh, alright, if you must know: it's because the number of sides of these two figures add up to the mystical five.  Yes it does: an inside and an outside.
+
+
+name: sss, Square Circle Sorcery
+cost: -
+mins: Occult 4, Ess 4
+type: Permanent
+key: None
+dur: Instant
+dep: tss
+text: This Charm builds on the character's knowledge of Sorcery, extending it to what others would term Celestial Circle Sorcery.
+
+
+name: pss, Pentacular Circle Sorcery
+cost: -
+mins: Occult 5, Ess 5
+type: Permanent
+key: None
+dur: Instant
+dep: sss
+text: The Beloved of the Most Beatiful get away with breaking all sorts of rules, and they have gained limited access to the Solar's most powerful spells.  The experience cost to learn these spells is as normal, but the effort required to use them is far greater.  Firstly, the Shape Sorcery and Cast Sorcery actions require the cooperation of 5 Discordians, all from different Divisions (ignoring the parametadivisions).  Among the others, one must have an Occult rating of at least 4, one of 3, and so on down to the last, who must have at least Occult 1.  These others need not be skilled in Sorcery, however.  Secondly, the cost of each spell is increased by a factor of 50%, so that even Adamant Countermagic costs at least 30m.

@@ -1,0 +1,27 @@
+name: exc, (Any Investigation*Excellency)
+dep: 
+text: 
+
+
+name: iai, Instant Assembly*of Impressions
+cost: 4m
+mins: Inv 2, Ess 1
+type: Simple (Speed 1, DV -0)
+key: Stackable
+dur: Indefinite
+dep: 
+text: All things are one, if seen from the right angle.  This maxim is most often used in dissolving the boundaries between concepts, but it can also lead one to the secret of capturing many observations in one instance.
+
+This Charm allows the character to instantly record a precise memory of the scene around them, for later Investigation rolls or other normal uses of memory.  The scope of the scene is at least a radius of (Essence x 5) yards, possibly more if there is little detail in the scene.  The memory will include only what the character was able to sense at that moment, though they may turn on the spot in order to gain a full 360-degree record.  The effect lasts as long as the motes remain committed, meaning that the it could be subjected to several Investigation actions if time allows, or more information is gained from other sources.  The memory is also unnaturally clear, allowing the character to double sensory limits -- e.g., on seeing through fog, or reading letters -- within the affected range.
+
+
+name: erm, Evidence*Reorganisation Method
+cost: 5m
+mins: Inv 3, Ess 2
+type: Simple (Dramatic Action)
+key: Combo-OK
+dur: Instant
+dep: iai, exc
+text: 
+
+[TODO: Re-arrange evidence to point to someone else.  Contested rolls?  Changing one fact per point of Essence?]

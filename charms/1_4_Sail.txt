@@ -1,0 +1,14 @@
+name: siatm, Storm-In-A-Teacup Method
+cost: (Special)m + 1wp
+mins: Sail 3, Ess 3
+type: Simple (Dramatic Action)
+key: Combo-OK, Compulsion
+dur: Indefinite
+dep: 
+text: The Children of Eris respect the complex balances involved in maintaining patterns of weather, but that respect doesn't prevent them from being their usual meddling selves, when it suits them.
+
+Using this Charm, the Travelling Sailsman subverts the instructions given to local weather spirits, and stores the effects of current weather for later use.  The weather in the affected area will revert to a gentle breeze, not quite dead calm.  This is achieved by unnatural mental influence on the local spirits, which they may resist as a group if at least two-thirds spend 1 Willpower each, in which case the character gains a single point of Hodge.  The will of the weather will be stored in some fist-sized, non-magical vessel of the character's choice, either pre-constructed or improvised from materials at hand.
+
+The weather remains stored until the container is destroyed or the character releases the commitment of motes.  At that point, the stored weather instructions are released upon the local spirits, to be carried out as originally intended, albeit at a different time.  If the release occurs in a significantly different location, the spirits in that location may separately choose to resist these new instructions, again possibly gaining the character a point of Hodge.
+
+The maximum area of effect depends on the character's Essence rating: at Essence 3, it is 1 mile; at 4, 10 miles, and so on, although the character may choose to affect a smaller area.  The cost is depends on the area affected, being (minimum Essence required for the area x 2): 6 motes up to 1 mile, 8 motes up to 10 miles and so on.  By spending an extra point of Willpower, the Sailsman may apply the effects of this Charm to 

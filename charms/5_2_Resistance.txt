@@ -1,0 +1,8 @@
+name: obt, Ox-Body Technique
+cost: -
+mins: Res 1, Ess 1
+type: Permanent
+key: Stackable
+dur: Permanent
+dep: 
+text: Unpredictable as the followers of Eris are, you can never quite tell when they're going to keel over in a fight.  A player may purchase this Charm once for each dot of Resistance her character has.  Each purchase gains the character one of the following combinations of additional health levels, at the player's option, determined at the time of purchase: one -0 health level; or one -1 health level and two -2 health levels; or one -2 health level and three -4 health levels

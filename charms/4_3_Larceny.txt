@@ -1,0 +1,21 @@
+name: exc, (Any Larceny*Excellency)
+dep: 
+text: 
+
+
+name: eft, Even False Things
+cost: 3m
+mins: Larceny 1, Ess 2
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK, Social
+dur: One Scene
+dep: exc
+text: As Malaclypse the Younger himself said, "Even false things are true."  Fully internalising this understanding allows a Priest of Eris to conceive and to utter both truth and falsehood with equal conviction.
+
+This Charm allows the character to make any statements while temporarily holding the firm belief that they are true, or that they are false, as preferred.  They may change their belief back and forth at will for the duration.  This affects mundane or magical attempts to discern the veracity of the character's statements, in word, writing, thought or any other medium.  If some other effect contests this Charm, add the character's Essence in automatic successes to the ([Charisma or Manipulation] + Larceny) roll.
+
+Social combat is affected while this Charm is active, in that a character may choose to use Charisma where Manipulation would normally apply, and vice versa, at any time.
+
+[TODO: Something about subverting mental influence?]
+
+

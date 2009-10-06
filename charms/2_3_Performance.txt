@@ -1,0 +1,41 @@
+name: exc, (Any Performance*Excellency)
+dep: 
+text: 
+
+
+name: lfaa, Legend for an Afternoon
+cost: 3m
+mins: Perf 2, Ess 2
+type: Supplemental
+key: Combo-OK, Illusion, Social
+dur: One day
+dep: exc
+text: In a matter of minutes, the Midnight Lyres can persuade folk that they are epic heroes.  Activating this Charm, the character spends a few minutes talking to a group (of Magnitude up to the character's Essence), attempting to convince them that he is some famous individual, either one already known to them or some completely invented figure.  This Charm supplements the relevant social attack roll, adding one automatic success and making it a form of unnatural mental influence.  As usual, targets may spend Willpower to resist.
+
+If the character is still present when the Charm's duration ends, affected targets will likely be most upset, but will also become subject to the effects of the character's recumbent destiny, unless it is supressed.  If the character leaves before then, he will remain in their memory as this figure of legend.  The character may use the Charm repeatedly to sustain the Illustion, though targets gain a fresh opportunity to resist.
+
+[Hmm, should this be Presence?]
+
+	
+name: mit, March Into Temptation
+cost: 6m, 1wp
+mins: Perf 2, Ess 3
+type: Supplemental
+key: Combo-OK, Compulsion, Social
+dur: Indefinite
+dep: 
+text: Music may soothe the savage beast, or it may make things even worse.  Playing an instrument of her choice, or simply singing, the Matchmaker employs this Charm to exert an unnatural mental influence on a group of Magnitude up to the Exalt's Essence.  Those affected have either their Willpower, or one of their Virtues (at the character's choice) reduced by the character's Essence, to a minimum of 0, for as long as she continues to play.  At any time each member of the group may pay one point of temporary Willpower to resist the influence for one scene.  If the character continues to play beyond the end of one scene, however, they must spend again or come under the Charm's effects.  The target group must be able to hear or see the character for this Charm to work.
+
+	
+name: ddr, Dramatic Death Rehearsal
+cost: 5m
+mins: Perf 3, Ess 3
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack, Illusion
+dur: Instant
+dep: 
+text: We know not the moment of our deaths (unless we're unlucky enough to feature in accurate prophecy); therefore, some Discordians choose to practise, just to be prepared.  An Exalt who employs this Charm appears to die in a dramatic fashion, avoiding all damage associated with an attack and becoming Inactive.  He will seem dead to any casual mundane or magical inspection: his pulse will seem to stop, his Essence flicker out.  Observers who have reason to disbelieve this, or are especially motivated to be quite certain that the Erisian character is dead ("bring me his head!"), will find themselves subject to a natural mental influence to accept the Illusion and move on.  If any observer successfully resists the mental influence of the Illusion, the Exalt will know of it.
+
+The effect lasts as long as he remains Inactive, though he may choose to reflexively end this at any time.  Once he becomes active, for whatever reason, the Illusion will not be effective on the same observers for the rest of the scene.  Indeed, for the rest of the story, observers gain a bonus equal to (5 - Exalt's Essence), minimum 1, to their rolls to see through the Illusion of this Charm.
+
+This Charm is not a perfect defence.  Against perfect attacks it reduces damage by half and guarantees to leave the Exalt on his Incap health level at worst.  Damage from one-off environmental effects can be avoided with this Charm, but not ongoing effects such as general scorching heat. 

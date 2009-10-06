@@ -1,0 +1,69 @@
+name: exc, (Any Integrity*Excellency)
+dep: 
+text: 
+
+
+name: csp, Chimera-Skin Prana
+cost: 2m
+mins: Integrity 1, Ess 2
+type: Reflexive (Step 2)
+key: Combo-OK, Shaping, Obvious
+dur: Instant
+dep: 
+text: The chosen of Eris are not immune to Chaos, but they have a deeper understanding of it than others.  This Charm allows the character to alter the consequences of a Shaping effect when it is successfully applied to him.  For Wyld mutations, they may alter the severity level by one in either direction (including choosing to completely ignore the least severe mutations).  For other Shaping effects which numerically alter some trait, they may adjust the value by one, again in either direction.  For Shaping effects which do not fall into these categories, the player may agree some appropriate adjustment with the storyteller.
+
+
+name: csis, Chimera Sheds Its Skin
+cost: 5m, 1wp
+mins: Integrity 3, Ess 3
+type: Simple
+key: Shaping
+dur: Instant
+dep: csp
+text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their way.  With this Charm the character may undo any one Shaping effect which has altered her at any point in time.  If the Shaping affected more individuals than just the character, she will be the only one to escape it.  A ghostly orange outline of the character will persist, hanging in space for one scene, embodying that sloughed-off magic.  If any other being touches it before the scene expires, the original effect is immediately applied to them, though they may use any powers of their own to resist it.
+
+
+name: umd, Unbalanced Mind*Defence
+cost: 5m
+mins: Integrity 2, Ess 2
+type: Reflexive (Step 2)
+key: Combo-OK, Social
+dur: Instant
+dep: exc
+text: Wise men have often said that genius and madness are linked, but only the Chosen of Eris have found a way to turn their madness into genius.  This Charm allows the Exalt to add the lower of her Hodge and Podge ratings to her Dodge MDV and Parry MDV against one attack.
+
+
+name: ddt, Dream Deflection*Technique
+cost: 5m
+mins: Integrity 2, Ess 3
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack, Illusion, Social
+dur: Instant
+dep: umd
+text: To attempt to twist the minds of those who make up the Unbending Arm is foolish indeed.  This Charm allows the character to perfectly defend against any form of natural or unnatural mental influence which bypasses his defenses, and to know what the effect would have been.  Furthermore, the originator of the effect will herself be subjected to an Illusion causing her to believe that her attack was successful.  The Illusion lasts as long as the original effect would have, and may be resisted on the same terms as the original effect.
+
+
+name: sdc, Subtle Daydream Concoction
+cost: 6m
+mins: Integrity 3, Ess 3
+type: Reflexive (Step 2)
+key: Combo-Basic, Shaping
+dur: Instant
+dep: ddt
+text: Some have said that the Erisian Exalted live in a world of their own; the truth is that this can be an advantage.  This Charm allows the user to seek the refuge of daydreams to sidestep attempts to pull her away from that which is important to her.  It can be invoked in response to any attack which would lower Virtues or Willpower, or destroy or weaken Intimacies, or cause her to act against her Intimacies or Motivation.
+
+In the case of natural mental influence, the Exalt may make a contested roll of her own (Essence + Integrity) against the (Attribute + Ability) used to achieve the influence and, on success, treat it as an unacceptable order.  For unnatural mental influence the contest is between their (Essence + Integrity) and the (Essence + Ability) of the Charm used (or caster's [Essence + Occult] for spells), but the character suffers a penalty equal to the difference in Essence, minimum 1.  In either case, if she fails the roll she may still spend Willpower to resist the effect, if applicable.  If she botches the roll, she is automatically affected and for the rest of the scene cannot spend Willpower to resist that one effect.
+
+Similarly, if some effect threatens to directly lower any of the character's Virtues or her Willpower, temporarily or permanently, she may make the same contested roll to avoid the effect.  Furthermore, if one of the Fair Folk attempts to feed on the character she may use this Charm to fool her attacker, even if she is willing or influenced to accept the raksha's feeding.  The normal Virtue roll to feed is contested against the victim's own (Essence + Integrity).  The latter successes are subtracted from those for the Virtue roll, reducing the damage the feeder does.  If the Virtue successes are outnumbered by those from the (Essence + Integrity) roll, then the Fair One believes themselves to have bled off that many dots of Willpower or Virtue and will account their Essence accordingly, meaning that they may be surprised to find it run out sooner than they expected.
+
+In any case, if the character succeeds against the attack, she will gain an intuitive sense of what attacked intended, should she wish to play out her supposedly altered state.  Effects which prevent Shaping render this Charm inapplicable.
+
+
+name: cof, Cocoon of Fables
+cost: 10m, 2wp
+mins: Integrity 4, Ess 4
+type: Simple
+key: Combo-OK, Social
+dur: One scene
+dep: csis, ddt
+text: They Who Carve Truth In Stone are able to form that metaphorical stone from the gossamer of daydreams, convincing herself that her view of the world is the only right one, if only for a short while.  This Charm prefectly defends against any Compulsion, Emotion, Illusion, Servitude and Shaping attacks for the rest of the scene.  Additionally, any compulsions due to lack of Willpower, or an overflowing of Hodge or Podge, are delayed until the end of the scene.  On the other hand, any attempts by the character to act against her Virtues, Intimacies or Motivation have their difficulties increased by 2.

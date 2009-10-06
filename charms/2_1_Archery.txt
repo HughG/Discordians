@@ -1,0 +1,50 @@
+name: fr, Fletcher's Rejoinder
+cost: 3m
+mins: Arch 3, Ess 2
+type: Reflexive (Step 9)
+key: Combo-OK, Obvious
+dur: Instant
+dep: 
+text: Even things that go wrong can go right sometimes.  With the Fletcher's Rejoinder, an Exalt's mischievous will is extended into her projectile, allowing attacks which miss to loop around and return for a second attack.
+
+This Charm enhances an Archery attack such that, if the attack fails because the arrow missed (whether due to the attacker's inaccuracy or the target dodging), or was blocked by Hardness or a parry, then the deflected projectile returns, allowing the same attack to be re-rolled on the following tick, with no speed cost or DV penalty.  If the attack fails because of the target's soak, the arrow falls harmlessly to the ground and the Charm is ineffective; similarly if the arrow is otherwise destroyed or its flight specifically ended on the first attack.  If the first attack was part of a Combo, the second attack may optionally have the same Combo applied, with the cost paid again.  This Charm itself may be used on the second attack, alone or as part of a Combo, enabling third and further attacks, but each attack beyond the second is at a cumulative -1 penalty to accuracy and damage.
+
+Some Discordians have been known to use this Charm and deliberately miss on their first attack.  In this case, the second attack is treated similarly to an ambush: roll the attacker's (Dexterity + Archery) against the defender's (Wits + Awareness), with appropriate penalties or bonuses depending on the defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.  However, if the defender has already seen this technique used in the same story, they gain a +2 bonus to the contested roll.
+
+
+name: ias, Invisible Arrow Sting
+cost: 4m
+mins: Arch 3, Ess 3
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: fr
+text: It is hard to defend against things you cannot see, even if you know they are coming.  The Invisible Arrow Sting renders an Exalt's arrow invisible as soon as it leaves her bow, and grants its path a slight extra curve, making it very difficult to determine the likely flight path.  The arrow reappears once it hits its target or, if the target dodges or parries, once it hits some other surface.
+
+This Charm supplements an Archery attack making it an Unexpected Attack.  Roll the attacker's (Dexterity + Archery) against the defender's (Wits + Awareness), with a -2 internal penalty unless the defender has appropriate supernatural senses other than sight (e.g., hearing), or some way to detect invisible objects.  Failure gives the defender a Dodge and Parry DV of 0.
+
+
+name: hopa, Handful of Pebbles Attack
+cost: 3m or 6m per duplicate
+mins: Arch 4, Ess 3
+type: Supplemental
+key: Combo-OK, Obvious
+dur: Instant
+dep: XXX
+text: Just as the Children of Eris are many and disparate in their activities, so are their projectile attacks.  This Charm supplements an Archery attack, splitting one item of ammunition into a number of duplicates up to (her permanent Essence score).  All are aimed at the same target with attack, defense and damage rolled separately for each.  However, each attack is at a -1 accuracy penalty and a -(number of extra attacks) damage penalty; for instance, three attacks would each suffer -1 to accuracy and -2 to damage.  If Handful of Pebbles attack is used with ammunition costing more than one dot of Resources per shot or placed in a Combo with Charms that affect the arrow's accuracy or damage, the cost per duplicate is doubled.
+
+
+name: pth, Piercing the Heart
+cost: 5m, or 8m + 1wp
+mins: Arch 4, Ess 2
+type: Supplemental
+key: Combo-OK, Emotion
+dur: One scene or Special
+dep: ias
+text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage and is unaffected by Hardness or soak; attempts to dodge or parry are subject to the same difficulties as with Invisible Arrow Sting.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+
+If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  The effect is magical and visceral, not Social, so MDV is inapplicable.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
+
+By spending an additional 3 motes and 1 Willpower, the Exalt can cause the emotion to fade gradually over the course of (character's Essence) days.  After the first scene, the effect can be resisted for only one Willpower.  However, even once they have resisted it, the target will tend to regard the temporary emotional aberrance as having been genuinely their own, fabricating some convincing explanation for themselves, until the Charm's duration ends.  If they are to recognise and remember the unnatural effect once the Charm has ended, they must spend a further 2 Willpower (or 1 Willpower, if they have recognised this Charm's used on themselves or others before); after that they become permanently aware of what happened.  Witnesses may spend 1 Willpower to realise the source of the emotion provided they saw the Exalt's attack, but they may do this at any time at or after that initial attack.
+
+Using this attack does not end Stealth effects unless the target successfully resists the influence using Willpower at the moment of the initial attack.

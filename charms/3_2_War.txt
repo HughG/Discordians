@@ -1,0 +1,11 @@
+name: sin, Strength in Numbers
+cost: 10m + (1wp per individual)
+mins: Survival 4, Ess 3
+type: Simple (Dramatic Action)
+key: Combo-OK
+dur: One day
+dep: 
+text: 
+
+This Charm allows the character to travel great distances quickly, but with pecu
+

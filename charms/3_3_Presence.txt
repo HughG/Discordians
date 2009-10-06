@@ -1,0 +1,14 @@
+name: ipa, Instant Parley Agreement
+cost: 3m
+mins: Pres 3, Ess 2
+type: Supplemental
+key: Combo-OK, Compulsion, War, Social
+dur: One scene
+dep: 
+text: The first step to winning is not to be defeated, and sometimes the best defense is to give no offense.  This Charm supplements a ([Charisma or Manpulation] + Presence) roll, opposing the (Conviction + Integrity) of a target individual, or leader of a unit with Magnitude up to the Erisian's Essence.  The roll is an attempt to persuade a group of attackers that battle (or social conflict) is not a good idea after all, at least for the moment.  If successful, the character persuades them to stop attacking, or refrain from starting to attack, the character and his allies.  The effect lasts for the rest of that scene, or until the two sides have cause to make another Join Battle or Join Debate roll.  If this reason is that the character or his allies have betrayed the parley by attacking, the target gains their Integrity in bonus dice to all rolls in their first action (including defense), as an expression of their fury.
+
+This effect is an unnatural mental influence and may be resisted as such.  If the target has taken damage in a battle so far, from the character or others who are clearly his allies, they gain automatic successes on the roll equal to the number of Health levels or (for social units) Loyalty points lost so far in this exchange.  The target individual or unit leader must be able to hear or see the character for this Charm to work, though they do not need to share a language.
+
+Depending on how the character handles the parley, the opponent(s) may not realise they were under a compulsion when the scene ends, and may or may not choose to continue with hostilities.  If the Discordian side simply decides to flee, they gain a head start: automatic successes on the first of any contested Tracking/Evasion rolls, equal to the character's Essence, reducing by one on each subsequent roll, down to 0.
+
+[Hmm, maybe this Charm is fundamentally pointless: if someone told you to stop fighting, and you felt yourself under unnatural mental influence, wouldn't you just resist it?]

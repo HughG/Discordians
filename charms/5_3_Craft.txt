@@ -1,0 +1,40 @@
+name: ics, Improvised*Construction Scheme
+cost: 
+mins: Integrity X, Ess X
+type: 
+key: 
+dur: 
+dep: 
+text: todo
+
+
+name: ort, Object*Reconfiguration Technique
+cost: 
+mins: Integrity X, Ess X
+type: 
+key: 
+dur: 
+dep: ics
+text: todo
+
+
+name: bem, Blueprint*Extraction Methodology
+cost: 
+mins: Integrity X, Ess X
+type: 
+key: 
+dur: 
+dep: 
+text: todo
+
+
+name: esp, Echo-Solidification Process
+cost: 
+mins: Integrity X, Ess X
+type: 
+key: 
+dur: 
+dep: bem
+text: todo
+
+

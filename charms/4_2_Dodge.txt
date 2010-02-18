@@ -4,7 +4,7 @@ text:
 
 
 name: aci, Angelic Countenance*of Innocence
-cost: 3m
+cost: 2m
 mins: Dodge 2, Ess 2
 type: Reflexive (Step 9)
 key: Combo-OK

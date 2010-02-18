@@ -12,6 +12,8 @@ dur: One scene
 dep: exc
 text: Provides clear understanding of all departments and factions within the organisation, official and unofficial, identifying the true leaders of each.  This gives the character a bonus number of dice equal to (his permanent Essence) to subsequent Bureaucracy actions in the scene which relate to influencing one group, or altering tensions between groups.  Information on the leaders' identities is retained permanently, though leadership may change later.
 
+[TODO: Might need to limit scope/size of organisation.]
+
 
 name: wwws, Wheels Within Wheels Scheme
 cost: 8m
@@ -46,6 +48,8 @@ The player rolls ([Charisma or Manipulation] + Bureaucracy + Essence) when stati
 
 If persuaded departments are sufficiently distant from each other, the new mission will not actually affect them until they get word of it, and the Charm's duration does not begin for them until they do.  Spreading the mission to these departments will be one of the first priorities of the organisation.  However, if a message fails to reach within (Essence) days of it being sent, it will have lost its magic and be ignored on receipt.  This can result in even greater confusion as different departments act on the mission at different times.  There is still only a single roll to determine whether the mission is adopted, however.
 
+[TODO: Might need to limit scope/size of organisation.]
+
 
 name: mom, Memorandum*of Misunderstanding
 cost: 3m, 1wp
@@ -57,6 +61,8 @@ dep: exc
 text: The Bishops of Greyface enjoy spreading confusion, particularly around the fundamental issue, for an organisation, of exactly what it is supposed to be doing.  Employing this charm, the player rolls ([Charisma or Manipulation] + Bureaucracy + Essence) with a difficulty equal to the leader's MDV.  If successful, the organisation forgets its Motivation; it will not act against it (unless otherwise compelled) but neither will it act in support of it, with the leader likely to spend Loyalty points to resist external attempts to persuade the organisation to do so.  The leader may also spend Loyalty to resist or shake off this Illusion, however.  Spending one point lifts it for a single scene, and spending a cumulative total of three ends the effect.
 
 An organisation affected by this Illusion is not completely paralysed.  It will still carry on minor day-to-day activities, giving the surface appearance of being functional.  It may also successfully carry out activities not related to its main Motivation.  Applying this Charm to small outposts of the Immaculate Order can be particularly amusing.
+
+[TODO: Might need to limit scope/size of organisation.]
 
 
 name: catp, Coup Among The Pigeons
@@ -78,11 +84,13 @@ dur: One day
 dep: catp
 text: Confusion can be a gift, in the right hands; though, as ever, it is better to give than to receive.  This Charm can be used in social, bureaucratic or mass combat situations, against some organised unit.  It disrupts lines of communication and supply to make it harder for a target unit to achieve its goals.  The effects employed are extremely subtle, applying an external penalty of (character's permanent Essence) to any attempts to discover the source of the problem.
 
-For social units, vital phrases are misunderstood, the right people can't be found, and important tasks are forgotten briefly.  Together, these amount to a -4 external penalty is applied to any attempts to get the group to work in an organised way in support of its Motivation or any of its Policies, for the next 24 hours.  After that, the penalty reduces by 1 each day until it returns to normal, or until the Leader spends a point of Loyalty to reassert control, in which case penalties vanish immediately.
+For social units, vital phrases are misunderstood, the right people can't be found, and important tasks are forgotten briefly.  Together, these amount to a -4 external penalty applied to any attempts to get the group to work in an organised way in support of its Motivation or any of its Policies, for the next 24 hours.  After that, the penalty reduces by 1 each day until it returns to normal, or until the Leader spends a point of Loyalty to reassert control, in which case penalties vanish immediately.
 
 Applied to a bureaucratic organisation it is even more effective, in a narrower way.  In relation to a chosen project, memos are lost, official seals break, key staff members fall ill and so on.  All this imposes a -4 external penalty to all its actions for the day and, once the scene has ended, the consequent confusion delays the project by (character's [Bureacuracy x Essence]) days.  A cumulative expenditure of (character's Bureacuracy) points of Loyalty by the leader can bring the project back on track sooner.
 
 In a battle it is less effective, but still useful in the right situation.  It will cause a target unit to act as if it had 2 fewer Relays than it actually does (often provoking communications failure, leading to a -2 Drill penalty), and will remove 2 points of bonuses to Might, as supplies are lost, ammunition is delivered to the wrong units, and maintenance orders for Magitech are misdirected, causing them to work poorly, if at all.  These penalties vanish the next day.
+
+[TODO: Might need to limit scope/size of organisation.]
 
 
 name: frf, Form Request Form
@@ -92,7 +100,7 @@ type: Simple (Dramatic Action)
 key: Form-type, Obvious
 dur: One scene
 dep: fam, mrp, mom
-text: So dedicated are the Priests of Eris to meddling with established order that they have elevated its practice to a level of refinement normally reserved for martial artists.  The Greyface Exalt brings forth an official-looking but nonsesical form, or improvises one from materials at hand, and meditates briefly on the futilty of filling it out, after which it disappears in a puff of smoke.  While this Charm is active, he adds half of the highest of his Backing, Contacts, Cult, Followers and Influence Backgrounds to his Dodge DV and Dodge MDV, as he bends strands of Fate to redirect possible injury into these larger structures.  The cost of all Bureaucracy Charms is reduced by (his permanent Essence), to a minimum of 1m, and the durations of any Dramatic Actions based on Bureaucracy (using Charms or not), started during that scene, are divided by (his permanent Essence).  Lastly, for the duration of the scene, the character may use any individual Martial Arts Charm, or Martial Arts Combo, as part of an impromptu Combo with any single Bureaucracy Charm, or Bureaucracy Combo, at the cost of an additional point of Willpower each time.  This is likely to be most useful with Excellencies, or with the more obscure Celestial Martial Arts.
+text: So dedicated are the Priests of Eris to meddling with established order that they have elevated its practice to a level of refinement normally reserved for martial artists.  The Greyface Exalt brings forth an official-looking but nonsesical form, or improvises one from materials at hand, and meditates briefly on the futilty of filling it out, after which it disappears in a puff of smoke.  While this Charm is active, he adds half of the highest of his Backing, Contacts, Cult, Followers and Influence Backgrounds to his Dodge DV and Dodge MDV, as he bends strands of Fate (or other dominant reality substrate) to redirect possible injury into these larger structures.  The mote cost of all Bureaucracy Charms is reduced by (his permanent Essence), to a minimum of 1m, and the durations of any Dramatic Actions based on Bureaucracy (using Charms or not), started during that scene, are divided by (his permanent Essence).  Lastly, for the duration of the scene, the character may use any individual Martial Arts Charm, or Martial Arts Combo, as part of an impromptu Combo with any single Bureaucracy Charm, or Bureaucracy Combo, at the cost of an additional point of Willpower each time.  This is likely to be most useful with Excellencies, or with the more obscure Celestial Martial Arts.
 
 
 name: rcm, Record-Correction*Maneuver
@@ -120,7 +128,7 @@ text: A word in the right butterfly-like ear can have unexpected effects far awa
 
 The character makes a contested ([Charisma or Manipulation] + Bureaucracy) roll against the target's (Intelligence + [Integrity or Bureaucracy]).  If it is directly in opposition to the group's Motivation, and the group's Magnitude exceeds the Exalt's Essence, the attempt automatically fails.  Mere Policies (Intimacies) do not afford this protection, however.  If successful, the decision will go the way the character desires.  As with the Record-Correction Maneuver, there is nothing to prevent the organisation from changing the decision later, depending on its Motivation and tendencies -- unless, of course, it's too late.  The decision will not be changed for at least (character's Essence) days, however.
 
-This Charm is only effective upon decisions which the organisation was already intending to make.  It cannot force a group to decide to do something which had never crossed its collective mind.
+This Charm is only effective upon decisions which the organisation was already intending to make, and has not yet settled.  It cannot force a group to decide to do something which had never crossed its collective mind.
 
 
 name: mu, Minor Usurpation

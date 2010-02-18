@@ -10,7 +10,7 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: exc
-text: Most find comfort behind the ordered walls of civilisation, but the Daughter of Eris smiles and laughs among the chaos of the wildest places.  This Charm supplements a roll to resist environmental damage.  It allows the character to add his Survival rating to the (Stamina + Resistance) roll, guarantees at least one success, and increases the magnitude of the time period until the next check (where the orders of magnitude are: action, minute, hour, day).
+text: Most find comfort behind the ordered walls of civilisation, but the Daughter of Eris smiles and laughs among the chaos of the wildest places.  This Charm supplements a roll to resist environmental damage.  It allows the character to add dice equal to his Survival rating to the (Stamina + Resistance) roll, guarantees at least one success, and increases the magnitude of the time period until the next check (where the orders of magnitude are: action, minute, hour, day).
 
 This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
 
@@ -22,9 +22,9 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: exc
-text: Most find comfort behind the ordered walls of civilisation, but the Daughter of Eris smiles and laughs among the chaos of the wildest places.
+text: Strange snakes are proverbially said to lie with their forked tongues.  Exalts, being human, generally have legs, and Discordians choose at times to lie with their feet.
 
-This Charm supplements a roll to evade pursuit, laying false trails and making the tracks of the Whistling Voice lead into those of other creatures.  It allows the character to add his Survival rating to the contested (TODO + TODO) roll for pursuit, guaranteeing at least one success.  If the pursuer is sucessfully shaken off, he or she will not simply find a trail gone cold, but will be led to some other local creature, which may or may not be hostile.
+This Charm supplements a roll to evade pursuit, laying false trails and making the tracks of the Whistling Voice lead into those of other creatures.  It allows the character to add dice equal to his permanent Essence when contesting his (Wits + Survival) against a pursuer's (Perception + Survival), guaranteeing at least one success.  If the pursuer is sucessfully shaken off, he or she will not simply find a trail gone cold, but will be led to some other local creature, which may or may not be hostile.
 
 This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
 
@@ -38,7 +38,7 @@ dur: Instant
 dep: exc
 text: The balance between order and chaos is closely linked to the balance between predator and prey, nourishment and destruction.  Thus the nature of the Ignorant Children appeals to ignorant beasts.
 
-This Charm supplements a roll to find animals, for food or any other purpose, not by increasing the hunter's skill but by drawing animals (or other local creatures of equivalent intelligence and power) to him.  It allows the character to add his Survival rating to the (TODO + TODO) roll for hunting, guaranteeing at least one success.  If the hunt is successful, the hunter will find that a number of other animals, equal in Magnitude to [TODO: Essence / 2?], have also been drawn in, though they will be of various indigenous types, not necessarily the kind hunted.  The character may thus acquire additional food, or may have to fight local creatures to keep his prize.
+This Charm supplements a roll to find animals, for food or any other purpose, not by increasing the hunter's skill but by drawing animals (or other local creatures of equivalent intelligence and power) to him.  It allows the character to add dice equal to the higher of his (Charisma or Appearance) ratings to the (Intelligence + Survival) roll for hunting, guaranteeing at least one success.  If the hunt is successful, the hunter will find that a number of other animals, equal in Magnitude to (Essence ÷ 2), have also been drawn in, though they will be of various indigenous types, not necessarily the kind hunted.  The character may thus acquire additional food, or may have to fight local creatures to keep his prize.
 
 This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
 
@@ -50,9 +50,11 @@ type: Simple
 key: Combo-OK, Stackable, Obvious
 dur: One scene
 dep: dbr
-text: The Most Beautiful do not deign to have their fair skin lashed by sandstorms, or a lock brushed out of place in an avalanche.  This Charm allows the character to ignore all damage from any one type of environmental damage for one scene.  In addition, he may treat it as an additional Erisian element, for the puposes of applying Elemental Rejuvenation.  The environmental effect must be one which would normally have harmed the character, for this Charm to apply.  This Charm is not applicable to poisons unless they are a pervasive part of the environment, e.g., toxic gases around a volcano.
+text: The Most Beautiful do not deign to have their fair skin lashed by sandstorms, or a lock brushed out of place in an avalanche.  This Charm allows the character to ignore all damage from any one type of environmental damage for one scene.  The environmental effect must be one which would normally have harmed the character, for this Charm to apply.  This Charm is not applicable to poisons unless they are a pervasive part of the environment, e.g., toxic gases around a volcano.
 
-[COMMENT: Check power level / redundancy wrt prereq Charm.]
+In addition, he may pay a further 1 mote to concentrate for a Miscellaneous Action, treating it as an additional Erisian element for the puposes of applying Elemental Rejuvenation, allowing him to heal a single health level.  This does not count as a Charm activation, but any activity at all within that action, including reflexive self-defense, will disrupt concentration and lose the healing benefits; the mote will still be spent in this case.
+
+[COMMENT: Check power level.  Allowing Elemental Rejuvenation means that such a character has access to fairly rapid healing, provided he can start a decent-sized fire.  However, it's not so useful in combat, unless the character doesn't even need to defend.]
 
 
 
@@ -98,14 +100,16 @@ Use of this Charm gains the character a point of Podge.
 
 name: witd, Whistling*in the Darkness
 cost: 8m + 1wp
-mins: Survival 4, Ess 2
+mins: Survival 3, Ess 2
 type: Simple (Dramatic Action)
 key: Combo-OK
 dur: Indefinite
 dep: 
 text: Joyful company sustains the soul, and the lone loud voice which is sure of its own location can surely find all other things: "A jug of wine, a leg of lamb and thou! / Beside me, whistling in the darkness."
 
-This Charm replaces the normal Survival roll for route-finding, guaranteeing that the character knows the direction of her desired destination and (if one exists at all) a passable route towards it, as long as the motes remain committed.  The route need not be safe, and it may be passable only by means unavailable to the character, such as sail or flight.  To gain this benefit, the character must continually whistle at a reasonably audible volume, giving a -4 penalty to all Stealth effects, a -2 penalty to evasion of pursuit, and a -2 penalty to communication of all but the simplest of concepts.  The character need not eat or sleep while the whistling continues: she will accumulate fatigue penalties as normal but will not die.  A normal day of food and rest at the Charm's cessation will restore her to her previous level of health.  The character may substitute chanting, humming, gesturing wildly or any other similarly obvious and awkward activity.
+This Charm replaces the normal Survival roll for route-finding, guaranteeing that the character knows the direction of her desired destination and (if one exists at all) a passable route towards it, as long as the motes remain committed.  The route need not be safe, and it may be passable only by means unavailable to the character, such as sail or flight.  To gain this benefit, the character must continually whistle at a reasonably audible volume, giving a -4 penalty to all Stealth effects, a -2 penalty to evasion of pursuit, and a -2 penalty to communication of all but the simplest of concepts.
+
+The character need not eat, drink or sleep while the whistling continues: she will accumulate fatigue penalties as normal but will not die.  A normal day of food and rest at the Charm's cessation will restore her to her previous level of health.  The character may substitute chanting, humming, gesturing wildly or any other similarly obvious and awkward activity.  He may simply choose to stop the Charm and then activate it again after rest, but there is no guarantee that the same route will be found again.
 
 
 name: monu, Mantra of*Necessary Union

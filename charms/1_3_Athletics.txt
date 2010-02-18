@@ -1,0 +1,127 @@
+name: exc, (Any Athletics*Excellency)
+dep: 
+text: 
+
+
+name: ffm, Flawless Footstep*Meditation
+cost: 2m
+mins: Athletics 2, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: One scene
+dep: 
+text: The Chosen of Eris Discordia will not be diverted from whatever place or path their whims may choose (unless they want to be).
+
+Activating this Charm means that, for the remainder of the scene, the Anchorite will automatically succeed in any valid action to keep her balance.  Unlike the Solar Charm Graceful Crane Stance, the surface must be one which could normally support the character.
+
+Additionally, she will not become prone when subject to Knockdown or Knockback.  She may still be thrown horizontally in the latter case, but can choose to stop at any point on a surface on which she could stand.
+
+
+name: gas, Ground-Avoiding*Step
+cost: 2m; or 5m, 1wp
+mins: Athletics 4, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: Instant
+dep: 
+text: One of the ancient (or perhaps recently fabricated) texts of the Priests of Eris teaches that "[the] knack lies in learning how to throw yourself at the ground and miss."  Those who learn the Ground-Avoiding Step have begun to understand this teaching.
+
+This Charm allows the character to multiply his vertical jumping distance by his Essence, and makes his horizontal jumping distance the same, for a single action.  Alternatively, by spending 5 motes and 1 willpower at the moment of impact, the character may subtract (Essence x 5) from the number of dice rolled for falling damage.
+
+
+name: mopg, Moment of*Perfect Gravity
+cost: 6m, 1wp
+mins: Athletics 5, Ess 4
+type: Simple
+key: Combo-OK, Shaping, Obvious
+dur: Indefinite
+dep: ffm, gas
+text: Many fools regard a self-centered attitude as a bad thing, but the Law Unto Themselves understand that it is in fact the perfection of focus.  Extending the understanding of the Ground-Avoiding Step, the character learns to make himself the center of all things, at least from his own perspective.
+
+Once this Charm has been activated, and for as long as the motes remain committed, he will not fall, no matter his surroundings.  He may move along any surface which provides sufficient purchase, and will remain in any given orientation in space, unless he or something else causes him to move.  This Charm by itself does not prevent the character from being moved by combat, winds, waves and so on.   If the character is falling or otherwise freely moving when the Charm is activated, he will continue to do so, but will no longer gain or lose speed, or change direction, except due to subsequent forces, including the resistance of the surrounding medium (e.g., air).  If the character is stationary and has a surface to push against, he may move up to his current horizontal jumping distance in any direction.  Thereafter he may hang in midair for as long as he wishes, though moving from that spot may be difficult without wings of some sort.  
+
+The Charm remains active even if the character becomes Inactive, though not if he dies.
+
+
+name: bu, Balanced Unbalance
+cost: 2m
+mins: Athletics 2, Ess 2
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack, Knockback
+dur: Instant
+dep: 
+text: The disruption of balance which the Children of Eris enjoy is normally at a conceptual or societal level, but it applies just as well in the physical realm.
+
+This Charm may be activated whenever the character parries or is hit by an attack at close quarters (i.e., a Melee or Martial Arts attack), regardless of whether or not damage is suffered.  The attacker must make a check for Knockdown or Knockback (at the character's option).  If the attacker has grappled the character and is in control of the grapple, the character automatically breaks free.
+
+If the character dodges an attack, or if he is not in direct contact with the attacker or his weapon (i.e., Archery or Thrown attacks, or Melee or Martial Arts attacks whose range is magically extended), this Charm works differently.  It does not allow a direct Counterattack but provides an instant, instinctive Aim action, giving three bonus dice if the character chooses to return the attack on his next action.  These dice are not included in the limit on dice added by Charms.
+
+
+name: ec, Equilibrium Catapult
+cost: 3m
+mins: Athletics 3, Ess 3
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack, Knockback
+dur: Instant
+dep: gas, bu
+text: Rather than simply throwing herself at the ground and miss, a Discordian may choose to throw an attacker, hoping to score on the rebound.
+
+This Charm allows the character to cause her attacker to be thrown a number of yards equal to her own current horizontal jumping distance, in any direction.  The opponent must check for knockdown to avoid ending up prone.  Targets which strike hard objects take one die of damage for each yard they would otherwise have travelled.  This will usually be bashing damage but may be lethal depending on the environment.
+
+This Charm can be used as a means to break out of a grapple.  It is applicable against attacks of any kind, including ranged and area-effect, although in those cases it becomes Obvious.  It can also be usedwhen attempting a feat of strength to throw an object, at least doubling the thrown distance.
+
+
+name: nbt, Narcissus Blossom*Technique
+cost: 2m + 3m per dot
+mins: Athletics 3, Ess 2
+type: Simple
+key: Combo-OK
+dur: One scene
+dep: exc
+text: The perfection of the physical form based on athletic prowess can have benefits beyond mere improvement of physique.  The Most Beautiful are able to channel there own Essence to boost this enhancement beyond the dreams of mortals.
+
+Activating this Charm, the player rolls the character's (Appearance + Athletics).  For each success, the she may add one die to any of the character's Strength, Dexterity, Stamina, Charisma, Appearance or Wits.  Each dot applied increases the cost of the Charm by 3 motes, though the player need not apply all the dots.  The dice added count towards the total which may be added by Charms.
+
+
+name: hht, Hurtling Hermit*Technique
+cost: 4m, 1wp
+mins: Athletics 3, Ess 3
+type: Simple
+key: Combo-OK
+dur: Indefinite
+dep: nbt
+text: The Traveling Sailsmen believe that, sometimes, the journey is more important than anything else (nor just the destination).  Thus they direct their energies to travelling and nothing else.
+
+This Charm allows the character to travel (running, jumping, swimming and so on) at a rate equal to (her normal maximum x Essence), as long as she keeps the Charm's motes committed.  She may use this Charm in combination with other objects or magics which affect her travel, but she cannot use it with any sort of vehicle.  While travelling she suffers no fatigue penalties and need not eat, drink or sleep.  She suffers an internal penalty equal to her (Essence ÷ 2), rounded up, to any Perception rolls to notice things going on around her; but observers have an equal external penalty to any attempts to notice, identify or track her.
+
+Stopping, or interacting with other people or objects except to directly, physically facilitate her journey will end the Charm.  For example, opening a door and running through a building would not affect the Charm, but asking for directions would.
+
+
+name: fash, Feather and Snowflake*Harmony
+cost: 1m per point
+mins: Athletics 3, Ess 2
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK
+dur: Instant
+dep: exc
+text: Focussing her mind and body on the current moment, the Ignorant Child is able to let go of distractions and bring to bear a unnatural amount of coordination when attempting several things at once.
+
+This Charm allows the character to subtract a number of points from the penalties associated with multiple actions and flurries, up to her Athletics rating, provided they each involve Strength, Dexterity, Stamina or Athletics.  If any action in the flurry does not involve one of these Traits, the Charm is not applicable.  Each point spent reduces the penalty by one for every action.  Thus, spending as many motes as there are actions in the flurry will reduce the penalty to 0 on the first action, -1 on the second, and so on.
+
+Instead of internal penalties from the character's own flurry, this Charm may be applied to the onslaught penalties from an attacker's flurry.  In the latter case, the character need not know in advance how many attacks will be in the flurry: she may choose to stop spending motes when the flurry ends, if the limit of her own Athletics rating has not already been met.  This effetively negates the onslaught penalty until the character stops spending motes, after which it begins from -1.  [TODO: Is this necessary?  Or is the number of actions in an attacker's flurry something which is declared?]
+
+This Charm is explicitly allowed in Combos with Charms based on other Abilities.
+
+
+name: fasu, Feather and Snowflake*Unison
+cost: 5m, 1wp
+mins: Athletics 5, Ess 2
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK
+dur: One scene
+dep: fash
+text: The truly dedicated Child of Eris may increase her physical focus to legendary levels.
+
+For the rest of the scene following activation of this Charm, internal penalties for multiple actions and flurries are reduced by the character's (Essence ÷ 2), rounded up, for each action which involves Strength, Dexterity, Stamina or Athletics.  If a flurry includes actions which do not involve any of these Traits, that action is subject to the full flurry penalty, but the Charm remains in effect for subsequent actions in the flurry.  Against opponents attacking with a flurry, all onslaught penalties are completely removed.
+
+This Charm is explicitly allowed in Combos with Charms based on other Abilities.

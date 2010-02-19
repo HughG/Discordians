@@ -52,7 +52,7 @@ dur: Instant
 dep: 
 text: The disruption of balance which the Children of Eris enjoy is normally at a conceptual or societal level, but it applies just as well in the physical realm.
 
-This Charm may be activated whenever the character parries or is hit by an attack at close quarters (i.e., a Melee or Martial Arts attack), regardless of whether or not damage is suffered.  The attacker must make a check for Knockdown or Knockback (at the character's option).  If the attacker has grappled the character and is in control of the grapple, the character automatically breaks free.
+This Charm may be activated whenever the character parries or is hit by an attack at close quarters (i.e., a Melee or Martial Arts attack), regardless of whether or not damage is suffered.  The attacker must make a check for Knockdown or Knockback (at the character's option).  If the attacker has grappled the character and is in control of the grapple, but fails this check, the character automatically breaks free.
 
 If the character dodges an attack, or if he is not in direct contact with the attacker or his weapon (i.e., Archery or Thrown attacks, or Melee or Martial Arts attacks whose range is magically extended), this Charm works differently.  It does not allow a direct Counterattack but provides an instant, instinctive Aim action, giving three bonus dice if the character chooses to return the attack on his next action.  These dice are not included in the limit on dice added by Charms.
 
@@ -66,21 +66,21 @@ dur: Instant
 dep: gas, bu
 text: Rather than simply throwing herself at the ground and miss, a Discordian may choose to throw an attacker, hoping to score on the rebound.
 
-This Charm allows the character to cause her attacker to be thrown a number of yards equal to her own current horizontal jumping distance, in any direction.  The opponent must check for knockdown to avoid ending up prone.  Targets which strike hard objects take one die of damage for each yard they would otherwise have travelled.  This will usually be bashing damage but may be lethal depending on the environment.
+This Charm allows the character to throw her attacker if she succeeds on an opposed (Strength + Athletics) roll, with the character receiving bonus successes equal to her Essence.  As a Counterattack, it can also be defended against with any applicable perfect defense, in place of the roll.  If the character wins the roll, her attacker is thrown a number of yards equal to her own current horizontal jumping distance, in any direction.  The opponent must check for Knockdown to avoid ending up prone.  Targets which strike hard objects take one die of damage for each yard they would otherwise have travelled.  This will usually be bashing damage but may be lethal depending on the environment.
 
-This Charm can be used as a means to break out of a grapple.  It is applicable against attacks of any kind, including ranged and area-effect, although in those cases it becomes Obvious.  It can also be usedwhen attempting a feat of strength to throw an object, at least doubling the thrown distance.
+This Charm can be used as a means to break out of a grapple.  It is applicable against attacks of any kind, including ranged and area-effect, although in those cases it becomes Obvious.  It can also be used when attempting a feat of strength to throw an object, at least doubling the thrown distance.
 
 
 name: nbt, Narcissus Blossom*Technique
 cost: 2m + 3m per dot
 mins: Athletics 3, Ess 2
 type: Simple
-key: Combo-OK
+key: None
 dur: One scene
 dep: exc
-text: The perfection of the physical form based on athletic prowess can have benefits beyond mere improvement of physique.  The Most Beautiful are able to channel there own Essence to boost this enhancement beyond the dreams of mortals.
+text: The perfection of the physical form based on athletic prowess can have benefits beyond mere improvement of physique.  The Most Beautiful are able to channel their own Essence to boost this enhancement beyond the dreams of mortals.
 
-Activating this Charm, the player rolls the character's (Appearance + Athletics).  For each success, the she may add one die to any of the character's Strength, Dexterity, Stamina, Charisma, Appearance or Wits.  Each dot applied increases the cost of the Charm by 3 motes, though the player need not apply all the dots.  The dice added count towards the total which may be added by Charms.
+Activating this Charm, the player rolls the character's (Appearance + Athletics).  For each success, the she may add one die to any dice pool derived from one of the character's Strength, Dexterity, Stamina, Charisma, Appearance or Wits.  The dots may all be added to one Attribute, or they may be spread across several.  Each dot applied increases the cost of the Charm by 3 motes, though the player need not apply all the dots.  The dice added count towards the total which may be added by Charms.
 
 
 name: hht, Hurtling Hermit*Technique
@@ -108,9 +108,7 @@ text: Focussing her mind and body on the current moment, the Ignorant Child is a
 
 This Charm allows the character to subtract a number of points from the penalties associated with multiple actions and flurries, up to her Athletics rating, provided they each involve Strength, Dexterity, Stamina or Athletics.  If any action in the flurry does not involve one of these Traits, the Charm is not applicable.  Each point spent reduces the penalty by one for every action.  Thus, spending as many motes as there are actions in the flurry will reduce the penalty to 0 on the first action, -1 on the second, and so on.
 
-Instead of internal penalties from the character's own flurry, this Charm may be applied to the onslaught penalties from an attacker's flurry.  In the latter case, the character need not know in advance how many attacks will be in the flurry: she may choose to stop spending motes when the flurry ends, if the limit of her own Athletics rating has not already been met.  This effetively negates the onslaught penalty until the character stops spending motes, after which it begins from -1.  [TODO: Is this necessary?  Or is the number of actions in an attacker's flurry something which is declared?]
-
-This Charm is explicitly allowed in Combos with Charms based on other Abilities.
+Instead of internal penalties from the character's own flurry, this Charm may be applied to reduce onslaught penalties from a single attacker's flurry.  This Charm is explicitly allowed in Combos with Charms based on other Abilities.
 
 
 name: fasu, Feather and Snowflake*Unison
@@ -122,6 +120,8 @@ dur: One scene
 dep: fash
 text: The truly dedicated Child of Eris may increase her physical focus to legendary levels.
 
-For the rest of the scene following activation of this Charm, internal penalties for multiple actions and flurries are reduced by the character's (Essence ÷ 2), rounded up, for each action which involves Strength, Dexterity, Stamina or Athletics.  If a flurry includes actions which do not involve any of these Traits, that action is subject to the full flurry penalty, but the Charm remains in effect for subsequent actions in the flurry.  Against opponents attacking with a flurry, all onslaught penalties are completely removed.
+For the rest of the scene following activation of this Charm, internal penalties for multiple actions and flurries are reduced by the character's (Essence ÷ 2), rounded up, for each action which involves Strength, Dexterity, Stamina or Athletics.  If a flurry includes actions which do not involve any of these Traits, that action is subject to the full flurry penalty, but the Charm remains in effect for subsequent actions in the flurry.
+
+Alternatively, this Charm may be activated to oppose any attacks using a flurry, from any number of opponents at once.  In this case, onslaught penalties are similarly reduced by (Essence ÷ 2).  Although the Charm is not Stackable as normal, it can be activated twice, once in each alternative version, to provide both benefits for the scene.
 
 This Charm is explicitly allowed in Combos with Charms based on other Abilities.

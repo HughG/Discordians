@@ -2,6 +2,10 @@ name: exc, (Any Occult*Excellency)
 dep: 
 text: 
 
+name: ee, Elemental Expression
+dep: 
+text: TODO
+
 
 name: sw, Spirit Whiskers
 cost: 3m

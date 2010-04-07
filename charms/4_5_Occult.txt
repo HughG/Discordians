@@ -2,9 +2,16 @@ name: exc, (Any Occult*Excellency)
 dep: 
 text: 
 
-name: ee, Elemental Expression
+name: eee, Erisian Elemental*Expression
+cost: 3m, 1wp, plus 1m per level of effect
+mins: Occult 3, Ess 3
+type: Reflexive (Step 1 or Step 7)
+key: Combo-OK
+dur: Instant
 dep: 
 text: TODO
+
+This Charm is similar to the Elemental Charm known as Elemental Expression.  Activating it for a scene costs 3 motes and one point of Willpower.  During the rest of that scene, the character can spend up to (Essence) further motes to modify manifestations of her Divisional or Parametadivisional element.  Each mote spent (at Step 1) can either halve or double the effect of any phenomena related to the element.  Alternatively, on successfully touching a target (at Step 7), the Erisian can either add one level of lethal or bashing damage (for physical manifestations) or reduce the target's temporary Willpower by 1 point (for mental or emotional manifestations).  In this case, the attack will be accompanied by a manifestation of the Erisian element, in one or more senses.  If the attack is blocked or parried, this Charm is inapplicable.
 
 
 name: sw, Spirit Whiskers

@@ -1,3 +1,8 @@
+name: exc, (Any Resistance*Excellency)
+dep: 
+text: n/a
+
+
 name: obt, Ox-Body Technique
 cost: -
 mins: Res 1, Ess 1
@@ -6,3 +11,17 @@ key: Stackable
 dur: Permanent
 dep: 
 text: Unpredictable as the followers of Eris are, you can never quite tell when they're going to keel over in a fight.  A player may purchase this Charm once for each dot of Resistance her character has.  Each purchase gains the character one of the following combinations of additional health levels, at the player's option, determined at the time of purchase: one -0 health level; or one -1 health level and two -2 health levels; or one -2 health level and three -4 health levels
+
+
+name: eer, Erisian Elemental*Rejuvenation
+cost: 5m, 1wp
+mins: Res 3, Ess 3
+type: Simple
+key: Combo-OK
+dur: Indefinite
+dep: 
+text: TODO
+
+This Charm is similar to the Elemental Charm known as Elemental Rejuvenation. To use it, the character must be in contact with a powerful manifestation of the Erisian element associated with his Division or Parametadivision.  While it is active, the Chosen of Eris either heals one health level of damage every five ticks, or regains one point of Willpower every 23 minutes (i.e., 7 points every 6 hours), the choice being made when the Charm is activated.  However, this requires the character's full attention, so he is Inactive, though still aware of his surroundings.  He may choose to end the Charm reflexively at any time, whereupon he can act on the following action.
+
+The question of whether something consists of one of the Elements described in Discordian Doctrine is really one of viewpoint and belief, so the storyteller may require a descriptive stunt to justify use of this Charm.  If so, an insufficient stunt might result in the duration between benefits being doubled or tripled, or the Charm failing to activate at all.  If the stunt is judged sufficient, the normal stunt benefits, of regaining Essence or Willpower, are not available.

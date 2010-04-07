@@ -77,12 +77,6 @@ text: [TODO: Insert flavor]
 This Charm allows an Invader of the Faith to extend the effects of Tasty Poison Treatment to a sigle source of environmental damage, adding the requirement that he keep the motes committed until he is no longer at risk of damage.  The Shaping in this case only extends to those parts of the environment which come into contact with the Exalt in such a way as to damage him, and they revert to their original effect once the Exalt moves away.  Thus, others cannot avoid damage from walking across hot coals simply by following in the character's footsteps.
 
 
-name: er, Elemental Rejuvenation
-dep: tpt
-text: TODO.  Note that this improves on TPT & IFAAB by healing damage from other sources.
-
-
-
 name: sod, Shadow of Death
 cost: 5m + 1wp
 mins: Med 3, Ess 2

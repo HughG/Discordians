@@ -1,4 +1,4 @@
-name: hms, Holographic Memory System
+name: hmm, Holographic Memory Modus
 cost: 3m
 mins: Lore 2, Ess 2
 type: Supplemental

@@ -56,7 +56,7 @@ The name of this Charm comes from the image of gaps and holes in the Loom of Fat
 
 For hidden, invisible or immaterial things, this Charm halves any penalties to the character's interactions with them.  Stealth or similar effects which would completely prevent the character from interacting with a target instead impose a -4 external penalty.  This Charm does not in itself grant the ability to interact with immaterial beings.
 
-Disguised things are revealed as such, including the nature of the disguise, but the true identity of the person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are havled.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise. 
+Disguised things are revealed as such, including the nature of the disguise.  This Charm reveals mundane and magical disguises, including those using Lunar shapeshifting, Sidereal astrology, and any unnatural mental influences which cause the character to mistake the true nature of something.  (This does not count as resisting the unnatural mental influence directly, so does not accrue Podge.)  However, the identity of the disguised person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are halved.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise. 
 
 [TODO: What should this do in the Wyld, and/or with Fair Folk?]
 

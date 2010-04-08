@@ -27,39 +27,6 @@ text: TODO
 The Chosen of Eris invokes this Charm in response to an attack which is initially unexpected, and which she fails to block or dodge.  This Charm is applicable even if the character has used some other effect to make it no longer unexpected: it works because the attacker believes their attack is a surprise.  The character is permitted a counterattack against the original attack, and against any other attacked, unexpected or not, until her next action.  This Charm does not guarantee that a counterattack is possible (e.g., ranged attackers may not be valid targets), only that the opportunity exists.
 
 
-name: kna, Knot and Needle*Awareness
-cost: 6m
-mins: Awareness 4, Ess 2
-type: Reflexive
-key: Combo-OK
-dur: One scene
-dep: exc
-text: TODO
-
-The name of this Charm comes from the image of changes made in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense the degree and type of influence which beings or objects are able and likely to have, or have already had, on the world.  This may be due to their raw, Essence-fueled power, to some Destiny, or to mundane Backing or Influence etc.  Beings with awakened Essence of 3 or more are noticeable, as are those with a similar rating in Allies, Backing, Command, Connections, Contacts, Cult, Destiny, Face, Influence or Reputation.  The storyteller may adjust the list of applicable backgrounds.  Artifacts, manses and demesnes rated 3 or more are visible to the character.  Objects and beings lacking any of the above ratings will nevertheless be picked out if they are likely to play, or have played, a vital part in some pivotal event, e.g., an assassination.
-
-The character will automatically know which traits or types of events make each object or being notable, but will not know trait ratings or details of events.  To gain more detailed knowledge the character may make a (Perception + Awareness) roll.  Knowing the rating of a single trait is difficulty 2, as is getting an approximate timing for past events.  Seeing some detail of specific individuals or power groups involved in Backgrounds, or of the role an object or being played in past events, is difficulty 4.  Trying to determine future events, associations or tendencies adds 2 to the difficulty; and, of course, the future may change before it becomes the present.
-
-[TODO: What should this do in the Wyld, with Fair Folk?]
-
-
-name: lla, Ladder and Loophole*Awareness
-cost: 8m, 1wp
-mins: Awareness 4, Ess 4
-type: Reflexive
-key: Combo-OK
-dur: One scene
-dep: kna
-text: TODO
-
-The name of this Charm comes from the image of gaps and holes in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense objects and beings which are hidden or disguised.  The true appearance of such things is not revealed, but their locations and the types of concealment are.
-
-For hidden, invisible or immaterial things, this Charm halves any penalties to the character's interactions with them.  Stealth or similar effects which would completely prevent the character from interacting with a target instead impose a -4 external penalty.  This Charm does not in itself grant the ability to interact with immaterial beings.
-
-Disguised things are revealed as such, including the nature of the disguise.  This Charm reveals mundane and magical disguises, including those using Lunar shapeshifting, Sidereal astrology, and any unnatural mental influences which cause the character to mistake the true nature of something.  (This does not count as resisting the unnatural mental influence directly, so does not accrue Podge.)  However, the identity of the disguised person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are halved.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise. 
-
-[TODO: What should this do in the Wyld, and/or with Fair Folk?]
-
 
 name: hpp, Holographic*Perception Praxis
 cost: 3m

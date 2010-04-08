@@ -1,40 +1,73 @@
-name: ics, Improvised*Construction Scheme
-cost: 
-mins: Integrity X, Ess X
-type: 
-key: 
-dur: 
+name: exc, (Any Craft*Excellency)
 dep: 
-text: todo
+text: 
+
+
+name: ics, Improvised*Construction Scheme
+cost: 3m
+mins: Craft 2, Ess 1
+type: Supplemental
+key: Combo-OK
+dur: Indefinite
+dep: exc
+text: TODO
+
+This Charm supplements a dramatic action to craft a non-magical object, allowing the character to quickly make a rough, temporary but serviceable version of the desired item.  It reduces the Resources cost of the required materials by 1 and the construction time by an order of magnitude: hours become minutes, days become hours etc.  At Essence 3+, the resources cost is reduced by (Essence ÷ 2).  The reduction can go as low as 0, if the character could conceivably improvise from materials lying around; otherwise, the minimum is 1.
+
+The Resources value of the constructed object is reduced by the same amount, so the object may not be as aesthetically pleasing or saleable, but it will perform its intended functions.  However, it will fall apart into its original components after an amount of time which is an order of magnitude greater than the time which would normally be needed to construct the object.  For instance, making a simple table might normally take a few days: this Charm will allow it to be constructed in a like number of hours, but it will last only that number of weeks, before it suddenly collapses.
+
+The character must keep the motes for this Charm committed until the construction work is finished, or it will fail.  This Charm does not remove the need for tools.
 
 
 name: ort, Object*Reconfiguration Technique
-cost: 
-mins: Integrity X, Ess X
-type: 
-key: 
-dur: 
+cost: 5m, 1wp
+mins: Craft 3, Ess 3
+type: Supplemental
+key: Combo-OK
+dur: Instant
 dep: ics
-text: todo
+text: TODO
+
+This Charm supplements a dramatic action to craft a non-magical item, allowing the character to rapidly create one object from another of roughly similar size and materials.  To make objects significantly smaller or larger than the originals, the character may respectively create or combine multiple similar objects.  For example, a wooden cart could be converted into a similar-sized shack, or several smaller chairs; or several carts could be combined into a wooden house.
+
+The time required for this reconfiguration is an order of magnitude less than would be required to construct the new object normally.  For example, if constructing a table would take several days, this Charm could convert a cupboard into one in several hours.  This Charm cannot increase or decrese the inherent Resources value of the materials, but the character may end up with something whose Resources cost, in a given region, is more or less than the original object.
+
+At Essence 4+, the construction time is reduced by another order of magnitude: the above conversion from cupboard to table would take hours, not days.  This Charm does not remove the need for tools.
 
 
 name: bem, Blueprint*Extraction Methodology
-cost: 
-mins: Integrity X, Ess X
-type: 
-key: 
-dur: 
-dep: 
-text: todo
+cost: 4m
+mins: Craft 3, Ess 2
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: exc
+text: TODO
+
+This Charm represents a dramatic action to study an existing object, magical or mundane, to learn the secrets of its construction.
+
+For magical items, a character requires ([artifact rating x 3] - Essence) hours to understand the complete design, with a minumum of 1 hour.  This extracted design then allows her to halve the cumulative number of Craft successes required to construct an identical item in future.  Only artifacts with a rating less than or equal to the character's Craft rating are valid targets for this Charm.
+
+For manses and very large artifacts, the time for analysis is ([artifact or manse rating x 3] - Essence) days, rather than hours.  It will almost never be possible to construct an identical manse, since dragon lines vary so much.  However, the extracted information can be used to help design a manse with the same powers on a different site, if it has the same aspect.  In this case the the design time for the manse is reduced from one month to one week, and the difficulty of the roll is reduced by the character's Essence, to a minimum of 1.  Again, only those with a rating no greater than the character's Craft rating are valid targets.
+
+Applied to mundane objects, this Charm takes ([Resources rating x 3] - Essence) hours or days depending on the scale of the object.  The knowledge gained reduces the difficulty of the Craft roll to produce an identical item by 1, to a minimm of 1, and reduces the construction time by up to half.  The time reduction is at the storyteller's discretion: large, long-term projects involving many laborers cannot be sped up so easily.  There is no limit on the Resources rating of mundane objects which can be analysed, but the character must have the relevant Craft rated at least 3.
+
+Having gained this design knowledge, the character may at any point spend a like number of days to record it for others to use.  This Charm does not provide the character with the skills, materials or tools to construct duplicates, only a design.
 
 
-name: esp, Echo-Solidification Process
-cost: 
-mins: Integrity X, Ess X
-type: 
-key: 
-dur: 
+name: est, Echo-Solidification Technique
+cost: (5m, 1wp) per rating point
+mins: Craft 4, Ess 4
+type: Simple
+key: Combo-OK, Shaping
+dur: One scene
 dep: bem
-text: todo
+text: TODO
 
+By exerting her Eristic will, the Stone-Carver can instantly form whole objects from raw materials, if only for a short time.  She requires all raw materials for the construction to be present, but needs no workspace or tools.  For non-magical items, the Resources rating of the finished product cannot exceed the character's Craft rating.
 
+For artifacts, the Artifact rating cannot exceed her (Essence - 2).  She will be immediately attuned to the artifact, provided she pays the attunement cost.  The character must already have created or obtained a design for the artifact.
+
+For manses, the Manse rating can be no more than her (Essence - 3), and she must be within and attuned to an appropriate demesne.  She will be attuned to the manse, and find herself standing within the hearth room, in front of the hearthstone.  Because the manse is constructed instantly, there is no time to fine-tune the design, so the number of Creation Points is fixed at (rating x 2): drawbacks cannot be introduced to increase this.  In order to ensure the dragon lines are balanced correctly, no other beings may be attuned to the demesne, and if intelligent creatures are within its boundaries, the Charm cannot be activated.  If the demesne rating is greater than that of the resultant manse, the manse will have appropriate points of Essence Vents to rebalance the power level.  Once the manse vanishes, the demesne will be drained, providing no Essence (and causing no harm) for as many days as the manse's rating.
+
+The object constructed using this Charm will vanish at the end of the scene, which will be at most (Essence) hours long.

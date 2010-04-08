@@ -24,7 +24,7 @@ dur: Instant
 dep: iai, exc
 text: 
 
-This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means requires a contested roll of the character's (Intelligence + [Investigation or Larceny]) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would.
+This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means requires a contested roll of the character's (Intelligence + [Investigation or Larceny]) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would, assuming the character is able to do so.
 
 
 name: stt, Sifting Through Tells
@@ -43,7 +43,7 @@ If another Charm directly contests the effects of this one, add (character's Ess
 
 name: pds, Pattern-Disturbance Sense
 cost: 4m
-mins: Inv 3, Ess 3
+mins: Inv 3, Ess 2
 type: Reflexive (Step 1)
 key: Combo-OK
 dur: Instant
@@ -53,6 +53,42 @@ text: Right and wrong are subjective concepts, but even the madness of the Wyld 
 This Charm instantly reveals to the character the type and location of any objects within (Essence x 10) yards which do not naturally belong where they are.  A weapon concealed under someone's bed, a raksha in Creation, or a nobleman wandering the poor quarter of some town, would stand out immediately.  On the other hand a letter hidden in a secret compartment of a desk (which contains various similar papers), a spy among an enemy's staff, or an assassin hiding in the shadows, might go undetected.
 
 Mundane attempts at concealment are useless against this Charm.  If some supernatural effect contests it, roll the character's (Investigation + Essence) against the Essence of the creator of the effect.
+
+
+name: kna, Knot and Needle*Awareness
+cost: 6m
+mins: Awareness 4, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: Instant
+dep: exc
+text: TODO
+
+The name of this Charm comes from the image of changes made in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense the degree and type of influence which beings or objects are able and likely to have, or have already had, on the world.  He will gain this knowledge for all relevant beings and objects which he can currently see (or otherwise clearly sense).
+
+The measure of influence may be due to raw, Essence-fueled power, to some Destiny, or to mundane Backing or Influence etc.  Beings with awakened Essence of 3 or more are noticeable, as are those with a similar rating in Allies, Backing, Command, Connections, Contacts, Cult, Destiny, Face, Influence or Reputation.  The storyteller may adjust the list of applicable backgrounds.  Artifacts, manses and demesnes rated 3 or more are visible to the character.  Objects and beings lacking any of the above ratings will nevertheless be picked out if they are likely to play, or have played, a vital part in some pivotal event, e.g., an assassination.
+
+The character will automatically know which traits or types of events make each object or being notable, but will not know trait ratings or details of events.  To gain more detailed knowledge the character may make a (Perception + Investigation) roll.  Knowing the rating of a single trait is difficulty 2, as is getting an approximate timing for past events.  Seeing some detail of specific individuals or power groups involved in Backgrounds, or of the role an object or being played in past events, is difficulty 4.  Trying to determine future events, associations or tendencies adds 2 to the difficulty; and, of course, the future may change before it becomes the present.
+
+[TODO: What should this do in the Wyld, with Fair Folk?]
+
+
+name: lla, Ladder and Loophole*Awareness
+cost: 8m, 1wp
+mins: Inv 4, Ess 4
+type: Reflexive
+key: Combo-OK
+dur: One scene
+dep: pds, kna
+text: TODO
+
+The name of this Charm comes from the image of gaps and holes in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense objects and beings which are hidden or disguised.  The true appearance of such things is not revealed, but their locations and the types of concealment are.
+
+For hidden, invisible or immaterial things, this Charm halves any penalties to the character's interactions with them.  Stealth or similar effects which would completely prevent the character from interacting with a target instead impose a -4 external penalty.  This Charm does not in itself grant the ability to interact with immaterial beings.
+
+Disguised things are revealed as such, including the nature of the disguise.  This Charm reveals mundane and magical disguises, including those using Lunar shapeshifting, Sidereal astrology, and any unnatural mental influences which cause the character to mistake the true nature of something.  (This does not count as resisting the unnatural mental influence directly, so does not accrue Podge.)  However, the identity of the disguised person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are halved.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise. 
+
+[TODO: What should this do in the Wyld, and/or with Fair Folk?]
 
 
 name: rtsc, Reading the Soul's Compass

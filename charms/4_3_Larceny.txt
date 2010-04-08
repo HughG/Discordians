@@ -18,4 +18,6 @@ Social combat is affected while this Charm is active, in that a character may ch
 
 [TODO: Something about subverting mental influence?]
 
+[TODO: Maybe this should be Investigation?]
+
 

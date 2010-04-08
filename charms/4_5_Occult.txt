@@ -11,7 +11,7 @@ dur: Instant
 dep: 
 text: TODO
 
-This Charm is similar to the Elemental Charm known as Elemental Expression.  Activating it for a scene costs 3 motes and one point of Willpower.  During the rest of that scene, the character can spend up to (Essence) further motes to modify manifestations of her Divisional or Parametadivisional element.  Each mote spent (at Step 1) can either halve or double the effect of any phenomena related to the element.  Alternatively, on successfully touching a target (at Step 7), the Erisian can either add one level of lethal or bashing damage (for physical manifestations) or reduce the target's temporary Willpower by 1 point (for mental or emotional manifestations).  In this case, the attack will be accompanied by a manifestation of the Erisian element, in one or more senses.  If the attack is blocked or parried, this Charm is inapplicable.
+This Charm is similar to the Elemental Charm known as Elemental Expression.  Activating it costs 3 motes and one point of Willpower; the character can then spend up to (Essence) further motes to modify manifestations of her Divisional or Parametadivisional element.  Each mote spent (at Step 1) can either halve or double the effect of any phenomena related to the element.  Alternatively, on successfully touching a target (at Step 7), the Erisian can either add one level of lethal or bashing damage (for physical manifestations) or reduce the target's temporary Willpower by 1 point (for mental or emotional manifestations).  In this case, the attack will be accompanied by a manifestation of the Erisian element, in one or more senses.  If the attack is blocked or parried, this Charm is inapplicable.
 
 
 name: sw, Spirit Whiskers
@@ -91,7 +91,7 @@ type: Permanent
 key: None
 dur: Instant
 dep: 
-text: This Charm gives the Children of Eris access to Terrestrial Circle Sorcery, only they changed the name, just because.  Oh, alright, if you must know: it's because the number of sides of these two figures add up to the mystical five.  Yes it does: an inside and an outside.
+text: This Charm gives the Children of Eris access to Terrestrial Circle Sorcery, only they changed the name, just because.  Oh, alright, if you must know: it's because the number of sides of these two figures add up to the mystical five (given that a circle has an in-side and an out-side).
 
 
 name: sss, Square Circle Sorcery
@@ -104,11 +104,17 @@ dep: tss
 text: This Charm builds on the character's knowledge of Sorcery, extending it to what others would term Celestial Circle Sorcery.
 
 
-name: pss, Pentacular Circle Sorcery
-cost: -
+name: pss, Appropriation of*Adamantine Sorcery
+cost: 10m, 1wp
 mins: Occult 5, Ess 5
-type: Permanent
-key: None
-dur: Instant
-dep: sss
-text: The Beloved of the Most Beatiful get away with breaking all sorts of rules, and they have gained limited access to the Solar's most powerful spells.  The experience cost to learn these spells is as normal, but the effort required to use them is far greater.  Firstly, the Shape Sorcery and Cast Sorcery actions require the cooperation of 5 Discordians, all from different Divisions (ignoring the parametadivisions).  Among the others, one must have an Occult rating of at least 4, one of 3, and so on down to the last, who must have at least Occult 1.  These others need not be skilled in Sorcery, however.  Secondly, the cost of each spell is increased by a factor of 50%, so that even Adamant Countermagic costs at least 30m.
+type: Reflexive (Step 2)
+key: Combo-Basic
+dur: Indefinite
+dep: sss, cfp
+text: The Beloved of the Most Beatiful get away with breaking all sorts of rules, and they have gained limited access to the Solar's most powerful spells.  Specifically, they steal them.
+
+This Charm can be activated in response to a Shape Sorcery or Cast Sorcery action taken by another.  The Erisian's player and that of the target make a contested (permanent Essence + Occult + temporary Willpower) roll, counting the character's temporary Willpower after the cost of this Charm has been deducted.  If the target succeeds, the sorcery proceeds normally and the target will not notice.  The Erisian may try again on later actions, if the spell has not been cast by then.  Otherwise, the spell is interrupted but, rather than the energies dissipating, they are transferred to the character, for as long as he maintains the mote commitment for this Charm.  In this case, the target must still pay the mote and willpower cost for the spell.
+
+The character may thereafter release the mote commitment and either allow the spell to dissipate harmlessly, or cast it himself.  He can take a Cast Sorcery action on the action immediately following the use of this Charm, effectively redirecting the spell in a manner, and towards targets, of his choice.  In this case, he pays one less than the normal Willpower cost for the spell, and only half the mote cost.  If he waits till later, however, he must take 1-3 Shape Sorcery actions, and pay the full mote and Willpower cost as normal, before he can take the Cast Sorcery action.  Shaping or casting the spell is Obvious, as usual, but use of this Charm is not.
+
+This Charm cannot be used once a spell has been cast, nor can it be used to counter an ongoing spell, or undo the lasting effects of sorcery.  The character can retain any number of as-yet-uncast spells, if he can afford the mote commitment for them.  Once an instance of a stolen spell is cast, the character is unable to cast it again, until he captures another casting of it.

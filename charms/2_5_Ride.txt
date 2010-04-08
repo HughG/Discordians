@@ -1,20 +1,25 @@
+name: exc, (Any Ride*Excellency)
+dep: 
+text: 
+
+
 name: iss, Instinctive*Stallion Sympathy
 cost: -
 mins: Ride 2, Ess 2
 type: Permanent
 key: None
 dur: Instant
-dep: 
+dep: exc
 text: The chaotic nature of the Steady Hand gives her an innate affinity with beasts of burden, which are never fully domesticated at heart.  A Discordian with this Charm subtracts (her permament Essence ÷ 2) from the Control rating of any mount, once astride it (which could include a death-defying leap onto the back of a Tyrant Lizard).  She will also never botch a Control roll, when one is required.  Lastly, while riding she uses all her Abilities at their full rating, regardless of her Ride rating.  Animals with at least child-level intelligence (equivalent to Familiar 3 or more) are not compelled to obey their rider, but will tend to do so unless they have reason not to and, in any event, will not throw or attack her unless she actively attacks them.
 
 
-name: mpt, Mount-Promoting Touch
+name: mpt, Mount-Promoting*Touch
 cost: 3m or 3m, 1wp
 mins: Ride 3, Ess 3
 type: Simple
 key: Touch
 dur: One scene or Indefinite
-dep: iss
+dep: 
 text: The life of the Priests of Eris can be lonely at times, and having a companion who is smart enough to provide entertaining company, but dim enough not to give away too many secrets can be a boon.  With this Charm, the Moonlight Lyre gives a simple mount the intelligence, communication skills and 5-mote Essence store of a Familiar 3 creature (though the Essence store starts off empty).  If the creature is already at least as intelligent as an eight- or nine-year-old child, it gains a point of Intelligence or Awareness (character's choice).  If the creature is already rated as Familiar 3 or more, it gains a point of both Intelligenceand Awareness, and can store 5 extra motes for each dot of Familiar rating above 3 (again, this extra store starts off empty).  This Charm normally lasts one scene, but may be extended indefinitely by spending 1 point of Willpower in addition to the mote cost, and keeping both motes and Willpower committed.
 
 
@@ -42,7 +47,7 @@ dep: prm
 text: In some circumstances, even the strangest of living creatures just won't cut it as a mount.  This Charm provides the same summoning, Fate-bending and Compulsion effects, but allows them to be applied to automata, the Dead, demons, and whatever strange ridable things might be conceived of in the Wyld.  Summoning across the boundaries between these realms is still impossible.  The Steady Hand can summon creatures of a type with Essence up to (her permanent Essence ÷ 2), and with this Charm they are subject to Compulsion.  However, specific individuals still cannot be compelled, only invited.  Again, any Compulsion only lasts until the rider is mounted, so further means of control, or at least negotiation, may be necessary thereafter.
 
 
-name: ems, Eager Mount Stance
+name: ems, Eager Mount Spirit
 cost: 2m
 mins: Ride 2, Ess 2
 type: Reflexive (Step 1 or Step 2)
@@ -58,7 +63,7 @@ mins: Ride 3, Ess 3
 type: Simple
 key: Combo-OK, Touch
 dur: One scene
-dep: ems
+dep: iss, ems
 text: The chaos in the soul of a Priest of Eris can inspire his mount to unnatural feats.  With this Charm, the character enables the creature he rides to travel at its normal movement rate (or a rate enhanced by other means) through one medium which could not normally traverse.  For example, a giant squid could run along the ground, a bird swim swiftly through the ocean, or a horse float through the air.  The mount and rider are able to breathe in this environment if they could not normally, though they are not protected from environmental damage (e.g., from running across lava fields, or swimming through the body of Kimbery).  The Charm does not last all that long but may be extended by repeated applications; each contiguous scene after the first, however, requires a point of Willpower in addition to the mote cost.
 
 

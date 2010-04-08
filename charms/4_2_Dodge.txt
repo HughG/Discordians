@@ -34,8 +34,8 @@ text: Surely, those who bring true understanding of the nature of things should 
 
 
 name: pe, Perfect Excuse
-cost: 5m
-mins: Dodge 5, Ess 2
+cost: 4m
+mins: Dodge 4, Ess 2
 type: Reflexive (Step 2)
 key: Combo-OK, Obvious
 dur: Instant
@@ -84,7 +84,7 @@ text: Some of the most powerful Mid-day Shadows go even futher in turning their 
 name: mse, Moment of Spatial Eructation
 cost: 3m per dot of Magnitude + 1wp
 mins: Dodge 4, Ess 3
-type: Reflexive (Step 2)
+type: Reflexive (Step 1 or Step 2)
 key: Combo-Basic, War
 dur: Instant
 dep: exc

@@ -3,6 +3,18 @@ dep:
 text: 
 
 
+name: ii, Implausible Improvisation
+cost: 1m
+mins: Perf 1, Ess 1
+type: Simple
+key: Combo-OK
+dur: One scene
+dep: exc
+text: The Wondering Minstrels do whatever they can to engage the hearts and minds of their audience, even if appropriate props are not available.
+
+This Charm affects all Performance actions for the rest of the scene, allowing the character to improvise instruments, scenery, costumes, dramatic lighting etc., provided some at least vaguely suitable materials are to hand.  Hence external penalties due to lack of props etc. are removed.  This Charm does not allow the character to properly play unfamiliar instruments, but it will allow them to use the instrument in an incorrect but entertaining manner, e.g., treating a shamisen as a drum.  This Charm also reduces the difficulty of all Performance actions, including prayer, by 1.
+
+
 name: lfaa, Legend for an Afternoon
 cost: 3m
 mins: Perf 2, Ess 2
@@ -10,32 +22,80 @@ type: Supplemental
 key: Combo-OK, Illusion, Social
 dur: One day
 dep: exc
-text: In a matter of minutes, the Midnight Lyres can persuade folk that they are epic heroes.  Activating this Charm, the character spends a few minutes talking to a group (of Magnitude up to the character's Essence), attempting to convince them that he is some famous individual, either one already known to them or some completely invented figure.  This Charm supplements the relevant social attack roll, adding one automatic success and making it a form of unnatural mental influence.  As usual, targets may spend Willpower to resist.
+text: In a matter of minutes, the Midnight Lyres can persuade folk that they are epic heroes, infamous villains or otherwise dramatic characters.  Activating this Charm, the character spends a few minutes talking to a group (of Magnitude up to the character's Essence), attempting to convince them that he is some famous individual, either one already known to them or some completely invented figure.  This Charm supplements the relevant social attack roll, adding one automatic success and making it a form of unnatural mental influence.  As usual, targets may spend Willpower to resist.
 
-If the character is still present when the Charm's duration ends, affected targets will likely be most upset, but will also become subject to the effects of the character's recumbent destiny, unless it is supressed.  If the character leaves before then, he will remain in their memory as this figure of legend.  The character may use the Charm repeatedly to sustain the Illustion, though targets gain a fresh opportunity to resist.
+If the character is still present when the Charm's duration ends, twenty-four hours later, affected targets will likely be most upset.  However, they will also become subject to the effects of the character's recumbent destiny, unless it is supressed.  If the character leaves before then, he will remain in their memory as this figure of legend.  The character may use the Charm repeatedly to sustain the Illusion, though targets gain a fresh opportunity to resist.
 
-[Hmm, should this be Presence?]
+Use of this Charm gains the character a point of Hodge.
 
 	
-name: mit, March Into Temptation
-cost: 6m, 1wp
-mins: Perf 2, Ess 3
+name: iss, Intimate Seduction Serenade
+cost: 6m
+mins: Perf 3, Ess 2
 type: Supplemental
-key: Combo-OK, Compulsion, Social
-dur: Indefinite
-dep: 
-text: Music may soothe the savage beast, or it may make things even worse.  Playing an instrument of her choice, or simply singing, the Matchmaker employs this Charm to exert an unnatural mental influence on a group of Magnitude up to the Exalt's Essence.  Those affected have either their Willpower, or one of their Virtues (at the character's choice) reduced by the character's Essence, to a minimum of 0, for as long as she continues to play.  At any time each member of the group may pay one point of temporary Willpower to resist the influence for one scene.  If the character continues to play beyond the end of one scene, however, they must spend again or come under the Charm's effects.  The target group must be able to hear or see the character for this Charm to work.
+key: Combo-OK, Emotion, Social
+dur: Instant
+dep: exc
+text: TODO
 
-	
+This Charm supplements a Performance roll targeted at a single individual, singing the praises of some individual, to win or weaken the affections and loyalty of the target.  The subject of the song, poem, oratary etc. may be the Exalt herself, or any other being living or dead, real or imagined.  The target forms a positive or negative Intimacy towards that individual, which may be one of love, lust, loyalty or some other emotion chosen by the character.  If the target already has an Intimacy to the subject, both are retained, which may result in internal conflict and confusing behaviour.
+
+The target can spend a point of temporary Willpower to resist for one scene, and the Charm's effects end once the target has spent three points in total.  Use of this Charm gains the character a point of Hodge.
+
+
+name: shr, Sprouted History Recitation
+cost: 4m
+mins: Perf 2, Ess 2
+type: Simple (Speed 3 in long ticks)
+key: Combo-OK, Social
+dur: Instant
+dep: 
+text: TODO
+
+Opening mouth and mind, the character activates this Charm in the presence of any being, and finds himself recounting a short history of that individual's deeds.  The target must be able to hear the character's words (or otherwise perceive them clearly and immediately).  The information comes not from the Exalt's own mind but from the power of stories themselves (in game terms, from the storyteller).  In a matter of a few minutes, the character will have spoken of some of the major encounters and actions of the target's life, including some trivial but entertaining details, and some which hint at the target's Motivation and/or Intimacies.  All information will be true, and the character is guaranteed to learn at least one new thing, though he may or may not recognise that.
+
+To the target, the effect of this Charm is difficult to distinguish from a great skill in cold reading plus a smattering of unexpected inside information.  Nevertheless, in social combat it is unnerving.  The character rolls (Perception + Performance + Essence) and compares it to the target's Dodge MDV.  If the roll is greater, the target suffers an internal penalty of (-Performance) on the next action, due to a brief feeling of emotional exposure.
+
+A city, building, demesne or other location may also be a valid target for this Charm, as long as the character can find a resident to whom his performance can be directed.
+
+This Charm may be used on a given target at most once per story, unless the target has since done more significant deeds, or the character learns facts elsewhere which specifically hint at other dramatic parts of the target's past.
+
+
+name: ewa, Epic Winning Attitude
+cost: 3m
+mins: Perf 3, Ess 2
+type: Simple
+key: Combo-OK
+dur: One scene
+dep: lfaa
+text: TODO
+
+This Charm improves the benefits which the character gains from any stunts for the rest of the scene.  For any successful stunt, the player may choose either to receive one extra bonus die (which does not contribute to regaining Essence or Willpower), or to regain two extra motes of Essence.  In the case of 3-die stunts, the character may regain two points of temporary Willpower (or, if the storyteller allows, two experience points).
+
+
 name: ddr, Dramatic Death Rehearsal
 cost: 5m
 mins: Perf 3, Ess 3
 type: Reflexive (Step 9)
 key: Combo-OK, Counterattack, Illusion
 dur: Instant
-dep: 
+dep: ewa
 text: We know not the moment of our deaths (unless we're unlucky enough to feature in accurate prophecy); therefore, some Discordians choose to practise, just to be prepared.  An Exalt who employs this Charm appears to die in a dramatic fashion, avoiding all damage associated with an attack and becoming Inactive.  He will seem dead to any casual mundane or magical inspection: his pulse will seem to stop, his Essence flicker out.  Observers who have reason to disbelieve this, or are especially motivated to be quite certain that the Erisian character is dead ("bring me his head!"), will find themselves subject to a natural mental influence to accept the Illusion and move on.  If any observer successfully resists the mental influence of the Illusion, the Exalt will know of it.
 
 The effect lasts as long as he remains Inactive, though he may choose to reflexively end this at any time.  Once he becomes active, for whatever reason, the Illusion will not be effective on the same observers for the rest of the scene.  Indeed, for the rest of the story, observers gain a bonus equal to (5 - Exalt's Essence), minimum 1, to their rolls to see through the Illusion of this Charm.
 
 This Charm is not a perfect defence.  Against perfect attacks it reduces damage by half and guarantees to leave the Exalt on his Incap health level at worst.  Damage from one-off environmental effects can be avoided with this Charm, but not ongoing effects such as general scorching heat. 
+
+Use of this Charm gains the character a point of Hodge.
+
+
+name: mit, March Into Temptation
+cost: 6m, 1wp
+mins: Perf 4, Ess 3
+type: Simple (Dramatic Action)
+key: Combo-OK, Illusion, Social, War
+dur: Indefinite
+dep: iss
+text: Music may soothe the savage beast, or it may make things even worse.  Playing an instrument of her choice, or simply singing, the Matchmaker employs this Charm to exert an unnatural mental influence on a group of Magnitude up to the Exalt's Essence.  Those affected have either their Willpower, or one of their Virtues (at the character's choice) reduced by the character's Essence, to a minimum of 0, for as long as she continues to perform.  Alternatively, the character can provide all affected targets with (Essence) bonus dice to all rolls for one chosen Virtue, or Willpower, for the duration.  At any time each member of the group may pay two points of temporary Willpower to resist the influence for one scene.  If the character continues to play beyond the end of one scene, however, they must spend again or come under the Charm's effects.  The target group must be able to hear or see the character for this Charm to work.
+
+Use of this Charm gains the character a point of Hodge, unless all targets willingly accept the Illusion -- which they might do, if they beleive if will be beneficial.

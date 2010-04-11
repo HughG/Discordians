@@ -15,7 +15,7 @@ text: The Wondering Minstrels do whatever they can to engage the hearts and mind
 This Charm affects all Performance actions for the rest of the scene, allowing the character to improvise instruments, scenery, costumes, dramatic lighting etc., provided some at least vaguely suitable materials are to hand.  Hence external penalties due to lack of props etc. are removed.  This Charm does not allow the character to properly play unfamiliar instruments, but it will allow them to use the instrument in an incorrect but entertaining manner, e.g., treating a shamisen as a drum.  This Charm also reduces the difficulty of all Performance actions, including prayer, by 1.
 
 
-name: lfaa, Legend for an Afternoon
+name: lfaa, Legend*For An Afternoon
 cost: 3m
 mins: Perf 2, Ess 2
 type: Supplemental
@@ -35,7 +35,7 @@ mins: Perf 3, Ess 2
 type: Supplemental
 key: Combo-OK, Emotion, Social
 dur: Instant
-dep: exc
+dep: exc, shr
 text: TODO
 
 This Charm supplements a Performance roll targeted at a single individual, singing the praises of some individual, to win or weaken the affections and loyalty of the target.  The subject of the song, poem, oratary etc. may be the Exalt herself, or any other being living or dead, real or imagined.  The target forms a positive or negative Intimacy towards that individual, which may be one of love, lust, loyalty or some other emotion chosen by the character.  If the target already has an Intimacy to the subject, both are retained, which may result in internal conflict and confusing behaviour.
@@ -43,7 +43,7 @@ This Charm supplements a Performance roll targeted at a single individual, singi
 The target can spend a point of temporary Willpower to resist for one scene, and the Charm's effects end once the target has spent three points in total.  Use of this Charm gains the character a point of Hodge.
 
 
-name: shr, Sprouted History Recitation
+name: shr, Sprouted History*Recitation
 cost: 4m
 mins: Perf 2, Ess 2
 type: Simple (Speed 3 in long ticks)
@@ -59,6 +59,22 @@ To the target, the effect of this Charm is difficult to distinguish from a great
 A city, building, demesne or other location may also be a valid target for this Charm, as long as the character can find a resident to whom his performance can be directed.
 
 This Charm may be used on a given target at most once per story, unless the target has since done more significant deeds, or the character learns facts elsewhere which specifically hint at other dramatic parts of the target's past.
+
+
+name: shf, Subtle Heresy Foundation
+cost: 10m, 1wp, 1xp
+mins: Perf 4, Ess 3
+type: Simple (Dramatic Action)
+key: Combo-OK, Social
+dur: Instant
+dep: exc, shr
+text: TODO
+
+This Charm supplements a Performance roll targeted at a social group, which encourages them towards an almost or actually religious faith in some new idea.  The target of this faith cannot be the character herself.  The idea need not actually be heretical but it must be one which the people have not so far, as a group, considered as a serious belief.
+
+The Moonlight Lyre must spend several hours talking to various members of the group.  At the end of this time, if her persuasion was successful, the character gainst a single point in the Cult background.  The Charm cannot be used to increase the rating of an existing Cult -- too much direct leadership risks the character herself becoming the focus of worship.  The cult may grow on its own, however, and the character may start as many new cults as the storyteller will allow.
+
+The Charm does not in itself involve unnatural mental influence.
 
 
 name: ewa, Epic Winning Attitude

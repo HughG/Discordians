@@ -20,7 +20,25 @@ type: Simple
 key: Touch
 dur: One scene or Indefinite
 dep: 
-text: The life of the Priests of Eris can be lonely at times, and having a companion who is smart enough to provide entertaining company, but dim enough not to give away too many secrets can be a boon.  With this Charm, the Moonlight Lyre gives a simple mount the intelligence, communication skills and 5-mote Essence store of a Familiar 3 creature (though the Essence store starts off empty).  If the creature is already at least as intelligent as an eight- or nine-year-old child, it gains a point of Intelligence or Awareness (character's choice).  If the creature is already rated as Familiar 3 or more, it gains a point of both Intelligenceand Awareness, and can store 5 extra motes for each dot of Familiar rating above 3 (again, this extra store starts off empty).  This Charm normally lasts one scene, but may be extended indefinitely by spending 1 point of Willpower in addition to the mote cost, and keeping both motes and Willpower committed.
+text: The life of the Priests of Eris can be lonely at times, and having a companion who is smart enough to provide entertaining company, but dim enough not to give away too many secrets can be a boon.  With this Charm, the Moonlight Lyre gives a simple mount the intelligence, communication skills and 5-mote Essence store of a Familiar 3 creature (though the Essence store starts off empty).  If the creature is already at least as intelligent as an eight- or nine-year-old child, it gains a point of Intelligence or Awareness (character's choice).  If the creature is already rated as Familiar 3 or more, it gains a point of both Intelligence and Awareness, and can store 5 extra motes for each dot of Familiar rating above 3 (again, this extra store starts off empty).  This Charm normally lasts one scene, but may be extended indefinitely by spending 1 point of Willpower in addition to the mote cost, and keeping both motes and Willpower committed.
+
+
+name: brw, Border-Riding Ward
+cost: 5m, 1wp
+mins: Ride 4, Ess 3
+type: Simple (Dramatic Action)
+key: Combo-OK
+dur: Indefinite
+dep: mpt
+text: TODO
+
+This Charm involves a dramatic action in which the Soft and Steady Hand leads a procession around the border of an area to be protected.  The target area must be no greater than (Essence x 10) square miles.  The character must be mounted, and the procession must involve at least one other creature per 10 square miles or part thereof.  The creatures need not be particularly intelligent, only have some perceptive abilities.
+
+Once the riding is complete, the warding lasts as long as the Exalt keeps the motes committed.  She can leave the area and still maintain the ward, but will not receive its insights unless she is within the boundary.  If there is a willing individual involved in the ride which has access to its own mote pool, the committment cost can be transferred to that being at any time, by spending a further 1wp.  In that case, both the character and the Charm's maintainer must be within the area for it to provide warnings.
+
+The warding works through the awareness of all species involved in the procession; specifically, all members of those species, whenever they are within the warded area.  The effect is that the character becomes instantly aware of anything which any individual percieves as foreign, alien or otherwise not belonging to the area.  The character becomes aware of the location of that thing, its nature (as perceived by observers) and the rough nature and magnitude of their concern (e.g., mild pleasure at the arrival of a travelling minstrel, outright terror at t the appearance of a deathknight's army, or fatalistic acceptance when a new predator arises).
+
+Since this Charm might pick out occurrences of little interest to the character (e.g., a new species arriving to prey on ants), she can choose to ignore any particular kind of foreign creature or object, as percieved by any particular species after the first time she is made aware of it.  Such exclusions do not apply to subsequent uses of this Chram on the same territory.  This Charm does not by itself allow the character to "borrow" or use Charms via the senses of whichever creatures perceive something out-of-place.
 
 
 name: prm, Pigeon*Rehoming Method

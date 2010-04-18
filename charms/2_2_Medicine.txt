@@ -98,7 +98,7 @@ type: Reflexive (Step 2)
 key: Combo-OK, Shaping
 dur: Instant
 dep: sod
-text: Sometimes the whim of the Discordian is to take madness away, rather than to bestow it.  This Charm allows the target to spend Willpower to resist natural or unnatural mental influence, or the effects of a Charm which can be resisted in that way, without gaining Limit or suffering similar side effects.  Additionally it allows the character to pay some of the target's cost, at a rate of 5m per 1wp, or directly in Willpower.  The chracter will gain Podge if she contributes Willpower to this cost.
+text: Sometimes the whim of the Discordian is to take madness away, rather than to bestow it.  This Charm allows the target to spend Willpower to resist natural or unnatural mental influence, or the effects of a Charm which can be resisted in that way, without gaining Limit or suffering similar side effects.  Additionally it allows the character to pay some of the target's cost, at a rate of 5m per 1wp, or directly in Willpower.  The character will gain Podge if she contributes Willpower to this cost.
 
 A character who knows this Charm will automatically notice anyone attempting to resist relevant effects within (character's Essence x 10) yards of her, and will know if that resistance would trigger Limit Break or similar effects.  At such juncture she may choose to assist reflexively with this Charm, assuming she has not already used a different Charm in her current action.  The target cannot resist the help form this Charm, even if they wanted to, unless they are resistent to Shaping.  Characters may target themselves with this Charm.
 
@@ -116,4 +116,4 @@ If the Exalt successfully reduces the target's rating, by whatever value, the ta
 
 A character who knows this Charm will automatically notice when anyone within (character's Essence x 10) yards of her is about to enter Limit Break or a similar state.  At such juncture she may choose to assist reflexively with this Charm, assuming she has not already used a different Charm in her current action.  This Charm is explicitly allowed in a Combo with Soul-Soothing Poultice.  Sadly, characters may not target themselves with this Charm.
 
-[TODO: Richard will think about whether temporarily reducing minimums is too powerful.  It might prevent Alchemicals from accessing some effects.  OTOH, chimaric Lunars can have permanent Limit, so it could be cool.  Maybe the target could spend 1 wp to shrug it off?]
+[TODO: Richard will think about whether temporarily reducing minimums is too powerful.  It might prevent Alchemicals from accessing some effects.  OTOH, chimeric Lunars can have permanent Limit, so it could be cool.  Maybe the target could spend 1 wp to shrug it off?]

@@ -41,6 +41,22 @@ Activating this Charm allows the character to recognise all deliberate lies or h
 If another Charm directly contests the effects of this one, add (character's Essence) in bonus dice to oppose the other Charm.  These dice are not included in the normal limits on dice added by Charms.
 
 
+name: eft, Even False Things
+cost: 4m
+mins: Inv 3, Ess 1
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK, Social
+dur: One Scene
+dep: exc
+text: As Malaclypse the Younger himself said, "Even false things are true."  Fully internalising this understanding allows a Priest of Eris to conceive and to utter both truth and falsehood with equal conviction.
+
+This Charm allows the character to make any statements while temporarily holding the firm belief that they are true, or that they are false, as preferred.  They may change their belief back and forth at will for the duration.  This affects mundane or magical attempts to discern the veracity of the character's statements, in word, writing, thought or any other medium.  If some other effect contests this Charm, add the character's Essence in automatic successes to the ([Charisma or Manipulation] + Larceny) roll.
+
+Social combat is affected while this Charm is active, in that a character may choose to use Charisma where Manipulation would normally apply, and vice versa, at any time.
+
+[TODO: Something about subverting mental influence?]
+
+
 name: pds, Pattern-Disturbance Sense
 cost: 4m
 mins: Inv 3, Ess 2
@@ -97,7 +113,7 @@ mins: Investigation 4, Ess 2
 type: Simple
 key: Combo-OK, Social
 dur: Instant
-dep: exc, stt
+dep: exc, eft, stt
 text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
 
 With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of 1, subtracting an external penalty of (TODO [the target's Manipulation + Socialize] / 2).  Each success reveals one Intimacy; once all Intimacies are known, further successes reveal the target's Motivation (or Motivations, in rare cases).

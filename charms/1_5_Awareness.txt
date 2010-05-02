@@ -24,7 +24,7 @@ dur: Until next action
 dep: teo
 text: TODO
 
-The Chosen of Eris invokes this Charm in response to an attack which is initially unexpected, and which she fails to block or dodge.  This Charm is applicable even if the character has used some other effect to make it no longer unexpected: it works because the attacker believes their attack is a surprise.  The character is permitted a counterattack against the original attack, and against any other attacked, unexpected or not, until her next action.  This Charm does not guarantee that a counterattack is possible (e.g., ranged attackers may not be valid targets), only that the opportunity exists.
+The Chosen of Eris invokes this Charm in response to an attack which is initially unexpected, and which she fails to block or dodge.  This Charm is applicable even if the character has used some other effect to make it no longer unexpected: it works because the attacker believes their attack is a surprise.  The character is permitted a counterattack against the original attack, and against any other attacks, unexpected or not, until her next action.  This Charm does not guarantee that a counterattack is possible (e.g., ranged attackers may not be valid targets), only that the opportunity exists.
 
 
 
@@ -69,7 +69,7 @@ dur: Indefinite
 dep: 
 text: TODO
 
-Activating this Charm, the Exalt focuses her attention on a single small object, often a candle flame.  As long as she maintains her commitment of attention and motes, the rate at which she regains Essence, from all sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she may roll to regain Willpower once every 12 hours.
+Activating this Charm, the Exalt focuses her attention on a single small object, often a candle flame.  As long as she maintains her commitment of attention and motes, the rate at which she regains Essence, from all sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she may roll to regain Willpower once every (24 ÷ Essence) hours.
 
 This Charm cannot be used while the character is sleeping or otherwise unconscious, and is incompatible with the Charms or other actions which require the senses to be focused elsewhere, e.g., Holographic Perception Praxis.  While the Charm is in effect, the character is Inactive: she is completely unaware of her surroundings, and cannot tell the passage of time, though she can tell when she has regained as much Essence as she can.  She may choose to end the Charm normally at any time, in which case she remains Inactive for (Essence) further actions.  If some gentle stimulus affects the character directly, she may ignore it or end the Charm normally.
 
@@ -94,7 +94,7 @@ The conentration required to transfer perceptions in this way puts the character
 
 name: tgob, The Gifts of Belief
 cost: 8m, 1wp
-mins: Awareness 3, Ess 4
+mins: Awareness 4, Ess 4
 type: Reflexive (Step 2)
 key: Combo-OK, Shaping
 dur: Special

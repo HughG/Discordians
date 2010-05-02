@@ -80,7 +80,7 @@ The Charm does not in itself involve unnatural mental influence.
 name: ewa, Epic Winning Attitude
 cost: 3m
 mins: Perf 3, Ess 2
-type: Simple
+type: Reflexive (Step 1)
 key: Combo-OK
 dur: One scene
 dep: lfaa

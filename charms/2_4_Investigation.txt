@@ -73,7 +73,7 @@ Mundane attempts at concealment are useless against this Charm.  If some superna
 
 name: kna, Knot and Needle*Awareness
 cost: 6m
-mins: Awareness 4, Ess 2
+mins: Inv 4, Ess 2
 type: Reflexive
 key: Combo-OK
 dur: Instant
@@ -113,7 +113,7 @@ mins: Investigation 4, Ess 2
 type: Simple
 key: Combo-OK, Social
 dur: Instant
-dep: exc, eft, stt
+dep: eft, stt
 text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
 
 With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of 1, subtracting an external penalty of (TODO [the target's Manipulation + Socialize] / 2).  Each success reveals one Intimacy; once all Intimacies are known, further successes reveal the target's Motivation (or Motivations, in rare cases).

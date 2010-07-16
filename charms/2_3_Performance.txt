@@ -72,9 +72,9 @@ text: TODO
 
 This Charm supplements a Performance roll targeted at a social group, which encourages them towards an almost or actually religious faith in some new idea.  The target of this faith cannot be the character herself.  The idea need not actually be heretical but it must be one which the people have not so far, as a group, considered as a serious belief.
 
-The Moonlight Lyre must spend several hours talking to various members of the group.  At the end of this time, if her persuasion was successful, the character gainst a single point in the Cult background.  The Charm cannot be used to increase the rating of an existing Cult -- too much direct leadership risks the character herself becoming the focus of worship.  The cult may grow on its own, however, and the character may start as many new cults as the storyteller will allow.
+The Moonlight Lyre must spend several hours talking to various members of the group.  At the end of this time, if her persuasion was successful, the character gainst a single point in the Cult background.  The Charm cannot be used to increase the rating of an existing Cult -- too much direct leadership risks the character herself becoming the focus of worship.  The cult may grow on its own, and the character may start as many new cults as the storyteller will allow.  The belief becomes a new Policy for the cult as a group, but it can be in addition to its former Policy, if any, rather than replacing it, provided the two are not irreconcilable.  In this way, the Exalt might be able to subvert existing Cults without drawing the notice of their original master: such dual-Policy Cults provide Essence regeneration benefits to both.
 
-The Charm does not in itself involve unnatural mental influence.
+The maximum number of points in the Cult background which can be gained by using this Charm is equal to the character's permanent Essence.  The Charm does not in itself involve unnatural mental influence, though it may be supplemented with such.
 
 
 name: ewa, Epic Winning Attitude
@@ -109,9 +109,11 @@ name: mit, March Into Temptation
 cost: 6m, 1wp
 mins: Perf 4, Ess 3
 type: Simple (Dramatic Action)
-key: Combo-OK, Illusion, Social, War
+key: Combo-OK, Illusion, Social, War, Stackable
 dur: Indefinite
 dep: iss
-text: Music may soothe the savage beast, or it may make things even worse.  Playing an instrument of her choice, or simply singing, the Matchmaker employs this Charm to exert an unnatural mental influence on a group of Magnitude up to the Exalt's Essence.  Those affected have either their Willpower, or one of their Virtues (at the character's choice) reduced by the character's Essence, to a minimum of 0, for as long as she continues to perform.  Alternatively, the character can provide all affected targets with (Essence) bonus dice to all rolls for one chosen Virtue, or Willpower, for the duration.  At any time each member of the group may pay one point of temporary Willpower to resist the influence for one scene.  If the character continues to play beyond the end of one scene, however, they must spend again or come under the Charm's effects.  After spending a total of three points of Willpower against the effects of this Charm, a given individual will be free of its effects.  The target group must be able to hear or see the character for this Charm to work.
+text: Music may soothe the savage beast, or it may make things even worse.  Playing an instrument of her choice, or simply singing, the Matchmaker employs this Charm to exert an unnatural mental influence on a group of Magnitude up to the Exalt's Essence.  Those affected have either their Willpower, or one of their Virtues (at the character's choice) reduced by the character's Essence, to a minimum of 0, for as long as she continues to perform.  Alternatively, the character can provide all affected targets with (Essence) bonus dice to all rolls for one chosen Virtue, or Willpower, for the duration.  In mass combat, this Charm may be used to alter Drill, Endurance and/or Might.
+
+At any time each member of the group may pay one point of temporary Willpower to resist the influence for one scene.  If the character continues to play beyond the end of one scene, however, they must spend again or come under the Charm's effects.  After spending a total of three points of Willpower against the effects of this Charm, a given individual will be free of its effects.  The target group must be able to hear or see the character for this Charm to work.
 
 Use of this Charm gains the character a point of Hodge, unless all targets willingly accept the Illusion -- which they might do, if they beleive if will be beneficial.

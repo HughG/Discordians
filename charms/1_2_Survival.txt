@@ -10,13 +10,7 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: exc
-text: Most find comfort behind the ordered walls of civilisation, but the Daughter of Eris smiles and laughs among the chaos of the wildest places.  This Charm supplements a roll to resist environmental damage.  It allows the character to add dice equal to his Survival rating to the (Stamina + Resistance) roll, and increases the magnitude of the time period until the next check (where the orders of magnitude are: action, minute, hour, day).
-
-This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
-
-[TODO: "any excellency" is in here because I was thinking of doing Attribute excellencies.  If I'm not, just say "Survival Excellency".]
-
-[TODO: Richard says it would be an equivalently powerful Charm if it added Stat / 2 successes, instead of Stat dice, and then I could ditch the wording about not counting towards the dice adder limit.]
+text: Most find comfort behind the ordered walls of civilisation, but the Daughter of Eris smiles and laughs among the chaos of the wildest places.  This Charm supplements a roll to resist environmental damage.  It allows the character to add (Survival ÷ 2) successes to the (Stamina + Resistance) roll, and increases the magnitude of the time period until the next check (where the orders of magnitude are: action, minute, hour, day).
 
 
 name: wotch, Way of the*Cloven Hoofprint
@@ -28,9 +22,7 @@ dur: Instant
 dep: exc
 text: Strange snakes are proverbially said to lie with their forked tongues.  Exalts, being human, generally have legs, and Discordians choose at times to lie with their feet.  (This differs from Lunar Exalted who are, of course, more likely just to lie with a snake.)
 
-This Charm supplements a roll to evade pursuit, laying false trails and making the tracks of the Whistling Voice lead into those of other creatures.  It allows the character to add dice equal to his permanent Essence when contesting his (Wits + Survival) against a pursuer's (Perception + Survival).  If the pursuer is sucessfully shaken off, he or she will not simply find a trail gone cold, but will be led to some other local creature, which may or may not be hostile.
-
-This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
+This Charm supplements a roll to evade pursuit, laying false trails and making the tracks of the Whistling Voice lead into those of other creatures.  It allows the character to add (Essence ÷ 2) successes when contesting his (Wits + Survival) against a pursuer's (Perception + Survival).  If the pursuer is sucessfully shaken off, he or she will not simply find a trail gone cold, but will be led to some other local creature, which may or may not be hostile.
 
 
 name: am, Animal Magnetism
@@ -42,9 +34,7 @@ dur: Instant
 dep: exc
 text: The balance between order and chaos is closely linked to the balance between predator and prey, nourishment and destruction.  Thus the nature of the Ignorant Children appeals to ignorant beasts.
 
-This Charm supplements a roll to find animals, for food or any other purpose, not by increasing the hunter's skill but by drawing animals (or other local creatures of equivalent intelligence and power) to him.  It allows the character to add dice equal to the higher of his (Charisma or Appearance) ratings to the (Intelligence + Survival) roll for hunting.  If the hunt is successful, the hunter will find that a number of other animals, equal in Magnitude to (Essence ÷ 2), have also been drawn in, though they will be of various indigenous types, not necessarily the kind hunted.  The character may thus acquire additional food, or may have to fight local creatures to keep his prize.
-
-This Charm can explicitly be used in conjunction with any Excellency and the bonus dice are not counted towards the normal limit on dice added by Charms.
+This Charm supplements a roll to find animals, for food or any other purpose, not by increasing the hunter's skill but by drawing animals (or other local creatures of equivalent intelligence and power) to him.  It allows the character to add ([the higher of Charisma or Appearance] ÷ 2) successes to the (Intelligence + Survival) roll for hunting.  If the hunt is successful, the hunter will find that a number of other animals, equal in Magnitude to (Essence ÷ 2), have also been drawn in, though they will be of various indigenous types, not necessarily the kind hunted.  The character may thus acquire additional food, or may have to fight local creatures to keep his prize.
 
 
 name: bib, Bathing in Brimstone
@@ -56,7 +46,7 @@ dur: One scene
 dep: dbr
 text: The Most Beautiful do not deign to have their fair skin lashed by sandstorms, or a lock brushed out of place in an avalanche.  This Charm allows the character to ignore all damage to themselves and their equipment from any one type of environmental damage for one scene.  The environmental effect must be one which would normally have harmed the character, for this Charm to apply.  This Charm is not applicable to poisons unless they are a pervasive part of the environment, e.g., toxic gases around a volcano.
 
-In addition, he may pay a further 2 motes to concentrate for a Miscellaneous Action, treating it as an additional Erisian element for the puposes of applying Elemental Rejuvenation, allowing him to heal a single health level.  This does not count as a Charm activation, but any activity at all within that action, including reflexive self-defense, will disrupt concentration and lose the healing benefits; the mote will still be spent in this case.  Also, this power diverts all healing energy to the Exalt alone, so any mundane equipment they carry may be damaged during that action.
+Any number of times during the Charm's duration, he may pay a further 2 motes and concentrate for a Miscellaneous Action, to heal a single health level by treating the effect as an additional Erisian element.  This does not count as a Charm use.  As with the Resistance Charm known as Erisian Elemental Rejuvenation, the character is Inactive during that action.  He may return to normal reflexively at any time during that action, e.g., for reflexive self-defense, but that will disrupt concentration and lose the healing benefits.  The motes will still be spent in this case.  Also, this power diverts all healing energy to the Exalt alone, so any mundane equipment they carry may be damaged during that action.
 
 
 name: fafa, Fang-And-Feather*Aura
@@ -68,7 +58,9 @@ dur: Indefinite
 dep: wotch
 text: Those who are a Law Unto Themselves do not have quite the primitive, brutal sympathy with other beings which the Lunar Exalted carry in their blood, but they can fake it for a while.
 
-With this Charm the character may take on the appearance of any creature of animal-level intelligence, native to the surrounding environment.  The character does not gain any physical abilities or traits of the creature so mimicked, but will be accepted as what he appears to be by any normal denizen of that habitat.  Resisting this unnatural mental influence normally requires spending 3 points of willpower.  Those with reason to suspect it (e.g., Lunars, those able to see Essence flows etc.) may resist by spending a single point of willpower.  If anyone successfully resists, the character gains a point of Hodge (at most one per scene).  Use of any Obvious Charms, or exhibiting any abilities or behaviors which are inappropriate to the animal, automatically ends the illusion, regardless of the presence or absence of witnesses.  The character may shift form once per scene, for an additional expenditure (not committment) of 2 motes of Essence, which requires a Miscellaneous Action but does not count as Charm use.
+With this Charm the character may take on the appearance of any creature of animal-level intelligence, native to the surrounding environment.  The character does not gain any physical abilities or traits of the creature so mimicked, but will be accepted as what he appears to be by any normal denizen of that habitat.  Resisting this unnatural mental influence normally requires spending 3 points of willpower.  Those with magical nature or powers which give them reason to suspect it (e.g., Lunars, those able to see Essence flows etc.) may resist by spending a single point of willpower.  If anyone successfully resists, the character gains a point of Hodge (at most one per scene).  Use of any Obvious Charms, or exhibiting any abilities or behaviors which are inappropriate to the animal, automatically ends the illusion, regardless of the presence or absence of witnesses.
+
+The character may shift form once per scene, for an additional expenditure (not committment) of 2 motes of Essence.  This requires a Miscellaneous Action but does not count as Charm use.
 
 
 name: teims, The Earth is*My Sheepdog
@@ -82,7 +74,7 @@ text: Where others search intently for those they wish to track, the Discordian 
 
 This Charm supplements an attempt to pursue some target, temporarily applying subtle Shaping to the environment around said target, to confuse them and herd them towards the Lawbreaker.  This imposes an external penalty equal to the character's Essence on attempts at evasion by the subject of pursuit.  The alterations to the environment make the path of pursuit more obvious in general, giving a bonus +2 dice to any others attempting to follow the same quarry (or, indeed, the character) for the next day.  The terrain over which pursuit occurs need not actually be earth: even in the Deep Wyld, this Charm makes bizarre but effective changes to the target's surroundings.
 
-A being is a valid target for this Charm if the character can see (or otherwise sense) them directly, or has a trail to begin with, which is sufficient to allow a roll to track them.
+A being is a valid target for this Charm if the character can see (or otherwise sense) them directly, or has a trail to begin with, which is sufficient to allow a roll to track them.  Effects which prevent Shaping from affecting the target directly make no difference to this Charm, since it applies to the environment around the target.  Effects which counter Shaping in an area around the target reduce the penalties and bonuses of this Charm by an amount equal to the difference in Essence between the character and the source of the effect, to a minimum of zero.
 
 
 name: lwra, Living-With-Rocks*Approach

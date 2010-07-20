@@ -54,7 +54,7 @@ text: The disruption of balance which the Children of Eris enjoy is normally at 
 
 This Charm may be activated whenever the character parries or is hit by an attack at close quarters (i.e., a Melee or Martial Arts attack), regardless of whether or not damage is suffered.  The attacker must make a check for Knockdown or Knockback (at the character's option).  If the attacker has grappled the character and is in control of the grapple, but fails this check, the character automatically breaks free.
 
-If the character dodges an attack, or if he is not in direct contact with the attacker or his weapon (i.e., Archery or Thrown attacks, or Melee or Martial Arts attacks whose range is magically extended), this Charm works differently.  It does not allow a direct Counterattack but provides an instant, instinctive Aim action, giving three bonus dice if the character chooses to return the attack on his next action.  These dice are not included in the limit on dice added by Charms.
+If the character dodges an attack, or if he is not in direct contact with the attacker or his weapon (i.e., Archery or Thrown attacks, or Melee or Martial Arts attacks whose range is magically extended), this Charm works differently.  It does not allow a direct Counterattack but the character may choose to start an Aim action on the next tick, even if his next action would not otherwise start on that tick.  The Aim action has all the usual benefits and penalties; in particular, the character suffers a two-die internal penalty if he chooses to Aim, then decides not to attack the target on his next action.  If his next action *does* begin on the next tick, he gains a two-die head start if he chooses to Aim.
 
 
 name: ec, Equilibrium Catapult
@@ -90,7 +90,7 @@ type: Simple
 key: Combo-OK
 dur: Indefinite
 dep: nbt
-text: The Traveling Sailsmen believe that, sometimes, the journey is more important than anything else (nor just the destination).  Thus they direct their energies to travelling and nothing else.
+text: The Traveling Sailsmen believe that, sometimes, the journey is more important than anything else (not just the destination).  Thus they direct their energies completely to travelling.
 
 This Charm allows the character to travel (running, jumping, swimming and so on) at a rate equal to (her normal maximum x Essence), as long as she keeps the Charm's motes committed.  She may use this Charm in combination with other objects or magics which affect her travel, but she cannot use it with any sort of vehicle.  While travelling she suffers no fatigue penalties and need not eat, drink or sleep.  She suffers an internal penalty equal to her (Essence ÷ 2), rounded up, to any Perception rolls to notice things going on around her; but observers have an equal external penalty to any attempts to notice, identify or track her.
 

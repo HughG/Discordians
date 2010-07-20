@@ -69,7 +69,9 @@ dur: Indefinite
 dep: 
 text: TODO
 
-Activating this Charm, the Exalt focuses her attention on a single small object, often a candle flame.  As long as she maintains her commitment of attention and motes, the rate at which she regains Essence, from all sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she may roll to regain Willpower once every (24 ÷ Essence) hours.
+Activating this Charm, the Exalt focuses her attention on a single small object, often a candle flame.  As long as she maintains her commitment of attention and motes, the rate at which she regains Essence, from all sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she may roll to regain Willpower once every (25 ÷ Essence) hours.
+
+[TODO: Being completely unaware of surroundings and time seems rubbish.  Maybe just a -(Essence) penalty to Per+Awr and Join Battle?]
 
 This Charm cannot be used while the character is sleeping or otherwise unconscious, and is incompatible with the Charms or other actions which require the senses to be focused elsewhere, e.g., Holographic Perception Praxis.  While the Charm is in effect, the character is Inactive: she is completely unaware of her surroundings, and cannot tell the passage of time, though she can tell when she has regained as much Essence as she can.  She may choose to end the Charm normally at any time, in which case she remains Inactive for (Essence) further actions.  If some gentle stimulus affects the character directly, she may ignore it or end the Charm normally.
 
@@ -106,5 +108,7 @@ This Charm may be activated whenever the character is subject to an Illusion whi
 The local flows of Essence are Shaped to match it, to a radius of (Essence x 10) yards.  Anyone may then be affected by the content of the Illusion: weapons do real damage, bridges can be crossed, with mundane and magical effects using the traits of the Illusion's creator to determine their power (or the minimum trait values, if the creator does not meet them).  These changes disappear if the Illusion's creator ends the effect, or some other effect undoes the Shaping (which ends the Illusion also), or the character has another opportunity to resist the Illusion and successfully does so.  However, any consequential changes, such as damage, remain.
 
 [TODO: How should this affect the Wyld?]
+
+[TODO: This is only really useful if the Illusion affects more than just the character, and has some external effect, rather than something internal like imposing a belief.  Maybe this Charm needs more work, or should be cheaper, or have fewer prerequisites.]
 
 Use of this Charm does not affect the character's Hodge or Podge rating. 

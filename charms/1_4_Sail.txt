@@ -14,7 +14,7 @@ text: The primal chaos of the sea and the winding currents of the air hold few m
 
 This Charm supplements an attempt by a sailing character to detect moving objects or static hazards in the environment through which the vehicle is travelling -- in the case of a boat, for example, the surrounding air and water.  The range of this sense is (Essence x 2) miles.  It does not give a clear image of any objects, but will normally be able to distinguish at least between rocks, constructed vehicles and natural creatures, on the basis of their rough shape.  Any creature down to the size of a human will be noticeable, including its approximate location, speed and heading.
 
-As well as providing an instantaneous picture of the character's surroundings, this Charm adds the character's Sail rating in dice to rolls for navigation through the area covered, or weather predictions for that area.  Of course, moving objects might change course later, or interfering spirits invalidate the prediction.  Stormy weather or other disturbances may apply an external penalty, normally no worse than -2.
+As well as providing an instantaneous picture of the character's surroundings, this Charm adds the character's Sail rating in dice to her next action, if it is a roll to navigation through the area covered, or prediction weather for that area.  Beyond that action, moving objects might have changes course, or interfering spirits invalidated the prediction, so the bonus no longer applies.  Stormy weather or other disturbances may apply an external penalty, normally no worse than -2.
 
 
 name: wmi, Wave-Mind Intuition
@@ -26,11 +26,11 @@ dur: Permanent
 dep: rri
 text: 
 
-This Charm enhances the Ripple-Reading Insight such that each invocation lasts one scene, instead of just a moment.  In addition, the character gains 2 bonus successes when opposing any Stealth effects used by beings or objects moving through the range of the Charm.  This bonus does not apply to movement which does not disturb the environment, e.g., moving instantly from outside the range to just next to the character for a surprise attack, or moving immaterially.
+This Charm enhances the Ripple-Reading Insight such that each invocation lasts one scene, instead of just a moment.  This means that all Sail actions in that scene, to navigate or predict weather, gain the two-die bonus.  In addition, the character gains 2 bonus successes when opposing any Stealth effects used by beings or objects moving through the range of the Charm.  This bonus does not apply to movement which does not continually disturb the environment, e.g., moving instantly from outside the range to just next to the character for a surprise attack, or moving immaterially.
 
 
 name: fhh, Flotsam Half-Hitch
-cost: 2m per hl, or 2m per hl + 1wp
+cost: 2m per hl; or 2m per hl, 1wp
 mins: Sail 2, Ess 2
 type: Reflexive (Step 10) or Simple (Dramatic Action)
 key: Combo-OK, War
@@ -46,17 +46,17 @@ With Sail 3 and Essence 3, the Exalt can alternatively expend a point of Willpow
 name: fs, Fantail Shimmy
 cost: -- (+ 4m)
 mins: Sail 4, Ess 2
-type: Reflexive (Step 2)
+type: Permanent
 key: Obvious, Touch, War
-dur: Instant
+dur: Permanent
 dep: fhh
 text: Riding the smallest waves under the hull, the slightest shudder beneath the wheels, the Children of Eris can use their unbalanced nature to protect those travelling with them.
 
-This Charm allows the character to extend the effects of any Charm which improve Dodge, Parry or Soak to the vehicle in which he is travelling, at the cost of an odditional 4 motes per Charm activation.  This includes perfect defenses.  The Charm is not valid if the Exalt is not in a vehicle, and it does not apply to attacks on individuals on the vehicle (e.g., from another being on the vehicle, or using an aimed range attack).
+This Charm allows the character to extend the effects of any Charms which improve Dodge, Parry or Soak to the vehicle in which he is travelling, including perfect defenses.  This costs an additional 4 motes per Charm or Combo activation, thogh this Charm need not be in a Combo with the relevant defensive Charms.  The Charm is not valid if the Exalt is not in a vehicle, and it does not apply to attacks on individuals on the vehicle (e.g., from another being on the vehicle, or using an aimed range attack).
 
 
 name: sbtw, Sailing Between the Waves
-cost: 7m + 1wp
+cost: 7m, 1wp
 mins: Sail 4, Ess 3
 type: Simple
 key: Combo-OK, Shaping, War
@@ -70,7 +70,7 @@ The Shaping effect employed coincidentally reduces any external penalties to the
 
 
 name: siatm, Storm-In-A-Teacup*Method
-cost: (Special)m + 1wp
+cost: (Special)m, 1wp
 mins: Sail 3, Ess 3
 type: Simple (Dramatic Action)
 key: Combo-OK, Compulsion
@@ -82,9 +82,9 @@ Using this Charm, the Travelling Sailsman subverts the instructions given to loc
 
 The weather remains stored until the container is destroyed, the character releases the commitment of motes, or the character moves farther from the container than the range affected.  At that point, the stored weather instructions are released upon the local spirits, to be carried out as originally intended, albeit at a different time.  If the release occurs in a significantly different location, the spirits in that location may separately choose to resist these new instructions, again possibly gaining the character a point of Hodge.
 
-The maximum range of effect depends on the character's Essence rating: at Essence 3, it is 1 mile; at 4, 10 miles, and so on, although the character may choose to affect a smaller area.  The cost depends on the range affected, being (minimum Essence required for the area x 2): 6 motes up to 1 mile, 8 motes up to 10 miles and so on.  The weather to be affected must be controlled by beings of Essence no more than the character's own.
+The maximum area of effect is (Essence x 10) square miles, and must be a roughly circular area centered on the character.  The cost depends on the area affected, being (minimum Essence required for the area x 2): 6 motes up to 30 square miles, 8 motes up to 40 and so on.  The weather to be affected must be controlled by beings of Essence no more than the character's own, which may also limit the affected area.
 
-The effects of this Charm are not limited to weather goverened by spirits of Air or Water, but may be applied to any transient environmental effects of equivalent type and power.  As with most Discordian Charms, this one applies in various realms, not only in Creation, although the effects of releasing weather from one realm in another are unpredictable.
+The effects of this Charm are not limited to weather goverened by spirits of Air or Water, but may be applied to any transient environmental effects of equivalent type and power, such as the Omen Weather which heralds demons into Creation.  As with most Discordian Charms, this one applies in various realms, not only in Creation, although the effects of releasing weather from one realm in another are unpredictable.
 
 
 name: sofd, Ship of Five Days
@@ -102,7 +102,7 @@ This Charm is inapplicable unless the character is in a vehicle.  The character 
 
 
 name: cop, Convergence of Parallels
-cost: 10m + (1wp per individual)
+cost: 10m, (1wp per individual)
 mins: Sail 5, Ess 4
 type: Simple
 key: Combo-OK
@@ -119,7 +119,7 @@ name: bofb, Blessing of Five Bells
 cost: -- (+ 3m, 1wp)
 mins: Sail 5, Ess 4
 type: Permanent
-key: Obvious
+key: Obvious, War
 dur: Permanent
 dep: exc
 text: Calling on the capricious benificence of Eris, her Children sing forth a blessing in the cadence of five strange, bell-like tones, never the same from one occasion to the next.

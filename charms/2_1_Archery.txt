@@ -26,7 +26,7 @@ dur: Instant
 dep: exc, bbta
 text: It is hard to defend against things you cannot see or touch, even if you know they are coming.  The Invader of the Faith sends her shot on an esoteric curve through Elsewhere, reappearing at exactly the right time to strike the target.
 
-This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness due to armour or any similar protections beyond the target's own skin, and to ignores DV bonuses due to cover.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  Such attacks will normally suffer an external penalty as severe as blindness (-4) unless some other effect improves the situation.
+This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.
 
 
 name: sp, Suspended Perforation
@@ -52,7 +52,7 @@ dur: Instant
 dep: exc
 text: Even things that go wrong can go right sometimes.  With the Fletcher's Rejoinder, an Exalt's mischievous will is extended into her projectile, allowing attacks which miss to loop around and return for a second attack.
 
-This Charm enhances an Archery attack such that, if the attack fails because the arrow missed (whether due to the attacker's inaccuracy or the target dodging), or was blocked by Hardness or a parry, then the deflected projectile returns, allowing the same attack to be re-rolled on the following tick, with no speed cost or DV penalty.  If the attack fails because of the target's soak, the arrow falls harmlessly to the ground and the Charm is ineffective; similarly if the arrow is otherwise destroyed or its flight specifically ended on the first attack.  If the first attack was part of a Combo, the second attack may optionally have the same Combo applied, with the cost paid again.  This Charm itself may be used on the second attack, alone or as part of a Combo, enabling third and further attacks, but each attack beyond the second is at a cumulative -1 penalty to accuracy and damage.
+This Charm enhances an Archery attack such that, if the attack fails because the arrow missed (whether due to the attacker's inaccuracy or the target dodging), or was deflected by Hardness or a parry, then the projectile returns, allowing the same attack to be re-rolled on the following tick, with no speed cost or DV penalty.  If the attack fails because of the target's soak, the arrow falls harmlessly to the ground and the Charm is ineffective; similarly if the arrow is otherwise destroyed or its flight specifically ended on the first attack.  If the first attack was part of a Combo, the second attack may optionally have the same Combo applied, with the cost paid again.  This Charm itself may be used on the second attack, alone or as part of a Combo, enabling third and further attacks, but each attack beyond the second is at a cumulative -1 penalty to accuracy and damage.
 
 Some Discordians have been known to use this Charm and deliberately miss on their first attack.  In this case, the second attack is treated similarly to an ambush: roll the attacker's (Dexterity + Archery) against the defender's (Wits + Awareness), with appropriate penalties or bonuses depending on the defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.  However, if the defender has already seen this technique used in the same story, they gain a +2 bonus to the contested roll.
 
@@ -68,7 +68,7 @@ text: TODO
 
 This Charm allows the Moonlight Lyre to use any vaguely suitable small objects as ammunition for her bow, flame piece or other Archery weapon.  The effects of any standard type of arrow may be reproduced, though the storyteller may apply bonuses or penalties depending on materials available.  Dust, grains, pebbles and so on may be used as firewand ammunition, but the range will be halved unless the substance is easily flammable, and the damage will be be bashing, not lethal, unless it is particularly hard and sharp.  Reloading with easily reachable objects from her surroundings will take the character no longer than normal for the weapon in question.  The storyteller may impose a Speed penalty, or require extra actions to reload, if suitable objects are harder to reach, however.
 
-Unless other effects apply, the improvised items of ammunition must be normal, physical objects, though they might be magical objects.  They must be of approximately normal size and weight for the weapon in question, but they need not be particuarly aerodynamic.  This Charm removes any accuracy penalties which the character woul otherwise suffer due to these weapons being improvised.
+Unless other effects apply, the improvised items of ammunition must be normal, physical objects, though they might be magical objects.  They must be of approximately normal size and weight for the weapon in question, but they need not be particuarly aerodynamic.  This Charm removes any accuracy penalties which the character would otherwise suffer due to these weapons being improvised.
 
 By spending a further 2 motes, the Discordian can also improvise any mundane sort of bow if vaguely suitable materials are available.  The bow will cease to function as such after the scene ends. 
 
@@ -108,7 +108,7 @@ This Charm supplements an Archery action by allowing the character to use himsel
 
 By spending a point of Willpower the Soft and Steady Hand can Jump up to the full range of his weapon.  If the attack's range has been extended by other magics, the storyteller may rule that the Jump lasts more than one action.
 
-When using this Charm, the character may make a successful (Dexterity + Archery) roll to catch his weapon as he jumps, and take it with him.  Failure means that the weapon remains at the origin of the jump.  Note also that this Charm need not necessarily be used as an attack: it could be used to allow the character to jump up to a high balcony, for example.
+When using this Charm, the character may make a (Dexterity + Archery) roll to catch his weapon as he jumps, and take it with him if successful.  Failure means that the weapon remains at the origin of the jump.  Note also that this Charm need not necessarily be used as an attack: it could be used to allow the character to jump up to a high balcony, for example.
 
 
 name: pth, Piercing the Heart
@@ -118,7 +118,7 @@ type: Supplemental
 key: Combo-OK, Emotion
 dur: One scene or Special
 dep: sasa
-text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- a weapon is required, but no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- a weapon is required, but no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
 If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  The effect is magical and visceral, not Social, so MDV is inapplicable.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
 
@@ -135,6 +135,8 @@ key: Combo-OK, Shaping
 dur: Instant
 dep: fafa, pth
 text: TODO
+
+[TODO: Actually accounting for the undone effects, over more than one action, could be just too painful in practice, specially if there are several combatants all affecting each other.  Maybe this should be max 1 action?  Then again, Sidereals have a Dodge Charm which does something similar.]
 
 This Charm allows the Moonlight Lyre to bend and loop the flow of time, undoing what has happened in recent moments.  It is activated in Step 10 of attack resolution, for an attack either by or upon the character.  All effects and damage applied to either, from any source, within the last (Essence) actions, are undone.  Any Essence, Willpower or other costs paid towards those effects (by any parties involved, not just the character and his opponent) are refunded, except for the cost of this Charm.  Nobody except the character will have any memory of what happened within that closed-off loop of time, unless they have awakened Essence and spend 2 points of Willpower to recall it.  Everyone else will experience a strange moment of deja-vu or similar confusion, but not realise what un-happened.
 

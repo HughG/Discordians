@@ -18,10 +18,10 @@ This Charm affects all Performance actions for the rest of the scene, allowing t
 name: lfaa, Legend*For An Afternoon
 cost: 3m
 mins: Perf 2, Ess 2
-type: Supplemental
+type: Simple
 key: Combo-OK, Illusion, Social
 dur: One day
-dep: exc
+dep: 
 text: In a matter of minutes, the Midnight Lyres can persuade folk that they are epic heroes, infamous villains or otherwise dramatic characters.  Activating this Charm, the character spends a few minutes talking to a group (of Magnitude up to the character's Essence), attempting to convince them that he is some famous individual, either one already known to them or some completely invented figure.  This Charm supplements the relevant social attack roll, adding one automatic success and making it a form of unnatural mental influence.  As usual, targets may spend Willpower to resist.
 
 If the character is still present when the Charm's duration ends, twenty-four hours later, affected targets will likely be most upset.  However, they will also become subject to the effects of the character's recumbent destiny, unless it is supressed.  If the character leaves before then, he will remain in their memory as this figure of legend.  The character may use the Charm repeatedly to sustain the Illusion, though targets gain a fresh opportunity to resist.
@@ -29,20 +29,6 @@ If the character is still present when the Charm's duration ends, twenty-four ho
 Use of this Charm gains the character a point of Hodge.
 
 	
-name: iss, Intimate Seduction Serenade
-cost: 6m
-mins: Perf 3, Ess 2
-type: Supplemental
-key: Combo-OK, Emotion, Social
-dur: Instant
-dep: exc, shr
-text: TODO
-
-This Charm supplements a Performance roll targeted at a single individual, singing the praises of some individual, to win or weaken the affections and loyalty of the target.  The subject of the song, poem, oratary etc. may be the Exalt herself, or any other being living or dead, real or imagined.  The target forms a positive or negative Intimacy towards that individual, which may be one of love, lust, loyalty or some other emotion chosen by the character.  If the target already has an Intimacy to the subject, both are retained, which may result in internal conflict and confusing behaviour.
-
-The target can spend a point of temporary Willpower to resist for one scene, and the Charm's effects end once the target has spent three points in total.  Use of this Charm gains the character a point of Hodge.
-
-
 name: shr, Sprouted History*Recitation
 cost: 4m
 mins: Perf 2, Ess 2
@@ -61,10 +47,24 @@ A city, building, demesne or other location may also be a valid target for this 
 This Charm may be used on a given target at most once per story, unless the target has since done more significant deeds, or the character learns facts elsewhere which specifically hint at other dramatic parts of the target's past.
 
 
+name: iss, Intimate Seduction Serenade
+cost: 6m
+mins: Perf 3, Ess 2
+type: Supplemental
+key: Combo-OK, Emotion, Social
+dur: Instant
+dep: exc, shr
+text: TODO
+
+This Charm supplements a Performance roll targeted at a single individual, singing the praises of some individual, to win or weaken the affections and loyalty of the target.  The subject of the song, poem, oratary etc. may be the Exalt herself, or any other being living or dead, real or imagined.  The target forms a positive or negative Intimacy towards that individual, which may be one of love, lust, loyalty or some other emotion chosen by the character.  If the target already has an Intimacy to the subject, both are retained, which may result in internal conflict and confusing behaviour.
+
+The target can spend a point of temporary Willpower to resist for one scene, and the Charm's effects end once the target has spent three points in total.  Use of this Charm gains the character a point of Hodge.
+
+
 name: shf, Subtle Heresy Foundation
 cost: 10m, 1wp, 1xp
 mins: Perf 4, Ess 3
-type: Simple (Dramatic Action)
+type: Supplemental
 key: Combo-OK, Social
 dur: Instant
 dep: exc, shr
@@ -77,16 +77,18 @@ The Moonlight Lyre must spend several hours talking to various members of the gr
 The maximum number of points in the Cult background which can be gained by using this Charm is equal to the character's permanent Essence.  The Charm does not in itself involve unnatural mental influence, though it may be supplemented with such.
 
 
-name: ewa, Epic Winning Attitude
-cost: 3m
-mins: Perf 3, Ess 2
-type: Reflexive (Step 1)
-key: Combo-OK
+name: gsa, Glory-Stealing Arrogance
+cost: 3m, 1wp
+mins: Perf 3, Ess 3
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK, Shaping
 dur: One scene
 dep: lfaa
-text: TODO
+text: The Matchmakers are so tied to the notion of "union with the other" that they may seek to impress and take nourishment from even their enemies.  Striking a tragic pose of weakened defense in battle, bustling around during delicate surgery, or otherwise trying to look like he is being epically helpful, the Hand takes the glory.
 
-This Charm improves the benefits which the character gains from any stunts for the rest of the scene.  For any successful stunt, the player may choose either to receive one extra bonus die (which does not contribute to regaining Essence or Willpower), or to regain two extra motes of Essence.  In the case of 3-die stunts, the character may regain two points of temporary Willpower (or, if the storyteller allows, two experience points).
+While this Charm is active, the character may appropriate half the regained Essence or Willpower (rounded up) from any stunt which occurs within (Essence x 5) yards, or any stunt associated with an action of which he is the target (regardless of range).  Doing so costs 1 mote, which must be paid after the character knows that a stunt has been awarded to the target, but before the relevant roll is made.  The character must be aware of the action: unexpected or concealed actions cannot be affected by this Charm.  The entity taking the action still gains the relevant bonus dice, and if the stunt is good enough to result in a reward of experience in place of Willpower, the full experience award remains with the target.
+
+This theft of benefits is a Shaping effect, although it does not directly target the victim, instead applying to the overall stage of endeavors.  Thus personal resistance to Shaping cannot counter this Charm, but area effects can.  The mathematically apt will note that activating this effect for a 1-die stunt is pointless.
 
 
 name: ddr, Dramatic Death Rehearsal

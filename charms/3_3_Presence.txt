@@ -33,3 +33,15 @@ text: TODO
 This Charm allows the Discordian to split herself into a number of physical duplicates, up to (Essence ÷ 2).  These duplicates share a single awareness, with each continually able to know what the others are perceiving, thinking and doing.  This spreading of identity imposes a -1 internal penalty on all actions.  The duplciates cannot share any magical equipment, although the Charm will copy mundane items carried on the character's person when it is activated. 
 
 The duplicates have a single pool of motes of Essence, and that pool is refilled at the highest rate which any one of the copies can achieve.  Similarly they share a Willpower pool and channels of Virtues.  Each can operate independently, but in whenever one is activating a Charm or Combo, the others may not activate Charms other than Excellencies; similarly, only one at a time may perform a Numerology action.
+
+
+name: ewa, Epic Winning Attitude
+cost: 3m
+mins: Pres 3, Ess 2
+type: Reflexive (Step 1)
+key: Combo-OK
+dur: One scene
+dep: 
+text: TODO
+
+This Charm improves the benefits which the character gains from any stunts for the rest of the scene.  For any successful stunt, the player may choose either to receive one extra bonus die (which does not contribute to regaining Essence or Willpower), or to regain two extra motes of Essence.  In the case of 3-die stunts, the character may regain two points of temporary Willpower (or, if the storyteller allows, two experience points).

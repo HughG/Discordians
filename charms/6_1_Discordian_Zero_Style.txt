@@ -1,0 +1,151 @@
+name: note, Note
+cost: X
+mins: Martial Arts 0, Ess 0
+type: X
+key: X
+dur: X
+dep: 
+text: Note
+
+
+name: malkhut, Malkhut
+cost: X
+mins: Martial Arts 1, Ess 1
+type: X
+key: X
+dur: X
+dep: 
+text: TODO
+
+Kingdom
+Comes from God's creation (where it shows glory), not God; emotional vessel for action; fem.
+
+
+name: hod, Hod
+cost: X
+mins: Martial Arts 2, Ess 2
+type: X
+key: X
+dur: X
+dep: yesod
+text: TODO
+
+8:Hod/Majesty/2e
+Splendour; praise; passing obstacles by submission, not conquering; community; understanding form through language or crafted symbols
+
+
+name: yesod, Yesod
+cost: X
+mins: Martial Arts 2, Ess 2
+type: X
+key: X
+dur: X
+dep: malkhut
+text: TODO
+
+9:Yesod/Foundation/2e
+Translates spiritual concepts into actions which unite us with God; moon; sexual organs; engine-room of Creation.
+
+
+name: netzah, Netzah
+cost: X
+mins: Martial Arts 2, Ess 2
+type: X
+key: X
+dur: X
+dep: yesod
+text: TODO
+
+7:Netzah/Victory/2e
+Winning through endurance/confidence; patience to follow passions; tactic-level group leadership & motivation
+
+
+name: gevurah, Gevurah
+cost: X
+mins: Martial Arts 3, Ess 3
+type: X
+key: X
+dur: X
+dep: hod, tiferet
+text: TODO
+
+5:Gevurah/Severity/1e
+Strength; judgement; power; concelament; withholding goodness from those who would misuse it; destroying the unwanted; overpowering.
+
+
+name: tiferet, Tiferet
+cost: X
+mins: Martial Arts 3, Ess 3
+type: X
+key: X
+dur: X
+dep: hod, yesod, netzah
+text: TODO
+
+6:Tiferet/Mercy/1e
+Spirituality; balance; integration; miracles; compassion; healing; sacrifice made by Divine to become mortal.
+
+
+name: hesed, Hesed
+cost: X
+mins: Martial Arts 3, Ess 3
+type: X
+key: X
+dur: X
+dep: tiferet, netzah
+text: TODO
+
+4:Hesed/Kindness/1e
+Loving kindness with no cause; love of Divine in all things; proactive, initiates.
+
+
+name: binah, Binah
+cost: X
+mins: Martial Arts 4, Ess 4
+type: X
+key: X
+dur: X
+dep: gevurah, daat
+text: TODO
+
+2:Binah/Understanding/i
+Processed wisdom; deductive reasoning; engine (not fuel); understanding awakens joy
+
+
+name: daat, Daat
+cost: X
+mins: Martial Arts 4, Ess 4
+type: X
+key: X
+dur: X
+dep: gevurah, tiferet, hesed
+text: TODO
+
+*:Da'at/Union/i
+Assimilated intellect; union with ideas awakens emotions; creation as gateway from self-aware souls, to world of forms; Abyss, Fall of Man
+
+
+name: hokhmah, Hokhmah
+cost: X
+mins: Martial Arts 4, Ess 4
+type: X
+key: X
+dur: X
+dep: daat, hesed
+text: TODO
+
+3:Hokhmah/Wisdom/i
+Selflessness; first unbounded flash of idea, before it takes form; insight; perceiving essence of sth; fuel (not engine)
+
+
+name: keter, Keter
+cost: X
+mins: Martial Arts 5, Ess 5
+type: X
+key: X
+dur: X
+dep: binah, daat, hokhmah
+text: TODO
+
+1:Keter/Crown
+Kingship; abstracts and intangibles; mercy; reaching to higher realms; force; Will, Delight, Faith.

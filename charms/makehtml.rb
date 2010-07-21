@@ -117,11 +117,15 @@ def make_html(indir, outdir, outfilename)
       division = matches[1].to_i
       subsec = matches[2].to_i
       if (subsec == 1)
-        out.print("<h3>", division,
-                  (division == 1) ? "st" :
-                  ((division == 2) ? "nd" :
-                   ((division == 3) ? "rd" : "th")),
-                  " Division</h3>")
+        if (division == 6)
+          out.print("<h3>Martial Arts</h3>")
+        else
+          out.print("<h3>", division,
+                   (division == 1) ? "st" :
+                   ((division == 2) ? "nd" :
+                    ((division == 3) ? "rd" : "th")),
+                   " Division</h3>")
+        end
       end
       section_name = matches[3].tr('_', " ")
       out.print("<a target='text' href='", section_name, ".html'>",

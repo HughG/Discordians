@@ -58,6 +58,7 @@ def makedot(infilename, outfilename)
     out.print "digraph foo {\n"
     out.print "\tnode [shape=Mrecord,fontname=Palatino,fontsize=10,width=1.9,height=1,fixedsize];"
     charms.each { |charm|
+      next if charm["name"] == "."
       out.print(
                 "\t", charm["id"], ' [label="{',
                 charm["min_ess"], "|",

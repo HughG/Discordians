@@ -4,9 +4,16 @@ $KCODE = "u"
 
 def insert_charm(out, charm)
   return if charm.empty?
-  return if charm['name'][0] == '('[0]
 
   $stderr << '  ' << charm['name'] << "\n"
+
+  return if charm['name'][0] == '('[0]
+  if charm['name'] == '.'
+    charm['text'].each { |para|
+      out.print("<p>#{para}</p>\n")
+    }
+    return
+  end
 
   out.print("<h3>#{charm['name']}</h3>\n<p>")
   out.print("<b>Cost:</b> #{charm['cost']}; ")

@@ -1,19 +1,11 @@
 name: intro, .
-text: The Priests of Eris are not heroes but they fight if necessary ... or if it suits their whims.  Some are attracted to it because the focussed training of Martial Arts brings one to better understand one's higher self.  This form is said to have been invented by the first ever Discordian, the whole tree revealed to him in one instant.  
-
-[see <http://www.aish.com/sp/k/>]
-
-[... fighting by (the) numbers ...  and more flavour ...]
-
-[Neverborn/Yozi are rumored to have their own complementary Style.  Qliphoth, as opposed to Sephiroth.]
-
-[One of the Charms is Enlightening, or makes buying Enlightening Charms cheaper?]
+text: The warrior-priest is a relatively common figure among the Solar host, but some Resplendent Suns would rather focus on the mystical aspects of existence, fighting only when necessary, and using the practise of Martial Arts to further their enlightenment.
 
 Perhaps uniquely, this style bridges the gap between the Terrestrial and Celestial levels of mastery.  Dragon-Blooded, enlightened mortals and the like may learn most of the Charms of this tree, though they cost an additional 1 mote to activate.  [Daat] is an Enlightening Charm, though it helps only Dragon-Blooded.  Once they have learned that, they need not pay the additional cost to use Charms of this form, and can learn the rest of the Charms in the tree, as well as any other Celestial forms for which they can find teachers.  Enlightened mortals and other kinds of martial artist can never learn the Charms which have [Daat] as a prerequisite, however, and are not further enlightned by learning it.  Celestial Exalts, as well as Abyssals, Infernals and Autochthonians, may learn the whole form.
 
-
 The character must choose any one kind of non-ranged weapon when she begins to learn this style: that becomes its form weapon for her.  All other non-ranged weapons weapons may also be used with this style, including improvised weapons.  However, they do not count as form weapons, suffer an Accuracy penalty of -2 (to a minimum of -3), and their damage bonus is halved.  When she learns [Daat], the character may choose another non-ranged weapon type to become an additional form weapon.
 
+Rumours exist that the Neverborn, the Yozi, or both have their own variations of this style.
 
 
 name: malkhut, Malkhut
@@ -49,9 +41,9 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: yesod
-text: The Anchorite gathers his strength, from his own mortal body and from the Essence which flows into him, preparing to pass judgement on his enemy.  Onlookers will see no glowing sparks around him, but his mien takes on a transcendent might and righteousness, which is obvious to all.
+text: The martial artist gathers his strength, from his own mortal body and from the Essence which flows into him, preparing to pass judgement on his enemy.  Onlookers will see no glowing sparks around him, but his mien takes on a transcendent might and righteousness, which is obvious to all.
 
-The Priest of Eris invokes this Charm to supplement a Aim action, converting up to (the higher of [Essence or Temperance]) bonus dice to successes on the subsequent attack (if any).
+The character invokes this Charm to supplement a Aim action, converting up to (the higher of [Essence or Temperance]) bonus dice to successes on the subsequent attack (if any).
 
 For each point of Essence above 2, she may reflexively add the bonus dice (not as successes) from her Aim action to the next attack by any one ally within (Essence x 5) yards, provided that attack is on the same target and occurs before the character's next action.  These dice count towards that ally's limit on dice added by Charms for that attack.
 
@@ -65,7 +57,7 @@ dur: Instant
 dep: yesod
 text: To strike down your enemy is a kindness, for surely he is in the wrong, and must learn this.
 
-The Law-man supplements his attack with this Charm, giving it the Knockback keyword.  For the purposes of the Knockback check, he adds his Valor in automatic successes to its damage, and adds (Valor ÷ 2), rounded up, to the difficulty of the target's roll.
+The Lawgiver supplements his attack with this Charm, giving it the Knockback keyword.  For the purposes of the Knockback check, he adds his Valor in automatic successes to its damage, and adds (Valor ÷ 2), rounded up, to the difficulty of the target's roll.
 
 If the target is knocked back, the attack does no damage.  Furthermore, for each point of Essence above 2 which the character possesses, he may use his victory as inspiration and reflexively allow any one ally within (Essence x 5) yards to channel Valor on their next attack, without it counting towards the per-story limit on Virtue channeling.  These allies must still spend Willpower to channel Valor in this way.
 
@@ -93,7 +85,7 @@ dur: (Essence) actions
 dep: hod, tiferet
 text: Lesser fighters focus on defeating their enemies; those who grow in understanding see that one may win by simply ignoring those who are unworthy opponents.
 
-This Charm lays a Compulsion on all who have Joined Battle against the character in the current scene, to stay at least (Essence x Conviction) yards away from the character, and to move outside that range if they are currently within it.  The effect costs one Willpower to resist, which gains the character a point of Hodge.  (The character cannot gain more than one point of Hodge from a single activation of this Charm, no matter how many enemies resist.)  Opponents within the radius who do not resist experience this Compulsion physically, as if a successful Knockback had landed them just outside the range.  The Compulsion does not prevent opponents from using ranged attackings from outside the radius of effect.
+This Charm lays a Compulsion on all who have Joined Battle against the character in the current scene, to stay at least (Essence x Conviction) yards away from the character, and to move outside that range if they are currently within it.  The effect costs one Willpower to resist.  Opponents within the radius who do not resist experience this Compulsion physically, as if a successful Knockback had landed them just outside the range.  The Compulsion does not prevent opponents from using ranged attackings from outside the radius of effect.
 
 The effect ends prematurely, for an individual target, if the character attacks that target.  Anyone within the range who was not subject to the Compulsion (either because they were not a target or because they immediately resisted it) is bolstered by the perception that they are among the worthy.  This includes the character himself.  At the end of the effect, they may roll their Conviction to regain Willpower as if they had enjoyed a night's sleep.  This opportunity is lost to them if they attack any compelled targets before the effect ends; it is lost to all if the character attacks in this manner.
 
@@ -107,7 +99,7 @@ dur: Instant
 dep: tiferet, netzah
 text: The brave of heart find joy in combat, but the bright of heart seek only to bring joy and peace to others; to them, combat and conflict are true Anathema.
 
-When this Charm is activated, a glow of colorless Essence gathers around the Ignorant Child, then washes out around him.  This glow heals one level of bashing damage per mote spent, or converts one level of lethal to bashing per 2 motes spent, up to a maximum number of levels equal to the character's (Compassion).  This benefit applies to all beings within (Essence + Compassion) yards, regardless of whether they are allies, enemies or bystanders.
+When this Charm is activated, a glow of colorless Essence gathers around the character, then washes out around him.  This glow heals one level of bashing damage per mote spent, or converts one level of lethal to bashing per 2 motes spent, up to a maximum number of levels equal to the character's (Compassion).  This benefit applies to all beings within (Essence + Compassion) yards, regardless of whether they are allies, enemies or bystanders.
 
 
 name: daat, Daat
@@ -153,7 +145,7 @@ text: Opening herself up to raw, pre-conscious creative insight, the martial art
 
 In addition, any attack which causes damage also has the chance of afflicting a temporary Wyld mutation, chosen by the storyteller, as a Shaping effect.  The character makes a contested roll of ([Essence + Willpower] ÷ 2) against the target.  If the character wins, the target suffers a mutation; if she botches, she suffers one herself.  Bashing damage inflicts a pox or deficiency, lethal an affliction or debility, and aggravated a blight or deformity.
 
-If the target (or the character) has already suffered a mutation due to this Charm in the current scene, the new mutation replaces the previous one.  If the target uses magic to resist this Shaping effect, the character gains a point of Hodge.  The mutation fades at the end of the scene.
+If the target (or the character) has already suffered a mutation due to this Charm in the current scene, the new mutation replaces the previous one.  The mutation fades at the end of the scene.
 
 [TODO: Not sure what this should do against raksha, since I don't know anything about their combat system.]
 
@@ -169,7 +161,7 @@ type: Permanent
 key: None
 dur: Permanent
 dep: binah, daat, hokhmah
-text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply it unconsciously, her faith in higher powers rewarded with a direct connection.
+text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply in unconsciously, her faith in higher powers rewarded with a direct connection.
 
 After learning this Charm, all Simple Charms in this form become Reflexive, and all Charms with the Combo-Basic keyword change to Combo-OK.  Any pre-existing Combos involving Combo-Basic Charms from this form may be extended to include other Charms, by paying the difference in experience.  This extension may only be carried out once per Combo.
 

@@ -161,7 +161,7 @@ type: Permanent
 key: None
 dur: Permanent
 dep: binah, daat, hokhmah
-text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply in unconsciously, her faith in higher powers rewarded with a direct connection.
+text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply it unconsciously, her faith in higher powers rewarded with a direct connection.
 
 After learning this Charm, all Simple Charms in this form become Reflexive, and all Charms with the Combo-Basic keyword change to Combo-OK.  Any pre-existing Combos involving Combo-Basic Charms from this form may be extended to include other Charms, by paying the difference in experience.  This extension may only be carried out once per Combo.
 

@@ -85,15 +85,33 @@ dep: vmn
 text: Some of the most powerful Mid-day Shadows go even futher in turning their enemies' hostility against them.  This Charm extends the effects of Villain Multiplication Nature to a whole scene, and allows the bonuses to accumulate from action to action.  In addition the protection applies beyond coordinated and multiple attacks: for each single attack (i.e., without a flurry or multiple attack effect) from a single opponent which the character fails to dodge, he accumulates a +1 bonus to Dodge DV for subsequent actions.  The maximum bonus remains (Dodge + Essence) and area, environmental and undodgeable attacks are not included (unless by some other Charm in a Combo).
 
 
-name: mse, Moment of Spatial Eructation
-cost: 3m per dot of Magnitude + 1wp
-mins: Dodge 4, Ess 3
-type: Reflexive (Step 1 or Step 2)
-key: Combo-Basic, War
+name: gss, Grey-Space Shuffle
+cost: 4m
+mins: Dodge 3, Ess 3
+type: Reflexive (Step 9)
+key: Combo-Basic, Counterattack
 dur: Instant
 dep: exc
-text: Discordians often work alone, but friends are important, too.  This Charm allows the Unhinged to instantly transport a number of beings (or like-sized objects) up to (character's Essence) in Magnitude, including herself for a short distance.  The distance is determined by rolling the charcter's [Wits + Dodge] and multiplying the successes by her normal Dash distance.  A botch means that all affected by the Charm will fail to dodge the attack.  The Charm may be used in place of a normal dodging response to an attack on (or an area attack which includes) any member of the group.  The group must travel the full distance, and the distance is measured from the outside of the group, not its centre.
+text: TODO.
 
-The character must know (or at least firmly believe) that there is a surface at the destination which is able to safely support the group.  Water will suffice, if they might all reasonably be able to swim, though acid would not.  There need not be a clear path to the endpoint, and indeed this Charm can move people through solid walls etc.  Intentional movement into midair is not possible, although it might happen accidentally if the character is mistaken in her beliefs about the terrain.  Unwilling targets may choose to remain where they are.
+This Charm allows the Unhinged to instantly transport herself for a short distance, if she has used her Dodge DV to respond to an attack.  The distance is determined by rolling the charcter's [Wits + Dodge] and multiplying the successes by her normal Move distance.  This movement happens instantly, going via Elsewhere, but uses up the character's Move action.
 
-It is perfectly acceptable to use this Charm to appear behind an opponent.  The movement is as silent as it is instant, so an unexpected attack on the next action may be possible.  An unexpected counterattack would be possible too, if the character had some way of making a counterattack apart from Charm use.
+The character can choose the direction of movement but must travel the full distance rolled, and must know (or at least firmly believe) that there is a surface at the destination which is able to safely support her.  Water will suffice, if she might reasonably be able to swim, though acid normally would not.  There need not be a clear path to the endpoint, and indeed this Charm can move the character through solid walls etc.  Intentional movement into midair is not possible, although it might happen accidentally if the character is mistaken in her beliefs about the terrain.
+
+This Charm cannot be used except when dodging, and does not by itself defend against perfect or undodgeable attacks.  It is perfectly acceptable to use this Charm to appear behind an opponent.  The movement is as silent as it is instant, so an unexpected attack on the next action may be possible.  This Charm is resolved as a Counterattack, even though it is not hostile; it cannot be used with a counterattack and it reduces the character's DV by 1.
+
+
+name: mse, Moment of Spatial Eructation
+cost: -- (+3m per dot of Magnitude + 1wp)
+mins: Dodge 5, Ess 4
+type: Permanent
+key: Combo-Basic, War
+dur: Permanent
+dep: gss
+text: Discordians often work alone, but friends are important, too.
+
+This Charm upgrades its prerequisite, allowing the Unhinged to apply it to a group of beings (or like-sized objects) up to (character's Essence) in Magnitude.  The group need not be a pre-existing unit, but it must include the character.  Unwilling targets may choose to remain where they are.  Used in this fashion, the Charm cost increases by one point of Willpower, plus 3 motes per dot of Magnitude of the group.
+
+The distance in this case determined by rolling the charcter's [Wits + Dodge] and multiplying the successes by her normal Dash (not Move) distance.  The Charm can only be applied in response to an attack on (or an area attack which includes) any member of the group, and only when it would be valid for the character herself (who may not be the actual target) to try to dodge the attack.  The group must travel the full distance, and the distance is measured from the outside of the group, not its centre.
+
+[TODO: Should this allow group-wide application of any applicable Dodge Charms, like the Sail one?]

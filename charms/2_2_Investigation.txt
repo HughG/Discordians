@@ -22,7 +22,7 @@ type: Supplemental
 key: Combo-OK, Social
 dur: Instant
 dep: iai, exc
-text: 
+text: TODO
 
 This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means requires a contested roll of the character's (Intelligence + [Investigation or Larceny]) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would, assuming the character is able to do so.
 
@@ -46,7 +46,7 @@ cost: 4m
 mins: Inv 3, Ess 1
 type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Social
-dur: One Scene
+dur: One scene
 dep: exc
 text: As Malaclypse the Younger himself said, "Even false things are true."  Fully internalising this understanding allows a Priest of Eris to conceive and to utter both truth and falsehood with equal conviction.
 
@@ -55,6 +55,18 @@ This Charm allows the character to make any statements while temporarily holding
 Social combat is affected while this Charm is active, in that a character may choose to use Charisma where Manipulation would normally apply, and vice versa, at any time.
 
 [TODO: Something about subverting mental influence?]
+
+
+name: sdi, Scrutiny-Deflecting Insight
+cost: 6m
+mins: Inv 3, Ess 2
+type: Reflexive
+key: Combo-OK, Social
+dur: One scene
+dep: eft
+text: TODO
+
+Activating this Charm allows a character to read past the expressions and words of anyone who is questioning her, letting her know exactly what to say to direct attention away from herself.  While the Charm is active, listeners suffer a penalty equal to (character's Essence) to their Dodge and Parry MDVs whenever she uses a social attack or defense to attempt to make herself seem irrelevant to a line of investigation, or innocent of some transgression.  With a suitable stunt she may even apply this penalty to attempts to shift interest to or cast suspicion on someone else.
 
 
 name: pds, Pattern-Disturbance Sense
@@ -73,7 +85,7 @@ Mundane attempts at concealment are useless against this Charm.  If some superna
 
 name: kna, Knot and Needle*Awareness
 cost: 6m
-mins: Inv 4, Ess 2
+mins: Inv 4, Ess 3
 type: Reflexive
 key: Combo-OK
 dur: Instant

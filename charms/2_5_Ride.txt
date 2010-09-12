@@ -1,3 +1,7 @@
+name: intro, .
+text: TODO: Maybe some of the "taking over a creature" Charms here should be merged, becoming either sub-Charms which can be purchased for half-a-Charm cost (like some Solar Archery ones), or they should be extra powers which open up at higher Essence.  
+
+
 name: exc, (Any Ride*Excellency)
 dep: 
 text: 

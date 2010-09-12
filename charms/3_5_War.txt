@@ -1,11 +1,28 @@
+name: exc, (Any War*Excellency)
+dep: 
+text: 
+
+
 name: sin, Strength in Numbers
+cost: 10m, 1wp
+mins: War 3, Ess 4
+type: Simple
+key: Combo-OK, Shaping, Social, War
+dur: One scene
+dep: 
+text: TODO
+
+This Charm temporarily increases the Magnitude, Might and Drill of a unit by 1, each to a maximum of (character's Essence).  The Exalt need not be a member of the unit, but it must be within line of sight.  In a Social context, this Charm operates on a social unit, and increases Valor and Loyalty in place of Might and Drill.  The additional individuals required to increase the Magnitude are created as a temporary Shaping effect, twisting the fabric of reality to cause extra points of agency to appear.  They appear as normal for the group, but are unreal, soulless beings, similar to those produced by the Wyld-shaping Charms.
+
+
+name: gru, Grass Rises Up
 cost: 10m + (1wp per individual)
-mins: Survival 4, Ess 3
+mins: War 4, Ess 3
 type: Simple (Dramatic Action)
 key: Combo-OK
 dur: One day
 dep: 
 text: 
 
-This Charm allows the character to travel great distances quickly, but with pecu
+TODO
 

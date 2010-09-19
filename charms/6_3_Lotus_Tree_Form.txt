@@ -1,0 +1,158 @@
+name: intro, .
+text: The origins of the Lotus Tree Form are obscure.  Forming a bridge between the Terrestrial and Celestial arts for Dragon-Blooded warriors, it is clearly intended for their use.  Yet it bypasses the path of Pasiap's Humility and, while not explicitly heretical, its philosophical focus on a personal connection to higher powers doesn't sit comfortably with Immaculate teachings.  Some bronze faction Sidereals suspect their Solar-loving adversaries have developed it to undermine the Immaculate faith, while correspondingly some members from other factions see it as yet another bronze mechanism of reward and control.  Those less obsessed with factions worry that it might have come from some other source altogether.  In any case, it has so far been learned by only a few of the more esoterically-inclined Immaculates, and a slightly larger number of Outcaste martial artists.
+
+The character must choose any one kind of non-ranged weapon when she begins to learn this style: that becomes its form weapon for her.  All other non-ranged weapons weapons may also be used with this style, including improvised weapons.  However, they do not count as form weapons, suffer an Accuracy penalty of -2 (to a minimum of -3), and their damage bonus is halved.  Initially, characters may not practice this style while wearing armor.
+
+When she learns Will-and-Wisdom Unity, the character may choose another non-ranged weapon type to become an additional form weapon.  Additionally, she becomes able to wear armor while practising this style.
+
+
+name: malkhut, Ruler of Passions*Nature
+cost: --
+mins: Martial Arts 1, Ess 1
+type: Permanent
+key: None
+dur: Permanent
+dep: 
+text: Mastery of the Martial Arts requires discipline, but the path is not found by repressing one's natural impulses, rather by focussing them.  The student acknowledges her passions, and begins to see how to open them up to inspiration from higher powers.
+
+The character may channel a Virtue on Martial Arts actions without spending a point of Willpower.  He still has a limited number of channels to use within each story, however.
+
+
+name: yesod, Abiding Foundation Stance
+cost: 1+m
+mins: Martial Arts 2, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: Instant
+dep: malkhut
+text: Higher powers are all very well, but a student of the Martial Arts needs a firm foundation in the physical realm, if she is to apply her blows effectively.
+
+For the cost of one mote, the character may activate this Charm to ignore any single, non-magical effect which would cause knockdown, knockback, or otherwise move her.  If the effect is magical, the cost rises to a number of motes equal to the attacker's Essence.  Against effects from beings whose Essence is greater than the character's own Essence, the character must make a successful Valor roll, or this Charm fails.
+
+
+name: hod, Suffering-the-Wicked Stance
+cost: 3m
+mins: Martial Arts 2, Ess 2
+type: Supplemental
+key: Combo-OK
+dur: One action
+dep: yesod
+text: One who fights from the heart as much as with his fists understands that he may defeat an enemy in many ways; for example, by convincing him of the error of his ways.
+
+This Charm may be used to supplement any Martial Arts action in which the character does not attack or counterattack, and calls or gestures for an end to combat.  If anyone attacks him in that action, successfully or not, he gains a bonus of (Temperance) dice against them on his next action.  If nobody attacks him, he will be at an internal penalty of -(Temperance) to any attacks he makes on his following action.
+
+
+name: netzah, Firm Hand of Kindness
+cost: 3m
+mins: Martial Arts 2, Ess 2
+type: Supplemental
+key: Combo-OK, Knockback
+dur: Instant
+dep: yesod
+text: If your enemy does not see that she is in the wrong, then to strike her down is a kindness, for surely she must learn this.
+
+The character supplements his attack with this Charm, giving it the Knockback keyword.  For the purposes of the Knockback check, he adds his Compassion in dice to its damage, and adds (Compassion ÷ 2), rounded up, to the difficulty of the target's roll.  If the target is knocked back, the distance is doubled.  No damage is taken, from the attack or from impact with objects, and this Charm cannot be used if the character has reason to believe that the Knockback will leave the target in greater danger (for example, by knocking them off the edge of a cliff).  The target is stunned as normal, if knocked back.
+
+
+name: tiferet, Lotus Tree Form
+cost: 5m
+mins: Martial Arts 3, Ess 3
+type: Simple
+key: Form-type
+dur: One scene
+dep: hod, yesod, netzah
+text: Experience can be its own reward, if one learns from one's failures; but sometimes warriors and heroes are blessed with greater rewards.  Whether this is pure luck, the meddling of the Maidens, or some twist of the fabric of reality, who can say?  And, really, who would stop to ask?
+
+Activating this Form, the character performs a ritual survey of the world, preparing himself to learn from all that happens: he looks all around himself, then down at his own hands and feet, then within himself, and lastly into the eyes of his opponents.
+
+If the character possesses any Charms or innate effects which allow dice to be re-rolled (for example, a Third Excellency), their cost is reduced to half its normal value, rounded up, when used with a Martial Arts action.  If not, the character is treated as having a Charm equivalent to the Third Martial Arts Excellency for their Exalted type, or equivalent to the Solar Excellency if they are not Exalted or their Exalted type has no comparable Charm.  In any case, such re-roll Charms may be used in combination with any others, without the need for a Combo.
+
+Also, any time the character successfully attacks a target, and his most recent attack (or counterattack) against that character failed, he regains 2 motes, in addition to any stunt bonuses.
+
+Lastly, the first time a character would be reduced to Incapacitated or Dying in that scene, he or she instead remains on one -4 health level.
+
+
+name: gevurah, Righteous Judgement Mien
+cost: 4m
+mins: Martial Arts 3, Ess 3
+type: Simple
+key: Combo-OK, Compulsion
+dur: (Essence) actions
+dep: hod, tiferet
+text: If his enemies try the patience of the martial artist too greatly, he may unwilling to teach them lessons, or even allow them into his presence.  With a forbidding glance of righteousness, the budding master warns off those who offend him.
+
+This Charm lays a Compulsion on anyone who would attack the character, requiring them to achieve at least one success on a reflexive Willpower check.  Those who fail cannot attack or approach the character for that action, though they may check again next action.  Those who succeed may do so, and need not check again for the duration of the Charm, but act against the character at an external penalty equal to the character's Martial Arts rating.
+
+A target may spend one point of Willpower to resist this unnatural mental influence, and that resistance lasts until the end of the scene.  The effect ends prematurely, for an individual target, if the character attacks that target; this alone does not prevent them being subject to the effect again later in the scene, however.
+
+
+name: hesed, Unstudied Might Technique
+cost: 4m
+mins: Martial Arts 3, Ess 3
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: tiferet, netzah
+text: The principle of charity, whereby love and help are given regardless of the recipients merits, has an analog in the world of combat.  Driving her strikes from the center of her own being, regardless of an opponent's actions, she makes it much more difficult for anyone to predict what she will do.
+
+This Charm supplements a Martial Arts attack, allowing the character to treat it as an ambush, even if battle is already in progress.  Roll the attacker's (Dexterity + [higher of Stealth or Martial Arts]) against the victim's (Wits + Awareness).  The target does not gain the normal 1-die bonus for being actively wary, even if currently fighting the character.  If the character succeeds, her attack is unexpected; if not, the target is still at a -2 DV penalty, to a minimum of 1, against that attack.  However, if the character botches the roll, she herself is at a -2 DV penalty, to a minimum of 0, for that action.
+
+
+name: daat, Will-and-Wisdom Unity
+cost: 5m, 1wp
+mins: Martial Arts 4, Ess 3
+type: Simple
+key: Combo-Basic, Enlightening
+dur: One scene
+dep: gevurah, tiferet, hesed
+text: As the martial artist truly begins to master this form, he reaches a higher level of understanding.  He perceives all the principles of the tree as a unity, and knows how to apply a higher level of power to achieve his goals.
+
+For the rest of the scene, after the action which includes the activaton of this Charm, the character may spend one Willpower to activate any number of non-Form-type Charms of this form together, or in combination with any one other Charm, without the need for the Charms of this form to be in a Combo.  Non-Form-type Charms of this form may be used with an existing Combo, in which case no additional Willpower cost is incurred, beyond the cost to activate the Combo.
+
+Additionally, the character may pay 2 motes to add a number of dice equal to his Conviction to a roll for any Martial Arts action which directly supports his Motivation, or 3 motes for any which protects one of his Intimacies.  This does not use up a channel of that Virtue.
+
+Merely learning this Charm has benefits in itself.  Any practitioner of this style may choose an additional non-ranged form weapon when first she learns it.  Once she knows this Charm, a character may wear armor while practising this style.  Dragon-Blooded who learn this Charm gain access to Celestial martial arts, including the rest of this style.  Mortals are not enlightened by learning this Charm, however.
+
+
+name: binah, Hand-and-Foot Reflection
+cost: 8m, 1wp
+mins: Martial Arts 4, Ess 4
+type: Simple
+key: Combo-Basic, Counterattack
+dur: One scene
+dep: gevurah, daat
+text: Though the pinnacle of mastery may be some kind of union with a higher reality, those who remain in this one must apply what flashes of understanding they gain to the battles in which they find themselves.
+
+With this Charm active, the martial artist sees the actions and reactions of combat play out clearly in his mind, that awareness flowing effortlessly into his body.  Any unexpected attacks against him are no longer unexpected.  The character gains an automatic counterattack for any successful attack against him.  Such counterattacks are not subject to any penalties due to the attacker being concealed, invisible or immaterial.  This Charm itself does not grant the ability to strike immaterial beings, nor does it remove penalties against concealed foes except when counterattacking.  This Charm does not grant its benefits if the character is Incapacitated, asleep or similarly unable to observe and act.
+
+Only characters who have access to Celestial martial arts can learn this Charm.
+
+
+name: hokhmah, Unfolding Soul Panoply
+cost: (5m or 9m), 1wp
+mins: Martial Arts 4, Ess 4
+type: Simple
+key: Combo-Basic, Obvious
+dur: One scene
+dep: daat, hesed
+text: Opening herself up to raw, pre-conscious insight, the martial artist gains access to the creative power of the energies underlying reality.
+
+This Charm forms raw Essence into one of the character's form weapons, which will have some iconic appearance related to the his personal nature.  This weapon acts as a basic artifact version of the relevant weapon, with no hearthstone settings and with magical material bonuses appropriate to the character's Exalted type (if any).  The character can reflexively change its manifestation between her two form weapons at any time.  If he acutally wields a corresponding form weapon in the same hand(s), that weapon gains +1 to Accuracy, Defense and Damage.  In any case, disarming him becomes impossible.  Two-handed or paired weapons incur a four-mote surcharge.  The weapon is able to strike immaterial creatures, though this Charm does not grant the ability to see such beings.
+
+Only characters who have access to Celestial martial arts can learn this Charm.
+
+
+name: keter, Roots Reach to Heaven
+cost: --
+mins: Martial Arts 5, Ess 4
+type: Permanent
+key: None
+dur: Permanent
+dep: binah, daat, hokhmah
+text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply it unconsciously, her faith in higher powers rewarded with a direct connection.
+
+After learning this Charm, all Simple Charms in this form become Reflexive, and all Charms with the Combo-Basic keyword change to Combo-OK.  Any pre-existing Combos involving Combo-Basic Charms from this form may be extended to include other Charms, by paying the difference in experience.  This extension may only be carried out once per Combo.
+
+Also, the character may reflexively spend 1 Willpower at any point in a scene, after which all Charms in this form have their mote cost reduced by 1, to a minimum of 1.
+
+Only characters who have access to Celestial martial arts can learn this Charm.

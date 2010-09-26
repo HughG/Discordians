@@ -1,10 +1,10 @@
 name: intro, .
-text: The origins of the Lotus Tree Form are obscure.  Forming a bridge between the Terrestrial and Celestial arts for Dragon-Blooded warriors, it is clearly intended for their use.  Yet it bypasses the path of Pasiap's Humility and, while not explicitly heretical, its philosophical focus on a personal connection to higher powers doesn't sit comfortably with Immaculate teachings.  Some bronze faction Sidereals suspect their Solar-loving adversaries have developed it to undermine the Immaculate faith, while correspondingly some members from other factions see it as yet another bronze mechanism of reward and control.  Those less obsessed with factions worry that it might have come from some other source altogether.  In any case, it has so far been learned by only a few of the more esoterically-inclined Immaculates, and a slightly larger number of Outcaste martial artists.
+text: The Lotus Tree Form focuses on increasing the martial artist's fighting prowess by bringing him to a higher understanding of how his base, mortal nature is derived from the underlying nature of Creation, which connects him to higher powers and to everything around him, including those he fights.
 
-The character must choose any one kind of non-ranged weapon when she begins to learn this style: that becomes its form weapon for her.  All other non-ranged weapons weapons may also be used with this style, including improvised weapons.  However, they do not count as form weapons, suffer an Accuracy penalty of -2 (to a minimum of -3), and their damage bonus is halved.  Initially, characters may not practice this style while wearing armor.
+The origins of this form are obscure.  Forming a bridge between the Terrestrial and Celestial arts for Dragon-Blooded warriors, it is clearly intended for their use.  Yet it bypasses the path of Pasiap's Humility and, while not explicitly heretical, its philosophical focus on a personal connection to higher powers doesn't sit comfortably with Immaculate teachings.  Some bronze faction Sidereals suspect their Solar-loving adversaries have developed it to undermine the Immaculate faith, while correspondingly some members from other factions see it as yet another bronze mechanism of reward and control.  Those less obsessed with factions worry that it might have come from some other source altogether.  In any case, it has so far been learned by only a few of the more esoterically-inclined Immaculates, and a slightly larger number of Outcaste martial artists.
 
-When she learns Will-and-Wisdom Unity, the character may choose another non-ranged weapon type to become an additional form weapon.  Additionally, she becomes able to wear armor while practising this style.
-
+Ths style weapons of this form are those worn closest to the body: fighting gauntlets and boots, including tiger claws, and certain close-combat enhancement such as razor harnesses.  The style is compatible with light armor.
+				   
 
 name: malkhut, Ruler of Passions*Nature
 cost: --
@@ -15,31 +15,35 @@ dur: Permanent
 dep: 
 text: Mastery of the Martial Arts requires discipline, but the path is not found by repressing one's natural impulses, rather by focussing them.  The student acknowledges her passions, and begins to see how to open them up to inspiration from higher powers.
 
-The character may channel a Virtue on Martial Arts actions without spending a point of Willpower.  He still has a limited number of channels to use within each story, however.
+When purchasing this Charm, the character chooses an existing Intimacy, which is at full strength (equal to his Conviction).  Thereafter, they may channel this Intimacy as if it were a Virtue, though only on Martial Arts actions which support that Intimacy.  As with Virtues, each use reduces the number of channels by one, until they are refreshed at the end of the story.  Each time the character channels this Intimacy, it counts as a scene spent reinforcing that Intimacy, if applicable, though this never increases the number of channels available.
+
+If the Intimacy is broken, the character may rebuild it and continue to use this Charm, or spend 2xp to transfer it to another Intimacy.  If the Intimacy is somehow corrupted or otherwise changed, the Charm remains connected to that Intimacy, unless and until it is broken and the character pays experience to transfer it.
 
 
 name: yesod, Abiding Foundation Stance
-cost: 1+m
+cost: 2+m
 mins: Martial Arts 2, Ess 2
-type: Reflexive
+type: Reflexive (Step 10)
 key: Combo-OK
 dur: Instant
 dep: malkhut
 text: Higher powers are all very well, but a student of the Martial Arts needs a firm foundation in the physical realm, if she is to apply her blows effectively.
 
-For the cost of one mote, the character may activate this Charm to ignore any single, non-magical effect which would cause knockdown, knockback, or otherwise move her.  If the effect is magical, the cost rises to a number of motes equal to the attacker's Essence.  Against effects from beings whose Essence is greater than the character's own Essence, the character must make a successful Valor roll, or this Charm fails.
+For the cost of two motes, the character may activate this Charm to ignore any single, non-magical effect which would cause knockdown, knockback, or otherwise move her.  If the effect is magical, the cost increases by a number of motes equal to the attacker's Essence.  Against effects from beings whose Essence is greater than the character's own Essence, she must succeed on a Valor roll, or else this Charm fails.
 
 
 name: hod, Suffering-the-Wicked Stance
 cost: 3m
 mins: Martial Arts 2, Ess 2
-type: Supplemental
+type: Reflexive
 key: Combo-OK
 dur: One action
 dep: yesod
-text: One who fights from the heart as much as with his fists understands that he may defeat an enemy in many ways; for example, by convincing him of the error of his ways.
+text: One who fights from the heart as much as with his fists understands that he may defeat an enemy by many means.  Sometimes, it is enough to convince one's opponent of the error of his ways, and shame him into stepping down.
 
-This Charm may be used to supplement any Martial Arts action in which the character does not attack or counterattack, and calls or gestures for an end to combat.  If anyone attacks him in that action, successfully or not, he gains a bonus of (Temperance) dice against them on his next action.  If nobody attacks him, he will be at an internal penalty of -(Temperance) to any attacks he makes on his following action.
+This Charm is used in an attempt to end combat.  The character may use it in any action on which he calls on his opponents to stop fighting, provided he is making an honest attempt to bring hostilies to a halt.  The Charm cannot be used if he has attacked or counterattack on that action (though he may defend), or believes that any allies of his will ignore his call for truce.  If anyone attacks him in that action, successfully or not, he gains a bonus of (Temperance) dice to any attacks against them on his next action.  If nobody attacks him, but he goes back on his word and attacks on his next action, such attacks will be at an internal penalty of -(Temperance), due to shame at failing to live up do his own standards of integrity.
+
+This Charm is specifically permitted to be used in a Combo with Charms from other Abilities.  For example, it might be used with a Presence-based Charm to lend weight to the charater's plea.
 
 
 name: netzah, Firm Hand of Kindness

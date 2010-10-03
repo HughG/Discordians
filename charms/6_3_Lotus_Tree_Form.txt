@@ -72,9 +72,9 @@ text: Experience can be its own reward, if one learns from one's failures; but s
 
 Activating this Form, the character performs a ritual survey of the world, preparing himself to learn from all that happens: he looks all around himself, then down at his own hands and feet, then within himself, and lastly into the eyes of his opponents.
 
-If the character possesses any Charms or innate effects which allow dice to be re-rolled (for example, a Third Excellency), their cost is reduced to half its normal value, rounded up, when used with a Martial Arts action.  If not, the character is treated as having a Charm equivalent to the Third Martial Arts Excellency for their Exalted type, or equivalent to the Solar Excellency if they are not Exalted or their Exalted type has no comparable Charm.  In any case, such re-roll Charms may be used in combination with any others, without the need for a Combo.
+While this Charm is active, attacks which are made in earnest, but fail, attract the benificence of some higher power to give the martial artist a chance to survive longer and try again.  If an attack fails to hit an opponent at all, the next time the character defends against an attack, he adds (Martial Arts ÷ 2) to his Dodge and Parry DV.  If instead his attack hits, but does no damage due to the opponent's Hardness or Soak, his next defence gains the bonus of (Martial Arts ÷ 2) to his bashing and lethal soak, as well as to his DVs.
 
-Also, any time the character successfully attacks a target, and his most recent attack (or counterattack) against that character failed, he regains 2 motes, in addition to any stunt bonuses.
+If the character makes a flurry of attacks, and only some fail, then each separate failure grants bonuses against one separate subsequent attack.  [TODO: Not sure if these bonuses should go away at the start of the character's next action, i.e., when his DV refreshes.]
 
 Lastly, the first time a character would be reduced to Incapacitated or Dying in that scene, he instead remains on one -4 health level.
 

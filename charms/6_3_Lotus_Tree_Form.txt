@@ -47,7 +47,7 @@ This Charm is specifically permitted to be used in a Combo with Charms from othe
 
 
 name: netzah, Firm Hand of Kindness
-cost: 3m
+cost: 2m
 mins: Martial Arts 2, Ess 2
 type: Supplemental
 key: Combo-OK, Knockback
@@ -55,7 +55,10 @@ dur: Instant
 dep: yesod
 text: If your enemy does not see that she is in the wrong, then to strike her down is a kindness, for surely she must learn this.
 
-The character supplements his attack with this Charm, giving it the Knockback keyword.  For the purposes of the Knockback check, he adds his Compassion in dice to its damage, and adds (Compassion ÷ 2), rounded up, to the difficulty of the target's roll.  If the target is knocked back, the distance is doubled.  No damage is taken, from the attack or from impact with objects, and this Charm cannot be used if the character has reason to believe that the Knockback will leave the target in greater danger (for example, by knocking them off the edge of a cliff).  The target is stunned as normal, if knocked back.
+The character supplements his attack with this Charm, sending his opponent flying and redirecting any wounding force into this effort.  On a successful attack, the target takes no damage but must make a check against Knockback.  The attacker still makes a damage roll, ignoring Hardness.  Any unsoaked levels of damage are treated instead as an internal penalty to the Knockback check.  If the target fails the check, the distance they travel is multiplied by the character's
+Compassion, and they must check for Stunning using the unsoaked damage value calculated.
+
+The martial artist cannot activate this Charm if he believes that the Knockback will leave the target in greater danger (for example, knocking them towards an ally of the character, or off the edge of a cliff).
 
 
 name: tiferet, Lotus Tree Form
@@ -73,33 +76,33 @@ If the character possesses any Charms or innate effects which allow dice to be r
 
 Also, any time the character successfully attacks a target, and his most recent attack (or counterattack) against that character failed, he regains 2 motes, in addition to any stunt bonuses.
 
-Lastly, the first time a character would be reduced to Incapacitated or Dying in that scene, he or she instead remains on one -4 health level.
+Lastly, the first time a character would be reduced to Incapacitated or Dying in that scene, he instead remains on one -4 health level.
 
 
 name: gevurah, Righteous Judgement Mien
 cost: 4m
 mins: Martial Arts 3, Ess 3
-type: Simple
-key: Combo-OK, Compulsion
+type: Reflexive (Step 2)
+key: Combo-OK, Emotion
 dur: (Essence) actions
 dep: hod, tiferet
-text: If his enemies try the patience of the martial artist too greatly, he may unwilling to teach them lessons, or even allow them into his presence.  With a forbidding glance of righteousness, the budding master warns off those who offend him.
+text: If his enemies try the patience of the martial artist too greatly, he may be unwilling to teach them lessons, or even allow them into his presence.  With a harsh glance of contempt, the budding master warns off those who offend him.
 
-This Charm lays a Compulsion on anyone who would attack the character, requiring them to achieve at least one success on a reflexive Willpower check.  Those who fail cannot attack or approach the character for that action, though they may check again next action.  Those who succeed may do so, and need not check again for the duration of the Charm, but act against the character at an external penalty equal to the character's Martial Arts rating.
+This Charm evokes feelings of shame and inadequacy in any who would attack or approach the character, or simply look him in the eyes.  Anyone who can perceive the martial artist and has a Dodge MDV less than his (Willpower + Martial Arts) suffers an internal penalty equal to his (Willpower ÷ 2) to any actions which include an attack on or motion toward him.
 
-A target may spend one point of Willpower to resist this unnatural mental influence, and that resistance lasts until the end of the scene.  The effect ends prematurely, for an individual target, if the character attacks that target; this alone does not prevent them being subject to the effect again later in the scene, however.
+If the character attacks a given opponent, any penalty imposed by this Charm is immediately removed for that opponent.  Furthermore, an opponent may pay 1wp to overcome this effect for the remainder of the scene.
 
 
 name: hesed, Unstudied Might Technique
-cost: 4m
+cost: 3m
 mins: Martial Arts 3, Ess 3
 type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: tiferet, netzah
-text: The principle of charity, whereby love and help are given regardless of the recipients merits, has an analog in the world of combat.  Driving her strikes from the center of her own being, regardless of an opponent's actions, she makes it much more difficult for anyone to predict what she will do.
+text: The principle of charity, whereby love and help are given regardless of the recipients merits, has an analog in the world of combat.  Driving her strikes from the center of her own being, regardless of an opponent's actions, she makes it much more difficult for anyone to predict, and hence defend against, her actions.
 
-This Charm supplements a Martial Arts attack, allowing the character to treat it as an ambush, even if battle is already in progress.  Roll the attacker's (Dexterity + [higher of Stealth or Martial Arts]) against the victim's (Wits + Awareness).  The target does not gain the normal 1-die bonus for being actively wary, even if currently fighting the character.  If the character succeeds, her attack is unexpected; if not, the target is still at a -2 DV penalty, to a minimum of 1, against that attack.  However, if the character botches the roll, she herself is at a -2 DV penalty, to a minimum of 0, for that action.
+This Charm supplements a Martial Arts attack, imposing an external penalty on the opponent's Parry and Dodge DV equal to the character's Martial Arts rating.  If the chracter is attempting an unexpected attack, add (Martial Arts) dice to the (Dexterity + Stealth) roll.  If the victim notices the attack, he or she still suffers a DV penalty as before.
 
 
 name: daat, Will-and-Wisdom Unity
@@ -109,13 +112,13 @@ type: Simple
 key: Combo-Basic, Enlightening
 dur: One scene
 dep: gevurah, tiferet, hesed
-text: As the martial artist truly begins to master this form, he reaches a higher level of understanding.  He perceives all the principles of the tree as a unity, and knows how to apply a higher level of power to achieve his goals.
+text: As the martial artist truly begins to master this form, he begins to sense the bridge between the simple forms of reality and the underlying Essence which forms it.
 
-For the rest of the scene, after the action which includes the activaton of this Charm, the character may spend one Willpower to activate any number of non-Form-type Charms of this form together, or in combination with any one other Charm, without the need for the Charms of this form to be in a Combo.  Non-Form-type Charms of this form may be used with an existing Combo, in which case no additional Willpower cost is incurred, beyond the cost to activate the Combo.
+He becomes able to see the Essence signature of all beings within a range of (Martial Arts + Essence) yards.  This allows him to see immaterial beings, and grants a +2 bonus to any applicable rolls to perceive hidden or invisible beings.  It does not allow him to see through walls or full cover.  It also allows him to strike immaterial beings, albeit at a -2 penalty to accuracy and damage.
 
-Additionally, the character may pay 2 motes to add a number of dice equal to his Conviction to a roll for any Martial Arts action which directly supports his Motivation, or 3 motes for any which protects one of his Intimacies.  This does not use up a channel of that Virtue.
+From the Essence patterns he observes, the master will understand whether a being is significantly more or less powerful than himself, but will gain no other information.
 
-Merely learning this Charm has benefits in itself.  Any practitioner of this style may choose an additional non-ranged form weapon when first she learns it.  Once she knows this Charm, a character may wear armor while practising this style.  Dragon-Blooded who learn this Charm gain access to Celestial martial arts, including the rest of this style.  Mortals are not enlightened by learning this Charm, however.
+Dragon-Blooded who learn this Charm gain access to Celestial martial arts, including the rest of this style.  Mortals are not enlightened by learning this Charm, however, and may not progress beyond it in this style.
 
 
 name: binah, Hand-and-Foot Reflection

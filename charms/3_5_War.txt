@@ -1,28 +1,61 @@
+name: intro, .
+text: Other ideas:
+
+Something to wrest/delegate control of an enemy unit.
+
+Something to convince another unit that some other unit is their enemy.
+
+Act as if Formation were different?  Switch Formation rapidly?  Pass through other units without engaging?
+
+Remove/add terrain penalties?
+
+Counterattack
+
+Read/tweak opponent's strategy, to remove external penalties due to their actions.
+
+
 name: exc, (Any War*Excellency)
 dep: 
 text: 
 
 
+name: flt, Friends Like These
+cost: 6m; or 6m, 1wp
+mins: War 2, Ess 2
+type: Simple (Speed 5 in long ticks)
+key: Combo-OK, Illusion, Social, War
+dur: Indefinite
+dep: 
+text: TODO
+
+Instructing troops or comrades to avoide hostile or suspicious actions, the Discordian attempts to persuade enemy units that his own unit is not a threat.  He rolls ([Charisma, Manipulation or Wits] + [War or Socialize, as applicable]) and compares the total against the Parry MDV of the commander of any enemy unit he encounters (using War or Socialize as the relevant ability, as applicable).  As long as his unit does not attack, and is not observed taking opposing actions (such as sapping, theft of resources, poisoning of supplies etc.), enemy units whose Parry MDV is less than the total rolled by the Taskmaster will believe that it is not appropriate to attack, detain or otherwise or oppose his unit.  The character can choose to spend a point of Willpower on the Charm to give it the Illusion keyword, in which case it becomes unnatural mental influence, and succeeds automatically against each enemy unit encountered, unless that unit's leader spends a point of Willpower to resist.
+
+The Charm's effects end immediately if the unit becomes engage in open hostilities.  If they are observed undertaking sabotage or similar indirect attacks, the effect ends only against those units with members who observe them.  The Exalt need not be the leader of a unit to employ this Charm, but he must be able to persuade its members to avoide hostilities.
+
+
 name: sin, Strength in Numbers
-cost: 10m, 1wp
-mins: War 3, Ess 4
-type: Simple
+cost: 6m; or 10m, 1wp
+mins: War 3, Ess 3
+type: Simple (Speed 5 in long ticks)
 key: Combo-OK, Shaping, Social, War
 dur: One scene
 dep: 
 text: TODO
 
-This Charm temporarily increases the Magnitude, Might and Drill of a unit by 1, each to a maximum of (character's Essence).  The Exalt need not be a member of the unit, but it must be within line of sight.  In a Social context, this Charm operates on a social unit, and increases Valor and Loyalty in place of Might and Drill.  The additional individuals required to increase the Magnitude are created as a temporary Shaping effect, twisting the fabric of reality to cause extra points of agency to appear.  They appear as normal for the group, but are unreal, soulless beings, similar to those produced by the Wyld-shaping Charms.
+This Charm temporarily increases the Might and Drill of a unit by 1, each to a maximum of (character's Essence).  The Exalt need not be a member of the unit, but it must be within line of sight.  In a Social context, this Charm operates on a social unit, and increases Valor and Loyalty in place of Might and Drill.
+
+At Essence 4, the Tower-Builder may spend an additional 4 motes and 1 point of Willpower to increase the Magnitude of the unit, as well as the Might and Drill.  In this case, the increases are not capped by the character's Essence.  The additional individuals required are created as a temporary Shaping effect, twisting the fabric of reality to cause extra points of agency to appear.  They appear as normal for the group, but are unreal, soulless beings, similar to those produced by Wyld-shaping magic.  This increase in Magnitude cannot be applied to solo units.  When the Charm's effect ends, the extra members of the unit vanish without a trace.
 
 
 name: gru, Grass Rises Up
-cost: 10m + (1wp per individual)
+cost: 4m, 1wp
 mins: War 4, Ess 3
-type: Simple (Dramatic Action)
-key: Combo-OK
-dur: One day
-dep: 
-text: 
+type: Simple (Speed 5 in long ticks)
+key: Combo-OK, War
+dur: Indefinite
+dep: flt
+text: TODO
 
-TODO
+This Charm enhances the ability of a unit to conceal itself.  Before war is joined, it adds a bonus of (Essence ÷ 2) to attempts to establish an ambush.  During combat it constitutes an action to re-establish surprise, provided the unit is not engaged with any enemy units and can remain unobserved by the unit(s) it wishes to surprise for at least 1 long tick.  In either case, the Charm removes any penalties due to lack of appopriate cover (making the action possible even in the complete absence of cover).  If the unit finds cover, any DV bonuses against ranged attaks provide equivalent bonuses to rolls against enemy units' (Perception + Awareness).  Given even the slightest cover, the unit may also move while concealed, but at no more than a third of its normal movement rate.  Each such Move action prompts another (Perception + Awareness) roll from any possible observers, giving them a +2 bonus. 
 
+The Charm's effect ends as soon as the concealed unit makes an attack.  The character may end the Charm's effect early, for example, once the unit is concealed behind suitable cover.  Doing so removes any bonuses from the Charm but does not automatically end the concealment, nor does it prompt another (Perception + Awareness) roll from observers.

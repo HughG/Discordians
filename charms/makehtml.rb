@@ -8,36 +8,35 @@ def insert_charm(out, charm)
   $stderr << '  ' << charm['name'] << "\n"
 
   return if charm['name'][0] == '('[0]
-  if charm['name'] == '.'
-    charm['text'].each { |para|
-      out.print("<p>#{para}</p>\n")
-    }
-    return
+  if charm['name'] != '.'
+    out.print("<h3>#{charm['name']}</h3>\n<p>")
+    out.print("<b>Cost:</b> #{charm['cost']}; ")
+    out.print("<b>Mins:</b> #{charm['mins']}; ")
+    out.print("<b>Type:</b> #{charm['type']}<br/>")
+    out.print("<b>Keywords:</b> #{charm['key']}<br/>")
+    out.print("<b>Duration:</b> #{charm['dur']}<br/>")
+    out.print("<b>Prerequisite Charms:</b> ")
+    deps = charm['dep']
+    if deps.empty?
+      out.print("None")
+    else
+      first = true
+      charm['dep'].each { |dep_name|
+        if first
+          first = false
+        else
+          out.print(", ")
+        end
+        out.print(dep_name)
+      }
+    end
+    out.print("</p>\n")
   end
-
-  out.print("<h3>#{charm['name']}</h3>\n<p>")
-  out.print("<b>Cost:</b> #{charm['cost']}; ")
-  out.print("<b>Mins:</b> #{charm['mins']}; ")
-  out.print("<b>Type:</b> #{charm['type']}<br/>")
-  out.print("<b>Keywords:</b> #{charm['key']}<br/>")
-  out.print("<b>Duration:</b> #{charm['dur']}<br/>")
-  out.print("<b>Prerequisite Charms:</b> ")
-  deps = charm['dep']
-  if deps.empty?
-    out.print("None")
-  else
-    first = true
-    charm['dep'].each { |dep_name|
-      if first
-        first = false
-      else
-        out.print(", ")
-      end
-      out.print(dep_name)
-    }
-  end
-  out.print("</p>\n")
   charm['text'].each { |para|
+    if para[0..1] == "> "
+      para[0..1] = ""      
+      para = "<blockquote style='font-style: italic;'>" + para + "</blockquote>"
+    end
     out.print("<p>#{para}</p>\n")
   }
 end
@@ -59,7 +58,10 @@ def insert_file(out, file)
         id = name_split[0]
         name = name_split[1].tr('*', ' ')
         curr_charm = { "id" => id, "name" => name }
-        charm_names[id] = name.delete "()"
+        if name[0] == "("
+          name = name.delete "()"
+        end
+        charm_names[id] = name
         curr_charm["min_abil"] = ""
         curr_charm["min_ess"] = ""
         curr_charm["dep"] = []

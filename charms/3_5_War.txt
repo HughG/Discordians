@@ -30,7 +30,7 @@ dur: Indefinite
 dep: flt
 text: TODO
 
-The Bishop of Greyface calls out to a single group which opposes him, decrying some other group as a worse, mutual enemy.  He must share a language with the target group and be able to clearly describe the supposed new enemy, unless that enemy is within line of sight, in which case facial expressions and gesturing will suffice.
+A Knight of the Five-Sided Temple calls out to a single group which opposes him, decrying some other group as a worse, mutual enemy.  He must share a language with the target group and be able to clearly describe the supposed new enemy, unless that enemy is within line of sight, in which case facial expressions and gesturing will suffice.
 
 He rolls ([Charisma or Manipulation] + [War or Socialize, as applicable]) and compares the total against the Parry MDV of the leader of the target group (using War or Socialize as the relevant ability, as applicable).  If that Parry MDV is less than the total rolled by the Taskmaster, the target group will believe that they are not opposed to the character's group, but do oppose the indicated enemy.  The character's group need not attack the new enemy, though the target group is not compelled to do so either: they will not necessarily rush in as cannon fodder.
 
@@ -56,7 +56,7 @@ type: Simple (Speed 5 in long ticks)
 key: Combo-OK, War
 dur: One scene
 dep: exc, btt
-text: A Bishop of Greyface sees the systems around her clearly, reading in them patterns both hidden and unintended.  In large-scale combat this provides her with advantages in anticipating and interfering with an opponent's tactics.  As long as she keeps this Charm active, external penalties or difficulty modifiers due to the opposing units are reduced by her (Essence).  This does not directly affect attack and defence in most cases, since DV is not a penalty, but it may help in Morale or rout checks, for example.  Her unit also adds (Essence) dice to any opposed rolls when an enemy unit attempts an ambush or other unexpected attack.  Lastly, if she witnesses a coded signal between enemy units, she may make an (Intelligence + War) roll with a difficulty equal to the War rating of the signalling unit, to get the gist of the message; more successes will give a clearer understanding.
+text: A Overseer interprets the systems around her clearly, reading in them patterns both hidden and unintended.  In large-scale combat this provides her with advantages in anticipating and interfering with an opponent's tactics.  As long as she keeps this Charm active, external penalties or difficulty modifiers due to the opposing units are reduced by her (Essence).  This does not directly affect attack and defence in most cases, since DV is not a penalty, but it may help in Morale or rout checks, for example.  Her unit also adds (Essence) dice to any opposed rolls when an enemy unit attempts an ambush or other unexpected attack.  Lastly, if she witnesses a coded signal between enemy units, she may make an (Intelligence + War) roll with a difficulty equal to the War rating of the signalling unit, to get the gist of the message; more successes will give a clearer understanding.
 
 This Charm can be activated against only one enemy at a time.  That need not mean a single unit, since all the units under a given general will work together following some explicit pattern or inherent style.  As long as a number of units see themselves to be on the same side, activating this Charm against one makes it effective agianst all.  However, if two or more entirely separate powers take the field against the Bishop, she can use this Charm against the units of only one.  She may end the Charm at any time and re-activate against a different enemy.
 
@@ -68,7 +68,7 @@ type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, War
 dur: Instant
 dep: 
-text: Drawing on the flows and filaments of chaos in the heat of battle, the Authority instantly reshapes his unit to his liking.  Activating this Charm allows a unit of which he is a member to take a Change Formation, Turn, Split Unit or Merge Unit as a reflexive action with Speed 0, -0 DV.  For example, this allows a unit to apply the benefits of switching to Relaxed or Skirmish formation against an incoming ranged attack, before that attack is resolved.  If the character does not lead the unit, and the unit leader opposes the change, make an opposed (Charisma + War) roll between the character and the better of the unit's leader and its best relay.
+text: Drawing on the flows and filaments of chaos in the heat of battle, the Taskmaster instantly reshapes his unit to his liking.  Activating this Charm allows a unit of which he is a member to take a Change Formation, Turn, Split Unit or Merge Unit as a reflexive action with Speed 0, -0 DV.  For example, this allows a unit to apply the benefits of switching to Relaxed or Skirmish formation against an incoming ranged attack, before that attack is resolved.  If the character does not lead the unit, and the unit leader opposes the change, make an opposed (Charisma + War) roll between the character and the better of the unit's leader and its best relay.
 
 
 name: mlws, Marching-Like-Water System

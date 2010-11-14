@@ -6,13 +6,13 @@ text:
 name: teo, Third Eye Open
 cost: 1m
 mins: Awareness 3, Ess 1
-type: Supplemental
+type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: Instant
 dep: exc
 text: TODO
 
-This Charm supplements any action, removing all external penalties due to the character's senses being obscured. [RG: make clear this applies to most sensory penalties, to niche otherwise]
+This Charm supplements any action, removing all external penalties due to the character's senses being obscured.  This covers most sensory penalties, such as wearing a blindfold, acting in complete darkness, etc.  It does not apply to internal penalties such as blindness, however.
 
 
 name: etu, Expect the Unexpected

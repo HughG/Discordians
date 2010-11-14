@@ -20,7 +20,7 @@ The character may also apply this Charm to any reusable ammunition from an attac
 
 
 name: wwa, Witch Way Arrow
-cost: 3m
+cost: 4m
 mins: Arch 3, Ess 3
 type: Supplemental
 key: Combo-OK, Obvious
@@ -28,9 +28,8 @@ dur: Instant
 dep: exc, bbta
 text: It is hard to defend against things you cannot see or touch, even if you know they are coming.  The Invader of the Faith sends her shot on an esoteric curve through Elsewhere, reappearing at exactly the right time to strike the target.
 
-This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.
+This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness or soak due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It does not cause the attack to ignore natural soak, or soak added by Charms.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.
 
-[TODO: Should probably say it ignores soak from armor, too, in which case this is quite powerful, and should go up in cost.  Should clarify that it doesn't ignore natural or Charm-added soak.]
 
 name: sp, Suspended Perforation
 cost: 2m, 1wp
@@ -41,11 +40,9 @@ dur: Indefinite
 dep: wwa
 text: TODO
 
-This Charm supplements a character's Archery attack by suspending it within Elsewhere immediately after it is launched, ready to be resumed at a later point in time.  Step 1 of attack resolution is carried out, including any expenditure of motes for other Charms, but without naming a target.  The arrow, jet of flame or other projectile is fired but vanishes.  It remains Elsewhere as long as the character maintains the commitment of motes for this Charm, plus the mote cost of all other Charms, if used in a Combo.
+This Charm supplements a character's Archery attack by suspending it within Elsewhere immediately after he launches it, ready to be resumed at a later point in time.  Step 1 of attack resolution is carried out, including any expenditure of motes for other Charms, but without naming a target.  The arrow, jet of flame or other projectile is fired but vanishes.  It remains Elsewhere as long as the character maintains the commitment of motes for this Charm, plus the mote cost of all other Charms, if used in a Combo.  The character can store at most (Essence) projectiles in Elsewhere using this Charm.
 
-The motes may be released at any later point as a reflexive action, including as a counterattack, causing the attack to be resumed.  This does not count as a Charm use.  The character need not be wielding the weapon at the time, though they can still only choose a target which would be valid at the point when the motes are released.
-
-[TODO: Limit the number of stored attacks, e.g., to Essence.  Also, note that attacks released are not inherently unexpected.]
+The motes may be released at any later point as a reflexive action, including as a counterattack, causing the attack to be resumed.  This does not count as a Charm use.  The character need not be wielding the weapon at the time, though they can still only choose a target which would be valid at the point when the motes are released.  A slight disturbance in the air as the projectile reappears means that this Charm does not in itself make the attack unexpected.
 
 
 name: fr, Fletcher's Rejoinder
@@ -79,7 +76,7 @@ By spending a further 2 motes, the Discordian can also improvise any mundane sor
 
 
 name: fafa, Feathers and Fins Attack
-cost: 2m per attack
+cost: 3m per attack
 mins: Arch 3, Ess 2
 type: Extra Action
 key: Combo-OK
@@ -87,7 +84,7 @@ dur: Instant
 dep: sasa
 text: TODO
 
-This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 2 motes, including the first, and the character may make a number of attacks up to his permanent Essence, regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
+This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to (his permanent Essence), regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
 
 [TODO: Add more Discordian flavor/effects?]
 

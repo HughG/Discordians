@@ -9,13 +9,16 @@ MAINWIKI=charms_wiki.txt
 
 all: destdir $D/$(MAINFILE) $W/$(MAINWIKI)
 
-.PHONY: clean
+.PHONY: clean tmpclean
 
 clean:
-	-rm -rf $D
+	-rm -rf $D $W
 #	-rm*.png
 #	-rm *~
 #	-rm charms.html
+
+tmpclean:
+	-rm -rf ./*~ $D/*~ $W/*~
 
 destdir:
 	mkdir -p $D

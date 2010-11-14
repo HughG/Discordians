@@ -30,7 +30,7 @@ text: TODO
 
 [TODO: Should this cost more?]
 
-This Charm allows the Discordian to split herself into a number of physical duplicates, up to (Essence ÷ 2).  These duplicates share a single awareness, with each continually able to know what the others are perceiving, thinking and doing.  This spreading of identity imposes a -1 internal penalty on all actions.  The duplciates cannot share any magical equipment, although the Charm will copy mundane items carried on the character's person when it is activated. 
+This Charm allows the Discordian to split herself into a number of physical duplicates, up to (Essence ÷ 2).  These duplicates share a single awareness, with each continually able to know what the others are perceiving, thinking and doing.  This spreading of identity imposes a -1 internal penalty on all actions.  The duplicates cannot share any magical equipment, although the Charm will copy mundane items carried on the character's person when it is activated. 
 
 The duplicates have a single pool of motes of Essence, and that pool is refilled at the highest rate which any one of the copies can achieve.  Similarly they share a Willpower pool and channels of Virtues.  Each can operate independently, but in whenever one is activating a Charm or Combo, the others may not activate Charms other than Excellencies; similarly, only one at a time may perform a Numerology action.
 

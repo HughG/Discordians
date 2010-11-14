@@ -12,7 +12,7 @@ dur: Instant
 dep: exc
 text: TODO
 
-This Charm supplements any action, removing all external penalties due to the character's senses being obscured.
+This Charm supplements any action, removing all external penalties due to the character's senses being obscured. [RG: make clear this applies to most sensory penalties, to niche otherwise]
 
 
 name: etu, Expect the Unexpected
@@ -106,6 +106,8 @@ text: Those who are a Law Unto Themselves choose their own beliefs, though they 
 This Charm may be activated whenever the character is subject to an Illusion which she could resist in her current state.  Instead of resisting she thoroughly accepts it and, in doing so, is able to make it fully real.
 
 The local flows of Essence are Shaped to match it, to a radius of (Essence x 10) yards.  Anyone may then be affected by the content of the Illusion: weapons do real damage, bridges can be crossed, with mundane and magical effects using the traits of the Illusion's creator to determine their power (or the minimum trait values, if the creator does not meet them).  These changes disappear if the Illusion's creator ends the effect, or some other effect undoes the Shaping (which ends the Illusion also), or the character has another opportunity to resist the Illusion and successfully does so.  However, any consequential changes, such as damage, remain.
+
+[RG: this is a Shaping effect that can take place in Creation, and makes Shaping attacks and effects as dictated by the content of the Illusion.  An Illusion that mimics powerful Supernatural entities or phenomena will only generate effects mimicing that entity or phenomena's effects to the extent that a Shaping action would be able to do so.  The user of this Charm has special protection form these effects, nor control over them, she simply allows for Shaping effects to reinforce whatever the Illusion would otherwise appear to do]
 
 [TODO: How should this affect the Wyld?]
 

@@ -40,7 +40,7 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack, Illusion, Social
 dur: Instant
 dep: umd
-text: To attempt to twist the minds of those who make up the Unbending Arm is foolish indeed.  This Charm allows the character to perfectly defend against any form of natural or unnatural mental influence which bypasses his defenses.  He will gain a vague impression of the intended influence, but not the details.  Furthermore, as a counterattack, the originator of the effect will herself be subjected to an Illusion causing her to believe that her attack was successful.  The Illusion lasts as long as the original effect would have, and may be resisted on the same terms as the original effect.  Since this Charm involves both resisting and imposing mental influence at the same time, the character gains a point each of both Hodge and Podge.
+text: To attempt to twist the minds of those who make up the Unbending Arm is foolish indeed.  This Charm allows the character to perfectly defend against any form of natural or unnatural mental influence which would otherwise bypass his defenses.  He will gain a vague impression of the intended influence, but not the details.  Furthermore, as a counterattack, the originator of the effect will herself be subjected to an Illusion causing her to believe that her attack was successful.  The Illusion lasts as long as the original effect would have, and may be resisted on the same terms as the original effect.  Since this Charm involves both resisting and imposing mental influence at the same time, the character gains a point each of both Hodge and Podge.
 
 
 name: sdc, Subtle Daydream Concoction
@@ -57,6 +57,8 @@ In the case of natural mental influence, the Exalt may make a contested roll of 
 Similarly, if some effect threatens to directly lower any of the character's Virtues or her Willpower, temporarily or permanently, she may make the same contested roll to avoid the effect.  Furthermore, if one of the Fair Folk attempts to feed on the character she may use this Charm to fool her attacker, even if she is willing or influenced to accept the raksha's feeding.  The normal Virtue roll to feed is contested against the victim's own (Essence + Integrity).  The latter successes are subtracted from those for the Virtue roll, reducing the damage the feeder does.  If the Virtue successes are outnumbered by those from the (Essence + Integrity) roll, then the Fair One believes themselves to have bled off that many dots of Willpower or Virtue and will account their Essence accordingly, meaning that they may be surprised to find it run out sooner than they expected.
 
 In any case, if the character succeeds against the attack, she will gain a clear sense of what influence the attacker intended, should she wish to play out her supposedly altered state.  Effects which prevent Shaping render this Charm inapplicable.  Use of this Charm gains the character a point of Podge.
+
+[TODO: Why isn't this a Counterattack + Illusion, like the preceding Charm?]
 
 
 name: cof, Cocoon of Fables
@@ -78,7 +80,7 @@ dur: Instant
 dep: exc
 text: TODO
 
-This Charm allows the Unbending Arm to transfer Willpower between himself and another being.  The character may transfer a number of points up to his permanent Essence, in either direction, at a cost of 5 motes per point.  If the other being is unwilling, the character must make a successful attack to touch it, and the two make a contested (Essence + Integrity) roll.  If the Erisian wins, the transfer is in the desired direction, and he gains a point of Podge.  If he fails, the direction is reversed, and he gains a point of Hodge.  In the case of a tie, nothing happens, but the motes are spent.
+This Charm allows the Unbending Arm to transfer Willpower between himself and another being.  The character may transfer a number of points up to his permanent Essence, in either direction, at a cost of 4 motes per point.  If the other being is unwilling, the character must make a successful attack to touch it, and the two make a contested (Essence + Integrity) roll.  If the Erisian wins, the transfer is in the desired direction, and he gains a point of Podge.  If he fails, the direction is reversed, and he gains a point of Hodge.  In the case of a tie, nothing happens, but the motes are spent.
 
 
 name: pma, Policy-Molding*Arrogation

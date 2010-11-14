@@ -12,6 +12,8 @@ dur: Instant
 dep: 
 text: TODO
 
+[TODO: Review once Ink Monkeys have finished playing around with Martial-ready stuff.]
+
 This Charm, applied in Step 1 of attack resolution, summons the Erisian's Archery weapon to his hand, from any point up to (Essence x 5) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
 
 The character may also apply this Charm to any reusable ammunition from an attack, summoning it back to his hand either before or after raw damage is calculated.  If the ammunition is summoned back before the damage calculation, no damage is done and no poison or other contact effects apply, but the target may still take advantage of any counterattacks available.  If the ammunition is specifically destroyed, it cannot be summoned back.
@@ -28,6 +30,7 @@ text: It is hard to defend against things you cannot see or touch, even if you k
 
 This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.
 
+[TODO: Should probably say it ignores soak from armor, too, in which case this is quite powerful, and should go up in cost.  Should clarify that it doesn't ignore natural or Charm-added soak.]
 
 name: sp, Suspended Perforation
 cost: 2m, 1wp
@@ -41,6 +44,8 @@ text: TODO
 This Charm supplements a character's Archery attack by suspending it within Elsewhere immediately after it is launched, ready to be resumed at a later point in time.  Step 1 of attack resolution is carried out, including any expenditure of motes for other Charms, but without naming a target.  The arrow, jet of flame or other projectile is fired but vanishes.  It remains Elsewhere as long as the character maintains the commitment of motes for this Charm, plus the mote cost of all other Charms, if used in a Combo.
 
 The motes may be released at any later point as a reflexive action, including as a counterattack, causing the attack to be resumed.  This does not count as a Charm use.  The character need not be wielding the weapon at the time, though they can still only choose a target which would be valid at the point when the motes are released.
+
+[TODO: Limit the number of stored attacks, e.g., to Essence.  Also, note that attacks released are not inherently unexpected.]
 
 
 name: fr, Fletcher's Rejoinder
@@ -70,7 +75,7 @@ This Charm allows the Moonlight Lyre to use any vaguely suitable small objects a
 
 Unless other effects apply, the improvised items of ammunition must be normal, physical objects, though they might be magical objects.  They must be of approximately normal size and weight for the weapon in question, but they need not be particuarly aerodynamic.  This Charm removes any accuracy penalties which the character would otherwise suffer due to these weapons being improvised.
 
-By spending a further 2 motes, the Discordian can also improvise any mundane sort of bow if vaguely suitable materials are available.  The bow will cease to function as such after the scene ends. 
+By spending a further 2 motes, the Discordian can also improvise any mundane sort of bow if vaguely suitable materials are available.  The bow will cease to function as such after the scene ends.
 
 
 name: fafa, Feathers and Fins Attack
@@ -82,7 +87,9 @@ dur: Instant
 dep: sasa
 text: TODO
 
-This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to his permanent Essence, regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
+This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 2 motes, including the first, and the character may make a number of attacks up to his permanent Essence, regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
+
+[TODO: Add more Discordian flavor/effects?]
 
 
 name: hopa, Handful of Pebbles Attack
@@ -92,7 +99,11 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: fafa
-text: Just as the Children of Eris are many and disparate in their activities, so are their projectile attacks.  This Charm supplements an Archery attack, splitting one item of ammunition into a number of duplicates up to (her permanent Essence score).  All are aimed at the same target with attack, defense and damage rolled separately for each.  However, each attack is at a -1 accuracy penalty and a -(number of extra attacks) damage penalty; for instance, three attacks would each suffer -1 to accuracy and -2 to damage.  If Handful of Pebbles attack is used with ammunition costing more than one dot of Resources per shot or placed in a Combo with Charms that affect the arrow's accuracy or damage, the cost per duplicate is doubled.
+text: TODO
+
+Just as the Children of Eris are many and disparate in their activities, so are their projectile attacks.  This Charm supplements an Archery attack, splitting one item of ammunition into a number of duplicates up to (her permanent Essence score).  All are aimed at the same target with attack, defense and damage rolled separately for each.  However, each attack is at a -1 accuracy penalty and a -(number of extra attacks) damage penalty; for instance, three attacks would each suffer -1 to accuracy and -2 to damage.  If Handful of Pebbles attack is used with ammunition costing more than one dot of Resources per shot or placed in a Combo with Charms that affect the arrow's accuracy or damage, the cost per duplicate is doubled.
+
+[TODO: Maybe drop cost -- check Archery changes in recent errata.  Also, add more Discordian flavor/effects?]
 
 
 name: bta, Becoming the Arrow
@@ -120,7 +131,7 @@ dur: One scene or Special
 dep: sasa
 text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- a weapon is required, but no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
-If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  The effect is magical and visceral, not Social, so MDV is inapplicable.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
+If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
 
 By spending an additional 3 motes and 1 Willpower, the Exalt can cause the emotion to fade gradually over the course of (character's Essence) days.  After the first scene, the effect can be resisted for only one Willpower.  However, even once they have resisted it, the target will tend to regard the temporary emotional aberrance as having been genuinely their own, fabricating some convincing explanation for themselves, until the Charm's duration ends.  If they are to recognise and remember the unnatural effect once the Charm has ended, they must spend a further 2 Willpower (or 1 Willpower, if they have recognised this Charm's used on themselves or others before); after that they become permanently aware of what happened.  Witnesses may spend 1 Willpower to realise the source of the emotion provided they saw the Exalt's attack, but they may do this at any time at or after that initial attack.
 
@@ -135,6 +146,8 @@ key: Combo-OK, Shaping
 dur: Instant
 dep: fafa, pth
 text: TODO
+
+[TODO: Richard says "yuk".  Maybe something to shoot at another attack, as a perfect defend other?]
 
 [TODO: Actually accounting for the undone effects, over more than one action, could be just too painful in practice, specially if there are several combatants all affecting each other.  Maybe this should be max 1 action?  Then again, Sidereals have a Dodge Charm which does something similar.]
 

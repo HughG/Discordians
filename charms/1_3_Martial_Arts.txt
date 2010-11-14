@@ -24,6 +24,8 @@ dur: Permanent
 dep: form
 text: Masters and Grand-masters spend decades perfecting many forms, but few truly understand how to move beyond learning a form, to /being/ the form.
 
+[TODO: This whole Charm is a bit pointless if Form-type Charms are becoming Combo-Basic.]
+
 One of the Law who has learned this Charm can use any Form-type Charms she knows, without treating that use as a Charm activation, by spending a point of Willpower in addition to the Charm's normal cost.  She may still have only one Form-type Charm active at any given time.
 
 An additional benefit, though less frequently useful, is that the character can more easily switch between forms.  If she ends one Form-type Charm and activates another in same tick, she regains the motes spent on the Charm just ended, and can use them to pay toward the cost of the new Form-type Charm.  This does not require the expenditure of Willpower (unless she wants to adopt the new Form without a Charm activation).
@@ -41,3 +43,5 @@ text: Wise men and babies alike think that all things are one.  In combat, then,
 The Whistling Voice can only use this Charm while he has a Form-type Charm active.  When this Charm is activated, he retreats momentarily to gather himself -- not into a meditative state, but into Elsewhere.  If invoked in response to an attack, it perfectly defends against that attack, unless it is unblockable or undodgeable.  In those cases, the character may suffer damage and other effects from the attack, but still vanishes immediately.  This means that, for instance, further attacks in a flurry cannot target him.  On the other hand, the character may do nothing until the tick on which he reappears; indeed, no ticks pass for him, which may be relevant to the duration of some effects.
 
 The character's anima flares to the 8-10 mote level on the tick when he disappears, and again on the tick when he reappears, unless of course it was already flaring at a higher level; if not, it returns to its previous level on the following tick.  If something else specificially moves into the character's previous location while he is absent, he reappears at the nearest point at which there is space for him.  Depending on the storyteller's whim, this could leave him with his back to his opponent.
+
+[TODO: Richard says, mention "a unique Flaw of Invulnerability", since some Ink Monkeys stuff keys off that.]

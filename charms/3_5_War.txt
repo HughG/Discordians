@@ -1,5 +1,5 @@
 name: intro, .
-text: [TODO: Section into text]
+text: [TODO: Section intro text]
 
 
 name: exc, (Any War*Excellency)

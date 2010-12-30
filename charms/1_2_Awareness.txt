@@ -103,14 +103,12 @@ dur: Special
 dep: ufm, sit
 text: Those who are a Law Unto Themselves choose their own beliefs, though they may accept another's viewpoint if it suits them.
 
-This Charm may be activated whenever the character is subject to an Illusion which she could resist in her current state.  Instead of resisting she thoroughly accepts it and, in doing so, is able to make it fully real.
+This Charm may be activated whenever the character is subject to an Illusion which she could resist in her current state.  Instead of resisting she thoroughly accepts it and, in doing so, is able to make it fully real.  For the avoidance of doubt, Illusions imposed by the Discordian Investigation Charm known as Even False Things are not valid targets for this Charm.
 
 The local flows of Essence are Shaped to match it, to a radius of (Essence x 10) yards.  Anyone may then be affected by the content of the Illusion: weapons do real damage, bridges can be crossed, with mundane and magical effects using the traits of the Illusion's creator to determine their power (or the minimum trait values, if the creator does not meet them).  These changes disappear if the Illusion's creator ends the effect, or some other effect undoes the Shaping (which ends the Illusion also), or the character has another opportunity to resist the Illusion and successfully does so.  However, any consequential changes, such as damage, remain.
 
-[RG: this is a Shaping effect that can take place in Creation, and makes Shaping attacks and effects as dictated by the content of the Illusion.  An Illusion that mimics powerful Supernatural entities or phenomena will only generate effects mimicing that entity or phenomena's effects to the extent that a Shaping action would be able to do so.  The user of this Charm has special protection form these effects, nor control over them, she simply allows for Shaping effects to reinforce whatever the Illusion would otherwise appear to do]
+This is a Shaping effect that can take place in Creation (or any other realm) and makes Shaping attacks and effects as dictated by the content of the Illusion.  An Illusion that mimics powerful supernatural entities or phenomena will only generate effects mimicing that entity or phenomena's effects to the extent that a Shaping action would be able to do so.  The user of this Charm has no special protection from these effects, nor control over them, she simply allows for Shaping effects to reinforce whatever the Illusion would otherwise appear to do.
 
-[TODO: How should this affect the Wyld?]
-
-[TODO: This is only really useful if the Illusion affects more than just the character, and has some external effect, rather than something internal like imposing a belief.  Maybe this Charm needs more work, or should be cheaper, or have fewer prerequisites.]
+[TODO: How should this affect the Wyld?  One idea (pre-Fair-Folk-errata) is that it should increase the bonuses a character gets for submitting to a Fantasy.  Still need to say what to do with Alterations/Restorations, Evocations and actual Shaping Combat.]
 
 Use of this Charm does not affect the character's Hodge or Podge rating. 

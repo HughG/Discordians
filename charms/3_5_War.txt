@@ -16,13 +16,13 @@ dur: Indefinite
 dep: exc
 text: TODO
 
-Instructing troops or comrades to avoide hostile or suspicious actions, the Discordian attempts to persuade one or more enemy unit(s) that his own unit is not a threat.  He rolls ([Charisma or Manipulation] + [War or Socialize, as applicable]) and compares the total against the Parry MDV of the commander of any enemy unit he encounters (using War or Socialize as the relevant ability, as applicable).  As long as his unit does not attack, and is not observed taking opposing actions (such as sapping, theft of resources, poisoning of supplies etc.), enemy units whose Parry MDV is less than the total rolled by the Taskmaster will believe that it is not appropriate to attack, detain or otherwise or oppose his unit.  The character can choose to spend a point of Willpower on the Charm to give it the Illusion keyword, in which case it becomes unnatural mental influence, and succeeds automatically against each enemy unit encountered, unless that unit's leader spends a point of Willpower to resist.
+Instructing troops or comrades to avoide hostile or suspicious actions, the Discordian attempts to persuade one or more enemy unit(s) that his own unit is not a threat.  He rolls ([Charisma or Manipulation] + War) and compares the total against the MDV of the commander of any enemy unit he encounters (using War or Socialize as the relevant ability, as applicable).  As long as his unit does not attack, and is not observed taking opposing actions (such as sapping, theft of resources, poisoning of supplies etc.), enemy units whose MDV is less than the total rolled by the Taskmaster will believe that it is not appropriate to attack, detain or otherwise or oppose his unit.  The character can choose to spend a point of Willpower on the Charm to give it the Illusion keyword, in which case it becomes unnatural mental influence, and succeeds automatically against each enemy unit encountered, unless that unit's leader spends a point of Willpower to resist.
 
 The Charm's effects end immediately if the unit becomes engage in open hostilities.  If they are observed undertaking sabotage or similar indirect attacks, the effect ends only against those units with members who observe them.  The Exalt need not be the leader of a unit to employ this Charm, but he must be able to persuade its members to avoide hostilities.
 
 
 name: eomf, Enemy Of My Friend
-cost: 6m or 6m, 1wp
+cost: 6m, 1wp
 mins: War 3, Ess 2
 type: Simple (Speed 5 in long ticks)
 key: Combo-OK, Illusion, Social, War
@@ -32,9 +32,9 @@ text: TODO
 
 A Knight of the Five-Sided Temple calls out to a single group which opposes him, decrying some other group as a worse, mutual enemy.  He must share a language with the target group and be able to clearly describe the supposed new enemy, unless that enemy is within line of sight, in which case facial expressions and gesturing will suffice.
 
-He rolls ([Charisma or Manipulation] + [War or Socialize, as applicable]) and compares the total against the Parry MDV of the leader of the target group (using War or Socialize as the relevant ability, as applicable).  If that Parry MDV is less than the total rolled by the Taskmaster, the target group will believe that they are not opposed to the character's group, but do oppose the indicated enemy.  The character's group need not attack the new enemy, though the target group is not compelled to do so either: they will not necessarily rush in as cannon fodder.
+The Charm exerts an unnatural mental influence to persuade the target group will believe that they are not opposed to the character's group, but do oppose the indicated enemy.  The character's player rolls ([Charisma or Manipulation] + War) and compares the total against the MDV of the leader of the target group (using War as the relevant ability).  If that MDV is less than the total rolled by the Taskmaster, the Illusion takes effect.  The group leader can resist the Illusion by spending 3 points of Willpower; this cost drops to 1 if either the character's group is a known enemy or has previously been hostile, or the proposed new enemy is an existing firm ally of the target group.
 
-The character can choose to spend a point of Willpower on the Charm to give it the Illusion keyword, in which case it becomes unnatural mental influence, and succeeds automatically against the target unit, unless that unit's leader spends a point of Willpower to resist.  The Charm's effects end immediately if the character's group is seen to attack the target group or aid the new enemy.  The Exalt need not be the leader of a unit to employ this Charm, but he must be able to persuade its members to avoide hostilities towards the target.
+The character's group need not attack the new enemy, though the target group is not compelled to do so either: they will not necessarily rush in as cannon fodder.  The Charm's effects end immediately if the character's group is seen to attack the target group or aid the new enemy.  The Exalt need not be the leader of a unit to employ this Charm, but he must be able to persuade its members to avoide hostilities towards the target.
 
 
 name: btt, Battlefield Taunt*Technique
@@ -56,7 +56,9 @@ type: Simple (Speed 5 in long ticks)
 key: Combo-OK, War
 dur: One scene
 dep: exc, btt
-text: A Overseer interprets the systems around her clearly, reading in them patterns both hidden and unintended.  In large-scale combat this provides her with advantages in anticipating and interfering with an opponent's tactics.  As long as she keeps this Charm active, external penalties or difficulty modifiers due to the opposing units are reduced by her (Essence).  This does not directly affect attack and defence in most cases, since DV is not a penalty, but it may help in Morale or rout checks, for example.  Her unit also adds (Essence) dice to any opposed rolls when an enemy unit attempts an ambush or other unexpected attack.  Lastly, if she witnesses a coded signal between enemy units, she may make an (Intelligence + War) roll with a difficulty equal to the War rating of the signalling unit, to get the gist of the message; more successes will give a clearer understanding.
+text: A Overseer interprets the systems around her clearly, reading in them patterns both hidden and unintended.  In large-scale combat this provides her with advantages in anticipating and interfering with an opponent's tactics.  As long as she keeps this Charm active, external penalties or difficulty modifiers due to the opposing units, or difficulty ratings based on the units' traits, are reduced by her Essence.  This does not directly affect attack and defence in most cases, since DV is not a penalty, but it may help in Exhaustion and Morale checks, for example.
+
+Her unit also adds (Essence) dice to any opposed rolls when an enemy unit attempts an ambush or other unexpected attack.  Lastly, if she witnesses a coded signal between enemy units, she may make an (Intelligence + War) roll with a difficulty equal to the War rating of the signalling unit, to get the gist of the message; more successes will give a clearer understanding.
 
 This Charm can be activated against only one enemy at a time.  That need not mean a single unit, since all the units under a given general will work together following some explicit pattern or inherent style.  As long as a number of units see themselves to be on the same side, activating this Charm against one makes it effective agianst all.  However, if two or more entirely separate powers take the field against the Bishop, she can use this Charm against the units of only one.  She may end the Charm at any time and re-activate against a different enemy.
 
@@ -88,13 +90,11 @@ cost: 5m, 1wp
 mins: War 4, Ess 3
 type: Supplemental
 key: Combo-OK, War
-dur: Instant
+dur: Indefinite
 dep: prf
 text: 
 
-This Charm supplements a Change Formation action, allowing a unit containing the character to adopt a very unusual formation.  Troops form into small groups where two or more carry another above their heads.  This reduces the effective Magnitude of the unit by 1, but gives each member of reduced unit the benefits of being mounted.  The "steeds" are treated as having a control rating of 0, and the Abilities of the riders are not capped by their Ride ability, since those below them remain equally well-trained soldiers.  The movement rate of the unit is reduced by 25%.
-
-[TODO: Should this be Indefinite?]
+This Charm supplements a Change Formation action, allowing a unit containing the character to adopt a very unusual formation.  Troops form into small groups where two or more carry another above their heads.  This treats the unit as if its members were mounted (see [Core], pp. 154-155), giving the units members a +1 bonus to DV against close combat attacks, and enemy units a -1 penalty to DV if attacking in close combat.  If the unit was originally a standard mounted unit, these adjustments are doubled.  The Charm is not applicable if the unit was already mounted on beasts using howdahs.  The "steeds" are treated as having a control rating of 0, and the Abilities of the riders are not capped by their Ride ability, since those below them remain equally well-trained soldiers.  The movement rate of the unit is reduced by 25%.
 
 
 name: bum, Bamboo Unbending*Maneuver
@@ -111,7 +111,7 @@ This Charm allows a unit containing the character to make a counterattack agains
 
 name: sin, Strength in Numbers
 cost: 6m; or 10m, 1wp
-mins: War 3, Ess 3
+mins: War 4, Ess 3
 type: Simple (Speed 5 in long ticks)
 key: Combo-OK, Shaping, Social, War
 dur: One scene

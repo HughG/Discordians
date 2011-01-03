@@ -6,7 +6,7 @@ text:
 name: aci, Angelic Countenance*of Innocence
 cost: 2m
 mins: Dodge 2, Ess 2
-type: Reflexive (Step 9)
+type: Reflexive (Step 1)
 key: Combo-OK
 dur: Instant
 dep: 
@@ -20,7 +20,7 @@ type: Reflexive (Step 9)
 key: Combo-OK, Touch, Counterattack
 dur: Instant
 dep: 
-text: Those who throw themselves at the Foolish Sages may find themselves the greater fools.  A character may employ this Charm whenever he uses his Dodge DV against an attack, successfully or not, provided the opponent is within touching distance.  This is assumed to be true unless the attack was ranged, or used a weapon with the "R" (Reach) tag.  A momentary magical redistribution of forces gives the attacker a penalty on his attack roll (but not damage roll) and Dodge DV for his next action, equal to the character's Essence.
+text: Those who throw themselves at the Foolish Sages may find themselves the greater fools.  A character may employ this Charm whenever he uses his Dodge DV against an attack, successfully or not, provided the opponent is within touching distance.  This is assumed to be true unless the attack was ranged, or used a weapon with the "R" (Reach) tag.  A momentary magical redistribution of forces gives the attacker a penalty of -(character's Essence) to his Dodge DV until his next action, and a -1 external penalty on his next attack roll (but not damage roll).
 
 
 name: hpf, Hostility-Proof Facade
@@ -32,7 +32,7 @@ dur: Instant
 dep: aci, cf
 text: Surely, those who bring true understanding of the nature of things should not be hated, but loved?  This Charm convinces an attacker, at least on an unconscious level, that the Priestess of Eris is not worthy of their ire; but, there being a need for balance in all things, someone else has to take the fall.  If the character attempts to Dodge an attack and fails, she may activate this Charm to cause the attack to be re-rolled against any other valid target.  If there are no other valid targets, the attack fails altogether, unless it is undodgeable.
 
-The attacker may ignore the unnatural mental influence of this Charm by spending a point of temporary Willpower.  Using this Charm gains the character a point of Hodge.
+The attacker may ignore the unnatural mental influence of this Charm by spending a point of temporary Willpower.
 
 
 name: pe, Perfect Excuse
@@ -45,6 +45,7 @@ dep: hpf
 text: Rather than bother attempting to convince his enemy of his righteousness, a powerful Discordian will simply convince the fabric of reality to believe him.  This Charm rearranges the moment to provide a dodge which perfectly defends against any attack, even if it is undodgeable.  This Charm has one of the Four Flaws of Invulnerability.
 
 [TODO: Should Erisians have the same Flaws as Solars, or something different?]
+[TODO 2011-01-03 HUGR: RWG says power level is okay but it's flavourless.  Maybe bump the cost and give it extra effects, e.g., against Social.  Or extra effects plus extra limitations.  Or special FoI.]
 
 
 name: samt, Smoke and Mirrors Technique
@@ -56,9 +57,11 @@ dur: Until next action
 dep: exc, aci
 text: Not everything can be done with smoke and mirrors, but they come in handy in a pinch.  With this Charm, the Foolish Sage appears to split into a number of smoky, slightly translucent copies of himself, equal to (his permanent Essence).  The attacker must roll his (Perception + [attack Ability]) against the character's ([Manipulation or Wits] + Dodge) at Step 10 of the attack.  Failure means that she struck one of the smoky duplicates instead, which immediately vanishes.  For a flurry or multiple attack sequence, or for multiple attackers, each action requires a separate roll to succeed, and will eliminate a separate duplicate if it fails.
 
-Use of this Charm gains the character a point of Hodge.  At any point the attacker may spend a point of Willpower to ignore the Illusion, after which no further rolls are required.  Similarly, if all the duplicates are destroyed by multiple attacks, subsequent attacks proceed as normal.  At the start of the character's next action, the duplicates disappear.
+At any point the attacker may spend a point of Willpower to ignore the Illusion, after which no further rolls are required.  Similarly, if all the duplicates are destroyed by multiple attacks, subsequent attacks proceed as normal.  At the start of the character's next action, the duplicates disappear.
 
 Perfect attacks against a single target are affected by this Charm -- the attacker may perfectly hit the wrong target, depending on the roll.  However, area effects, environmental hazards and ongoing sources of damage such as poison are not affected.
+
+[TODO 2011-01-03 HUGR: RWG says this is a bit over-powerful - or, hard to tell how powerful it is.  For evenly-match traits, it means you avoid (Ess / 2) attacks on average for 3m.  Could change it so the duplicates all disappear after the first attack, so they just improve the odds of a single defence.  Could make it Indefinite and non-Stackable, so you can't refresh it till they're all gone. Could make it that you can expend 1 or more dups in response to a single attack, each giving the opponent a -1 ext penalty, or each boosting your DV by 1 (but beware DV cap, based on Excellencies).]
 
 
 name: vmn, Villain Multiplication Nature
@@ -72,7 +75,7 @@ text: Erisians laugh in the face of danger (or sometimes behind its back), and l
 
 If hemmed in by multiple opponents, possibly in combination with restrictive terrain, the character replaces the usual -2 DV penalty with a +2 DV bonus.  If the opponents make coordinated or multiple attacks, further bonuses may apply, as above.  Furthermore, no attack from any of those opponents can be unexpected (though ranged attacks or area effects from elsewhere may be).
 
-The maximum cumulative bonus from this Charm is equal to the character's (Dodge + Essence).  It does not reset until the character's next action, even though onslaught penalties normally reset at the end of each flurry.  These DV bonuses apply only against the characters making the attacks.  They do not apply to other opponents making single attacks, or to area or environmental effects.
+For the avoidance of doubt, the DV bonuses from this Charm do not apply to area or environmental effects.
 
 
 name: ema, Exponent of*Manifold Avoidance
@@ -82,12 +85,14 @@ type: Simple
 key: Combo-OK
 dur: One scene
 dep: vmn
-text: Some of the most powerful Mid-day Shadows go even futher in turning their enemies' hostility against them.  This Charm extends the effects of Villain Multiplication Nature to a whole scene, and allows the bonuses to accumulate from action to action.  In addition the protection applies beyond coordinated and multiple attacks: for each single attack (i.e., without a flurry or multiple attack effect) from a single opponent which the character fails to dodge, he accumulates a +1 bonus to Dodge DV for subsequent actions.  The maximum bonus remains (Dodge + Essence) and area, environmental and undodgeable attacks are not included (unless by some other Charm in a Combo).
+text: Some of the most powerful Mid-day Shadows go even futher in turning their enemies' hostility against them.  [TODO: more fluff]
+
+This Charm extends the effects of Villain Multiplication Nature to a whole scene.  In addition, if the character tries but fails to dodge a single attack (i.e., without a flurry or multiple attack effect) from a single opponent, he gains a +1 bonus to Dodge DV until the end of the scene.  This bonus accumulates from action to action, and remains until the scene ends.  As with the prerequisite Charm, area, environmental and undodgeable attacks are not included (unless by some other Charm in a Combo).
 
 
 name: gss, Grey-Space Shuffle
 cost: 4m
-mins: Dodge 3, Ess 3
+mins: Dodge 4, Ess 3
 type: Reflexive (Step 9)
 key: Combo-Basic, Counterattack
 dur: Instant
@@ -113,5 +118,3 @@ text: Discordians often work alone, but friends are important, too.
 This Charm upgrades its prerequisite, allowing the Unhinged to apply it to a group of beings (or like-sized objects) up to (character's Essence) in Magnitude.  The group need not be a pre-existing unit, but it must include the character.  Unwilling targets may choose to remain where they are.  Used in this fashion, the Charm cost increases by one point of Willpower, plus 3 motes per dot of Magnitude of the group.
 
 The distance in this case determined by rolling the charcter's [Wits + Dodge] and multiplying the successes by her normal Dash (not Move) distance.  The Charm can only be applied in response to an attack on (or an area attack which includes) any member of the group, and only when it would be valid for the character herself (who may not be the actual target) to try to dodge the attack.  The group must travel the full distance, and the distance is measured from the outside of the group, not its centre.
-
-[TODO: Should this allow group-wide application of any applicable Dodge Charms, like the Sail one?]

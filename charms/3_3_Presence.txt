@@ -7,20 +7,18 @@ name: ipa, Instant Parley Agreement
 cost: 3m
 mins: Pres 3, Ess 2
 type: Supplemental
-key: Combo-OK, Compulsion, War, Social
+key: Combo-OK, Compulsion, Emotion, War, Social
 dur: One scene
 dep: 
-text: The first step to winning is not to be defeated, and sometimes the best defense is to give no offense.  This Charm supplements a ([Charisma or Manpulation] + Presence) roll, opposing the (Conviction + Integrity) of a target individual, or leader of a unit with Magnitude up to the Erisian's Essence.  The roll is an attempt to persuade a group of attackers that battle (or social conflict) is not a good idea after all, at least for the moment.  If successful, the character persuades them to stop attacking, or refrain from starting to attack, the character and his allies.  The effect lasts for the rest of that scene, or until the two sides have cause to make another Join Battle or Join Debate roll.  If this reason is that the character or his allies have betrayed the parley by attacking, the target gains their Integrity in bonus dice to all rolls in their first action (including defense), as an expression of their fury.
+text: The first step to winning is not to be defeated, and sometimes the best defense is to give no offense.  This Charm supplements a Presence-based social attack targeting each of a number of individuals joined in battle or about to Join Battle or, in mass combat, the leader of a unit with Magnitude up to the Erisian's Essence.  The roll is an attempt to persuade the participants that battle (or social conflict) is not a good idea after all, at least for the moment.  Each target or unit which is successfully affected is persuaded to stop attacking, or refrain from starting to attack.  The effect lasts for the rest of the scene, or until any affected individual or unit makes another Join Battle, Join War or Join Debate roll.  If a target has been wounded in an exchange already, from the character or others who are clearly his allies, they gain a number bonus dice to defend against the attack equal to the number of Health levels or (for social units) Loyalty points lost so far.  The target individual or unit leader must be able to hear or see the character for this Charm to work, though they do not need to share a language.
 
-This effect is an unnatural mental influence and may be resisted as such.  If the target has taken damage in a battle so far, from the character or others who are clearly his allies, they gain automatic successes on the roll equal to the number of Health levels or (for social units) Loyalty points lost so far in this exchange.  The target individual or unit leader must be able to hear or see the character for this Charm to work, though they do not need to share a language.
+The initial effect is an unnatural mental influence of Compulsion and may be resisted by spending a point of temporary Willpower.  Any affected character or unit who breaks the truce is subject to a further Emotion effect of shame at their betrayal, inflicting a -2 internal penalty for the rest of the scene, which costs a further 2 Willpower to resist.  Spending Willpower to resist both of these effects exempts a character from any further invocations of this Charm in the scene.  Any character or unit who is attacked, whether by another affected by this Charm or by a third party, is immediately released from the Charm's effects.
 
-Depending on how the character handles the parley, the opponent(s) may not realise they were under a compulsion when the scene ends, and may or may not choose to continue with hostilities.  If the Discordian side simply decides to flee, they gain a head start: automatic successes on the first of any contested Tracking/Evasion rolls, equal to the character's Essence, reducing by one on each subsequent roll, down to 0.
-
-[Hmm, maybe this Charm is fundamentally pointless: if someone told you to stop fighting, and you felt yourself under unnatural mental influence, wouldn't you just resist it?]
+Depending on how the character handles the parley, the opponent(s) may not realise they were under the effects of a Charm when the scene ends, and may or may not choose to continue with hostilities.  If the Discordian side simply decides to flee, they gain a head start: automatic successes on the first of any contested Tracking/Evasion rolls, equal to the character's Essence, reducing by one on each subsequent roll, down to 0.
 
 
 name: ppp, Paralocative Presence Prana
-cost: 8m, 2wp
+cost: 8m, 1wp
 mins: Pres 4, Ess 3
 type: Simple
 key: Combo-Basic, Shaping, Obvious
@@ -28,20 +26,22 @@ dur: Indefinite
 dep: 
 text: TODO
 
-[TODO: Should this cost more?]
+This Charm allows the Discordian to create a physical duplicate of herself.  It may be activated multiple times to create further duplicates, but no more than (Essence) may be maintained at once.  Each duplicate is based on a single Intimacy, adopting it as Motivation and effectively removing it from the character.  If and when the duplicate ceases to exist, the character regains the Intimacy.  She may not gain other Intimacies meanwhile, to replace the one which is borrowed.  The duplicate can have no Intimacies of its own, being single-minded in its point of view.
 
-This Charm allows the Discordian to split herself into a number of physical duplicates, up to (Essence ÷ 2).  These duplicates share a single awareness, with each continually able to know what the others are perceiving, thinking and doing.  This spreading of identity imposes a -1 internal penalty on all actions.  The duplicates cannot share any magical equipment, although the Charm will copy mundane items carried on the character's person when it is activated. 
+A character's duplciates are essentially mortal, with a permanent Essence rating of 1 and no mote pool.  They have their own Health tracks and Virtue channels, but all share one Willpower pool with the character.  They may draw on her Charms and mote pool, but only for actions which are in support of their Motivation.  If a duplicate does so, it counts as the original character's Charm use for that action, though the character may veto this use.  Similarly, they may take Numerology actions in support of their Motivation, but doing so prevents the character from using Numerology in the same action.  The character may also veto attempts by the duplicates to spend from her Willpower pool.  The copies are not under the character's control, other than by persuasion, and may act against her wishes in support of their drive.
 
-The duplicates have a single pool of motes of Essence, and that pool is refilled at the highest rate which any one of the copies can achieve.  Similarly they share a Willpower pool and channels of Virtues.  Each can operate independently, but in whenever one is activating a Charm or Combo, the others may not activate Charms other than Excellencies; similarly, only one at a time may perform a Numerology action.
+The Discordian and her duplicates can take a miscellaceous action to share awareness for one scene, each continually able to know what the others are perceiving, thinking and doing.  This spreading of identity imposes a -1 internal penalty on all actions.  The duplicates cannot share any magical equipment, although the Charm will copy mundane items carried on the character's person when it is activated.  Equipment is imperfectly copied, so stamped coins, scrip and so on will be worthless, and perfect mundane equipment becomes at best excellent.
+
+If a duplicate is killed, or subject to an effect which undoes Shaping, it instantly disappears and the character regains her Intimacy.
 
 
 name: ewa, Epic Winning Attitude
 cost: 3m
 mins: Pres 3, Ess 2
 type: Reflexive (Step 1)
-key: Combo-OK
+key: Combo-OK, Overdrive
 dur: One scene
 dep: 
 text: TODO
 
-This Charm improves the benefits which the character gains from any stunts for the rest of the scene.  For any successful stunt, the player may choose either to receive one extra bonus die (which does not contribute to regaining Essence or Willpower), or to regain two extra motes of Essence.  In the case of 3-die stunts, the character may regain two points of temporary Willpower (or, if the storyteller allows, two experience points).
+This Charm adds to the benefits which the character can gain from his stunts for the rest of the scene.  Activating the Charm gives the character an initially empty 10-mote Overdrive pool.  Any successful stunt which the Storyteller judges to be sufficiently Discordian (i.e., surprising or confusing) adds one mote to this pool, in addition to its normal benefits.

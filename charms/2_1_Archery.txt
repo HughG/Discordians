@@ -6,7 +6,7 @@ text:
 name: bbta, Bow Bends the Air
 cost: 2m
 mins: Arch 2, Ess 2
-type: Reflexive (Step 1, 7 or 8)
+type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
 dep: 
@@ -14,9 +14,11 @@ text: TODO
 
 [TODO: Review once Ink Monkeys have finished playing around with Martial-ready stuff.]
 
-This Charm, applied in Step 1 of attack resolution, summons the Erisian's Archery weapon to his hand, from any point up to (Essence x 5) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
+This Charm, applied in Step 1 of attack resolution, summons the Erisian's Archery weapon to his hand, from any point up to (Essence x 2) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
 
 The character may also apply this Charm to any reusable ammunition from an attack, summoning it back to his hand either before or after raw damage is calculated.  If the ammunition is summoned back before the damage calculation, no damage is done and no poison or other contact effects apply, but the target may still take advantage of any counterattacks available.  If the ammunition is specifically destroyed, it cannot be summoned back.
+
+A second purchase at Archery 3 and Essence 3 allows the character to use the Charm with an Indefinite duration, applied to a weapon, suspending it in Elsewhere.  It will remain there as long as the motes remain committed.  When they are reflexively released, it will appear in his hand, or falls to his feet if both hands are occupied.
 
 
 name: wwa, Witch Way Arrow
@@ -59,10 +61,10 @@ This Charm enhances an Archery attack such that, if the attack fails because the
 Some Discordians have been known to use this Charm and deliberately miss on their first attack.  In this case, the second attack is treated similarly to an ambush: roll the attacker's (Dexterity + Archery) against the defender's (Wits + Awareness), with appropriate penalties or bonuses depending on the defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.  However, if the defender has already seen this technique used in the same story, they gain a +2 bonus to the contested roll.
 
 
-name: sasa, Sticks and Stones*Attack
+name: qosas, Quiver of*Sticks and Stones
 cost: 3m or 5m
 mins: Arch 1, Ess 2
-type: Simple
+type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: One scene
 dep: 
@@ -76,17 +78,17 @@ By spending a further 2 motes, the Discordian can also improvise any mundane sor
 
 
 name: fafa, Feathers and Fins Attack
-cost: 3m per attack
-mins: Arch 3, Ess 2
-type: Extra Action
-key: Combo-OK
+cost: 3m per attack; or 3m per attack, 1wp
+mins: Arch 4, Ess 2
+type: Extra Action (Speed +1)
+key: Combo-OK, Obvious
 dur: Instant
-dep: sasa
-text: TODO
+dep: qosas
+text: The Children of Eris strive against any and all rules which do not suit them, including the rules of time which prevent all things happening at once.  Pulling a handful of instants together around her, she launches several separate attacks in one.
 
-This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to (his permanent Essence), regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
+This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to (her permanent Essence), regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  The Speed of the combined actions is one more than the Speed of the longest single action.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
 
-[TODO: Add more Discordian flavor/effects?]
+At Essence 3, the character may additionally spend 1 point of Willpower to spread her awareness into another half a moment, allowing her to ignore all DV penalties from these attacks (but not from other sources).
 
 
 name: hopa, Handful of Pebbles Attack
@@ -109,7 +111,7 @@ mins: Arch 3, Ess 3
 type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
-dep: fr, sasa
+dep: fr, qosas
 text: TODO
 
 This Charm supplements an Archery action by allowing the character to use himself as ammunition.  This allows him to Jump towards his target, up to one tenth the range which the attack would otherwise have.  If the action is an attack, the character may make an unarmed attack, or one which uses weapons which can be wielded at the same time as his current Archery weapon (e.g., a smashfist worn while using a bow).  This attack gains the Knockback keyword, and is treated as part of the same attack, using the Archery attack roll to hit, but the other weapon's details to determine damage in Step 7.  This Charm may be used in a flurry, but attacks beyond the first in the flurry do not gain the Knockback keyword from this Charm.
@@ -125,7 +127,7 @@ mins: Arch 4, Ess 2
 type: Supplemental
 key: Combo-OK, Emotion
 dur: One scene or Special
-dep: sasa
+dep: qosas
 text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- a weapon is required, but no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
 If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
@@ -136,25 +138,19 @@ Using this attack does not end Stealth effects unless the target successfully re
 
 
 name: tflab, Time Flies Like a Banana
-cost: 4m, 1wp
+cost: 5m or 5m, 1wp
 mins: Arch 4, Ess 3
-type: Reflexive (Step 10)
-key: Combo-OK, Shaping
+type: Reflexive (Step 2)
+key: Combo-OK
 dur: Instant
 dep: fafa, pth
 text: TODO
 
-[TODO: Richard says "yuk".  Maybe something to shoot at another attack, as a perfect defend other?]
-
-[TODO: Actually accounting for the undone effects, over more than one action, could be just too painful in practice, specially if there are several combatants all affecting each other.  Maybe this should be max 1 action?  Then again, Sidereals have a Dodge Charm which does something similar.]
-
-This Charm allows the Moonlight Lyre to bend and loop the flow of time, undoing what has happened in recent moments.  It is activated in Step 10 of attack resolution, for an attack either by or upon the character.  All effects and damage applied to either, from any source, within the last (Essence) actions, are undone.  Any Essence, Willpower or other costs paid towards those effects (by any parties involved, not just the character and his opponent) are refunded, except for the cost of this Charm.  Nobody except the character will have any memory of what happened within that closed-off loop of time, unless they have awakened Essence and spend 2 points of Willpower to recall it.  Everyone else will experience a strange moment of deja-vu or similar confusion, but not realise what un-happened.
-
-Using this Charm gains the character a point of Hodge.  The Charm may be inapplicable in areas or against opponents specifically warded against Shaping.  However, the Charm does not count as an attack and does not modify inherent traits of the target, so Charms such as the Solars' Integrity-Protecting Prana are ineffective against it.  This Charm may also be used to undo effects related to an unrelated being, who is not attacking the character, in which case it requires direct contact as if it had the Touch keyword.
+This Charm allows the Moonlight Lyre to bend and loop the flow of time, loosing an arrow to meet an incoming attack at precisely the right instant to knock it off track.  This perfectly defends against any attack, even if it is unblockable.  Furthermore, the character can use this Charm in a Defend Other action to defend any other being who would be a valid target for an Archery attack by her, by shooting down an attack as it heads toward that target.  By spending 1 point of Willpower, the character can even apply this Charm without ammunition, by miming it with a suitable weapon.  In this case, the Charm gains the Obvious keyword, as a strange ripple of distorted moments passes through the air on the way to deflect the attack.  This Charm is subject to one of the Discordian Flaws of Invulnerability.
 
 
 name: bofa, Bolt of Fresh Air
-cost: 5m, or 5m + 1wp
+cost: 3m, or 5m + 1wp
 mins: Arch 4, Ess 3
 type: Supplemental
 key: Combo-OK, Knockback
@@ -164,6 +160,6 @@ text: TODO
 
 This Charm supplements an Archery-based attack by the character, rapidly opening and closing a semi-stable portal to Elsewhere at the point of impact, causing a violent upsetting of the target's balance.  The target must roll his (Stamina + Resistance) againt the character's (Strength + Archery).  The attack must hit (i.e., not be dodged or parried), but need not inflict damage.  If the target fails this check, he is knocked prone (as a Knockdown effect, rather than Knockback).
 
-By spending a point of Willpower in addition, the character can force all beings within (Essence x 3) yards of the point of impact to check for Knockback, each rolling (Stamina + Resistance) againt the character's (Strength + Archery).  Inanimate objects up to roughly human mass will, if they are not fastened down, also be knocked back.  If the target dodged or parried the attack, they must make a second check to avoid being knocked back from wherever the projectile landed.  If the Erisian herself is within this radius, she will not be knocked back, and her affinity with dynamic chaos means she will "luckily" avoid being hit by any flying objects.
+By spending an extra two motes and a point of Willpower, the character can force all beings within (Essence x 3) yards of the point of impact to check for Knockback, each rolling (Stamina + Resistance) againt the character's (Strength + Archery).  Inanimate objects up to roughly human mass will, if they are not fastened down, also be knocked back.  If the target dodged or parried the attack, they must make a second check to avoid being knocked back from wherever the projectile landed.  If the Erisian herself is within this radius, she will not be knocked back, and her affinity with dynamic chaos means she will "luckily" avoid being hit by any flying objects.
 
 The character may make this attack without any ammunition, simply by miming an attack using a suitable weapon.  In this case, the target will not suffer damage from the attack itself, but is at a -4 penalty to his DV, since the only indication of the impact will be a shimmering in the air at the last moment.

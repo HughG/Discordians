@@ -30,7 +30,7 @@ type: Reflexive (Step 6)
 key: Combo-OK, Compulsion
 dur: Instant
 dep: aci, cf
-text: Surely, those who bring true understanding of the nature of things should not be hated, but loved?  This Charm convinces an attacker, at least on an unconscious level, that the Priestess of Eris is not worthy of their ire; but, there being a need for balance in all things, someone else has to take the fall.  If the character attempts to Dodge an attack and fails, she may activate this Charm to cause the attack to be re-rolled against any other valid target.  If there are no other valid targets, the attack fails altogether, unless it is undodgeable.
+text: Surely, those who bring true understanding of the nature of things should not be hated, but loved?  This Charm convinces an attacker, at least on an unconscious level, that the Priestess of Eris is not worthy of their ire; but, there being a need for balance in all things, someone else has to take the fall.  If the character attempts to dodge an attack and fails, she may activate this Charm to cause the attack to be re-rolled against any other valid target.  If there are no other valid targets, the attack fails altogether, unless it is undodgeable.
 
 The attacker may ignore the unnatural mental influence of this Charm by spending a point of temporary Willpower.
 

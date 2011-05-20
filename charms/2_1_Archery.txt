@@ -3,6 +3,11 @@ dep:
 text: 
 
 
+name: intro, .
+dep: 
+text: TODO: Perfect attack; Action-longs (maybe as re-purchase?)
+
+
 name: bbta, Bow Bends the Air
 cost: 2m
 mins: Arch 2, Ess 2

@@ -5,11 +5,7 @@ text:
 
 name: intro, .
 dep: 
-text: TODO: Counterattack, flurry breaker, perfect attacks (also for other combat abilities); Action-longs
-
-Tree for provoking conflict/confusion between/among enemies
-Tree for turning enemies' strengths/attacks against them; defusing desire to attack
-  - RWG suggests: allow yourself to be knocked back and gain an enhanced disarm attack in the process
+text: TODO: Action-longs (maybe as re-purchase?)
 
 
 name: scd, Short-Cut Draw
@@ -26,6 +22,18 @@ text: TODO
 This Charm summons the Erisian's Melee weapon to his hand, from any point up to (Essence x 2) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
 
 A second purchase at Melee 3 and Essence 3 allows the character to use the Charm with an Indefinite duration, suspending a weapon in Elsewhere.  It will remain there as long as the motes remain committed.  When they are reflexively released, it will appear in his hand, or falls to his feet if both hands are occupied.
+
+
+name: rss, Reflected Steel Stroke
+cost: 4m
+mins: Melee 4, Ess 2
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack
+dur: Instant
+dep: 
+text: A successful warrior grows to understand of the ebb and flow, balanace and unbalance of combat.  Reading the moments of mischance in her opponent's strikes allows the Offendi respond instinctively with her own, and take advantage of both strength and weakness.
+
+Using her opponent's own impetus and skill against him, the character uses this Charm to counterattack at her full dice pool.  Each carry-over success from the original attack, regardless of whether it did any damage, adds one die to the character's counterattack, to a maximum of her own Essence.
 
 
 name: bbt, Breastplate Bypass Technique
@@ -52,6 +60,20 @@ text: TODO
 This Charm extends the power of its prerequisite, causing the Corpswoman's entire weapon to slide briefly sideways via Elsewhere and strike her intended target from an unpredictable angle: from behind, below, above, or perhaps just from the other hand.  The attack becomes unexpected unless the target succeeds on a (Wits + Awareness) roll at a difficulty of the character's Essence.  With appropriate stunts, the character may attempt to make the attack appear to originate from another nearby being.  The target must still be in melee range, though the weapon gains the Reach tag if it did not have it already.
 
 
+name: fcf, Foe-Cleaving Flow
+cost: 5m, 1wp; or 7m, 1wp
+mins: Melee 5, Ess 4
+type: Simple
+key: Combo-OK, Obvious
+dur: Instant
+dep: ebs
+text: Treading that fine line between control and abandon, the Corpsman sends the sharp edges and points of his weapon into Elsewhere, freeing them to follow his opponent's movements rather than his own will.  The weapon skips past mundane and magical attempts to block it, and sticks to the target as it feints and ducks.
+
+This Charm constitutes an attack which is unblockable and undodgeable, making both Parry and Dodge Defense Values inapplicable.  The target must still be in melee range, though the weapon gains the Reach tag if it did not have it already.
+
+By spending an additional 2 motes, the attack can reach out over larger distances and, unless some magical warding prevents this, through solid objects.  The range of the attack extends to twice the character's Dash distance, and it ignores DV bonuses due to cover.  DV bonuses for armor and soak still apply, and attack penalties may apply if the character attempts to attack through a barrier but cannot see the target through it.
+
+
 name: baba, Branch and Brush*Armory
 cost: 3m or 5m
 mins: Melee 1, Ess 2
@@ -61,9 +83,9 @@ dur: One scene
 dep: 
 text: TODO
 
-Activating this Charm, the Apple Corpsman reflexively grabs a nearby object and employs it as an improvised melee weapon, with normal ratings for whatever kind of weapon can be described as most appropriate.  Clubs, staves and sledges are the most likely equivalents.  For the last, the character can use any sufficiently large item which he can lift with a feat of Strength.  In general, any kind of weapon can be improvised, if suitable scenery can be found.
+Activating this Charm, the Apple Corpsman reflexively grabs a nearby object and employs it as an improvised melee weapon, with normal ratings for whatever kind of weapon can be described as most appropriate, and without any penalties due to it being an improvised weapon.  Clubs, staves and sledges are the most likely equivalents.  For the last, the character can use any sufficiently large item which he can lift with a feat of Strength.  In general, any kind of weapon can be improvised, if suitable scenery can be found.
 
-Unattuned artifact weapons can be used but this raises the Charm's cost to 5 motes, and requires a feat of Strength with a difficulty equal to twice the Strength minimum required to wield them when attuned.  The character gains no magical material bonuses for this but, if he wields the weapon continuously for the scene, he may choose to immediately attune it at the end of the scene, paying the appropriate cost.
+An unattuned artifact weapon can be used but this raises the Charm's cost to 5 motes, and requires a feat of Strength with a difficulty equal to twice the Strength minimum required to wield it if it were attuned.  The character gains no magical material bonuses for this but, if he wields the weapon continuously for the scene, he may choose to immediately attune it at the end of the scene, paying the appropriate cost.
 
 If the character is disarmed, he can reflexively pay 1 mote to re-activate this Charm for another weapon, which is immediately readied, provided one is within reach.
 
@@ -82,18 +104,32 @@ Concentrating for just a fraction of a second, the Overseer imposes her own unde
 For the normal elements of Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced Weapon.  At the conclusion of the Charm the weapon vanishes in a burst of elementally-aspected Essence.
 
 
-name: hrh, Hostility-Redirecting Hocus
+name: hrh, Hostility-Redirecting*Hocus
 cost: 3m or 5m
 mins: Melee 3, Ess 2
 type: Reflexive (Step 6)
 key: Combo-OK, Compulsion
 dur: Instant
-dep: yyy
+dep: 
 text: TODO
 
 If the character attempts to parry an attack and succeeds (including the use of perfect defenses), she may activate this Charm to cause the attack to be re-rolled against any other valid target.  If she fails to parry it, and it is not unblockable, she may pay 5 motes to activate this Charm.  If the Charm is activated and there are no other valid targets, the attack fails altogether.
 
 The attacker may ignore the unnatural mental influence of this Charm by spending a point of temporary Willpower. 
+
+
+name: ktt, Knockback Takeaway*Technique
+cost: 4m
+mins: Melee 4, Ess 2
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack
+dur: Instant
+dep: rss
+text: TODO
+
+Activating this Charm, the character subjects himself to the effects of Knockback (or doubles the distance, if it would already apply), leaving himself prone, but gains the opportunity to make a Disarming attempt as a Counterattack.  The attempt is made without the usual -2 penalty for close combat and, if he succeeds and has hands free, he automatically takes hold of the weapon.  If he succeeds but cannot grasp the weapon, it lands within his reach.
+
+This Charm can only be activated when the character is hit by or successfully parries a close range attack.  It is inapplicable against ranged attacks, or if the character dodges an attack.  Also, the Disarm action reduces the character's DV by -1 and he cannot use it in combination with any other counterattack.  If the attacker was making a flurry of attacks against the character, this Charm forces the flurry to end, unless the attacker can move to keep up with him.
 
 
 name: ama, Absent-Minded Absorption
@@ -102,10 +138,10 @@ mins: Melee 4, Ess 3
 type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
-dep: bbt, hrh
+dep: hrh, rss
 text: By surrendering his will to whims beyond Fate, the Tower-Builder renders himself unassailable with a careless sweep of his weapon.  His apparently wild and artless swing nonetheless happens to end up at the exactly the right spot to deflect an impending blow.
 
-This Charm allows the Discordian to perfectly defend against any attack, even if it is unblockable.  Furthermore, by spending 1 point of Willpower, the character can send the bulk of his weapon through a twist in Elsewhere, to apply a perfect Defend Other action on any being within Dash range who would be a valid target for a Melee attack by him.  The character does not actually have to dash to the being he wishes to defend, in this case.  This Charm suffers from one of the Discordian Flows of Invulnerability
+This Charm allows the Discordian to perfectly defend against any attack, even if it is unblockable.  Furthermore, by spending 1 point of Willpower, the character can send the bulk of his weapon through a twist in Elsewhere, to apply a perfect Defend Other action on any being within Dash range who would be a valid target for a Melee attack by him.  The character does not actually have to dash to the being he wishes to defend, in this case.  This Charm suffers from one of the Discordian Flaws of Invulnerability.
 
 
 name: spr, Shattered Pond Ripples

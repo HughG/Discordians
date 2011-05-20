@@ -97,7 +97,7 @@ type: Permanent
 key: None
 dur: Instant
 dep: 
-text: This Charm gives the Children of Eris access to Terrestrial Circle Sorcery, only they changed the name, just because.  Oh, alright, if you must know: it's because the number of sides of these two figures add up to the mystical five (given that a circle has an in-side and an out-side).  The character may instead purchase a version of this Charm which provides access to Shadowlands Circle Necromancy.  Both versions may be purchased separately by the same character.
+text: This Charm gives the Children of Eris access to Terrestrial Circle Sorcery, only they changed the name, just because.  Oh, alright, if you must know: it's because the number of sides of these two figures add up to the mystical five (given that a circle has an in-side and an out-side).  The character may instead purchase a version of this Charm which provides access to Shadowlands Circle Necromancy, known as Triangular Circle Necromancy.  Both versions may be purchased separately by the same character.
 
 
 name: sss, Square Circle Sorcery
@@ -107,7 +107,7 @@ type: Permanent
 key: None
 dur: Instant
 dep: tss
-text: This Charm builds on the character's knowledge of Sorcery, extending it to what others would term Celestial Circle Sorcery.  The character may instead purchase a version of this Charm which provides access to Labyrinth Circle Necromancy.  Both versions may be purchased separately by the same character.
+text: This Charm builds on the character's knowledge of Sorcery, extending it to what others would term Celestial Circle Sorcery.  The character may instead purchase a version of this Charm which provides access to Labyrinth Circle Necromancy, known as Square Circle Necromancy.  Both versions may be purchased separately by the same character.
 
 
 name: pss, Appropriation of*Adamantine Sorcery

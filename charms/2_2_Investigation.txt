@@ -29,20 +29,6 @@ text: TODO
 This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means allows the investigator to make the standard contested roll of the character's (Wits + Investigation) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would.
 
 
-name: stt, Sifting Through Tells
-cost: 5m
-mins: Inv 4, Ess 3
-type: Reflexive (Step 1)
-key: Combo-OK, Social
-dur: One scene
-dep: eft, rtsc
-text: As a well-known old mind-bender once said, "we leak the truth from every pore".  Those of the Soft and Steady Hand can seive the words and non-verbal cues they receive from those around them to find, if not the truth, at least the holes between.
-
-Activating this Charm allows the character to recognise all deliberate lies or half-truths he observes during the scene, whether communicated verbally or by facial expression etc.  In the case of a half-truth, the character can reflexively spend 1 mote to know which parts are believed to be a lie, though not what the speaker's true belief is.  If the liar is subject to some temporary Emotion or Illusion effect which causes him to communicate something contrary to his normal beliefs, this will also be detected.  (This leaves the character in a rather confusing belief situation if they are themselves subject to the same effect, granting them an extra opportunity to shake it off if possible.)
-
-If another Charm directly contests the effects of this one, add (character's Essence ÷ 2) successes to oppose the other Charm.
-
-
 name: eft, Even False Things
 cost: 3m
 mins: Inv 3, Ess 1
@@ -57,6 +43,32 @@ This Charm allows the character to temporarily reverse her belief about the trut
 Social combat is affected while this Charm is active, in that a character will use Charisma where Manipulation would normally apply, or vice versa, regarding the particular inverted belief.
 
 Since this Charm involves both imposing and acceding to unnatural mental influence, the two sides are in balance, and the character's Hodge and Podge tracks are unaffected.  The character loses any possibility of resisting this Charm's Illusion by activating it, though she may still choose to terminate it at any time.
+
+
+name: rtsc, Reading*the Soul's Compass
+cost: 5m
+mins: Investigation 4, Ess 2
+type: Simple
+key: Combo-OK, Social
+dur: Instant
+dep: 
+text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
+
+With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of ([the target's Manipulation + Socialize] ÷ 2).  A successsful roll reveals one Intimacy, which need not have been demonstrated in the current scene.  If the character already knows all the target's Intimacies, further successful rolls reveal the target's Motivation (or Motivations, in rare cases).
+
+
+name: stt, Sifting Through Tells
+cost: 5m
+mins: Inv 4, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK, Social
+dur: One scene
+dep: eft, rtsc
+text: As a well-known old mind-bender once said, "we leak the truth from every pore".  Those of the Soft and Steady Hand can seive the words and non-verbal cues they receive from those around them to find, if not the truth, at least the holes between.
+
+Activating this Charm allows the character to recognise all deliberate lies or half-truths he observes during the scene, whether communicated verbally or by facial expression etc.  In the case of a half-truth, the character can reflexively spend 1 mote to know which parts are believed to be a lie, though not what the speaker's true belief is.  If the liar is subject to some temporary Emotion or Illusion effect which causes him to communicate something contrary to his normal beliefs, this will also be detected.  (This leaves the character in a rather confusing belief situation if they are themselves subject to the same effect, granting them an extra opportunity to shake it off if possible.)
+
+If another Charm directly contests the effects of this one, add (character's Essence ÷ 2) successes to oppose the other Charm.
 
 
 name: sdi, Scrutiny-Deflecting Insight
@@ -115,15 +127,3 @@ The name of this Charm comes from the image of gaps and holes in the Loom of Fat
 For hidden, invisible or immaterial things, this Charm halves any penalties to the character's interactions with them.  Against Stealth effects which can be contested by mundane means, this Charm halves the difficulty and any added successes when the character contests it.  Against Stealth effects which are impenetrable by mundane means, the character will know that a concealed being is present, but will not learn its location.  This Charm does not in itself grant the ability to interact with immaterial beings.
 
 Disguised things are revealed as such, including the nature of the disguise.  This Charm reveals mundane and magical disguises, including those using Lunar shapeshifting, Sidereal astrology, and any unnatural mental influences which cause the character to mistake the true nature of something.  (This does not count as resisting the unnatural mental influence directly, so does not accrue Podge.)  However, the identity of the disguised person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are halved.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise.  For the avoidance of doubt, raksha Assumption charms do not count as disguises for the purposes of this Charm.
-
-
-name: rtsc, Reading*the Soul's Compass
-cost: 5m
-mins: Investigation 4, Ess 2
-type: Simple
-key: Combo-OK, Social
-dur: Instant
-dep: 
-text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
-
-With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of ([the target's Manipulation + Socialize] ÷ 2).  A successsful roll reveals one Intimacy, which need not have been demonstrated in the current scene.  If the character already knows all the target's Intimacies, further successful rolls reveal the target's Motivation (or Motivations, in rare cases).

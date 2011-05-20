@@ -3,6 +3,20 @@ dep:
 text: 
 
 
+name: oct, Occulted Cargo Trick
+cost: 2m, or 2m, 1wp
+mins: Larceny 3, Ess 2
+type: Simple (Speed 5)
+key: Combo-OK
+dur: Indefinite
+dep: 
+text: TODO
+
+Opening a controlled pocket of Elsewhere, the character places into it any non-living item which she can easily hold in her hand.  While inside this pocket, the item cannot be found by normal means.  It can be retrieved as a miscellaneous action, though the character may keep the motes committed to allow her to return the item to storage, again as a miscellaneous action.  If she simply releases the committment, the item falls to the ground beside her.
+
+A character can store away at most (Essence) items in this manner, each requiring a separate activation of this Charm.  At Essence 3, the character may stash away any object which she could lift with a feat of strength.  With Larceny 4 and Essence 4, the character may spend an point of Willpower in addition, to stash away a willing (and presumably trusting) living being.  For them, no time will seem to have passed when they are retrieved.
+
+
 name: rpt, Ragged Pocket Trick
 cost: 6m
 mins: Larceny 5, Ess 3
@@ -31,20 +45,6 @@ text: TODO
 This Charm builds upon its prerequisite, allowing the Gatekeeper to instantly change places with a target object or being within (Essence x 5) yards.  Wards against teleportation will prevent this effect.  Unwilling beings can resist as if resisting a grapple, but at an external penalty of -(character's Essence x 2), since the attack comes from no particular direction.  Objects are only valid targets if they could be lifted by the character as a feat of strength, using (Strength + Athletics + Essence).
 
 If the character or the target was restrained before the exchange, those restraints will switch from one to the other, though they may break or be too loose.
-
-
-name: oct, Occulted Cargo Trick
-cost: 2m, or 2m, 1wp
-mins: Larceny 3, Ess 2
-type: Simple (Speed 5)
-key: Combo-OK
-dur: Indefinite
-dep: 
-text: TODO
-
-Opening a controlled pocket of Elsewhere, the character places into it any non-living item which she can easily hold in her hand.  While inside this pocket, the item cannot be found by normal means.  It can be retrieved as a miscellaneous action, though the character may keep the motes committed to allow her to return the item to storage, again as a miscellaneous action.  If she simply releases the committment, the item falls to the ground beside her.
-
-A character can store away at most (Essence) items in this manner, each requiring a separate activation of this Charm.  At Essence 3, the character may stash away any object which she could lift with a feat of strength.  With Larceny 4 and Essence 4, the character may spend an point of Willpower in addition, to stash away a willing (and presumably trusting) living being.  For them, no time will seem to have passed when they are retrieved.
 
 
 name: nrm, Notion Relocation*Method
@@ -81,6 +81,18 @@ text: TODO
 This Charm supplements an action to create a disguise, enabling the character to do so in a single action, rather than the many minutes it would normally require, and use even the most tenuously applicable of props.  Use of inhumanly acute senses to penetrate the disguise is at a -2 external penalty.  Note that the character's Recumbent Destiny applies as normal.
 
 
+name: ftk, Flawless Transfiguration*Knack
+cost: 3m
+mins: Larceny 3, Ess 2
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: exc
+text: TODO
+
+This Charm supplements a Larceny action to construct a disguise, making it possible to disguise one item as another, of roughly equivalent size, shape and weight.  The disguise is perfect to natural senses, and the Mid-day Shadow can use this perfection to construct a flawless forgery, provided he has detailed information on the object to be copied.  However, he may just as easily take a well-known object and make it appear to be a quite mundane item of some other sort.  If supernatural or inhumanly acute senses are applied to see through the deception, the difficulty is increased by the character's Essence.  This Charm cannot disguise the magical nature of things like artifacts, so those with Essence sight might gain bonuses to attempts to see the true nature of a magical item.  Then again, a cunning Discordian might just choose to disguise a famous daiklave as an ordinary daiklave of the same magical material.
+
+
 name: icc, Inhuman Countenance*Construction
 cost: 2m, 1wp
 mins: Larceny 4, Ess 3
@@ -111,18 +123,6 @@ If character gains at least one threshold success over the target, or the target
 [TODO: Should the victim be able to make the same roll as Erisians, to suppress this for a scene?]
 
 [TODO: Should the duration be limited to 23 days or something?]
-
-
-name: ftk, Flawless Transfiguration*Knack
-cost: 3m
-mins: Larceny 3, Ess 2
-type: Supplemental
-key: Combo-OK
-dur: Instant
-dep: exc
-text: TODO
-
-This Charm supplements a Larceny action to construct a disguise, making it possible to disguise one item as another, of roughly equivalent size, shape and weight.  The disguise is perfect to natural senses, and the Mid-day Shadow can use this perfection to construct a flawless forgery, provided he has detailed information on the object to be copied.  However, he may just as easily take a well-known object and make it appear to be a quite mundane item of some other sort.  If supernatural or inhumanly acute senses are applied to see through the deception, the difficulty is increased by the character's Essence.  This Charm cannot disguise the magical nature of things like artifacts, so those with Essence sight might gain bonuses to attempts to see the true nature of a magical item.  Then again, a cunning Discordian might just choose to disguise a famous daiklave as an ordinary daiklave of the same magical material.
 
 
 name: vav, Value-Adding Veneer

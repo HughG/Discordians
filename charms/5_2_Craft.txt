@@ -93,6 +93,18 @@ Also at Essence 4, she can pay the increased cost to raise a manse on an uncappe
 At the end of the scene, or after (Essence) hours if this is sooner, a mundane object constructed using this Charm will be consumed by the powerful Shaping forces at work, and vanish in a shimmering cloud.  Magical objects will collapse into their component parts, and the magical ingredients involved will be tarnished or mixed with impurities.  Re-using amounts of the standard magical materials is possible, but requires effort equivalent to smelting them in the first place (Oadenol's Codex, p. 23).  Unique magical ingredients may be destroyed, transmuted or salvagable in some other way, at the storyteller's whim.
 
 
+name: xxx, XXX
+cost: 3m
+mins: Craft 2, Ess 1
+type: Supplemental
+key: Combo-OK, Touch
+dur: Instant
+dep: exc
+text: TODO
+
+TODO
+
+
 name: rwrt, Rainbow Warp*Removal Technique
 cost: 6m, 1wp
 mins: Craft 3, Ess 3

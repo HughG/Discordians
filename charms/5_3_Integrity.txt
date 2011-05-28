@@ -17,7 +17,7 @@ name: csis, Chimera Sheds Its Skin
 cost: 5m, 1wp
 mins: Integrity 3, Ess 3
 type: Simple
-key: Shaping
+key: Shaping, Obvious
 dur: Instant
 dep: csp
 text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their way.  With this Charm the character may undo any one Shaping effect which has altered her at any point in time.  If the Shaping affected more individuals than just the character, she will be the only one to escape it.  A ghostly orange outline of the character will persist, hanging in space for one scene, embodying that sloughed-off magic.  If any other being touches it before the scene expires, the original effect is immediately applied to them, though they may use any powers of their own to resist it.
@@ -68,19 +68,31 @@ type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: One scene
 dep: csis, ddt
-text: They Who Carve Truth In Stone are able to form that metaphorical stone from the gossamer of daydreams, convincing herself that her view of the world is the only right one, if only for a short while.  This Charm prefectly defends against any Compulsion, Emotion, Illusion, Servitude and Shaping attacks for the rest of the scene.  Additionally, any compulsions due to lack of Willpower, or an overflowing of Hodge or Podge, are delayed until the end of the scene.  On the other hand, any attempts by the character to act against her Virtues, Intimacies or Motivation have their difficulties increased by 2.  Use of this Charm gains the character a point of Podge but, if that takes the count over 10, the consequences are still delayed until the end of the scene.
+text: They Who Carve Truth In Stone are able to form that metaphorical stone from the gossamer of daydreams, convincing herself that her view of the world is the only right one, if only for a short while.  This Charm perfectly defends against any Compulsion, Emotion, Illusion, Servitude and Shaping attacks for the rest of the scene.  Additionally, any compulsions due to lack of Willpower, or an overflowing of Hodge or Podge, are delayed until the end of the scene.  On the other hand, any attempts by the character to act against her Virtues, Intimacies or Motivation have their difficulties increased by 2.  Use of this Charm gains the character a point of Podge but, if that takes the count over 10, the consequences are still delayed until the end of the scene.
+
+
+name: roe, Running on Empty
+cost: -
+mins: Integrity 2, Ess 2
+type: Permanent
+key: None
+dur: Permanent
+dep: 
+text: TODO
+
+Each purchase of this Charm permanently enhances the character by giving her increasing her maximum temporary Willpower by 1 point.  This additional pool of Willpower is initially empty and will not be refilled by Conviction rolls each morning, but may be filled by any other effect such as stunts and Charms.  This Charm may be purchased up to (Essence) times.
 
 
 name: ror, Reallocation of Resolve
-cost: 4m per point of Willpower
-mins: Integrity 3, Ess 1
+cost: 3m plus 3m per point of Willpower
+mins: Integrity 3, Ess 2
 type: Simple
 key: Combo-OK, Obvious, Touch
 dur: Instant
-dep: exc
+dep: roe
 text: TODO
 
-This Charm allows the Unbending Arm to transfer Willpower between himself and another being.  The character may transfer a number of points up to his permanent Essence, in either direction, at a cost of 4 motes per point.  If the other being is unwilling, the character must make a successful attack to touch it, and the two make a contested (Essence + Integrity) roll.  If the Erisian wins, the transfer is in the desired direction, and he gains a point of Podge.  If he fails, the direction is reversed, and he gains a point of Hodge.  In the case of a tie, nothing happens, but the motes are spent.
+This Charm allows the Unbending Arm to transfer Willpower between himself and another being.  The character may transfer a number of points up to his permanent Essence, in either direction, at a cost of 4 motes per point.  If the other being is unwilling, the character must make a successful attack to touch it, and the two make a contested (Essence + Integrity) roll.  If the Erisian wins, the transfer is in the desired direction, and he gains a point of Podge.  If he fails, the direction is reversed, and he gains a point of Hodge.  In the case of a tie, nothing happens, but the motes are spent.  In any case, this Charm cannot reduce the character's temporary Willpower rating below zero, nor increase the target's beyond its maximum.
 
 
 name: pma, Policy-Molding*Arrogation
@@ -94,7 +106,7 @@ text: TODO
 
 This Charm allows an agent of the Authority to instantly forge an Intimacy in relation to the Policy of a social group.  This Intimacy must involve supporting, opposing or changing in some particular way the Policy of that group.  As long as the character maintains her commitment of motes, she treats all natural or unnatural mental influence which would divert her from that goal as an unacceptable order (which means no points of Podge are gained from resisting it).  Furthermore, she is able to spend Willpower to channel her base, unmodified Integrity, as if it were an equivalently-rated Virtue, in support of this Intimacy.
 
-The character may maintain a number of such additional Intimcaies equal to her Conviction.  The available channels of Integrity in each story are shared among all these Intimacies.  Using this Charm to maintain three Intimacies does not gain (Integrity x 3) opportunities to channel Integrity, only (Integrity).
+The character may maintain a number of such additional Intimacies equal to her Conviction.  The available channels of Integrity in each story are shared among all these Intimacies.  Using this Charm to maintain three Intimacies does not gain (Integrity x 3) opportunities to channel Integrity, only (Integrity).
 
 
 name: uoth, Umbrella of the Heart
@@ -103,7 +115,7 @@ mins: Integrity 4, Ess 3
 type: Permanent
 key: None
 dur: Permanent
-dep: ror, pma
+dep: exc, pma
 text: TODO
 
 This Charm enhances the Discordian's power of self-determination, allowing her to share it with others.  The benefits of any Integrity Charm which she uses may be extended to up to (her permanent Essence) other willing beings, at a surcharge of 2m per being.  If several such Charms are used in a Combo, the surcharge is still paid only once per being.  In the case of Reallocation of Resolve, the total numer of Willpower points gained or lost may be distributed among the beneficiaries as the character chooses.

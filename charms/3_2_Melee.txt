@@ -5,7 +5,7 @@ text:
 
 name: intro, .
 dep: 
-text: TODO: Action-longs (maybe as re-purchase?)
+text: TODO: Action-longs (maybe as re-purchase?); something emotional like the Archery one, e.g., cutting out heart/Virtue?
 
 
 name: scd, Short-Cut Draw

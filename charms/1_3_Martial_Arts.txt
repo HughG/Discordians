@@ -3,6 +3,11 @@ dep:
 text: 
 
 
+name: intro, .
+dep: 
+text: TODO: Something emotional like the Archery one?
+
+
 name: eif, Emptiness is Form
 cost: 2m
 mins: Martial Arts 3, Ess 1

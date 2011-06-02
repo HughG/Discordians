@@ -71,7 +71,7 @@ dep: csis, ddt
 text: They Who Carve Truth In Stone are able to form that metaphorical stone from the gossamer of daydreams, convincing herself that her view of the world is the only right one, if only for a short while.  This Charm perfectly defends against any Compulsion, Emotion, Illusion, Servitude and Shaping attacks for the rest of the scene.  Additionally, any compulsions due to lack of Willpower, or an overflowing of Hodge or Podge, are delayed until the end of the scene.  On the other hand, any attempts by the character to act against her Virtues, Intimacies or Motivation have their difficulties increased by 2.  Use of this Charm gains the character a point of Podge but, if that takes the count over 10, the consequences are still delayed until the end of the scene.
 
 
-name: roe, Running on Empty
+name: roe, Running on Emptiness
 cost: -
 mins: Integrity 2, Ess 2
 type: Permanent
@@ -80,7 +80,9 @@ dur: Permanent
 dep: 
 text: TODO
 
-Each purchase of this Charm permanently enhances the character by giving her increasing her maximum temporary Willpower by 1 point.  This additional pool of Willpower is initially empty and will not be refilled by Conviction rolls each morning, but may be filled by any other effect such as stunts and Charms.  This Charm may be purchased up to (Essence) times.
+Each purchase of this Charm permanently enhances the character by giving her increasing her maximum temporary Willpower by 1 point.  This additional pool of Willpower is initially empty and will not be refilled by Conviction rolls each morning.  Instead it is filled by any other effect such as stunts and Charms, and this extra pool will be filled before her normal Willpower pool.  This Charm may be purchased up to (Essence) times.
+
+In times of dire need, this Charm has a further use.  The desperate Discordian may reflexively sacrifice one purchase of this Charm to immediately refill her (slightly smaller) Willpower pool completely, including any points available from remaining purchases of this Charm.  The experience points originally spent on the Charm are not regained, though it may be purchased again later.  Sacrificing the last purchase of this Charm in this way prevents the character from using any Charms which have it as a prerequisite, directly or indirectly, until she re-purchases it.
 
 
 name: ror, Reallocation of Resolve

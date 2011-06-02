@@ -27,6 +27,21 @@ text: TODO
 The Chosen of Eris invokes this Charm in response to an attack which is initially unexpected, and which she fails to block or dodge.  This Charm is applicable even if the character has used some other effect to make it no longer unexpected: it works because the attacker believes their attack is a surprise.  The character is permitted a counterattack against the original attack, and against any other attacks, unexpected or not, until her next action.  This Charm does not guarantee that a counterattack is possible (e.g., ranged attackers may not be valid targets), only that the opportunity exists.
 
 
+name: gopd, Gaze of*Perfect Disregard
+cost: 4m
+mins: Awareness 3, Ess 3
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK, Social
+dur: Instant
+dep: 
+text: The Wholly Fools see the inner and outer worlds of body and mind as one, and may attend to or ignore any part with equal ease.
+
+This Charm has two alternative effects.  Activated in one way, in Step 2 of social combat, the character turns his focus inward, ignoring the pressures of the outside world.  In this way it provides a perfect social dodge, even against social attacks which are undodgeable.  Afterwards, he will remember that the attack occurred, who made it (if he was aware of that), and that he defended himself against it, but will have no memory of the intent of the attack nor the content of the communication which delivered it.
+
+[TODO: Does this need a Flaw of Invulnerability?  Social perfects don't seem to have them, in general.]
+
+On the other hand, the character may activate it on Step 1 to turn his focus entirely outward.  This enables him to take one action which ignores any ongoing Compulsion, Illusion or Emotion effect, or to suppress a Virtue without paying a point of Willpower.  This does not allow him to sidestep Servitude effects, since their continuing power is focused in the outside world, nor does it fend off the impact of Limit Break.  In addition, since he is ignoring his Virtues, he cannot channel them on this action.
+
 
 name: hpp, Holographic*Perception Praxis
 cost: 3m

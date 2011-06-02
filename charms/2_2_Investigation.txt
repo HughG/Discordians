@@ -29,16 +29,34 @@ text: TODO
 This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means allows the investigator to make the standard contested roll of the character's (Wits + Investigation) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would.
 
 
+name: roi, Refuge of*Intransigence
+cost: 3m or 6m
+mins: Inv 3, Ess 2
+type: Reflexive (Step 2)
+key: Combo-OK, Illusion, Social, Stackable
+dur: One scene
+dep: 
+text: TODO
+
+Constructing a personally satisfying proof using twisted and ill-founded logic, the Moonlight Lyre uses this Charm to defeat a social attack by subjecting herself to an Illusion that it is an unacceptable -- indeed, impossible -- order.  Resisting natural mental influence in this way costs only three motes, while unnatural mental influence costs twice as much.
+
+The Illusion lasts for the rest of the scene, and she cannot voluntarily terminate the Charm before then, nor spend Willpower to resist her own Illusion.  Unless some other effect removes or bypasses that Illusion, she cannot take any action substantially equivalent to that demanded by the attack until the next scene.  This Charm may therefore have undesirable consequences after using it to resist, for example, an Emotion of fear which drives one to flee, or anger which drives one to attack.  Further attacks within the scene which would direct the character to effectively the same course of action, even if for a different reason, are equally deemed impossible.  Attacks which try to get the character to do something different would require a separate activation of this Charm to resist.
+
+Although the Illusion which limits the character only lasts for the scene, mental influence which is defended against simply never takes hold, so the character need not make further efforts to resist the original attack in later scenes.
+
+Since this Charm involves both imposing and acceding to unnatural mental influence, the two sides are in balance, and the character's Hodge and Podge tracks are unaffected.
+
+
 name: eft, Even False Things
 cost: 3m
-mins: Inv 3, Ess 1
+mins: Inv 3, Ess 2
 type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Illusion, Social, Stackable
 dur: Indefinite
-dep: exc
+dep: exc, roi
 text: As Malaclypse the Younger himself said, "Even false things are true."  Fully internalising this understanding allows a Priest of Eris to conceive and to utter both truth and falsehood with equal conviction.
 
-This Charm allows the character to temporarily reverse her belief about the truth or falsity of a given notion.  For as long as the motes remain committed, she is subject to an Illusion effect which changes her own belief.  This affects mundane or magical attempts to discern the veracity of the character's statements, in word, writing, thought or any other medium.  Magical attempts to determine the truth as the character sees it will be fooled by the Illusion.  Effects which impose a contradictory belief result in a contested roll, with a bonus of (Essence ÷ 2) for the character.
+This Charm allows the character to temporarily reverse her belief about the truth or falsity of a given notion.  For as long as the motes remain committed, she is subject to an Illusion effect which changes her own belief.  This affects mundane or magical attempts to discern the veracity of the character's statements, in word, writing, thought or any other medium.  Magical attempts to determine the truth as the character sees it will be fooled by the Illusion.  If such magic is strong enough to require a roll-off, add a bonus of Essence successes.  Effects which impose a contradictory belief result in a contested roll, with a bonus of (Essence ÷ 2) successes for the character.  This applies both to effects in play when the Charm is activated, and those applied while it is active.
 
 Social combat is affected while this Charm is active, in that a character will use Charisma where Manipulation would normally apply, or vice versa, regarding the particular inverted belief.
 

@@ -3,9 +3,9 @@ dep:
 text: n/a
 
 
-name: obt, Ox-Body Technique
+name: cbt, Chao-Body Technique
 cost: -
-mins: Res 1, Ess 1
+mins: Resistance 1, Essence 1
 type: Permanent
 key: Stackable
 dur: Permanent
@@ -13,9 +13,27 @@ dep:
 text: Unpredictable as the followers of Eris are, you can never quite tell when they're going to keel over in a fight.  A player may purchase this Charm once for each dot of Resistance her character has.  Each purchase gains the character one of the following combinations of additional health levels, at the player's option, determined at the time of purchase: one -0 health level; or one -1 health level and two -2 health levels; or one -2 health level and three -4 health levels
 
 
+name: iss, Impact-Shifting*Stance
+cost: 3m
+mins: Resistance 3, Essence 3
+type: Reflexive (Step 7)
+key: Combo-OK, Knockdown, Obvious
+dur: Instant
+dep: 
+text: TODO
+
+This Charm allows the Discordian to transmit the force of an attack on him into another object or being with which he is in contact.  In the case of an object, it must be one the character is firmly in conctact with: a floor he is standing on, a door he is backed up against or the like.  Similarly in the case of another being, the two must be engaged in a grapple or the character must be firmly pressed against the other, perhaps voluntarily standing back-to-back, perhaps lying on an Inactive "assistant".
+
+If the damage of the attack is sufficient to overcome the Hardness of the other object or being, its full force is transmitted through the character and into the other, which suffers the damage.  If not, the character suffers the damage as normal, but the force rebounds on his attacker, unless it was a ranged attack.  In that case the attacker must check for Knockdown if the damage exceeds (attacker's Stamina + Resistance).  The character will feel instinctively if his "cushion" has too great a Hardness to absorb the blow, and may choose not to activate this Charm.  Solid objects generally have a Hardness equal to their soak, as described in Exalted, pp. 151-152.
+
+The character may also activate this Charm if subject to a magically-enhanced Knockback effect which causes additional damage on impact, provided that damage exceeds the Hardness of the object.  This usage does not affect the damage of the original effect, only that of impact after Knockback.
+
+This Charm protects the character against damage from attacks, and against Crippling effects as a consequence of damage.  It will generally not protect against other keyworded effects, and may not protect against certain Crippling effects, depending on how they are inflicted.  Also, note that objects which are to be the targets of transmitted damage must be sufficiently solid: tapestries or water would not suffice, though sand and earth probably would.  If the instant or cumulative damage is enough to destroy the target of the transmitted force, the character and other combatants may have to make Athletics checks, suffer environmental damage or otherwise deal with the consequences.
+
+
 name: eer, Erisian Elemental*Rejuvenation
 cost: 5m, 1wp
-mins: Res 3, Ess 3
+mins: Resistance 3, Essence 3
 type: Simple
 key: Combo-OK
 dur: Indefinite

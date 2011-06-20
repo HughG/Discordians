@@ -1,10 +1,12 @@
 name: exc, (Any Melee*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: intro, .
-dep: 
+dep:
+
 text: TODO: Action-longs (maybe as re-purchase?)
 
 
@@ -14,14 +16,24 @@ mins: Melee 2, Ess 2
 type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
-dep: 
+dep:
+
 text: TODO
 
-[TODO: Review once Ink Monkeys have finished playing around with Martial-ready stuff.]
+[TODO: Review once Ink Monkeys have finished playing around with Martial-ready
+stuff.]
 
-This Charm summons the Erisian's Melee weapon to his hand, from any point up to (Essence x 2) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
+This Charm summons the Erisian's Melee weapon to his hand, from any point up
+to (Essence x 2) yards away.  The weapon must be one which the character owns.
+It travels via Elsewhere, meaning that most bindings, even magical ones, will
+not prevent it from returning to his hand.  The character may use this Charm
+to reflexively ready a weapon and attack in the same action.
 
-A second purchase at Melee 3 and Essence 3 allows the character to use the Charm with an Indefinite duration, suspending a weapon in Elsewhere.  It will remain there as long as the motes remain committed.  When they are reflexively released, it will appear in his hand, or falls to his feet if both hands are occupied.
+A second purchase at Melee 3 and Essence 3 allows the character to use the
+Charm with an Indefinite duration, suspending a weapon in Elsewhere.  It will
+remain there as long as the motes remain committed.  When they are reflexively
+released, it will appear in his hand, or falls to his feet if both hands are
+occupied.
 
 
 name: rss, Reflected Steel Stroke
@@ -30,10 +42,17 @@ mins: Melee 4, Ess 2
 type: Reflexive (Step 9)
 key: Combo-OK, Counterattack
 dur: Instant
-dep: 
-text: A successful warrior grows to understand of the ebb and flow, balanace and unbalance of combat.  Reading the moments of mischance in her opponent's strikes allows the Offendi respond instinctively with her own, and take advantage of both strength and weakness.
+dep:
 
-Using her opponent's own impetus and skill against him, the character uses this Charm to counterattack at her full dice pool.  Each carry-over success from the original attack, regardless of whether it did any damage, adds one die to the character's counterattack, to a maximum of her own Essence.
+text: A successful warrior grows to understand of the ebb and flow, balanace
+and unbalance of combat.  Reading the moments of mischance in her opponent's
+strikes allows the Offendi respond instinctively with her own, and take
+advantage of both strength and weakness.
+
+Using her opponent's own impetus and skill against him, the character uses
+this Charm to counterattack at her full dice pool.  Each carry-over success
+from the original attack, regardless of whether it did any damage, adds one
+die to the character's counterattack, to a maximum of her own Essence.
 
 
 name: bbt, Breastplate Bypass Technique
@@ -43,9 +62,24 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: exc, scd
-text: An Apple Corpsman may choose to attack directly, but is just as likely to approach in unexpected ways, to cause maximum confusion.  His powers allow him to draw the mystery of Elsewhere over the edge or point of his weapon, causing it to appear instead a short distance away, at a spot which will do the most damage to his target.
 
-This Charm supplements a Melee attack in a number of ways.  It applies a -1 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness or soak due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It does not cause the attack to ignore natural soak, or soak added by Charms.  It furthermore effectively allows attacks to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.  The target must still be in melee range, though the weapon gains the Reach tag if it did not have it already.
+text: An Apple Corpsman may choose to attack directly, but is just as likely
+to approach in unexpected ways, to cause maximum confusion.  His powers allow
+him to draw the mystery of Elsewhere over the edge or point of his weapon,
+causing it to appear instead a short distance away, at a spot which will do
+the most damage to his target.
+
+This Charm supplements a Melee attack in a number of ways.  It applies a -1
+external penalty to the defender's DVs, unless he or she can somehow see into
+Elsewhere.  It causes the attack to ignore any Hardness or soak due to armour
+or any similar protections beyond the target's own skin, and to ignore DV
+bonuses due to cover.  It does not cause the attack to ignore natural soak, or
+soak added by Charms.  It furthermore effectively allows attacks to pass
+through solid objects, though some magical wards may prevent this.  If the
+character cannot otherwise percieve the target through any such objects, the
+attack will suffer an external penalty as severe as blindness (-4), unless
+some other effect improves the situation.  The target must still be in melee
+range, though the weapon gains the Reach tag if it did not have it already.
 
 
 name: ebs, Elusive Blade Stroke
@@ -55,9 +89,18 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: bbt
+
 text: TODO
 
-This Charm extends the power of its prerequisite, causing the Corpswoman's entire weapon to slide briefly sideways via Elsewhere and strike her intended target from an unpredictable angle: from behind, below, above, or perhaps just from the other hand.  The attack becomes unexpected unless the target succeeds on a (Wits + Awareness) roll at a difficulty of the character's Essence.  With appropriate stunts, the character may attempt to make the attack appear to originate from another nearby being.  The target must still be in melee range, though the weapon gains the Reach tag if it did not have it already.
+
+This Charm extends the power of its prerequisite, causing the Corpswoman's
+entire weapon to slide briefly sideways via Elsewhere and strike her intended
+target from an unpredictable angle: from behind, below, above, or perhaps just
+from the other hand.  The attack becomes unexpected unless the target succeeds
+on a (Wits + Awareness) roll at a difficulty of the character's Essence.  With
+appropriate stunts, the character may attempt to make the attack appear to
+originate from another nearby being.  The target must still be in melee range,
+though the weapon gains the Reach tag if it did not have it already.
 
 
 name: fcf, Foe-Cleaving Flow
@@ -67,11 +110,24 @@ type: Simple
 key: Combo-OK, Obvious
 dur: Instant
 dep: ebs
-text: Treading that fine line between control and abandon, the Corpsman sends the sharp edges and points of his weapon into Elsewhere, freeing them to follow his opponent's movements rather than his own will.  The weapon skips past mundane and magical attempts to block it, and sticks to the target as it feints and ducks.
 
-This Charm constitutes an attack which is unblockable and undodgeable, making both Parry and Dodge Defense Values inapplicable.  The target must still be in melee range, though the weapon gains the Reach tag if it did not have it already.
+text: Treading that fine line between control and abandon, the Corpsman sends
+the sharp edges and points of his weapon into Elsewhere, freeing them to
+follow his opponent's movements rather than his own will.  The weapon skips
+past mundane and magical attempts to block it, and sticks to the target as it
+feints and ducks.
 
-By spending an additional 2 motes, the attack can reach out over larger distances and, unless some magical warding prevents this, through solid objects.  The range of the attack extends to twice the character's Dash distance, and it ignores DV bonuses due to cover.  DV bonuses for armor and soak still apply, and attack penalties may apply if the character attempts to attack through a barrier but cannot see the target through it.
+This Charm constitutes an attack which is unblockable and undodgeable, making
+both Parry and Dodge Defense Values inapplicable.  The target must still be in
+melee range, though the weapon gains the Reach tag if it did not have it
+already.
+
+By spending an additional 2 motes, the attack can reach out over larger
+distances and, unless some magical warding prevents this, through solid
+objects.  The range of the attack extends to twice the character's Dash
+distance, and it ignores DV bonuses due to cover.  DV bonuses for armor and
+soak still apply, and attack penalties may apply if the character attempts to
+attack through a barrier but cannot see the target through it.
 
 
 name: baba, Branch and Brush*Armory
@@ -80,14 +136,28 @@ mins: Melee 1, Ess 2
 type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: One scene
-dep: 
+dep:
+
 text: TODO
 
-Activating this Charm, the Apple Corpsman reflexively grabs a nearby object and employs it as an improvised melee weapon, with normal ratings for whatever kind of weapon can be described as most appropriate, and without any penalties due to it being an improvised weapon.  Clubs, staves and sledges are the most likely equivalents.  For the last, the character can use any sufficiently large item which he can lift with a feat of Strength.  In general, any kind of weapon can be improvised, if suitable scenery can be found.
+Activating this Charm, the Apple Corpsman reflexively grabs a nearby object
+and employs it as an improvised melee weapon, with normal ratings for whatever
+kind of weapon can be described as most appropriate, and without any penalties
+due to it being an improvised weapon.  Clubs, staves and sledges are the most
+likely equivalents.  For the last, the character can use any sufficiently
+large item which he can lift with a feat of Strength.  In general, any kind of
+weapon can be improvised, if suitable scenery can be found.
 
-An unattuned artifact weapon can be used but this raises the Charm's cost to 5 motes, and requires a feat of Strength with a difficulty equal to twice the Strength minimum required to wield it if it were attuned.  The character gains no magical material bonuses for this but, if he wields the weapon continuously for the scene, he may choose to immediately attune it at the end of the scene, paying the appropriate cost.
+An unattuned artifact weapon can be used but this raises the Charm's cost to 5
+motes, and requires a feat of Strength with a difficulty equal to twice the
+Strength minimum required to wield it if it were attuned.  The character gains
+no magical material bonuses for this but, if he wields the weapon continuously
+for the scene, he may choose to immediately attune it at the end of the scene,
+paying the appropriate cost.
 
-If the character is disarmed, he can reflexively pay 1 mote to re-activate this Charm for another weapon, which is immediately readied, provided one is within reach.
+If the character is disarmed, he can reflexively pay 1 mote to re-activate
+this Charm for another weapon, which is immediately readied, provided one is
+within reach.
 
 
 name: soei, Sword of*Essential Idiosyncrasy
@@ -97,11 +167,48 @@ type: Simple
 key: Combo-OK, Obvious
 dur: One scene
 dep: baba
+
 text: TODO
 
-Concentrating for just a fraction of a second, the Overseer imposes her own understanding of reality on the space between her hands, conjuring a melee weapon of his choice out of a confluence of Erisian elemental Essence.  If she is a member of the 3rd Division and has changed her anima to a Dragon-Blooded element, she may instead choose to use the element of that anima.  The weapon is treated as a perfect example of its kind, and provides further benefits depending on the element.  Orange allows the character to reflexively spend 1 mote at Step 7 of any successful attack to convert 4 levels of bashing damage, or 2 levels of lethal damage, into 1 level of aggravated damage.  (No more than 1 level of aggravated damage can be gained in this way.)  Sweet allows the character to reduce the final number of levels of damage suffered by the target by up to (Essence), with the character regaining half that many motes, or a single point of Willpower.  (This is limited by the number of Health Levels the target has remaining: if an attack would cause 10 levels of lethal damage, and the target has only 2 levels remaining, then the character can gain at most a single mote, doing no damage to the target.  Also, this effect is appiled after all other effects which might reduce the damage the target would suffer.)  Boom produces a thunderous noise on a successful attack, and forces the target to check for Knockdown with a difficulty of 4; or, if the attack would already have forced a check for Knockdown, it adds the character's (Essence) to the difficulty.  Pungent relases a puff of unpleasant and overwhelming scent on impact, which requires the target to make a reflexive (Stamina + Resistance) roll or suffer a -2 penalty on all actions for the next (Essence) actions, as a Poison effect.  Prickle inflicts a distracting itching sensation, whose location seems to continually move, adding 1 to the Speed of the target's next (Essence) actions, as a Crippling effect.  Dirt gets into the target's eyes, adding a -2 external penalty to all actions requiring sight, for the next (Essence) actions, as a Crippling effect.  Focus makes the target temporary unwilling to divert from her current course, requiring them to fail a COnviction roll or suppress that Virtue each time they want to attack a different target, or to stop attacking, until the end of the scene.  Dream sends the target into partial reverie for the next (Essence) actions, applying a -2 external penalty to their MDVs.  Binding removes 2 points of external penalty from attempts to disarm a target.
 
-For the normal elements of Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced Weapon.  At the conclusion of the Charm the weapon vanishes in a burst of elementally-aspected Essence.
+Concentrating for just a fraction of a second, the Overseer imposes her own
+understanding of reality on the space between her hands, conjuring a melee
+weapon of his choice out of a confluence of Erisian elemental Essence.  If she
+is a member of the 3rd Division and has changed her anima to a Dragon-Blooded
+element, she may instead choose to use the element of that anima.  The weapon
+is treated as a perfect example of its kind, and provides further benefits
+depending on the element.  Orange allows the character to reflexively spend 1
+mote at Step 7 of any successful attack to convert 4 levels of bashing damage,
+or 2 levels of lethal damage, into 1 level of aggravated damage.  (No more
+than 1 level of aggravated damage can be gained in this way.)  Sweet allows
+the character to reduce the final number of levels of damage suffered by the
+target by up to (Essence), with the character regaining half that many motes,
+or a single point of Willpower.  (This is limited by the number of Health
+Levels the target has remaining: if an attack would cause 10 levels of lethal
+damage, and the target has only 2 levels remaining, then the character can
+gain at most a single mote, doing no damage to the target.  Also, this effect
+is appiled after all other effects which might reduce the damage the target
+would suffer.)  Boom produces a thunderous noise on a successful attack, and
+forces the target to check for Knockdown with a difficulty of 4; or, if the
+attack would already have forced a check for Knockdown, it adds the
+character's (Essence) to the difficulty.  Pungent relases a puff of unpleasant
+and overwhelming scent on impact, which requires the target to make a
+reflexive (Stamina + Resistance) roll or suffer a -2 penalty on all actions
+for the next (Essence) actions, as a Poison effect.  Prickle inflicts a
+distracting itching sensation, whose location seems to continually move,
+adding 1 to the Speed of the target's next (Essence) actions, as a Crippling
+effect.  Dirt gets into the target's eyes, adding a -2 external penalty to all
+actions requiring sight, for the next (Essence) actions, as a Crippling
+effect.  Focus makes the target temporary unwilling to divert from her current
+course, requiring them to fail a COnviction roll or suppress that Virtue each
+time they want to attack a different target, or to stop attacking, until the
+end of the scene.  Dream sends the target into partial reverie for the next
+(Essence) actions, applying a -2 external penalty to their MDVs.  Binding
+removes 2 points of external penalty from attempts to disarm a target.
+
+For the normal elements of Creation, apply the benefits of the Dragon-Blooded
+Charm Dragon-Graced Weapon.  At the conclusion of the Charm the weapon
+vanishes in a burst of elementally-aspected Essence.
 
 
 name: hrh, Hostility-Redirecting*Hocus
@@ -110,12 +217,18 @@ mins: Melee 3, Ess 2
 type: Reflexive (Step 6)
 key: Combo-OK, Compulsion
 dur: Instant
-dep: 
+dep:
+
 text: TODO
 
-If the character attempts to parry an attack and succeeds (including the use of perfect defenses), she may activate this Charm to cause the attack to be re-rolled against any other valid target.  If she fails to parry it, and it is not unblockable, she may pay 5 motes to activate this Charm.  If the Charm is activated and there are no other valid targets, the attack fails altogether.
+If the character attempts to parry an attack and succeeds (including the use
+of perfect defenses), she may activate this Charm to cause the attack to be
+re-rolled against any other valid target.  If she fails to parry it, and it is
+not unblockable, she may pay 5 motes to activate this Charm.  If the Charm is
+activated and there are no other valid targets, the attack fails altogether.
 
-The attacker may ignore the unnatural mental influence of this Charm by spending a point of temporary Willpower. 
+The attacker may ignore the unnatural mental influence of this Charm by
+spending a point of temporary Willpower.
 
 
 name: ktt, Knockback Takeaway*Technique
@@ -125,11 +238,24 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack
 dur: Instant
 dep: rss
+
 text: TODO
 
-Activating this Charm, the character subjects himself to the effects of Knockback (or doubles the distance, if it would already apply), leaving himself prone, but gains the opportunity to make a Disarming attempt as a Counterattack.  The attempt is made without the usual -2 penalty for close combat and, if he succeeds and has hands free, he automatically takes hold of the weapon.  If he succeeds but cannot grasp the weapon, it lands within his reach.
+Activating this Charm, the character subjects himself to the effects of
+Knockback (or doubles the distance, if it would already apply), leaving
+himself prone, but gains the opportunity to make a Disarming attempt as a
+Counterattack.  The attempt is made without the usual -2 penalty for close
+combat and, if he succeeds and has hands free, he automatically takes hold of
+the weapon.  If he succeeds but cannot grasp the weapon, it lands within his
+reach.
 
-This Charm can only be activated when the character is hit by or successfully parries a close range attack.  It is inapplicable against ranged attacks, or if the character dodges an attack.  Also, the Disarm action reduces the character's DV by -1 and he cannot use it in combination with any other counterattack.  If the attacker was making a flurry of attacks against the character, this Charm forces the flurry to end, unless the attacker can move to keep up with him.
+This Charm can only be activated when the character is hit by or successfully
+parries a close range attack.  It is inapplicable against ranged attacks, or
+if the character dodges an attack.  Also, the Disarm action reduces the
+character's DV by -1 and he cannot use it in combination with any other
+counterattack.  If the attacker was making a flurry of attacks against the
+character, this Charm forces the flurry to end, unless the attacker can move
+to keep up with him.
 
 
 name: ama, Absent-Minded Absorption
@@ -139,9 +265,19 @@ type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
 dep: hrh, rss
-text: By surrendering his will to whims beyond Fate, the Tower-Builder renders himself unassailable with a careless sweep of his weapon.  His apparently wild and artless swing nonetheless happens to end up at the exactly the right spot to deflect an impending blow.
 
-This Charm allows the Discordian to perfectly defend against any attack, even if it is unblockable.  Furthermore, by spending 1 point of Willpower, the character can send the bulk of his weapon through a twist in Elsewhere, to apply a perfect Defend Other action on any being within Dash range who would be a valid target for a Melee attack by him.  The character does not actually have to dash to the being he wishes to defend, in this case.  This Charm suffers from one of the Discordian Flaws of Invulnerability.
+text: By surrendering his will to whims beyond Fate, the Tower-Builder renders
+himself unassailable with a careless sweep of his weapon.  His apparently wild
+and artless swing nonetheless happens to end up at the exactly the right spot
+to deflect an impending blow.
+
+This Charm allows the Discordian to perfectly defend against any attack, even
+if it is unblockable.  Furthermore, by spending 1 point of Willpower, the
+character can send the bulk of his weapon through a twist in Elsewhere, to
+apply a perfect Defend Other action on any being within Dash range who would
+be a valid target for a Melee attack by him.  The character does not actually
+have to dash to the being he wishes to defend, in this case.  This Charm
+suffers from one of the Discordian Flaws of Invulnerability.
 
 
 name: spr, Shattered Pond Ripples
@@ -151,11 +287,25 @@ type: Extra Action (Speed +1)
 key: Combo-OK, Obvious
 dur: Instant
 dep: scd
-text: The Children of Eris rail against strictures and structures which offend them, including the rules of space which prevent all things existing at one point.  Casting a net of Elsewhere strands across her blade, she causes slices of it to appear in several places at once as she strikes.
 
-This Charm provides the Exalt with a magical flurry of two or more Melee-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to (her permanent Essence), regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  The Speed of the combined actions is one more than the Speed of the longest single action.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions realigning the momentum of the weapon after each attack.
+text: The Children of Eris rail against strictures and structures which offend
+them, including the rules of space which prevent all things existing at one
+point.  Casting a net of Elsewhere strands across her blade, she causes slices
+of it to appear in several places at once as she strikes.
 
-At Essence 3, the character may additionally spend 1 point of Willpower to add an unpredictable shift to her own physical presence, allowing her to ignore all DV penalties from these attacks (but not from other sources).
+This Charm provides the Exalt with a magical flurry of two or more Melee-based
+attacks.  Each attack costs 3 motes, including the first, and the character
+may make a number of attacks up to (her permanent Essence), regardless of the
+weapon's Rate.  The Charm allows her to make these attacks without multiple
+action penalties and with a DV penalty equal to the highest penalty for any
+one attack.  The Speed of the combined actions is one more than the Speed of
+the longest single action.  For weapons with a Rate less than 1, the character
+must spend one (or more) of her extra actions realigning the momentum of the
+weapon after each attack.
+
+At Essence 3, the character may additionally spend 1 point of Willpower to add
+an unpredictable shift to her own physical presence, allowing her to ignore
+all DV penalties from these attacks (but not from other sources).
 
 [NOTE: For review, this mirrors Feathers and Fins Attack in Archery.]
 
@@ -167,17 +317,48 @@ type: Supplemental
 key: Combo-OK, Illusion
 dur: One scene
 dep: baba
+
 text: TODO
 
-The Erisian makes a cutting sweep with his weapon, in the direction of his target but without coming anywhere close to hitting.  Indeed, the target may be anywhere within (Essence x 10) yards, provided the character can perceive it.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+The Erisian makes a cutting sweep with his weapon, in the direction of his
+target but without coming anywhere close to hitting.  Indeed, the target may
+be anywhere within (Essence x 10) yards, provided the character can perceive
+it.  The attack causes no damage, is unblockable with mundane weapons or
+armor, applies a -2 external penalty to the target's DV due to its
+invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
+resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
-If the attack achieves even one success, this Charm applies an Illusion which cuts one thing out of the target's awareness.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
+If the attack achieves even one success, this Charm applies an Illusion which
+cuts one thing out of the target's awareness.  Resisting the influence costs
+two Willpower, and will make the target aware of the attempt at unnatural
+influence.
 
-For a cost of 8 motes, any one object or being may be removed from the target's awareness, provided it is also in range of the Charm and is no larger than (Essence) times the character's own volume.  The target will not be consciously aware of the excised item, and will unconsciously avoid interacting with it if possible.  If interaction is forced, e.g., because the hidden being attacks, or the target falls through a hidden trap-door when it is opened, then the Illusion ends.  A hidden being may move at normal speed and make a small amount of noise, such as the gentle creak and clank of armour, without disturbing the target.  However, running around in metal armour, causing loud noises or bright flashes, or using Obvious Charms or similar activities will end the Illusion.
+For a cost of 8 motes, any one object or being may be removed from the
+target's awareness, provided it is also in range of the Charm and is no larger
+than (Essence) times the character's own volume.  The target will not be
+consciously aware of the excised item, and will unconsciously avoid
+interacting with it if possible.  If interaction is forced, e.g., because the
+hidden being attacks, or the target falls through a hidden trap-door when it
+is opened, then the Illusion ends.  A hidden being may move at normal speed
+and make a small amount of noise, such as the gentle creak and clank of
+armour, without disturbing the target.  However, running around in metal
+armour, causing loud noises or bright flashes, or using Obvious Charms or
+similar activities will end the Illusion.
 
-Alternatively, for a cost of 5 motes and 1 Willpower, the character may make the target lose touch with one of its Intimacies, believing that the formerly important person or value is of no particular importance.  If the character knows one or more of the target's Intimacies, he may choose a particular one to detach.  If not, or if he wishes to leave things to chance, the Storyteller selects one.  The scene then counts as a scene spent weakening the Intimacy.  Provided it still has at least one dot after being reduced, the Intimacy reasserts itself when the scene ends.
+Alternatively, for a cost of 5 motes and 1 Willpower, the character may make
+the target lose touch with one of its Intimacies, believing that the formerly
+important person or value is of no particular importance.  If the character
+knows one or more of the target's Intimacies, he may choose a particular one
+to detach.  If not, or if he wishes to leave things to chance, the Storyteller
+selects one.  The scene then counts as a scene spent weakening the Intimacy.
+Provided it still has at least one dot after being reduced, the Intimacy
+reasserts itself when the scene ends.
 
-Using this attack does not end any Stealth effects on the character, unless the target successfully resists the influence using Willpower at the moment of the initial attack.
+Using this attack does not end any Stealth effects on the character, unless
+the target successfully resists the influence using Willpower at the moment of
+the initial attack.
 
 
-Witnesses may spend 1 Willpower to realise the source of the target's strange behaviour provided they saw the Exalt's attack, but they may do this at any time at or after that initial attack.
+Witnesses may spend 1 Willpower to realise the source of the target's strange
+behaviour provided they saw the Exalt's attack, but they may do this at any
+time at or after that initial attack.

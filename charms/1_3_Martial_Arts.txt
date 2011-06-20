@@ -1,10 +1,12 @@
 name: form, (Any Form-Type*Charm)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: intro, .
-dep: 
+dep:
+
 text: TODO: Something emotional like the Archery one?
 
 
@@ -14,10 +16,15 @@ mins: Martial Arts 3, Ess 1
 type: Reflexive
 key: Combo-OK
 dur: Instant
-dep: 
-text: The greatest of sifus are prepared even when they are unprepared; they do not move from rest to fighting stance, because the two are one for them.  Among the Ignorant Children, even the youngest may learn this truth.
+dep:
 
-The character can activate this Charm whenever a Join Battle roll is called for.  It adds (Essence) in dice to his roll and, if any other participants roll higher, he nonetheless acts on tick 0.
+text: The greatest of sifus are prepared even when they are unprepared; they
+do not move from rest to fighting stance, because the two are one for them.
+Among the Ignorant Children, even the youngest may learn this truth.
+
+The character can activate this Charm whenever a Join Battle roll is called
+for.  It adds (Essence) in dice to his roll and, if any other participants
+roll higher, he nonetheless acts on tick 0.
 
 
 name: ff, Formless Form
@@ -27,13 +34,24 @@ type: Permanent
 key: None
 dur: Permanent
 dep: form
-text: Masters and Grand-masters spend decades perfecting many forms, but few truly understand how to move beyond learning a form, to /being/ the form.
 
-[TODO: This whole Charm is a bit pointless if Form-type Charms are becoming Combo-Basic.]
+text: Masters and Grand-masters spend decades perfecting many forms, but few
+truly understand how to move beyond learning a form, to /being/ the form.
 
-One of the Law who has learned this Charm can use any Form-type Charms she knows, without treating that use as a Charm activation, by spending a point of Willpower in addition to the Charm's normal cost.  She may still have only one Form-type Charm active at any given time.
+[TODO: This whole Charm is a bit pointless if Form-type Charms are becoming
+Combo-Basic.]
 
-An additional benefit, though less frequently useful, is that the character can more easily switch between forms.  If she ends one Form-type Charm and activates another in same tick, she regains the motes spent on the Charm just ended, and can use them to pay toward the cost of the new Form-type Charm.  This does not require the expenditure of Willpower (unless she wants to adopt the new Form without a Charm activation).
+One of the Law who has learned this Charm can use any Form-type Charms she
+knows, without treating that use as a Charm activation, by spending a point of
+Willpower in addition to the Charm's normal cost.  She may still have only one
+Form-type Charm active at any given time.
+
+An additional benefit, though less frequently useful, is that the character
+can more easily switch between forms.  If she ends one Form-type Charm and
+activates another in same tick, she regains the motes spent on the Charm just
+ended, and can use them to pay toward the cost of the new Form-type Charm.
+This does not require the expenditure of Willpower (unless she wants to adopt
+the new Form without a Charm activation).
 
 
 name: fie, Form is Emptiness
@@ -43,8 +61,29 @@ type: Reflexive
 key: Combo-OK, Obvious
 dur: One action
 dep: form, eif
-text: Wise men and babies alike think that all things are one.  In combat, then, we all strike only at ourselves, and even the most seasoned sage is wearied by this realisation at times.  But if all is one, where can one find respite from this?  Why, in Limbo, of course, where there are no things!
 
-The Whistling Voice can only use this Charm while he has a Form-type Charm active.  When this Charm is activated, he retreats momentarily to gather himself -- not into a meditative state, but into Elsewhere.  If invoked in response to an attack, it perfectly defends against that attack, unless it is unblockable or undodgeable.  (Together, the requirement that a Form-type Charm be active, and the imperfection of defense against unblockable and undodgeable attacks constitute a unique Flaw of Invulnerability.)  In those cases, the character may suffer damage and other effects from the attack, but still vanishes immediately.  This means that, for instance, further attacks in a flurry cannot target him.  On the other hand, the character may do nothing until the tick on which he reappears; indeed, no ticks pass for him, which may be relevant to the duration of some effects.
+text: Wise men and babies alike think that all things are one.  In combat,
+then, we all strike only at ourselves, and even the most seasoned sage is
+wearied by this realisation at times.  But if all is one, where can one find
+respite from this?  Why, in Limbo, of course, where there are no things!
 
-The character's anima flares to the 8-10 mote level on the tick when he disappears, and again on the tick when he reappears, unless of course it was already flaring at a higher level; if not, it returns to its previous level on the following tick.  If something else specificially moves into the character's previous location while he is absent, he reappears at the nearest point at which there is space for him.  Depending on the storyteller's whim, this could leave him with his back to his opponent.
+The Whistling Voice can only use this Charm while he has a Form-type Charm
+active.  When this Charm is activated, he retreats momentarily to gather
+himself -- not into a meditative state, but into Elsewhere.  If invoked in
+response to an attack, it perfectly defends against that attack, unless it is
+unblockable or undodgeable.  (Together, the requirement that a Form-type Charm
+be active, and the imperfection of defense against unblockable and undodgeable
+attacks constitute a unique Flaw of Invulnerability.)  In those cases, the
+character may suffer damage and other effects from the attack, but still
+vanishes immediately.  This means that, for instance, further attacks in a
+flurry cannot target him.  On the other hand, the character may do nothing
+until the tick on which he reappears; indeed, no ticks pass for him, which may
+be relevant to the duration of some effects.
+
+The character's anima flares to the 8-10 mote level on the tick when he
+disappears, and again on the tick when he reappears, unless of course it was
+already flaring at a higher level; if not, it returns to its previous level on
+the following tick.  If something else specificially moves into the
+character's previous location while he is absent, he reappears at the nearest
+point at which there is space for him.  Depending on the storyteller's whim,
+this could leave him with his back to his opponent.

@@ -1,11 +1,33 @@
 name: intro, .
-text: The warrior-priest is a relatively common figure among the Solar host, but some Resplendent Suns would rather focus on the mystical aspects of existence, fighting only when necessary, and using the practise of Martial Arts to further their enlightenment.
 
-Perhaps uniquely, this style bridges the gap between the Terrestrial and Celestial levels of mastery.  Dragon-Blooded, enlightened mortals and the like may learn most of the Charms of this tree, though they cost an additional 1 mote to activate.  [Daat] is an Enlightening Charm, though it helps only Dragon-Blooded.  Once they have learned that, they need not pay the additional cost to use Charms of this form, and can learn the rest of the Charms in the tree, as well as any other Celestial forms for which they can find teachers.  Enlightened mortals and other kinds of martial artist can never learn the Charms which have [Daat] as a prerequisite, however, and are not further enlightned by learning it.  Celestial Exalts, as well as Abyssals, Infernals and Autochthonians, may learn the whole form.
+text: The warrior-priest is a relatively common figure among the Solar host,
+but some Resplendent Suns would rather focus on the mystical aspects of
+existence, fighting only when necessary, and using the practise of Martial
+Arts to further their enlightenment.
 
-The character must choose any one kind of non-ranged weapon when she begins to learn this style: that becomes its form weapon for her.  All other non-ranged weapons weapons may also be used with this style, including improvised weapons.  However, they do not count as form weapons, suffer an Accuracy penalty of -2 (to a minimum of -3), and their damage bonus is halved.  When she learns [Daat], the character may choose another non-ranged weapon type to become an additional form weapon.
+Perhaps uniquely, this style bridges the gap between the Terrestrial and
+Celestial levels of mastery.  Dragon-Blooded, enlightened mortals and the like
+may learn most of the Charms of this tree, though they cost an additional 1
+mote to activate.  [Daat] is an Enlightening Charm, though it helps only
+Dragon-Blooded.  Once they have learned that, they need not pay the additional
+cost to use Charms of this form, and can learn the rest of the Charms in the
+tree, as well as any other Celestial forms for which they can find teachers.
+Enlightened mortals and other kinds of martial artist can never learn the
+Charms which have [Daat] as a prerequisite, however, and are not further
+enlightned by learning it.  Celestial Exalts, as well as Abyssals, Infernals
+and Autochthonians, may learn the whole form.
 
-Rumours exist that the Neverborn, the Yozi, or both have their own variations of this style.
+
+The character must choose any one kind of non-ranged weapon when she begins to
+learn this style: that becomes its form weapon for her.  All other non-ranged
+weapons weapons may also be used with this style, including improvised
+weapons.  However, they do not count as form weapons, suffer an Accuracy
+penalty of -2 (to a minimum of -3), and their damage bonus is halved.  When
+she learns [Daat], the character may choose another non-ranged weapon type to
+become an additional form weapon.
+
+Rumours exist that the Neverborn, the Yozi, or both have their own variations
+of this style.
 
 
 name: malkhut, Malkhut
@@ -14,10 +36,20 @@ mins: Martial Arts 1, Ess 1
 type: Permanent
 key: None
 dur: Permanent
-dep: 
-text: Every journey begins with a first step, be the ground mud, grass or brass.  The martial artist acknowledges her mortal passions, and begins to see that the focus of the form comes not from repressing them, but from mastering them knack of opening them up to inspiration from higher powers.
+dep:
 
-If the character channels a Virtue on a stunted Martial Arts action which is successful, she may role the same number of Virtue dice again, with each success adding one points of Essence to the reward from the stunt.  Alternatively she may regain half that many points of Willpower, rounded up.  In addition, the character regains one channel of any one Virtue at the end of the scene.  She cannot regain more than one Virtue channel through use of this Charm, regardless of how many times she uses it in a scene.
+text: Every journey begins with a first step, be the ground mud, grass or
+brass.  The martial artist acknowledges her mortal passions, and begins to see
+that the focus of the form comes not from repressing them, but from mastering
+them knack of opening them up to inspiration from higher powers.
+
+If the character channels a Virtue on a stunted Martial Arts action which is
+successful, she may role the same number of Virtue dice again, with each
+success adding one points of Essence to the reward from the stunt.
+Alternatively she may regain half that many points of Willpower, rounded up.
+In addition, the character regains one channel of any one Virtue at the end of
+the scene.  She cannot regain more than one Virtue channel through use of this
+Charm, regardless of how many times she uses it in a scene.
 
 
 name: yesod, Yesod
@@ -27,11 +59,25 @@ type: Reflexive
 key: Combo-OK
 dur: One scene
 dep: malkhut
-text: Having gained a deeper understanding of his mortal self, the martial artist takes the next step and learns how to better channel his Essence into concrete actions.
 
-For the remainder of the scene, the character may add one to his Essence rating in all calculations based on it (not only Martial Arts actions).  This does not allow him to access new Charms, nor to access facets of Charm effects which require a certain minumum Essence.  For instance, it does not allow an Essence 2 character to extend the benefits of [Hod] or [Netzah] to other characters, but it does allow an Essence 3 character to extend them to /two/ allies.
+text: Having gained a deeper understanding of his mortal self, the martial
+artist takes the next step and learns how to better channel his Essence into
+concrete actions.
 
-In addition, he may reflexively pay 1 mote to add one to his Martial Arts rating, in all calculations based on it, on any one action tick.  This does not apply for reflexive (most likely defensive) calculations taken on the ticks between actions.  The increase in Martial Arts rating explicitly /does/ raise the dice cap for excellencies.  As with the Essence increase, it does not allow the character access to new Charms or new facets thereof.
+For the remainder of the scene, the character may add one to his Essence
+rating in all calculations based on it (not only Martial Arts actions).  This
+does not allow him to access new Charms, nor to access facets of Charm effects
+which require a certain minumum Essence.  For instance, it does not allow an
+Essence 2 character to extend the benefits of [Hod] or [Netzah] to other
+characters, but it does allow an Essence 3 character to extend them to /two/
+allies.
+
+In addition, he may reflexively pay 1 mote to add one to his Martial Arts
+rating, in all calculations based on it, on any one action tick.  This does
+not apply for reflexive (most likely defensive) calculations taken on the
+ticks between actions.  The increase in Martial Arts rating explicitly /does/
+raise the dice cap for excellencies.  As with the Essence increase, it does
+not allow the character access to new Charms or new facets thereof.
 
 
 name: hod, Hod
@@ -41,11 +87,21 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: yesod
-text: The martial artist gathers his strength, from his own mortal body and from the Essence which flows into him, preparing to pass judgement on his enemy.  Onlookers will see no glowing sparks around him, but his mien takes on a transcendent might and righteousness, which is obvious to all.
 
-The character invokes this Charm to supplement a Aim action, converting up to (the higher of [Essence or Temperance]) bonus dice to successes on the subsequent attack (if any).
+text: The martial artist gathers his strength, from his own mortal body and
+from the Essence which flows into him, preparing to pass judgement on his
+enemy.  Onlookers will see no glowing sparks around him, but his mien takes on
+a transcendent might and righteousness, which is obvious to all.
 
-For each point of Essence above 2, she may reflexively add the bonus dice (not as successes) from her Aim action to the next attack by any one ally within (Essence x 5) yards, provided that attack is on the same target and occurs before the character's next action.  These dice count towards that ally's limit on dice added by Charms for that attack.
+The character invokes this Charm to supplement a Aim action, converting up to
+(the higher of [Essence or Temperance]) bonus dice to successes on the
+subsequent attack (if any).
+
+For each point of Essence above 2, she may reflexively add the bonus dice (not
+as successes) from her Aim action to the next attack by any one ally within
+(Essence x 5) yards, provided that attack is on the same target and occurs
+before the character's next action.  These dice count towards that ally's
+limit on dice added by Charms for that attack.
 
 
 name: netzah, Netzah
@@ -55,11 +111,21 @@ type: Supplemental
 key: Combo-OK, Knockback
 dur: Instant
 dep: yesod
-text: To strike down your enemy is a kindness, for surely he is in the wrong, and must learn this.
 
-The Lawgiver supplements his attack with this Charm, giving it the Knockback keyword.  For the purposes of the Knockback check, he adds his Valor in automatic successes to its damage, and adds (Valor ÷ 2), rounded up, to the difficulty of the target's roll.
+text: To strike down your enemy is a kindness, for surely he is in the wrong,
+and must learn this.
 
-If the target is knocked back, the attack does no damage.  Furthermore, for each point of Essence above 2 which the character possesses, he may use his victory as inspiration and reflexively allow any one ally within (Essence x 5) yards to channel Valor on their next attack, without it counting towards the per-story limit on Virtue channeling.  These allies must still spend Willpower to channel Valor in this way.
+The Lawgiver supplements his attack with this Charm, giving it the Knockback
+keyword.  For the purposes of the Knockback check, he adds his Valor in
+automatic successes to its damage, and adds (Valor ÷ 2), rounded up, to the
+difficulty of the target's roll.
+
+If the target is knocked back, the attack does no damage.  Furthermore, for
+each point of Essence above 2 which the character possesses, he may use his
+victory as inspiration and reflexively allow any one ally within (Essence x 5)
+yards to channel Valor on their next attack, without it counting towards the
+per-story limit on Virtue channeling.  These allies must still spend Willpower
+to channel Valor in this way.
 
 
 name: tiferet, Tiferet
@@ -69,11 +135,24 @@ type: Simple
 key: Form-type
 dur: One scene
 dep: hod, yesod, netzah
-text: Mortals must struggle their way through life, earning their keep; yet at times unlooked-for, a higher source may empower them, out of recognition of their character and struggle.  Enlightenment, apotheosis and exaltation are powerful examples of this principle, but it applies on a smaller scale also.
 
-The martial artist adopts a meditative pose, symbolic of the connection from the highest power to the lowest, from Chaos to Order, yet remains ready to strike in an instant.  When she adopts this form, the character brings raw Essence and constructed reality into balance within herself.
+text: Mortals must struggle their way through life, earning their keep; yet at
+times unlooked-for, a higher source may empower them, out of recognition of
+their character and struggle.  Enlightenment, apotheosis and exaltation are
+powerful examples of this principle, but it applies on a smaller scale also.
 
-While this form is active, the character adds the highest of her Virtue ratings to her DVs and MDVs, and half that rating to any Martial Arts attack which is unarmed or uses form weapons.  In addition, a successful 2-die stunt will heal a single level of bashing damage, or convert a single level of lethal to bashing; and a successful three-die stunt will heal a single level of lethal, or convert a single aggravated level to lethal.  The character may forgo the normal stunt bonus to double this healing.
+The martial artist adopts a meditative pose, symbolic of the connection from
+the highest power to the lowest, from Chaos to Order, yet remains ready to
+strike in an instant.  When she adopts this form, the character brings raw
+Essence and constructed reality into balance within herself.
+
+While this form is active, the character adds the highest of her Virtue
+ratings to her DVs and MDVs, and half that rating to any Martial Arts attack
+which is unarmed or uses form weapons.  In addition, a successful 2-die stunt
+will heal a single level of bashing damage, or convert a single level of
+lethal to bashing; and a successful three-die stunt will heal a single level
+of lethal, or convert a single aggravated level to lethal.  The character may
+forgo the normal stunt bonus to double this healing.
 
 
 name: gevurah, Gevurah
@@ -83,11 +162,28 @@ type: Simple
 key: Combo-OK, Obvious, Compulsion, Knockback
 dur: (Essence) actions
 dep: hod, tiferet
-text: Lesser fighters focus on defeating their enemies; those who grow in understanding see that one may win by simply ignoring those who are unworthy opponents.
 
-This Charm lays a Compulsion on all who have Joined Battle against the character in the current scene, to stay at least (Essence x Conviction) yards away from the character, and to move outside that range if they are currently within it.  The effect costs one Willpower to resist.  Opponents within the radius who do not resist experience this Compulsion physically, as if a successful Knockback had landed them just outside the range.  The Compulsion does not prevent opponents from using ranged attackings from outside the radius of effect.
+text: Lesser fighters focus on defeating their enemies; those who grow in
+understanding see that one may win by simply ignoring those who are unworthy
+opponents.
 
-The effect ends prematurely, for an individual target, if the character attacks that target.  Anyone within the range who was not subject to the Compulsion (either because they were not a target or because they immediately resisted it) is bolstered by the perception that they are among the worthy.  This includes the character himself.  At the end of the effect, they may roll their Conviction to regain Willpower as if they had enjoyed a night's sleep.  This opportunity is lost to them if they attack any compelled targets before the effect ends; it is lost to all if the character attacks in this manner.
+This Charm lays a Compulsion on all who have Joined Battle against the
+character in the current scene, to stay at least (Essence x Conviction) yards
+away from the character, and to move outside that range if they are currently
+within it.  The effect costs one Willpower to resist.  Opponents within the
+radius who do not resist experience this Compulsion physically, as if a
+successful Knockback had landed them just outside the range.  The Compulsion
+does not prevent opponents from using ranged attackings from outside the
+radius of effect.
+
+The effect ends prematurely, for an individual target, if the character
+attacks that target.  Anyone within the range who was not subject to the
+Compulsion (either because they were not a target or because they immediately
+resisted it) is bolstered by the perception that they are among the worthy.
+This includes the character himself.  At the end of the effect, they may roll
+their Conviction to regain Willpower as if they had enjoyed a night's sleep.
+This opportunity is lost to them if they attack any compelled targets before
+the effect ends; it is lost to all if the character attacks in this manner.
 
 
 name: hesed, Hesed
@@ -97,9 +193,17 @@ type: Simple (Speed 3, DV -0)
 key: Combo-OK, Obvious
 dur: Instant
 dep: tiferet, netzah
-text: The brave of heart find joy in combat, but the bright of heart seek only to bring joy and peace to others; to them, combat and conflict are true Anathema.
 
-When this Charm is activated, a glow of colorless Essence gathers around the character, then washes out around him.  This glow heals one level of bashing damage per mote spent, or converts one level of lethal to bashing per 2 motes spent, up to a maximum number of levels equal to the character's (Compassion).  This benefit applies to all beings within (Essence + Compassion) yards, regardless of whether they are allies, enemies or bystanders.
+text: The brave of heart find joy in combat, but the bright of heart seek only
+to bring joy and peace to others; to them, combat and conflict are true
+Anathema.
+
+When this Charm is activated, a glow of colorless Essence gathers around the
+character, then washes out around him.  This glow heals one level of bashing
+damage per mote spent, or converts one level of lethal to bashing per 2 motes
+spent, up to a maximum number of levels equal to the character's (Compassion).
+This benefit applies to all beings within (Essence + Compassion) yards,
+regardless of whether they are allies, enemies or bystanders.
 
 
 name: daat, Daat
@@ -109,13 +213,37 @@ type: Simple
 key: Combo-Basic, Enlightening
 dur: One scene
 dep: gevurah, tiferet, hesed
-text: By this point, the martial artist has learned to draw down higher power into himself, and apply it to his actions on those around him.  Now, he extends his awareness of the nature of all beings, and uses it to raise himself up.
 
-This Charm gives the character a clear awareness of the ratings for Virtues, Willpower and Essence, for each being in her line of sight, up to (Essence x Willpower) yards.  Any penalties to observing the location targets due to Stealth, invisibility or partial cover are reduced by the character's (Essence ÷ 2), as their true natures shine out.  Immaterial beings are locatable as if they were materialized, though only as a nebulous shape embodying these traits.  In all cases, the true appearance of such hidden beings remains unknown, unless revealed by other means.
+text: By this point, the martial artist has learned to draw down higher power
+into himself, and apply it to his actions on those around him.  Now, he
+extends his awareness of the nature of all beings, and uses it to raise
+himself up.
 
-Furthermore, on any successful attack, the character may reflexively spend 2 motes in step 10 to attempt to temporarily reduce one of these traits.  Bashing damage may be used to reduce any one of the Virtues by 1 dot.  Lethal damage may do the same, or reduce the target's mote pool by [Essence] motes.  Aggravated damage may alternatively reduce temporary Willpower by 1 dot.  Immaterial targets are also subject to this effect on a successful attack, which ignores their immaterial state, though they suffer no physical damage or other contact effects unless by some other means.  The targeted traits cannot be reduced past 1.  Any dots or motes drained are added to the character's own traits, though they cannot surpass the normal limits, and these bonuses fade at the end of the scene.
+This Charm gives the character a clear awareness of the ratings for Virtues,
+Willpower and Essence, for each being in her line of sight, up to (Essence x
+Willpower) yards.  Any penalties to observing the location targets due to
+Stealth, invisibility or partial cover are reduced by the character's (Essence
+÷ 2), as their true natures shine out.  Immaterial beings are locatable as if
+they were materialized, though only as a nebulous shape embodying these
+traits.  In all cases, the true appearance of such hidden beings remains
+unknown, unless revealed by other means.
 
-Merely learning this Charm has benefits in itself.  Any practitioner of this style may choose an additional non-ranged form weapon when first she learns it.  Dragon-Blooded who learn this Charm gain access to Celestial martial arts, including the rest of this style.
+Furthermore, on any successful attack, the character may reflexively spend 2
+motes in step 10 to attempt to temporarily reduce one of these traits.
+Bashing damage may be used to reduce any one of the Virtues by 1 dot.  Lethal
+damage may do the same, or reduce the target's mote pool by [Essence] motes.
+Aggravated damage may alternatively reduce temporary Willpower by 1 dot.
+Immaterial targets are also subject to this effect on a successful attack,
+which ignores their immaterial state, though they suffer no physical damage or
+other contact effects unless by some other means.  The targeted traits cannot
+be reduced past 1.  Any dots or motes drained are added to the character's own
+traits, though they cannot surpass the normal limits, and these bonuses fade
+at the end of the scene.
+
+Merely learning this Charm has benefits in itself.  Any practitioner of this
+style may choose an additional non-ranged form weapon when first she learns
+it.  Dragon-Blooded who learn this Charm gain access to Celestial martial
+arts, including the rest of this style.
 
 
 name: binah, Binah
@@ -125,13 +253,24 @@ type: Simple
 key: Combo-Basic, Counterattack
 dur: One scene
 dep: gevurah, daat
-text: In due course a wise man must harness the raw creative energy seen in [Hokhmah] to tease out its potential, and working through its possibilities.
 
-With this Charm active, the martial artist sees the consequences of his own and others' actions.  Any unexpected attacks against him are no longer unexpected.  The penalty from any coordinated attacks against him is reduced by his Essence.  The character gains an automatic counterattack against each attack on him, though he suffers flurry penalties in counterattacking flurries.  When counterattacking, he may target and damage dematerialized beings as if they were materialized, and any external penalties due to Stealth effects employed by that attacker are reduced by his Essence.
+text: In due course a wise man must harness the raw creative energy seen in
+[Hokhmah] to tease out its potential, and working through its possibilities.
 
-If the character already has [Hokhmah] active, this Charm may be activated without paying the Willpower cost.
+With this Charm active, the martial artist sees the consequences of his own
+and others' actions.  Any unexpected attacks against him are no longer
+unexpected.  The penalty from any coordinated attacks against him is reduced
+by his Essence.  The character gains an automatic counterattack against each
+attack on him, though he suffers flurry penalties in counterattacking
+flurries.  When counterattacking, he may target and damage dematerialized
+beings as if they were materialized, and any external penalties due to Stealth
+effects employed by that attacker are reduced by his Essence.
 
-Only characters who have access to Celestial martial arts can learn this Charm.
+If the character already has [Hokhmah] active, this Charm may be activated
+without paying the Willpower cost.
+
+Only characters who have access to Celestial martial arts can learn this
+Charm.
 
 
 name: hokhmah, Hokhmah
@@ -141,17 +280,32 @@ type: Simple
 key: Combo-Basic, Shaping
 dur: One scene
 dep: daat, hesed
-text: Opening herself up to raw, pre-conscious creative insight, the martial artist's actions spring from nowhere, from the primal energy of Chaos.  With this Charm active, all of the character's attacks for the rest of the scene become unexpected.
 
-In addition, any attack which causes damage also has the chance of afflicting a temporary Wyld mutation, chosen by the storyteller, as a Shaping effect.  The character makes a contested roll of ([Essence + Willpower] ÷ 2) against the target.  If the character wins, the target suffers a mutation; if she botches, she suffers one herself.  Bashing damage inflicts a pox or deficiency, lethal an affliction or debility, and aggravated a blight or deformity.
+text: Opening herself up to raw, pre-conscious creative insight, the martial
+artist's actions spring from nowhere, from the primal energy of Chaos.  With
+this Charm active, all of the character's attacks for the rest of the scene
+become unexpected.
 
-If the target (or the character) has already suffered a mutation due to this Charm in the current scene, the new mutation replaces the previous one.  The mutation fades at the end of the scene.
+In addition, any attack which causes damage also has the chance of afflicting
+a temporary Wyld mutation, chosen by the storyteller, as a Shaping effect.
+The character makes a contested roll of ([Essence + Willpower] ÷ 2) against
+the target.  If the character wins, the target suffers a mutation; if she
+botches, she suffers one herself.  Bashing damage inflicts a pox or
+deficiency, lethal an affliction or debility, and aggravated a blight or
+deformity.
 
-[TODO: Not sure what this should do against raksha, since I don't know anything about their combat system.]
+If the target (or the character) has already suffered a mutation due to this
+Charm in the current scene, the new mutation replaces the previous one.  The
+mutation fades at the end of the scene.
 
-If the character already has [Binah] active, this Charm may be activated without paying the Willpower cost.
+[TODO: Not sure what this should do against raksha, since I don't know
+anything about their combat system.]
 
-Only characters who have access to Celestial martial arts can learn this Charm.
+If the character already has [Binah] active, this Charm may be activated
+without paying the Willpower cost.
+
+Only characters who have access to Celestial martial arts can learn this
+Charm.
 
 
 name: keter, Keter
@@ -161,10 +315,20 @@ type: Permanent
 key: None
 dur: Permanent
 dep: binah, daat, hokhmah
-text: Reaching the pinnacle of her form, the martial artist internalises all she has learned, and is able to apply it unconsciously, her faith in higher powers rewarded with a direct connection.
 
-After learning this Charm, all Simple Charms in this form become Reflexive, and all Charms with the Combo-Basic keyword change to Combo-OK.  Any pre-existing Combos involving Combo-Basic Charms from this form may be extended to include other Charms, by paying the difference in experience.  This extension may only be carried out once per Combo.
+text: Reaching the pinnacle of her form, the martial artist internalises all
+she has learned, and is able to apply it unconsciously, her faith in higher
+powers rewarded with a direct connection.
 
-Also, the character may reflexively spend 1 Willpower at any point in a scene, after which all Charms in this form have their Willpower cost reduced by 1, to a minimum of 0, and their mote cost reduced by 1, to a minimum of 1.
+After learning this Charm, all Simple Charms in this form become Reflexive,
+and all Charms with the Combo-Basic keyword change to Combo-OK.  Any
+pre-existing Combos involving Combo-Basic Charms from this form may be
+extended to include other Charms, by paying the difference in experience.
+This extension may only be carried out once per Combo.
 
-Only characters who have access to Celestial martial arts can learn this Charm.
+Also, the character may reflexively spend 1 Willpower at any point in a scene,
+after which all Charms in this form have their Willpower cost reduced by 1, to
+a minimum of 0, and their mote cost reduced by 1, to a minimum of 1.
+
+Only characters who have access to Celestial martial arts can learn this
+Charm.

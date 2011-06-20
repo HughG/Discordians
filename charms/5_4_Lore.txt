@@ -1,6 +1,7 @@
 name: exc, (Any Lore*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: hmm, Holographic Memory Modus
@@ -9,14 +10,38 @@ mins: Lore 2, Ess 2
 type: Supplemental
 key: Combo-OK
 dur: Instant
-dep: 
-text: The Children of Chaos are not really as all-knowing as they would sometimes like others to think, but they have surprising sources of information.  This Charm enhances a roll involving the Lore Ability by allowing the character to draw on the knowledge held in the environment and society around her.  The subject of the roll must be something about the character's physical surroundings, or something which is recorded in nearby books, memory crystals etc., or something generally known by people nearby.  The range depends on the character's Essence rating: at Essence 2, it is 100 yards; at 3, 1 mile; at 4, 10 miles, and so on.  The information sought must be something generally known or specifically recorded, so this Charm tends not to be of use in, for example, investigating crime scenes.
+dep:
 
-The effect of the Charm differs depending on whether or not the subject is something the character would reasonably be expected to know.  If not, this Charm allows the character to make a normal Lore roll, as if it were in fact within the character's experience.  If it is something the character might already know, this Charm reduces the difficulty by at least 1, and possibly by more at storyteller discretion.
+text: The Children of Chaos are not really as all-knowing as they would
+sometimes like others to think, but they have surprising sources of
+information.  This Charm enhances a roll involving the Lore Ability by
+allowing the character to draw on the knowledge held in the environment and
+society around her.  The subject of the roll must be something about the
+character's physical surroundings, or something which is recorded in nearby
+books, memory crystals etc., or something generally known by people nearby.
+The range depends on the character's Essence rating: at Essence 2, it is 100
+yards; at 3, 1 mile; at 4, 10 miles, and so on.  The information sought must
+be something generally known or specifically recorded, so this Charm tends not
+to be of use in, for example, investigating crime scenes.
 
-The Charm may also be used to gain information applicable to a particular use of some other Ability, e.g., the best route through a mountain range (normally Survival) or the appropriate formalities in some court situation (normally Socialize).  In this case, each success adds one bonus die to that subsequent roll.  The normal limits on dice added by Charms apply.
+The effect of the Charm differs depending on whether or not the subject is
+something the character would reasonably be expected to know.  If not, this
+Charm allows the character to make a normal Lore roll, as if it were in fact
+within the character's experience.  If it is something the character might
+already know, this Charm reduces the difficulty by at least 1, and possibly by
+more at storyteller discretion.
 
-The character does not need to speak or read any languages in which the information is recorded, nor actually find a partcular book or person to consult.  This means that, for example, one of the Authority can enhance her chances of success in operating an ancient artifact simply by standing briefly in the middle of a relevant First Age library.
+The Charm may also be used to gain information applicable to a particular use
+of some other Ability, e.g., the best route through a mountain range (normally
+Survival) or the appropriate formalities in some court situation (normally
+Socialize).  In this case, each success adds one bonus die to that subsequent
+roll.  The normal limits on dice added by Charms apply.
+
+The character does not need to speak or read any languages in which the
+information is recorded, nor actually find a partcular book or person to
+consult.  This means that, for example, one of the Authority can enhance her
+chances of success in operating an ancient artifact simply by standing briefly
+in the middle of a relevant First Age library.
 
 
 name: enan, Each Name A Net
@@ -25,9 +50,19 @@ mins: Lore 5, Ess 3
 type: Supplemental
 key: Combo-OK
 dur: Instant
-dep: 
-text: The Priests of Discord change names almost as often as they change hats, and most often the true name of something really doesn't matter at all.  But there are times when it can be a distinct advantage to know with whom one is dealing.
+dep:
 
-This Charm reveals the true name of the target, regardless of any disguises, Shaping, Fate effects or other concealments.  It does not guarantee that the character can pronounce or write down that name, if they do not speak the langauge or if the creature comes from some strange source such as the Wyld.  However, they will know the name if they encounter it again.
+text: The Priests of Discord change names almost as often as they change hats,
+and most often the true name of something really doesn't matter at all.  But
+there are times when it can be a distinct advantage to know with whom one is
+dealing.
 
-If the target has ancestors who are anything other than extras, this Charm will additionally reveal those on the single most powerful lineage, going back (character's Essence) generations.
+This Charm reveals the true name of the target, regardless of any disguises,
+Shaping, Fate effects or other concealments.  It does not guarantee that the
+character can pronounce or write down that name, if they do not speak the
+langauge or if the creature comes from some strange source such as the Wyld.
+However, they will know the name if they encounter it again.
+
+If the target has ancestors who are anything other than extras, this Charm
+will additionally reveal those on the single most powerful lineage, going back
+(character's Essence) generations.

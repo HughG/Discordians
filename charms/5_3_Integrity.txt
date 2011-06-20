@@ -1,6 +1,7 @@
 name: exc, (Any Integrity*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: csp, Chimera-Skin Prana
@@ -9,8 +10,17 @@ mins: Integrity 1, Ess 2
 type: Reflexive (Step 10)
 key: Combo-OK, Shaping, Obvious
 dur: Instant
-dep: 
-text: The chosen of Eris are not immune to Chaos, but they have a deeper understanding of it than others.  This Charm allows the character to alter the consequences of a Shaping effect when it is successfully applied to him.  For Wyld mutations, they may alter the severity level by one in either direction (including choosing to completely ignore the least severe mutations).  For other Shaping effects which numerically alter some trait, they may adjust the value by one, again in either direction.  For Shaping effects which do not fall into these categories, the player may agree some appropriate adjustment with the storyteller.
+dep:
+
+text: The chosen of Eris are not immune to Chaos, but they have a deeper
+understanding of it than others.  This Charm allows the character to alter the
+consequences of a Shaping effect when it is successfully applied to him.  For
+Wyld mutations, they may alter the severity level by one in either direction
+(including choosing to completely ignore the least severe mutations).  For
+other Shaping effects which numerically alter some trait, they may adjust the
+value by one, again in either direction.  For Shaping effects which do not
+fall into these categories, the player may agree some appropriate adjustment
+with the storyteller.
 
 
 name: csis, Chimera Sheds Its Skin
@@ -20,7 +30,15 @@ type: Simple
 key: Shaping, Obvious
 dur: Instant
 dep: csp
-text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their way.  With this Charm the character may undo any one Shaping effect which has altered her at any point in time.  If the Shaping affected more individuals than just the character, she will be the only one to escape it.  A ghostly orange outline of the character will persist, hanging in space for one scene, embodying that sloughed-off magic.  If any other being touches it before the scene expires, the original effect is immediately applied to them, though they may use any powers of their own to resist it.
+
+text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their
+way.  With this Charm the character may undo any one Shaping effect which has
+altered her at any point in time.  If the Shaping affected more individuals
+than just the character, she will be the only one to escape it.  A ghostly
+orange outline of the character will persist, hanging in space for one scene,
+embodying that sloughed-off magic.  If any other being touches it before the
+scene expires, the original effect is immediately applied to them, though they
+may use any powers of their own to resist it.
 
 
 name: umd, Unbalanced Mind*Defence
@@ -30,7 +48,11 @@ type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: Instant
 dep: exc
-text: Wise men have often said that genius and madness are linked, but only the Chosen of Eris have found a way to turn their madness into genius.  This Charm allows the Exalt to add the lower of her Hodge and Podge ratings to her Dodge MDV and Parry MDV against one attack.
+
+text: Wise men have often said that genius and madness are linked, but only
+the Chosen of Eris have found a way to turn their madness into genius.  This
+Charm allows the Exalt to add the lower of her Hodge and Podge ratings to her
+Dodge MDV and Parry MDV against one attack.
 
 
 name: ddt, Dream Deflection*Technique
@@ -40,7 +62,17 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack, Illusion, Social
 dur: Instant
 dep: umd
-text: To attempt to twist the minds of those who make up the Unbending Arm is foolish indeed.  This Charm allows the character to perfectly defend against any form of natural or unnatural mental influence which would otherwise bypass his defenses.  He will gain a vague impression of the intended influence, but not the details.  Furthermore, as a counterattack, the originator of the effect will herself be subjected to an Illusion causing her to believe that her attack was successful.  The Illusion lasts as long as the original effect would have, and may be resisted on the same terms as the original effect.  Since this Charm involves both resisting and imposing mental influence at the same time, the character gains a point each of both Hodge and Podge.
+
+text: To attempt to twist the minds of those who make up the Unbending Arm is
+foolish indeed.  This Charm allows the character to perfectly defend against
+any form of natural or unnatural mental influence which would otherwise bypass
+his defenses.  He will gain a vague impression of the intended influence, but
+not the details.  Furthermore, as a counterattack, the originator of the
+effect will herself be subjected to an Illusion causing her to believe that
+her attack was successful.  The Illusion lasts as long as the original effect
+would have, and may be resisted on the same terms as the original effect.
+Since this Charm involves both resisting and imposing mental influence at the
+same time, the character gains a point each of both Hodge and Podge.
 
 
 name: sdc, Subtle Daydream Concoction
@@ -50,13 +82,42 @@ type: Reflexive (Step 2)
 key: Combo-Basic, Shaping
 dur: Instant
 dep: ddt
-text: Some have said that the Erisian Exalted live in a world of their own; the truth is that this can be an advantage.  This Charm allows the user to seek the refuge of daydreams to sidestep attempts to pull her away from that which is important to her.  It can be invoked in response to any attack which would lower Virtues or Willpower, or destroy or weaken Intimacies, or cause her to act against her Intimacies or Motivation.
 
-In the case of natural mental influence, the Exalt may make a contested roll of her own (Essence + Integrity) against the (Attribute + Ability) used to achieve the influence and, on success, treat it as an unacceptable order.  For unnatural mental influence the contest is between their (Essence + Integrity) and the (Essence + Ability) of the Charm used (or caster's [Essence + Occult] for spells), but the character suffers a penalty equal to the difference in Essence, minimum 1.  In either case, if she fails the roll she may still spend Willpower to resist the effect, if applicable.  If she botches the roll, she is automatically affected and for the rest of the scene cannot spend Willpower to resist that one effect.
+text: Some have said that the Erisian Exalted live in a world of their own;
+the truth is that this can be an advantage.  This Charm allows the user to
+seek the refuge of daydreams to sidestep attempts to pull her away from that
+which is important to her.  It can be invoked in response to any attack which
+would lower Virtues or Willpower, or destroy or weaken Intimacies, or cause
+her to act against her Intimacies or Motivation.
 
-Similarly, if some effect threatens to directly lower any of the character's Virtues or her Willpower, temporarily or permanently, she may make the same contested roll to avoid the effect.  Furthermore, if one of the Fair Folk attempts to feed on the character she may use this Charm to fool her attacker, even if she is willing or influenced to accept the raksha's feeding.  The normal Virtue roll to feed is contested against the victim's own (Essence + Integrity).  The latter successes are subtracted from those for the Virtue roll, reducing the damage the feeder does.  If the Virtue successes are outnumbered by those from the (Essence + Integrity) roll, then the Fair One believes themselves to have bled off that many dots of Willpower or Virtue and will account their Essence accordingly, meaning that they may be surprised to find it run out sooner than they expected.
+In the case of natural mental influence, the Exalt may make a contested roll
+of her own (Essence + Integrity) against the (Attribute + Ability) used to
+achieve the influence and, on success, treat it as an unacceptable order.  For
+unnatural mental influence the contest is between their (Essence + Integrity)
+and the (Essence + Ability) of the Charm used (or caster's [Essence + Occult]
+for spells), but the character suffers a penalty equal to the difference in
+Essence, minimum 1.  In either case, if she fails the roll she may still spend
+Willpower to resist the effect, if applicable.  If she botches the roll, she
+is automatically affected and for the rest of the scene cannot spend Willpower
+to resist that one effect.
 
-In any case, if the character succeeds against the attack, she will gain a clear sense of what influence the attacker intended, should she wish to play out her supposedly altered state.  Effects which prevent Shaping render this Charm inapplicable.  Use of this Charm gains the character a point of Podge.
+Similarly, if some effect threatens to directly lower any of the character's
+Virtues or her Willpower, temporarily or permanently, she may make the same
+contested roll to avoid the effect.  Furthermore, if one of the Fair Folk
+attempts to feed on the character she may use this Charm to fool her attacker,
+even if she is willing or influenced to accept the raksha's feeding.  The
+normal Virtue roll to feed is contested against the victim's own (Essence +
+Integrity).  The latter successes are subtracted from those for the Virtue
+roll, reducing the damage the feeder does.  If the Virtue successes are
+outnumbered by those from the (Essence + Integrity) roll, then the Fair One
+believes themselves to have bled off that many dots of Willpower or Virtue and
+will account their Essence accordingly, meaning that they may be surprised to
+find it run out sooner than they expected.
+
+In any case, if the character succeeds against the attack, she will gain a
+clear sense of what influence the attacker intended, should she wish to play
+out her supposedly altered state.  Effects which prevent Shaping render this
+Charm inapplicable.  Use of this Charm gains the character a point of Podge.
 
 [TODO: Why isn't this a Counterattack + Illusion, like the preceding Charm?]
 
@@ -68,7 +129,17 @@ type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: One scene
 dep: csis, ddt
-text: They Who Carve Truth In Stone are able to form that metaphorical stone from the gossamer of daydreams, convincing herself that her view of the world is the only right one, if only for a short while.  This Charm perfectly defends against any Compulsion, Emotion, Illusion, Servitude and Shaping attacks for the rest of the scene.  Additionally, any compulsions due to lack of Willpower, or an overflowing of Hodge or Podge, are delayed until the end of the scene.  On the other hand, any attempts by the character to act against her Virtues, Intimacies or Motivation have their difficulties increased by 2.  Use of this Charm gains the character a point of Podge but, if that takes the count over 10, the consequences are still delayed until the end of the scene.
+
+text: They Who Carve Truth In Stone are able to form that metaphorical stone
+from the gossamer of daydreams, convincing herself that her view of the world
+is the only right one, if only for a short while.  This Charm perfectly
+defends against any Compulsion, Emotion, Illusion, Servitude and Shaping
+attacks for the rest of the scene.  Additionally, any compulsions due to lack
+of Willpower, or an overflowing of Hodge or Podge, are delayed until the end
+of the scene.  On the other hand, any attempts by the character to act against
+her Virtues, Intimacies or Motivation have their difficulties increased by 2.
+Use of this Charm gains the character a point of Podge but, if that takes the
+count over 10, the consequences are still delayed until the end of the scene.
 
 
 name: roe, Running on Emptiness
@@ -77,12 +148,25 @@ mins: Integrity 2, Ess 2
 type: Permanent
 key: None
 dur: Permanent
-dep: 
+dep:
+
 text: TODO
 
-Each purchase of this Charm permanently enhances the character by giving her increasing her maximum temporary Willpower by 1 point.  This additional pool of Willpower is initially empty and will not be refilled by Conviction rolls each morning.  Instead it is filled by any other effect such as stunts and Charms, and this extra pool will be filled before her normal Willpower pool.  This Charm may be purchased up to (Essence) times.
+Each purchase of this Charm permanently enhances the character by giving her
+increasing her maximum temporary Willpower by 1 point.  This additional pool
+of Willpower is initially empty and will not be refilled by Conviction rolls
+each morning.  Instead it is filled by any other effect such as stunts and
+Charms, and this extra pool will be filled before her normal Willpower pool.
+This Charm may be purchased up to (Essence) times.
 
-In times of dire need, this Charm has a further use.  The desperate Discordian may reflexively sacrifice one purchase of this Charm to immediately refill her (slightly smaller) Willpower pool completely, including any points available from remaining purchases of this Charm.  The experience points originally spent on the Charm are not regained, though it may be purchased again later.  Sacrificing the last purchase of this Charm in this way prevents the character from using any Charms which have it as a prerequisite, directly or indirectly, until she re-purchases it.
+In times of dire need, this Charm has a further use.  The desperate Discordian
+may reflexively sacrifice one purchase of this Charm to immediately refill her
+(slightly smaller) Willpower pool completely, including any points available
+from remaining purchases of this Charm.  The experience points originally
+spent on the Charm are not regained, though it may be purchased again later.
+Sacrificing the last purchase of this Charm in this way prevents the character
+from using any Charms which have it as a prerequisite, directly or indirectly,
+until she re-purchases it.
 
 
 name: ror, Reallocation of Resolve
@@ -92,9 +176,19 @@ type: Simple
 key: Combo-OK, Obvious, Touch
 dur: Instant
 dep: roe
+
 text: TODO
 
-This Charm allows the Unbending Arm to transfer Willpower between himself and another being.  The character may transfer a number of points up to his permanent Essence, in either direction, at a cost of 4 motes per point.  If the other being is unwilling, the character must make a successful attack to touch it, and the two make a contested (Essence + Integrity) roll.  If the Erisian wins, the transfer is in the desired direction, and he gains a point of Podge.  If he fails, the direction is reversed, and he gains a point of Hodge.  In the case of a tie, nothing happens, but the motes are spent.  In any case, this Charm cannot reduce the character's temporary Willpower rating below zero, nor increase the target's beyond its maximum.
+This Charm allows the Unbending Arm to transfer Willpower between himself and
+another being.  The character may transfer a number of points up to his
+permanent Essence, in either direction, at a cost of 4 motes per point.  If
+the other being is unwilling, the character must make a successful attack to
+touch it, and the two make a contested (Essence + Integrity) roll.  If the
+Erisian wins, the transfer is in the desired direction, and he gains a point
+of Podge.  If he fails, the direction is reversed, and he gains a point of
+Hodge.  In the case of a tie, nothing happens, but the motes are spent.  In
+any case, this Charm cannot reduce the character's temporary Willpower rating
+below zero, nor increase the target's beyond its maximum.
 
 
 name: pma, Policy-Molding*Arrogation
@@ -103,12 +197,25 @@ mins: Integrity 3, Ess 2
 type: Simple
 key: Social
 dur: Indefinite
-dep: 
+dep:
+
 text: TODO
 
-This Charm allows an agent of the Authority to instantly forge an Intimacy in relation to the Policy of a social group.  This Intimacy must involve supporting, opposing or changing in some particular way the Policy of that group.  As long as the character maintains her commitment of motes, she treats all natural or unnatural mental influence which would divert her from that goal as an unacceptable order (which means no points of Podge are gained from resisting it).  Furthermore, she is able to spend Willpower to channel her base, unmodified Integrity, as if it were an equivalently-rated Virtue, in support of this Intimacy.
+This Charm allows an agent of the Authority to instantly forge an Intimacy in
+relation to the Policy of a social group.  This Intimacy must involve
+supporting, opposing or changing in some particular way the Policy of that
+group.  As long as the character maintains her commitment of motes, she treats
+all natural or unnatural mental influence which would divert her from that
+goal as an unacceptable order (which means no points of Podge are gained from
+resisting it).  Furthermore, she is able to spend Willpower to channel her
+base, unmodified Integrity, as if it were an equivalently-rated Virtue, in
+support of this Intimacy.
 
-The character may maintain a number of such additional Intimacies equal to her Conviction.  The available channels of Integrity in each story are shared among all these Intimacies.  Using this Charm to maintain three Intimacies does not gain (Integrity x 3) opportunities to channel Integrity, only (Integrity).
+The character may maintain a number of such additional Intimacies equal to her
+Conviction.  The available channels of Integrity in each story are shared
+among all these Intimacies.  Using this Charm to maintain three Intimacies
+does not gain (Integrity x 3) opportunities to channel Integrity, only
+(Integrity).
 
 
 name: uoth, Umbrella of the Heart
@@ -118,10 +225,23 @@ type: Permanent
 key: None
 dur: Permanent
 dep: exc, pma
+
 text: TODO
 
-This Charm enhances the Discordian's power of self-determination, allowing her to share it with others.  The benefits of any Integrity Charm which she uses may be extended to up to (her permanent Essence) other willing beings, at a surcharge of 2m per being.  If several such Charms are used in a Combo, the surcharge is still paid only once per being.  In the case of Reallocation of Resolve, the total numer of Willpower points gained or lost may be distributed among the beneficiaries as the character chooses.
+This Charm enhances the Discordian's power of self-determination, allowing her
+to share it with others.  The benefits of any Integrity Charm which she uses
+may be extended to up to (her permanent Essence) other willing beings, at a
+surcharge of 2m per being.  If several such Charms are used in a Combo, the
+surcharge is still paid only once per being.  In the case of Reallocation of
+Resolve, the total numer of Willpower points gained or lost may be distributed
+among the beneficiaries as the character chooses.
 
-The beneficiaries must be within (Essence x 10) yards of the character, unless they are the subject of an Intimacy or Motivation which she holds, in which case there is no distance limit.  At Essence 4, the character can spend a point of Willpower to extend these benefits to a social group of Magnitude up to her Essence, at a surcharge of 5 motes per point of Magnitude, provided she has an Intimacy or Motivation related to that group.
+The beneficiaries must be within (Essence x 10) yards of the character, unless
+they are the subject of an Intimacy or Motivation which she holds, in which
+case there is no distance limit.  At Essence 4, the character can spend a
+point of Willpower to extend these benefits to a social group of Magnitude up
+to her Essence, at a surcharge of 5 motes per point of Magnitude, provided she
+has an Intimacy or Motivation related to that group.
 
-[TODO: Maybe also/instead a Charm which allows the character to prepare an invokation of a Charm to protect a group, like Protection of Celestial Bliss?]
+[TODO: Maybe also/instead a Charm which allows the character to prepare an
+invokation of a Charm to protect a group, like Protection of Celestial Bliss?]

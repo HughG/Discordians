@@ -1,10 +1,12 @@
 name: exc, (Any Archery*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: intro, .
-dep: 
+dep:
+
 text: TODO: Perfect attack; Action-longs (maybe as re-purchase?)
 
 
@@ -14,16 +16,32 @@ mins: Arch 2, Ess 2
 type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
-dep: 
+dep:
+
 text: TODO
 
-[TODO: Review once Ink Monkeys have finished playing around with Martial-ready stuff.]
+[TODO: Review once Ink Monkeys have finished playing around with Martial-ready
+stuff.]
 
-This Charm, applied in Step 1 of attack resolution, summons the Erisian's Archery weapon to his hand, from any point up to (Essence x 2) yards away.  The weapon must be one which the character owns.  It travels via Elsewhere, meaning that most bindings, even magical ones, will not prevent it from returning to his hand.  The character may use this Charm to reflexively ready a weapon and attack in the same action.
+This Charm, applied in Step 1 of attack resolution, summons the Erisian's
+Archery weapon to his hand, from any point up to (Essence x 2) yards away.
+The weapon must be one which the character owns.  It travels via Elsewhere,
+meaning that most bindings, even magical ones, will not prevent it from
+returning to his hand.  The character may use this Charm to reflexively ready
+a weapon and attack in the same action.
 
-The character may also apply this Charm to any reusable ammunition from an attack, summoning it back to his hand either before or after raw damage is calculated.  If the ammunition is summoned back before the damage calculation, no damage is done and no poison or other contact effects apply, but the target may still take advantage of any counterattacks available.  If the ammunition is specifically destroyed, it cannot be summoned back.
+The character may also apply this Charm to any reusable ammunition from an
+attack, summoning it back to his hand either before or after raw damage is
+calculated.  If the ammunition is summoned back before the damage calculation,
+no damage is done and no poison or other contact effects apply, but the target
+may still take advantage of any counterattacks available.  If the ammunition
+is specifically destroyed, it cannot be summoned back.
 
-A second purchase at Archery 3 and Essence 3 allows the character to use the Charm with an Indefinite duration, applied to a weapon, suspending it in Elsewhere.  It will remain there as long as the motes remain committed.  When they are reflexively released, it will appear in his hand, or falls to his feet if both hands are occupied.
+A second purchase at Archery 3 and Essence 3 allows the character to use the
+Charm with an Indefinite duration, applied to a weapon, suspending it in
+Elsewhere.  It will remain there as long as the motes remain committed.  When
+they are reflexively released, it will appear in his hand, or falls to his
+feet if both hands are occupied.
 
 
 name: wwa, Witch Way Arrow
@@ -33,9 +51,22 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: exc, bbta
-text: It is hard to defend against things you cannot see or touch, even if you know they are coming.  The Invader of the Faith sends her shot on an esoteric curve through Elsewhere, reappearing at exactly the right time to strike the target.
 
-This Charm supplements an Archery attack in a number of ways.  It applies a -2 external penalty to the defender's DVs, unless he or she can somehow see into Elsewhere.  It causes the attack to ignore any Hardness or soak due to armour or any similar protections beyond the target's own skin, and to ignore DV bonuses due to cover.  It does not cause the attack to ignore natural soak, or soak added by Charms.  It furthermore effectively allows shots to pass through solid objects, though some magical wards may prevent this.  If the character cannot otherwise percieve the target through any such objects, the attack will suffer an external penalty as severe as blindness (-4), unless some other effect improves the situation.
+text: It is hard to defend against things you cannot see or touch, even if you
+know they are coming.  The Invader of the Faith sends her shot on an esoteric
+curve through Elsewhere, reappearing at exactly the right time to strike the
+target.
+
+This Charm supplements an Archery attack in a number of ways.  It applies a -2
+external penalty to the defender's DVs, unless he or she can somehow see into
+Elsewhere.  It causes the attack to ignore any Hardness or soak due to armour
+or any similar protections beyond the target's own skin, and to ignore DV
+bonuses due to cover.  It does not cause the attack to ignore natural soak, or
+soak added by Charms.  It furthermore effectively allows shots to pass through
+solid objects, though some magical wards may prevent this.  If the character
+cannot otherwise percieve the target through any such objects, the attack will
+suffer an external penalty as severe as blindness (-4), unless some other
+effect improves the situation.
 
 
 name: sp, Suspended Perforation
@@ -45,11 +76,26 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Indefinite
 dep: wwa
+
 text: TODO
 
-This Charm supplements a character's Archery attack by suspending it within Elsewhere immediately after he launches it, ready to be resumed at a later point in time.  Step 1 of attack resolution is carried out, including any expenditure of motes for other Charms, but without naming a target.  The arrow, jet of flame or other projectile is fired but vanishes.  It remains Elsewhere as long as the character maintains the commitment of motes for this Charm, plus the mote cost of all other Charms, if used in a Combo.  The character can store at most (Essence) projectiles in Elsewhere using this Charm.
+This Charm supplements a character's Archery attack by suspending it within
+Elsewhere immediately after he launches it, ready to be resumed at a later
+point in time.  Step 1 of attack resolution is carried out, including any
+expenditure of motes for other Charms, but without naming a target.  The
+arrow, jet of flame or other projectile is fired but vanishes.  It remains
+Elsewhere as long as the character maintains the commitment of motes for this
+Charm, plus the mote cost of all other Charms, if used in a Combo.  The
+character can store at most (Essence) projectiles in Elsewhere using this
+Charm.
 
-The motes may be released at any later point as a reflexive action, including as a counterattack, causing the attack to be resumed.  This does not count as a Charm use.  The character need not be wielding the weapon at the time, though they can still only choose a target which would be valid at the point when the motes are released.  A slight disturbance in the air as the projectile reappears means that this Charm does not in itself make the attack unexpected.
+The motes may be released at any later point as a reflexive action, including
+as a counterattack, causing the attack to be resumed.  This does not count as
+a Charm use.  The character need not be wielding the weapon at the time,
+though they can still only choose a target which would be valid at the point
+when the motes are released.  A slight disturbance in the air as the
+projectile reappears means that this Charm does not in itself make the attack
+unexpected.
 
 
 name: fr, Fletcher's Rejoinder
@@ -59,11 +105,32 @@ type: Reflexive (Step 9)
 key: Combo-OK, Obvious
 dur: Instant
 dep: exc
-text: Even things that go wrong can go right sometimes.  With the Fletcher's Rejoinder, an Exalt's mischievous will is extended into her projectile, allowing attacks which miss to loop around and return for a second attack.
 
-This Charm enhances an Archery attack such that, if the attack fails because the arrow missed (whether due to the attacker's inaccuracy or the target dodging), or was deflected by Hardness or a parry, then the projectile returns, allowing the same attack to be re-rolled on the following tick, with no speed cost or DV penalty.  If the attack fails because of the target's soak, the arrow falls harmlessly to the ground and the Charm is ineffective; similarly if the arrow is otherwise destroyed or its flight specifically ended on the first attack.  If the first attack was part of a Combo, the second attack may optionally have the same Combo applied, with the cost paid again.  This Charm itself may be used on the second attack, alone or as part of a Combo, enabling third and further attacks, but each attack beyond the second is at a cumulative -1 penalty to accuracy and damage.
+text: Even things that go wrong can go right sometimes.  With the Fletcher's
+Rejoinder, an Exalt's mischievous will is extended into her projectile,
+allowing attacks which miss to loop around and return for a second attack.
 
-Some Discordians have been known to use this Charm and deliberately miss on their first attack.  In this case, the second attack is treated similarly to an ambush: roll the attacker's (Dexterity + Archery) against the defender's (Wits + Awareness), with appropriate penalties or bonuses depending on the defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.  However, if the defender has already seen this technique used in the same story, they gain a +2 bonus to the contested roll.
+This Charm enhances an Archery attack such that, if the attack fails because
+the arrow missed (whether due to the attacker's inaccuracy or the target
+dodging), or was deflected by Hardness or a parry, then the projectile
+returns, allowing the same attack to be re-rolled on the following tick, with
+no speed cost or DV penalty.  If the attack fails because of the target's
+soak, the arrow falls harmlessly to the ground and the Charm is ineffective;
+similarly if the arrow is otherwise destroyed or its flight specifically ended
+on the first attack.  If the first attack was part of a Combo, the second
+attack may optionally have the same Combo applied, with the cost paid again.
+This Charm itself may be used on the second attack, alone or as part of a
+Combo, enabling third and further attacks, but each attack beyond the second
+is at a cumulative -1 penalty to accuracy and damage.
+
+
+Some Discordians have been known to use this Charm and deliberately miss on
+their first attack.  In this case, the second attack is treated similarly to
+an ambush: roll the attacker's (Dexterity + Archery) against the defender's
+(Wits + Awareness), with appropriate penalties or bonuses depending on the
+defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.
+However, if the defender has already seen this technique used in the same
+story, they gain a +2 bonus to the contested roll.
 
 
 name: qosas, Quiver of*Sticks and Stones
@@ -72,14 +139,32 @@ mins: Arch 1, Ess 2
 type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: One scene
-dep: 
+dep:
+
 text: TODO
 
-This Charm allows the Moonlight Lyre to use any vaguely suitable small objects as ammunition for her bow, flame piece or other Archery weapon.  The effects of any standard type of arrow may be reproduced, though the storyteller may apply bonuses or penalties depending on materials available.  Dust, grains, pebbles and so on may be used as firewand ammunition, but the range will be halved unless the substance is easily flammable, and the damage will be be bashing, not lethal, unless it is particularly hard and sharp.  Reloading with easily reachable objects from her surroundings will take the character no longer than normal for the weapon in question.  The storyteller may impose a Speed penalty, or require extra actions to reload, if suitable objects are harder to reach, however.
+This Charm allows the Moonlight Lyre to use any vaguely suitable small objects
+as ammunition for her bow, flame piece or other Archery weapon.  The effects
+of any standard type of arrow may be reproduced, though the storyteller may
+apply bonuses or penalties depending on materials available.  Dust, grains,
+pebbles and so on may be used as firewand ammunition, but the range will be
+halved unless the substance is easily flammable, and the damage will be be
+bashing, not lethal, unless it is particularly hard and sharp.  Reloading with
+easily reachable objects from her surroundings will take the character no
+longer than normal for the weapon in question.  The storyteller may impose a
+Speed penalty, or require extra actions to reload, if suitable objects are
+harder to reach, however.
 
-Unless other effects apply, the improvised items of ammunition must be normal, physical objects, though they might be magical objects.  They must be of approximately normal size and weight for the weapon in question, but they need not be particuarly aerodynamic.  This Charm removes any accuracy penalties which the character would otherwise suffer due to these weapons being improvised.
+Unless other effects apply, the improvised items of ammunition must be normal,
+physical objects, though they might be magical objects.  They must be of
+approximately normal size and weight for the weapon in question, but they need
+not be particuarly aerodynamic.  This Charm removes any accuracy penalties
+which the character would otherwise suffer due to these weapons being
+improvised.
 
-By spending a further 2 motes, the Discordian can also improvise any mundane sort of bow if vaguely suitable materials are available.  The bow will cease to function as such after the scene ends.
+By spending a further 2 motes, the Discordian can also improvise any mundane
+sort of bow if vaguely suitable materials are available.  The bow will cease
+to function as such after the scene ends.
 
 
 name: fafa, Feathers and Fins Attack
@@ -89,11 +174,25 @@ type: Extra Action (Speed +1)
 key: Combo-OK, Obvious
 dur: Instant
 dep: qosas
-text: The Children of Eris strive against any and all rules which do not suit them, including the rules of time which prevent all things happening at once.  Pulling a handful of instants together around her, she launches several separate attacks in one.
 
-This Charm provides the Exalt with a magical flurry of two or more Archery-based attacks.  Each attack costs 3 motes, including the first, and the character may make a number of attacks up to (her permanent Essence), regardless of the weapon's Rate.  The Charm allows her to make these attacks without multiple action penalties and with a DV penalty equal to the highest penalty for any one attack.  The Speed of the combined actions is one more than the Speed of the longest single action.  For weapons with a Rate less than 1, the character must spend one (or more) of her extra actions reloading the weapon after each attack.
+text: The Children of Eris strive against any and all rules which do not suit
+them, including the rules of time which prevent all things happening at once.
+Pulling a handful of instants together around her, she launches several
+separate attacks in one.
 
-At Essence 3, the character may additionally spend 1 point of Willpower to spread her awareness into another half a moment, allowing her to ignore all DV penalties from these attacks (but not from other sources).
+This Charm provides the Exalt with a magical flurry of two or more
+Archery-based attacks.  Each attack costs 3 motes, including the first, and
+the character may make a number of attacks up to (her permanent Essence),
+regardless of the weapon's Rate.  The Charm allows her to make these attacks
+without multiple action penalties and with a DV penalty equal to the highest
+penalty for any one attack.  The Speed of the combined actions is one more
+than the Speed of the longest single action.  For weapons with a Rate less
+than 1, the character must spend one (or more) of her extra actions reloading
+the weapon after each attack.
+
+At Essence 3, the character may additionally spend 1 point of Willpower to
+spread her awareness into another half a moment, allowing her to ignore all DV
+penalties from these attacks (but not from other sources).
 
 
 name: hopa, Handful of Pebbles Attack
@@ -103,11 +202,22 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: fafa
+
 text: TODO
 
-Just as the Children of Eris are many and disparate in their activities, so are their projectile attacks.  This Charm supplements an Archery attack, splitting one item of ammunition into a number of duplicates up to (her permanent Essence score).  All are aimed at the same target with attack, defense and damage rolled separately for each.  However, each attack is at a -1 accuracy penalty and a -(number of extra attacks) damage penalty; for instance, three attacks would each suffer -1 to accuracy and -2 to damage.  If Handful of Pebbles attack is used with ammunition costing more than one dot of Resources per shot or placed in a Combo with Charms that affect the arrow's accuracy or damage, the cost per duplicate is doubled.
+Just as the Children of Eris are many and disparate in their activities, so
+are their projectile attacks.  This Charm supplements an Archery attack,
+splitting one item of ammunition into a number of duplicates up to (her
+permanent Essence score).  All are aimed at the same target with attack,
+defense and damage rolled separately for each.  However, each attack is at a
+-1 accuracy penalty and a -(number of extra attacks) damage penalty; for
+instance, three attacks would each suffer -1 to accuracy and -2 to damage.  If
+Handful of Pebbles attack is used with ammunition costing more than one dot of
+Resources per shot or placed in a Combo with Charms that affect the arrow's
+accuracy or damage, the cost per duplicate is doubled.
 
-[TODO: Maybe drop cost -- check Archery changes in recent errata.  Also, add more Discordian flavor/effects?]
+[TODO: Maybe drop cost -- check Archery changes in recent errata.  Also, add
+more Discordian flavor/effects?]
 
 
 name: bta, Becoming the Arrow
@@ -117,13 +227,30 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: fr, qosas
+
 text: TODO
 
-This Charm supplements an Archery action by allowing the character to use himself as ammunition.  This allows him to Jump towards his target, up to one tenth the range which the attack would otherwise have.  If the action is an attack, the character may make an unarmed attack, or one which uses weapons which can be wielded at the same time as his current Archery weapon (e.g., a smashfist worn while using a bow).  This attack gains the Knockback keyword, and is treated as part of the same attack, using the Archery attack roll to hit, but the other weapon's details to determine damage in Step 7.  This Charm may be used in a flurry, but attacks beyond the first in the flurry do not gain the Knockback keyword from this Charm.
+This Charm supplements an Archery action by allowing the character to use
+himself as ammunition.  This allows him to Jump towards his target, up to one
+tenth the range which the attack would otherwise have.  If the action is an
+attack, the character may make an unarmed attack, or one which uses weapons
+which can be wielded at the same time as his current Archery weapon (e.g., a
+smashfist worn while using a bow).  This attack gains the Knockback keyword,
+and is treated as part of the same attack, using the Archery attack roll to
+hit, but the other weapon's details to determine damage in Step 7.  This Charm
+may be used in a flurry, but attacks beyond the first in the flurry do not
+gain the Knockback keyword from this Charm.
 
-By spending a point of Willpower the Soft and Steady Hand can Jump up to the full range of his weapon.  If the attack's range has been extended by other magics, the storyteller may rule that the Jump lasts more than one action.
+By spending a point of Willpower the Soft and Steady Hand can Jump up to the
+full range of his weapon.  If the attack's range has been extended by other
+magics, the storyteller may rule that the Jump lasts more than one action.
 
-When using this Charm, the character may make a (Dexterity + Archery) roll to catch his weapon as he jumps, and take it with him if successful.  Failure means that the weapon remains at the origin of the jump.  Note also that this Charm need not necessarily be used as an attack: it could be used to allow the character to jump up to a high balcony, for example.
+
+When using this Charm, the character may make a (Dexterity + Archery) roll to
+catch his weapon as he jumps, and take it with him if successful.  Failure
+means that the weapon remains at the origin of the jump.  Note also that this
+Charm need not necessarily be used as an attack: it could be used to allow the
+character to jump up to a high balcony, for example.
 
 
 name: pth, Piercing the Heart
@@ -133,13 +260,37 @@ type: Supplemental
 key: Combo-OK, Emotion
 dur: One scene or Special
 dep: qosas
-text: As recounted in stories of old, a well-timed magical arrow can influence the course of people's lives.  Erisians bring these legends to life with Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar -- a weapon is required, but no ammunition is actually used -- and sends an invisible bolt of Essence, carrying emotional influence towards a single target.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
-If the attack achieves even one success, this Charm inspires any one desired emotion intensely for one scene.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
+text: As recounted in stories of old, a well-timed magical arrow can influence
+the course of people's lives.  Erisians bring these legends to life with
+Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar --
+a weapon is required, but no ammunition is actually used -- and sends an
+invisible bolt of Essence, carrying emotional influence towards a single
+target.  The attack causes no damage, is unblockable with mundane weapons or
+armor, applies a -2 external penalty to the target's DV due to its
+invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
+resolution will be irrelevant, unless some unusual Reflexive Charm applies.
 
-By spending an additional 3 motes and 1 Willpower, the Exalt can cause the emotion to fade gradually over the course of (character's Essence) days.  After the first scene, the effect can be resisted for only one Willpower.  However, even once they have resisted it, the target will tend to regard the temporary emotional aberrance as having been genuinely their own, fabricating some convincing explanation for themselves, until the Charm's duration ends.  If they are to recognise and remember the unnatural effect once the Charm has ended, they must spend a further 2 Willpower (or 1 Willpower, if they have recognised this Charm's used on themselves or others before); after that they become permanently aware of what happened.  Witnesses may spend 1 Willpower to realise the source of the emotion provided they saw the Exalt's attack, but they may do this at any time at or after that initial attack.
+If the attack achieves even one success, this Charm inspires any one desired
+emotion intensely for one scene.  Resisting the influence costs two Willpower,
+and will make the target aware of the attempt at unnatural influence.
 
-Using this attack does not end any Stealth effects on the character, unless the target successfully resists the influence using Willpower at the moment of the initial attack.
+By spending an additional 3 motes and 1 Willpower, the Exalt can cause the
+emotion to fade gradually over the course of (character's Essence) days.
+After the first scene, the effect can be resisted for only one Willpower.
+However, even once they have resisted it, the target will tend to regard the
+temporary emotional aberrance as having been genuinely their own, fabricating
+some convincing explanation for themselves, until the Charm's duration ends.
+If they are to recognise and remember the unnatural effect once the Charm has
+ended, they must spend a further 2 Willpower (or 1 Willpower, if they have
+recognised this Charm's used on themselves or others before); after that they
+become permanently aware of what happened.  Witnesses may spend 1 Willpower to
+realise the source of the emotion provided they saw the Exalt's attack, but
+they may do this at any time at or after that initial attack.
+
+Using this attack does not end any Stealth effects on the character, unless
+the target successfully resists the influence using Willpower at the moment of
+the initial attack.
 
 
 name: tflab, Time Flies Like a Banana
@@ -149,9 +300,20 @@ type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
 dep: fafa, pth
+
 text: TODO
 
-This Charm allows the Moonlight Lyre to bend and loop the flow of time, loosing an arrow to meet an incoming attack at precisely the right instant to knock it off track.  This perfectly defends against any attack, even if it is unblockable.  Furthermore, the character can use this Charm in a Defend Other action to defend any other being who would be a valid target for an Archery attack by her, by shooting down an attack as it heads toward that target.  By spending 1 point of Willpower, the character can even apply this Charm without ammunition, by miming it with a suitable weapon.  In this case, the Charm gains the Obvious keyword, as a strange ripple of distorted moments passes through the air on the way to deflect the attack.  This Charm is subject to one of the Discordian Flaws of Invulnerability.
+This Charm allows the Moonlight Lyre to bend and loop the flow of time,
+loosing an arrow to meet an incoming attack at precisely the right instant to
+knock it off track.  This perfectly defends against any attack, even if it is
+unblockable.  Furthermore, the character can use this Charm in a Defend Other
+action to defend any other being who would be a valid target for an Archery
+attack by her, by shooting down an attack as it heads toward that target.  By
+spending 1 point of Willpower, the character can even apply this Charm without
+ammunition, by miming it with a suitable weapon.  In this case, the Charm
+gains the Obvious keyword, as a strange ripple of distorted moments passes
+through the air on the way to deflect the attack.  This Charm is subject to
+one of the Discordian Flaws of Invulnerability.
 
 
 name: bofa, Bolt of Fresh Air
@@ -161,10 +323,29 @@ type: Supplemental
 key: Combo-OK, Knockback
 dur: Instant
 dep: wwa
+
 text: TODO
 
-This Charm supplements an Archery-based attack by the character, rapidly opening and closing a semi-stable portal to Elsewhere at the point of impact, causing a violent upsetting of the target's balance.  The target must roll his (Stamina + Resistance) againt the character's (Strength + Archery).  The attack must hit (i.e., not be dodged or parried), but need not inflict damage.  If the target fails this check, he is knocked prone (as a Knockdown effect, rather than Knockback).
+This Charm supplements an Archery-based attack by the character, rapidly
+opening and closing a semi-stable portal to Elsewhere at the point of impact,
+causing a violent upsetting of the target's balance.  The target must roll his
+(Stamina + Resistance) againt the character's (Strength + Archery).  The
+attack must hit (i.e., not be dodged or parried), but need not inflict damage.
+If the target fails this check, he is knocked prone (as a Knockdown effect,
+rather than Knockback).
 
-By spending an extra two motes and a point of Willpower, the character can force all beings within (Essence x 3) yards of the point of impact to check for Knockback, each rolling (Stamina + Resistance) againt the character's (Strength + Archery).  Inanimate objects up to roughly human mass will, if they are not fastened down, also be knocked back.  If the target dodged or parried the attack, they must make a second check to avoid being knocked back from wherever the projectile landed.  If the Erisian herself is within this radius, she will not be knocked back, and her affinity with dynamic chaos means she will "luckily" avoid being hit by any flying objects.
+By spending an extra two motes and a point of Willpower, the character can
+force all beings within (Essence x 3) yards of the point of impact to check
+for Knockback, each rolling (Stamina + Resistance) againt the character's
+(Strength + Archery).  Inanimate objects up to roughly human mass will, if
+they are not fastened down, also be knocked back.  If the target dodged or
+parried the attack, they must make a second check to avoid being knocked back
+from wherever the projectile landed.  If the Erisian herself is within this
+radius, she will not be knocked back, and her affinity with dynamic chaos
+means she will "luckily" avoid being hit by any flying objects.
 
-The character may make this attack without any ammunition, simply by miming an attack using a suitable weapon.  In this case, the target will not suffer damage from the attack itself, but is at a -4 penalty to his DV, since the only indication of the impact will be a shimmering in the air at the last moment.
+The character may make this attack without any ammunition, simply by miming an
+attack using a suitable weapon.  In this case, the target will not suffer
+damage from the attack itself, but is at a -4 penalty to his DV, since the
+only indication of the impact will be a shimmering in the air at the last
+moment.

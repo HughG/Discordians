@@ -44,11 +44,12 @@ end
 def insert_file(out, file)
   charm_names = {}
   curr_charm = {}
+  curr_para = ""
 
   $stderr << file << "\n"
 
   IO.foreach(file) { |line|
-    md = /^([a-z]+): (.*)$/.match(line)
+    md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]
       when "name"
@@ -74,12 +75,24 @@ def insert_file(out, file)
         }
         curr_charm["dep"] = deps
       when "text"
-        curr_charm["text"] = [md[2]]
+        curr_charm["text"] = []
+        curr_para = md[2]
       end
-    elsif not line.empty?
-      curr_charm["text"].push(line)
+    else
+      line.strip!
+      if line.empty?
+        if not curr_para.empty?
+          curr_charm["text"].push(curr_para)
+        end
+        curr_para = ""
+      else
+        curr_para += " " + line
+      end
     end
   }
+  if not curr_para.empty?
+    curr_charm["text"].push(curr_para)
+  end
 
   insert_charm(out, curr_charm)
 end

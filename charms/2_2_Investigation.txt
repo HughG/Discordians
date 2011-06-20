@@ -1,6 +1,7 @@
 name: exc, (Any Investigation*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: iai, Instant Assembly*of Impressions
@@ -9,12 +10,27 @@ mins: Investigation 2, Ess 1
 type: Simple (Speed 1, DV -0)
 key: Combo-OK, Stackable
 dur: Indefinite
-dep: 
-text: All things are one, if seen from the right angle.  This maxim is most often used in dissolving the boundaries between concepts, but it can also lead one to the secret of capturing many observations in one instance.
+dep:
 
-This Charm allows the character to instantly record a precise memory of the scene around them, for later Investigation rolls or other normal uses of memory.  The scope of the scene is at least a radius of (Essence x 5) yards, possibly more if there is little detail in the scene.  The memory will include only what the character was able to sense at that moment, though they may turn on the spot in order to gain a full 360-degree record.  The effect lasts as long as the motes remain committed, meaning that the it could be subjected to several Investigation actions if time allows, or more information is gained from other sources.
+text: All things are one, if seen from the right angle.  This maxim is most
+often used in dissolving the boundaries between concepts, but it can also lead
+one to the secret of capturing many observations in one instance.
 
-The memory is also unnaturally clear, removing one point of external penalties to perception, within the range of the Charm, at the point when it is activated.  If this Charm is used in combos with sensory-enhancement Charms, or such Charms are already in effect, then later Investigation actions on the record are on the basis of the enhanced senses.
+This Charm allows the character to instantly record a precise memory of the
+scene around them, for later Investigation rolls or other normal uses of
+memory.  The scope of the scene is at least a radius of (Essence x 5) yards,
+possibly more if there is little detail in the scene.  The memory will include
+only what the character was able to sense at that moment, though they may turn
+on the spot in order to gain a full 360-degree record.  The effect lasts as
+long as the motes remain committed, meaning that the it could be subjected to
+several Investigation actions if time allows, or more information is gained
+from other sources.
+
+The memory is also unnaturally clear, removing one point of external penalties
+to perception, within the range of the Charm, at the point when it is
+activated.  If this Charm is used in combos with sensory-enhancement Charms,
+or such Charms are already in effect, then later Investigation actions on the
+record are on the basis of the enhanced senses.
 
 
 name: erm, Evidence*Reorganisation Method
@@ -24,9 +40,22 @@ type: Supplemental
 key: Combo-OK, Social
 dur: Instant
 dep: iai, exc
+
 text: TODO
 
-This Charm supplements an Investigation action to provide the character with knowledge of how to alter evidence to affect the conclusions which later investigators are likely to draw.  For each success on the Investigation roll, the Moonlight Lyre immediately understands one change which could be made to alter a specific observation.  For example, she might see how to make a lock appear to have been picked rather than forced, make a footprint seem to be male rather than female, or even how to make an outright lie sound like a half-truth.  If these changes are made, by the character or anyone else, the adjustments will be undetectable by mundane means.  Detection by supernatural means allows the investigator to make the standard contested roll of the character's (Wits + Investigation) versus the other investigator's (Perception + Investigation).  Making the changes takes a tenth of the time it normally would.
+This Charm supplements an Investigation action to provide the character with
+knowledge of how to alter evidence to affect the conclusions which later
+investigators are likely to draw.  For each success on the Investigation roll,
+the Moonlight Lyre immediately understands one change which could be made to
+alter a specific observation.  For example, she might see how to make a lock
+appear to have been picked rather than forced, make a footprint seem to be
+male rather than female, or even how to make an outright lie sound like a
+half-truth.  If these changes are made, by the character or anyone else, the
+adjustments will be undetectable by mundane means.  Detection by supernatural
+means allows the investigator to make the standard contested roll of the
+character's (Wits + Investigation) versus the other investigator's (Perception
++ Investigation).  Making the changes takes a tenth of the time it normally
+would.
 
 
 name: roi, Refuge of*Intransigence
@@ -35,16 +64,36 @@ mins: Inv 3, Ess 2
 type: Reflexive (Step 2)
 key: Combo-OK, Illusion, Social, Stackable
 dur: One scene
-dep: 
+dep:
+
 text: TODO
 
-Constructing a personally satisfying proof using twisted and ill-founded logic, the Moonlight Lyre uses this Charm to defeat a social attack by subjecting herself to an Illusion that it is an unacceptable -- indeed, impossible -- order.  Resisting natural mental influence in this way costs only three motes, while unnatural mental influence costs twice as much.
+Constructing a personally satisfying proof using twisted and ill-founded
+logic, the Moonlight Lyre uses this Charm to defeat a social attack by
+subjecting herself to an Illusion that it is an unacceptable -- indeed,
+impossible -- order.  Resisting natural mental influence in this way costs
+only three motes, while unnatural mental influence costs twice as much.
 
-The Illusion lasts for the rest of the scene, and she cannot voluntarily terminate the Charm before then, nor spend Willpower to resist her own Illusion.  Unless some other effect removes or bypasses that Illusion, she cannot take any action substantially equivalent to that demanded by the attack until the next scene.  This Charm may therefore have undesirable consequences after using it to resist, for example, an Emotion of fear which drives one to flee, or anger which drives one to attack.  Further attacks within the scene which would direct the character to effectively the same course of action, even if for a different reason, are equally deemed impossible.  Attacks which try to get the character to do something different would require a separate activation of this Charm to resist.
+The Illusion lasts for the rest of the scene, and she cannot voluntarily
+terminate the Charm before then, nor spend Willpower to resist her own
+Illusion.  Unless some other effect removes or bypasses that Illusion, she
+cannot take any action substantially equivalent to that demanded by the attack
+until the next scene.  This Charm may therefore have undesirable consequences
+after using it to resist, for example, an Emotion of fear which drives one to
+flee, or anger which drives one to attack.  Further attacks within the scene
+which would direct the character to effectively the same course of action,
+even if for a different reason, are equally deemed impossible.  Attacks which
+try to get the character to do something different would require a separate
+activation of this Charm to resist.
 
-Although the Illusion which limits the character only lasts for the scene, mental influence which is defended against simply never takes hold, so the character need not make further efforts to resist the original attack in later scenes.
+Although the Illusion which limits the character only lasts for the scene,
+mental influence which is defended against simply never takes hold, so the
+character need not make further efforts to resist the original attack in later
+scenes.
 
-Since this Charm involves both imposing and acceding to unnatural mental influence, the two sides are in balance, and the character's Hodge and Podge tracks are unaffected.
+Since this Charm involves both imposing and acceding to unnatural mental
+influence, the two sides are in balance, and the character's Hodge and Podge
+tracks are unaffected.
 
 
 name: eft, Even False Things
@@ -54,13 +103,32 @@ type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Illusion, Social, Stackable
 dur: Indefinite
 dep: exc, roi
-text: As Malaclypse the Younger himself said, "Even false things are true."  Fully internalising this understanding allows a Priest of Eris to conceive and to utter both truth and falsehood with equal conviction.
 
-This Charm allows the character to temporarily reverse her belief about the truth or falsity of a given notion.  For as long as the motes remain committed, she is subject to an Illusion effect which changes her own belief.  This affects mundane or magical attempts to discern the veracity of the character's statements, in word, writing, thought or any other medium.  Magical attempts to determine the truth as the character sees it will be fooled by the Illusion.  If such magic is strong enough to require a roll-off, add a bonus of Essence successes.  Effects which impose a contradictory belief result in a contested roll, with a bonus of (Essence ÷ 2) successes for the character.  This applies both to effects in play when the Charm is activated, and those applied while it is active.
+text: As Malaclypse the Younger himself said, "Even false things are true."
+Fully internalising this understanding allows a Priest of Eris to conceive and
+to utter both truth and falsehood with equal conviction.
 
-Social combat is affected while this Charm is active, in that a character will use Charisma where Manipulation would normally apply, or vice versa, regarding the particular inverted belief.
+This Charm allows the character to temporarily reverse her belief about the
+truth or falsity of a given notion.  For as long as the motes remain
+committed, she is subject to an Illusion effect which changes her own belief.
+This affects mundane or magical attempts to discern the veracity of the
+character's statements, in word, writing, thought or any other medium.
+Magical attempts to determine the truth as the character sees it will be
+fooled by the Illusion.  If such magic is strong enough to require a roll-off,
+add a bonus of Essence successes.  Effects which impose a contradictory belief
+result in a contested roll, with a bonus of (Essence ÷ 2) successes for the
+character.  This applies both to effects in play when the Charm is activated,
+and those applied while it is active.
 
-Since this Charm involves both imposing and acceding to unnatural mental influence, the two sides are in balance, and the character's Hodge and Podge tracks are unaffected.  The character loses any possibility of resisting this Charm's Illusion by activating it, though she may still choose to terminate it at any time.
+Social combat is affected while this Charm is active, in that a character will
+use Charisma where Manipulation would normally apply, or vice versa, regarding
+the particular inverted belief.
+
+Since this Charm involves both imposing and acceding to unnatural mental
+influence, the two sides are in balance, and the character's Hodge and Podge
+tracks are unaffected.  The character loses any possibility of resisting this
+Charm's Illusion by activating it, though she may still choose to terminate it
+at any time.
 
 
 name: rtsc, Reading*the Soul's Compass
@@ -69,10 +137,19 @@ mins: Investigation 4, Ess 2
 type: Simple
 key: Combo-OK, Social
 dur: Instant
-dep: 
-text: To draw others towards confusion or understanding, as desired, it helps to know what really draws them.  The Priests of Eris have therefore learned to be particularly good at discovering what drives people.
+dep:
 
-With this Charm the Storyteller attempts to discover the target's Intimacies and Motivations.  The target may be an individual or a social group.  The character's player rolls (Perception + Investigation) against a difficulty of ([the target's Manipulation + Socialize] ÷ 2).  A successsful roll reveals one Intimacy, which need not have been demonstrated in the current scene.  If the character already knows all the target's Intimacies, further successful rolls reveal the target's Motivation (or Motivations, in rare cases).
+text: To draw others towards confusion or understanding, as desired, it helps
+to know what really draws them.  The Priests of Eris have therefore learned to
+be particularly good at discovering what drives people.
+
+With this Charm the Storyteller attempts to discover the target's Intimacies
+and Motivations.  The target may be an individual or a social group.  The
+character's player rolls (Perception + Investigation) against a difficulty of
+([the target's Manipulation + Socialize] ÷ 2).  A successsful roll reveals one
+Intimacy, which need not have been demonstrated in the current scene.  If the
+character already knows all the target's Intimacies, further successful rolls
+reveal the target's Motivation (or Motivations, in rare cases).
 
 
 name: stt, Sifting Through Tells
@@ -82,11 +159,25 @@ type: Reflexive (Step 1)
 key: Combo-OK, Social
 dur: One scene
 dep: eft, rtsc
-text: As a well-known old mind-bender once said, "we leak the truth from every pore".  Those of the Soft and Steady Hand can seive the words and non-verbal cues they receive from those around them to find, if not the truth, at least the holes between.
 
-Activating this Charm allows the character to recognise all deliberate lies or half-truths he observes during the scene, whether communicated verbally or by facial expression etc.  In the case of a half-truth, the character can reflexively spend 1 mote to know which parts are believed to be a lie, though not what the speaker's true belief is.  If the liar is subject to some temporary Emotion or Illusion effect which causes him to communicate something contrary to his normal beliefs, this will also be detected.  (This leaves the character in a rather confusing belief situation if they are themselves subject to the same effect, granting them an extra opportunity to shake it off if possible.)
+text: As a well-known old mind-bender once said, "we leak the truth from every
+pore".  Those of the Soft and Steady Hand can seive the words and non-verbal
+cues they receive from those around them to find, if not the truth, at least
+the holes between.
 
-If another Charm directly contests the effects of this one, add (character's Essence ÷ 2) successes to oppose the other Charm.
+Activating this Charm allows the character to recognise all deliberate lies or
+half-truths he observes during the scene, whether communicated verbally or by
+facial expression etc.  In the case of a half-truth, the character can
+reflexively spend 1 mote to know which parts are believed to be a lie, though
+not what the speaker's true belief is.  If the liar is subject to some
+temporary Emotion or Illusion effect which causes him to communicate something
+contrary to his normal beliefs, this will also be detected.  (This leaves the
+character in a rather confusing belief situation if they are themselves
+subject to the same effect, granting them an extra opportunity to shake it off
+if possible.)
+
+If another Charm directly contests the effects of this one, add (character's
+Essence ÷ 2) successes to oppose the other Charm.
 
 
 name: sdi, Scrutiny-Deflecting Insight
@@ -96,9 +187,17 @@ type: Reflexive
 key: Combo-OK, Social
 dur: One scene
 dep: eft
+
 text: TODO
 
-Activating this Charm allows a character to read past the expressions and words of anyone who is questioning her, letting her know exactly what to say to direct attention away from herself.  While the Charm is active, listeners suffer a penalty equal to (character's Investigation) to their Dodge and Parry MDVs whenever she uses a social attack or defense to attempt to make herself seem irrelevant to a line of investigation, or innocent of some transgression.  With a suitable stunt she may even apply this penalty to attempts to shift interest to or cast suspicion on someone else.
+Activating this Charm allows a character to read past the expressions and
+words of anyone who is questioning her, letting her know exactly what to say
+to direct attention away from herself.  While the Charm is active, listeners
+suffer a penalty equal to (character's Investigation) to their Dodge and Parry
+MDVs whenever she uses a social attack or defense to attempt to make herself
+seem irrelevant to a line of investigation, or innocent of some transgression.
+With a suitable stunt she may even apply this penalty to attempts to shift
+interest to or cast suspicion on someone else.
 
 
 name: pds, Pattern-Disturbance Sense
@@ -108,11 +207,22 @@ type: Reflexive (Step 1)
 key: Combo-OK
 dur: Instant
 dep: exc
-text: Right and wrong are subjective concepts, but even the madness of the Wyld knows its own natural state.
 
-This Charm instantly reveals to the character the type and location of any objects within (Essence x 10) yards which do not naturally belong where they are, or are not performing their natural function.  A lothario hiding in temple, a raksha in Creation, or a nobleman wandering the poor quarter of some town, would stand out immediately.  On the other hand a letter hidden in a secret compartment (intended for just such a purpose), a spy among an enemy's staff, or an assassin hiding in the shadows, might go undetected.  What is or is not detectable to a character is down to the Storyteller's discretion.
+text: Right and wrong are subjective concepts, but even the madness of the
+Wyld knows its own natural state.
 
-Mundane attempts at concealment are useless against this Charm.  If some supernatural effect contests it, roll the character's (Investigation + Essence) against the Essence of the creator of the effect.
+This Charm instantly reveals to the character the type and location of any
+objects within (Essence x 10) yards which do not naturally belong where they
+are, or are not performing their natural function.  A lothario hiding in
+temple, a raksha in Creation, or a nobleman wandering the poor quarter of some
+town, would stand out immediately.  On the other hand a letter hidden in a
+secret compartment (intended for just such a purpose), a spy among an enemy's
+staff, or an assassin hiding in the shadows, might go undetected.  What is or
+is not detectable to a character is down to the Storyteller's discretion.
+
+Mundane attempts at concealment are useless against this Charm.  If some
+supernatural effect contests it, roll the character's (Investigation +
+Essence) against the Essence of the creator of the effect.
 
 
 name: kna, Knot and Needle*Awareness
@@ -122,13 +232,40 @@ type: Reflexive
 key: Combo-OK
 dur: Instant
 dep: exc
+
 text: TODO
 
-The name of this Charm comes from the image of changes made in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense the degree and type of influence which beings or objects are able and likely to have, or have already had, on the world.  He will gain this knowledge for all relevant beings and objects which he can currently see (or otherwise clearly sense).
+The name of this Charm comes from the image of changes made in the Loom of
+Fate, but it works equally well in other sorts of reality.  Activating it
+allows a character to sense the degree and type of influence which beings or
+objects are able and likely to have, or have already had, on the world.  He
+will gain this knowledge for all relevant beings and objects which he can
+currently see (or otherwise clearly sense).
 
-The measure of influence may be due to raw, Essence-fueled power, to some Destiny, or to mundane influence etc.  Beings with awakened Essence of 3 or more are noticeable, as are those with a similar rating in relevant Backgrounds such as Allies, Connections, Cult, Influence and so on.  The storyteller may adjust the list of applicable Backgrounds.  Artifacts, manses, demesnes and freeholds rated 3 or more are visible to the character.  Objects and beings lacking any of the above ratings will nevertheless be picked out if they are likely to play, or have played, a vital part in some pivotal event, e.g., an assassination.
+The measure of influence may be due to raw, Essence-fueled power, to some
+Destiny, or to mundane influence etc.  Beings with awakened Essence of 3 or
+more are noticeable, as are those with a similar rating in relevant
+Backgrounds such as Allies, Connections, Cult, Influence and so on.  The
+storyteller may adjust the list of applicable Backgrounds.  Artifacts, manses,
+demesnes and freeholds rated 3 or more are visible to the character.  Objects
+and beings lacking any of the above ratings will nevertheless be picked out if
+they are likely to play, or have played, a vital part in some pivotal event,
+e.g., an assassination.
 
-The character will automatically know which traits or types of events make each object or being notable, but will not know trait ratings or details of events.  To gain more detailed knowledge the character may make a (Perception + Investigation) roll.  Knowing the rating of a single trait is difficulty 2, as is getting an approximate timing for past events.  Getting a rough idea of individuals or power groups involved in Backgrounds, or of the general nature of past pivotal events, is difficulty 4.  This Charm cannot reveal precise details, however: it might point someone out as being involved in an assassination, but cannot tell whether they were victim, assassin, guard or witness.  Trying to determine the rough shape of future events, associations or tendencies adds 2 to the difficulty,  This is, of course, subject to the vagaries of Fate, and anything which disturbs that may change what comes to pass.
+
+The character will automatically know which traits or types of events make
+each object or being notable, but will not know trait ratings or details of
+events.  To gain more detailed knowledge the character may make a (Perception
++ Investigation) roll.  Knowing the rating of a single trait is difficulty 2,
+as is getting an approximate timing for past events.  Getting a rough idea of
+individuals or power groups involved in Backgrounds, or of the general nature
+of past pivotal events, is difficulty 4.  This Charm cannot reveal precise
+details, however: it might point someone out as being involved in an
+assassination, but cannot tell whether they were victim, assassin, guard or
+witness.  Trying to determine the rough shape of future events, associations
+or tendencies adds 2 to the difficulty, This is, of course, subject to the
+vagaries of Fate, and anything which disturbs that may change what comes to
+pass.
 
 
 name: lla, Ladder and Loophole*Awareness
@@ -138,10 +275,31 @@ type: Reflexive
 key: Combo-OK
 dur: One scene
 dep: pds, kna
+
 text: TODO
 
-The name of this Charm comes from the image of gaps and holes in the Loom of Fate, but it works equally well in other sorts of reality.  Activating it allows a character to sense objects and beings which are hidden or disguised.  The true appearance of such things is not revealed, but their locations and the types of concealment are.
+The name of this Charm comes from the image of gaps and holes in the Loom of
+Fate, but it works equally well in other sorts of reality.  Activating it
+allows a character to sense objects and beings which are hidden or disguised.
+The true appearance of such things is not revealed, but their locations and
+the types of concealment are.
 
-For hidden, invisible or immaterial things, this Charm halves any penalties to the character's interactions with them.  Against Stealth effects which can be contested by mundane means, this Charm halves the difficulty and any added successes when the character contests it.  Against Stealth effects which are impenetrable by mundane means, the character will know that a concealed being is present, but will not learn its location.  This Charm does not in itself grant the ability to interact with immaterial beings.
+For hidden, invisible or immaterial things, this Charm halves any penalties to
+the character's interactions with them.  Against Stealth effects which can be
+contested by mundane means, this Charm halves the difficulty and any added
+successes when the character contests it.  Against Stealth effects which are
+impenetrable by mundane means, the character will know that a concealed being
+is present, but will not learn its location.  This Charm does not in itself
+grant the ability to interact with immaterial beings.
 
-Disguised things are revealed as such, including the nature of the disguise.  This Charm reveals mundane and magical disguises, including those using Lunar shapeshifting, Sidereal astrology, and any unnatural mental influences which cause the character to mistake the true nature of something.  (This does not count as resisting the unnatural mental influence directly, so does not accrue Podge.)  However, the identity of the disguised person or object remains unknown.  If the digsuise itself imposes any penalties on the character, they are halved.  Furthermore, the character may add 2 dice to any rolls (of any Ablity) to see through or undo the disguise.  For the avoidance of doubt, raksha Assumption charms do not count as disguises for the purposes of this Charm.
+Disguised things are revealed as such, including the nature of the disguise.
+This Charm reveals mundane and magical disguises, including those using Lunar
+shapeshifting, Sidereal astrology, and any unnatural mental influences which
+cause the character to mistake the true nature of something.  (This does not
+count as resisting the unnatural mental influence directly, so does not accrue
+Podge.)  However, the identity of the disguised person or object remains
+unknown.  If the digsuise itself imposes any penalties on the character, they
+are halved.  Furthermore, the character may add 2 dice to any rolls (of any
+Ablity) to see through or undo the disguise.  For the avoidance of doubt,
+raksha Assumption charms do not count as disguises for the purposes of this
+Charm.

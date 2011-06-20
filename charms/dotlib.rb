@@ -24,7 +24,7 @@ def makedot(infilename, outfilename)
   curr_charm = {}
 
   IO.foreach(infilename) { |line|
-    md = /^([a-z]+): (.*)$/.match(line)
+    md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]
       when "name"

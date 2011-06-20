@@ -1,6 +1,7 @@
 name: exc, (Any Bureaucracy*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: fam, Faction Analysis*Method
@@ -9,8 +10,14 @@ mins: Bur 2, Ess 2
 type: Simple
 key: Combo-OK
 dur: One scene
-dep: 
-text: Provides clear understanding of all departments and factions within the organisation, official and unofficial, identifying the true leaders of each.  This gives the character (Essence ÷ 2) bonus successes to subsequent Bureaucracy actions in the scene which relate to influencing one specific faction, or altering tensions between groups.  Information on the leaders' identities is retained permanently, though leadership may change later.
+dep:
+
+text: Provides clear understanding of all departments and factions within the
+organisation, official and unofficial, identifying the true leaders of each.
+This gives the character (Essence ÷ 2) bonus successes to subsequent
+Bureaucracy actions in the scene which relate to influencing one specific
+faction, or altering tensions between groups.  Information on the leaders'
+identities is retained permanently, though leadership may change later.
 
 [TODO: Might need to limit scope/size of organisation.]
 
@@ -22,7 +29,18 @@ type: Simple (Dramatic Action)
 key: Combo-OK
 dur: Indefinite
 dep: fam
-text: With knowledge of the overt and covert roles and communication channels in an organisation, the Exalt is able to arrange for her own pet project to be achieved without drawing attention to it.  The maximum duration of the project in days is equal to the largest group size for a Magnitude one less than the organisation's size; for example, a bureaucracy of 200 is Magnitude 4, so the maximum duration would be 150 days (the largest size of a Magnitude 3 group), or a little over 5 months.  The maximum Resources which can be diverted without attracting attention is half the group's Magnitude, rounded up, but no more than the Resources available to the group itself.  Again for example, from this 200-strong office, Resources 2 could be diverted, assuming they commanded at least Resources 2 in the first place.
+
+text: With knowledge of the overt and covert roles and communication channels
+in an organisation, the Exalt is able to arrange for her own pet project to be
+achieved without drawing attention to it.  The maximum duration of the project
+in days is equal to the largest group size for a Magnitude one less than the
+organisation's size; for example, a bureaucracy of 200 is Magnitude 4, so the
+maximum duration would be 150 days (the largest size of a Magnitude 3 group),
+or a little over 5 months.  The maximum Resources which can be diverted
+without attracting attention is half the group's Magnitude, rounded up, but no
+more than the Resources available to the group itself.  Again for example,
+from this 200-strong office, Resources 2 could be diverted, assuming they
+commanded at least Resources 2 in the first place.
 
 
 name: bots, Blessing of True Synergy
@@ -32,7 +50,23 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: wwws
-text: Whereas some would improve the efficiency of an organisation by directly reshaping it, the Discordian knows that the same ends can often be achieved simply by gently adjusting the goals of the individuals within it.  The Exalt subtly influences the organisation so that, despite still following selfish internal goals, its various parts effectively work much more successfully towards an overall aim.  The Charm supplements a dramatic action, adding the character's subtle guidance and suggestion to a project.  He mst be involved in its execution, but need not lead the action, nor even be a member of the group.  It reduces internal penaltes on the action by the group's Magnitude.  If the character's involvement is not obvious to most of the group, and the action succeeds, then the group puts this success down in good part to the particular way they worked, thereby permanently reducing internal penalties by one point, as a mysterious air of good feeling persists after the project.  The total permanent reduction in penalties for a given group over repeated application of this Charm cannot exceed the Exalt's Essence, although the temporary improvement may.
+
+text: Whereas some would improve the efficiency of an organisation by directly
+reshaping it, the Discordian knows that the same ends can often be achieved
+simply by gently adjusting the goals of the individuals within it.  The Exalt
+subtly influences the organisation so that, despite still following selfish
+internal goals, its various parts effectively work much more successfully
+towards an overall aim.  The Charm supplements a dramatic action, adding the
+character's subtle guidance and suggestion to a project.  He mst be involved
+in its execution, but need not lead the action, nor even be a member of the
+group.  It reduces internal penaltes on the action by the group's Magnitude.
+If the character's involvement is not obvious to most of the group, and the
+action succeeds, then the group puts this success down in good part to the
+particular way they worked, thereby permanently reducing internal penalties by
+one point, as a mysterious air of good feeling persists after the project.
+The total permanent reduction in penalties for a given group over repeated
+application of this Charm cannot exceed the Exalt's Essence, although the
+temporary improvement may.
 
 
 name: bbb, Bilateral Bargain*Binding
@@ -41,12 +75,37 @@ mins: Bur 2, Ess 3
 type: Simple (Dramatic Action)
 key: Combo-OK, Compulsion
 dur: Instant
-dep: 
-text: Eclipse-caste Solars bind others, not always willing, in oaths of servitude enforced by the might of Heaven.  The Unbending Arm, however, recognises that oaths are more likely to remain unbroken if they are fairly made, and can seal a pargain with the unbalanced balance of the power of Eris.  This Charm allows a Discordian to magically reinforce an oath between two individuals or groups, provided each side swears freely.  The character may be one of those affected, but need not be.  Unwilling parties are not valid targets for this Charm, nor are those whose willingness comes only through threats, mental influence, social attacks or breaking of Motivation.  This is true regardless of the source of the influence, or whether or not it was specifically intended to persuade the target into accepting an oath.
+dep:
 
-Assuming both parties willingly swear to their side of the bargain, the magic of the Charm ensures that the first party to break the oath will suffer a single occurrence of terrible misfortune, similar to the Eclipse-caste anima ability.  At the same time, all beings bound by the oath (and the character, if he is not one of the parties) will know that the it was broken, and by whom.  If the wronged party subsequently takes steps to gain redress, they will benefit from a perfect success on one action in pursuit of that goal, at a highly opportune moment.
+text: Eclipse-caste Solars bind others, not always willing, in oaths of
+servitude enforced by the might of Heaven.  The Unbending Arm, however,
+recognises that oaths are more likely to remain unbroken if they are fairly
+made, and can seal a pargain with the unbalanced balance of the power of Eris.
+This Charm allows a Discordian to magically reinforce an oath between two
+individuals or groups, provided each side swears freely.  The character may be
+one of those affected, but need not be.  Unwilling parties are not valid
+targets for this Charm, nor are those whose willingness comes only through
+threats, mental influence, social attacks or breaking of Motivation.  This is
+true regardless of the source of the influence, or whether or not it was
+specifically intended to persuade the target into accepting an oath.
 
-Without the power of Yu-Shan behind it, given that Eris generally likes folk to fend for themselves, this binding lasts only until the Exalt dies.  Both parties will know if this happens, and can distinguish it from a breaking of the oath.  Eliciting an oath of truce from some enemy may therefore not be particularly useful, but a fair trade may fend off violence, at least until both sides have done their part.  There are no ancient pacts to protect any Division of Discordians as they wander the worlds, but most intelligent beings can be bargained with, if the price is right.
+Assuming both parties willingly swear to their side of the bargain, the magic
+of the Charm ensures that the first party to break the oath will suffer a
+single occurrence of terrible misfortune, similar to the Eclipse-caste anima
+ability.  At the same time, all beings bound by the oath (and the character,
+if he is not one of the parties) will know that the it was broken, and by
+whom.  If the wronged party subsequently takes steps to gain redress, they
+will benefit from a perfect success on one action in pursuit of that goal, at
+a highly opportune moment.
+
+Without the power of Yu-Shan behind it, given that Eris generally likes folk
+to fend for themselves, this binding lasts only until the Exalt dies.  Both
+parties will know if this happens, and can distinguish it from a breaking of
+the oath.  Eliciting an oath of truce from some enemy may therefore not be
+particularly useful, but a fair trade may fend off violence, at least until
+both sides have done their part.  There are no ancient pacts to protect any
+Division of Discordians as they wander the worlds, but most intelligent beings
+can be bargained with, if the price is right.
 
 
 name: mom, Memorandum*of Misunderstanding
@@ -56,9 +115,23 @@ type: Simple (Dramatic Action)
 key: Combo-OK, Illusion
 dur: Indefinite
 dep: exc
-text: The Bishops of Greyface enjoy spreading confusion, particularly around the fundamental issue, for an organisation, of exactly what it is supposed to be doing.  Employing this charm, the player rolls ([Charisma or Manipulation] + Bureaucracy + Essence) with a difficulty equal to the leader's MDV.  If successful, the organisation forgets its Motivation; it will not act against it (unless otherwise compelled) but neither will it act in support of it, with the leader likely to spend Loyalty points to resist external attempts to persuade the organisation to do so.  The leader may also spend Loyalty to resist or shake off this Illusion, however.  Spending one point lifts it for a single scene, and spending a cumulative total of three ends the effect.
 
-An organisation affected by this Illusion is not completely paralysed.  It will still carry on minor day-to-day activities, giving the surface appearance of being functional.  It may also successfully carry out activities not related to its main Motivation.  Applying this Charm to small outposts of the Immaculate Order can be particularly amusing.
+text: The Bishops of Greyface enjoy spreading confusion, particularly around
+the fundamental issue, for an organisation, of exactly what it is supposed to
+be doing.  Employing this charm, the player rolls ([Charisma or Manipulation]
++ Bureaucracy + Essence) with a difficulty equal to the leader's MDV.  If
+successful, the organisation forgets its Motivation; it will not act against
+it (unless otherwise compelled) but neither will it act in support of it, with
+the leader likely to spend Loyalty points to resist external attempts to
+persuade the organisation to do so.  The leader may also spend Loyalty to
+resist or shake off this Illusion, however.  Spending one point lifts it for a
+single scene, and spending a cumulative total of three ends the effect.
+
+An organisation affected by this Illusion is not completely paralysed.  It
+will still carry on minor day-to-day activities, giving the surface appearance
+of being functional.  It may also successfully carry out activities not
+related to its main Motivation.  Applying this Charm to small outposts of the
+Immaculate Order can be particularly amusing.
 
 [TODO: Might need to limit scope/size of organisation.]
 
@@ -70,11 +143,34 @@ type: Simple (Dramatic Action)
 key: Combo-OK, Servitude
 dur: Instant
 dep: mom
-text: The sometimes crazed notions of the Unbending Arm are nonetheless unusually compelling.  Using this Charm, the character communicates a new Policy to an organisation, the means depending on its magnitude and how widely spread it is.  It may be sufficient to talk directly to senior figures, or it may be necessary to send memos to each department.
 
-The player rolls ([Charisma or Manipulation] + Bureaucracy + Essence) when stating the new mission.  Either side may gain a bonus to MDV due to relative Magnitude, as normal.  If the character's successes exceed the leader's MDV, the target group takes on the mission as a new Intimacy, to be pursued to the best of its ability.  The leader of the unit may spend two points of Loyalty to resist this effect.  If the roll succeeds but the mission is in conflict with the group's Motivation, it loses a dot of Magnitude, and those lost immediately form a splinter group with the mission as their Motivation.  If the new goal is in line with the organisation's Motivation, then they will drop all other activities to pursue it for the first (Essence) days, throwing financial and political caution to the winds (although not ignoring the need to eat and sleep -- work/life balance is important, y'know).
+text: The sometimes crazed notions of the Unbending Arm are nonetheless
+unusually compelling.  Using this Charm, the character communicates a new
+Policy to an organisation, the means depending on its magnitude and how widely
+spread it is.  It may be sufficient to talk directly to senior figures, or it
+may be necessary to send memos to each department.
 
-If persuaded departments are sufficiently distant from each other, the new mission will not actually affect them until they get word of it.  Spreading the mission to these departments will be one of the first priorities of the organisation.  However, if a message fails to reach within (Essence) weeks of it being sent, it will have lost its magic and be ignored on receipt.  This can result in even greater confusion as different departments act on the mission at different times.  There is still only a single roll to determine whether the mission is adopted, however.
+The player rolls ([Charisma or Manipulation] + Bureaucracy + Essence) when
+stating the new mission.  Either side may gain a bonus to MDV due to relative
+Magnitude, as normal.  If the character's successes exceed the leader's MDV,
+the target group takes on the mission as a new Intimacy, to be pursued to the
+best of its ability.  The leader of the unit may spend two points of Loyalty
+to resist this effect.  If the roll succeeds but the mission is in conflict
+with the group's Motivation, it loses a dot of Magnitude, and those lost
+immediately form a splinter group with the mission as their Motivation.  If
+the new goal is in line with the organisation's Motivation, then they will
+drop all other activities to pursue it for the first (Essence) days, throwing
+financial and political caution to the winds (although not ignoring the need
+to eat and sleep -- work/life balance is important, y'know).
+
+If persuaded departments are sufficiently distant from each other, the new
+mission will not actually affect them until they get word of it.  Spreading
+the mission to these departments will be one of the first priorities of the
+organisation.  However, if a message fails to reach within (Essence) weeks of
+it being sent, it will have lost its magic and be ignored on receipt.  This
+can result in even greater confusion as different departments act on the
+mission at different times.  There is still only a single roll to determine
+whether the mission is adopted, however.
 
 [TODO: Might need to limit scope/size of organisation.]
 
@@ -86,13 +182,38 @@ type: Simple (dramatic action)
 key: Combo-OK, Social, War
 dur: One day
 dep: mrp
-text: Confusion can be a gift, in the right hands; though, as ever, it is better to give than to receive.  This Charm can be used in social, bureaucratic or mass combat situations, against some organised unit.  It disrupts lines of communication and supply to make it harder for a target unit to achieve its goals.  The effects employed are extremely subtle, applying an external penalty of (character's permanent Essence) to any attempts to discover the source of the problem.
 
-For social units, vital phrases are misunderstood, the right people can't be found, and important tasks are forgotten briefly.  Together, these amount to a -4 external penalty applied to any attempts to get the group to work in an organised way in support of its Motivation or any of its Policies, for the next 24 hours.  After that, the penalty reduces by 1 each day until it returns to normal, or until the Leader spends a point of Loyalty to reassert control, in which case penalties vanish immediately.
+text: Confusion can be a gift, in the right hands; though, as ever, it is
+better to give than to receive.  This Charm can be used in social,
+bureaucratic or mass combat situations, against some organised unit.  It
+disrupts lines of communication and supply to make it harder for a target unit
+to achieve its goals.  The effects employed are extremely subtle, applying an
+external penalty of (character's permanent Essence) to any attempts to
+discover the source of the problem.
 
-Applied to a bureaucratic organisation it is even more effective, in a narrower way.  In relation to a chosen project, memos are lost, official seals break, key staff members fall ill and so on.  All this imposes a -4 external penalty to all its actions for the day and, once the scene has ended, the consequent confusion delays the project by (character's [Bureacuracy x Essence]) days.  A cumulative expenditure of (character's Bureacuracy) points of Loyalty by the leader can bring the project back on track sooner.
+For social units, vital phrases are misunderstood, the right people can't be
+found, and important tasks are forgotten briefly.  Together, these amount to a
+-4 external penalty applied to any attempts to get the group to work in an
+organised way in support of its Motivation or any of its Policies, for the
+next 24 hours.  After that, the penalty reduces by 1 each day until it returns
+to normal, or until the Leader spends a point of Loyalty to reassert control,
+in which case penalties vanish immediately.
 
-In a battle it is less effective, but still useful in the right situation.  It will cause a target unit to act as if it had 2 fewer Relays than it actually does (often provoking communications failure, leading to a -2 Drill penalty), and will remove 2 points of bonuses to Might, as supplies are lost, ammunition is delivered to the wrong units, and maintenance orders for Magitech are misdirected, causing them to work poorly, if at all.  These penalties vanish the next day.
+Applied to a bureaucratic organisation it is even more effective, in a
+narrower way.  In relation to a chosen project, memos are lost, official seals
+break, key staff members fall ill and so on.  All this imposes a -4 external
+penalty to all its actions for the day and, once the scene has ended, the
+consequent confusion delays the project by (character's [Bureacuracy x
+Essence]) days.  A cumulative expenditure of (character's Bureacuracy) points
+of Loyalty by the leader can bring the project back on track sooner.
+
+In a battle it is less effective, but still useful in the right situation.  It
+will cause a target unit to act as if it had 2 fewer Relays than it actually
+does (often provoking communications failure, leading to a -2 Drill penalty),
+and will remove 2 points of bonuses to Might, as supplies are lost, ammunition
+is delivered to the wrong units, and maintenance orders for Magitech are
+misdirected, causing them to work poorly, if at all.  These penalties vanish
+the next day.
 
 [TODO: Might need to limit scope/size of organisation.]
 
@@ -104,7 +225,25 @@ type: Simple (Dramatic Action)
 key: Form-type, Obvious
 dur: One scene
 dep: fam, mom
-text: So dedicated are the Priests of Eris to meddling with established order that they have elevated its practice to a level of refinement normally reserved for martial artists.  The Greyface Exalt brings forth an official-looking but nonsesical form, or improvises one from materials at hand, and meditates briefly on the futilty of filling it out, after which it disappears in a puff of smoke.  While this Charm is active, he adds half of the highest of his Backing, Contacts, Cult, Followers and Influence Backgrounds to his Dodge DV and Dodge MDV, as he bends strands of Fate (or other dominant reality substrate) to redirect possible injury into these larger structures.  The mote cost of all Bureaucracy Charms is reduced by (his permanent Essence), to a minimum of 1m, and the durations of any Dramatic Actions based on Bureaucracy (using Charms or not), started during that scene, are divided by (his permanent Essence).  Lastly, for the duration of the scene, the character may use any individual Martial Arts Charm, or Martial Arts Combo, as part of an impromptu Combo with any single Bureaucracy Charm, or Bureaucracy Combo, at the cost of an additional point of Willpower each time.  This is likely to be most useful with Excellencies, or with some peculiar Sidereal Martial Arts.
+
+text: So dedicated are the Priests of Eris to meddling with established order
+that they have elevated its practice to a level of refinement normally
+reserved for martial artists.  The Greyface Exalt brings forth an
+official-looking but nonsesical form, or improvises one from materials at
+hand, and meditates briefly on the futilty of filling it out, after which it
+disappears in a puff of smoke.  While this Charm is active, he adds half of
+the highest of his Backing, Contacts, Cult, Followers and Influence
+Backgrounds to his Dodge DV and Dodge MDV, as he bends strands of Fate (or
+other dominant reality substrate) to redirect possible injury into these
+larger structures.  The mote cost of all Bureaucracy Charms is reduced by (his
+permanent Essence), to a minimum of 1m, and the durations of any Dramatic
+Actions based on Bureaucracy (using Charms or not), started during that scene,
+are divided by (his permanent Essence).  Lastly, for the duration of the
+scene, the character may use any individual Martial Arts Charm, or Martial
+Arts Combo, as part of an impromptu Combo with any single Bureaucracy Charm,
+or Bureaucracy Combo, at the cost of an additional point of Willpower each
+time.  This is likely to be most useful with Excellencies, or with some
+peculiar Sidereal Martial Arts.
 
 
 name: rcm, Record-Correction*Maneuver
@@ -114,11 +253,32 @@ type: Simple (Dramatic Action)
 key: Combo-OK, Social, Compulsion
 dur: Instant
 dep: frf
-text: Too often, those who serve a larger cause get caught up in that service and give it more credence than they give themselves; which is something to be taken advantage of.  This Charm causes an organistion to lose all record of a particular fact, or introduces a new "fact" into their archives and common understanding.  It must be activated in the presence of a member of the organisation, or in one of its offices, permanent or temporary.  The organisation must have a Magnitude of no more than the character's (Essence + Bureaucracy).  The datum added or removed must be about something external to the organisation; so, for example, an Erisian cannot make himself the new leader of the Immaculate Order.
 
-Any member of the organisation who was in the process of dealing with that fact (if it disappeared) or a closely related subject (if it just appeared) may resist the effect as unnatural mental influence, at a cost of 1 Willpower per scene, with the effect lifting (for them) once they have spend a cumulative total of 3 Willpower.  If they resist, they will be certain of the original truth of the matter, even though many of their colleagues may be baffled by their strange opinion.  For those who cannot or fail to resist, they immediately come to believe the new truth.
+text: Too often, those who serve a larger cause get caught up in that service
+and give it more credence than they give themselves; which is something to be
+taken advantage of.  This Charm causes an organistion to lose all record of a
+particular fact, or introduces a new "fact" into their archives and common
+understanding.  It must be activated in the presence of a member of the
+organisation, or in one of its offices, permanent or temporary.  The
+organisation must have a Magnitude of no more than the character's (Essence +
+Bureaucracy).  The datum added or removed must be about something external to
+the organisation; so, for example, an Erisian cannot make himself the new
+leader of the Immaculate Order.
 
-Note that there is nothing preventing the organisation from subsequently correcting its observations and updating its records.  However, in the short term, this Charm can be remarkably useful for such tasks as escaping from the attentions of the Wyld Hunt.  Also, for information which is truly hard to discover, the organisation may never be able to re-learn the truth.
+Any member of the organisation who was in the process of dealing with that
+fact (if it disappeared) or a closely related subject (if it just appeared)
+may resist the effect as unnatural mental influence, at a cost of 1 Willpower
+per scene, with the effect lifting (for them) once they have spend a
+cumulative total of 3 Willpower.  If they resist, they will be certain of the
+original truth of the matter, even though many of their colleagues may be
+baffled by their strange opinion.  For those who cannot or fail to resist,
+they immediately come to believe the new truth.
+
+Note that there is nothing preventing the organisation from subsequently
+correcting its observations and updating its records.  However, in the short
+term, this Charm can be remarkably useful for such tasks as escaping from the
+attentions of the Wyld Hunt.  Also, for information which is truly hard to
+discover, the organisation may never be able to re-learn the truth.
 
 
 name: dbp, Decision-Bending Prana
@@ -128,11 +288,28 @@ type: Supplemental
 key: Combo-OK, Social
 dur: Instant
 dep: frf
-text: A word in the right butterfly-like ear can have unexpected effects far away.  This Charm supplements an attempt by the character to manipulate a single in-process decision within an organisation.  Its target is any single member of the organisation, no matter how lowly: the magic of the Charm will work its way toward the real decision-maker (who may or may not be the one officially in that role).
 
-The character makes a contested ([Charisma or Manipulation] + Bureaucracy) roll against the target's (Intelligence + [Integrity or Bureaucracy]).  If it is directly in opposition to the group's Motivation, and the group's Magnitude exceeds the Exalt's Essence, the attempt automatically fails.  Mere Policies (Intimacies) do not afford this protection, however.  If successful, the decision will go the way the character desires.  As with the Record-Correction Maneuver, there is nothing to prevent the organisation from changing the decision later, depending on its Motivation and tendencies -- unless, of course, it's too late.  The decision will not be changed back for at least (character's Essence) days, however.
+text: A word in the right butterfly-like ear can have unexpected effects far
+away.  This Charm supplements an attempt by the character to manipulate a
+single in-process decision within an organisation.  Its target is any single
+member of the organisation, no matter how lowly: the magic of the Charm will
+work its way toward the real decision-maker (who may or may not be the one
+officially in that role).
 
-This Charm is only effective upon decisions which the organisation was already intending to make, and has not yet settled.  It cannot force a group to decide to do something which had never crossed its collective mind.
+The character makes a contested ([Charisma or Manipulation] + Bureaucracy)
+roll against the target's (Intelligence + [Integrity or Bureaucracy]).  If it
+is directly in opposition to the group's Motivation, and the group's Magnitude
+exceeds the Exalt's Essence, the attempt automatically fails.  Mere Policies
+(Intimacies) do not afford this protection, however.  If successful, the
+decision will go the way the character desires.  As with the Record-Correction
+Maneuver, there is nothing to prevent the organisation from changing the
+decision later, depending on its Motivation and tendencies -- unless, of
+course, it's too late.  The decision will not be changed back for at least
+(character's Essence) days, however.
+
+This Charm is only effective upon decisions which the organisation was already
+intending to make, and has not yet settled.  It cannot force a group to decide
+to do something which had never crossed its collective mind.
 
 
 name: mu, Minor Usurpation
@@ -142,8 +319,21 @@ type: Supplemental
 key: Combo-OK, Social, Illusion
 dur: One scene
 dep: rcm, dbp
-text: Trying to maintain control of a large organisation is a wearing task, which is why the Children of Eris prefer to just jump to the top of the heap temporarily.  With this Charm, the hand of Authority takes control of an organisation for one scene.  The original Leader is supplanted and all members of the group will recognise the character as the woman in charge.  They are not blindly compelled to obey orders, but will generally accept even drastic changes in the Motivation of the group, for example, unless they have strong and very personal reasons not to.  Once the effect ends, all will be fully aware of what they have just done, although they probably won't understand why.
 
-If the character attempts to use this Charm on a group more than once, any individuals who interacted with her on previous occasions may resist the effect as unnatural mental influence, at a cost of 2wp.
+text: Trying to maintain control of a large organisation is a wearing task,
+which is why the Children of Eris prefer to just jump to the top of the heap
+temporarily.  With this Charm, the hand of Authority takes control of an
+organisation for one scene.  The original Leader is supplanted and all members
+of the group will recognise the character as the woman in charge.  They are
+not blindly compelled to obey orders, but will generally accept even drastic
+changes in the Motivation of the group, for example, unless they have strong
+and very personal reasons not to.  Once the effect ends, all will be fully
+aware of what they have just done, although they probably won't understand
+why.
 
-[TODO: Needs an opportunity to resist the first time, not just on subsequent occasions.]
+If the character attempts to use this Charm on a group more than once, any
+individuals who interacted with her on previous occasions may resist the
+effect as unnatural mental influence, at a cost of 2wp.
+
+[TODO: Needs an opportunity to resist the first time, not just on subsequent
+occasions.]

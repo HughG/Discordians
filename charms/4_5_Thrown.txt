@@ -1,11 +1,14 @@
 name: exc, (Any Thrown*Excellency)
-dep: 
-text: 
+dep:
+
+text:
 
 
 name: intro, .
-dep: 
-text: TODO: Everything, plus ... perfect attack; Action-longs (maybe as re-purchase?)
+dep:
+
+text: TODO: Everything, plus ... perfect attack; Action-longs (maybe as
+re-purchase?)
 
 
 name: bpp, Butterfly Pinion Pitch
@@ -15,12 +18,31 @@ type: Supplemental
 key: Combo-OK, Compulsion
 dur: One scene
 dep: baba
+
 text: TODO
 
-The Erisian makes a throwing or stabbing motion his weapon, without actually releasing it, and rolls an attack as normal.  The attack causes no damage, is unblockable with mundane weapons or armor, applies a -2 external penalty to the target's DV due to its invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+The Erisian makes a throwing or stabbing motion his weapon, without actually
+releasing it, and rolls an attack as normal.  The attack causes no damage, is
+unblockable with mundane weapons or armor, applies a -2 external penalty to
+the target's DV due to its invisibilty, and is unaffected by Hardness or soak.
+Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual
+Reflexive Charm applies.
 
-If the attack achieves even one success, this Charm inflicts a Compulsion on the target, to stay pinned to the spot.  Resisting the influence costs two Willpower, and will make the target aware of the attempt at unnatural influence.
+If the attack achieves even one success, this Charm inflicts a Compulsion on
+the target, to stay pinned to the spot.  Resisting the influence costs two
+Willpower, and will make the target aware of the attempt at unnatural
+influence.
 
-An affected target may turn on the spot, and can act and defect herself as usual, provided she does not move to another location.  The target will not willingly take so much as a Move action, nor consent to effects which would move her.  If moved forcibly, or due to terrain or environmental effects, the target will then attempt to stay at her new location.  If remaining in place presents a real risk of death, the Compulsion becomes an unacceptable order and the effect ends.  The target may end the effect at any point during the scene by paying the two Willpower, not only at the point when the Compulsion would take hold.
+An affected target may turn on the spot, and can act and defect herself as
+usual, provided she does not move to another location.  The target will not
+willingly take so much as a Move action, nor consent to effects which would
+move her.  If moved forcibly, or due to terrain or environmental effects, the
+target will then attempt to stay at her new location.  If remaining in place
+presents a real risk of death, the Compulsion becomes an unacceptable order
+and the effect ends.  The target may end the effect at any point during the
+scene by paying the two Willpower, not only at the point when the Compulsion
+would take hold.
 
-Using this attack does not end any Stealth effects on the character, unless the target successfully resists the influence using Willpower at the moment of the initial attack.
+Using this attack does not end any Stealth effects on the character, unless
+the target successfully resists the influence using Willpower at the moment of
+the initial attack.

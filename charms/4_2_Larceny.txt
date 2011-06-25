@@ -11,6 +11,7 @@ type: Simple (Speed 5)
 key: Combo-OK
 dur: Indefinite
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -28,6 +29,8 @@ Larceny 4 and Essence 4, the character may spend an point of Willpower in
 addition, to stash away a willing (and presumably trusting) living being.  For
 them, no time will seem to have passed when they are retrieved.
 
+[TODO: RWG says maybe one/both of the higher effects should need a re-purchase.]
+
 
 name: rpt, Ragged Pocket Trick
 cost: 6m
@@ -36,6 +39,7 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: oct, exc
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -66,9 +70,10 @@ name: wh, Wormhole Handshake
 cost: 4m, 1wp
 mins: Larceny 4, Ess 3
 type: Simple
-key: Combo-OK, Obvious
+key: Combo-OK, Obvious, Shaping
 dur: Instant
 dep: oct
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -92,6 +97,7 @@ type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Social
 dur: Instant
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -109,7 +115,10 @@ The character cannot be certain what surface thoughts he will find, but must
 proceed with the exchange if the target fails the roll.  A wise Fool will
 therefore prime his own mind with some important and unimportant surface
 thoughts in advance.  A willing target may choose not to resist, in which case
-this Charm can be used for silent communication, of an odd sort.
+this Charm can be used for silent communication, of an odd sort.  An idea
+planted in a target's head can be used as a basis for enhancing relevant
+stunts in the same scene, adding an extra die (to the normal maximum of 3) if
+the Storyteller judges that the new notion supports them.
 
 The ideas exchanged cannot be fundamental to the individuals concerned, e.g.,
 in support of Motivation or Intimacies, nor can they counter awareness of an
@@ -137,54 +146,59 @@ manses or warstriders which have an animating intelligence.
 
 
 name: iii, Instant*Image Improvisation
-cost: 4m
-mins: Larceny 3, Ess 2
-type: Supplemental
-key: Combo-OK
-dur: Indefinite
-dep:
-
-text: TODO
-
-This Charm supplements an action to create a disguise, enabling the character
-to do so in a single action, rather than the many minutes it would normally
-require, and use even the most tenuously applicable of props.  Use of
-inhumanly acute senses to penetrate the disguise is at a -2 external penalty.
-Note that the character's Recumbent Destiny applies as normal.
-
-
-name: ftk, Flawless Transfiguration*Knack
 cost: 3m
 mins: Larceny 3, Ess 2
 type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: exc
+review: 2011-06-25 RWG
+
+text: TODO
+
+This Charm supplements an action to create a disguise, enabling the character
+to do so in a single action, rather than the many minutes it would normally
+require, and use even the most tenuously applicable of props.  The character
+gains (Larceny) additional successes on the roll to construct the disguise.
+Note that the character's Recumbent Destiny applies as normal.
+
+
+name: ftk, Flawless Transfiguration*Knack
+cost: 4m
+mins: Larceny 3, Ess 2
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: exc
+review: 2011-06-25 RWG
 
 text: TODO
 
 This Charm supplements a Larceny action to construct a disguise, making it
 possible to disguise one item as another, of roughly equivalent size, shape
-and weight.  The disguise is perfect to natural senses, and the Mid-day Shadow
-can use this perfection to construct a flawless forgery, provided he has
-detailed information on the object to be copied.  However, he may just as
-easily take a well-known object and make it appear to be a quite mundane item
-of some other sort.  If supernatural or inhumanly acute senses are applied to
-see through the deception, the difficulty is increased by the character's
-Essence.  This Charm cannot disguise the magical nature of things like
-artifacts, so those with Essence sight might gain bonuses to attempts to see
-the true nature of a magical item.  Then again, a cunning Discordian might
-just choose to disguise a famous daiklave as an ordinary daiklave of the same
-magical material.
+and weight.  This explicitly allows the character to disguise one thing as
+another, even if that would normally be wildly improbably.  For example, a
+chest of drawers could be disguised as a sleeping cow.
+
+The disguise is not quite perfect but the character gains (Larceny) successes
+on the roll to disguise the object.  The Mid-day Shadow can use this Charm to
+construct a specific forgery, provided he has detailed information on the
+object to be copied.  However, he may just as easily take a well-known object
+and make it appear to be a quite mundane item of some other sort.  This Charm
+cannot disguise the magical nature of things like artifacts, so those with
+Essence sight might gain bonuses to attempts to see the true nature of a
+magical item.  Then again, a cunning Discordian might just choose to disguise
+a famous daiklave as an ordinary daiklave of the same magical material.
 
 
 name: icc, Inhuman Countenance*Construction
-cost: 2m, 1wp
+cost: 3m, 1wp
 mins: Larceny 4, Ess 3
 type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: ftk, iii
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -207,6 +221,7 @@ type: Simple
 key: Combo-OK, Shaping, Touch
 dur: Indefinite
 dep: nrm, iii, ftk
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -242,11 +257,6 @@ Even if the target's presence is noted, her identity will appear to be that of
 some miscellaneous extra, rather than her own.  Protestations from the victim
 do not give any bonus on this roll.
 
-[TODO: Should the victim be able to make the same roll as Erisians, to
-suppress this for a scene?]
-
-[TODO: Should the duration be limited to 23 days or something?]
-
 
 name: vav, Value-Adding Veneer
 cost: 4m
@@ -255,6 +265,7 @@ type: Simple
 key: Combo-OK, Illusion, Emotion
 dur: Indefinite
 dep: ftk
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -267,16 +278,16 @@ minimum of 0) the item's apparent Resources value by up to her (Larceny ÷ 2).
 Anyone may spend 1 Willpower to see through this Illusion; if they then point
 it out to others, they will immediately see through it as well.
 
-
 Alternatively, she may use an Emotion effect to make it more viscerally
 appealing.  At the time the Charm is acivated, the character rolls his
 (Manipulation + Larceny + Essence) and records the number of successes.  All
 who observe the item while the Charm remains active (apart from the character
-himself) must compare their Dodge MDV against those successes: if it is less,
-they gain a desire to obtain the item, though not necessarily immediately.
-The strength of the desire depends on the number of successes above the
-threshold.  Again, observers may spend a point of Willpower to shake off this
-desire, but doing so does not give them a way to free others from the effect,
-since it is only their own desire which is affected.  On the other hand, the
-character may keep specific others from this effect by telling them about it,
-before or after using the Charm.
+himself) are subject to unnatural mental influence attack with that number of
+successes, which they must defend against with their Dodge MDV.  If their
+Dodge MDV is less, they gain a desire to obtain the item, though not
+necessarily immediately.  The strength of the desire depends on the number of
+successes above the threshold.  Again, observers may spend a point of
+Willpower to shake off this desire, but doing so does not give them a way to
+free others from the effect, since it is only their own desire which is
+affected.  On the other hand, the character may keep specific others from this
+effect by telling them about it, before or after using the Charm.

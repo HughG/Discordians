@@ -17,6 +17,7 @@ type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -43,8 +44,9 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack
 dur: Instant
 dep:
+review: 2011-06-25 RWG
 
-text: A successful warrior grows to understand of the ebb and flow, balanace
+text: A successful warrior grows to understand of the ebb and flow, balance
 and unbalance of combat.  Reading the moments of mischance in her opponent's
 strikes allows the Offendi respond instinctively with her own, and take
 advantage of both strength and weakness.
@@ -62,6 +64,7 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: exc, scd
+review: 2011-06-25 RWG
 
 text: An Apple Corpsman may choose to attack directly, but is just as likely
 to approach in unexpected ways, to cause maximum confusion.  His powers allow
@@ -89,6 +92,7 @@ type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: bbt
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -106,16 +110,17 @@ though the weapon gains the Reach tag if it did not have it already.
 name: fcf, Foe-Cleaving Flow
 cost: 5m, 1wp; or 7m, 1wp
 mins: Melee 5, Ess 4
-type: Simple
+type: Supplemental
 key: Combo-OK, Obvious
 dur: Instant
 dep: ebs
+review: 2011-06-25 RWG
 
 text: Treading that fine line between control and abandon, the Corpsman sends
 the sharp edges and points of his weapon into Elsewhere, freeing them to
 follow his opponent's movements rather than his own will.  The weapon skips
-past mundane and magical attempts to block it, and sticks to the target as it
-feints and ducks.
+past mundane and magical attempts to block it, and sticks to the target
+through feints and ducks.
 
 This Charm constitutes an attack which is unblockable and undodgeable, making
 both Parry and Dodge Defense Values inapplicable.  The target must still be in
@@ -125,9 +130,9 @@ already.
 By spending an additional 2 motes, the attack can reach out over larger
 distances and, unless some magical warding prevents this, through solid
 objects.  The range of the attack extends to twice the character's Dash
-distance, and it ignores DV bonuses due to cover.  DV bonuses for armor and
-soak still apply, and attack penalties may apply if the character attempts to
-attack through a barrier but cannot see the target through it.
+distance, and it ignores DV bonuses due to cover.  Armor and soak still apply,
+and attack penalties may apply if the character attempts to attack through a
+barrier but cannot see the target through it.
 
 
 name: baba, Branch and Brush*Armory
@@ -137,6 +142,7 @@ type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: One scene
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -167,6 +173,7 @@ type: Simple
 key: Combo-OK, Obvious
 dur: One scene
 dep: baba
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -218,6 +225,7 @@ type: Reflexive (Step 6)
 key: Combo-OK, Compulsion
 dur: Instant
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -238,6 +246,7 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack
 dur: Instant
 dep: rss
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -250,12 +259,13 @@ the weapon.  If he succeeds but cannot grasp the weapon, it lands within his
 reach.
 
 This Charm can only be activated when the character is hit by or successfully
-parries a close range attack.  It is inapplicable against ranged attacks, or
-if the character dodges an attack.  Also, the Disarm action reduces the
-character's DV by -1 and he cannot use it in combination with any other
-counterattack.  If the attacker was making a flurry of attacks against the
-character, this Charm forces the flurry to end, unless the attacker can move
-to keep up with him.
+parries a close range attack.  It is inapplicable if the character dodges an
+attack, and is generally inapplicable against ranged attacks, though a
+suitable stunt may allow it, if the projectile is one the character could
+reasonably grasp and re-use.  Also, the Disarm action reduces the character's
+DV by -1 and he cannot use it in combination with any other counterattack.  If
+the attacker was making a flurry of attacks against the character, this Charm
+forces the flurry to end, unless the attacker can move to keep up with him.
 
 
 name: ama, Absent-Minded Absorption
@@ -265,6 +275,7 @@ type: Reflexive (Step 2)
 key: Combo-OK
 dur: Instant
 dep: hrh, rss
+review: 2011-06-25 RWG
 
 text: By surrendering his will to whims beyond Fate, the Tower-Builder renders
 himself unassailable with a careless sweep of his weapon.  His apparently wild
@@ -272,12 +283,13 @@ and artless swing nonetheless happens to end up at the exactly the right spot
 to deflect an impending blow.
 
 This Charm allows the Discordian to perfectly defend against any attack, even
-if it is unblockable.  Furthermore, by spending 1 point of Willpower, the
-character can send the bulk of his weapon through a twist in Elsewhere, to
-apply a perfect Defend Other action on any being within Dash range who would
-be a valid target for a Melee attack by him.  The character does not actually
-have to dash to the being he wishes to defend, in this case.  This Charm
-suffers from one of the Discordian Flaws of Invulnerability.
+if it is unblockable.  A second purchase at Essence 4+ allows the character to
+pay an additional point of Willpower to send the bulk of his weapon through a
+twist in Elsewhere and apply a perfect Defend Other action on any being within
+Dash range, who would be a valid target for a Melee attack by him.  The
+character does not actually have to dash to the being he wishes to defend, in
+this case.  This Charm suffers from one of the Discordian Flaws of
+Invulnerability.
 
 
 name: spr, Shattered Pond Ripples
@@ -287,6 +299,7 @@ type: Extra Action (Speed +1)
 key: Combo-OK, Obvious
 dur: Instant
 dep: scd
+review: 2011-06-25 RWG
 
 text: The Children of Eris rail against strictures and structures which offend
 them, including the rules of space which prevent all things existing at one
@@ -311,12 +324,13 @@ all DV penalties from these attacks (but not from other sources).
 
 
 name: eoa, Excision of Awareness
-cost: 8m or 5m, 1wp
+cost: 5m, 1wp
 mins: Melee 4, Ess 2
 type: Supplemental
 key: Combo-OK, Illusion
 dur: One scene
 dep: baba
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -324,40 +338,39 @@ The Erisian makes a cutting sweep with his weapon, in the direction of his
 target but without coming anywhere close to hitting.  Indeed, the target may
 be anywhere within (Essence x 10) yards, provided the character can perceive
 it.  The attack causes no damage, is unblockable with mundane weapons or
-armor, applies a -2 external penalty to the target's DV due to its
-invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
-resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+armor, applies a -2 external penalty to the target's DV due to its invisibilty
+(unless the target has Essence sight or similar), and is unaffected by
+Hardness or soak.
 
 If the attack achieves even one success, this Charm applies an Illusion which
 cuts one thing out of the target's awareness.  Resisting the influence costs
 two Willpower, and will make the target aware of the attempt at unnatural
 influence.
 
-For a cost of 8 motes, any one object or being may be removed from the
-target's awareness, provided it is also in range of the Charm and is no larger
-than (Essence) times the character's own volume.  The target will not be
-consciously aware of the excised item, and will unconsciously avoid
-interacting with it if possible.  If interaction is forced, e.g., because the
-hidden being attacks, or the target falls through a hidden trap-door when it
-is opened, then the Illusion ends.  A hidden being may move at normal speed
-and make a small amount of noise, such as the gentle creak and clank of
-armour, without disturbing the target.  However, running around in metal
-armour, causing loud noises or bright flashes, or using Obvious Charms or
-similar activities will end the Illusion.
+Any one object or being may be removed from the target's awareness, provided
+it is also in range of the Charm and is no larger than (Essence) times the
+character's own volume.  The target will not be consciously aware of the
+excised item, and will unconsciously avoid interacting with it if possible.
+If interaction is forced, e.g., because the hidden being attacks, or the
+target falls through a hidden trap-door when it is opened, then the Illusion
+ends.  A hidden being may move at normal speed and make a small amount of
+noise, such as the gentle creak and clank of armour, without disturbing the
+target.  However, running around in metal armour, causing loud noises or
+bright flashes, or using Obvious Charms or similar activities will end the
+Illusion.  This Charm's concealment may be used to set up an unexpected
+attack, but that attack will also break the Illusion.
 
-Alternatively, for a cost of 5 motes and 1 Willpower, the character may make
-the target lose touch with one of its Intimacies, believing that the formerly
-important person or value is of no particular importance.  If the character
-knows one or more of the target's Intimacies, he may choose a particular one
-to detach.  If not, or if he wishes to leave things to chance, the Storyteller
-selects one.  The scene then counts as a scene spent weakening the Intimacy.
-Provided it still has at least one dot after being reduced, the Intimacy
-reasserts itself when the scene ends.
+Alternatively, the character may make the target lose touch with one of its
+Intimacies, believing that the formerly important person or value is of no
+particular importance.  If the character knows one or more of the target's
+Intimacies, he may choose a particular one to detach.  If not, or if he wishes
+to leave things to chance, the Storyteller selects one.  The scene then counts
+as a scene spent weakening the Intimacy.  Provided it still has at least one
+dot after being reduced, the Intimacy reasserts itself when the scene ends.
 
 Using this attack does not end any Stealth effects on the character, unless
 the target successfully resists the influence using Willpower at the moment of
 the initial attack.
-
 
 Witnesses may spend 1 Willpower to realise the source of the target's strange
 behaviour provided they saw the Exalt's attack, but they may do this at any

@@ -146,9 +146,10 @@ name: roe, Running on Emptiness
 cost: -
 mins: Integrity 2, Ess 2
 type: Permanent
-key: None
+key: Stackable
 dur: Permanent
 dep:
+review: 2011-06-25 RWG
 
 text: TODO
 
@@ -159,23 +160,25 @@ each morning.  Instead it is filled by any other effect such as stunts and
 Charms, and this extra pool will be filled before her normal Willpower pool.
 This Charm may be purchased up to (Essence) times.
 
-In times of dire need, this Charm has a further use.  The desperate Discordian
-may reflexively sacrifice one purchase of this Charm to immediately refill her
-(slightly smaller) Willpower pool completely, including any points available
-from remaining purchases of this Charm.  The experience points originally
-spent on the Charm are not regained, though it may be purchased again later.
-Sacrificing the last purchase of this Charm in this way prevents the character
-from using any Charms which have it as a prerequisite, directly or indirectly,
-until she re-purchases it.
+At Essence 3+, this Charm has a further use in times of dire need.  The
+desperate Discordian may reflexively disable one purchase of this Charm to
+immediately refill her Willpower pool completely, including any points
+available from remaining purchases of this Charm.  The size of the pool is
+calculated without the point added by the disabled purchase, so will be one
+dot smaller.  The Charm becomes available again after 23 days.  Disabling the
+last purchase of this Charm in this way prevents the character from using any
+Charms which have it as a prerequisite, directly or indirectly, until it
+re-activates (or she purchases it again).
 
 
 name: ror, Reallocation of Resolve
-cost: 3m plus 3m per point of Willpower
+cost: 4m plus 4m per point of Willpower
 mins: Integrity 3, Ess 2
 type: Simple
 key: Combo-OK, Obvious, Touch
 dur: Instant
 dep: roe
+review: 2011-06-25 RWG
 
 text: TODO
 

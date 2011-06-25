@@ -101,12 +101,12 @@ These effects are permanent, unless removed by some effect which counters
 Shaping.
 
 
-name: tpt, Tasty Poison Treatment
+name: vrt, Venom Reversal Treatment
 cost: (4 + Toxicity)m
 mins: Med 3, Ess 3
 type: Simple (Dramatic Action)
 key: Combo-OK, Shaping, Touch
-dur: Instant
+dur: Special
 dep: ahf
 
 text: Mortal healers can create curative draughts to counter most non-magical
@@ -116,9 +116,11 @@ itself.  This Charm allows the Exalt to adjust the nature of the inimical
 substance so that, as soon as a victim succeeds on a (Stamina + Resistance)
 roll, it begins to heal levels of damage, rather than inflict them.  The
 altered substance can only heal those levels of damage which it inflicted,
-however.  Once all such levels are healed, the toxin is deemed to have been
-expelled from the victim's system, and the Shaping effect ends.  Thus, if the
-poison can be collected, it can be re-used.
+however.  Once all such levels are healed, or the damage from all doses has
+run its course, the toxin is deemed to have been expelled from the victim's
+system, and the Shaping effect ends.  The character must keep the motes
+committed to this Charm until this happens, or the poison will revert to
+causing damate.  If the expelled poison can be collected, it can be re-used.
 
 While under the effects of this Charm, mortal victims can resist the toxin as
 if they were Exalted, while Exalted gain a bonus equal to their own Essence.
@@ -136,7 +138,7 @@ mins: Med 4, Ess 3
 type: Permanent
 key: None
 dur: Indefinite
-dep: tpt
+dep: vrt
 
 text: [TODO: Insert flavor]
 

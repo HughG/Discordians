@@ -162,12 +162,11 @@ mins: Survival 4, Ess 4
 type: Simple
 key: Combo-OK, Shaping
 dur: Indefinite
-dep: bib, fafa, teims
+dep: dbr, wotch, am
 
 text: "Idealism lives with rules. Realism lives with rocks." - Professor
 Ignotium P. Ignotius.  Breaking the normal rules of reality, the Blessed of
 Eris truly becomes one with her surroundings.
-
 
 Activating this Charm, the character merges herself with the nature of the
 immediate environment, creating a perfect camouflage: in the East she might
@@ -177,8 +176,7 @@ any attempt to detect her in this manner requires a contested roll of
 (Appearance + Survival) versus the observer's (Perception + Occult), with an
 external penalty equal to the character's Survival.  Attacks or environmental
 damage will only affect the character if it would affect the corresponding
-environment: fire would damage a tree, but not a rock.
-
+environment -- fire would damage a tree, but not a rock.
 
 While under the effects of this Charm, the character is regarded as Inactive,
 although she is not actually unconscious and retains her full faculties of

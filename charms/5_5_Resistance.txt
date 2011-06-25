@@ -1,5 +1,11 @@
-name: exc, (Any Resistance*Excellency)
+name: intro, .
 dep:
+
+text: TODO: perfect soak; essence/wp-gathering or overdrive; ignore wound
+penalties?; something(s) in theme with 5th Division?
+
+
+name: exc, (Any Resistance*Excellency) dep:
 
 text: n/a
 
@@ -21,24 +27,52 @@ or one -1 health level and two -2 health levels; or one -2 health level and
 three -4 health levels
 
 
+name: sss, Stone Skin Substitution
+cost: 3m
+mins: Resistance 3, Essence 2
+type: Reflexive (Step 7)
+key: Combo-OK, Obvious, Touch
+dur: Instant
+dep: cbt
+
+text: TODO
+
+This Charm allows the Discordian to take on the Hardness and soak of another
+object or being with which he is in contact.  In the case of an object, it
+must be one the character is firmly in conctact with: a floor he is standing
+on, a door he is backed up against or the like.  Similarly in the case of
+another being, the two must be engaged in a grapple or the character must be
+firmly pressed against the other, perhaps voluntarily standing back-to-back,
+perhaps lying on an Inactive "assistant".  In either case, the touched target
+must be of reasonable size to absorb the blow: it is not enough for the
+character to carry a small piece of stone in his pocket.
+
+Solid objects generally have a Hardness equal to their soak, as described in
+Exalted, pp. 153-154.  If touching another being, the relevant Hardness and
+soak is taken from that being's armoured, if it is wearing any, otherwise from
+its natural values (including any magical enhancements).  In either case, the
+character's Hardness is set to the borrowed value, if it is not already
+greater, while the soak he takes on is added to his natural soak.
+
+This Charm is made Obvious by the fact that the character briefly comes to
+resemble the source of his improved toughness.  For objects, his skin takes on
+the appearance of the material.  If borrowing natural toughness from a creature,
+his appearance momentarily changes to be a mix of his own and the other's.
+
+
 name: iss, Impact-Shifting*Stance
 cost: 3m
 mins: Resistance 3, Essence 3
 type: Reflexive (Step 7)
-key: Combo-OK, Knockdown, Obvious
+key: Combo-OK, Knockdown, Obvious, Touch
 dur: Instant
-dep:
+dep: sss
 
 text: TODO
 
-
 This Charm allows the Discordian to transmit the force of an attack on him
-into another object or being with which he is in contact.  In the case of an
-object, it must be one the character is firmly in conctact with: a floor he is
-standing on, a door he is backed up against or the like.  Similarly in the
-case of another being, the two must be engaged in a grapple or the character
-must be firmly pressed against the other, perhaps voluntarily standing
-back-to-back, perhaps lying on an Inactive "assistant".
+into another object or being with which he is in contact.  Applicable objects
+or beings are the same as those described for Stone Skin Substitution.
 
 If the damage of the attack is sufficient to overcome the Hardness of the
 other object or being, its full force is transmitted through the character and
@@ -47,14 +81,12 @@ damage as normal, but the force rebounds on his attacker, unless it was a
 ranged attack.  In that case the attacker must check for Knockdown if the
 damage exceeds (attacker's Stamina + Resistance).  The character will feel
 instinctively if his "cushion" has too great a Hardness to absorb the blow,
-and may choose not to activate this Charm.  Solid objects generally have a
-Hardness equal to their soak, as described in Exalted, pp. 151-152.
+and may choose not to activate this Charm.
 
 The character may also activate this Charm if subject to a magically-enhanced
 Knockback effect which causes additional damage on impact, provided that
 damage exceeds the Hardness of the object.  This usage does not affect the
 damage of the original effect, only that of impact after Knockback.
-
 
 This Charm protects the character against damage from attacks, and against
 Crippling effects as a consequence of damage.  It will generally not protect
@@ -66,6 +98,8 @@ If the instant or cumulative damage is enough to destroy the target of the
 transmitted force, the character and other combatants may have to make
 Athletics checks, suffer environmental damage or otherwise deal with the
 consequences.
+
+TODO: Should this have an FOI?  Does the Hardness bit count as a special FOI?
 
 
 name: eer, Erisian Elemental*Rejuvenation
@@ -96,3 +130,113 @@ insufficient stunt might result in the duration between benefits being doubled
 or tripled, or the Charm failing to activate at all.  If the stunt is judged
 sufficient, the normal stunt benefits, of regaining Essence or Willpower, are
 not available.
+
+
+name: pap, Puissance as Poultice
+cost: 3m + 1m per level, 1wp
+mins: Resistance 2, Essence 2
+type: Simple
+key: Combo-OK, Shaping, Stackable
+dur: Indefinite
+dep: 
+
+text: TODO
+
+This Charm allows the character to temporarily reallocate one or more dots
+from her Attributes or Abilities to make up for lost Health levels.  When the
+Charm is activated, any number of dots may be transferred from any combination
+of Attributes or Abilities, including any connected Specialties.  Each dot of
+an Ability or Specialty effectively heals one dot of bashing or lethal damage,
+while each dot of an Attribute counts for two, or a single dot of aggravated
+damage.
+
+As each Health level heals, the corresponding Trait dots become available
+again, in whatever order suits the character.  Once all are healed, the Charm
+ends.  The character may choose to terminate the Charm at any time, in which
+case all Health levels not yet healed take their toll on her immediately.  She
+can activate it again if she suffers further damage, but cannot activate it in
+advance of being injured.  Anti-Shaping effects which target the character can
+also cause the Charm to end prematurely.
+
+Traits lowered by this Charm cannot be raised by spending experience while it
+is in effect, though they can be augmented by other temporary means.  Any
+Charms or other effects which require certain Trait minimums may become
+temporarily unavailable while this Charm is in effect.
+
+[TODO: Is this just dumb?  Should it allow "active when Inactive"?  Should I
+have a follow-on which heals without stupid side-effects?]
+
+
+name: tpa, Tasty Poison Adaptation
+cost: 3m
+mins: Resistance 3, Essence 2
+type: Reflexive (Step 10)
+key: Combo-OK, Stackable
+dur: Indefinite
+dep: pap
+
+text: TODO
+
+This Charm allows the character to adapt himself to avoid all damage from any
+one poison.  As long as the necessary motes are committed to this Charm, each
+interval which would require a Stamina + Resistance passes without damage, but
+still allows the substance to gradually leave his system.  The Charm only
+prevents damage; it does not prevent any penalties if the character has
+received more doses than his tolerance for the substance allows.
+
+Until the poison has run its course, the character treats any other substance
+as if it were equally poisonous, including water.  For fast-acting poisons
+this may not be a problem, but the targeted poison does not necessarily
+provide nourishment so, for slower toxins, the character may starve if
+untreated.  This Charm may be activated multiple times for separate poisons,
+in which case all are equally palatable.  Thus a character may attempt to wean
+himself off onto alcohol and survive with no more than a bad hangover, if no
+other treatment is unavailable.
+
+This Charm must be activated at the moment the poison enters the character's
+system for it to be effective.
+
+
+name: sst, Soul-Sickness Transfer
+cost: 3m
+mins: Resistance 3, Essence 2
+type: Reflexive (Step 10)
+key: Combo-OK, Stackable
+dur: Indefinite
+dep: pap
+
+text: TODO
+
+This Charm allows one of the Unbending Arm to bend his mind to keep his body
+straight.  Any one Sickness effect which would harm the character may be
+transformed into a sickness of the heart, severely changing the tone of one of
+his Intimacies.  The character chooses the Intimacy to be affected and can
+propose the new tone, though the Storyteller must agree that the change puts
+the character at a significant disadvantage.  Once the sickness has been cured
+or run its course, the Charm ends and the Intimacy is restored, unless it has
+been removed in the meantime.  The character cannot work to erode the Intimacy
+while it carries the Sickness, though others may.  If the Erisian allows the
+commitment of motes to lapse prematurely, the Intimacy is restored, but the
+Sickness returns to run whatever remains of its natural course.
+
+This Charm must be activated at the moment the illness enters the character's
+system for it to be effective.
+
+
+
+name: ccc, CCC
+cost: 3m
+mins: Resistance 3, Essence 2
+type: Reflexive (Step 10)
+key: Combo-OK, Obvious, Stackable
+dur: Indefinite
+dep: pap
+
+text: TODO
+
+This Charm allows a Stone-Carver to prevent himself from being carved up.
+Activated in response to a Crippling effect, this Charm holds the [body
+togther with glowing Essence -- but where's the disadvantage / balance?]
+
+This Charm must be activated at the moment the character suffers a crippling
+wound, for it to be effective.

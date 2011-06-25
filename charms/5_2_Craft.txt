@@ -6,7 +6,7 @@ text:
 
 name: ics, Improvised*Construction Scheme
 cost: 3m
-mins: Craft 2, Ess 1
+mins: Craft 2, Essence 1
 type: Supplemental
 key: Combo-OK, Touch
 dur: Instant
@@ -52,7 +52,7 @@ damaged manse is normally a Resources 4 purchase, but this Charm reduces it to
 
 name: ort, Object*Reconfiguration Technique
 cost: 5m, 1wp or 10m, 2wp
-mins: Craft 3, Ess 3
+mins: Craft 3, Essence 3
 type: Supplemental
 key: Combo-OK, Touch
 dur: Instant
@@ -91,7 +91,7 @@ of what changes are possible.  This Charm does not remove the need for tools.
 
 name: bwr, By Whim Reforged
 cost: (5m or 5m, 1wp) per rating point
-mins: Craft 5, Ess 3
+mins: Craft 5, Essence 3
 type: Simple (Dramatic Action)
 key: Combo-OK, Touch
 dur: Instant
@@ -140,7 +140,7 @@ form.
 
 name: bem, Blueprint*Extraction Methodology
 cost: 4m
-mins: Craft 3, Ess 2
+mins: Craft 3, Essence 2
 type: Simple (Dramatic Action)
 key: Combo-OK
 dur: Instant
@@ -168,7 +168,6 @@ difficulty of the roll is reduced by the character's Essence, to a minimum of
 1.  Again, only those with a rating no greater than the character's Essence
 are valid targets.
 
-
 Applied to mundane objects, this Charm takes ([Resources rating x 3] -
 Essence) hours or days depending on the scale of the object.  The knowledge
 gained reduces the difficulty of the Craft roll to produce an identical item
@@ -184,9 +183,49 @@ provide the character with the skills, materials or tools to construct
 duplicates, only a design.
 
 
+name: rrt, Reflection-Reification*Technique
+cost: 4m
+mins: Craft 3, Essence 3
+type: Supplemental
+key: Combo-OK, Shaping
+dur: Instant
+dep: bem
+
+text: TODO
+
+This Charm supplements Craft actions as part of an extended construction
+project, allowing the Architect to create multiple copies of a mundane object,
+using the same amount of raw materials as she would require for a single
+instance.  The character may create up to (Craft x [Essence - 1]) objects in
+total, but for each copy made, the Resources value of all items is decreased
+by 1, to a minimum of 0, due to necessary corner-cutting and apparent
+shoddiness of workmanship.  Thus a character who learns this Charm is
+immediately able to produce 6 (3 x 2) suits of superheavy plate armor for the
+cost of 1.  They are fully functional but she will be hard-pressed to sell
+them because they appear so rickety, having a Resources rating of 0 (Resources
+5 for a normal suit, less 1 for each of the 5 extra copies).
+
+At Essence 4 the character may attempt to mass-produce artifacts.  However,
+she may make at most ([Craft - Artifact rating] x [Essence - 1]) items in
+total.  For each copy beyond the original, all items must lost one point from
+one of the rating improvements they provide.  Alternatively, if the object has
+no numerical benefit or the character is feeling more adventurous, one or more
+points of reduction may be paid as one-dot drawbacks (as described in
+Oadenol's Codex, p. 16), which do not reduce the Artifact's rating.  Since the
+character is mass-producing artifacts, they must all have the same
+disadvantages.  It should go without saying that they also suffer a reduction
+in their apparent Resources value.
+
+This Charm's cost must be spent for every roll in an extended Crafting
+project, or the entire project will fail, leaving scattered piles of battered
+and tarnished materials.  Although this Charm bears the Shaping keyword, this
+is only relevant during the construction process.  The resulting objects
+cannot be un-made by anti-Shaping magic.
+
+
 name: est, Echo-Solidification Technique
 cost: (5m or 5m, 1wp) per rating point
-mins: Craft 4, Ess 3
+mins: Craft 4, Essence 3
 type: Simple
 key: Combo-OK, Shaping
 dur: One scene
@@ -233,26 +272,44 @@ be destroyed, transmuted or salvagable in some other way, at the storyteller's
 whim.
 
 
-name: xxx, XXX
-cost: 3m
-mins: Craft 2, Ess 1
-type: Supplemental
+name: cpc, Core Principle*Concentration
+cost: 4m, 1wp
+mins: Craft 3, Essence 2
+type: Simple (Speed 6 in long ticks)
 key: Combo-OK, Touch
 dur: Instant
-dep: exc
+dep: 
 
 text: TODO
 
-TODO
+This Charm draws upon and enhances the true purpose of an object.  When
+applied to any non-magical, non-sentient object (including most plants and
+basic automata), this Charm permanently increases by 1 the difficulty of any
+rolled attempts to damage or (by feats of Strength) break an object.  It
+similarly increases the difficulty of any rolled actions to re-work it
+(naturally or by magical means, including Shaping) to fulfil any other
+purpose.  If an object is used in some way which does not suit its own nature,
+the difficulty of any such actions increases by 1, and any failed action
+becomes a botch.  At the same time, it becomes easier to damage or break,
+decreasing the difficulty of such attempts by 1.  Examples of such abuses
+include chopping down a living tree (which would become harder to fell), or
+using a sword to wedge a door (the sword becoming more fragile).
+
+If an object is successfully re-made for some new purpose in a permanent way,
+it loses the benefits of this Charm.  Shaping magic is usually not permanent,
+whereas crafting, even by mundane means, usually is.  This Charm may be
+applied repeatedly to further strengthen the item, but no combination of
+Charms which includes this one can increase these difficulties by more than
+the character's Essence.
 
 
 name: rwrt, Rainbow Warp*Removal Technique
 cost: 6m, 1wp
-mins: Craft 3, Ess 3
+mins: Craft 3, Essence 3
 type: Simple
-key: Shaping, Touch
+key: Combo-OK, Shaping, Touch
 dur: Instant
-dep: xxx
+dep: cpc
 
 text: Just as the Grey-faced ones do not hold unwanted forms for long, they do
 not tolerate things being re-Shaped in a way which does not suit them.  With
@@ -262,6 +319,89 @@ must agree to the un-Shaping.  The character cannot affect an object larger
 than small castle with this Charm, although he may apply it to only part of a
 larger structure.  A ghostly orange outline of the original object will
 persist, hanging in space for one scene, containing the effect which was
-removed.  If any other object touches it before the scene expires, the
-original effect is immediately applied to that object, unless it is somehow
-protected.
+removed.  If any other object touches it before the scene expires, which was
+not touching it before this Charm was activated, the original effect is
+immediately applied to that object, unless it is somehow protected.
+
+
+name: eee, Edifying Embodiment*of Efficacy
+cost: 6m, 1wp
+mins: Craft 3, Essence 3
+type: Simple
+key: Combo-OK, Training
+dur: Instant
+dep: cpc
+
+text: TODO
+
+This Charm is used at the inception of a crafting project in which the Carver
+builds an object which allows her, or anyone else who comes to own it, to
+improve in relation to a particular Ability.  The object created may be
+magical or mundane, and must typify the skill to be learned.  Creativity may
+be required to find a suitable object which the character can make, given the
+Crafts she knows.
+
+The owner of such an object may gain a single dot of the Ability it embodies
+as a Training effect.  This occurs instantly, but may put the owner into
+experience debt, in which case no further Training effects will benefit them
+until it is paid off.  Abilities cannot be raised past the normal maximums for
+the trainee, but are not limited by the skill levels of the Carver.
+
+The object may be a symbolic representation of the relevant discipline, rather
+than an item to be used in practice.  The trainee must devote time daily to
+the object, to affirm ownership, at least until the normal training time has
+passed and any experience debt is paid off.  If the object is lost, discarded
+or damaged before then, the dot of Ability is lost, though any experience
+spent on it is regained.  Once the training time and debt is gone, however,
+the object may be passed on for someone else to gain its benefits. Damaged
+objects may be repaired but will have lost their educational magic.
+
+At Craft 4 and Essence 4, the Carver can make objects which train Attributes,
+Virtues or Willpower.  A second purchase of this Charm at Craft 5 and Essence
+5 means that her creations can train even Essence, though they cannot
+enlighten those who do not already have access to their Essence.
+Additionally, she may forge a Grace for a particular being, given a dot of
+gossamer.  The Carver need have no specific skill in crafting gossamer, but
+the Grace must be forged as a magical artifact of some sort.  If it passes to
+someone else, the normal consequences follow for its bearer.
+
+
+name: prp, Pet Rock Promotion
+cost: 10m, 1wp, 2xp
+mins: Craft 3, Essence 3
+type: Simple (Dramatic Action)
+key: Combo-OK, Touch
+dur: Instant
+dep: cpc
+
+text: TODO
+
+By varnishing, embroidering or otherwise lavishing care and decoration on an
+inanimate object, a Bishop is able to gently awaken its least god, and begin
+to adpot it as her familiar.  The object may be a pre-existing item, or one
+crafted specially for the purpose.  This awakening takes several hours, or
+even days, of careful craft-work, after which the character's Familiar
+background increases by one dot.  It may be necessary to apply the Charm
+several times to reach the necessary rating, depending on the size, complixity
+and usefulness of the object.
+
+The awoken object can communicate simple concepts with its owner, through
+subtle shifts in appearance, heft and so on.  Few objects have the ability to
+move by themselves, but they have a limited sense of their surroundings, and
+may have some expert awareness in relation to their purview.  Also, since
+objects do not sleep, they may have some use as watch-keepers.
+
+The character can maintain at most one familiar through use of this Charm,
+though she may have more by other means.  Applying the Charm to another object
+will break the bond and leave the spirit to lapse into quiescence.  Failing to
+take care of the object regularly will have the same effect, though taking
+ownership once more will re-awaken it, without the need to re-apply this
+Charm.
+
+Objects formed in other realms of reality than Creation have similar Essence
+structures which can be awoken, even if they do not fit into the Terrestrial
+hierarchy.  This Charm cannot be applied to objects which belong to another,
+though it can be applied to things which the character has taken ownership of
+including, for example, forged raksha Graces.  Living things, or things which
+already have human-level awareness, such as advanced automata or sapient
+Infernal relics, are not valid targets for this Charm.

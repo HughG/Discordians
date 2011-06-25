@@ -23,7 +23,9 @@ def makedot(infilename, outfilename)
   deps = []
   curr_charm = {}
 
-  IO.foreach(infilename) { |line|
+  infile = File.open(infilename).each_line { |line|
+    # Strip DOS line endings
+    line.gsub!("\015", "")
     md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]
@@ -53,6 +55,7 @@ def makedot(infilename, outfilename)
       end
     end
   }
+  infile.close()
 
   File.open(outfilename, "w") { |out|
     out.print "digraph foo {\n"

@@ -49,6 +49,8 @@ def insert_file(out, file)
   $stderr << file << "\n"
 
   IO.foreach(file) { |line|
+    # Strip DOS line endings
+    line.gsub!("\015", "")
     md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]

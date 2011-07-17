@@ -41,6 +41,23 @@ scene expires, the original effect is immediately applied to them, though they
 may use any powers of their own to resist it.
 
 
+name: csm, Chimera-Skin Mastery
+cost: -
+mins: Integrity 3, Ess 3
+type: Permanent
+key: Shaping
+dur: Permanent
+dep: csp
+
+text: TODO
+
+This Charm makes the character master of his own shape, though it does not
+make it inviolable.  If any effect would prevent the character from applying a
+Shaping effect to himself, he is nonetheless able to do so.  This is true
+whether the effect targets the character specifically or is one which affects
+an area he is in.
+
+
 name: umd, Unbalanced Mind*Defence
 cost: 5m
 mins: Integrity 2, Ess 2

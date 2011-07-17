@@ -366,6 +366,35 @@ the Grace must be forged as a magical artifact of some sort.  If it passes to
 someone else, the normal consequences follow for its bearer.
 
 
+name: eed, Erisian Elemental Distillation
+cost: 3m+, 1wp
+mins: Craft 3, Essence 3
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: eee
+
+text: According to legend, Eris was excluded from a party of the gods, and
+took her revenge by seeding discord among the attendees; you can bet she
+swiped some Celestial Wine while she was there.
+
+Inspired by this spirit of mischief, this Charm supplements a dramatic action
+in which the character distills the Erisian element to which she is attuned,
+into a healing draught.  The character must find a location, item or other
+powerful manifestation of the element, as per Erisian Elemental Rejuvenation
+[TODO: link], and bring suitable tools or equipment to work it (or take it to
+such tools).  The distillation requires physical crafting work, even though
+some elements may have non-physical manifestations.  The character must spend
+(Essence) motes in addition to making a suitable Craft roll.  Success produces
+a single draft of liquid, whose appearance depends on its source.
+
+Drinking the liquid is sufficient to heal (Essence) levels of bashing or
+lethal damage, or to regain one point of Willpower.  This power is only made
+physical by the character's own will and Essence, so there cannot be more than
+(Essence) draughts she has created in existence at once.  Attempts to make
+more will automatically fail, until some of those draughts are used up.
+
+
 name: prp, Pet Rock Promotion
 cost: 10m, 1wp, 2xp
 mins: Craft 3, Essence 3

@@ -1,11 +1,11 @@
 name: intro, .
-dep:
+dep: 
 
-text: TODO: perfect soak; essence/wp-gathering or overdrive; ignore wound
-penalties?; something(s) in theme with 5th Division?
+text: TODO: essence/wp-gathering or overdrive
 
 
-name: exc, (Any Resistance*Excellency) dep:
+name: exc, (Any Resistance*Excellency)
+dep: 
 
 text: n/a
 
@@ -99,7 +99,60 @@ transmitted force, the character and other combatants may have to make
 Athletics checks, suffer environmental damage or otherwise deal with the
 consequences.
 
-TODO: Should this have an FOI?  Does the Hardness bit count as a special FOI?
+[TODO: Should this have an FOI?  Does the Hardness bit count as a special FOI?]
+
+
+name: iia, Infinite Impact Absorption
+cost: 5m
+mins: Resistance 4, Essence 3
+type: Reflexive (Step 7)
+key: Combo-OK, Obvious
+dur: Instant
+dep: iss
+
+text: TODO
+
+This Charm perfectly absorbs the effects of any physical attack, reducing the
+raw damage to zero after all other effects.  The defense is achieved by a
+concentration of Erisian Essence at the relevant points of contact, so it is
+accompanied by a vivid manifestation of such.  This will not be enough to
+cause any damage or significantly distract attackers, but a clever description
+may pave the way for later stunts.
+
+[TODO: Need an FoI, and maybe more flavour.  Could extend environmental
+destruction of previous Charm to be a limited form of FoI?  Makes defending
+other things/people harder.]
+
+[TODO: Maybe, at higher Essence and/or with repurchase, spend +1wp to impose
+external penalty on others for next action due to Erisian Essence
+manifestation?]
+
+
+name: oou, Omnipresent Ointment*Understanding
+cost: 2m + 1m per level
+mins: Resistance 2, Essence 2
+type: Simple
+key: Combo-OK, Obvious, Shaping
+dur: Instant
+dep: 
+
+text: TODO
+
+For every mote she spends beyond the first two, this Charm heals one level of
+bashing damage from the character, or converts one level of lethal to bashing.
+This is achieved by co-opting materials from her surroundings to fill the
+gaps, and any non-magical materials not owned by anyone may be pressed into
+service.  The amount extracted will never be enough to cause damage to other
+objects.  If the character has regained more than (Essence) health levels
+through this Charm, the repairs themselves start to become Obvious and her
+appearance may become somewhat odd, even bizarre.  When activated in realms
+beyond Creation, the possible results expand even further.
+
+The replacement materials will be expelled from her system as normal wound
+healing time elapses, and medical attention or magics may reduce this time as
+normal.  Until that point, anti-Shaping effects which target the character
+will undo the repairs, causing the full effects of the original wounds to
+return.
 
 
 name: eer, Erisian Elemental*Rejuvenation
@@ -108,7 +161,7 @@ mins: Resistance 3, Essence 3
 type: Simple
 key: Combo-OK
 dur: Indefinite
-dep:
+dep: oou, sss
 
 text: TODO
 
@@ -132,48 +185,13 @@ sufficient, the normal stunt benefits, of regaining Essence or Willpower, are
 not available.
 
 
-name: pap, Puissance as Poultice
-cost: 3m + 1m per level, 1wp
-mins: Resistance 2, Essence 2
-type: Simple
-key: Combo-OK, Shaping, Stackable
-dur: Indefinite
-dep: 
-
-text: TODO
-
-This Charm allows the character to temporarily reallocate one or more dots
-from her Attributes or Abilities to make up for lost Health levels.  When the
-Charm is activated, any number of dots may be transferred from any combination
-of Attributes or Abilities, including any connected Specialties.  Each dot of
-an Ability or Specialty effectively heals one dot of bashing or lethal damage,
-while each dot of an Attribute counts for two, or a single dot of aggravated
-damage.
-
-As each Health level heals, the corresponding Trait dots become available
-again, in whatever order suits the character.  Once all are healed, the Charm
-ends.  The character may choose to terminate the Charm at any time, in which
-case all Health levels not yet healed take their toll on her immediately.  She
-can activate it again if she suffers further damage, but cannot activate it in
-advance of being injured.  Anti-Shaping effects which target the character can
-also cause the Charm to end prematurely.
-
-Traits lowered by this Charm cannot be raised by spending experience while it
-is in effect, though they can be augmented by other temporary means.  Any
-Charms or other effects which require certain Trait minimums may become
-temporarily unavailable while this Charm is in effect.
-
-[TODO: Is this just dumb?  Should it allow "active when Inactive"?  Should I
-have a follow-on which heals without stupid side-effects?]
-
-
 name: tpa, Tasty Poison Adaptation
 cost: 3m
 mins: Resistance 3, Essence 2
 type: Reflexive (Step 10)
 key: Combo-OK, Stackable
 dur: Indefinite
-dep: pap
+dep: oou
 
 text: TODO
 
@@ -203,7 +221,7 @@ mins: Resistance 3, Essence 2
 type: Reflexive (Step 10)
 key: Combo-OK, Stackable
 dur: Indefinite
-dep: pap
+dep: oou
 
 text: TODO
 
@@ -224,19 +242,30 @@ system for it to be effective.
 
 
 
-name: ccc, CCC
+name: pap, Puissance as Poultice
 cost: 3m
 mins: Resistance 3, Essence 2
 type: Reflexive (Step 10)
 key: Combo-OK, Obvious, Stackable
 dur: Indefinite
-dep: pap
+dep: oou
 
 text: TODO
 
 This Charm allows a Stone-Carver to prevent himself from being carved up.
-Activated in response to a Crippling effect, this Charm holds the [body
-togther with glowing Essence -- but where's the disadvantage / balance?]
+Activated in response to a Crippling effect, this Charm allows him to transfer
+the destruction to any one of his Abilities which is rated 1 or more.  As long
+as the motes remain committed to this Charm, the Crippling effect is held at
+bay, but the character's rating in that Ability is treated as zero.  This does
+not prevent the character from using any Charms he knows which require a
+rating in that Ability, but it does disable any Charm effects which are
+conditional on a particular rating, typically worded as "at Essence 3+" or "a
+further purchase at Essence 4".  Specialties are unavailable, though
+Excellencies can still be spent on rolls.
 
 This Charm must be activated at the moment the character suffers a crippling
-wound, for it to be effective.
+wound, for it to be effective.  When the motes are released, the character's
+Ability rating returns to normal, but the Crippling would takes effect, unless
+suitable medical treatment has been given.  The character can alternatively
+spend 3xp, as if raising the Ability from 0 to 1.  This does not raise the
+Ability but immediately heals the wound.

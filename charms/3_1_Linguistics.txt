@@ -202,7 +202,6 @@ text: TODO
 [TODO: This might fit in better as Performance, given the other Charms I have
 there.]
 
-
 This Charm supplements an action to Join Battle or Ready Weapons, allowing the
 Erisian Knight to fashion an Illusion of any weapon of his choice by
 describing it in some way, be it literally, in terms of the threat it poses,
@@ -233,7 +232,6 @@ rating.  The character may weave an Illusion of paired weapons in a single use
 of this Charm, but in that case the maximum effective Artifact rating he can
 achieve is reduced by 1 for each.
 
-
 The weapon may appear to be made of any materials, or to glow, burn or
 otherwise be obviously magical, but it provides no magical material or other
 bonuses.  It may also have hearthstone settings, filled as the character
@@ -255,6 +253,13 @@ armor of any kind, though it can stack with other magical defensive effects.
 The character may nonetheless summon armor for dramatic effect; for example,
 he could describe a fiery suit of superheavy plate, in the hope of
 intimidating opponents.
+
+A third purchase at Linguistics 4 adds the War keyword and allows the Charm to
+be used in large battles.  The character may spend 6 motes and 1 Willpower to
+activate the Charm to summon illusory weapons for a unit of Magnitude up to
+the character's Essence, which raises the Might and Morale of that unit by 1
+for as long as opposing troops do not see through it.  The character must be a
+member of the unit, but need not lead it nor be a special character within it.
 
 
 name: nac, Noetic Alignment*Concentration

@@ -73,7 +73,7 @@ name: bbb, Bilateral Bargain*Binding
 cost: 10m, 2wp
 mins: Bur 2, Ess 3
 type: Simple (Dramatic Action)
-key: Combo-OK, Compulsion
+key: Combo-OK
 dur: Instant
 dep:
 

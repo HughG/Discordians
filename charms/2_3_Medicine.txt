@@ -48,13 +48,49 @@ further application of this Charm, though other Medicine effects may be
 applicable.
 
 
+name: sos, Snake Oil Savior
+cost: 2m
+mins: Med 1, Ess 1
+type: Simple (Dramatic Action)
+key: Combo-OK, Illusion
+dur: Instant
+dep: 
+
+text: TODO
+
+This Charm allows the character to concoct some nostrum which is in fact
+ineffective, but convince a patient that it will cure.  It is the Illusion of
+this Charm, rather than the potion, which aids the target, so some attempt at
+medical theatricality is advised, including at least pretending to diagnose
+the illness.  The patient can resist the effects by spending one point of
+Willpower, though he or she is unlikely to do so unless she has some reason to
+actively distrust the Exalt's skills, or does not wish to be healed.
+
+As long as the target is subject to the Illusion, any penalties the Sickness
+would apply are reduced by (character's Essence), to a minimum of zero.
+Additionally, anyone attempting to cure the disease may use the higher of the
+Discordian's Charisma or Manipulation in place of their own rating in the
+relevant Attribute.  (Explaning why the target needs further treatment may
+require a little smooth talking but will not normally break the Illusion.)
+Similarly, the target may use that rating in place of their own Stamina when
+making a Morbidity check, treated or not.
+
+A single application of this Charm creates enough mock medicine to treat up to
+(Essence) individuals.  However, it will only work for those who were present
+when it was prepared, or who see the benefits in effect on a subject.  In
+addition, if anyone treated subsequently dies of the illness, all who witness
+it become likely to mistrust the character's skill in future and, if currently
+under the effects of this Charm, may well unconsciously spend Willpower to
+resist the Illusion.
+
+
 name: psm, Plague Substitution Method
 cost: 3m + 1wp
 mins: Med 3, Ess 2
 type: Simple (Dramatic Action)
 key: Combo-OK, Touch
 dur: Instant
-dep: exc, fkp
+dep: exc, sos
 
 text: Most healers use observation, skill and judgement to determine the
 nature of the disease spirits affecting their patient.  Those whose healing
@@ -143,13 +179,13 @@ dep: vrt
 text: [TODO: Insert flavor]
 
 This Charm allows an Invader of the Faith to extend the effects of Tasty
-Poison Treatment to a sigle source of environmental damage, adding the
+Poison Treatment to a single source of environmental damage, adding the
 requirement that he keep the motes committed until he is no longer at risk of
 damage.  The Shaping in this case only extends to those parts of the
 environment which come into contact with the Exalt in such a way as to damage
 him, and they revert to their original effect once the Exalt moves away.
 Thus, others cannot avoid damage from walking across hot coals simply by
-following in the character's footsteps.
+following in the target's footsteps.
 
 
 name: sod, Shadow of Death
@@ -229,12 +265,12 @@ Furthermore, given their sensitivity to balance and imbalance, they have some
 intuitive sense of such things, even though they may not understand them
 explicitly.  A momentary flickering of orange tendrils flows between the
 character and her target when this Charm is activated, and those tendrils
-allow her to adjust the target's rating of Limit, Resonance, Clarity or
-similar, either up or down, by the amount of Willpower she chooses to expend.
-This Charm constitutes unnatural influence, so the target may choose to resist
-it at a cost of 1 Willpower, although that may in itself increase their Limit,
-for example; by the same token, the Discordian herself will gain a point of
-Hodge.
+allow her to adjust the target's rating of Limit, Resonance, Clarity, Stasis
+or similar, either up or down, by the amount of Willpower she chooses to
+expend.  This Charm constitutes unnatural influence, so the target may choose
+to resist it at a cost of 1 Willpower, although that may in itself increase
+their Limit, for example; by the same token, the Discordian herself will gain
+a point of Hodge.
 
 If the Exalt successfully reduces the target's rating, by whatever value, the
 target will regain an equal number of points of temporary Willpower, up to

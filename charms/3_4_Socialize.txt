@@ -1,0 +1,50 @@
+name: exc, (Any Socialize*Excellency)
+dep:
+
+text:
+
+
+name: intro, .
+dep:
+
+text: TODO
+
+
+name: sit, Schismatic Innoculation*Technique
+cost: 5m, 1wp
+mins: Socialize 3, Essence 2
+type: Simple (6 long ticks)
+key: Combo-OK, Compulsion
+dur: Instant
+dep:
+review: 
+
+text: TODO
+
+Using this Charm, the Overseer protects a specific loyalty (Intimacy) within
+the Policy of a social group.  The character must have spent several hours
+over the previous month interacting with the group, though not necessarily in
+an obvious way.  Activating the Charm in the presence of at least one member
+of the group, the character causes a sub-group of Magnitude up to (character's
+Essence) to gain a further Intimacy to protecting the chosen loyalty.
+
+Any time a group Leader's Loyalty pool is reduced to zero and he implements
+some action contrary to the loyalty, causing some of the group to split off,
+two effects come into play.  First, some of the affected members will remain
+in both the original and split-off group, and work to re-join the two parts in
+subsequent scenes, and likely undo the implemented action as far as possible.
+Secondly, those in the main group work against this foreign influence from
+within, imposing an internal penalty of (Essence ÷ 2) on the implementation
+of the action.
+
+Additionally, if any effect attempts to remove or weaken the protected
+loyalty, or impose another which is contradictory, the internal opposition
+helps the Leader resist this.  Assuming Loyalty can be spent to resist the
+effect, the amount of Loyalty to resist for a single scene is halved, to a
+minimum of one, and the total amount of Loyalty the Leader must spend to shake
+it off is reduced by the character's Essence.  If the Leader cannot validly
+resist the effect, the group automatically loses a dot of Magnitude as the
+innoculated members, in a last-ditch attempt to protect their loyalty, all
+leave at once to form a new group.
+
+

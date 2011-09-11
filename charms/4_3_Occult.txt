@@ -178,7 +178,7 @@ dep:
 
 text: This Charm gives the Children of Eris access to Terrestrial Circle
 Sorcery, only they changed the name, just because.  Oh, alright, if you must
-know: it's because the number of sides of these two figures add up to the
+know, it's because the number of sides of these two figures add up to the
 mystical five (given that a circle has an in-side and an out-side).  The
 character may instead purchase a version of this Charm which provides access
 to Shadowlands Circle Necromancy, known as Triangular Circle Necromancy.  Both

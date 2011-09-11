@@ -214,20 +214,62 @@ Essence signature, but all Discordians may use their innate abilities to
 disguise that.
 
 
+name: omm, Oblivious Masquerade*Method
+cost: 4m, 3wp
+mins: Larceny 3, Ess 3
+type: Simple
+key: Combo-OK, Illusion, Stackable
+dur: Indefinite
+dep: iii
+review: 
+
+text: TODO
+
+Using this Charm, one of the Mid-day Shadows hides her light even from
+herself.  Having carried out an action to disguise herself, she activates this
+Charm to apply an illusion to herself, causing her to fully believe in her new
+identity.  Any attempt to convince the character otherwise requires a social
+attack against her Parry DV, with a bonus to her DV equal to her Larceny
+rating.  Anyone who sees through her disguise, and subsequently tries and
+fails to convince her, must themselves try again to see through it, or become
+convinced that they made a mistake.  This Charm does not by itself improve the
+quality of the disguise.
+
+Along with her new belief the character takes on a new Motivation and up to
+(Larceny) initial Intimacies, defined by her when activating this Charm, and
+these replace her own as long as the illusion is in effect, both in terms of
+guiding her behavior and of what others can read from her.
+
+The character also defines up to (Larceny) trigger conditions which will cause
+the illusion to end automatically.  These must be conditions which can be
+objectively perceived or judged by character when they occur, so they cannot
+rely on information or supernatural senses she does not possess.  Typical
+triggers might include passage of time, meeting a named being, or hearing a
+certain phrase spoken.
+
+If the character is disguised as an Exalt or other magical being, she may
+continue to use her own Charms freely, and will convince herself that they fit
+her identity.  If she is disguised as a mundane being, she may unconsciously
+choose to use non-Obvious Charms without breaking the illusion, but using any
+such Charms, or spending 11 or more motes of Peripheral Essence, causes the
+illusion to end it immediately.  If the character had suppressed her Recumbent
+Destiny when this Charm was activated, it remains suppressed as long as the
+illusion persists.
+
+
 name: it, Identity Theft
 cost: 10m, 1wp
 mins: Larceny 5, Ess 4
 type: Simple
 key: Combo-OK, Shaping, Touch
 dur: Indefinite
-dep: nrm, iii, ftk
+dep: nrm, omm
 review: 2011-06-25 RWG
 
 text: TODO
 
-
 This powerful Charm allows One Who Stands in the Doorway to take the identity
-of another: not simply to copy their appearance, but poosibly also to remove
+of another: not simply to copy their appearance, but possibly also to remove
 their unique self from them.  Doing so requires a resisted roll of the
 character's (Willpower + Larceny + Essence) against the target's (Wits +
 Integrity + Essence), including any applicable defences against Shaping.  A

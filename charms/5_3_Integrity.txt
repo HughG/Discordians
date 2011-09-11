@@ -40,6 +40,11 @@ embodying that sloughed-off magic.  If any other being touches it before the
 scene expires, the original effect is immediately applied to them, though they
 may use any powers of their own to resist it.
 
+If the character is attuned to a Fair Folk adjuration, each use of this Charm
+disables one of the mutations it confers.  Once all mutations have been
+disabled, she is no longer attuned to the artifact, regardless of whether or
+not she has fulfilled or broken the oath.
+
 
 name: csm, Chimera-Skin Mastery
 cost: -

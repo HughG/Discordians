@@ -4,6 +4,27 @@ dep:
 text:
 
 
+name: intro, .
+dep:
+
+text: TODO
+
+* Tree for knowing things without texts/evidence.
+
+* Tree for educating others, voluntarily or otherwise.  Temporary effects?
+  Replacing facts they already know (or is that more like Memory-Reweaving
+  Discipline)?
+
+* Tree for boosting Essence, Willpower etc.  Also for reducing/transferring
+  Limit and other Great Curse effects?
+
+* Tree for opposing the Fair Folk / Sidereals (directly, or to counter Shaping
+  effects, or even to re-write existing effects)?
+
+* Something like Immanent Solar Glory, but gain Essence for interfering with a
+  system, rather than maintaining it?
+
+
 name: hmm, Holographic Memory Modus
 cost: 3m
 mins: Lore 2, Ess 2

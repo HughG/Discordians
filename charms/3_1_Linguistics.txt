@@ -254,9 +254,9 @@ The character may nonetheless summon armor for dramatic effect; for example,
 he could describe a fiery suit of superheavy plate, in the hope of
 intimidating opponents.
 
-A third purchase at Linguistics 4 adds the War keyword and allows the Charm to
-be used in large battles.  The character may spend 6 motes and 1 Willpower to
-activate the Charm to summon illusory weapons for a unit of Magnitude up to
+With the second purchase and Linguistics 4 the Charm gains the War keyword and
+can be used in large battles.  The character may spend 6 motes and 1 Willpower
+to activate the Charm to summon illusory weapons for a unit of Magnitude up to
 the character's Essence, which raises the Might and Morale of that unit by 1
 for as long as opposing troops do not see through it.  The character must be a
 member of the unit, but need not lead it nor be a special character within it.

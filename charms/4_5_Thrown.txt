@@ -10,6 +10,17 @@ dep:
 text: TODO: Everything, plus ... perfect attack; Action-longs (maybe as
 re-purchase?)
 
+* Tree for improvising weapons from random objects, elements (e.g., air)
+  etc. (Bowling)
+
+* Tree for provoking conflict/confusion between/among enemies
+
+* Tree for attacking with surprise, while seeming not to attack, from
+  unexpected directions etc.
+
+* Tree for throwing things with non-combat effects (magical containment,
+  spying, pickpocketing)
+
 
 name: bpp, Butterfly Pinion Pitch
 cost: 6m

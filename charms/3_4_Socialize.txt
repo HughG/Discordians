@@ -9,17 +9,54 @@ dep:
 
 text: TODO
 
+* Disguising Motivation and Intimacies
+
+* Understanding social norms & desires.  Maybe something to identify
+  individuals who could be persuaded to disrupt or oppose the norm?
+
+* Subverting social norms.  Something to create an Intimacy/Loyalty which the
+  person will hold but only act on covertly, or not in the presence of
+  outsiders.
+
+* Illusion to persuade people that a certain course of action is neutral or
+  positive in terms of their Intimacies/Policy, when in fact it's negative.
+
+* Disrupting intentions.  Maybe like (or a variant of) the above, but persuade
+  people *not* to do something (and possibly do something else), even though
+  it's in support of their Policy.
+
+* Holding and acting on conflicting Intimacies.
+
+* Scene-long non-Social action which influences Social combat/actions.  (Idea
+  from visual priming of creativity.)
+
+* Follow on to previous one: Non-social-interaction actions to indirectly
+  affect Intimacies and actions.  E.g., something small which triggers a poor
+  harvest or price increase, which then triggers the specific desired response
+  from a social group.  (Basically, a disguised long-term social action.)
+
+* Flashmob!  A bit like "Gathering the Congregation", but only scene-long, and
+  the character doesn't have to lead the group or even do anything observable
+  to guide it.  The group just follows his intention.
+
+* Cult-building (possibly temporary).
+
+ 
+
 
 name: sit, Schismatic Innoculation*Technique
 cost: 5m, 1wp
 mins: Socialize 3, Essence 2
 type: Simple (6 long ticks)
-key: Combo-OK, Compulsion
+key: Combo-OK, Compulsion, Social
 dur: Instant
 dep:
 review: 
 
 text: TODO
+
+[TODO: Should possibly have higher mins.  Compare with Lunar "Social Unit
+Charms".  Should possibly simplify effects a bit.]
 
 Using this Charm, the Overseer protects a specific loyalty (Intimacy) within
 the Policy of a social group.  The character must have spent several hours

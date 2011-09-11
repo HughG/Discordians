@@ -1,0 +1,17 @@
+name: exc, (Any Stealth*Excellency)
+dep:
+
+text:
+
+
+name: intro, .
+dep:
+
+text: TODO
+
+* Tree for hiding self (Hidden in plain sight; proper invisibility, also with
+  concealment in other senses)
+
+* Tree for hiding others, groups, or largish objects (Elephant in the Room)
+
+* Tree for not leaving traces/evidence [or is that Larceny? Survival?]

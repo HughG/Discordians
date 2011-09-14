@@ -9,39 +9,78 @@ dep:
 
 text: TODO
 
-* Disguising Motivation and Intimacies
 
-* Understanding social norms & desires.  Maybe something to identify
-  individuals who could be persuaded to disrupt or oppose the norm?
+name: dmi, Disguising Motivation*and Intimacies
+dep:
 
-* Subverting social norms.  Something to create an Intimacy/Loyalty which the
-  person will hold but only act on covertly, or not in the presence of
-  outsiders.
+text: TODO
 
-* Illusion to persuade people that a certain course of action is neutral or
-  positive in terms of their Intimacies/Policy, when in fact it's negative.
+Disguising Motivation and Intimacies
 
-* Disrupting intentions.  Maybe like (or a variant of) the above, but persuade
-  people *not* to do something (and possibly do something else), even though
-  it's in support of their Policy.
 
-* Holding and acting on conflicting Intimacies.
+name: hci, Holding conflicting Intimacies
+dep: dmi
 
-* Scene-long non-Social action which influences Social combat/actions.  (Idea
-  from visual priming of creativity.)
+text: TODO
 
-* Follow on to previous one: Non-social-interaction actions to indirectly
-  affect Intimacies and actions.  E.g., something small which triggers a poor
-  harvest or price increase, which then triggers the specific desired response
-  from a social group.  (Basically, a disguised long-term social action.)
+Holding and acting on conflicting Intimacies.
 
-* Flashmob!  A bit like "Gathering the Congregation", but only scene-long, and
-  the character doesn't have to lead the group or even do anything observable
-  to guide it.  The group just follows his intention.
 
-* Cult-building (possibly temporary).
+name: gsd, General social*defence
+dep:
 
- 
+text: TODO
+
+Boosting MDVs?  In special cases?  Upgrade or follow-on for perfect defence?
+
+
+name: saict, Social actions*in combat time
+dep: gsd
+
+text: TODO
+
+Social actions in combat time (compare with Lunar follow-ups to Charismatic
+Lunar Trick).
+
+
+name: usn, Understanding*social norms
+dep:
+
+text: TODO
+
+Understanding social norms & desires.  Compare with existing charms about
+perceiving patterns, and things out of place.  Maybe something to identify
+individuals who could be persuaded to disrupt or oppose the norm?
+
+
+name: fm, Flashmob!
+dep: usn
+
+text: TODO
+
+Flashmob!  A bit like "Gathering the Congregation", but only scene-long, and
+the character doesn't have to lead the group or even do anything observable to
+guide it.  The group just follows his intention.
+
+
+name: cb, Cult-building
+dep: fm
+
+text: TODO
+
+Cult-building (possibly temporary).  Compare with Perf Charm "Subtle Heresy
+Foundation" (which isn't really that Perf-y, since it doesn't involve standing
+up and performing ... hmm ...).
+
+
+name: ssn, Subverting social norms
+dep: usn
+
+text: TODO
+
+Subverting social norms.  Something to create an Intimacy/Loyalty which the
+person will hold but only act on covertly, or not in the presence of
+outsiders.
 
 
 name: sit, Schismatic Innoculation*Technique
@@ -50,7 +89,7 @@ mins: Socialize 3, Essence 2
 type: Simple (6 long ticks)
 key: Combo-OK, Compulsion, Social
 dur: Instant
-dep:
+dep: ssn
 review: 
 
 text: TODO
@@ -85,3 +124,40 @@ innoculated members, in a last-ditch attempt to protect their loyalty, all
 leave at once to form a new group.
 
 
+name: pca, Persuade re*consequence of action
+dep: usn
+
+text: TODO
+
+Illusion to persuade people that a certain course of action is neutral or
+positive in terms of their Intimacies/Policy, when in fact it's negative.
+
+
+name: di, Disrupting intentions
+dep: pca
+
+text: TODO
+
+Disrupting intentions.  Maybe like (or a variant of) the above, but persuade
+people *not* to do something (and possibly do something else), even though
+it's in support of their Policy.
+
+
+name: nssl, Non-Social*Scene-long
+dep: 
+
+text: TODO
+
+Scene-long non-Social action which influences Social combat/actions.  (Idea
+from visual priming of creativity.)
+
+
+name: nsai, Non-Social*affecting Intimacies
+dep: nssl
+
+text: TODO
+
+Follow on to previous one: Non-social-interaction actions to indirectly affect
+Intimacies and actions.  E.g., something small which triggers a poor harvest
+or price increase, which then triggers the specific desired response from a
+social group.  (Basically, a disguised long-term social action.)

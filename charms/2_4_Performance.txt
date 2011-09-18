@@ -138,18 +138,17 @@ need not actually be heretical but it must be one which the people have not so
 far, as a group, considered as a serious belief, and which unbalances the
 current order.
 
-The Moonlight Lyre must spend several hours talking to various members of the
-group.  At the end of this time, if her persuasion was successful, the
-character will have created a new cult, which contributes to a Training effect
-which raises her Cult Background.  To raise the Cult rating to a given level,
-the character must found that many brand new cults, each with a separate use
-of the Charm.  For example, to go from Cult 2 to Cult 3 requires three
-successful applications of this Charm.  The character may start as many new
-cults as the storyteller will allow, though her Cult Background cannot be
-increased beyond normal limits.  Also, a cult only counts towards the Training
-effect of this Charm if it has a different object from any other that the
-character has previously founded using this Charm.  Cults founded by this
-Charm may grow later, of course.
+The Moonlight Lyre must spend a scene addressing the group.  At the end of
+this time, if her persuasion was successful, the character will have created a
+new cult, which contributes to a Training effect which raises her Cult
+Background.  To raise the Cult rating to a given level, the character must
+found that many brand new cults, each with a separate use of the Charm.  For
+example, to go from Cult 2 to Cult 3 requires three successful applications of
+this Charm.  The character may start as many new cults as the storyteller will
+allow, though her Cult Background cannot be increased beyond normal limits.
+Also, a cult only counts towards the Training effect of this Charm if it has a
+different object from any other that the character has previously founded
+using this Charm.  Cults founded by this Charm may grow later, of course.
 
 If the object of a new cult is a being, that being also gains a rating of Cult
 1, if it does not already have a Cult rating.  The character may choose some

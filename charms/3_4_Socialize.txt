@@ -9,38 +9,120 @@ dep:
 
 text: TODO
 
+Also need one or more out-of-ability Charms: Investigation, Medicine, (combat
+-- but also 3rd Div), Dodge, Occult (prayer, Cult?), Stealth (hiding among a
+society, as Sidereals do), Bur(?)
+
+Unexpected social attack?  Extra Action (or put that in Perf?)?
+
+[See Lunars' Mirror Sight Dismay.]
+
 
 name: dmi, Disguising Motivation*and Intimacies
+cost: 2m
+mins: Socialize 3, Ess 2
+type: Reflexive
+key: Combo-OK, Social
+dur: Instant
 dep:
 
 text: TODO
 
-Disguising Motivation and Intimacies
+Disguising Motivation and Intimacies.
+
+Increases the difficulty of attempts to read the character's Motivation,
+Intimacies, Virtue ratings or intentions in the current scene, by the
+character's (Socialize) [Would normally be diff of half Man + Soc.]  If the
+attack would have succeeded but for this increased difficulty, the attacker
+will believe that it did succeed, and the character can determine exactly what
+the attacker perceives in respect of whatever information would have been
+received.
+
+[Lunars have Mask of White Jade, Man 3 Ess 2, which fails any opposed Man roll
+for 2m, or 1wp if Charm was used.  Not clear if it's a perfect defence --
+doesn't say so.]
 
 
 name: hci, Holding conflicting Intimacies
+cost: 3m
+mins: Socialize 3, Ess 3
+type: Reflexive
+key: Combo-OK, Social
+dur: Instant
 dep: dmi
 
 text: TODO
 
 Holding and acting on conflicting Intimacies.
 
+The character is able to instantly take on an Intimacy which conflicts in some
+way with one he already holds, and treat it as equally valid for all purposes.
+If some effect depends on the Intimacies he holds, he may regard either or
+both as taking effect or precedence, as he prefers.  Both will remain
+indefinitely, but a scene spent reinforcing one subsequently (or any other
+effect which reinforces it) also counts as weakening the other, and vice
+versa, unless this Charm is re-invoked.
+
+If the character holds more than his maximum number of Intimacies, then an
+intimacy of his choice will start to fade out after the scene in which this
+Charm is invoked.  This can be any Intimacy, including the one added by this
+Charm.
+
+[Note: if an attack opposes Intimacies, defenses are raised.]
+
+[TODO: Maybe something else more interesting, like, spend an additional 1wp to
+instead form an Intimacy which opposes one known Intimacy of anyone present.
+Intimacies remain linked as before.]
+
 
 name: gsd, General social*defence
+cost: 4m
+mins: Socialize 3, Ess 3
+type: Reflexive (Step 2)
+key: Combo-OK, Social
+dur: Instant
 dep:
 
-text: TODO
+text: The Offendis know that to get a group to cooperate, one must consider
+all members' points of view, and with the self-contradictory wisdom of Eris
+they are uniquely skilled at doing so.
 
-Boosting MDVs?  In special cases?  Upgrade or follow-on for perfect defence?
+This Charm allows the character to briefly shift her opinion in the face of a
+social attack, her response treating it in a totally different way to what the
+attacker intended -- possibly part way through a sentence which seems to
+whole-heartedly accept the point made.  The effect is to perfectly parry any
+social attack, even if it is unblockable.
 
+Additionally, the skill with which the character renders her surprising
+response imposes an external penalty of -(Essence) on any further social
+attacks based around the same point or similar ones, from any character
+present at the time, in the following action.  This penalty decreases by 1
+over subsequent actions until it reaches zero.
 
-name: saict, Social actions*in combat time
+[TODO: Follow-on of Stealth???]
+				       
+
+name: saic, Social actions*in combat
+cost: 2m, 1wp
+mins: Socialize 4, Ess 2
+type: Reflexive
+key: Combo-OK, War
+dur: One scene
 dep: gsd
 
 text: TODO
 
-Social actions in combat time (compare with Lunar follow-ups to Charismatic
-Lunar Trick).
+This Charm allows the character to make social attacks against targets with
+whom she is joined in battle or mass combat.  The targets must be able to
+perceive, hear and/or understand her as normal if necessary for the attacks.
+The character may reflexively spend 1 mote when making non-social attack while
+this Charm is active, to add a single social attack which neither suffers from
+multiple action penalties nor increases them for other attacks.  A single
+non-social attack flurried with a single social attack therefore suffers no
+penalties.
+
+[Some recent forum thread spoke about Lunar follow-ups to Charismatic Lunar
+Trick?]
 
 
 name: usn, Understanding*social norms
@@ -49,28 +131,51 @@ dep:
 text: TODO
 
 Understanding social norms & desires.  Compare with existing charms about
-perceiving patterns, and things out of place.  Maybe something to identify
-individuals who could be persuaded to disrupt or oppose the norm?
+perceiving patterns, and things out of place (Pattern-Disturbance Sense in
+Investigation).  Maybe something to identify individuals who could be
+persuaded to disrupt or oppose the norm?
 
 
 name: fm, Flashmob!
+cost: 4m or 4m, 1wp
+mins: Socialize 4, Ess 3
+type: Simple (Speed 6 in long ticks)
+key: Combo-OK, Social
+dur: One scene
 dep: usn
 
 text: TODO
 
-Flashmob!  A bit like "Gathering the Congregation", but only scene-long, and
-the character doesn't have to lead the group or even do anything observable to
-guide it.  The group just follows his intention.
+This Charm allows the character to temporarily form a social group with a
+particular purpose, without making his involvement obvious.  The character
+first spends a few minutes interacting with a handful of people, and may do so
+non-verbally or indirectly, for example, by drawing attention to someone or
+something else, dropping an interesting item, causing a minor accident or
+similar.  On activating the Charm, he rolls [(Charisma, Manipulation or
+Appearance) + Socialize], choosing the attribute most appropriate to his
+actions.
 
+All who fail to defend against the attack form a social group of Magnitude up
+to the character's (Essence), which immediately begins to act on an intent of
+his choice.  If this intent directly conflicts with the Motivation of any
+target or would be an unacceptable order, that target is unaffected.  He
+need not verbalise the intent or make it explicit in any way.  He cannot
+change the intent after the group is formed, except by further social attacks.
 
-name: cb, Cult-building
-dep: fm
+By spending a point of Willpower, the character can make the group's intent
+contagious.  All who interact with the group within that scene are subject to
+the same social attack and will join the group if they fail to defend.  There
+is no limit on the size to which the group can grow in this manner.
 
-text: TODO
-
-Cult-building (possibly temporary).  Compare with Perf Charm "Subtle Heresy
-Foundation" (which isn't really that Perf-y, since it doesn't involve standing
-up and performing ... hmm ...).
+At the end of the scene, the group will normally disperse, perhaps in some
+confusion at their actions.  However, if the intent matched the original
+actions or overall interests of a majority of the members, or the character
+described his actions with a particularly apt stunt, the group may linger.  At
+Essence 4, the group constitutes a temporary Cult and grants the character the
+benefits of an appropriate number of dots in that Background, for as long as
+it persists in following the intent with which it was seeded.  Depending on
+circumstances, the Storyteller may allow the character to spend experience to
+make the Cult permanent.
 
 
 name: ssn, Subverting social norms

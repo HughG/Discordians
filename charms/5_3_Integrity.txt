@@ -76,6 +76,10 @@ the Chosen of Eris have found a way to turn their madness into genius.  This
 Charm allows the Exalt to add the lower of her Hodge and Podge ratings to her
 Dodge MDV and Parry MDV against one attack.
 
+[TODO 2011-09-17 HUGR: Maybe lower the cost of this, since it's 5m for a
+non-perfect, whereas I have a perfect social dodge for 4m in Awareness, and
+may add a 4m perfect social parry in Socialize.]
+
 
 name: ddt, Dream Deflection*Technique
 cost: 5m

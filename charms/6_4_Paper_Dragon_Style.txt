@@ -1,0 +1,91 @@
+name: intro, .
+
+text: TODO
+
+Paper Dragon Style: a DMA based on Bureaucracy.
+
+MA themes to put in:
+
+* Improve damage, DVs, soak, hardness.
+
+* Change speed of own or others' actions.
+
+* Grapple: hold/throw, escape
+
+* Disarm
+
+* Redirecting attacks, Defend Other
+
+* Extra Action
+
+* Counterattack
+
+* Unexpected attack
+
+* Remote attack/defence with extra weapons
+
+* Form-Type, Pinnacle
+
+Bureaucracy themes to affect:
+
+* Bribery, commerce, running projects, paperwork.
+
+* Written attacks; signatures and seals; forms
+
+* Policy: cut away or bend Intimacies and Motivation.
+
+* Loyalty: sap or impose penalties.
+
+* Prepare plans, similar to using plans in manse/artifact building: reduce
+  time for later actions and/or add successes.
+
+* General duration reduction.
+
+Ideas:
+
+* Carmine/Vermilion Ribbon Entaglement: "grapple" which slows progress in
+  the target project, increasing its duration and/or imposing an external
+  (or, internal?) penalty.
+
+* Perfect reproduction of official signature/stamp -- not a forgery, rather an
+  excercise of perfect skill.  Allows a specific document to be signed, or
+  makes a written Social attack on the organization undodgeable.
+
+* Mantle of Bureaucratic authority -- Minor Usurupation
+
+* Shedding/tearing paper scales: Tear away Intimacies/Policy.  Permanent, or
+  temporary as Illusion.  Or, shed something (staff, Intimacies, Magnitude) to
+  deflect negative effects (remove penalties).
+
+* Contract-Rending Claw: allow the organisation to back out of a deal without
+  penalties, by finding some weak point in the contract; and/or, force them to
+  break a deal, possibly suffering the negatives.  (Compare with DB Charm for
+  putting nasty clauses in.)  Maybe upgrade to break Geasa, Eclipse-style
+  oaths etc.?
+
+* Cutting off a smaller part from the whole; pulling a local office out of the
+  larger organisation.
+
+* Record-Correction Maneuver, Decision-Bending Prana
+
+> Discordian Martial Arts (DMAs) apply the principles of Martial Arts --
+  focus, specialisation, style -- to other Abilities.  Only those who can
+  learn Sidereal Martial Arts can learn them, though they are not as powerful
+  as those Arts, being concerned with slightly more mundane endeavors.  In
+  general thay have a similar structure to Celestial Martial Arts, usually
+  require Essence between 3 and 7, may require some device to be worn or
+  wielded in the same vein as form weapons, and tend not to have Charms which
+  are of type Simple (Dramatic Action) or of duration longer than a scene,
+  including Indefinite [unless the Charm affects some other thing which has a
+  duration longer than a scene?]
+
+
+name: b, Blah
+cost: --
+mins: Martial Arts 1, Ess 1
+type: Permanent
+key: None
+dur: Permanent
+dep:
+
+text: TODO

@@ -3,66 +3,6 @@ dep:
 
 text:
 
-
-name: csp, Chimera-Skin Prana
-cost: 2m
-mins: Integrity 1, Ess 2
-type: Reflexive (Step 10)
-key: Combo-OK, Shaping, Obvious
-dur: Instant
-dep:
-
-text: The chosen of Eris are not immune to Chaos, but they have a deeper
-understanding of it than others.  This Charm allows the character to alter the
-consequences of a Shaping effect when it is successfully applied to him.  For
-Wyld mutations, they may alter the severity level by one in either direction
-(including choosing to completely ignore the least severe mutations).  For
-other Shaping effects which numerically alter some trait, they may adjust the
-value by one, again in either direction.  For Shaping effects which do not
-fall into these categories, the player may agree some appropriate adjustment
-with the storyteller.
-
-
-name: csis, Chimera Sheds Its Skin
-cost: 5m, 1wp
-mins: Integrity 3, Ess 3
-type: Simple
-key: Shaping, Obvious
-dur: Instant
-dep: csp
-
-text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their
-way.  With this Charm the character may undo any one Shaping effect which has
-altered her at any point in time.  If the Shaping affected more individuals
-than just the character, she will be the only one to escape it.  A ghostly
-orange outline of the character will persist, hanging in space for one scene,
-embodying that sloughed-off magic.  If any other being touches it before the
-scene expires, the original effect is immediately applied to them, though they
-may use any powers of their own to resist it.
-
-If the character is attuned to a Fair Folk adjuration, each use of this Charm
-disables one of the mutations it confers.  Once all mutations have been
-disabled, she is no longer attuned to the artifact, regardless of whether or
-not she has fulfilled or broken the oath.
-
-
-name: csm, Chimera-Skin Mastery
-cost: -
-mins: Integrity 3, Ess 3
-type: Permanent
-key: Shaping
-dur: Permanent
-dep: csp
-
-text: TODO
-
-This Charm makes the character master of his own shape, though it does not
-make it inviolable.  If any effect would prevent the character from applying a
-Shaping effect to himself, he is nonetheless able to do so.  This is true
-whether the effect targets the character specifically or is one which affects
-an area he is in.
-
-
 name: umd, Unbalanced Mind*Defence
 cost: 5m
 mins: Integrity 2, Ess 2
@@ -154,18 +94,64 @@ mins: Integrity 4, Ess 4
 type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: One scene
-dep: csis, ddt
+dep: ddt
 
 text: They Who Carve Truth In Stone are able to form that metaphorical stone
 from the gossamer of daydreams, convincing herself that her view of the world
 is the only right one, if only for a short while.  This Charm perfectly
-defends against any Compulsion, Emotion, Illusion, Servitude and Shaping
-attacks for the rest of the scene.  Additionally, any compulsions due to lack
-of Willpower, or an overflowing of Hodge or Podge, are delayed until the end
-of the scene.  On the other hand, any attempts by the character to act against
-her Virtues, Intimacies or Motivation have their difficulties increased by 2.
-Use of this Charm gains the character a point of Podge but, if that takes the
-count over 10, the consequences are still delayed until the end of the scene.
+defends against any Compulsion, Emotion, Illusion and Servitude attacks for
+the rest of the scene, plus the mental and emotional aspects of any Shaping
+attacks.  Additionally, any compulsions due to lack of Willpower, or an
+overflowing of Hodge or Podge, are delayed until the end of the scene.  On the
+other hand, any attempts by the character to act against her Virtues,
+Intimacies or Motivation have their difficulties increased by 2.  Use of this
+Charm gains the character a point of Podge but, if that takes the count over
+10, the consequences are still delayed until the end of the scene.
+
+
+name: sos1, Softening of Suasion
+cost: - (+1wp)
+mins: Integrity 1, Ess 2
+type: Permanent
+key: None
+dur: Permanent
+dep:
+review: 
+
+text: TODO
+
+When activating any Charm or Combo which applies unnatural mental influence to
+its target, the character can pay an additional point of Willpower to remove
+the unnatural quality, though any specific keywords remain.  Doing this allows
+the character to reduce her Hodge rating by one point, to a minimum of zero,
+regardless of whether or not the target expends Willpower to reduce the
+natural mental influence.
+
+
+name: sos2, Savor of Submission
+cost: - (1wp)
+mins: Integrity 1, Ess 2
+type: Permanent
+key: None
+dur: Permanent
+dep:
+review: 
+
+text: TODO
+
+Whenever the character is subject to unnatural mental influence and could pay
+Willpower to resist it (i.e., she has sufficient temporary Willpower), she may
+instead choose to submit to it and pay a single point of Willpower to reduce
+her Podge rating by one point, to a minimum of zero.  She still cannot choose
+to go along with unacceptable orders, and may be prevented from acquiescing by
+other effects.
+
+The cost is always 1 Willpower and the reduction one point of Podge,
+regardless of how many points of Willpower would be required to resist the
+effect.  If the effect allows the character later opportunities to resist, she
+may do so without losing the benefit of this Charm.  However, she cannot apply
+this Charm's effect more than once for each activation of an effect against
+her.
 
 
 name: roe, Running on Emptiness
@@ -220,31 +206,50 @@ any case, this Charm cannot reduce the character's temporary Willpower rating
 below zero, nor increase the target's beyond its maximum.
 
 
-name: pma, Policy-Molding*Arrogation
+name: icc, Instant Commitment*Contrivance
 cost: 2m, 2wp
 mins: Integrity 3, Ess 2
 type: Simple
-key: Social
+key: Social, Stackable
 dur: Indefinite
 dep:
 
 text: TODO
 
-This Charm allows an agent of the Authority to instantly forge an Intimacy in
-relation to the Policy of a social group.  This Intimacy must involve
-supporting, opposing or changing in some particular way the Policy of that
-group.  As long as the character maintains her commitment of motes, she treats
-all natural or unnatural mental influence which would divert her from that
-goal as an unacceptable order (which means no points of Podge are gained from
-resisting it).  Furthermore, she is able to spend Willpower to channel her
-base, unmodified Integrity, as if it were an equivalently-rated Virtue, in
-support of this Intimacy.
+This Charm allows an agent of the Authority to instantly forge certain kinds
+of extra, magically-protected Intimacies.  As long as the character maintains
+her commitment of motes, she treats all natural or unnatural mental influence
+which would conflict with these Intimatices as an unacceptable order (which
+means no points of Podge are gained from resisting it).  There is nothing to
+prevent the character from holding conflicting Intimacies within herself, both
+natural and created by this Charm.  The character may maintain a number of
+such additional Intimacies equal to her Conviction.
 
-The character may maintain a number of such additional Intimacies equal to her
-Conviction.  The available channels of Integrity in each story are shared
+Furthermore, she is able to spend Willpower to channel her base, unmodified
+Integrity, as if it were an equivalently-rated Virtue, in support of these
+Intimacies.  The available channels of Integrity in each story are shared
 among all these Intimacies.  Using this Charm to maintain three Intimacies
 does not gain (Integrity x 3) opportunities to channel Integrity, only
 (Integrity).
+
+This Charm comes in two variants, though it is possible that some Erisians
+have invented further variants.  The initial purchase of the Charm includes
+one of these, and the other may be purchased for half the normal cost of the
+Charm.
+
+/Policy-Molding Arrogation/: This variant supports Intimacies related to the
+Policy of a social group.  They must involve supporting, opposing or changing
+in some particular way the Policy of that group.
+
+/Moot Point Focus/: This variant covers Intimacies related to holding a
+specific opinion on some matter which is open to question.  For example, the
+character could choose to believe that slavery is beneficial to slaves or that
+demons are essentially good, but not that there is no price attached to a
+slave or that demons are not generally bound in Malfeas.  Grey areas exist
+here, certainly; for example, the Storyteller might allow the character to
+believe that slaves have no masters other than themselves, since slaves are
+usually free to attempt to live that way, though it may cause them some
+trouble.
 
 
 name: uoth, Umbrella of the Heart
@@ -253,7 +258,7 @@ mins: Integrity 4, Ess 3
 type: Permanent
 key: None
 dur: Permanent
-dep: exc, pma
+dep: exc, icc
 
 text: TODO
 

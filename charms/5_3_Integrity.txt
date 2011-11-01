@@ -206,6 +206,29 @@ any case, this Charm cannot reduce the character's temporary Willpower rating
 below zero, nor increase the target's beyond its maximum.
 
 
+name: iiov, Idiosyncratic*Interpretation of (Virtue)
+cost: --
+mins: Integrity 2, Ess 2
+type: Permanent
+key: None
+dur: Permanent
+dep: exc
+
+text: TODO
+
+This Charm allows the priests of Eris to extend their unique viewpoints to the
+very Virtues which make up the fabric of mortal souls.  The character can
+purchase the Charm no more than (Integrity) times and no more than once per
+Virtue.  Each gives the character 3 dots of Virtue Specialty, with the breadth
+and suitability of such Specialties subject to Storyteller approval.  These
+dots provide both extra Virtue channels, and extra dice when channelling a
+Virtue, where the Specialty is applicable.  They may stretch the meaning of
+the Virtue quite far: at Essence 4+, if a character wishes to suppress a
+Virtue, and has dots of Specialty in that Virtue which actually support
+suppressing the basic Virtue, she may roll those specialty dice separately and
+subtract them from the successes from the base roll.
+
+
 name: icc, Instant Commitment*Contrivance
 cost: 2m, 2wp
 mins: Integrity 3, Ess 2

@@ -25,6 +25,25 @@ treating a shamisen as a drum.  This Charm also reduces the difficulty of all
 Performance actions, including prayer, by 1.
 
 
+name: tonc, Tale of Nine Cats
+cost: 1m + 3m per extra action
+mins: Perf 3, Ess 2
+type: Extra Action
+key: Combo-OK, Social 
+dur: Instant
+dep: ii
+
+text: Experts in the misunderstandings of meaning and meaninglessness, the
+children of Eris can choose their words and actions to convey more than one
+story at once, carefully tuned to different audiences.
+
+This Charm provides the character with a magical flurry of up to (Essence)
+social attacks, each of which she must direct against a different target,
+though the target may be a group or an individual, as appropriate to that
+attack.  The MDV penalty for the flurry is equal to the highest penalty for
+any one attack.
+
+
 name: lfaa, Legend*For An Afternoon
 cost: 3m
 mins: Perf 2, Ess 2

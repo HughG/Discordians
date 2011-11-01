@@ -252,20 +252,19 @@ and beings lacking any of the above ratings will nevertheless be picked out if
 they are likely to play, or have played, a vital part in some pivotal event,
 e.g., an assassination.
 
-
 The character will automatically know which traits or types of events make
 each object or being notable, but will not know trait ratings or details of
-events.  To gain more detailed knowledge the character may make a (Perception
-+ Investigation) roll.  Knowing the rating of a single trait is difficulty 2,
-as is getting an approximate timing for past events.  Getting a rough idea of
-individuals or power groups involved in Backgrounds, or of the general nature
-of past pivotal events, is difficulty 4.  This Charm cannot reveal precise
-details, however: it might point someone out as being involved in an
-assassination, but cannot tell whether they were victim, assassin, guard or
-witness.  Trying to determine the rough shape of future events, associations
-or tendencies adds 2 to the difficulty, This is, of course, subject to the
-vagaries of Fate, and anything which disturbs that may change what comes to
-pass.
+events.  To gain more detailed knowledge the character may make a ([Perception
+or Intellignce] + Investigation) roll.  Knowing the rating of a single trait
+is difficulty 2, as is getting an approximate timing for past events.  Getting
+a rough idea of individuals or power groups involved in Backgrounds, or of the
+general nature of past pivotal events, is difficulty 4.  This Charm cannot
+reveal precise details, however: it might point someone out as being involved
+in an assassination, but cannot tell whether they were victim, assassin, guard
+or witness.  Trying to determine the rough shape of future events,
+associations or tendencies adds 2 to the difficulty, This is, of course,
+subject to the vagaries of Fate and chance, and anything which disturbs that
+may change what comes to pass.
 
 
 name: lla, Ladder and Loophole*Awareness

@@ -89,7 +89,7 @@ of Willpower.
 
 name: tbd, Turkey-Based Distraction
 cost: 4m or 4m, 1wp
-mins: Linguistics 3, Ess 2
+mins: Linguistics 3, Ess 3
 type: Reflexive (Step 2)
 key: Combo-OK, Obvious, Social
 dur: Instant
@@ -101,10 +101,10 @@ best way to fend off intense negativity may be to utterly confuse one's
 opponent.  Taking a stance with a strange mixture of aggression and
 sensuality, and waving his arms in a psuedo-arcane fashion, the character
 shouts some nonsense phrase, such as the well-known Turkey Curse: "Gobble!
-Gobble! Gobble! Gobble! Gobble!"  This Charm perfectly defends against any
-social attack which is not unexpected, even if the attack is unblockable.
+Gobble! Gobble! Gobble! Gobble!"  This Charm perfectly dodges any social
+attack which is not unexpected, even if the attack is undodgeable.
 
-At Linguistics 4, the Offendi can spend a point of Willpower to apply the
+At Linguistics 4+, the Offendi can spend a point of Willpower to apply the
 defence of this Charm to another character, provided he is aware of the
 attack, and the attacker can perceive him.  He will normally be aware of the
 attack provided he can perceive both attacker and target, and the target is
@@ -116,7 +116,7 @@ unless he or she pays Willpower.
 
 name: ftt, Forked Tongue Technique
 cost: 3m per action
-mins: Linguistics 4, Ess 2
+mins: Linguistics 3, Ess 2
 type: Extra Action
 key: Combo-OK, Obvious, Social, War
 dur: Instant
@@ -127,10 +127,9 @@ of Five are able to transmit their orders along many channels at once, weaving
 words and symbols in seemingly-random strands which nonetheless converge on
 their intended targets.
 
-
 This Charm provides a magical flurry of between two and (Essence) spoken or
 written actions, with a DV or MDV penalty equal to the highest penalty for any
-one attack.  Each action may be directed at any valid target, including the
+one action.  Each action may be directed at any valid target, including the
 same target more than once.  The actions may also be used to Signal units in
 war, though target units are not themselves granted extra actions: they may
 receive multiple messages, but act at a normal pace.

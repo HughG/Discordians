@@ -341,11 +341,12 @@ magical or mundane, and must typify the skill to be learned.  Creativity may
 be required to find a suitable object which the character can make, given the
 Crafts she knows.
 
-The owner of such an object may gain a single dot of the Ability it embodies
-as a Training effect.  This occurs instantly, but may put the owner into
-experience debt, in which case no further Training effects will benefit them
-until it is paid off.  Abilities cannot be raised past the normal maximums for
-the trainee, but are not limited by the skill levels of the Carver.
+The owner of such an object may gain a single dot of the Ability it embodies,
+or two dots of a particular Specialty, as a Training effect.  This occurs
+instantly, but may put the owner into experience debt, in which case no
+further Training effects will benefit them until it is paid off.  Abilities
+cannot be raised past the normal maximums for the trainee, but are not limited
+by the skill levels of the Carver.
 
 The object may be a symbolic representation of the relevant discipline, rather
 than an item to be used in practice.  The trainee must devote time daily to
@@ -356,14 +357,22 @@ spent on it is regained.  Once the training time and debt is gone, however,
 the object may be passed on for someone else to gain its benefits. Damaged
 objects may be repaired but will have lost their educational magic.
 
-At Craft 4 and Essence 4, the Carver can make objects which train Attributes,
-Virtues or Willpower.  A second purchase of this Charm at Craft 5 and Essence
-5 means that her creations can train even Essence, though they cannot
-enlighten those who do not already have access to their Essence.
-Additionally, she may forge a Grace for a particular being, given a dot of
-gossamer.  The Carver need have no specific skill in crafting gossamer, but
-the Grace must be forged as a magical artifact of some sort.  If it passes to
-someone else, the normal consequences follow for its bearer.
+At Craft 4 and Essence 4, the Carver can make objects which train Attributes
+(but not Attribute Specialties), Virtues or Willpower.  Alternatively she may
+create items which are not training aids but powerful talismans: once per day
+the owner may pay a point of Willpower to add one die to all rolls for a
+specific Ability, until the end of the scene.  This does not count as a die
+added by Charms, but the owner may benefit from only one such talisman.  As
+before, the item may passed to other owners, may be magical or mundane, and
+will permanently lose this power if damaged.
+
+A second purchase of this Charm at Craft 5 and Essence 5 means that her
+creations can train even Essence, though they cannot enlighten those who do
+not already have access to their Essence.  Additionally she may forge a Grace
+for a particular being, given a dot of gossamer.  The Carver need have no
+specific skill in crafting gossamer, but the Grace must be forged as a magical
+artifact of some sort.  If it passes to someone else, the normal consequences
+follow for its bearer.
 
 
 name: eed, Erisian Elemental Distillation

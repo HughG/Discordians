@@ -298,6 +298,8 @@ review:
 
 text: TODO
 
+[TODO: Hmm, maybe this should be Sorcery?]
+
 This Charm enables the power of any successfully-applied Compulsion, Emotion,
 Illusion or Servitude effect to extend gradually to a larger target group, in
 a contagious manner.  The effect to be extended may come from a Charm used in

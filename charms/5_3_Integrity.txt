@@ -109,25 +109,6 @@ Charm gains the character a point of Podge but, if that takes the count over
 10, the consequences are still delayed until the end of the scene.
 
 
-name: sos1, Softening of Suasion
-cost: - (+1wp)
-mins: Integrity 1, Ess 2
-type: Permanent
-key: None
-dur: Permanent
-dep:
-review: 
-
-text: TODO
-
-When activating any Charm or Combo which applies unnatural mental influence to
-its target, the character can pay an additional point of Willpower to remove
-the unnatural quality, though any specific keywords remain.  Doing this allows
-the character to reduce her Hodge rating by one point, to a minimum of zero,
-regardless of whether or not the target expends Willpower to reduce the
-natural mental influence.
-
-
 name: sos2, Savor of Submission
 cost: - (1wp)
 mins: Integrity 1, Ess 2
@@ -139,12 +120,15 @@ review:
 
 text: TODO
 
-Whenever the character is subject to unnatural mental influence and could pay
-Willpower to resist it (i.e., she has sufficient temporary Willpower), she may
-instead choose to submit to it and pay a single point of Willpower to reduce
-her Podge rating by one point, to a minimum of zero.  She still cannot choose
-to go along with unacceptable orders, and may be prevented from acquiescing by
-other effects.
+Whenever the character is subject to hostlie unnatural mental influence and
+could pay Willpower to resist it (i.e., she has sufficient temporary
+Willpower), she may instead choose to submit to it and pay a single point of
+Willpower to reduce her Podge rating by one point, to a minimum of zero.  She
+still cannot choose to go along with unacceptable orders, and may be prevented
+from acquiescing by other effects.  Influence is deemed hostile if the
+character believes that there is at least a good chance that acquiescing to it
+will be harmful to her values, goals or interests.  A character cannot apply
+this Charm's effect to beneficial or neutral mental influence.
 
 The cost is always 1 Willpower and the reduction one point of Podge,
 regardless of how many points of Willpower would be required to resist the

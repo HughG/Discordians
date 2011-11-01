@@ -43,9 +43,25 @@ Bureaucracy themes to affect:
 
 Ideas:
 
-* Carmine/Vermilion Ribbon Entaglement: "grapple" which slows progress in
-  the target project, increasing its duration and/or imposing an external
-  (or, internal?) penalty.
+* DONE Paper Dragon Coils: grapple-style continuing opposed roll to put a
+  project on hold.
+
+  * Carmine/Vermilion Ribbon Entaglement: "grapple" which slows progress in
+    the target project, increasing its duration and/or imposing an external
+    (or, internal?) penalty.
+
+* Paper Dragon Claws: allow you to act as if a member of the org, removing
+  external penalties from not being a member.
+
+* Monkey? Insert self into hierarchy, including gods & demons.
+
+* Tape-Evading X Maneuver: removes a single Bureaucractic obstacle.
+
+* Double-Dealing X: allow org to perform multiple projects simultaneously at
+  full efficiency, as long a character is involved in one; doesn't remove need
+  for physical resources, labor etc.
+
+* X: UMI to make org good at something opposed to its policies?
 
 * Perfect reproduction of official signature/stamp -- not a forgery, rather an
   excercise of perfect skill.  Allows a specific document to be signed, or
@@ -57,35 +73,300 @@ Ideas:
   temporary as Illusion.  Or, shed something (staff, Intimacies, Magnitude) to
   deflect negative effects (remove penalties).
 
-* Contract-Rending Claw: allow the organisation to back out of a deal without
-  penalties, by finding some weak point in the contract; and/or, force them to
-  break a deal, possibly suffering the negatives.  (Compare with DB Charm for
-  putting nasty clauses in.)  Maybe upgrade to break Geasa, Eclipse-style
-  oaths etc.?
+* DONE Contract-Rending Claw: allow the organisation to back out of a deal
+  without penalties, by finding some weak point in the contract; and/or, force
+  them to break a deal, possibly suffering the negatives.  (Compare with DB
+  Charm for putting nasty clauses in.) Maybe upgrade to break Geasa,
+  Eclipse-style oaths etc.?
 
 * Cutting off a smaller part from the whole; pulling a local office out of the
   larger organisation.
 
 * Record-Correction Maneuver, Decision-Bending Prana
 
+* Affecting Backgrounds such as Backing, Connections, etc.
+
 > Discordian Martial Arts (DMAs) apply the principles of Martial Arts --
-  focus, specialisation, style -- to other Abilities.  Only those who can
-  learn Sidereal Martial Arts can learn them, though they are not as powerful
-  as those Arts, being concerned with slightly more mundane endeavors.  In
-  general thay have a similar structure to Celestial Martial Arts, usually
-  require Essence between 3 and 7, may require some device to be worn or
-  wielded in the same vein as form weapons, and tend not to have Charms which
-  are of type Simple (Dramatic Action) or of duration longer than a scene,
-  including Indefinite [unless the Charm affects some other thing which has a
-  duration longer than a scene?]
+  focus, specialisation, style -- to other Abilities.  Practitioners must have
+  a rating of at least 3 in Martial Arts, as well as meeting the minimums for
+  each Charm.  Only those who can learn Sidereal Martial Arts can learn them,
+  though they are not as powerful as those Arts, being concerned with slightly
+  more mundane endeavors.  In general thay have a similar structure to
+  Celestial Martial Arts, usually require Essence between 3 and 7, may require
+  some device to be worn or wielded in the same vein as form weapons, and tend
+  not to have Charms which are of type Simple (Dramatic Action) or of duration
+  longer than a scene, including Indefinite [unless the Charm affects some
+  other thing which has a duration longer than a scene?].
 
 
-name: b, Blah
-cost: --
-mins: Martial Arts 1, Ess 1
-type: Permanent
-key: None
-dur: Permanent
+name: pdc, Paper Dragon Coils
+cost: 2m
+mins: Bureaucracy 3, Ess 3
+type: Simple (Speed 6 in long ticks)
+key: Combo-OK, Social
+dur: Instant
 dep:
 
 text: TODO
+
+[TODO: Not sure this Charm seems powerful enough.  Perhaps I should just
+introduce the notion of a "Social/Bureucratic Clinch" as a new standard
+action, and this Charm should enhance it, adding successes, penalties and/or
+dragging out the duration?  If so, I guess groups would always be free to
+leave -- so not physically clinched -- but would lose face (i.e., Loyalty) if
+they did so.]
+
+The Erisian uses this Charm to supplement a Bureacracy action in which he
+commands or persuades one organisation to oppose another, attempting to turn
+the interaction into a bureaucratic clinch.  The opposition may be a direct
+engagement such as contract negotiation or competition in some market, or an
+indirect contest for something else such as territory, trade rights and so on.
+
+The attacking organisation rolls ([Charisma, Manipulation or Intelligence] +
+Bureaucracy), adding (Essence) successes, and compares it to the target's MDV,
+factoring in Magnitude bonuses unless the two leaders act face-to-face in a
+"duel".  Success means that the target organisation can do nothing effective
+in that action, and the attacking organisation can do one of the following
+things.  It can do nothing else, without a flurry.
+
+Break Hold: The attacking group suddenly disengages, leaving its opponents in
+confused disarray.  The target group must take an action to marshal its
+efforts, so can do nothing else without a flurry, and is at a -1 MDV penalty
+for that time.
+
+Crush: The leader of the target organisation loses a number of Loyalty points
+equal to half the extra successes on the attack roll, rounded up.
+
+[TODO: Maybe Crush should impose (cumulative) internal penalties, which
+gradually reduce over time?]
+
+Hold: The attacking organisation simply keeps the target body busy, preventing
+it from carrying out any other activities. 
+
+On subsequent actions, the two sides must make an opposed roll of ([Charisma,
+Manipulation or Intelligence] + Bureaucracy), though the character's side
+gains no bonus successes from this Charm, unless it is reactivated.  The
+winner gainst control of the clinch and may take one of the three actions
+above.  The losing side cannot apply its MDV against attacks without a stunt,
+but can use reflexive Charms or actions.  Individual members of each side may
+take other actions as individuals, as long as enough remain committed to the
+interaction to keep the group at the same level of Magnitude.  If the leader
+of either group takes separate actions without a flurry, that group
+automatically loses the clinsh on that action.  If both leaders take other
+actions, the clinch ends with no further effects.
+
+At Essence 4 the interval for the opposed rolls increases to a week, and at
+Essence 5 to a month.
+
+
+name: pdk, Paper Dragon Claws
+cost: 2m
+mins: Bureaucracy 3, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK, Social
+dur: Instant
+dep:
+
+text: TODO
+
+This Charm is used as part of a social attack against a group, tearing away at
+its integrity by confusing the members as to where their loyalties should lie.
+The character frames his attack it as best he can in terms of the group's
+standards and processes, and attempts to subtly phrase his intent to allow it
+to be misinterpreted as being in line with the group's Policy. This imposes an
+external penalty of -(Essence ÷ 2) on the leader's Parry MDV. If the attack
+succeeds, the leader loses (Bureaucracy) Loyalty points even if he accedes to
+the request or, if he resists, a further (Bureaucracy ÷ 2) points beyond the
+one he spends to resist.
+
+
+name: pds, Paper Dragon Scales
+cost: 2m
+mins: Bureaucracy 3, Ess 3
+type: Reflexive (Step 1)
+key: Combo-OK, Stackable
+dur: One scene
+dep:
+
+text: TODO
+
+By following and filling out the expected forms, one can persuade a group to
+accept what an individual would not. This Charm allows the character to
+understand the signs and procedures of a target group, causing it to regard
+him as having the same authority as any normal member of the group. This
+removes any penalties to actions due to not being a member, and may reduce the
+difficulty of some actions by up to (Bureaucracy) or make valid some actions
+which would otherwise be impossible, at the Storyteller's discretion. The
+character is treated as having a Backing rating of (Bureaucracy ÷ 2) in the
+organization. The character does not automatically know the details of the
+organisation's functioning but can normally find them out with little effort,
+including where specific information, resources and individuals can be found.
+Keys, passwords and the like may require further effort to obtain.
+
+The effect is not an Illusion, so the members will still know that he is not
+in fact one of them, absent any other disguise etc.  Rather, he is treated as
+a close trading partner, visiting academic, allied akuma or the like.  If he
+does something which is obviously suspicious or counter to the group's
+interests, he may be come subject to penalties or active opposition.
+
+In the case of groups which overlap, or a group which harbors some inner
+circle or fifth column, the character can activate this Charm multiple times
+to gain access to several groups at once, provided he aware of their
+existence.
+
+
+name: tpfp, Threefold Paper Fan*Process
+cost: 3m per action; or 3m per action, 1wp
+mins: Bureaucracy 4, Ess 3
+type: Extra Action
+key: Combo-OK
+dur: Instant or Indefinite
+dep:
+
+text: TODO
+
+This Charm provides a magical flurry of up to (Essence) Bureaucracy actions,
+either to the character or to a group for which the character acts.  If
+relevant, the MDV or DV penalty for the flurry is the highest penalty of any
+one action.  If a group makes the flurry, the character need not lead it but
+must take or aid in at least one of the actions.
+
+If two or more of the actions constitute the beginning of long-term projects
+(that is, the first roll of a series of extended rolls), the character can
+commit both the motes and a point of Willpower to these efforts. Doing so
+brings a synergy which allows the group to undertake more concurrent work than
+it normally could, and benefit from reduced MDV and DV penalties in doing so.
+The groups efforts may still be hampered due to lack of Resources, for
+example, but not lack of staff (that is, Magnitude). This use of the Charm
+ends if the character release the motes, or ceases to be involved in at least
+one of the projects, or once all the projects end. At Essence 4, the character
+can apply any number of these extra actions to the same project, allowing
+multiple rolls at each interval, with the aim of reducing the project's
+duration.
+
+
+name: crk, Contract-Rending Claws
+cost: 4m, 1wp
+mins: Bureaucracy 4, Ess 3
+type: Simple (Speed 6 in long ticks)
+key: Combo-OK, Social
+dur: Instant
+dep: pdk
+
+text: TODO
+
+This Charm allows the character to instantly free a target organisation from a
+contract or other promise without any penalties. If the contract is reinforced
+by Charms or Sorcery, for example the Dragon-Blooded Charm known as Drowning
+in Negotiation Style or the spirit Charm called Geas, then the character must
+succeed on a roll of ([Manipulation or Intelligence] + Bureacracy) at a
+difficulty equal to the Essence of the source of the effect. Failure indicates
+that the binding stands, whereas a botch terminates it and causes any
+penalties to apply at maximum effect.
+
+At Essence 4+, this Charm can be activated in combat time, and can be applied
+to individuals, and to magic from any source, including Eclipse Caste and Fair
+Folk oaths.  Unless the character's Essence exceeds that of the source of the
+binding, these greater magics are only lifted for a single scene.
+
+With Bureaucracy 5 and Essence 5, the character can even excuse beings from
+all-encompassing obedience which is inherent to their nature, for example
+excusing gods from having to expend Willpower to ignore orders from their
+superiors, freeing summoned Elementals from their bindings, or having demons
+count as "strangers" in Malfeas.  Such exceptions only ever last for a single
+scene.
+
+
+name: pdf, Paper Dragon Form
+cost: 
+mins: Bureaucracy 4, Ess 3
+type: Simple (Speed 6 in long ticks)
+key: Form-type, Social
+dur: One scene
+dep: 
+
+text: TODO
+
+[Hmm ... Add his Martial Arts rating to his Bureaucracy rating for the scene.
+Add a bonus to his Dodge and Parry MDV equal to the highest (two?) of: the
+Magnitude (÷2?) of any organization of which he is a member or in which he has
+the authority of a member; his rating in Backing, Command, Cult, Henchmen,
+Infamy, Retainers, Spies. While active, he cannot have his authority in
+relation to a chosen group revoked, for the purpose of the bonus conferred by
+this Form. He can spend one mote to take a reflexive Defend Other action to
+protect any group in which he is acting, provided he is present when the
+attack is made.]
+
+
+name: rcm, Record-Correction*Maneuver
+cost: 8m, 1wp
+mins: Bur 4, Ess 3
+type: Simple (Speed 6 in long ticks)
+key: Combo-OK, Social, Illusion
+dur: Instant
+dep: frf
+
+text: Too often, those who serve a larger cause get caught up in that service
+and give it more credence than they give themselves; which is something to be
+taken advantage of. This Charm causes an organistion to deny the truth (and
+"adjust" any records) of a particular fact, or introduce a new "fact" into
+their archives and common understanding. It must be activated in the presence
+of a member of the organisation, or in one of its offices, permanent or
+temporary.
+
+The target organisation can have a Magnitude of no more than the character's
+(Essence + Bureaucracy). The datum added or removed must be about something
+external to the organisation so, for example, an Erisian cannot make himself
+the new leader of the Immaculate Order.
+
+The character rolls ([Manpiulation or Intelligence] + Bureaucracy) and adds
+his permanent Essence in successes. If this exceeds the MDV of the group's
+leader (who need not be physically present) then the unnatural mental
+influence of the Compulsion takes hold. It can be resisted at a cost of one
+Loyalty point per scene, and the effect lifts once a total of three points has
+been spent.  By that point decisions may have been made and records updated,
+depending on the efficiency of the organization.
+
+Any member of the group who was in the process of dealing with that fact (if
+it disappeared) or a closely related subject (if it just appeared) may resist
+the effect as unnatural mental influence, at a similar cost of one Willpower
+per scene, with the effect lifting (for them) once they have spend a
+cumulative total of three Willpower. If they resist, they will be certain of
+the original truth of the matter, even though many of their colleagues may be
+baffled by their strange opinion. For those who cannot or fail to resist, they
+immediately come to believe the new truth. Regardless of whether the leader or
+any number of members spend Loyalty or Willpower to resist, the character
+gains at most one point of Hodge per scene.
+
+Note that there is nothing preventing the organisation from subsequently
+correcting its observations and updating its records.  However, in the short
+term, this Charm can be remarkably useful for such tasks as escaping from the
+attentions of the Wyld Hunt.  Also, for information which is truly hard to
+discover, the organisation may never be able to re-learn the truth.
+
+
+name: dbp, Decision-Bending Prana
+cost: 8m, 1wp
+mins: Bur 4, Ess 3
+type: Supplemental
+key: Combo-OK, Social, Compulsion
+dur: Instant
+dep: frf
+
+text: A word in the right butterfly-like ear can have unexpected effects far
+away. This Charm assists an attempt by the character to manipulate a single
+in-process decision within an organisation. Its target is any single member of
+the organisation, no matter how lowly: the magic of the Charm will work its
+way toward the real decision-maker (who may or may not be the one officially
+in that role, and may or may not be the group's leader).
+
+The character rolls ([Charisma or Manipulation] + Bureaucracy) and, if the
+total exceeds the target's MDV, an unnatural mental influence of Compulsion
+causes the decision to go the way the character desires.  Either the decision
+maker or the group's leader may overrule the decision, at the time or later,
+by spending three points of Loyalty, which must be spent all at once.
+
+This Charm is only effective upon decisions which the organisation was already
+intending to make, and has not yet settled. It cannot force a group to decide
+to do something which had never crossed its collective mind. The character may
+take other actions to set up a situation which requires a decision, of course.

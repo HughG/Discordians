@@ -10,6 +10,25 @@ dep:
 text: TODO
 
 
+name: sos1, Softening of Suasion
+cost: - (+1wp)
+mins: Integrity 1, Ess 2
+type: Permanent
+key: None
+dur: Permanent
+dep:
+review: 
+
+text: TODO
+
+When activating any Charm or Combo which applies unnatural mental influence to
+its target, the character can pay an additional point of Willpower to remove
+the unnatural quality, though any specific keywords remain.  Doing this allows
+the character to reduce her Hodge rating by one point, to a minimum of zero,
+regardless of whether or not the target expends Willpower to reduce the
+natural mental influence.
+
+
 name: ppi, Personal Prestige*Insinuation
 cost: 4m
 mins: Presence 3, Ess 2

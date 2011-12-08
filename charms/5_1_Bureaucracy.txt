@@ -337,3 +337,39 @@ effect as unnatural mental influence, at a cost of 2wp.
 
 [TODO: Needs an opportunity to resist the first time, not just on subsequent
 occasions.]
+
+
+name: bpp, Bandwagon Pedlar Ploy
+cost: 6m, 1wp
+mins: Bur 4, Ess 3
+type: Supplemental
+key: Combo-OK, Compulsion
+dur: Instant
+dep: xxx
+ref: [TID, Core, 238], [TCM, Lunars, 170]
+
+text: TODO
+
+This Charm allows a character to indirectly influence the behaviour of a group
+by manipulating its circumstances.  It supplements a Bureacracy action which
+affects some aspect of the group or a society within which it operates,
+allowing the character to use unnatural mental influence to impose a
+Compulsion, adding some new Intimacy to the group's Policy.  The action must
+either affect the group directly, or affect a number of people equal to
+(target group's Magnitude + 1) in the relevant larger society, and must
+succeed for the Charm to take effect.  However, it need not apparently relate
+to the new Intimacy in any way.  For example, simply buying goods or services
+from the group would be sufficient.
+
+The change takes effect over the course of the month after the character makes
+her trades, bribes officials to change laws or whatever her action was.  At
+Essence 4 this is reduced to a week, and at Essence 5 to one day.  Only after
+this point does the desired new Policy affect the group.  Thereafter the
+policy persists unless and until the group's leader spends a cumulative total
+of 8 points of Loyalty to shake off the effect.  Any groups of Magnitude 1 or
+more which split off from the main group, any time after the Charm is
+activated, must separately spend Loyalty points to counter the effect.
+
+Mundane attempts to discern the source of the effect automatically fail, and
+those supplemented by magic are subject to an external penalty equal to the
+character's Essence.

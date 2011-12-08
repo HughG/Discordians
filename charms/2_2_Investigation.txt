@@ -14,7 +14,7 @@ dep:
 
 text: All things are one, if seen from the right angle.  This maxim is most
 often used in dissolving the boundaries between concepts, but it can also lead
-one to the secret of capturing many observations in one instance.
+one to the secret of capturing many observations in one instant.
 
 This Charm allows the character to instantly record a precise memory of the
 scene around them, for later Investigation rolls or other normal uses of
@@ -22,40 +22,53 @@ memory.  The scope of the scene is at least a radius of (Essence x 5) yards,
 possibly more if there is little detail in the scene.  The memory will include
 only what the character was able to sense at that moment, though they may turn
 on the spot in order to gain a full 360-degree record.  The effect lasts as
-long as the motes remain committed, meaning that the it could be subjected to
-several Investigation actions if time allows, or more information is gained
+long as the motes remain committed, meaning that the memory could be subjected
+to several Investigation actions if time allows, or more information is gained
 from other sources.
 
 The memory is also unnaturally clear, removing one point of external penalties
 to perception, within the range of the Charm, at the point when it is
-activated.  If this Charm is used in combos with sensory-enhancement Charms,
+activated.  If this Charm is used in Combos with sensory-enhancement Charms,
 or such Charms are already in effect, then later Investigation actions on the
 record are on the basis of the enhanced senses.
 
 
-name: erm, Evidence*Reorganisation Method
+name: erm, Evidence Reweaving*Method
 cost: 3m
 mins: Investigation 3, Ess 2
-type: Supplemental
+type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Social
 dur: Instant
 dep: iai, exc
 
 text: TODO
 
-This Charm supplements an Investigation action to provide the character with
-knowledge of how to alter evidence to affect the conclusions which later
-investigators are likely to draw.  For each success on the Investigation roll,
-the Moonlight Lyre immediately understands one change which could be made to
-alter a specific observation.  For example, she might see how to make a lock
-appear to have been picked rather than forced, make a footprint seem to be
-male rather than female, or even how to make an outright lie sound like a
-half-truth.  If these changes are made, by the character or anyone else, the
-adjustments will be undetectable by mundane means.  Detection by supernatural
-means allows the investigator to make the standard contested roll of the
-character's (Wits + Investigation) versus the other investigator's (Perception
-+ Investigation).  Making the changes takes a tenth of the time it normally
-would.
+This Charm allows the Mirror-Bearer to go beyond concealment of evidence to
+understand how to specifically mislead observers, and to do so in a moment.
+The character makes a (Wits + Investigation) roll and, for each success,
+immediately understands one change which could be made to alter a specific
+conclusion which investigators would draw.  For example, she might see how to
+make a lock appear to have been picked rather than forced, make a footprint
+seem to be male rather than female, or even how to make an outright lie sound
+like a half-truth.  The character can choose the conclusions she would lead
+people to, though the Storyteller may veto outlandish ones.
+
+If these changes are made, by the character or anyone else, the adjustments
+will be undetectable by mundane means.  Detection by supernatural means allows
+the investigator to make the standard contested roll of the character's (Wits
++ Investigation) versus the other investigator's (Perception + Investigation).
+Making the changes takes a tenth of the time it normally would.
+
+Used in Social situations, this Charm can be used before an attack, or as part
+of one, to learn how to change a target's mind about the truth or implications
+of some statement or information.  All listeners suffer an external penalty to
+their Dodge and Parry Mental Defense Values, equal to the character's
+Investigation, against any Manipulation-based attacks the character makes
+relating to the specific conclusions covered by her (Wits + Investigation)
+roll.  This penalty lasts until the end of the given Social combat.
+
+[TODO: Is this too powerful?  Maybe the number of "points of misdirection"
+should be half the successes, or something?]
 
 
 name: roi, Refuge of*Intransigence
@@ -151,6 +164,8 @@ Intimacy, which need not have been demonstrated in the current scene.  If the
 character already knows all the target's Intimacies, further successful rolls
 reveal the target's Motivation (or Motivations, in rare cases).
 
+[TODO: Rename, given there's also Needle As Compass Method?]
+
 
 name: stt, Sifting Through Tells
 cost: 5m
@@ -178,26 +193,6 @@ if possible.)
 
 If another Charm directly contests the effects of this one, add (character's
 Essence ÷ 2) successes to oppose the other Charm.
-
-
-name: sdi, Scrutiny-Deflecting Insight
-cost: 6m
-mins: Inv 3, Ess 2
-type: Reflexive
-key: Combo-OK, Social
-dur: One scene
-dep: eft
-
-text: TODO
-
-Activating this Charm allows a character to read past the expressions and
-words of anyone who is questioning her, letting her know exactly what to say
-to direct attention away from herself.  While the Charm is active, listeners
-suffer a penalty equal to (character's Investigation) to their Dodge and Parry
-MDVs whenever she uses a social attack or defense to attempt to make herself
-seem irrelevant to a line of investigation, or innocent of some transgression.
-With a suitable stunt she may even apply this penalty to attempts to shift
-interest to or cast suspicion on someone else.
 
 
 name: pds, Pattern-Disturbance Sense
@@ -238,9 +233,9 @@ text: TODO
 The name of this Charm comes from the image of changes made in the Loom of
 Fate, but it works equally well in other sorts of reality.  Activating it
 allows a character to sense the degree and type of influence which beings or
-objects are able and likely to have, or have already had, on the world.  He
-will gain this knowledge for all relevant beings and objects which he can
-currently see (or otherwise clearly sense).
+objects have had, or are likely to have, on the world.  He will gain this
+knowledge for all relevant beings and objects which he can currently see (or
+otherwise clearly sense).
 
 The measure of influence may be due to raw, Essence-fueled power, to some
 Destiny, or to mundane influence etc.  Beings with awakened Essence of 3 or
@@ -260,11 +255,41 @@ is difficulty 2, as is getting an approximate timing for past events.  Getting
 a rough idea of individuals or power groups involved in Backgrounds, or of the
 general nature of past pivotal events, is difficulty 4.  This Charm cannot
 reveal precise details, however: it might point someone out as being involved
-in an assassination, but cannot tell whether they were victim, assassin, guard
-or witness.  Trying to determine the rough shape of future events,
-associations or tendencies adds 2 to the difficulty, This is, of course,
-subject to the vagaries of Fate and chance, and anything which disturbs that
-may change what comes to pass.
+in an assassination, but cannot tell whether they were assassin, guard,
+witness, or intended victim.  Trying to determine the rough shape of events,
+associations, or tendencies which lie in the future, as opposed to the past or
+present, adds 2 to the difficulty.  This is, of course, subject to the
+vagaries of Fate and chance, and anything which disturbs that may change what
+comes to pass.
+
+
+
+name: nacm, Needle As Compass Method
+cost: 5m, 1wp
+mins: Inv 4, Ess 4
+type: Simple
+key: Combo-OK, Shaping, Stackable, Touch
+dur: Indefinite
+dep: kna
+
+text: TODO
+
+Going beyond seeing the lines of possible power in the world around them, the
+Puppeteer learns to twist them to his own ends, understanding how best to
+nudge some being or object to follow the path the he desires.  When the
+character activates this Charm, he touches the target and nominates a
+particular goal, though he need not communicate it to anyone.  As long as the
+motes remain committed, applicable actions which support the goal gain
+(Essence ÷ 2) dice, whereas those which effectively oppose it suffer an
+external penalty of (Essence ÷ 2).  Actions which simply do not contribute to
+the goal do not suffer a penalty.  If the Charm targets a being, all of its
+actions are applicable.  If it targets an object, all actions which employ
+that object are applicable, regardless of who takes the actions.  Bonus dice
+count towards the acting being's limit on dice added by Charms, but the target
+may use the character's limit if it is higher.  A character can activate this
+Charm multiple times on separate targets or on a single target, possibly to
+support different goals, but the bonuses and penalties do not stack.
+Applications from multiple characters do stack, however.
 
 
 name: lla, Ladder and Loophole*Awareness

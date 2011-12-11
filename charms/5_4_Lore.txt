@@ -21,6 +21,8 @@ text: TODO
 * Tree for opposing the Fair Folk / Sidereals (directly, or to counter Shaping
   effects, or even to re-write existing effects)?
 
+* Tree for boosting Numerology effects or other Shaping.
+
 * Something like Immanent Solar Glory, but gain Essence for interfering with a
   system, rather than maintaining it?
 
@@ -87,3 +89,34 @@ However, they will know the name if they encounter it again.
 If the target has ancestors who are anything other than extras, this Charm
 will additionally reveal those on the single most powerful lineage, going back
 (character's Essence) generations.
+
+
+name: dlu, Dream Lotus Unfolding
+cost: 5m, 1wp
+mins: Lore 4, Ess 3
+type: Simple
+key: Combo-OK, Obvious, Shaping, Stackable, Touch
+dur: One scene
+dep:
+ref: [Burgeoning Wyld Infliction; Lunars; 190]
+
+text: TODO
+
+A roll of the character's (Lore + Essence) is compared against a difficulty of
+the target's Essence.  For willing targets, add dice equal to the target's own
+Essence.  If the character targets himself, the difficulty is reduced to one.
+
+Each success provides one point of mutation which the character may inflict on
+the target.  However, the mutation takes its outward appearance from the
+target's own sense of self, so he or she may choose cosmetic details.
+Specifically, this automatically removes the benefit of the Solars'
+Destiny-Manifesting Method, though it will not overcome direct defenses like
+Integrity-Protecting Prana, except when used on a willing target.  The
+mutations unfold smoothly through the target's being in a matter of moments,
+in a disturbing yet painless and aesthetically pleasing ripple, taking effect
+at the start of the target's next action.
+
+At Essence 4, the duration increases to (Essence) days and the Charm gains the
+Training Keyword, meaning that the target can spend experience to make some or
+all of the changes permanent, and may go into experience point debt to do so.
+At Essence 5 the duration increases to (Essence) weeks.

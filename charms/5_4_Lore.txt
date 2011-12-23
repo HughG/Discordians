@@ -98,7 +98,8 @@ type: Simple
 key: Combo-OK, Obvious, Shaping, Stackable, Touch
 dur: One scene
 dep:
-ref: [Burgeoning Wyld Infliction; Lunars; 190]
+ref: [Burgeoning Wyld Infliction; Lunars; 190] [Science of Mutation; Lords of
+Creation; 73]
 
 text: TODO
 

@@ -11,12 +11,32 @@ text: TODO
 
 * Tree for knowing things without texts/evidence.
 
+Follow-on to Holo Mem Modus to give the character explicit knowledge of things
+*not* recorded or commonly known in an area, such that it could be written
+down. Penalty or +diff if something is actively hidden or secret, by mundane
+or magical means.
+
+Another follow-on related to Echoes which lets the character know things that
+would have been commonly known about the place in the time/society of an
+Echo.  [Or, is that just what the effect of Echoes would be anyway?]
+
+Something to hide self from reality? Sounds more like (anti-)Investigation, though.
+
+
 * Tree for educating others, voluntarily or otherwise.  Temporary effects?
-  Replacing facts they already know (or is that more like Memory-Reweaving
-  Discipline)?
+  Temporary Specialty?  Replacing facts they already know (or is that more
+  like Memory-Reweaving Discipline)?
+
+Group/contagious training?  Reallocate dots instead of just adding them?
+
 
 * Tree for boosting Essence, Willpower etc.  Also for reducing/transferring
   Limit and other Great Curse effects?
+
+Maybe something to extend Recumbent Destiny, Essence-hiding, or some info/identity loss, to others?
+
+Essence-tweaking Charms. Maybe something to extend Recumbent Destiny, Essence-hiding, or some info/identity loss, to others?
+
 
 * Tree for opposing the Fair Folk / Sidereals (directly, or to counter Shaping
   effects, or even to re-write existing effects)?
@@ -27,7 +47,7 @@ text: TODO
   system, rather than maintaining it?
 
 
-name: hmm, Holographic Memory Modus
+name: hmm, Holographic Memory*Modus
 cost: 3m
 mins: Lore 2, Ess 2
 type: Supplemental
@@ -52,19 +72,55 @@ something the character would reasonably be expected to know.  If not, this
 Charm allows the character to make a normal Lore roll, as if it were in fact
 within the character's experience.  If it is something the character might
 already know, this Charm reduces the difficulty by at least 1, and possibly by
-more at storyteller discretion.
+more at storyteller discretion, to a minimum of zero.
 
 The Charm may also be used to gain information applicable to a particular use
 of some other Ability, e.g., the best route through a mountain range (normally
 Survival) or the appropriate formalities in some court situation (normally
 Socialize).  In this case, each success adds one bonus die to that subsequent
-roll.  The normal limits on dice added by Charms apply.
+roll.  The normal limits on dice added by Charms apply, and at most one
+application of this Charm can apply in this way to a subsequent roll.
 
 The character does not need to speak or read any languages in which the
 information is recorded, nor actually find a partcular book or person to
 consult.  This means that, for example, one of the Authority can enhance her
 chances of success in operating an ancient artifact simply by standing briefly
-in the middle of a relevant First Age library.
+in the middle of a relevant First Age library.  Lastly, bear in mind that
+things which are generally known may not be correct.
+
+
+name: wii, Wisp Interpolation Insights
+cost: 4m
+mins: Lore 4, Ess 2
+type: Supplemental
+key: Combo-OK
+dur: Instant
+dep: hmm
+ref: [Eye of the Cat; Lunars; 179]
+
+text: TODO
+
+This Charm allows the character to make a Lore roll on topics which are known,
+but not widely, in a given area.  The subject must be one about which the
+character could not otherwise validly make a Lore roll.  Such facts and
+figures may be actively-kept secrets, obscure trivia in libraries, or simply
+humdrum details of interest to few.  The information need not be written down,
+but it must be known, even instinctively, by one or more beings of at least
+animal intelligence -- including least gods, if they are sufficiently awake.
+
+The range follows the character's Essence rating as with Holographic Memory
+Modus.  The other limit on this Charm is the maximum Magnitude of beings aware
+of the information.  Beyond Magnitude (Essence ÷ 2), any fragments of thought
+on the topic become too commonplace to stand out among all the other mental
+noise.  The character need not share a common language with the beings which
+hold the desired information but, if not, it may be communicated less clearly,
+particularly if it comes from an animal-level intelligence.  Knowledge sought
+may include hypotheses, opinions, and other such uncertain "knowledge".  If
+different information is available from separate groups, the character will
+gain insight from only the smallest of them, or one chosen by the Storyteller
+if there are several of equivalent Magnitude.  As with its precursor,
+information from this Charm will accurately represent knowledge from nearby
+beings, but their knowledge may not be correct.
 
 
 name: enan, Each Name A Net
@@ -73,7 +129,7 @@ mins: Lore 5, Ess 3
 type: Supplemental
 key: Combo-OK
 dur: Instant
-dep:
+dep: wii
 
 text: The Priests of Discord change names almost as often as they change hats,
 and most often the true name of something really doesn't matter at all.  But
@@ -91,15 +147,94 @@ will additionally reveal those on the single most powerful lineage, going back
 (character's Essence) generations.
 
 
+name: pts, Patching the Skin
+cost: 1m per 2 dice
+mins: Lore 2, Ess 2
+type: Simple
+key: Combo-OK, Stackable, Touch
+dur: One scene
+dep:
+
+text: TODO
+
+This Charm allows the character to temporarily redirect someone's focus,
+adding up to (Lore + Essence) points of Specialties across up to (Essence)
+traits.  These dots may temporarily replace any existing Specialty dots, but
+cannot increase the number of dots for a given trait beyond the target's
+maximum.  If the character or target knows any version of [Discordian Virtue
+Specialty Charm], Specialty dots can be temporarily gained or replaced in any
+Virtue.
+
+[TODO: Allow XP spend for permanent change?]
+
+
+name: rts, Reforging the Skin
+cost: 5m, 1wp [or: 3m per dot, 1wp?]
+mins: Lore 3, Ess 3
+type: Simple
+key: Combo-OK, Stackable, Touch
+dur: One scene
+dep: pts
+ref: [Nature-Reinforcing Allocation; Lunars; 163]
+ref: [Wolf Pack Training Technique; Lunars; 164]
+ref: [Burgeoning Wyld Infliction; Lunars; 190]
+ref: [Science of Mutation; Lords of Creation; 73]
+
+text: TODO
+
+A roll of the character's (Lore + Essence) is compared against a difficulty of
+the target's Essence.  For willing targets, add dice equal to the target's own
+Essence.  If the character targets himself, the difficulty is reduced to one.
+
+Each success provides one point of temporary Ability increase for the target,
+which may be divided among up to (Essence) Abilities.  Any given Ability can
+be increased by at most (Essence), and cannot be increased beyond the normal
+maximum for the target.
+
+At Essence 4, the duration increases to (Essence) days per success on the
+roll, and the Charm gains the Training Keyword, meaning that, at any time
+while the Charm is in effect, the target can spend experience to make some or
+all of the changes permanent, and may go into experience point debt to do so.
+If the Shaping effect is undone or the Charm otherwise ends before experience
+is spent, this Training opportunity is lost.  If experience is spend in this
+way, the Charm's duration ends and the character may regain the motes.  At
+Essence 5 the duration increases to (Essence) weeks per success.
+
+[TODO: Balance this against Numerology.]
+
+
+name: rth, Reforging the Heart
+cost: -- (+1m per dot)
+mins: Lore 4, Ess 3
+type: Permanent
+key: None
+dur: Permanent
+dep: rts
+ref: [Nature-Reinforcing Allocation; Lunars; 163]
+ref: [Wolf Pack Training Technique; Lunars; 164]
+ref: [Burgeoning Wyld Infliction; Lunars; 190]
+ref: [Science of Mutation; Lords of Creation; 73]
+
+text: TODO
+
+This Charm extends its prerequisite, allowing the character to add dice to
+Abilities and Virtues, as well as Attributes.  The pool of successes from the
+(Lore + Essence) roll may be split among up to (Essence) traits in total.
+
+[TODO: Balance this against Numerology.]
+
+
 name: dlu, Dream Lotus Unfolding
-cost: 5m, 1wp
+cost: 5m, 1wp [or: 3m per point, 1wp?]
 mins: Lore 4, Ess 3
 type: Simple
 key: Combo-OK, Obvious, Shaping, Stackable, Touch
 dur: One scene
-dep:
-ref: [Burgeoning Wyld Infliction; Lunars; 190] [Science of Mutation; Lords of
-Creation; 73]
+dep: pts
+ref: [Nature-Reinforcing Allocation; Lunars; 163]
+ref: [Wolf Pack Training Technique; Lunars; 164]
+ref: [Burgeoning Wyld Infliction; Lunars; 190]
+ref: [Science of Mutation; Lords of Creation; 73]
 
 text: TODO
 
@@ -117,7 +252,14 @@ mutations unfold smoothly through the target's being in a matter of moments,
 in a disturbing yet painless and aesthetically pleasing ripple, taking effect
 at the start of the target's next action.
 
-At Essence 4, the duration increases to (Essence) days and the Charm gains the
-Training Keyword, meaning that the target can spend experience to make some or
+At Essence 4, the duration increases to (Essence) days per success on the
+roll, and the Charm gains the Training Keyword, meaning that, at any time
+while the Charm is in effect, the target can spend experience to make some or
 all of the changes permanent, and may go into experience point debt to do so.
-At Essence 5 the duration increases to (Essence) weeks.
+If the Shaping effect is undone or the Charm otherwise ends before experience
+is spent, this Training opportunity is lost.  If experience is spend in this
+way, the Charm's duration ends and the character may regain the motes.  At
+Essence 5 the duration increases to (Essence) weeks per success, and any
+Mutations taken on as Training have the potential to breed true.
+
+[TODO: Allow Numerology to induce Mutations as well?]

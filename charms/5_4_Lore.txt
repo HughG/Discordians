@@ -11,16 +11,12 @@ text: TODO
 
 * Tree for knowing things without texts/evidence.
 
-Follow-on to Holo Mem Modus to give the character explicit knowledge of things
-*not* recorded or commonly known in an area, such that it could be written
-down. Penalty or +diff if something is actively hidden or secret, by mundane
-or magical means.
-
-Another follow-on related to Echoes which lets the character know things that
+Follow-on related to Echoes which lets the character know things that
 would have been commonly known about the place in the time/society of an
 Echo.  [Or, is that just what the effect of Echoes would be anyway?]
 
-Something to hide self from reality? Sounds more like (anti-)Investigation, though.
+Something to hide self from reality? Sounds more like (anti-)Investigation,
+though.
 
 
 * Tree for educating others, voluntarily or otherwise.  Temporary effects?
@@ -34,8 +30,6 @@ Group/contagious training?  Reallocate dots instead of just adding them?
   Limit and other Great Curse effects?
 
 Maybe something to extend Recumbent Destiny, Essence-hiding, or some info/identity loss, to others?
-
-Essence-tweaking Charms. Maybe something to extend Recumbent Destiny, Essence-hiding, or some info/identity loss, to others?
 
 
 * Tree for opposing the Fair Folk / Sidereals (directly, or to counter Shaping
@@ -161,9 +155,11 @@ This Charm allows the character to temporarily redirect someone's focus,
 adding up to (Lore + Essence) points of Specialties across up to (Essence)
 traits.  These dots may temporarily replace any existing Specialty dots, but
 cannot increase the number of dots for a given trait beyond the target's
-maximum.  If the character or target knows any version of [Discordian Virtue
-Specialty Charm], Specialty dots can be temporarily gained or replaced in any
-Virtue.
+maximum.  Normally Lunar and Alchemical Exalted can only gain Specialties in
+Attributes, and other beings in Abilities, unless the being has somehow gained
+Specialties in some atypical kind of trait.  If the character or target knows
+any version of Idiosyncratic Interpretation of (Virtue), Specialty dots can be
+temporarily gained or replaced in any Virtue.
 
 [TODO: Allow XP spend for permanent change?]
 
@@ -263,3 +259,32 @@ Essence 5 the duration increases to (Essence) weeks per success, and any
 Mutations taken on as Training have the potential to breed true.
 
 [TODO: Allow Numerology to induce Mutations as well?]
+
+
+
+name: erp, Essence Reflux Prana
+cost: 2m plus 1m per 2 motes, 1wp [or: 3m per point, 1wp?]
+mins: Lore 3, Ess 2
+type: Simple
+key: Combo-OK, Obvious, Touch
+dur: One scene
+dep: xxx
+ref: [Essence-Lending Method; Core; 217]
+
+text: TODO
+
+This Charm transfers up to (Lore + Essence) motes between the character and
+the target, in either direction.  If the target has multiple Essence pools,
+such as the Personal and Peripheral pools of the Exalted, it chooses how many
+motes are drawn from or added to each pool.  If the target does not have an
+Essence pool, the Charm is inapplicable and no motes are spent.
+
+If the target is unwilling, the character must make a successful attack roll
+to touch it, and the two make a contested (Essence + Lore) roll.  If the
+Erisian wins, the transfer is in the desired direction, and he gains a point
+of Podge.  If he fails, the direction is reversed, and he gains a point of
+Hodge.  In the case of a tie, nothing happens, but the motes are spent.  Used
+on a willing target, there is no contested roll and no gain of Hodge or Podge.
+
+In any case, this Charm cannot reduce either being's mote pool below zero, nor
+increase it beyond its maximum.

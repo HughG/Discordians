@@ -175,19 +175,25 @@ key: Combo-OK, Obvious, Touch
 dur: Instant
 dep: roe
 review: 2011-06-25 RWG
+ref: [Will-Bolstering Method; Core; 217]
 
 text: TODO
 
 This Charm allows the Unbending Arm to transfer Willpower between himself and
 another being.  The character may transfer a number of points up to his
 permanent Essence, in either direction, at a cost of 4 motes per point.  If
-the other being is unwilling, the character must make a successful attack to
-touch it, and the two make a contested (Essence + Integrity) roll.  If the
+the target does not have a Willpower pool, the Charm is inapplicable and no
+motes are spent.
+
+If the other being is unwilling, the character must make a successful attack
+to touch it, and the two make a contested (Essence + Integrity) roll.  If the
 Erisian wins, the transfer is in the desired direction, and he gains a point
 of Podge.  If he fails, the direction is reversed, and he gains a point of
-Hodge.  In the case of a tie, nothing happens, but the motes are spent.  In
-any case, this Charm cannot reduce the character's temporary Willpower rating
-below zero, nor increase the target's beyond its maximum.
+Hodge.  In the case of a tie, nothing happens, but the motes are spent.  Used
+on a willing target, there is no contested roll and no gain of Hodge or Podge.
+
+In any case, this Charm cannot reduce either being's temporary Willpower
+rating below zero, nor increase it beyond its maximum.
 
 
 name: iiov, Idiosyncratic*Interpretation of (Virtue)

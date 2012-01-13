@@ -9,9 +9,240 @@ dep:
 
 text: TODO
 
-* Tree for hiding self (Hidden in plain sight; proper invisibility, also with
-  concealment in other senses)
+Need maybe 1 more Charm.
 
-* Tree for hiding others, groups, or largish objects (Elephant in the Room)
 
-* Tree for not leaving traces/evidence [or is that Larceny? Survival?]
+name: hipsa, Hidden in Plain Sight*Attitude
+cost: 4m
+mins: Stealth 2, Ess 2
+type: Simple
+key: Combo-OK
+dur: Indefinite
+dep: 
+review: 
+ref: [Easily-Overlooked Presence Method; Core; 230]
+ref: [Invisible Statue Spirit; Core; 230]
+
+text: TODO
+
+The character adopts a position and stance which enable him to fit into his
+current environment, and activates this Charm, helping him appear to be part
+of the scenery.  Firstly, it removes all penalties to contested Stealth rolls
+due to an inappropriate environment (for example, lack of cover).  Secondly,
+it adds (Stealth ÷ 2) automatic successes to all such rolls.  Lastly, it
+allows him to use Manipulation in place of Dexterity when making the Stealth
+roll, if desired.  Other beings will not normally walk into the character
+accidentally, since they see him but do not recognise him for what he is,
+subliminally assuming him to be a lamp, bush, dead body or other appropriate
+item.  Effects which reveal information contradicting this may give a bonus to
+those attempting to notice the character, such as those which detect life or
+essence.
+
+This Charm ends immediately if the character moves, makes some sensory
+impression greater than the background level, activates an Obvious Charm, or
+takes a Join Battle action.  If joining battle he may apply the benefits of
+this Charm to an unexpected attack as his first action.  The concealment
+enhancements offered by this Charm have no effect on those who were able to
+perceive the character in the tick before he activated it, so the character
+must temporarily find some other way to hide before he can to use it in
+reestablishing surprise.
+
+
+name: ceop, (Conceal Evidence of Passage)
+cost: xxx
+mins: Stealth 3, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: Indefinite
+dep: 
+review: 
+ref: [Trackless Passage Style; Dragon-Blooded; 137]
+ref: [Crafty Observation Method; Core; 213]
+
+text: TODO
+
+Conceal evidence of passage and actions, effetively getting a free continual
+"Conceal Evidence" action with bonuses.
+
+
+
+name: sse, Standing Somewhere Else
+cost: 6m, 1wp
+mins: Stealth 3, Ess 3
+type: Simple
+key: Combo-Basic
+dur: Indefinite
+dep: hipsa
+review: 
+ref: [Invisible Statue Spirit; Core; 230]
+
+text: TODO
+
+This Charm allows the character to draw a twisting, fractal-folded shroud of
+the unfabric of Elsewhere around her form, almost entirely removing her from
+the reality in which she stands.  While hidden she cannot move with respect to
+her original location, and will always reappear there when the Charm ends.
+
+All mundane attempts to observe or interact with her automatically fail,
+meaning that mortals may walk right through the space she previously occupied.
+Charms or other magic which attempt to locate her, or hidden things, or the
+magic of the Charm itself, have their base difficulty increased to her
+(Stealth + Essence) if it would otherwise be less.  Against automatically
+successful effects such as Eye of the Unconquered Sun, this Charm forces a
+contested roll and adds the character's Stealth in automatic successes.  If
+detection succeeds, the character's location is determined with an accuracy of
+([threshold successes - character's Stealth] x 5) yards, to a minimum of
+pinpoint accuracy at zero yards.
+
+While concealed, the character cannot be spatially targeted for any actions
+other than attempts to locate her.  Even once her location is precisely known,
+she cannot be targeted with physical weapons, even magical ones, or Touch
+effects.  Damage and other unpleasant effects from natural area effects are
+completely negated, while those from magical sources are delayed (Essence)
+actions as the magic must work its way through strange folds of space to reach
+the character.  If the character notices such an effect and deactivates the
+Charm before it reaches her, she is unaffected, though the effect might still
+be active in her original location.
+
+The downside of this Charm is that the character's isolation works both ways,
+so she suffers a -5 external penalty to perceive events in her original
+location, including magical area effects which might hurt her after a delay.
+She cannot target anything or anyone there with any directed or area actions
+or effects, mundane or magical, other than to observe them.
+
+Effects which allow someone to see into Elsewhere completely bypass this
+Charm's concealment, but do not normally work around the protection from
+damage it provides.  It is not possible for the character to use any magical
+effects to automatically succeed in seeing out from under her cloak, though
+she may enhance her senses.  Effects which target a being as a unique
+individual or through some arcane or other remote link also completely bypass
+this Charm's shield, in either direction, and are not delayed by it.  The
+character is not made immaterial by this Charm and so is not specially
+affected by magic which targets such beings.
+
+
+name: hioo, (Hide Importance of Object)
+cost: xxx
+mins: Stealth 3, Ess 2
+type: Simple
+key: Combo-OK, Illusion, Touch
+dur: Indefinite
+dep: 
+review: 
+
+text: TODO
+
+Makes an object seem unremarkable.  Doesn't adjust Resources value (much) but
+hides any distinguishing marks or unique identity.  Observers will make
+somewhat accurate descriptions but harder to recognise the object from that.
+
+At higher Stealth/Ess, apply to objects not in the character's possession, and
+to living beings.  BUT compare to Larceny Charm Identity Theft.
+
+[Note: sort of the opposite of Larceny Charm Value-Adding Veneer.]
+
+
+name: ywt, Yeddim Whitewash Trick
+cost: 4m, 1wp
+mins: Stealth 3, Ess 3
+type: Simple
+key: Combo-OK, War
+dur: Indefinite
+dep: exc, hipsa
+review: 
+
+text: TODO
+
+This Charm improves its prerequisite, allowing it to be applied to a group of
+beings up to the character's (Essence - 1) in Magnitude, or to one or more
+inanimate objects in a volume of space roughly equivalent in size to that
+number of humans, or any equivalent combination of beings and objects.
+Additionally, the group may take Move, but not Dash, actions at up to a third
+of its normal movement rate.  Doing so does not automatically break
+concealment but prompts another (Perception + Awareness) roll from observers
+and gives them a +2 bonus.  The character may use this Charm on himself alone
+to allow movement while concealed.  If the Charm is deactived once those
+concealed have found some other suitable cover, it provides no benefits on
+further Awareness checks, but ending the Charm does not in itself prompt
+such a check.
+
+Used in War, the Charm has a Speed of 5 long ticks and may conceal any unit
+that the character is a member of, not only one he leads, though he must be
+able to persuade the unit to act in such a way as not to counteract the
+concealment.  The Charm is not limited to a given Magnitude of unit but,
+similar to normal attempts at concealment in battle, the character rolls
+([Dexterity or Manipulation] + Stealth - Magnitude).  The unit need not have
+cover but, if it does, the Storyteller may assign additional bonuses, for
+example treating any DV bonuses against ranged attaks (Exalted Core, p. 147)
+as providing equivalent bonus dice to the roll.
+
+[TODO: State range.]
+
+
+name: erd, (Extend Recumbent Destiny)
+cost: xxx
+mins: Stealth 4, Ess 3
+type: Simple
+key: Combo-OK, Shaping
+dur: Indefinite
+dep: ywt
+review: 
+ref: [Gift of a Broken Mask; Sidereals; 171]
+
+text: TODO
+
+Extend Recumbent Destiny to a social or mass combat group ... once I've worked
+out what RD should really be.  Maybe should be Occult, if RD still works that way.
+
+[TODO: State range.]
+
+
+name: hfr, (Hiding From Reality)
+cost: xxx
+mins: Stealth 4, Ess 3
+type: Reflexive (Step 1 or Step 2)
+key: Combo-OK, Shaping
+dur: Indefinite
+dep: ceop
+review: 
+
+text: TODO
+
+Concealing self from Fate, Unquestionables, large-scale/long-range scrying and
+equivalents in other realms.  (Could help explain why none were found after
+Usurpation.)  Makes him automatically aware of such attempts?
+
+
+name: hsag, (Hide Self as Group)
+cost: xxx
+mins: Stealth 4, Ess 4
+type: Simple
+key: Combo-OK, Shaping
+dur: Indefinite
+dep: hipsa, hfr
+review: 
+
+text: TODO
+
+Hide self as a group of apparent extras.
+
+See also Survival Charm "Living-With-Rocks Approach".
+
+
+name: dcp, (Deep Cover Persona)
+cost: xxx
+mins: Stealth 5, Ess 4
+type: Simple
+key: Combo-OK
+dur: Indefinite, Shaping
+dep: hfr, hioo
+review: 
+ref: [Ceasing to Exist Approach; Sidereals; 172]
+
+text: TODO
+
+Create an alternative deep cover alternate-personality.  (Could persist into
+next Exaltation after death, explaining why none have been found for some
+time.)  Stackable!
+
+Also add follow-on for Survival Charm "Living-With-Rocks Approach"?

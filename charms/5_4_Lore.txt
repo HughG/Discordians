@@ -9,13 +9,7 @@ dep:
 
 text: TODO
 
-* Something to hide self from reality? Sounds more like (anti-)Investigation,
-though.
-
 * Group/contagious training?  Reallocate dots instead of just adding them?
-
-* Something to extend Recumbent Destiny, Essence-hiding, or some
-info/identity loss, to others?
 
 * Tree for opposing the Fair Folk / Sidereals (directly, or to counter Shaping
   effects, or even to re-write existing effects)?
@@ -133,7 +127,7 @@ mins: Lore 5, Ess 3
 type: Supplemental
 key: Combo-OK
 dur: Instant
-dep: wii
+dep: exc, wii
 
 text: The Priests of Discord change names almost as often as they change hats,
 and most often the true name of something really doesn't matter at all.  But
@@ -236,7 +230,7 @@ mins: Lore 4, Ess 3
 type: Simple
 key: Combo-OK, Obvious, Shaping, Stackable, Touch
 dur: One scene
-dep: sant
+dep: exc, sant
 ref: [Nature-Reinforcing Allocation; Lunars; 163]
 ref: [Wolf Pack Training Technique; Lunars; 164]
 ref: [Burgeoning Wyld Infliction; Lunars; 190]
@@ -271,6 +265,37 @@ Mutations taken on as Training have the potential to breed true.
 [TODO: Allow Numerology to induce Mutations as well?]
 
 
+name: asa, Anima-Swathing*Artifice
+cost: 2m
+mins: Lore 1, Ess 2
+type: Reflexive
+key: Combo-OK
+dur: One scene
+dep: 
+ref: [Soft Presence Prana; Sidereals; 170; with errata]
+
+text: TODO
+
+Once activated, this Charm reduces the effect on the character's anima of her
+spending Essence from her Peripheral pool.  The total number of motes spent in
+each action period is divided by two, rounded down, to a minimum of one, to
+determine its contribution to the level of Divisional mark and anima visibility.
+Obvious Charms remain so.  This does not increase the effective size of her
+mote pool.
+
+If the Chaos Child currently has motes and Willpower committed to make her
+appear as a mortal with no mote pool, then this Charm itself does not
+contribute to anima visibility at all, and its duration increases to
+Indefinite.  In that case, when this Charm ends, the character's Divisional
+mark and anima immediately show at a level matching her currently level of
+expenditure from her Peripheral pool.  This may result in a totemic-level
+flare, even though she is not at that moment spending Essence.
+
+[TODO: Maybe this and/or ERP should move into Occult, along with
+Anima-Supressing Intervention?  It already has a lot of Charms, but 2-3 are
+Sorcery, and I'd like to add one or two more to Lore.  Could move EEE into
+Lore, but that puts the two Elemental Charms into 5th Division.  Hmm...]
+
 
 name: erp, Essence Reflux Prana
 cost: 2m plus 1m per 2 motes, 1wp [or: 3m per point, 1wp?]
@@ -278,7 +303,7 @@ mins: Lore 3, Ess 2
 type: Simple
 key: Combo-OK, Obvious, Touch
 dur: One scene
-dep: sant
+dep: asa, sant
 ref: [Essence-Lending Method; Core; 217]
 
 text: TODO

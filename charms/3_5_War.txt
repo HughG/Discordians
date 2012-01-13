@@ -239,33 +239,3 @@ They appear as normal for the group, but are unreal, soulless beings, similar
 to those produced by Wyld-shaping magic.  This increase in Magnitude cannot be
 applied to solo units.  When the Charm's effect ends, the extra members of the
 unit vanish without a trace.
-
-
-name: gru, Grass Rises Up
-cost: 4m, 1wp
-mins: War 4, Ess 3
-type: Simple (Speed 5 in long ticks)
-key: Combo-OK, War
-dur: Indefinite
-dep: flt
-
-text: TODO
-
-This Charm enhances the ability of a unit to conceal itself.  Before war is
-joined, it adds (Essence ÷ 2) dice to attempts to establish an ambush.  During
-combat it constitutes an action to re-establish surprise, provided the unit is
-not engaged with any enemy units and can remain unobserved by the unit(s) it
-wishes to surprise for at least 1 long tick.  In either case, the Charm
-removes any penalties due to lack of appopriate cover (making the action
-possible even in the complete absence of cover).  If the unit finds cover, any
-DV bonuses against ranged attaks provide equivalent bonuses to rolls against
-enemy units' (Perception + Awareness).  Given even the slightest cover, the
-unit may also move while concealed, but at no more than a third of its normal
-movement rate.  Each such Move action prompts another (Perception + Awareness)
-roll from any possible observers, giving them a +2 bonus.
-
-The Charm's effect ends as soon as the concealed unit makes an attack.  The
-character may end the Charm's effect early, for example, once the unit is
-concealed behind suitable cover.  Doing so removes any bonuses from the Charm
-but does not automatically end the concealment, nor does it prompt another
-(Perception + Awareness) roll from observers.

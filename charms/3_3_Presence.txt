@@ -102,10 +102,11 @@ name: mlm, Mind-Luring Mien
 cost: 3m
 mins: Presence 2, Ess 2
 type: Reflexive (Step 1 or Step 2)
-key: Combo-OK, Obvious, Social
+key: Combo-OK, Compulsion, Obvious, Social
 dur: (Essence) actions
 dep:
 review: 2011-06-25 RWG
+update: 2012-01-13 HG: Added natural Compulsion
 
 text: TODO
 
@@ -113,12 +114,12 @@ When this Charm is activated, all creatures who can perceive the Erisian
 Knight find his presence so overwhelming and intrusive that they find it
 difficult to ignore him.  The character rolls (an appropriate Social Attribute
 + Presence) and compares it to the MDV of each onlooker.  Any whose MDV is
-exceeded by this total suffer a -2 external penalty to all actions whose focus
-does not include the character, for the duration of the Charm.  Targets will
-instinctively realise that it will be easier to interact with the character
-than to ignore him.  However, if a target succeeds at an action which excludes
-the character, the penalty drops to -1.  This Charm may be used in both combat
-and social situations.
+exceeded by this total suffer a natural mental influence which applies a -2
+external penalty to all actions whose focus does not include the character,
+for the duration of the Charm.  Targets will instinctively realise that it
+will be easier to interact with the character than to ignore him.  However, if
+a target succeeds at an action which excludes the character, the penalty drops
+to -1.  This Charm may be used in both combat and social situations.
 
 
 name: ipa, Instant Parley Agreement
@@ -247,6 +248,7 @@ key: Combo-OK
 dur: One scene
 dep: mlm
 review: 2011-06-25 RWG
+ref: [One of the Herd; Lunars; 176]
 
 text: TODO
 

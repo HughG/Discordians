@@ -160,6 +160,11 @@ in an area around the target reduce the penalties and bonuses of this Charm by
 an amount equal to the difference in Essence between the character and the
 source of the effect, to a minimum of zero.
 
+[TODO: Does the Duration make sense here?  I was thinking of "a scene" as
+covering several rolls in an extended series, but I'm not sure that's how
+other STs would see it.  Maybe I can say that explicitly?  Or make it be
+"(Essence) Dramatic Actions" or something?]
+
 
 name: lwra, Living-With-Rocks*Approach
 cost: 6m + 1wp

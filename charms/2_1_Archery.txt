@@ -140,6 +140,7 @@ type: Reflexive (Step 1 or Step 2)
 key: Combo-OK
 dur: One scene
 dep:
+ref: <http://forums.white-wolf.com/default.aspx?g=posts&t=57107>
 
 text: TODO
 
@@ -277,14 +278,13 @@ and will make the target aware of the attempt at unnatural influence.
 
 By spending an additional 3 motes and 1 Willpower, the Exalt can cause the
 emotion to fade gradually over the course of (character's Essence) days.
-After the first scene, the effect can be resisted for only one Willpower.
+After the first scene, the effect can be resisted for only 1 Willpower.
 However, even once they have resisted it, the target will tend to regard the
 temporary emotional aberrance as having been genuinely their own, fabricating
 some convincing explanation for themselves, until the Charm's duration ends.
 If they are to recognise and remember the unnatural effect once the Charm has
-ended, they must spend a further 2 Willpower (or 1 Willpower, if they have
-recognised this Charm's used on themselves or others before); after that they
-become permanently aware of what happened.  Witnesses may spend 1 Willpower to
+ended, they must spend a further 2 Willpower, after which they become
+permanently aware of what happened.  Witnesses may spend 1 Willpower to
 realise the source of the emotion provided they saw the Exalt's attack, but
 they may do this at any time at or after that initial attack.
 

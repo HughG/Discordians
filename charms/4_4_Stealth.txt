@@ -44,8 +44,8 @@ takes a Join Battle action.  If joining battle he may apply the benefits of
 this Charm to an unexpected attack as his first action.  The concealment
 enhancements offered by this Charm have no effect on those who were able to
 perceive the character in the tick before he activated it, so the character
-must temporarily find some other way to hide before he can to use it in
-reestablishing surprise.
+cannot use it to reestablish surprise during battle without first finding some
+other way to hide.
 
 
 name: ceop, (Conceal Evidence of Passage)
@@ -105,20 +105,21 @@ Charm before it reaches her, she is unaffected, though the effect might still
 be active in her original location.
 
 The downside of this Charm is that the character's isolation works both ways,
-so she suffers a -5 external penalty to perceive events in her original
+so she suffers a -4 external penalty to perceive events in her original
 location, including magical area effects which might hurt her after a delay.
-She cannot target anything or anyone there with any directed or area actions
-or effects, mundane or magical, other than to observe them.
+She cannot target anything or anyone there with any individually targeted or
+area actions or effects, mundane or magical, other than to observe them.
 
 Effects which allow someone to see into Elsewhere completely bypass this
 Charm's concealment, but do not normally work around the protection from
 damage it provides.  It is not possible for the character to use any magical
-effects to automatically succeed in seeing out from under her cloak, though
-she may enhance her senses.  Effects which target a being as a unique
-individual or through some arcane or other remote link also completely bypass
-this Charm's shield, in either direction, and are not delayed by it.  The
-character is not made immaterial by this Charm and so is not specially
-affected by magic which targets such beings.
+effects which guarantee absolute success to see out from under her cloak,
+though she may enhance her senses, including use of the second excellency.
+Effects which target a being as a unique individual or through some arcane or
+other remote link also completely bypass this Charm's shield, in either
+direction, and are not delayed by it.  The character is not made immaterial by
+this Charm and so is not specially affected by magic which targets such
+beings.
 
 
 name: hioo, (Hide Importance of Object)
@@ -230,19 +231,96 @@ See also Survival Charm "Living-With-Rocks Approach".
 
 
 name: dcp, (Deep Cover Persona)
-cost: xxx
+cost: 10m, 2wp
 mins: Stealth 5, Ess 4
 type: Simple
-key: Combo-OK
-dur: Indefinite, Shaping
+key: Combo-OK, Shaping, Stackable
+dur: Indefinite
 dep: hfr, hioo
 review: 
 ref: [Ceasing to Exist Approach; Sidereals; 172]
 
 text: TODO
 
-Create an alternative deep cover alternate-personality.  (Could persist into
-next Exaltation after death, explaining why none have been found for some
-time.)  Stackable!
+This Charm wraps the Exalt's normal self inside another, constructed
+personality and body, enabling her to act as a deep-cover agent over a
+prolonged period.
 
-Also add follow-on for Survival Charm "Living-With-Rocks Approach"?
+Her identity is buried so deeply that even she will not be aware of who she
+truly is.  On activation she must specify at least one trigger condition which
+will cause the Charm to end, and may specify up to (Essence) independent
+triggers.  The condition must be one which her new identity would be able to
+perceive and understand, in terms of normal and magical senses, languages
+known and so on.  It can be as simple or as complex as desired, but will only
+be triggered when the new identity becomes aware of it.  So, for example, a
+trigger to end the Charm "when the Jade Prison is broken" would only take
+effect when the new self learned that it had happened, not when it actually
+occurred.  Indeed, it would trigger when he believed that it had happened,
+even if the prison was in fact still sealed.  Similarly, "when I meet Chejop
+Kejak's murderer" would trigger when the new self believed that he had met
+someone who had committed that murder, even if they had not, nor if he met the
+murderer but didn't realise it.
+
+[TODO: Is "jade prison" right?]
+
+The character may choose any of the following types of being for her new self:
+another Discordian of the same Division and Parametadivision, having up to her
+current Essence; a being of the type which her Parametadivision mimics, again
+having up to her current Essence; a mortal or unenlightened heroic mortal up
+to Essence 2 (or equivalent unenlightened being in any realm of reality); or
+even a god, spirit, demon or similar being not belonging to a
+Parametadivision, up to her current Essence, although this choice is risky
+because she is granted no particular magic to mimic the powers of such beings.
+
+If the character chooses an unenlightened identity, she cannot access her
+Essence pool except to retain attunement artifacts (for example, demon
+tattoos) or to subconsiously activate non-Obvious reflexive perfect physical
+or mental defenses, including those in a Combo with Charms which negate
+surprise attacks.  She cannot spend motes to activate artifact powers.  If
+Charm activations come only from her Personal pool, this does not end the
+Charm.  Spending from her Peripheral pool immediately ends all activations of
+the Charm, however.  She will interpret her survival as a lucky miracle.
+Applying or resisting unnatural mental influence still gains the character
+points of Hodge and Podge while in her disguised form, though she will be
+unaware of their effects and may not understand when she enters Limit Break.
+Any magical effects which have made certain things unacceptable orders, beyond
+those which would harm her, still apply to her new self.
+
+Donning this new guise, the character is subject to a reversed Recumbent
+Destiny effect, as powerful as if she had spent her full temporary Willpower
+pool on it.  Memories and minor details of reality are shaped to make it seem
+that this new identity has existed since the onset time of the Recumbent
+Destiny, and those affected will remember the new face clearly.  Attempts to
+find the character with the Loom of Fate are not impeded.  Instead the
+increased difficulty applies if anyone tries to follow the thread back to the
+original identity.
+
+The Discordian's new self has the same Traits as her original self, except for
+Motivation, Intimacies and Backgrounds.  The new identity has an entirely new
+Motivation, selected by the character when the Charm is activated.  Likewise
+new Intimacies are selected, under the control of the Storyteller, though the
+player may make suggestions.  The character loses access to all her existing
+Backgrounds except for Artifact and Manse (and its Underworld and Heavenly
+variants), and will lose even Manse if she chooses an unenlightened identity.
+However, she gains up to 15 dots of Backgrounds appropriate to her new
+identity.  Those involving power and other people will not extend beyond the
+Magnitued of people affected by the reversed Recumbent Destiny effect which
+accompanies this Charm.
+
+[Cosmetic alteration to appearance.  Larceny bonus for disguise.]
+
+At Essence 5+, this hiding of self persists even after death.  The character's
+death will not end the Charm's effects and, if the Storyteller decides that
+Discordian Exaltations pass on to new hosts, then the new host will not
+experience the effects of Exaltation, or be aware of his power, until the
+trigger conditions are satisfied.  This may be part of the reason why no
+Erisian Exalts have been seen for a long time.
+
+Lastly, this Charm is Stackable: the character can activate as many
+simultaneous hidden identities at once as her temporary Willpower pool affords
+her.  The stacking of these identities must be decided in advance, so that
+triggering the end of one will shift her to another preselected one, losing
+the first completely.  The reversed Recumbent Destiny effect is triggered at
+the same time, so that her new identity is more likely to be accepted.
+
+[TODO: Also add follow-on for Survival Charm "Living-With-Rocks Approach"?]

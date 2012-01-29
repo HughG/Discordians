@@ -238,6 +238,10 @@ activated and there are no other valid targets, the attack fails altogether.
 The attacker may ignore the unnatural mental influence of this Charm by
 spending a point of temporary Willpower.
 
+[TODO 2012-01-29 HG: This doesn't make sense as a Compulsion effect, except
+against Melee and MA attacks.  For Archery & Thrown, the projectile has
+already left the thrower's hand, so mental influence in Step 6 can't logically
+make a difference.]
 
 name: ktt, Knockback Takeaway*Technique
 cost: 4m

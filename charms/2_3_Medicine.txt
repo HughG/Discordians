@@ -255,9 +255,10 @@ name: mad, Madness Adjustment Device
 cost: 8m, plus 1wp per point adjustment
 mins: Med 5, Ess 4
 type: Reflexive (Step 2)
-key: Combo-OK, Obvious, Shaping
+key: Combo-OK, Obvious, Emotion
 dur: Instant
 dep: ssp
+review: 2012-02-01 RWG
 
 text: Since Eris created her Children outside of Creation, far away in space
 and time from the Usurpation, they have avoided the Great Curse of the Yozi.
@@ -267,17 +268,18 @@ explicitly.  A momentary flickering of orange tendrils flows between the
 character and her target when this Charm is activated, and those tendrils
 allow her to adjust the target's rating of Limit, Resonance, Clarity, Stasis
 or similar, either up or down, by the amount of Willpower she chooses to
-expend.  This Charm constitutes unnatural influence, so the target may choose
-to resist it at a cost of 1 Willpower, although that may in itself increase
-their Limit, for example; by the same token, the Discordian herself will gain
-a point of Hodge.
+expend.  This Charm constitutes unnatural mental influence, so the target may
+choose to resist it at a cost of 1 Willpower, although that may in itself
+increase their Limit, for example; by the same token, the Discordian herself
+will gain a point of Hodge.
 
 If the Exalt successfully reduces the target's rating, by whatever value, the
 target will regain an equal number of points of temporary Willpower, up to
 their normal maximum.  If the target has a normal minimum, such as the Clarity
 of the Alchemicals with certain Charms installed, any reduction beyond this
 point (and corresponding Willpower gain) lasts only for one scene, after which
-it returns to that minimum.
+it returns to that minimum.  Any of the target's Charms or other powers which
+rely on this minimum are unavailable for the duration of this Charm.
 
 A character who knows this Charm will automatically notice when anyone within
 (character's Essence x 10) yards of her is about to enter Limit Break or a

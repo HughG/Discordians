@@ -261,8 +261,6 @@ Kejak's murderer" would trigger when the new self believed that he had met
 someone who had committed that murder, even if they had not, nor if he met the
 murderer but didn't realise it.
 
-[TODO: Is "jade prison" right?]
-
 The character may choose any of the following types of being for her new self:
 another Discordian of the same Division and Parametadivision, having up to her
 current Essence; a being of the type which her Parametadivision mimics, again
@@ -272,19 +270,20 @@ even a god, spirit, demon or similar being not belonging to a
 Parametadivision, up to her current Essence, although this choice is risky
 because she is granted no particular magic to mimic the powers of such beings.
 
-If the character chooses an unenlightened identity, she cannot access her
-Essence pool except to retain attunement artifacts (for example, demon
-tattoos) or to subconsiously activate non-Obvious reflexive perfect physical
-or mental defenses, including those in a Combo with Charms which negate
-surprise attacks.  She cannot spend motes to activate artifact powers.  If
-Charm activations come only from her Personal pool, this does not end the
-Charm.  Spending from her Peripheral pool immediately ends all activations of
-the Charm, however.  She will interpret her survival as a lucky miracle.
-Applying or resisting unnatural mental influence still gains the character
-points of Hodge and Podge while in her disguised form, though she will be
-unaware of their effects and may not understand when she enters Limit Break.
-Any magical effects which have made certain things unacceptable orders, beyond
-those which would harm her, still apply to her new self.
+If the character chooses an unenlightened identity, she cannot spend motes
+except to subconsiously activate non-Obvious Reflexive Charms using her
+Personal pool.  She will interpret these powers as moments of good fortune.
+Other expenditures will end the Charm.  Applying or resisting unnatural mental
+influence still gains the character points of Hodge and Podge while in her
+disguised form, though she will be unaware of their effects and may not
+understand when she enters Limit Break.  Any magical effects which have made
+certain things unacceptable orders, beyond those which would harm her, still
+apply to her new self.
+
+The new self may have any physical appearance appropriate to the chosen type
+of being, with the same Appearance rating.  The Charm cannot perfectly
+duplicate another being's form, though it can create someone reasonably
+similar in appearance.
 
 Donning this new guise, the character is subject to a reversed Recumbent
 Destiny effect, as powerful as if she had spent her full temporary Willpower
@@ -306,8 +305,6 @@ However, she gains up to 15 dots of Backgrounds appropriate to her new
 identity.  Those involving power and other people will not extend beyond the
 Magnitued of people affected by the reversed Recumbent Destiny effect which
 accompanies this Charm.
-
-[Cosmetic alteration to appearance.  Larceny bonus for disguise.]
 
 At Essence 5+, this hiding of self persists even after death.  The character's
 death will not end the Charm's effects and, if the Storyteller decides that

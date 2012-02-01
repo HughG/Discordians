@@ -4,68 +4,48 @@ dep:
 text:
 
 name: umd, Unbalanced Mind*Defence
-cost: 5m
+cost: 3m
 mins: Integrity 2, Ess 2
 type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: Instant
-dep: exc
+dep: 
+review: 2012-02-01 RWG
 
 text: Wise men have often said that genius and madness are linked, but only
 the Chosen of Eris have found a way to turn their madness into genius.  This
 Charm allows the Exalt to add the lower of her Hodge and Podge ratings to her
 Dodge MDV and Parry MDV against one attack.
 
-[TODO 2011-09-17 HUGR: Maybe lower the cost of this, since it's 5m for a
-non-perfect, whereas I have a perfect social dodge for 4m in Awareness, and
-may add a 4m perfect social parry in Socialize.]
-
-
-name: ddt, Dream Deflection*Technique
-cost: 5m
-mins: Integrity 3, Ess 2
-type: Reflexive (Step 9)
-key: Combo-OK, Counterattack, Illusion, Social
-dur: Instant
-dep: umd
-
-text: To attempt to twist the minds of those who make up the Unbending Arm is
-foolish indeed.  This Charm allows the character to perfectly defend against
-any form of natural or unnatural mental influence which would otherwise bypass
-his defenses.  He will gain a vague impression of the intended influence, but
-not the details.  Furthermore, as a counterattack, the originator of the
-effect will herself be subjected to an Illusion causing her to believe that
-her attack was successful.  The Illusion lasts as long as the original effect
-would have, and may be resisted on the same terms as the original effect.
-Since this Charm involves both resisting and imposing mental influence at the
-same time, the character gains a point each of both Hodge and Podge.
+[TODO 2011-09-17 HUGR: Maybe add a 4m perfect social parry in Socialize, since
+I also have a perfect social dodge for 4m in Awareness, and may add a 4m
+perfect social parry in Socialize.]
 
 
 name: sdc, Subtle Daydream Concoction
 cost: 6m
-mins: Integrity 3, Ess 3
-type: Reflexive (Step 2)
-key: Combo-Basic, Shaping
+mins: Integrity 3, Ess 2
+type: Reflexive (Step 9)
+key: Combo-Basic, Counterattack, Illusion, Social
 dur: Instant
-dep: ddt
+dep: exc, umd
+review: 2012-02-01 RWG
 
 text: Some have said that the Erisian Exalted live in a world of their own;
 the truth is that this can be an advantage.  This Charm allows the user to
 seek the refuge of daydreams to sidestep attempts to pull her away from that
 which is important to her.  It can be invoked in response to any attack which
-would lower Virtues or Willpower, or destroy or weaken Intimacies, or cause
-her to act against her Intimacies or Motivation.
+would lower Virtues or Willpower, or against mental influence which would
+destroy or weaken Intimacies, or cause her to act against her Intimacies or
+Motivation.
 
-In the case of natural mental influence, the Exalt may make a contested roll
-of her own (Essence + Integrity) against the (Attribute + Ability) used to
-achieve the influence and, on success, treat it as an unacceptable order.  For
-unnatural mental influence the contest is between their (Essence + Integrity)
-and the (Essence + Ability) of the Charm used (or caster's [Essence + Occult]
-for spells), but the character suffers a penalty equal to the difference in
-Essence, minimum 1.  In either case, if she fails the roll she may still spend
-Willpower to resist the effect, if applicable.  If she botches the roll, she
-is automatically affected and for the rest of the scene cannot spend Willpower
-to resist that one effect.
+In the case of natural mental influence, this Charm automatically defeats it.
+For unnatural mental influence the contest is between their (Essence +
+Integrity) and the (Essence + Ability) of the Charm used (or caster's [Essence
++ Occult] for spells).  In either case, if she fails the roll she may still
+spend Willpower to resist the effect, if applicable.  If she botches the roll,
+she is automatically affected and for the rest of the scene cannot spend
+Willpower to resist that one effect.
 
 Similarly, if some effect threatens to directly lower any of the character's
 Virtues or her Willpower, temporarily or permanently, she may make the same
@@ -82,10 +62,26 @@ find it run out sooner than they expected.
 
 In any case, if the character succeeds against the attack, she will gain a
 clear sense of what influence the attacker intended, should she wish to play
-out her supposedly altered state.  Effects which prevent Shaping render this
-Charm inapplicable.  Use of this Charm gains the character a point of Podge.
+out her supposedly altered state.
 
-[TODO: Why isn't this a Counterattack + Illusion, like the preceding Charm?]
+
+name: ddt, Dream Deflection*Technique
+cost: 5m
+mins: Integrity 4, Ess 3
+type: Reflexive (Step 9)
+key: Combo-OK, Counterattack, Illusion, Social
+dur: Instant
+dep: sdc
+review: 2012-02-01 RWG
+
+text: To attempt to twist the minds of those who make up the Unbending Arm is
+foolish indeed.  This Charm allows the character to perfectly defend against
+any form of natural or unnatural mental influence which would otherwise bypass
+his defenses.  He will gain a vague impression of the intended influence, but
+not the details.  Furthermore, as a counterattack, the originator of the
+effect will herself be subjected to an Illusion causing her to believe that
+her attack was successful.  The Illusion lasts as long as the original effect
+would have, and may be resisted on the same terms as the original effect.
 
 
 name: cof, Cocoon of Fables
@@ -94,7 +90,8 @@ mins: Integrity 4, Ess 4
 type: Reflexive (Step 2)
 key: Combo-OK, Social
 dur: One scene
-dep: ddt
+dep: sdc
+review: 2012-02-01 RWG
 
 text: They Who Carve Truth In Stone are able to form that metaphorical stone
 from the gossamer of daydreams, convincing herself that her view of the world
@@ -116,19 +113,20 @@ type: Permanent
 key: None
 dur: Permanent
 dep:
-review: 
+ref: Victory in Defeat; Broken-Winged Crane; 31
+review: 2012-02-01 RWG
 
 text: TODO
 
 Whenever the character is subject to hostlie unnatural mental influence and
-could pay Willpower to resist it (i.e., she has sufficient temporary
+could pay Willpower to resist it (that is, she has sufficient temporary
 Willpower), she may instead choose to submit to it and pay a single point of
 Willpower to reduce her Podge rating by one point, to a minimum of zero.  She
-still cannot choose to go along with unacceptable orders, and may be prevented
-from acquiescing by other effects.  Influence is deemed hostile if the
-character believes that there is at least a good chance that acquiescing to it
-will be harmful to her values, goals or interests.  A character cannot apply
-this Charm's effect to beneficial or neutral mental influence.
+may be prevented from acquiescing by other effects.  Influence is deemed
+hostile if the character believes that there is at least a good chance that
+acquiescing to it will be harmful to her values, goals or interests.  A
+character cannot apply this Charm's effect to beneficial or neutral mental
+influence.
 
 The cost is always 1 Willpower and the reduction one point of Podge,
 regardless of how many points of Willpower would be required to resist the
@@ -203,6 +201,7 @@ type: Permanent
 key: None
 dur: Permanent
 dep: exc
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -218,25 +217,27 @@ Virtue, and has dots of Specialty in that Virtue which actually support
 suppressing the basic Virtue, she may roll those specialty dice separately and
 subtract them from the successes from the base roll.
 
+[TODO 2012-02-01 RWG: Need to give examples, specially for the "suppress basic
+Virtue" bit.]
+
 
 name: icc, Instant Commitment*Contrivance
 cost: 2m, 2wp
-mins: Integrity 3, Ess 2
+mins: Integrity 3, Ess 3
 type: Simple
-key: Social, Stackable
+key: Combo-Basic, Social, Stackable
 dur: Indefinite
 dep:
+review: 2012-02-01 RWG
 
 text: TODO
 
-This Charm allows an agent of the Authority to instantly forge certain kinds
-of extra, magically-protected Intimacies.  As long as the character maintains
-her commitment of motes, she treats all natural or unnatural mental influence
-which would conflict with these Intimatices as an unacceptable order (which
-means no points of Podge are gained from resisting it).  There is nothing to
-prevent the character from holding conflicting Intimacies within herself, both
-natural and created by this Charm.  The character may maintain a number of
-such additional Intimacies equal to her Conviction.
+This Charm allows an agent of the Authority to instantly forge an additional
+Intimacy on a certain theme, which is treated as an additional Motivation,
+with all the benefits and drawbacks thereof.  There is nothing to prevent the
+character from holding conflicting Intimacies and Motivations within herself,
+both natural and created by this Charm.  The character may maintain a number
+of such additional Intimacies equal to her Conviction.
 
 Furthermore, she is able to spend Willpower to channel her base, unmodified
 Integrity, as if it were an equivalently-rated Virtue, in support of these
@@ -266,29 +267,22 @@ trouble.
 
 
 name: uoth, Umbrella of the Heart
-cost: -- (+2m per additional being, or +5m per point of Magnitude)
+cost: 4m, 1wp
 mins: Integrity 4, Ess 3
-type: Permanent
+type: Reflexive
 key: None
-dur: Permanent
+dur: Indefinite
 dep: exc, icc
+review: 2012-02-01 RWG
 
 text: TODO
 
 This Charm enhances the Discordian's power of self-determination, allowing her
-to share it with others.  The benefits of any Integrity Charm which she uses
-may be extended to up to (her permanent Essence) other willing beings, at a
-surcharge of 2m per being.  If several such Charms are used in a Combo, the
-surcharge is still paid only once per being.  In the case of Reallocation of
-Resolve, the total numer of Willpower points gained or lost may be distributed
-among the beneficiaries as the character chooses.
-
-The beneficiaries must be within (Essence x 10) yards of the character, unless
-they are the subject of an Intimacy or Motivation which she holds, in which
-case there is no distance limit.  At Essence 4, the character can spend a
-point of Willpower to extend these benefits to a social group of Magnitude up
-to her Essence, at a surcharge of 5 motes per point of Magnitude, provided she
-has an Intimacy or Motivation related to that group.
-
-[TODO: Maybe also/instead a Charm which allows the character to prepare an
-invokation of a Charm to protect a group, like Protection of Celestial Bliss?]
+to share it with others.  It is activated in connection with an organisation
+or social group about which the character holds an Intimacy.  When a social
+attack is made against the group, the character can respond as if the attack
+had been made against her.  She will become instantly aware of any such attack
+to which she could so respond, no matter where she is, and need not be present
+to respond.  Activating Charms in response to the attack adds a surcharge of 2
+motes.  If several Charms are used in a Combo, the surcharge is still paid
+only once.

@@ -11,14 +11,15 @@ type: Supplemental
 key: Combo-OK, Touch
 dur: Instant
 dep: exc
+review: 2012-02-01 RWG
 
 text: TODO
 
 This Charm supplements a dramatic action to craft or repair a non-magical
 object, allowing the character to quickly cobble together a rough, temporary
 but serviceable version of the item she desires.  It reduces the Resources
-cost of the required materials by 1 and divides the construction time by her
-Craft rating.
+cost of the required materials by 1 and reduces the duration by an order of
+magnitude: hours become minutes, days become hours etc.
 
 This Charm does not remove the need for tools and some sort of materials.  The
 Resources cost reduction can go as low as 0, if the character could
@@ -27,7 +28,6 @@ conceivably improvise from materials lying around; otherwise, the minimum is
 the same amount, so the object may not be as aesthetically pleasing or
 saleable, but it will perform its intended functions.
 
-
 The finished item will revert to its original state after an amount of time
 which is an order of magnitude greater than the time which would normally be
 needed to make the object from scratch (even if it was only mended).  For
@@ -35,11 +35,10 @@ instance, making a simple table might normally take a few days: this Charm
 will produce an item which lasts only that number of weeks, before it suddenly
 collapses.
 
-
 At Essence 3, the Resources cost is reduced by (Essence ÷ 2) and, rather than
-dividing the duration by (Craft), the Charm reduces it by an order of
-magnitude: hours become minutes, days become hours etc.  If she also possesses
-the appropriate Craft at 3, the character can repair (but not build) magical
+reduce the duration by an order of magnitude, it allows the character to
+complete her work in a single dramatic action.  If she also possesses the
+appropriate Craft at 3, the character can repair (but not build) magical
 devices which have replaceable parts, such as Magitech and perhaps some
 motonic technology.  With a stunt, she may do so even with inappropriate or
 non-magical parts.  Likewise she may apply this Charm to temporarily patching
@@ -57,6 +56,7 @@ type: Supplemental
 key: Combo-OK, Touch
 dur: Instant
 dep: ics
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -67,38 +67,30 @@ originals, the character may respectively create or combine multiple similar
 objects.  For example, a wooden cart could be converted into a similar-sized
 shack, or several smaller chairs; or several carts could be combined into a
 wooden house.  It is also possible to use this Charm to reconfigure part of a
-large structure.
+large structure.  The reconfiguration takes place in a single dramatic action.
 
-The time required for this reconfiguration is an order of magnitude less than
-would be required to construct the new object normally.  For example, if
-constructing a table would take several days, this Charm could convert a
-cupboard into one in several hours.  This Charm cannot increase or decrease
-the inherent Resources value of the materials, but the character may end up
-with something whose Resources cost, in a given region, is more or less than
-the original object.
-
-At Essence 4, the construction time is reduced by another order of magnitude:
-the above conversion from cupboard to table would take minutes, not hours.  At
-Essence 5, the character may double the Charm's cost to reconfigure an
-artifact or even a manse.  This cannot change the power level of the object,
-nor substantially alter any effects it has, though these might shift somewhat.
-For instance, a daiklave might be reformed into a shield, having appropriate
-armor bonuses for the relevant magical material, instead of weapon bonuses.
-Or, a reconfigure manse might contain traps which are equally as deadly as in
-its original form, but different in mechanism.  The storyteller is the arbiter
-of what changes are possible.  This Charm does not remove the need for tools.
+At Essence 4, the time to reconfigure a mundane object is reduced to a single
+combat action.  At Essence 5, the character may double the Charm's cost to
+reconfigure an artifact or even a manse, which requires a single dramatic
+action.  This cannot change the power level of the object, nor substantially
+alter any effects it has, though these might shift somewhat.  For instance, a
+daiklave might be reformed into a shield, having appropriate armor bonuses for
+the relevant magical material, instead of weapon bonuses.  Or, a reconfigure
+manse might contain traps which are equally as deadly as in its original form,
+but different in mechanism.  The storyteller is the arbiter of what changes
+are possible.  This Charm does not remove the need for tools.
 
 
 name: bwr, By Whim Reforged
-cost: (5m or 5m, 1wp) per rating point
+cost: 5m or 5m, (1wp per rating point)
 mins: Craft 5, Essence 3
 type: Simple (Dramatic Action)
 key: Combo-OK, Touch
-dur: Instant
+dur: Instant or Indefinite
 dep: ort
+review: 2012-02-01 RWG
 
 text: TODO
-
 
 This Charm provides a dramatic action in which the Stone-Carver combines two
 existing objects into a single new one.  He can choose the basic form and
@@ -118,7 +110,11 @@ dot of rating of the resulting item.  The rating will be one more than the
 greater of the original items, to a maximum of 5.  The resulting artifact will
 have effects related to both original objects, but not more powerful than its
 new rating allows.  It is not possible to combine a 5-dot artifact with
-another, unless the character has at least Essence 6.
+another, unless the character has at least Essence 6.  The resulting artifact
+lasts as long as the motes remain committed to this Charm, after which it
+splits into its two original parts.  The commitment cost for the new artifact
+is the sum of that for its original parts, and the character may attune it
+immediately.  The artifact can be given to others.
 
 The time, successes and Ability minimums for combining artifacts are as normal
 for this resultant rating.  If the lesser artifact is rated 3 or more, then
@@ -145,6 +141,7 @@ type: Simple (Dramatic Action)
 key: Combo-OK
 dur: Instant
 dep: exc
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -190,6 +187,7 @@ type: Supplemental
 key: Combo-OK, Shaping
 dur: Instant
 dep: bem
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -197,24 +195,21 @@ This Charm supplements Craft actions as part of an extended construction
 project, allowing the Architect to create multiple copies of a mundane object,
 using the same amount of raw materials as she would require for a single
 instance.  The character may create up to (Craft x [Essence - 1]) objects in
-total, but for each copy made, the Resources value of all items is decreased
-by 1, to a minimum of 0, due to necessary corner-cutting and apparent
-shoddiness of workmanship.  Thus a character who learns this Charm is
-immediately able to produce 6 (3 x 2) suits of superheavy plate armor for the
-cost of 1.  They are fully functional but she will be hard-pressed to sell
-them because they appear so rickety, having a Resources rating of 0 (Resources
-5 for a normal suit, less 1 for each of the 5 extra copies).
+total, but for each (Craft) copies or part thereof, beyond the first (Craft)
+items, all the items suffer penalties equivalent to the bonuses provided by
+fine, exceptional or pefect craftsmanship (Exalted, p. 365), due to necessary
+corner-cutting.  Penalties do not get worse than those equivalent to perfect,
+if the character makes more than (Craft x 4) copies.  Thus a character who
+learns this Charm is immediately able to produce 6 suits of superheavy plate
+armor for the cost of 1, but they suffer penalties equivalent to the bonuses
+of exceptional workmanship.
 
 At Essence 4 the character may attempt to mass-produce artifacts.  However,
 she may make at most ([Craft - Artifact rating] x [Essence - 1]) items in
-total.  For each copy beyond the original, all items must lost one point from
-one of the rating improvements they provide.  Alternatively, if the object has
-no numerical benefit or the character is feeling more adventurous, one or more
-points of reduction may be paid as one-dot drawbacks (as described in
-Oadenol's Codex, p. 16), which do not reduce the Artifact's rating.  Since the
-character is mass-producing artifacts, they must all have the same
-disadvantages.  It should go without saying that they also suffer a reduction
-in their apparent Resources value.
+total.  For each copy beyond the original, all items must take one dot of
+drawbacks (as described in Oadenol's Codex, p. 16), which do not reduce the
+Artifact's rating.  Since the character is mass-producing artifacts, they must
+all have the same disadvantages.
 
 This Charm's cost must be spent for every roll in an extended Crafting
 project, or the entire project will fail, leaving scattered piles of battered
@@ -224,12 +219,13 @@ cannot be un-made by anti-Shaping magic.
 
 
 name: est, Echo-Solidification Technique
-cost: (5m or 5m, 1wp) per rating point
+cost: 5m or 5m, (1wp per rating point)
 mins: Craft 4, Essence 3
 type: Simple
 key: Combo-OK, Shaping
 dur: One scene
 dep: bem
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -244,7 +240,6 @@ of Willpower per dot of rating.  The Artifact rating cannot exceed her
 (Essence - 2).  She will be immediately attuned to the artifact, provided she
 pays the attunement cost.  The character must already have created or obtained
 a design for the artifact.
-
 
 Also at Essence 4, she can pay the increased cost to raise a manse on an
 uncapped demesne.  The Manse rating can be no more than her (Essence - 1), and
@@ -273,34 +268,31 @@ whim.
 
 
 name: cpc, Core Principle*Concentration
-cost: 4m, 1wp
+cost: 3m, 1wp
 mins: Craft 3, Essence 2
 type: Simple (Speed 6 in long ticks)
 key: Combo-OK, Touch
-dur: Instant
+dur: One scene
 dep: 
+ref: (Object-Strengthening Touch; Core; 211)
+review: 2012-02-01 RWG
 
 text: TODO
 
 This Charm draws upon and enhances the true purpose of an object.  When
 applied to any non-magical, non-sentient object (including most plants and
-basic automata), this Charm permanently increases by 1 the difficulty of any
-rolled attempts to damage or (by feats of Strength) break an object.  It
-similarly increases the difficulty of any rolled actions to re-work it
-(naturally or by magical means, including Shaping) to fulfil any other
-purpose.  If an object is used in some way which does not suit its own nature,
-the difficulty of any such actions increases by 1, and any failed action
-becomes a botch.  At the same time, it becomes easier to damage or break,
-decreasing the difficulty of such attempts by 1.  Examples of such abuses
-include chopping down a living tree (which would become harder to fell), or
-using a sword to wedge a door (the sword becoming more fragile).
+basic automata), this Charm temporarily increases the difficulty of any rolled
+attempts to damage or (by feats of Strength) break an object by the
+character's (Essence).  It similarly increases the difficulty of any rolled
+actions to re-work it (naturally or by magical means, including Shaping) to
+fulfil any other purpose.
 
-If an object is successfully re-made for some new purpose in a permanent way,
-it loses the benefits of this Charm.  Shaping magic is usually not permanent,
-whereas crafting, even by mundane means, usually is.  This Charm may be
-applied repeatedly to further strengthen the item, but no combination of
-Charms which includes this one can increase these difficulties by more than
-the character's Essence.
+If an object is used in some way which does not suit its own nature, the
+difficulty of any such actions increases by (Essence), and any failed action
+becomes a botch.  At the same time, it becomes easier to damage or break,
+decreasing the difficulty of such attempts by (Essence).  Examples of such
+abuses include chopping down a living tree (which would become harder to
+fell), or using a sword to wedge a door (the sword becoming more fragile).
 
 
 name: rwrt, Rainbow Warp*Removal Technique
@@ -310,15 +302,16 @@ type: Simple
 key: Combo-OK, Shaping, Touch
 dur: Instant
 dep: cpc
+review: 2012-02-01 RWG
 
 text: Just as the Grey-faced ones do not hold unwanted forms for long, they do
 not tolerate things being re-Shaped in a way which does not suit them.  With
 this Charm the character may undo any one Shaping effect which has altered
 some object.  If the object is owned or attuned by some other individual, they
 must agree to the un-Shaping.  The character cannot affect an object larger
-than small castle with this Charm, although he may apply it to only part of a
-larger structure.  A ghostly orange outline of the original object will
-persist, hanging in space for one scene, containing the effect which was
+than a small castle with this Charm, although he may apply it to only part of
+a larger structure.  A ghostly rainbow-tinged outline of the original object
+will persist, hanging in space for one scene, containing the effect which was
 removed.  If any other object touches it before the scene expires, which was
 not touching it before this Charm was activated, the original effect is
 immediately applied to that object, unless it is somehow protected.
@@ -331,6 +324,7 @@ type: Simple
 key: Combo-OK, Training
 dur: Instant
 dep: cpc
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -343,19 +337,20 @@ Crafts she knows.
 
 The owner of such an object may gain a single dot of the Ability it embodies,
 or two dots of a particular Specialty, as a Training effect.  This occurs
-instantly, but may put the owner into experience debt, in which case no
-further Training effects will benefit them until it is paid off.  Abilities
-cannot be raised past the normal maximums for the trainee, but are not limited
-by the skill levels of the Carver.
+instantly, but may put the owner into experience debt.  Abilities cannot be
+raised past the normal maximums for the trainee, but are not limited by the
+skill levels of the Carver.  A being cannot gain more than one dot in a given
+Trait from any number of objects created by this Charm.
 
 The object may be a symbolic representation of the relevant discipline, rather
-than an item to be used in practice.  The trainee must devote time daily to
-the object, to affirm ownership, at least until the normal training time has
-passed and any experience debt is paid off.  If the object is lost, discarded
-or damaged before then, the dot of Ability is lost, though any experience
-spent on it is regained.  Once the training time and debt is gone, however,
-the object may be passed on for someone else to gain its benefits. Damaged
-objects may be repaired but will have lost their educational magic.
+than an item to be used in practice.  The trainee must establish ownership
+(Exalted, p. 238) of the object and treat it with care, at least until the
+normal training time has passed and any experience debt is paid off.  If this
+effort is not put in, or the object is lost, discarded or damaged before then,
+the dot of Ability is lost, though any experience spent on it is regained.
+Once the training time and debt is gone, however, the object may be passed on
+for someone else to gain its benefits. Damaged objects may be repaired but
+will have lost their educational magic.
 
 At Craft 4 and Essence 4, the Carver can make objects which train Attributes
 (but not Attribute Specialties), Virtues or Willpower.  Alternatively she may
@@ -367,12 +362,12 @@ before, the item may passed to other owners, may be magical or mundane, and
 will permanently lose this power if damaged.
 
 A second purchase of this Charm at Craft 5 and Essence 5 means that her
-creations can train even Essence, though they cannot enlighten those who do
-not already have access to their Essence.  Additionally she may forge a Grace
-for a particular being, given a dot of gossamer.  The Carver need have no
-specific skill in crafting gossamer, but the Grace must be forged as a magical
-artifact of some sort.  If it passes to someone else, the normal consequences
-follow for its bearer.
+creations can train even Essence, to a maximum of the character's (Essence -
+2), though they cannot enlighten those who do not already have access to their
+Essence.  Additionally she may forge a Grace for a particular being, given a
+dot of gossamer.  The Carver need have no specific skill in crafting gossamer,
+but the Grace must be forged as a magical artifact of some sort.  If it passes
+to someone else, the normal consequences follow for its bearer.
 
 
 name: eed, Erisian Elemental Distillation
@@ -382,6 +377,7 @@ type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: eee
+review: 2012-02-01 RWG
 
 text: According to legend, Eris was excluded from a party of the gods, and
 took her revenge by seeding discord among the attendees; you can bet she
@@ -405,12 +401,13 @@ more will automatically fail, until some of those draughts are used up.
 
 
 name: prp, Pet Rock Promotion
-cost: 10m, 1wp, 2xp
+cost: 10m, 1wp
 mins: Craft 3, Essence 3
 type: Simple (Dramatic Action)
-key: Combo-OK, Touch
+key: Combo-OK, Touch, Training
 dur: Instant
 dep: cpc
+review: 2012-02-01 RWG
 
 text: TODO
 
@@ -420,14 +417,17 @@ to adpot it as her familiar.  The object may be a pre-existing item, or one
 crafted specially for the purpose.  This awakening takes several hours, or
 even days, of careful craft-work, after which the character's Familiar
 background increases by one dot.  It may be necessary to apply the Charm
-several times to reach the necessary rating, depending on the size, complixity
+several times to reach the necessary rating, depending on the size, complexity
 and usefulness of the object.
 
-The awoken object can communicate simple concepts with its owner, through
-subtle shifts in appearance, heft and so on.  Few objects have the ability to
-move by themselves, but they have a limited sense of their surroundings, and
-may have some expert awareness in relation to their purview.  Also, since
-objects do not sleep, they may have some use as watch-keepers.
+The awoken object can communicate with its owner, through subtle shifts in
+appearance, heft and so on, though its awareness of the world will be strongly
+colored by its nature.  Few objects have the ability to move by themselves,
+but they have a limited sense of their surroundings, and may have some expert
+understanding in relation to their purview.  Also, since objects do not sleep,
+they may have some use as watch-keepers.  Its levels of mobility, intelligence
+and so on are dependent on the number of dots of the Familiar background which
+the Storyteller allows the player to buy.
 
 The character can maintain at most one familiar through use of this Charm,
 though she may have more by other means.  Applying the Charm to another object

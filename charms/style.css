@@ -1,0 +1,17 @@
+* {
+    font-family: Palatino, Times, serif 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'American Typewriter', Courier, mono
+}
+ul.index_items {
+    font-size: smaller;
+/*    list-style-type: none; */
+    list-style-position: inside;
+    padding: 0;
+}
+ul.index_items li {
+    border: 0;
+    padding: 0 0;
+    margin: 0.25em 0;
+}

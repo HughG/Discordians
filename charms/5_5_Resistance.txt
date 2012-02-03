@@ -64,7 +64,7 @@ name: iss, Impact-Shifting*Stance
 cost: 3m
 mins: Resistance 3, Essence 3
 type: Reflexive (Step 7)
-key: Combo-OK, Knockdown, Obvious, Touch
+key: Combo-OK, Knockback, Obvious, Touch
 dur: Instant
 dep: sss
 

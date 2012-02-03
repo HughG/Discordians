@@ -29,7 +29,7 @@ name: tonc, Tale of Nine Cats
 cost: 1m + 3m per extra action
 mins: Perf 3, Ess 2
 type: Extra Action
-key: Combo-OK, Social 
+key: Combo-OK, Social
 dur: Instant
 dep: ii
 

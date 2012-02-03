@@ -2,13 +2,14 @@
 
 $KCODE = "u"
 
-def insert_charm(out, charm)
+def insert_charm(out, section_name, charm, charms)
   return if charm.empty?
 
   $stderr << '  ' << charm['name'] << "\n"
 
   return if charm['name'][0] == '('[0]
   if charm['name'] != '.'
+    out.print("<a name='#{charm['id']}'/>\n")
     out.print("<h3>#{charm['name']}</h3>\n<p>")
     out.print("<b>Cost:</b> #{charm['cost']}; ")
     out.print("<b>Mins:</b> #{charm['mins']}; ")
@@ -31,6 +32,9 @@ def insert_charm(out, charm)
       }
     end
     out.print("</p>\n")
+
+    charm_full_name = section_name.downcase[0..2] + "-" + charm['id']
+    charms[charm_full_name] = charm
   end
   charm['text'].each { |para|
     if para[0..1] == "> "
@@ -41,7 +45,7 @@ def insert_charm(out, charm)
   }
 end
 
-def insert_file(out, file)
+def insert_file(out, file, section_name, charms)
   charm_names = {}
   curr_charm = {}
   curr_para = ""
@@ -55,7 +59,7 @@ def insert_file(out, file)
     if md and md.length == 3
       case md[1]
       when "name"
-        insert_charm(out, curr_charm)
+        insert_charm(out, section_name, curr_charm, charms)
 
         name_split = md[2].split(", ")
         id = name_split[0]
@@ -68,6 +72,7 @@ def insert_file(out, file)
         curr_charm["min_abil"] = ""
         curr_charm["min_ess"] = ""
         curr_charm["dep"] = []
+        curr_charm["section"] = section_name
       when "cost", "mins", "type", "key", "dur"
         curr_charm[md[1]] = md[2]
       when "dep"
@@ -96,16 +101,16 @@ def insert_file(out, file)
     curr_charm["text"].push(curr_para)
   end
 
-  insert_charm(out, curr_charm)
+  insert_charm(out, section_name, curr_charm, charms)
 end
 
 def make_html(indir, outdir, outfilename)
+  charms = {}
+
   File.open(outdir + "/" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms</title></head>\n")
-    out.print("<style type='text/css'>")
-    out.print("* { font-family: Palatino, Times, serif }")
-    out.print("h1, h2, h3, h4, h5, h6 { font-family: 'American Typewriter', Courier, mono }")
-    out.print("</style></head>\n<body>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
     out.print("<h1>Discordian Charms</h1>\n")
 
     Dir[indir + "/?_?_*.txt"].each { |file|
@@ -114,7 +119,7 @@ def make_html(indir, outdir, outfilename)
       out.print("<h2>", section_name, "</h2>\n")
       out.print("<img src='", pngfile, "'/>\n")
 
-      insert_file(out, file)
+      insert_file(out, file, section_name, charms)
     }
 
     out.print("</body></html>")
@@ -122,19 +127,36 @@ def make_html(indir, outdir, outfilename)
 
   File.open(outdir + "/framed-" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms</title></head>\n")
-    out.print("<frameset cols='15%, 85%'>\n")
-    out.print("<frame src='index-", outfilename, "'/>\n")
+    out.print("<frameset cols='20%, 80%'>\n")
+    out.print("<frame src='indices-for-", outfilename, "'/>\n")
     out.print("<frame name='text' src='intro.html'/>\n")
     out.print("</frameset></html>\n")
   }
 
-  File.open(outdir + "/index-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms</title></head>\n")
-    out.print("<style type='text/css'>")
-    out.print("* { font-family: Palatino, Times, serif }")
-    out.print("h1, h2, h3, h4, h5, h6 { font-family: 'American Typewriter', Courier, mono; font-size: small }")
-    out.print("</style></head>\n<body>\n")
-    out.print("<h2>Discordian Charms</h2>\n")
+  File.open(outdir + "/indices-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charm Indices</title></head>\n")
+    out.print("<frameset rows='15%, 85%'>\n")
+    out.print("<frame src='index-selector-for-", outfilename, "'/>\n")
+    out.print("<frame name='selected-index' src='index-by-division-for-", outfilename, "'/>\n")
+    out.print("</frameset></html>\n")
+  }
+
+  File.open(outdir + "/index-selector-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charm Indices</title></head>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
+    out.print("<h3>Discordian Charms</h3>\n")
+    out.print("<a target='selected-index' href='index-by-division-for-", outfilename,
+              "'>by Division</a><br/>\n")
+    out.print("<a target='selected-index' href='index-by-keyword-for-", outfilename,
+              "'>by Keyword</a><br/>\n")
+    out.print("</body></html>\n")
+  }
+
+  File.open(outdir + "/index-by-division-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charms by Division</title></head>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
 
     Dir[indir + "/?_?_*.txt"].each { |file|
       matches = /([0-9])_([0-9])_([A-Za-z_]+)/.match(file)
@@ -158,13 +180,11 @@ def make_html(indir, outdir, outfilename)
 
       File.open(outdir + "/" + section_name + ".html", "w") { |section|
         section.print("<html><head><title>", section_name, "</title></head>\n")
-        section.print("<style type='text/css'>")
-        section.print("* { font-family: Palatino, Times, serif }")
-        section.print("h1, h2, h3, h4, h5, h6 { font-family: 'American Typewriter', Courier, mono }")
-        section.print("</style>\n<body>\n")
+        section.print("<link rel='stylesheet' href='style.css'/>\n")
+        section.print("</head>\n<body>\n")
         section.print("<h1>", section_name, "</h1>\n")
         section.print("<img src='", pngfile, "'/>\n")
-        insert_file(section, file)
+        insert_file(section, file, section_name, charms)
         section.print("</body></html>")
       }
 
@@ -172,6 +192,43 @@ def make_html(indir, outdir, outfilename)
 
     out.print("</body></html>")
   }
+
+  File.open(outdir + "/index-by-keyword-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charms by Keyword</title></head>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
+
+    charms_by_keyword = {}
+    charms.each_pair { |charm_full_name, charm|
+      keywords = charm["key"].split(", ")
+      keywords.each { |keyword|
+        if !charms_by_keyword.has_key?(keyword)
+          charms_by_keyword[keyword] = []
+        end
+        charms_for_keyword = charms_by_keyword[keyword]
+        charms_for_keyword.push(charm)
+      }
+    }
+    sorted_keywords = charms_by_keyword.keys.sort
+    sorted_keywords = sorted_keywords.reject { |k|
+      ["Combo-Basic", "Combo-OK", "None"].include?(k)
+    }
+    sorted_keywords.each { |keyword|
+      return if keyword == "Combo-OK"
+      out.print("<h3>", keyword, "</h3><ul class='index_items'>")
+      charms_by_keyword[keyword].each { |charm|
+        out.print("<li><a href='", charm["section"], ".html#", charm["id"], "' ",
+                  "target='text'>",
+                  charm["name"],
+                  "</a></li>")
+      }
+      out.print("</ul>")
+    }
+    # print charm_full_name
+
+    out.print("</body></html>")
+  }
+    
 end
 
 make_html($*[0] ,$*[1], $*[2])

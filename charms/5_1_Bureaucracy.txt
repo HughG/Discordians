@@ -178,7 +178,7 @@ whether the mission is adopted, however.
 name: ln, Logistical Nightmare
 cost: 6m, 1wp
 mins: Bur 4, Ess 3
-type: Simple (dramatic action)
+type: Simple (Dramatic Action)
 key: Combo-OK, Social, War
 dur: One day
 dep: mrp

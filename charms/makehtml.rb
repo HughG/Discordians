@@ -73,7 +73,7 @@ def insert_file(out, file, section_name, charms)
         curr_charm["min_ess"] = ""
         curr_charm["dep"] = []
         curr_charm["section"] = section_name
-      when "cost", "mins", "type", "key", "dur"
+      when "cost", "mins", "type", "key", "dur", "tag"
         curr_charm[md[1]] = md[2]
       when "dep"
         deps = []
@@ -102,6 +102,34 @@ def insert_file(out, file, section_name, charms)
   end
 
   insert_charm(out, section_name, curr_charm, charms)
+end
+
+def write_tag_index_as_html(out, charms, tag_key_name, excluded_tags,
+                            extract_tags=lambda {|tag_value| tag_value.split(", ")})
+  charms_by_tag = {}
+  charms.each_pair { |charm_full_name, charm|
+    if charm.has_key?(tag_key_name)
+      tags = extract_tags.call(charm[tag_key_name])
+      tags.each { |tag|
+        if !charms_by_tag.has_key?(tag)
+          charms_by_tag[tag] = []
+        end
+        charms_for_tag = charms_by_tag[tag]
+        charms_for_tag.push(charm)
+      }
+    end
+  }
+  sorted_tags = charms_by_tag.keys.sort.reject { |k| excluded_tags.include?(k) }
+  sorted_tags.each { |tag|
+    out.print("<h3>", tag, "</h3><ul class='index_items'>")
+    charms_by_tag[tag].each { |charm|
+      out.print("<li><a href='", charm["section"], ".html#", charm["id"], "' ",
+                "target='text'>",
+                charm["name"],
+                "</a></li>")
+    }
+    out.print("</ul>")
+  }
 end
 
 def make_html(indir, outdir, outfilename)
@@ -145,11 +173,15 @@ def make_html(indir, outdir, outfilename)
     out.print("<html><head><title>Discordian Charm Indices</title></head>\n")
     out.print("<link rel='stylesheet' href='style.css'/>\n")
     out.print("</head>\n<body>\n")
-    out.print("<h3>Discordian Charms</h3>\n")
+    out.print("<h4>Discordian Charms</h4>\n")
     out.print("<a target='selected-index' href='index-by-division-for-", outfilename,
               "'>by Division</a><br/>\n")
+    out.print("<a target='selected-index' href='index-by-type-for-", outfilename,
+              "'>by Type</a><br/>\n")
     out.print("<a target='selected-index' href='index-by-keyword-for-", outfilename,
               "'>by Keyword</a><br/>\n")
+    out.print("<a target='selected-index' href='index-by-tag-for-", outfilename,
+              "'>by Tag</a><br/>\n")
     out.print("</body></html>\n")
   }
 
@@ -193,42 +225,36 @@ def make_html(indir, outdir, outfilename)
     out.print("</body></html>")
   }
 
+  File.open(outdir + "/index-by-type-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charms by Type</title></head>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
+
+    write_tag_index_as_html(out, charms, "type", ["Simple", "Reflexive", "Supplemental"],
+                            lambda {|tag_value| tag_value.split(" (")[0..0]})
+
+    out.print("</body></html>")
+  }
+
   File.open(outdir + "/index-by-keyword-for-" + outfilename, "w") { |out|
     out.print("<html><head><title>Discordian Charms by Keyword</title></head>\n")
     out.print("<link rel='stylesheet' href='style.css'/>\n")
     out.print("</head>\n<body>\n")
 
-    charms_by_keyword = {}
-    charms.each_pair { |charm_full_name, charm|
-      keywords = charm["key"].split(", ")
-      keywords.each { |keyword|
-        if !charms_by_keyword.has_key?(keyword)
-          charms_by_keyword[keyword] = []
-        end
-        charms_for_keyword = charms_by_keyword[keyword]
-        charms_for_keyword.push(charm)
-      }
-    }
-    sorted_keywords = charms_by_keyword.keys.sort
-    sorted_keywords = sorted_keywords.reject { |k|
-      ["Combo-Basic", "Combo-OK", "None"].include?(k)
-    }
-    sorted_keywords.each { |keyword|
-      return if keyword == "Combo-OK"
-      out.print("<h3>", keyword, "</h3><ul class='index_items'>")
-      charms_by_keyword[keyword].each { |charm|
-        out.print("<li><a href='", charm["section"], ".html#", charm["id"], "' ",
-                  "target='text'>",
-                  charm["name"],
-                  "</a></li>")
-      }
-      out.print("</ul>")
-    }
-    # print charm_full_name
+    write_tag_index_as_html(out, charms, "key", ["Combo-Basic", "Combo-OK", "None"])
 
     out.print("</body></html>")
   }
-    
+
+  File.open(outdir + "/index-by-tag-for-" + outfilename, "w") { |out|
+    out.print("<html><head><title>Discordian Charms by Tag</title></head>\n")
+    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("</head>\n<body>\n")
+
+    write_tag_index_as_html(out, charms, "tag", ["None"])
+
+    out.print("</body></html>")
+  }
 end
 
 make_html($*[0] ,$*[1], $*[2])

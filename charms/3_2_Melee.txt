@@ -250,6 +250,7 @@ type: Reflexive (Step 9)
 key: Combo-OK, Counterattack
 dur: Instant
 dep: rss
+tag: Flurry-Breaker
 review: 2011-06-25 RWG
 
 text: TODO

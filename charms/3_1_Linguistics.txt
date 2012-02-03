@@ -60,7 +60,7 @@ individuals, including himself.
 name: mm, Mondo Moment
 cost: 3m
 mins: Linguistics 2, Ess 2
-type: Reflexive (Step 1 for attacker, Step 2 for defender)
+type: Reflexive (Step 1 or Step 2)
 key: Combo-OK, Compulsion, War
 dur: Instant
 dep: exc

@@ -69,7 +69,7 @@ in their memory as this figure of legend.  The character may use the Charm
 repeatedly to sustain the Illusion, though targets gain a fresh opportunity to
 resist.
 
-	
+
 name: shr, Sprouted History*Recitation
 cost: 4m
 mins: Perf 2, Ess 2

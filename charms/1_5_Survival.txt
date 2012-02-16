@@ -12,7 +12,8 @@ text: TODO: Something for sustenance based on Erisian Element?
 
 name: dbr, Dancing*Between Raindrops
 cost: 3m
-mins: Survival 2, Ess 2 type: Supplemental
+mins: Survival 2, Ess 2
+type: Supplemental
 key: Combo-OK
 dur: Instant
 dep: exc

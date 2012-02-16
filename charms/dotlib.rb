@@ -1,6 +1,7 @@
-#! /opt/local/bin/ruby
+#! /opt/local/bin/ruby1.9
+# encoding: iso-8859-1
 
-$KCODE = "u"
+# $KCODE = "u"
 
 def beads(bead, no_bead, count)
   result = ""
@@ -23,9 +24,9 @@ def makedot(infilename, outfilename)
   deps = []
   curr_charm = {}
 
-  infile = File.open(infilename).each_line { |line|
+  infile = File.open(infilename, encoding: "iso-8859-1").each_line { |line|
     # Strip DOS line endings
-    line.gsub!("\015", "")
+    line.chomp!
     md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]

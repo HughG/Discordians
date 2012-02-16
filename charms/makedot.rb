@@ -1,5 +1,5 @@
-#! /opt/local/bin/ruby
+#! /opt/local/bin/ruby1.9
 
-require "dotlib.rb"
+require "./dotlib.rb"
 
 makedot($*[0], $*[1])

@@ -1,31 +1,37 @@
-# default:
-#	./makeall.rb
-
 D=output
 MAINFILE=charms.html
 
 W=output_wiki
 MAINWIKI=charms_wiki.txt
 
-all: destdir $D/$(MAINFILE) $W/$(MAINWIKI)
+Y=output_yaml
+MAINYAML=charms_yaml.txt
+
+all: destdir $D/$(MAINFILE) $W/$(MAINWIKI) yaml
+
+yaml: destdir $Y/$(MAINYAML)
 
 .PHONY: clean tmpclean
 
 clean:
-	-rm -rf $D $W
+	-rm -rf $D $W $Y
 #	-rm *.png
 #	-rm *~
 #	-rm charms.html
 
 tmpclean:
-	-rm -rf ./*~ $D/*~ $W/*~
+	-rm -rf ./*~ $D/*~ $W/*~ $Y/*~
 
 destdir:
 	mkdir -p $D
 	mkdir -p $W
+	mkdir -p $Y
 
 $D/%.dot: %.txt dotlib.rb
 	./makedot.rb $< $@
+
+$Y/%.yml: %.txt makeyaml.rb
+	./makeyaml.rb $< $@
 
 $D/%.png: $D/%.dot
 	/Applications/Graphviz.app/Contents/MacOS/dot -Tpng $< >$@
@@ -39,3 +45,6 @@ $D/$(MAINFILE): intro.html style.css $D/1_3_Martial_Arts.png $D/1_5_Survival.png
 $W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 	./makewiki.rb . $W $(MAINWIKI)
 #	cp -f intro.html $D/intro.html
+
+$Y/$(MAINYAML): $Y/1_3_Martial_Arts.yml $Y/1_5_Survival.yml $Y/1_1_Athletics.yml $Y/1_4_Sail.yml $Y/1_2_Awareness.yml $Y/2_1_Archery.yml $Y/2_3_Medicine.yml $Y/2_4_Performance.yml $Y/2_2_Investigation.yml $Y/2_5_Ride.yml $Y/3_2_Melee.yml $Y/3_5_War.yml $Y/3_3_Presence.yml $Y/3_4_Socialize.yml $Y/3_1_Linguistics.yml $Y/4_5_Thrown.yml $Y/4_1_Dodge.yml $Y/4_2_Larceny.yml $Y/4_4_Stealth.yml $Y/4_3_Occult.yml $Y/5_3_Integrity.yml $Y/5_5_Resistance.yml $Y/5_2_Craft.yml $Y/5_4_Lore.yml $Y/5_1_Bureaucracy.yml $Y/6_1_Discordian_Zero_Style.yml $Y/6_2_Magic_Tree_Style.yml $Y/6_3_Lotus_Tree_Style.yml $Y/6_4_Paper_Dragon_Style.yml
+	touch $Y/$(MAINYAML)

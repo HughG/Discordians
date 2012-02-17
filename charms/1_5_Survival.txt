@@ -256,14 +256,14 @@ This Charm allows other Survival Charms employed by the Anchorite to be
 extended to a group equal in Magnitude to the character's Essence, as long as
 the members focus entirely on a word, phrase or mental image which the Priest
 imparts to them.  This focus prevents the targets from doing anything other
-than physically following the Exalt and carrying out the basics needed for
-survival: hunting, foraging, eating, sleeping, remaining alert for predators,
-and reflexively defending themselves.  This effect constitutes unnatural
-mental influence; in most cases targets will be expected to accept it, but
-nonetheless the character gains a single point of Hodge.  Normal animals are
-assumed to consent unless they are actively hostile towards the character.
-The effects also extend to objects owned by the targets, if applicable.  The
-motes for this Charm must be committed for as long as the other Charm
-effect(s) which are to be extended.  If this additional commitment ends early,
-the extended effects persist for one scene, after which the original Charms
-revert to applying only to the character himself.
+than physically following the Exalt and carrying out the basics needed
+for survival: hunting, foraging, eating, sleeping, remaining alert for
+predators, and reflexively defending themselves.  This effect constitutes
+unnatural mental influence; in most cases targets will be expected to accept
+it, but nonetheless the character gains a single point of Hodge.  Normal
+animals are assumed to consent unless they are actively hostile towards the
+character.  The effects also extend to objects owned by the targets, if
+applicable.  The motes for this Charm must be committed for as long as the
+other Charm effect(s) which are to be extended.  If this additional commitment
+ends early, the extended effects persist for one scene, after which the
+original Charms revert to applying only to the character himself.

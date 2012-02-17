@@ -2,11 +2,18 @@
 
 # $KCODE = "u" # not in ruby 1.9
 
+# TODO: Convert excellencies and intro paras
 # TODO: Handle block-quoted paras
 # TODO: Handle other keywords, especially review!
+# TODO: Handle escape single/double quotes in, e.g., names, refs, etc.
+# TODO: Split Duration at " or "?
 
 def make_list(array)
   '[' + array.join(', ') + ']'
+end
+
+def make_map(array)
+  '{' + array.map {|i| i.join(': ')}.join(', ') + '}'
 end
 
 def insert_charm(out, section_name, charm, charms)
@@ -17,16 +24,20 @@ def insert_charm(out, section_name, charm, charms)
   return if charm['name'][0] == '('[0]
   if charm['name'] != '.'
     out.puts("--- !Charm")
+    out.puts("Section: #{charm['section']}")
     out.puts("Id: #{charm['id']}")
-    out.puts("Name: #{charm['name']}")
+    out.puts("Name: \"#{charm['name']}\"")
     out.puts("Cost: #{charm['cost']}") # SPLIT
-    out.puts("Mins: #{make_list charm['mins']}")
+    out.puts("Mins: #{make_map charm['mins']}")
     type_parts = charm['type'].split(' (')
     type_parts.map! { |t| t.delete '()' }
-    out.puts("Type: #{make_list type_parts}")
+    out.puts("Type: #{make_list type_parts}") # SPLIT?
     out.puts("Keywords: #{make_list charm['key']}")
     out.puts("Duration: #{charm['dur']}")
     out.puts("Prerequisites: #{make_list charm['dep']}")
+    if not charm['refs'].empty?
+      out.puts("References: #{make_list charm['refs']}")
+    end
 
     charm_full_name = section_name.downcase[0..2] + "-" + charm['id']
     charms[charm_full_name] = charm
@@ -40,7 +51,7 @@ def insert_charm(out, section_name, charm, charms)
     para.each { |line|
       out.puts("  #{line}")
     }
-    out.puts
+    out.puts("  ")
   }
 end
 
@@ -51,13 +62,8 @@ def insert_file(out, file, section_name, charms)
 
   $stderr << file << "\n"
 
-  # TODO: Fix encoding, for line endings
   IO.foreach(file, "\r\n", mode: "rb", encoding: "iso-8859-1") { |line|
     # Strip DOS line endings
-    # line.gsub!("\015", "")
-
-    # $stderr << "{{{" << line << "}}}\n"
-
     line.chomp!
     md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
@@ -73,15 +79,21 @@ def insert_file(out, file, section_name, charms)
           name = name.delete "()"
         end
         charm_names[id] = name
-        curr_charm["dep"] = []
+        curr_charm["refs"] = []
         curr_charm["section"] = section_name
+        curr_refs = []
       when "cost", "type", "dur", "tag"
         curr_charm[md[1]] = md[2]
       when "mins", "dep", "key"
-        curr_charm[md[1]] = md[2].split(", ")
+        curr_charm[md[1]] = md[2].split(", ").map! { |i| i.split(" ") }
+      when "ref"
+        curr_charm["refs"] << md[2]
       when "text"
         curr_charm["text"] = []
         curr_para = [md[2]]
+      else
+        $stderr << "Unknown keyword: " << line
+        exit -1
       end
     else
       if line.empty?

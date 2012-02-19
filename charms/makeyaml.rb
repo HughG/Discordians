@@ -23,7 +23,7 @@ def insert_long_list(out, name, array)
     end
 end
 
-def insert_charm(out, section_name, charm, charms)
+def insert_charm(out, group_name, charm, charms)
   return if charm.empty?
 
   $stderr << '  ' << charm['name'] << "\n"
@@ -31,28 +31,30 @@ def insert_charm(out, section_name, charm, charms)
   return if charm['name'][0] == '('[0]
   if charm['name'] != '.'
     out.puts("--- !Charm")
-    out.puts("Section: #{charm['section']}")
-    out.puts("Id: #{charm['id']}")
-    out.puts("Name: \"#{charm['name']}\"")
-    out.puts("Cost: #{charm['cost']}") # SPLIT
-    out.puts("Mins: #{make_map charm['mins']}")
+    out.puts("id: #{charm['id']}")
+    out.puts("name: \"#{charm['name']}\"")
+    out.puts("cost: #{charm['cost']}") # SPLIT
+    out.puts("mins: #{make_map charm['mins']}")
     type_parts = charm['type'].split(' (')
     type_parts.map! { |t| t.delete '()' }
     if type_parts.length == 1
-      type_parts << ""
+      type_parts << '""'
     end
-    out.puts("Type: #{make_map [type_parts]}") # SPLIT?
-    out.puts("Keywords: #{make_list charm['key']}")
-    out.puts("Duration: #{charm['dur']}")
-    out.puts("Prerequisites: #{make_list charm['dep']}")
-    insert_long_list(out, "References", charm['ref'])
-    insert_long_list(out, "Reviews", charm['review'])
-    insert_long_list(out, "Updates", charm['update'])
+    out.puts("type: #{make_map [type_parts]}") # SPLIT?
+    out.puts("keys: #{make_list charm['key']}")
+    if charm['tag'].length > 0
+      out.puts("tags: #{make_list charm['tag']}")
+    end
+    out.puts("dur: #{charm['dur']}")
+    out.puts("deps: #{make_list charm['dep']}")
+    insert_long_list(out, "refs", charm['ref'])
+    insert_long_list(out, "reviews", charm['review'])
+    insert_long_list(out, "updates", charm['update'])
 
-    charm_full_name = section_name.downcase[0..2] + "-" + charm['id']
+    charm_full_name = group_name.downcase[0..2] + "-" + charm['id']
     charms[charm_full_name] = charm
   end
-  out.puts("Text: |")
+  out.puts("text: |")
   charm['text'].each { |para|
     if para[0][0..1] == "> "
       para[0][0..1] = ""      
@@ -70,12 +72,15 @@ def insert_charm(out, section_name, charm, charms)
   }
 end
 
-def insert_file(out, file, section_name, charms)
+def insert_file(out, file, group_name, charms)
   charm_names = {}
   curr_charm = {}
   curr_para = ""
 
   $stderr << file << "\n"
+
+  out.puts("--- !CharmGroup")
+  out.puts("name: #{group_name}")
 
   IO.foreach(file, "\r\n", mode: "rb", encoding: "iso-8859-1") { |line|
     # Strip DOS line endings
@@ -84,7 +89,7 @@ def insert_file(out, file, section_name, charms)
     if md and md.length == 3
       case md[1]
       when "name"
-        insert_charm(out, section_name, curr_charm, charms)
+        insert_charm(out, group_name, curr_charm, charms)
 
         name_split = md[2].split(", ")
         id = name_split[0]
@@ -95,14 +100,20 @@ def insert_file(out, file, section_name, charms)
         end
         charm_names[id] = name
         curr_charm["ref"] = []
+        curr_charm["tag"] = []
         curr_charm["review"] = []
         curr_charm["update"] = []
-        curr_charm["section"] = section_name
         curr_refs = []
       when "cost", "type", "dur"
         curr_charm[md[1]] = md[2]
-      when "mins", "dep", "key", "tag"
-        curr_charm[md[1]] = md[2].split(", ").map! { |i| i.split(" ") }
+      when "mins"
+        curr_charm[md[1]] = md[2].split(", ").map! { |i|
+          parts = i.split(" ")
+          # puts [[ parts[0..-2], parts[-1] ]] # all-but-last, then last
+          [ parts[0..-2].join(" "), parts[-1] ] # all-but-last, then last
+        }
+      when "dep", "key", "tag"
+        curr_charm[md[1]] = md[2].split(", ")
       when "ref", "review", "update"
         curr_charm[md[1]] << md[2]
       when "text"
@@ -127,7 +138,7 @@ def insert_file(out, file, section_name, charms)
     curr_charm["text"].push(curr_para)
   end
 
-  insert_charm(out, section_name, curr_charm, charms)
+  insert_charm(out, group_name, curr_charm, charms)
 
   out.puts("...")
 end
@@ -137,8 +148,8 @@ def make_yaml(infilename, outfilename)
 
   File.open(outfilename, "w") { |out|
     matches = /([0-9])_([0-9])_([A-Za-z_]+)/.match(infilename)
-    section_name = matches[3].tr('_', " ")
-    insert_file(out, infilename, section_name, charms)
+    group_name = matches[3].tr('_', " ")
+    insert_file(out, infilename, group_name, charms)
   }
 end
 

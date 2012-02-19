@@ -1,6 +1,6 @@
-#! /opt/local/bin/ruby
+#! /opt/local/bin/ruby1.9
 
-$KCODE = "u"
+# $KCODE = "u"
 
 def insert_charm(out, charm, file_name_prefix, ma_style_name)
   return if charm.empty?
@@ -61,9 +61,12 @@ def insert_file(out, file, file_name_prefix, ma_style_name)
 
   $stderr << file << "\n"
 
-  IO.foreach(file) { |line|
+  IO.foreach(file, encoding: 'iso-8859-1') { |line|
     # Strip DOS line endings
-    line.gsub!("\015", "")
+    line.chomp!
+
+    # $stderr << "{" << line << "}\n"
+
     md = /^([a-z]+): *(.*)$/.match(line)
     if md and md.length == 3
       case md[1]
@@ -99,7 +102,6 @@ def insert_file(out, file, file_name_prefix, ma_style_name)
         curr_para = md[2] + "\n"
       end
     else
-      line.strip!
       if line.empty?
         if not curr_para.empty?
           curr_charm["text"].push(curr_para)

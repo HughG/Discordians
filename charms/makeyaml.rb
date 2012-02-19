@@ -16,6 +16,13 @@ def make_map(array)
   '{' + array.map {|i| i.join(': ')}.join(', ') + '}'
 end
 
+def insert_long_list(out, name, array)
+    if not array.empty?
+      out.puts("#{name}:")
+      array.each { |i| out.puts("- #{i}") }
+    end
+end
+
 def insert_charm(out, section_name, charm, charms)
   return if charm.empty?
 
@@ -31,26 +38,34 @@ def insert_charm(out, section_name, charm, charms)
     out.puts("Mins: #{make_map charm['mins']}")
     type_parts = charm['type'].split(' (')
     type_parts.map! { |t| t.delete '()' }
-    out.puts("Type: #{make_list type_parts}") # SPLIT?
+    if type_parts.length == 1
+      type_parts << ""
+    end
+    out.puts("Type: #{make_map [type_parts]}") # SPLIT?
     out.puts("Keywords: #{make_list charm['key']}")
     out.puts("Duration: #{charm['dur']}")
     out.puts("Prerequisites: #{make_list charm['dep']}")
-    if not charm['refs'].empty?
-      out.puts("References: #{make_list charm['refs']}")
-    end
+    insert_long_list(out, "References", charm['ref'])
+    insert_long_list(out, "Reviews", charm['review'])
+    insert_long_list(out, "Updates", charm['update'])
 
     charm_full_name = section_name.downcase[0..2] + "-" + charm['id']
     charms[charm_full_name] = charm
   end
   out.puts("Text: |")
   charm['text'].each { |para|
-#     if para[0..1] == "> "
-#       para[0..1] = ""      
-#       para = "<blockquote style='font-style: italic;'>" + para + "</blockquote>"
-#     end
+    if para[0][0..1] == "> "
+      para[0][0..1] = ""      
+      out.puts("  ****")
+      para.each { |line|
+        out.puts("  #{line.strip}")
+      }
+      out.puts("  ****")
+    else
     para.each { |line|
       out.puts("  #{line}")
     }
+    end
     out.puts("  ")
   }
 end
@@ -79,15 +94,17 @@ def insert_file(out, file, section_name, charms)
           name = name.delete "()"
         end
         charm_names[id] = name
-        curr_charm["refs"] = []
+        curr_charm["ref"] = []
+        curr_charm["review"] = []
+        curr_charm["update"] = []
         curr_charm["section"] = section_name
         curr_refs = []
-      when "cost", "type", "dur", "tag"
+      when "cost", "type", "dur"
         curr_charm[md[1]] = md[2]
-      when "mins", "dep", "key"
+      when "mins", "dep", "key", "tag"
         curr_charm[md[1]] = md[2].split(", ").map! { |i| i.split(" ") }
-      when "ref"
-        curr_charm["refs"] << md[2]
+      when "ref", "review", "update"
+        curr_charm[md[1]] << md[2]
       when "text"
         curr_charm["text"] = []
         curr_para = [md[2]]

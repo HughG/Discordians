@@ -1,9 +1,3 @@
-name: exc, (Any Socialize*Excellency)
-dep:
-
-text:
-
-
 name: intro, .
 dep:
 
@@ -27,6 +21,11 @@ E.g., something small which triggers a poor harvest or price increase, which
 then triggers the specific desired response from a social group.  (Basically,
 a disguised long-term social action.)  [Maybe should be Bureaucracy?]
 
+
+name: exc, (Any Socialize*Excellency)
+dep:
+
+text:
 
 
 name: pca, Persuade re*consequence of action
@@ -303,8 +302,8 @@ text: TODO
 This Charm enables the power of any successfully-applied Compulsion, Emotion,
 Illusion or Servitude effect to extend gradually to a larger target group, in
 a contagious manner.  The effect to be extended may come from a Charm used in
-a Combo with this Charm but need not do so, nor even from the character at
-all: it can be applied to an existing, ongoing effect from any source.
+a Combo with this Charm but need not do so, nor even from the character
+at all: it can be applied to an existing, ongoing effect from any source.
 
 Every being who interacts with the group, including the character himself, is
 subject to the same attack or other effect as originally applied.  If that

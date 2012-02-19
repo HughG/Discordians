@@ -1,13 +1,13 @@
-name: form, (Any Form-Type*Charm)
-dep:
-
-text:
-
-
 name: intro, .
 dep:
 
 text: TODO: Something emotional like the Archery one?
+
+
+name: form, (Any Form-Type*Charm)
+dep:
+
+text:
 
 
 name: eif, Emptiness is Form

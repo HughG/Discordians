@@ -2,9 +2,6 @@
 
 # $KCODE = "u" # not in ruby 1.9
 
-# TODO: Convert excellencies and intro paras
-# TODO: Handle block-quoted paras
-# TODO: Handle other keywords, especially review!
 # TODO: Handle escape single/double quotes in, e.g., names, refs, etc.
 # TODO: Split Duration at " or "?
 
@@ -28,32 +25,34 @@ def insert_charm(out, group_name, charm, charms)
 
   $stderr << '  ' << charm['name'] << "\n"
 
-  return if charm['name'][0] == '('[0]
   if charm['name'] != '.'
     out.puts("--- !Charm")
     out.puts("id: #{charm['id']}")
     out.puts("name: \"#{charm['name']}\"")
-    out.puts("cost: #{charm['cost']}") # SPLIT
-    out.puts("mins: #{make_map charm['mins']}")
-    type_parts = charm['type'].split(' (')
-    type_parts.map! { |t| t.delete '()' }
-    if type_parts.length == 1
-      type_parts << '""'
+    if charm['name'][0] != '('[0]
+      out.puts("cost: #{charm['cost']}") # SPLIT
+      out.puts("mins: #{make_map charm['mins']}")
+      type_parts = charm['type'].split(' (')
+      type_parts.map! { |t| t.delete '()' }
+      if type_parts.length == 1
+        type_parts << '""'
+      end
+      out.puts("type: #{make_map [type_parts]}") # SPLIT?
+      out.puts("keys: #{make_list charm['key']}")
+      if charm['tag'].length > 0
+        out.puts("tags: #{make_list charm['tag']}")
+      end
+      out.puts("dur: #{charm['dur']}")
+      out.puts("deps: #{make_list charm['dep']}")
+      insert_long_list(out, "refs", charm['ref'])
+      insert_long_list(out, "reviews", charm['review'])
+      insert_long_list(out, "updates", charm['update'])
     end
-    out.puts("type: #{make_map [type_parts]}") # SPLIT?
-    out.puts("keys: #{make_list charm['key']}")
-    if charm['tag'].length > 0
-      out.puts("tags: #{make_list charm['tag']}")
-    end
-    out.puts("dur: #{charm['dur']}")
-    out.puts("deps: #{make_list charm['dep']}")
-    insert_long_list(out, "refs", charm['ref'])
-    insert_long_list(out, "reviews", charm['review'])
-    insert_long_list(out, "updates", charm['update'])
 
     charm_full_name = group_name.downcase[0..2] + "-" + charm['id']
     charms[charm_full_name] = charm
   end
+  return if not charm.has_key?('text') or charm['text'].empty?
   out.puts("text: |")
   charm['text'].each { |para|
     if para[0][0..1] == "> "
@@ -82,7 +81,7 @@ def insert_file(out, file, group_name, charms)
   out.puts("--- !CharmGroup")
   out.puts("name: #{group_name}")
 
-  IO.foreach(file, "\r\n", mode: "rb", encoding: "iso-8859-1") { |line|
+  IO.foreach(file, mode: "r", encoding: "iso-8859-1") { |line|
     # Strip DOS line endings
     line.chomp!
     md = /^([a-z]+): *(.*)$/.match(line)
@@ -109,7 +108,6 @@ def insert_file(out, file, group_name, charms)
       when "mins"
         curr_charm[md[1]] = md[2].split(", ").map! { |i|
           parts = i.split(" ")
-          # puts [[ parts[0..-2], parts[-1] ]] # all-but-last, then last
           [ parts[0..-2].join(" "), parts[-1] ] # all-but-last, then last
         }
       when "dep", "key", "tag"

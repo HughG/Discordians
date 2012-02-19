@@ -6,19 +6,20 @@ text:
 name: eee, Erisian Elemental*Expression
 cost: 3m, 1wp, plus 1m per level of effect
 mins: Occult 3, Ess 3
-type: Reflexive (Step 1 or Step 7)
+type: Reflexive
 key: Combo-OK
 dur: Instant
 dep:
+review: 2012-02-18 RWG
 
 text: TODO
 
 This Charm is similar to the Elemental Charm known as Elemental Expression.
 Activating it costs 3 motes and one point of Willpower; the character can then
 spend up to (Essence) further motes to modify manifestations of her Divisional
-or Parametadivisional element.  Each mote spent (at Step 1) can either halve
+or Parametadivisional element.  Each mote spent can either halve
 or double the effect of any phenomena related to the element.  Alternatively,
-on successfully touching a target (at Step 7), the Erisian can either add one
+on successfully touching a target, the Erisian can either add one
 level of lethal or bashing damage (for physical manifestations) or reduce the
 target's temporary Willpower by 1 point (for mental or emotional
 manifestations).  In this case, the attack will be accompanied by a
@@ -33,6 +34,7 @@ type: Simple
 key: Combo-OK
 dur: One scene
 dep:
+review: 2012-02-18 RWG
 
 text: The Unhinged find it fairly simple to tune in to mystical vibrations.
 This Charm allows the character to sense dematerialised beings, within a range
@@ -48,6 +50,7 @@ type: Reflexive (Step 1)
 key: Combo-OK, Shaping
 dur: Instant
 dep: sw
+review: 2012-02-18 RWG
 
 text: From the right angle, portals to the spirit world can be seen as
 revolving doors.  Given a willing target, activating this Charm allows the
@@ -71,6 +74,7 @@ type: Simple
 key: None
 dur: One scene
 dep: exc, sw
+review: 2012-02-18 RWG
 
 text: Attuned as they are to the underlying fabric of multiple realities, the
 followers of Eris have a keen facility in perceiving significant supernatural
@@ -91,6 +95,7 @@ type: Reflexive (Step 1)
 key: Combo-OK, Shaping, Touch
 dur: Instant
 dep: etn
+review: 2012-02-18 RWG
 
 text: At times the glories of the Exalted should remain hidden.  This Charm
 allows the character to choose one of those times, completely suppressing the
@@ -109,6 +114,7 @@ type: Simple
 key: Shaping
 dur: Indefinite
 dep: sw
+review: 2012-02-18 RWG
 
 text: Why should the Discordians get all the fun?  This closely-guarded ritual
 allows a Wild Child to grant another willing being the ability to use one of
@@ -125,12 +131,13 @@ single activation.
 
 
 name: cfp, Charm-Filching Prana
-cost: 10m + 1wp
+cost: 10m, 1wp
 mins: Occult 5, Ess 4
 type: Simple
 key: Shaping, Touch
 dur: Indefinite
 dep: rio
+review: 2012-02-18 RWG
 
 text: Although the Gatekeepers are unable to learn the Charms of other Exalted
 types (as, for instance, the Eclipse Caste Solars can do), this obscure
@@ -148,24 +155,46 @@ character can only copy a Charm which she has observed the target use in the
 current scene.
 
 
-name: fms, Fate-Mending Stitches
-cost: 3m per effect point + (Sidereal's Essence)wp
-mins: Occult 4, Ess 5
-type: Simple
-key: Combo-Basic, Obvious, Shaping
-dur: Instant
+name: rtm, Recasting the Mold
+cost: 10m, 2wp
+mins: Occult 5, Ess 4
+type: Reflexive (Step 1 or Step 2)
+key: Combo-Basic, Shaping, Touch
+dur: Indefinite
 dep: etn
+review: 2012-02-18 RWG
+update: 2012-02-19 HG: Added para about balance if you move Numerology
 
-text: Erisians generally avoid dabbling with Fate because they know the
-long-term damage it can cause -- it's much easier to gloss over short-term
-damage.  Hence this Charm, which allows the Moonlight Lyre to undo the awkward
-workings of the Sidereals by lifting a destiny placed by one of their number.
-The cost required depends both on the number of effect points spent on the
-destiny, plus the power level of the Sidereal who crafted it.  The affected
-individual(s) will momentarily be surrounded by a glow in the colour of the
-Sidereal's Maiden.  Pattern spiders will certainly notice this change, and the
-Sidereal is very likely to hear about it, though he or she will not
-automatically know the cause.
+text: TODO
+
+This Charm allows the character to remove a single Shaping effect from its
+target, either at the instant it is applied, or any time afterward in the case
+of ongoing Shaping effects.  The character explicitly can apply this Charm to
+a Shaping effect which target him.  The character retains the potential of the
+effect as long as he maintains the Charm's mote commitment, and may re-apply
+it reflexively to any target which he successfully touches, which may require
+a Martial Arts roll in the case of an unwilling target.  If the character
+fails to hit the new target, he retains the effect for later use, but if he
+makes contact, the Charm ends and he no longer has use of the effect, even if
+the new target successfully resists it.
+
+Alternatively, he may simply release the motes, in which case a ghostly
+rainbow outline forms, resembling the original target as it appeared with the
+Shaping effect applied.  Anyone who comes into contact with this outline
+becomes the new target of the Shaping effect, though it will dissipate at the
+end of the scene in which it formed.
+
+In the case of a Sidereal destiny being removed from its original target,
+pattern spiders may notice the change, and may (or may not) choose to inform
+its creator.
+
+If the character moves a Numerology effect, its balance will be maintained.
+If the balance was to apply to its original target, then both the original
+target and the new target will suffer the balance, once after the other, in
+proportion to the time for which they enjoyed its benefits.  If the balance
+was to apply to the Discordian who applied the Numerology, then the balance
+instead spends part of its time afflicting its originator, followed by part
+applying to the character who used this Charm.
 
 
 name: tss, Triangular Circle*Sorcery
@@ -175,6 +204,7 @@ type: Permanent
 key: None
 dur: Instant
 dep:
+review: 2012-02-18 RWG
 
 text: This Charm gives the Children of Eris access to Terrestrial Circle
 Sorcery, only they changed the name, just because.  Oh, alright, if you must
@@ -192,6 +222,7 @@ type: Permanent
 key: None
 dur: Instant
 dep: tss
+review: 2012-02-18 RWG
 
 text: This Charm builds on the character's knowledge of Sorcery, extending it
 to what others would term Celestial Circle Sorcery.  The character may instead
@@ -207,6 +238,7 @@ type: Reflexive (Step 2)
 key: Combo-Basic
 dur: Indefinite
 dep: sss, cfp
+review: 2012-02-18 RWG
 
 text: The Beloved of the Most Beatiful get away with breaking all sorts of
 rules, and they have gained limited access to the Solar's most powerful

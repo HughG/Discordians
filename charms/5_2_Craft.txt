@@ -18,8 +18,8 @@ text: TODO
 This Charm supplements a dramatic action to craft or repair a non-magical
 object, allowing the character to quickly cobble together a rough, temporary
 but serviceable version of the item she desires.  It reduces the Resources
-cost of the required materials by 1 and reduces the duration by an order of
-magnitude: hours become minutes, days become hours etc.
+cost of the required materials by 1 and reduces the duration by an order
+of magnitude: hours become minutes, days become hours etc.
 
 This Charm does not remove the need for tools and some sort of materials.  The
 Resources cost reduction can go as low as 0, if the character could

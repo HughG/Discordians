@@ -40,8 +40,8 @@ is specifically destroyed, it cannot be summoned back.
 A second purchase at Archery 3 and Essence 3 allows the character to use the
 Charm with an Indefinite duration, applied to a weapon, suspending it in
 Elsewhere.  It will remain there as long as the motes remain committed.  When
-they are reflexively released, it will appear in his hand, or falls to his
-feet if both hands are occupied.
+they are reflexively released, it will appear in his hand, or fall to the
+ground at his feet if both hands are occupied.
 
 
 name: wwa, Witch Way Arrow
@@ -105,6 +105,7 @@ type: Reflexive (Step 9)
 key: Combo-OK, Obvious
 dur: Instant
 dep: exc
+ref: Porridge
 
 text: Even things that go wrong can go right sometimes.  With the Fletcher's
 Rejoinder, an Exalt's mischievous will is extended into her projectile,
@@ -219,6 +220,9 @@ accuracy or damage, the cost per duplicate is doubled.
 
 [TODO: Maybe drop cost -- check Archery changes in recent errata.  Also, add
 more Discordian flavor/effects?]
+
+[TODO: Maybe ditch this Charm and let others re-invent it, since it's quite
+low on flavour, and now that I have the "portal gun" Charm.]
 
 
 name: bta, Becoming the Arrow
@@ -349,3 +353,66 @@ attack using a suitable weapon.  In this case, the target will not suffer
 damage from the attack itself, but is at a -4 penalty to his DV, since the
 only indication of the impact will be a shimmering in the air at the last
 moment.
+
+
+name: btwt, Bull-Takes-Wing Technique
+cost: 4m, 1wp
+mins: Archery 5, Ess 3
+type: Reflexive
+key: Combo-OK, Obvious
+dur: Indefinite
+dep: bofa
+ref: [Secure Den Prana; Lunars; 191]
+
+text: TODO
+
+[TODO: Should mins be 4/4? or just 4/3?  Should duration be Indefinite or One
+scene?  What should the cost be?  Should probably include Willpower.]
+
+This Charm creates a stable, if short-lived, pair of portals to Elsewhere.
+The first portal is created at the point of impact of the shot to which this
+Charm is applied, and the second wherever the character's next shot (with the
+same weapon) lands.  Subsequent shots alternately relocate the first and
+second portals.  The character cannot choose for a shot not to move a portal,
+unless it lands out of range, or the character uses a different weapon.
+[TODO: Is this limitation reasonable?  Or should it be a reflexive (Step 1)
+choice?  Should it cost a mote each time?]
+
+When only the first portal is open, objects or beings which enter it are
+suspended in Elsewhere.  It appears as a flat, translucent grey disc with
+fringed edges, (Essence x 2) feet wide and with almost no depth.  It can be
+seen from both sides but can only be entered from the side from which the
+projectile struck.  Those walking into it from the other side will pass
+through it as though it were entirely insubstantial.  Those looking through
+this translucent surface suffer a -2 external penalty to vision, including the
+accuracy of attacks passing through it.  The space beyond this single portal
+is featureless grey, has no particular shape, and a volume roughly equal to
+a sphere with a diameter matching the portal.  If the space is filled before
+the second portal appears, nothing else can enter.
+
+When the second portal appears, anything which entered the first portal
+immediately exits through it.  Once both are open, anything passing into
+either portal immediately reappears from the other.  In any case, objects and
+beings emerge from one portal with the same speed they had when they entered
+the other, but with their direction of movement adjusted as if the two portals
+were back to back.  Anyone looking into either portal from its active side
+will see the view from the other portal.  Anyone looking at either portal from
+the other side, however, will see straight through it.  In both cases, vision
+is still subject to the -2 penalty due to the grey haze of a thin layer of
+Elsewhere.  Any number of beings or object may pass freely through the portals
+at a time, provided they fit through, as if they formed a mundane doorway.
+
+As long as there is only a single portal, any being or automaton may find a
+way back out on a successful Willpower roll, against a difficulty of the
+Discordian's Essence, in which case they similarly emerge at their original
+speed, but moving in the opposite direction.
+
+The portals cannot be moved except by the character taking further shots.
+They can be at most (Essence x 100) yards apart, and shots which land further
+from the relevant portal will not cause its twin to move.  It is explicitly
+permitted for the character to fire a shot through a portal, which will cause
+that portal to relocate when it hits, provided the distance limit is not
+exceeded.  It is not impossible to have each portal in a different realm of
+existence, if the character manages to fire through some other other
+pre-existing gateway.  In that case, the distance is calculated as the sum of
+two straight lines, from each portal to the pre-existing gateway.

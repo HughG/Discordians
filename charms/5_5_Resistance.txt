@@ -17,6 +17,7 @@ type: Permanent
 key: Stackable
 dur: Permanent
 dep:
+review: 2012-02-18 RWG
 
 text: Unpredictable as the followers of Eris are, you can never quite tell
 when they're going to keel over in a fight.  A player may purchase this Charm
@@ -33,7 +34,8 @@ mins: Resistance 3, Essence 2
 type: Reflexive (Step 7)
 key: Combo-OK, Obvious, Touch
 dur: Instant
-dep: cbt
+dep: 
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -49,7 +51,7 @@ character to carry a small piece of stone in his pocket.
 
 Solid objects generally have a Hardness equal to their soak, as described in
 Exalted, pp. 153-154.  If touching another being, the relevant Hardness and
-soak is taken from that being's armoured, if it is wearing any, otherwise from
+soak is taken from that being's armor, if it is wearing any, otherwise from
 its natural values (including any magical enhancements).  In either case, the
 character's Hardness is set to the borrowed value, if it is not already
 greater, while the soak he takes on is added to his natural soak.
@@ -67,6 +69,7 @@ type: Reflexive (Step 7)
 key: Combo-OK, Knockback, Obvious, Touch
 dur: Instant
 dep: sss
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -74,19 +77,16 @@ This Charm allows the Discordian to transmit the force of an attack on him
 into another object or being with which he is in contact.  Applicable objects
 or beings are the same as those described for Stone Skin Substitution.
 
-If the damage of the attack is sufficient to overcome the Hardness of the
-other object or being, its full force is transmitted through the character and
-into the other, which suffers the damage.  If not, the character suffers the
-damage as normal, but the force rebounds on his attacker, unless it was a
-ranged attack.  In that case the attacker must check for Knockdown if the
-damage exceeds (attacker's Stamina + Resistance).  The character will feel
-instinctively if his "cushion" has too great a Hardness to absorb the blow,
-and may choose not to activate this Charm.
+The character suffers at most minimum damage (usually, the attacker's Essence
+in dice), while the receiving object suffers full damage.  If the damage is
+insufficient to overcome the Hardness of the object then the force rebounds.
+If the attack is hand-to-hand rather than ranged, then the attacker must check
+for Knockdown if the damage exceeds (attacker's Stamina + Resistance).
 
 The character may also activate this Charm if subject to a magically-enhanced
-Knockback effect which causes additional damage on impact, provided that
-damage exceeds the Hardness of the object.  This usage does not affect the
-damage of the original effect, only that of impact after Knockback.
+Knockback effect which causes additional damage on impact.  This usage does
+not affect the damage of the original effect, only that of impact after
+Knockback.
 
 This Charm protects the character against damage from attacks, and against
 Crippling effects as a consequence of damage.  It will generally not protect
@@ -99,8 +99,6 @@ transmitted force, the character and other combatants may have to make
 Athletics checks, suffer environmental damage or otherwise deal with the
 consequences.
 
-[TODO: Should this have an FOI?  Does the Hardness bit count as a special FOI?]
-
 
 name: iia, Infinite Impact Absorption
 cost: 5m
@@ -109,6 +107,7 @@ type: Reflexive (Step 7)
 key: Combo-OK, Obvious
 dur: Instant
 dep: iss
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -119,40 +118,44 @@ accompanied by a vivid manifestation of such.  This will not be enough to
 cause any damage or significantly distract attackers, but a clever description
 may pave the way for later stunts.
 
-[TODO: Need an FoI, and maybe more flavour.  Could extend environmental
-destruction of previous Charm to be a limited form of FoI?  Makes defending
-other things/people harder.]
+[TODO: Need an FoI, and maybe more flavour.]
 
-[TODO: Maybe, at higher Essence and/or with repurchase, spend +1wp to impose
-external penalty on others for next action due to Erisian Essence
-manifestation?]
+[TODO: With repurchase at Essence 4, spend +2m to impose external penalty on
+others for next action due to Erisian Essence manifestation.  Maybe list
+Element-specific penalties.]
 
 
 name: oou, Omnipresent Ointment*Understanding
-cost: 2m + 1m per level
+cost: 2m per level
 mins: Resistance 2, Essence 2
 type: Simple
 key: Combo-OK, Obvious, Shaping
 dur: Instant
 dep: 
+ref: [Lunars; Bruise-Relief Method; 159]
+ref: [Lunars; Halting the Scarlet Flow; 160]
+ref: [Infernals; Wholeness Rightly Assumed; 134]
+review: 2012-02-18 RWG
 
 text: TODO
 
-For every mote she spends beyond the first two, this Charm heals one level of
-bashing damage from the character, or converts one level of lethal to bashing.
-This is achieved by co-opting materials from her surroundings to fill the
-gaps, and any non-magical materials not owned by anyone may be pressed into
-service.  The amount extracted will never be enough to cause damage to other
-objects.  If the character has regained more than (Essence) health levels
-through this Charm, the repairs themselves start to become Obvious and her
-appearance may become somewhat odd, even bizarre.  When activated in realms
-beyond Creation, the possible results expand even further.
+For two motes she spends, this Charm heals one level of bashing damage from
+the character, up to a maximum of (Essence) levels.  At Essence 3, the
+character can instead choose to convert one level of lethal to bashing for
+every two motes spent.  The character cannot heal lethal damage completely
+without activating this Charm twice, in a flurry or on separate actions.
+
+The healing is achieved by co-opting materials from her surroundings to fill
+the gaps, and any non-magical materials not owned by anyone may be pressed
+into service.  The amount extracted will never be enough to cause damage to
+other objects.  If the character has regained more than (Essence) health
+levels through this Charm, the repairs themselves start to become Obvious and
+her appearance may become somewhat odd, even bizarre.  When activated in
+realms beyond Creation, the possible results expand even further.
 
 The replacement materials will be expelled from her system as normal wound
 healing time elapses, and medical attention or magics may reduce this time as
-normal.  Until that point, anti-Shaping effects which target the character
-will undo the repairs, causing the full effects of the original wounds to
-return.
+normal.
 
 
 name: eer, Erisian Elemental*Rejuvenation
@@ -162,6 +165,7 @@ type: Simple
 key: Combo-OK
 dur: Indefinite
 dep: oou, sss
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -171,10 +175,11 @@ manifestation of the Erisian element associated with his Division or
 Parametadivision.  While it is active, the Chosen of Eris either heals one
 health level of damage every five ticks, or regains one point of Willpower
 every 23 minutes (i.e., 7 points every 6 hours), the choice being made when
-the Charm is activated.  However, this requires the character's full
-attention, so he is Inactive, though still aware of his surroundings.  He may
-choose to end the Charm reflexively at any time, whereupon he can act on the
-following action.
+the Charm is activated.  In the case of healing damage, bashing is healed
+first, then lethal, then aggravated.  However, this requires the character's
+full attention, so he is Inactive, though still aware of his surroundings.  He
+may choose to end the Charm reflexively at any time, whereupon he can act on
+the following action.
 
 The question of whether something consists of one of the Elements described in
 Discordian Doctrine is really one of viewpoint and belief, so the storyteller
@@ -192,6 +197,7 @@ type: Reflexive (Step 10)
 key: Combo-OK, Stackable
 dur: Indefinite
 dep: oou
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -235,13 +241,14 @@ this Charm, the Crippling effect is held at bay, but the character's rating in
 that Ability is treated as zero.  This does not prevent the character from
 using any Charms he knows which require a rating in that Ability, but it does
 disable any Charm effects which are conditional on a particular rating,
-typically worded as "at Essence 3+" or "a further purchase at Essence 4".
+typically worded as "at Archery 3+" or "a further purchase at Lore 4".
 Specialties are unavailable, though Excellencies can still be spent on rolls,
 still treating the Ability rating as zero for the purpose of dice caps.  When
 the motes are released, the character's Ability rating returns to normal, but
 the Crippling wound takes effect unless suitable medical treatment has been
-given.  The character can alternatively spend 3xp, as if raising the Ability
-from 0 to 1.  This does not raise the Ability but immediately heals the wound.
+given.  The character can alternatively spend 3 experience points, as if
+raising the Ability from 0 to 1.  This does not raise the Ability but
+immediately heals the wound.
 
 
 name: csp, Chimera-Skin Prana
@@ -251,6 +258,7 @@ type: Reflexive (Step 10)
 key: Combo-OK, Shaping, Obvious
 dur: Instant
 dep:
+review: 2012-02-18 RWG
 
 text: The chosen of Eris are not immune to Chaos, but they have a deeper
 understanding of it than others.  This Charm allows the character to alter the
@@ -270,12 +278,13 @@ type: Simple
 key: Shaping, Obvious
 dur: Instant
 dep: csp
+review: 2012-02-18 RWG
 
 text: The Bishops of Greyface do not gladly suffer Chaos when it gets in their
 way.  With this Charm the character may undo any one Shaping effect which has
 altered her at any point in time.  If the Shaping affected more individuals
 than just the character, she will be the only one to escape it.  A ghostly
-orange outline of the character will persist, hanging in space for one scene,
+rainbow outline of the character will persist, hanging in space for one scene,
 embodying that sloughed-off magic.  If any other being touches it before the
 scene expires, the original effect is immediately applied to them, though they
 may use any powers of their own to resist it.
@@ -293,6 +302,7 @@ type: Permanent
 key: Shaping
 dur: Permanent
 dep: csp
+review: 2012-02-18 RWG
 
 text: TODO
 
@@ -300,4 +310,5 @@ This Charm makes the character master of his own shape, though it does not
 make it inviolable.  If any effect would prevent the character from applying a
 Shaping effect to himself, he is nonetheless able to do so.  This is true
 whether the effect targets the character specifically or is one which affects
-an area he is in.
+an area he is in.  If any effect specifically contests this Charm, add the
+character's Essence in automatic successes to the roll-off.

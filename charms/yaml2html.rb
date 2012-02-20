@@ -1,37 +1,9 @@
 #! /opt/local/bin/ruby1.9
 
 require "psych"
+require "./yaml2x"
 
-class CharmGroup
-  yaml_tag "!CharmGroup"
-  attr_accessor \
-    :name,
-    :text
-
-  def to_s
-    puts @name, @text
-  end
-end
-
-class Charm
-  yaml_tag "!Charm"
-  attr_accessor \
-    :id,
-    :name,
-    :cost,
-    :mins,
-    :type,
-    :keys,
-    :tags,
-    :dur,
-    :deps,
-    :refs,
-    :reviews,
-    :updates,
-    :text
-end
-
-def insert_charm(out, section_name, charm, charms)
+def insert_charm(out, section_name, charms, charm)
 #  $stderr << '  ' << charm.name << "\n"
 
   return if charm.name[0] == '('[0]
@@ -62,28 +34,9 @@ if __FILE__ == $PROGRAM_NAME
   puts $PROGRAM_NAME + "..."
   filename = "./output_yaml/1_3_Martial_Arts.yml"
 #  filename = "./output_yaml/3_5_War.yml"
-  File.open filename do |f|
-    group_name = ""
-    charms = {}
-    charms_by_full_id = {}
-
-    docs = Psych.parse_stream(f).children
-    #docs.each { |doc| p doc.to_ruby }
-    docs.each { |doc|
-      obj = doc.to_ruby
-      if obj.is_a? CharmGroup
-        group_name = obj.name
-      end
-      if obj.is_a? Charm
-        charm = obj
-        p obj.name
-        charms[charm.id] = charm
-        charm_full_id = group_name.downcase[0..2] + "-" + charm.id
-        charms_by_full_id[charm_full_id] = charm
-      end
-    }
+  process_file(filename) { |group_name, charms|
     charms.each_value { |charm|
-      insert_charm($stdout, group_name, charm, charms)      
+      insert_charm($stdout, group_name, charms, charm)
     }
-  end
+  }
 end

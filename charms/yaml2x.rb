@@ -45,7 +45,7 @@ def process_file(infilename)
       end
       if obj.is_a? Charm
         charm = obj
-        p obj.name
+        # p obj.name
         charms[charm.id] = charm
         # charm_full_id = group_name.downcase[0..2] + "-" + charm.id
         # charms_by_full_id[charm_full_id] = charm

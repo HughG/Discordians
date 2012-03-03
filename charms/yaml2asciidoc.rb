@@ -10,9 +10,14 @@ def insert_charm(out, section_name, charms, charm)
   if charm.name != '.'
     # out.puts("<a name='#{charm.id}'/>\n")
     out.puts("== #{charm.name}")
+    mins = charm.mins.map { |min| min.join(" ") }.join(", ")
+    type = charm.type[0]
+    if charm.type.length > 1
+      type += " (" + charm.type[1] + ")"
+    end
     out.puts("*Cost:* #{charm.cost}; " +
-             "*Mins:* #{charm.mins}; " +
-             "*Type:* #{charm.type} +")
+             "*Mins:* #{mins}; " +
+             "*Type:* #{type} +")
     out.puts("*Keywords:* #{charm.keys.join(', ')} +")
     out.puts("*Duration:* #{charm.dur} +")
     out.print("*Prerequisite Charms:* ")
@@ -20,7 +25,7 @@ def insert_charm(out, section_name, charms, charm)
     if deps.empty?
       out.print("None")
     else
-      out.print(charm.deps.map {|d| charms[d].name}.join(", "))
+      out.print(charm.deps.map {|d| charms[d].name.delete("()")}.join(", "))
     end
     out.puts(" +")
   end

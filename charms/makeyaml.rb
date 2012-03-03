@@ -34,10 +34,7 @@ def insert_charm(out, group_name, charm, charms)
       out.puts("mins: #{make_map charm['mins']}")
       type_parts = charm['type'].split(' (')
       type_parts.map! { |t| t.delete '()' }
-      if type_parts.length == 1
-        type_parts << '""'
-      end
-      out.puts("type: #{make_map [type_parts]}") # SPLIT?
+      out.puts("type: #{make_list [type_parts]}") # SPLIT?
       out.puts("keys: #{make_list charm['key']}")
       if charm['tag'].length > 0
         out.puts("tags: #{make_list charm['tag']}")

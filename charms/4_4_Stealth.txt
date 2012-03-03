@@ -126,24 +126,46 @@ name: hioo, ?Hide Importance of Object?
 cost: 3m
 mins: Stealth 3, Ess 2
 type: Simple
-key: Combo-OK, Illusion, Touch
+key: Combo-OK, Illusion, Stackable, Touch
 dur: Indefinite
 dep: 
 review: 
-ref: [Treasure as Trash Misdirection; Lunars; 68]
-ref: [Any-Trinket Allure; Lunars; 68]
+ref: [Treasure as Trash Misdirection; GotMH-Luna; 26]
+ref: [Any-Trinket Allure; Ink Monkeys vol. 22; 68]
 
 text: TODO
 
-Makes an object seem unremarkable.  Doesn't adjust Resources value (much) but
-hides any distinguishing marks or unique identity.  Artifacts will appear to
-be mundane, casting daiklaves as longswords and so on.  Observers will make
-somewhat accurate descriptions but harder to recognise the object from that.
+[TODO: Work out how to ref Ink Monkeys Charms in two places: by volume and in
+the collected works.]
 
-Costs two Willpower points to resist.
+[TODO: Dammit, this is basically a duplicate of the Larceny Charm "Flawless
+Transfiguration Knack".  Need to merge the two.  Maybe turn this into a Charm
+to hide an item altogether, possibly by placing it among similar items, or
+even similar shapes -- e.g., hiding a sword among hanging folds of a cloak?]
+
+The character applies this Charm to a mundane object to make make it seem
+unremarkable.  Resisting this Illusion costs two points of temporary
+Willpower.  Any or all distinguishing features can be removed, including
+shaping, coloration, markings, and so on, but the basic nature of the object
+cannot be changed.  Whether something is remarkable depends on context, so
+straightening a curved sword might be appropriate in some parts of creation,
+or the reverse in other places, but it could never be disguised as a staff.
+The Storyteller is the final arbiter of what is possible.  The disguise can
+reduce the apparent Resources value of an object by up to (Stealth ÷ 2), to a
+minimum of one dot, and can disguise perfect, exceptional or fine items as
+ones of a lesser degree of superiority, or of a standard level of quality.
+Observers can still provide an accurate description of the object, but that
+description is likely to match many other instances of its kind.
+
+At Essence 3, this Charm can also be applied to artifacts, either to make a
+unique item appear generic, or even concealing magical items as mundane.  The
+character can create an Illusion which removes unique features from an
+artifact's appearance, or reduces the apparent Artifact rating of an item by
+up to (Stealth) dots, to a minimum of zero, or both.
 
 At higher Stealth/Ess, apply to objects not in the character's possession, and
-to living beings.  BUT compare to Larceny Charm Identity Theft.
+to living beings?  BUT compare to Larceny Charms Instant Image Improvisation
+and Identity Theft.
 
 [Note: sort of the opposite of Larceny Charm Value-Adding Veneer.]
 

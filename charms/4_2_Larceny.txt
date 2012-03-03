@@ -288,5 +288,5 @@ necessarily immediately.  The strength of the desire depends on the number of
 successes above the threshold.  Again, observers may spend a point of
 Willpower to shake off this desire, but doing so does not give them a way to
 free others from the effect, since it is only their own desire which is
-affected.  On the other hand, the character may keep specific others from this
+affected.  On the other hand, the character may free specific others from this
 effect by telling them about it, before or after using the Charm.

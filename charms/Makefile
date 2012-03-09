@@ -39,6 +39,10 @@ $D2/%.asc: $Y/%.yml yaml2asciidoc.rb
 $D2/%.html: $D2/%.asc
 	asciidoc $< # $@
 
+$D2/%.pdf: $D2/%.asc
+	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $<
+	-# asciidoc $< # $@
+
 $Y/%.yml: %.txt makeyaml.rb
 	./makeyaml.rb $< $@
 

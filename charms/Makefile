@@ -1,6 +1,9 @@
 D=output
 MAINFILE=charms.html
 
+D2=output2
+MAINFILE2=charms.html
+
 W=output_wiki
 MAINWIKI=charms_wiki.txt
 
@@ -11,24 +14,30 @@ all: destdir $D/$(MAINFILE) $W/$(MAINWIKI) yaml
 
 yaml: destdir $Y/$(MAINYAML)
 
+html2: destdir $D2/1_3_Martial_Arts.html $D2/1_5_Survival.html # $D2/$(MAINFILE2)
+
 .PHONY: clean tmpclean
 
 clean:
-	-rm -rf $D $W $Y
-#	-rm *.png
-#	-rm *~
-#	-rm charms.html
+	-rm -rf $D $D2 $W $Y
 
 tmpclean:
-	-rm -rf ./*~ $D/*~ $W/*~ $Y/*~
+	-rm -rf ./*~ $D/*~ $D2/*~ $W/*~ $Y/*~
 
 destdir:
 	mkdir -p $D
+	mkdir -p $D2
 	mkdir -p $W
 	mkdir -p $Y
 
 $D/%.dot: %.txt dotlib.rb
 	./makedot.rb $< $@
+
+$D2/%.asc: $Y/%.yml yaml2asciidoc.rb
+	./yaml2asciidoc.rb $< $@
+
+$D2/%.html: $D2/%.asc
+	asciidoc $< # $@
 
 $Y/%.yml: %.txt makeyaml.rb
 	./makeyaml.rb $< $@

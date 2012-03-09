@@ -1,13 +1,13 @@
-name: exc, (Any Survival*Excellency)
-dep:
-
-text:
-
-
 name: intro, .
 dep:
 
 text: TODO: Something for sustenance based on Erisian Element?
+
+
+name: exc, (Any Survival*Excellency)
+dep:
+
+text:
 
 
 name: dbr, Dancing*Between Raindrops

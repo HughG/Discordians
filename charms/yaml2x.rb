@@ -32,7 +32,7 @@ class Charm
 end
 
 def process_file(infilename)
-  File.open infilename do |infile|
+  File.open(infilename, mode: "r", encoding: "utf-8") do |infile|
     group_name = ""
     charms = {}
     # charms_by_full_id = {}

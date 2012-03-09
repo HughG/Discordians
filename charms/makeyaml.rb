@@ -78,7 +78,10 @@ def insert_file(out, file, group_name, charms)
   out.puts("--- !CharmGroup")
   out.puts("name: #{group_name}")
 
-  IO.foreach(file, mode: "r", encoding: "iso-8859-1") { |line|
+  IO.foreach(file,
+             mode: "r",
+             external_encoding: "iso-8859-1",
+             internal_encoding: "utf-8") { |line|
     # Strip DOS line endings
     line.chomp!
     md = /^([a-z]+): *(.*)$/.match(line)
@@ -141,9 +144,10 @@ end
 def make_yaml(infilename, outfilename)
   charms = {}
 
-  File.open(outfilename, "w") { |out|
+  File.open(outfilename, "wt", encoding: "utf-8") { |out|
     matches = /([0-9])_([0-9])_([A-Za-z_]+)/.match(infilename)
     group_name = matches[3].tr('_', " ")
+    out.puts("# -*- coding: utf-8 -*-") # To keep Emacs happy
     insert_file(out, infilename, group_name, charms)
   }
 end

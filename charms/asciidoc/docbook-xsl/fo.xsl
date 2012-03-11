@@ -19,10 +19,10 @@
 <xsl:param name="fop1.extensions" select="1" />
 <xsl:param name="variablelist.as.blocks" select="1" />
 
-<xsl:param name="paper.type" select="'A4'"/>
 <!--
-<xsl:param name="paper.type" select="'USletter'"/>
+<xsl:param name="paper.type" select="'A4'"/>
 -->
+<xsl:param name="paper.type" select="'USletter'"/>
 <xsl:param name="hyphenate">false</xsl:param>
 <!-- justify, left or right -->
 <xsl:param name="alignment">left</xsl:param>
@@ -149,6 +149,11 @@
   <xsl:attribute name="keep-together.within-column">auto</xsl:attribute>
 </xsl:attribute-set>
 
+
+<!--
+<xsl:param name="section.autolabel" select="0"></xsl:param>
+<xsl:param name="chapter.autolabel" select="0"></xsl:param>
+-->
 <!--
   Two-column by default.
 -->
@@ -156,15 +161,95 @@
 <!--
   Single-column for pgwide attribute.
 -->
-<xsl:attribute-set name="component.titlepage.properties">
-  <xsl:attribute name="span">all</xsl:attribute>
-  <xsl:attribute name="padding-top">36pt</xsl:attribute>
-  <xsl:attribute name="padding-bottom">48pt</xsl:attribute>
-</xsl:attribute-set>
 <xsl:attribute-set name="pgwide.properties">
   <xsl:attribute name="span">all</xsl:attribute>
   <xsl:attribute name="padding-top">12pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">12pt</xsl:attribute>
 </xsl:attribute-set>
+
+<!--
+  Chapter heading customisation.
+-->
+<xsl:attribute-set name="chapter.titlepage.recto.style">
+  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
+  <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
+  <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
+  <xsl:attribute name="padding-top">36pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
+  <xsl:attribute name="border">solid blue</xsl:attribute>
+  <xsl:attribute name="color">white</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="component.titlepage.properties">
+  <xsl:attribute name="span">all</xsl:attribute>
+  <xsl:attribute name="padding-top">24pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">36pt</xsl:attribute>
+  <xsl:attribute name="border">solid green</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="component.title.properties">
+  <xsl:attribute name="text-align">center</xsl:attribute>
+  <xsl:attribute name="border">solid red</xsl:attribute>
+  <xsl:attribute name="margin-left">96pt</xsl:attribute>
+  <xsl:attribute name="margin-right">96pt</xsl:attribute>
+</xsl:attribute-set>
+<!--
+<xsl:template match="chapter|appendix" mode="intralabel.punctuation">
+  <xsl:text>:</xsl:text>
+</xsl:template>
+-->
+<xsl:template match="chapter" mode="label.markup">
+  <xsl:choose>
+    <xsl:when test="@label">
+      <xsl:value-of select="@label"/>
+    </xsl:when>
+    <xsl:when test="string($chapter.autolabel) != 0">
+      <xsl:if test="$component.label.includes.part.label != 0 and
+                      ancestor::part">
+        <xsl:variable name="part.label">
+          <xsl:apply-templates select="ancestor::part" 
+                               mode="label.markup"/>
+        </xsl:variable>
+        <xsl:if test="$part.label != ''">
+          <xsl:value-of select="$part.label"/>
+          <xsl:apply-templates select="ancestor::part" 
+                               mode="intralabel.punctuation"/>
+        </xsl:if>
+      </xsl:if>
+<!--
+      <xsl:variable name="format">
+        <xsl:call-template name="autolabel.format">
+          <xsl:with-param name="format" select="$chapter.autolabel"/>
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="$label.from.part != 0 and ancestor::part">
+          <xsl:number from="part" count="chapter" format="{$format}" level="any"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:number from="book" count="chapter" format="{$format}" level="any"/>
+        </xsl:otherwise>
+      </xsl:choose>
+-->
+      <xsl:variable name="my.number">
+        <xsl:choose>
+          <xsl:when test="$label.from.part != 0 and ancestor::part">
+            <xsl:number from="part" count="chapter" format="1" level="any"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:number from="book" count="chapter" format="1" level="any"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="$my.number = '1'">
+          <xsl:text>One</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          Oops!
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:text>: </xsl:text>
+    </xsl:when>
+  </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>

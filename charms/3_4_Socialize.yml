@@ -1,0 +1,432 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Socialize
+text: |
+  TODO
+  
+  Also need one or more out-of-ability Charms: Investigation, Medicine, (combat
+  -- but also 3rd Div), Dodge, Occult (prayer, Cult?), Stealth (hiding among a
+  society, as Sidereals do), Bur(?)
+  
+  Something to hide/split/multiply the leader of a social group, so he's harder
+  to attack.  Or boost his stats with those of others, or based on the group
+  (e.g., on its Magnitude)?
+  
+  *[TODO: See Lunars' Mirror Sight Dismay.]*
+  
+  Something to improve defenses of others, or Defend Other?  Possibly as a
+  prereq to Schismatic Innoculation Technique
+  
+  Non-social-interaction actions to indirectly affect Intimacies and actions.
+  E.g., something small which triggers a poor harvest or price increase, which
+  then triggers the specific desired response from a social group.  (Basically,
+  a disguised long-term social action.)  [Maybe should be Bureaucracy?]
+  
+--- !Charm
+id: exc
+name: "(Any Socialize Excellency)"
+text: |
+  
+  
+--- !Charm
+id: pca
+name: "Persuade re consequence of action"
+cost: 2m [or, 3m?]
+mins: {Socialize: 2, Essence: 2}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK, Social]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm supplements a social attack, removing any DV bonuses which the
+  target being or social group would gain from the attack being in opposition to
+  its Intimacies, Virtues or Motivation.  Furthermore, if the attack succeeds
+  and was aimed at persuading the target towards a particular belief, value or
+  goal, then the attack counts as a scene spent by the target in building an
+  Intimacy towards that.  Equally, if a successful attack was aimed at
+  persuading the target away from an existing Intimacy, then it counts as a
+  scene spend eroding it.  Characters and social groups may hold conflicting
+  Intimacies, so building a new one which conflicts with an existing Intimacy or
+  Motivation does not necessarily damage the latter, though bonuses and
+  penalties from these conflicting values may cancel out.
+  
+  The character can target himself with this Charm, including using it in Step 2
+  as a form of defence.  Note that, being Reflexive, this Charm can enhance
+  rolls and be used in Combos with Charms from other Abilities.
+  
+--- !Charm
+id: hci
+name: "Holding conflicting Intimacies"
+cost: -- (+2m, 1wp)
+mins: {Socialize: 3, Ess: 3}
+type: [Permanent]
+keys: [None]
+dur: Instant
+deps: [pca]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm enhances its prerequisite, making the mental influence unnatural
+  and enabling the character to build a fully-fledged Intimacy in the target
+  instantly, if her attack succeeds, but only if it conflicts in some way with
+  one the target already holds.  The new Intimacy is treated as equally valid
+  for all purposes.  From then on, if some effect depends on the Intimacies the
+  target holds, he may regard either or both as taking effect or precedence, as
+  he prefers.  Both will remain indefinitely, but a scene spent reinforcing one
+  subsequently (or any other effect which reinforces it) also counts as
+  weakening the other, and vice versa, unless this Charm is re-invoked.  This
+  Charm does not enhance the character's ability to wear away existing
+  Intimacies.
+  
+  If the target holds more than his maximum number of Intimacies, then an
+  Intimacy of his choice will start to fade out after the scene in which this
+  Charm is invoked.  This can be any Intimacy, including the one added by this
+  Charm.
+  
+  If the character does not know any of the target's Intimacies, or none of his
+  known Intimacies suit her purposes, she may attempt to build an Intimacy
+  opposing some other belief, value or goal.  If the target in fact has an
+  Intimacy which matches closely enough, as determined by the Storyteller, then
+  the Charm succeeds, otherwise it has no effect and the motes are wasted.
+  
+--- !Charm
+id: dmi
+name: "Disguising Motivation and Intimacies"
+cost: 4m
+mins: {Socialize: 3, Ess: 2}
+type: [Reflexive]
+keys: [Combo-OK, Social]
+dur: One scene
+deps: [pca]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm adds (Socialize) to the difficulty of all attempts to read the
+  character's Motivation, Intimacies, Virtue ratings, emotions or intentions in
+  the current scene.  If the attempt at reading her would have succeeded but for
+  this increased difficulty, the attacker will believe that it did succeed, and
+  the character can determine exactly what the attacker believes of her in
+  respect of whatever information would have been received.
+  
+  If the character's MDV would be subject to a penalty because a social attack
+  aligns with her Motivation, Virtues or Intimacies, and the attacker does not
+  already know these, then the penalty is reduced by (Socialize), to a minimum
+  of zero. 
+  
+--- !Charm
+id: hmi
+name: "Hiding Motivation and Intimacies"
+cost: 3m, 1wp
+mins: {Socialize: 4, Ess: 3}
+type: [Simple, Speed 6 in long ticks]
+keys: [Combo-OK, Social, Stackable]
+dur: Instant
+deps: [dmi]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm allows the character to apply the protection of [dmi] on a
+  long-term basis, to himself or another target, but only in relation to a one
+  single Motivation, Intimacy, emotion or intention for each activation of this
+  Charm.  The increased difficulty also applies to attempts to determine the
+  existence or source of any magical effects which cause, maintain or otherwise
+  afffect the chosen aspect, including relevant Emotion and Compulsion effects,
+  and this Charm itself.  The Charm can be applied to a social group of
+  Magnitude up to (Socialize ÷ 2).
+  
+--- !Charm
+id: psa
+name: "Perfect social attack"
+cost: 3m or 5m
+mins: {Socialize: 3, Ess: 2}
+type: [Reflexive, Step 1 or Step 9]
+keys: [Combo-OK, Social]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+  It is as much by trickery as by force of personality that the
+  Tower-Builders drag others into their schemes.  A favorite approach is to
+  twist words to persuade others that their own rebuttals do not, in fact,
+  counter the Discordian's true point.
+  
+  This Charm renders the target's Parry Mental Defense Value inapplicable
+  against the character's attack, making it unblockable.  By spending an
+  additional 2 motes the character can employ this Charm to gain a Counterattack
+  against any Social attack, which is again unblockable.
+  
+--- !Charm
+id: gsd
+name: "General social defence"
+cost: 4m
+mins: {Socialize: 3, Ess: 3}
+type: [Reflexive, Step 2]
+keys: [Combo-OK, Social]
+dur: Instant
+deps: [psa]
+reviews:
+- 
+text: |
+  The Offendis know that to get a group to cooperate, one must consider
+  all members' points of view, and with the self-contradictory wisdom of Eris
+  they are uniquely skilled at doing so.
+  
+  This Charm allows the character to briefly shift her opinion in the face of a
+  social attack, her response treating it in a totally different way to what the
+  attacker intended -- possibly part way through a sentence which seems to
+  whole-heartedly accept the point made.  The effect is to perfectly parry any
+  social attack, even if it is unblockable.
+  
+  Additionally, at Socialize 4+, the skill with which the character renders her
+  surprising response imposes an external penalty of -(Essence) on any further
+  social attacks based around the same point or similar ones, from any character
+  present at the time, in the following action.  This penalty decreases by 1
+  over subsequent actions until it reaches zero.
+  
+--- !Charm
+id: usa
+name: "Unexpected social attack"
+cost: 3m
+mins: {Socialize: 3, Ess: 2}
+type: [Supplemental]
+keys: [Combo-OK, Social]
+dur: Instant
+deps: [psa]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm supplements a (Manipulation + Socialize) roll to establish surprise
+  for a Social attack, causing it to succeed automatically unless the target
+  employs supernatural senses or magic to support the opposing (Perception +
+  Intelligence) roll.  In that case, the Charm still adds (Socialize ÷ 2)
+  successes to the character's roll.
+  
+  Additionally, the character may use Charisma in place of Manipulation to
+  establish or re-establish surprise, to indicate his skill in bending the topic
+  without actually changing it.  However, each such attempt after the first is
+  at a cumulative -1 internal penalty for the same topic of conversation in a
+  scene.  The penalty is reset to zero at the start of a new scene, or by
+  changing topic, either by dramatic statement or by rolling (Manipulation +
+  Socialize) to reestablish surprise.  If the character returns to the same
+  topic in the same scene, the penalty picks up where it left off.
+  
+  *[TODO: Follow-on of Stealth???]*  				       
+  
+--- !Charm
+id: saic
+name: "Social actions in combat"
+cost: 2m, 1wp
+mins: {Socialize: 4, Ess: 2}
+type: [Reflexive]
+keys: [Combo-OK, War]
+dur: One scene
+deps: []
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm allows the character to make social attacks against targets with
+  whom she is joined in battle or mass combat.  The targets must be able to
+  perceive, hear and/or understand her as normal if necessary for the attacks.
+  The character may reflexively spend 1 mote when making non-social attack while
+  this Charm is active, to add a single social attack which neither suffers from
+  multiple action penalties nor increases them for other attacks.  A single
+  non-social attack flurried with a single social attack therefore suffers no
+  penalties.
+  
+  *[TODO: Some recent forum thread spoke about Lunar follow-ups to Charismatic
+  Lunar Trick?]*
+  
+--- !Charm
+id: usn
+name: "Understanding social norms"
+cost: 3m, 1wp
+mins: {Socialize: 2, Ess: 2}
+type: [Simple, Speed 6 in long ticks]
+keys: [Combo-OK, Social, Stackable]
+dur: One scene
+deps: [exc]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm gives the character insight into the social norms, pressures and
+  desires of a group with which she is interacting.  As long as the Charm
+  remains active, she adds bonus dice to all rolls related to understanding and
+  taking advantage of knowledge of the Intimacies, Motivation, customs and
+  taboos of a specific group.  The number of dice is equal to the lower of (her
+  Socialize) and (the Magnitude of those present who belong to the group).  As
+  well as Socialize rolls (for example, to identify individuals who oppose the
+  norms), this bonus can apply to other abilities.  For example, it could apply
+  to Larceny rolls to pass herself off as a member of the group, Medicine rolls
+  to realize that a certain treatment is considered heretical, Bureacracy rolls
+  to guess the local favored form of bribes, and so on.  Arbitration of the
+  scope is up to the Storyteller.
+  
+  By default, the group to which Charm's effect relates will be the group which
+  the majority of beings visible (or otherwise clearly perceptible) to the Exalt
+  consider themselves to belong to.  This will most often be a local social
+  grouping such as "citizens of this town or kingdom".  If the character is
+  aware of more general or more specific groups to which most of those present
+  belong, she may select one of those groups, for example, "Autochthonian
+  mortals", "The Guild", "worshippers of a specific god".
+  
+  She may also opt to fish for groupings which are secret or simply unknown to
+  her.  This requires a successful ([Perception or Intelligence] + Socialize)
+  roll, with a difficulty determined by the Storyteller on the basis of how much
+  effort those present are putting into concealing their allegiances.  If the
+  roll fails, or no such groupings exist, the Charm's effect is spent.  If
+  successful, the character will know that such a grouping exists, but will not
+  automatically know anything about it, nor which persons present are members.
+  Further rolls are required, possibly with bonus dice from this Charm, to learn
+  more about it.
+  
+  At Essence 3+ the character can apply this Charm to a group which she can
+  perceive, without having to interact with them or even reveal her presence,
+  though she must observe them for a scene first to do so.  At Essence 4+ the
+  Magnitude of those present no longer caps her bonus: she can obtain her full
+  (Socialize) rating in bonus dice on the basis of interactng with or observing
+  even a single individual.
+  
+--- !Charm
+id: ce
+name: "Contagious Effect"
+cost: 3m per extra dot of Magnitude, 2wp [or, "(3m, 1wp) per dot"?]
+mins: {Socialize: 3, Ess: 3}
+type: [Reflexive]
+keys: [Combo-OK, Sickness, Social]
+dur: (Socialize) scenes
+deps: [usn]
+reviews:
+- 
+text: |
+  TODO
+  
+  *[TODO: Hmm, maybe this should be Sorcery?]*
+  
+  This Charm enables the power of any successfully-applied Compulsion, Emotion,
+  Illusion or Servitude effect to extend gradually to a larger target group, in
+  a contagious manner.  The effect to be extended may come from a Charm used in
+  a Combo with this Charm but need not do so, nor even from the character
+  at all: it can be applied to an existing, ongoing effect from any source.
+  
+  Every being who interacts with the group, including the character himself, is
+  subject to the same attack or other effect as originally applied.  If that
+  being defends against the attack, spends Willpower to resist it, or otherwise
+  avoids it, they remain immune to the contagion for its full duration.  If not,
+  the original effect applies in full, and they also become contagious.
+  
+  The contagion will spread as long as unaffected beings interact with those
+  affected, until the Magnitude of the total number affected is up to
+  (Socialize) dots greater than the group affected by the original effect.  Each
+  such additional dot costs three motes.  If the duration of the original effect
+  is less than that of this Charm, the contagion may continue to spread, but
+  will not re-affect those for whom the duration has passed, though they still
+  count towards the Magnitude limit.  The duration of the original effect is
+  tracked separately for each infected being.
+  
+  At Essence 4 the duration extends to (Socialize) days, and at Essence 5 to
+  (Socialize) weeks.  The character can end this Charm early, but that only
+  prevents the contagion spreading further, and does not stop the underlying
+  effect.  Note that the Contagion is a metaphysical Sickness effect and may be
+  resisted as such.
+  
+--- !Charm
+id: sit
+name: "Schismatic Innoculation Technique"
+cost: 5m, 1wp
+mins: {Socialize: 3, Essence: 2}
+type: [Simple, 6 long ticks]
+keys: [Combo-OK, Compulsion, Social]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+  TODO
+  
+  *[TODO: Should possibly have higher mins.  Compare with Lunar "Social Unit
+  Charms".  Should possibly simplify effects a bit.]*
+  
+  Using this Charm, the Overseer protects a specific loyalty (Intimacy) within
+  the Policy of a social group.  The character must have spent several hours
+  over the previous month interacting with the group, though not necessarily in
+  an obvious way.  Activating the Charm in the presence of at least one member
+  of the group, the character causes a sub-group of Magnitude up to (character's
+  Essence) to gain a further Intimacy to protecting the chosen loyalty.
+  
+  Any time a group Leader's Loyalty pool is reduced to zero and he implements
+  some action contrary to the loyalty, causing some of the group to split off,
+  two effects come into play.  First, some of the affected members will remain
+  in both the original and split-off group, and work to re-join the two parts in
+  subsequent scenes, and likely undo the implemented action as far as possible.
+  Secondly, those in the main group work against this foreign influence from
+  within, imposing an internal penalty of (Essence ÷ 2) on the implementation
+  of the action.
+  
+  Additionally, if any effect attempts to remove or weaken the protected
+  loyalty, or impose another which is contradictory, the internal opposition
+  helps the Leader resist this.  Assuming Loyalty can be spent to resist the
+  effect, the amount of Loyalty to resist for a single scene is halved, to a
+  minimum of one, and the total amount of Loyalty the Leader must spend to shake
+  it off is reduced by the character's Essence.  If the Leader cannot validly
+  resist the effect, the group automatically loses a dot of Magnitude as the
+  innoculated members, in a last-ditch attempt to protect their loyalty, all
+  leave at once to form a new group.
+  
+--- !Charm
+id: fm
+name: "Flashmob!"
+cost: 4m or 4m, 1wp
+mins: {Socialize: 4, Ess: 3}
+type: [Simple, Speed 6 in long ticks]
+keys: [Combo-OK, Compulsion, Social]
+dur: One scene
+deps: [sit]
+reviews:
+- 
+text: |
+  TODO
+  
+  This Charm allows the character to temporarily form a social group with a
+  particular purpose, without making his involvement obvious.  The character
+  first spends a few minutes interacting with a handful of people, and may do so
+  non-verbally or indirectly, for example, by drawing attention to someone or
+  something else, dropping an interesting item, causing a minor accident or
+  similar.  On activating the Charm, he rolls [(Charisma, Manipulation or
+  Appearance) + Socialize], choosing the attribute most appropriate to his
+  actions.
+  
+  All who fail to defend against the attack form a social group of Magnitude up
+  to the character's (Essence), which immediately begins to act on an intent of
+  his choice.  If this intent directly conflicts with the Motivation of any
+  target or would be an unacceptable order, that target is unaffected.  He need
+  not verbalise the intent or make it explicit in any way.  He cannot change the
+  intent after the group is formed, except by further social attacks.
+  
+  At the end of the scene, the group will normally disperse, perhaps in some
+  confusion at their actions.  However, if the intent matched the original
+  actions or overall interests of a majority of the members, or the character
+  described his actions with a particularly apt stunt, some or all of the group
+  may linger.  At Essence 4, the group constitutes a temporary Cult and grants
+  the character the benefits of an appropriate number of dots in that
+  Background, for as long as it persists in following the intent with which it
+  was seeded.  Depending on circumstances, the Storyteller may allow the
+  character to spend experience to make the Cult permanent.
+  
+...

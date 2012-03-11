@@ -1,0 +1,173 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Thrown
+--- !Charm
+id: exc
+name: "(Any Thrown Excellency)"
+text: |
+  
+  
+text: |
+  TODO: Everything, plus ... perfect attack; Action-longs (maybe as
+  re-purchase?)
+  
+  * Tree for attacking with surprise, while seeming not to attack, from
+    unexpected directions etc.
+  
+  * Tree for throwing things with non-combat effects (magical containment,
+    spying, pickpocketing)
+  
+--- !Charm
+id: ctw
+name: "(Call Thrown Weapon)"
+text: |
+  TODO
+  
+  [Like Archery bbta.  Can be used in a Combo Step 1 to automatically recall the
+  weapon after the attack succeeds or fails -- even if the attack itself
+  botches.]
+  
+  [Upgrade or second purchase to suspend weapons in Elsewhere?  Or could be
+  separate Charm as in Archery.]
+  
+--- !Charm
+id: ate
+name: "(Attack Through Elsewhere)"
+text: |
+  TODO
+  
+  [Like Archery wwa.]
+  
+--- !Charm
+id: sts
+name: "Shadow-Throwing Style"
+cost: X
+mins: {Thrown: 3, Ess: 3}
+type: [Reflexive, Step 1]
+keys: [Combo-OK, Illusion]
+dur: Indefinite
+deps: [ate]
+text: |
+  TODO
+  
+  [Creates an Illusion of part of the Erisian's presence (shadow, voice,
+  creaking floorboards etc.) being some short-ish distance away from where it
+  really is, with some variation in details [controllable with a stunt, or
+  always just "subtly different"?].  Must mime an attack toward the target point
+  at the start of the Charm, and can't move it thereafter, though she may move
+  herself.  Effect a bit like Solar's Observer-Deceiving Attack makes observers
+  roll to guess right between the target location and the Exalt's real location,
+  if she attacks, or takes other actions dependent on her location, such as
+  attempting to lure/persuade people towards/away from her fake location.  Note,
+  however, that that Charm is Instant, so this one can't be as good.]
+  
+--- !Charm
+id: tws
+name: "(Thrown With Stunning)"
+text: |
+  TODO
+  
+  [Like Archery bofa but inflicts Stunning instead of Knockback.]
+  
+--- !Charm
+id: tsfg
+name: "(Throwing Self for Grapple)"
+text: |
+  TODO
+  
+  [Allows character to throw himself like a net, as a grapple attack.  Can use
+  Thrown in place of Martial Arts for initial attack.  Can attack with some
+  small range -- Jump distance?  Some kind of bonus?  Bonus if immediately
+  [and/or?] eventually choosing to Break Hold by throwing the opponent away?
+  Maybe, if attack fails, character isn't automatically grappled himself ... but
+  is Knockback'ed???]
+  
+--- !Charm
+id: pdwr
+name: "(Perfect Defense With Redirect)"
+text: |
+  TODO
+  
+  [Like Melee ama.  Maybe deflecting attacks should be a prerequisite Charm,
+  lower-Essence pre-upgrade effect or first purchase?]
+  
+--- !Charm
+id: itw
+name: "(Improvised Thrown Weapons)"
+text: |
+  TODO
+  
+  [Like baba & qosas]
+  
+--- !Charm
+id: etw
+name: "(Elemental Thrown Weapons)"
+text: |
+  TODO
+  
+  [Like Melee soei; should Archery have the same?  Maybe Elemental effects for
+  Thrown are different.]
+  
+--- !Charm
+id: bpp
+name: "Butterfly Pinion Pitch"
+cost: 6m
+mins: {Thrown: 3, Ess: 2}
+type: [Supplemental]
+keys: [Combo-OK, Compulsion]
+dur: One scene
+deps: [itw]
+text: |
+  TODO
+  
+  The Erisian makes a throwing or stabbing motion his weapon, without actually
+  releasing it, and rolls an attack as normal.  The attack causes no damage, is
+  unblockable with mundane weapons or armor, applies a -2 external penalty to
+  the target's DV due to its invisibilty, and is unaffected by Hardness or soak.
+  Steps 7 and 8 of attack resolution will be irrelevant, unless some unusual
+  Reflexive Charm applies.
+  
+  If the attack achieves even one success, this Charm inflicts a Compulsion on
+  the target, to stay pinned to the spot.  Resisting the influence costs two
+  Willpower, and will make the target aware of the attempt at unnatural
+  influence.
+  
+  An affected target may turn on the spot, and can act and defect herself as
+  usual, provided she does not move to another location.  The target will not
+  willingly take so much as a Move action, nor consent to effects which would
+  move her.  If moved forcibly, or due to terrain or environmental effects, the
+  target will then attempt to stay at her new location.  If remaining in place
+  presents a real risk of death, the Compulsion becomes an unacceptable order
+  and the effect ends.  The target may end the effect at any point during the
+  scene by paying the two Willpower, not only at the point when the Compulsion
+  would take hold.
+  
+  Using this attack does not end any Stealth effects on the character, unless
+  the target successfully resists the influence using Willpower at the moment of
+  the initial attack.
+  
+--- !Charm
+id: cni
+name: "(Create New Intimacy)"
+text: |
+  TODO
+  
+  [Creates a new Intimacy, toward a thrown object or toward the person or object
+  which it hits.  Affects all who witness the attack, except for the Erisian and
+  the target itself.  Can spend [X] Willpower to resist.  Intimacy appears at
+  full strength and lasts [one day?  one scene?] [and magically resists
+  removal?] by default.  Thereafter it fades at one point per [day?], unless an
+  affected being spends at least one scene acting in a way which reinforces the
+  intimacy, in which case it stabilises.  This Charm does not magically
+  reinforce the intimacy after the first [scene/day], so it may be removed as
+  normal.]
+  
+--- !Charm
+id: tea
+name: "(Thrown Extra Action)"
+text: |
+  TODO
+  
+  [Like Archery fafa.  Maybe needs some variation in the details]
+  
+...

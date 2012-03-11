@@ -1,0 +1,286 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Sail
+--- !Charm
+id: exc
+name: "(Any Sail Excellency)"
+text: |
+  
+  
+--- !Charm
+id: rri
+name: "Ripple-Reading Insight"
+cost: 2m
+mins: {Sail: 2, Ess: 2}
+type: [Supplemental]
+keys: [Combo-OK, War]
+dur: Instant
+deps: [exc]
+text: |
+  The primal chaos of the sea and the winding currents of the air hold few
+  mysteries from those anointed by Eris herself.
+  
+  This Charm supplements an attempt by a sailing character to detect moving
+  objects or static hazards in the environment through which the vehicle is
+  travelling -- in the case of a boat, for example, the surrounding air and
+  water.  The range of this sense is (Essence x 2) miles.  It does not give a
+  clear image of any objects, but will normally be able to distinguish at least
+  between rocks, constructed vehicles and natural creatures, on the basis of
+  their rough shape.  Any creature down to the size of a human will be
+  noticeable, including its approximate location, speed and heading.
+  
+  As well as providing an instantaneous picture of the character's surroundings,
+  this Charm adds the character's Sail rating in dice to her next action, if it
+  is a roll to navigation through the area covered, or prediction weather for
+  that area.  Beyond that action, moving objects might have changes course, or
+  interfering spirits invalidated the prediction, so the bonus no longer
+  applies.  Stormy weather or other disturbances may apply an external penalty,
+  normally no worse than -2.
+  
+--- !Charm
+id: wmi
+name: "Wave-Mind Intuition"
+cost: --
+mins: {Sail: 4, Ess: 2}
+type: [Permanent]
+keys: [Combo-OK, War]
+dur: Permanent
+deps: [rri]
+text: |
+  
+  
+  This Charm enhances the Ripple-Reading Insight such that each invocation lasts
+  one scene, instead of just a moment.  This means that all Sail actions in that
+  scene, to navigate or predict weather, gain the two-die bonus.  In addition,
+  the character gains 2 bonus successes when opposing any Stealth effects used
+  by beings or objects moving through the range of the Charm.  This bonus does
+  not apply to movement which does not continually disturb the environment,
+  e.g., moving instantly from outside the range to just next to the character
+  for a surprise attack, or moving immaterially.
+  
+--- !Charm
+id: fhh
+name: "Flotsam Half-Hitch"
+cost: 2m per hl; or 2m per hl, 1wp
+mins: {Sail: 2, Ess: 2}
+type: [Reflexive, Step 10 or Simple, Dramatic Action]
+keys: [Combo-OK, War]
+dur: Instant
+deps: []
+text: |
+  To set sail on the ocean is to put oneself at the mercy of the elements;
+  best, then, to have a few tricks up your sleeve.  This Charm allows the
+  Travelling Sailswoman to hold together a ship or other large vehicle in which
+  she is travelling, when it is threatened with destruction.  For each two motes
+  spent, she removes 1 health level of post-soak damage to the vehicle.
+  
+  With Sail 3 and Essence 3, the Exalt can alternatively expend a point of
+  Willpower to pull together the remains of a destroyed vehicle, or any suitable
+  junk, into a serviceable raft or similar vehicle.  At least half the volume of
+  material must be of a type which would be watertight, bouyant and so on.  The
+  resulting craft will have one Health Level per two motes expended on its
+  construction, all of which are at the Minor Damage (M) level (half Speed and
+  Maneuverability, -1 external penalty to piloting rolls).  It will require only
+  1 crew member and be capable of carrying (Essence x 2) passengers.  The
+  construction may optionally include a mast and, given vaguely suitable
+  materials, even sails; it need not be water-bound: sand-ships or gliders can
+  also be created.  The resulting craft will last as long as if it had been
+  constructed normally.  This Charm cannot repair any damaged magical powers.
+  
+  *[TODO: Compare the above with personal Resistance Charms?]*
+  
+--- !Charm
+id: fs
+name: "Fantail Shimmy"
+cost: -- (+ 4m)
+mins: {Sail: 4, Ess: 2}
+type: [Permanent]
+keys: [Obvious, Touch, War]
+dur: Permanent
+deps: [fhh]
+text: |
+  Riding the smallest waves under the hull, the slightest shudder beneath
+  the wheels, the Children of Eris can use their unbalanced nature to protect
+  those travelling with them.
+  
+  This Charm allows the character to extend the effects of any Charms which
+  improve Dodge, Parry or Soak to the vehicle in which he is travelling,
+  including perfect defenses.  This costs an additional 4 motes per Charm or
+  Combo activation, thogh this Charm need not be in a Combo with the relevant
+  defensive Charms.  The Charm is not valid if the Exalt is not in a vehicle,
+  and it does not apply to attacks on individuals on the vehicle (e.g., from
+  another being on the vehicle, or using an aimed range attack).
+  
+--- !Charm
+id: sbtw
+name: "Sailing Between the Waves"
+cost: 7m, 1wp
+mins: {Sail: 4, Ess: 3}
+type: [Simple]
+keys: [Combo-OK, Shaping, War]
+dur: One scene
+deps: [rri, fs]
+text: |
+  The ever-shifting curves of water, the manifold cracks of the earth, the
+  fragments of cloud in the sky -- all these provide ample hiding places, if
+  only one can think small enough.  This Charm subtly shapes the surrounding
+  environment to reduce any successes on attempts to notice or track it to zero,
+  after all modifiers have been applied.  If this effect is opposed by a perfect
+  perception effect, add the character's Essence in automatic successes to the
+  opposed roll.
+  
+  The vehicle cannot be observed by any means, and leaves no tracks.  The effect
+  will end immediately if the vehicle changes speed or course, takes a Join
+  Battle action or interacts with objects of any significant size.  The vehicle
+  may, however, change course at the moment the Charm is activated, depending on
+  its maneuverability.  Moving over any terrain which the vehicle would normally
+  be able to traverse does not count as interaction with the environment, but
+  this Charm does not allow a boat to sail through a harbor wall, for instance.
+  
+  The Shaping effect employed coincidentally reduces any external penalties to
+  the vehicle's movement by the character's Essence.
+  
+--- !Charm
+id: siatm
+name: "Storm-In-A-Teacup Method"
+cost: (Special)m, 1wp
+mins: {Sail: 3, Ess: 3}
+type: [Simple, Dramatic Action]
+keys: [Combo-OK, Compulsion]
+dur: Indefinite
+deps: []
+text: |
+  The Children of Eris respect the complex balances involved in
+  maintaining patterns of weather, but that doesn't prevent them from being
+  their usual meddling selves when it suits them.
+  
+  Using this Charm, the Travelling Sailsman subverts the instructions given to
+  local weather spirits, and stores the effects of current weather for later
+  use.  The weather in the affected area will revert to a gentle breeze, not
+  quite dead calm.  This is achieved by unnatural mental influence on the local
+  spirits, which they may resist as a group if at least two-thirds spend 1
+  Willpower each, in which case the character gains a single point of Hodge.
+  The will of the weather will be stored in some fist-sized, non-magical vessel
+  of the character's choice, either pre-constructed or improvised from materials
+  at hand.
+  
+  The weather remains stored until the container is destroyed, the character
+  releases the commitment of motes, or the character moves farther from the
+  container than the range affected.  At that point, the stored weather
+  instructions are released upon the local spirits, to be carried out as
+  originally intended, albeit at a different time.  If the release occurs in a
+  significantly different location, the spirits in that location may separately
+  choose to resist these new instructions, again possibly gaining the character
+  a point of Hodge.
+  
+  The maximum area of effect is (Essence x 10) square miles, and must be a
+  roughly circular area centered on the character.  The cost depends on the area
+  affected, being (minimum Essence required for the area x 2): 6 motes up to 30
+  square miles, 8 motes up to 40 and so on.  The weather to be affected must be
+  controlled by beings of Essence no more than the character's own, which may
+  also limit the affected area.
+  
+  The effects of this Charm are not limited to weather goverened by spirits of
+  Air or Water, but may be applied to any transient environmental effects of
+  equivalent type and power, such as the Omen Weather which heralds demons into
+  Creation.  As with most Discordian Charms, this one applies in various realms,
+  not only in Creation, although the effects of releasing weather from one realm
+  in another are unpredictable.
+  
+--- !Charm
+id: sofd
+name: "Ship of Five Days"
+cost: 6m
+mins: {Sail: 4, Ess: 3}
+type: [Simple]
+keys: [Combo-OK]
+dur: Five days
+deps: [fhh, siatm]
+text: |
+  One way or another, the Children of Eris seem to have avoided being
+  bound by those oaths which reinforce the borders of existence; either that, or
+  they're just good at avoided being caught breaking them.  With this Charm, any
+  vehicle on which the Anchorite travels may make a five-day journey which leads
+  it and its contents into another realm.  The locations which these madmen are
+  believed to have visited include Creation, Yu-Shan, the Underworld, Malfeas,
+  the Wyld, Autochthonia and, allegedly, even Elsewhere.  The start of the
+  journey must be isolated (with very few observers other than those with animal
+  intelligence or less) but within a few hours' travel of some at least
+  minimally intelligent civilisation.  The destination will be similar, and as
+  suitable as possible to the type of vehicle used, but beyond that, the
+  character has no control over the exact spot at which the voyage will end.
+  
+  During the voyage the vehicle will be, for most of the time, undetectable by
+  almost any means.  It will appear momentarily in unpredictable locations, not
+  necessarily lying in a straight line, five times each day.  It is liable to
+  surprise anyone nearby, though it will avoid damage to itself or its
+  surroundings.  Except for those brief moments, the passengers will be unable
+  to perceive anything beyond the edge of the vehicle.
+  
+  This Charm is inapplicable unless the character is in a vehicle.  The
+  character will be incapable of leaving the ship, voluntarily or accidentally,
+  or altering its course until the journey is complete.  Even if he dies, it
+  will drift on to the far side of whatever border is being breached.
+  
+--- !Charm
+id: cop
+name: "Convergence of Parallels"
+cost: 10m, (1wp per individual)
+mins: {Sail: 5, Ess: 4}
+type: [Simple]
+keys: [Combo-OK]
+dur: One day
+deps: [sofd]
+text: |
+  Some say all roads lead to Meru, but they are wrong.  The strange, dark,
+  twisted corners of reality lead to other, equally strange corners; and in such
+  places are the Children of Chaos fully at home.
+  
+  This Charm allows the character to travel great distances quickly, but with
+  peculiar limitations.  They may transport themselves and whatever they are
+  able to carry, plus one more similar-sized individual for each point of
+  Essence they possess beyond 3, plus a suitable transport animal or vehicle for
+  the size of group travelling.  At Essence 4, a distance of up to 250 miles may
+  be covered in a day, with each additional level of Essence doubling the
+  maximum distance.  The end-point of the journey cannot be chosen exactly,
+  since it is reachable so quickly only because of subtle correspondences with
+  the point of origin.  The precisely desired final destination is likely to be
+  around 10 miles away for each 100 miles covered, and there are no guarantees
+  of safe travel in those last few miles.  There is also no certainty that the
+  mode of transport chosen at the start, e.g., a small boat, will be suitable at
+  the end.
+  
+  The parallels which allow this kind of travel are capricious concepts, so it
+  may or may not be possible to make a journey between the exact same two
+  end-points on any given occasion.  Travellers should also be aware that their
+  passage will leave both mundane and mystical traces: there may be witnesses at
+  various points on a roughly straight line between the start and end of the
+  route; and in Creation, for example, there will be tell-tale snarls in the
+  Loom of Fate which could be used to find the destination.  However, the
+  fragmented nature of the trail imposes an external penalty on the pursuer
+  equal to the character's (Essence ÷ 2), rounded up.
+  
+--- !Charm
+id: bofb
+name: "Blessing of Five Bells"
+cost: -- (+ 3m, 1wp)
+mins: {Sail: 5, Ess: 4}
+type: [Permanent]
+keys: [Obvious, War]
+dur: Permanent
+deps: [exc]
+text: |
+  Calling on the capricious benificence of Eris, her Children sing forth a
+  blessing in the cadence of five strange, bell-like tones, never the same from
+  one occasion to the next.
+  
+  This Charm allows the Exalt to pay a surchange of 3 motes and 1 point of
+  willpower on any activation of a Sail Charm, to extend their effect beyond the
+  vessel carrying the Exalt, to a further (character's Essence) vehicles within
+  a range of (Essence x 5) miles.  In the case of Convergence of Parallels, the
+  blessing multiplies the maximum number of individuals who may be affected by
+  (character's Essence), and they may be spread across up to (character's
+  Essence) vehicles within range.  The Willpower cost of that Charm is altered
+  to be 1 point per vehicle, not per individual.
+  
+...

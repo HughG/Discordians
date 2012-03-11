@@ -1,0 +1,317 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Larceny
+--- !Charm
+id: exc
+name: "(Any Larceny Excellency)"
+text: |
+  
+  
+--- !Charm
+id: oct
+name: "Occulted Cargo Trick"
+cost: 2m, or 2m, 1wp
+mins: {Larceny: 3, Ess: 2}
+type: [Simple, Speed 5]
+keys: [Combo-OK]
+dur: Indefinite
+deps: []
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  Opening a controlled pocket of Elsewhere, the character places into it any
+  non-living item which she can easily hold in her hand.  While inside this
+  pocket, the item cannot be found by normal means.  It can be retrieved as a
+  miscellaneous action, though the character may keep the motes committed to
+  allow her to return the item to storage, again as a miscellaneous action.  If
+  she simply releases the committment, the item falls to the ground beside her.
+  
+  A character can store away at most (Essence) items in this manner, each
+  requiring a separate activation of this Charm.  At Essence 3, the character
+  may stash away any object which she could lift with a feat of strength.  With
+  Larceny 4 and Essence 4, the character may spend an point of Willpower in
+  addition, to stash away a willing (and presumably trusting) living being.  For
+  them, no time will seem to have passed when they are retrieved.
+  
+  *[TODO: RWG says maybe one/both of the higher effects should need a
+  re-purchase.]*
+  
+--- !Charm
+id: rpt
+name: "Ragged Pocket Trick"
+cost: 6m
+mins: {Larceny: 5, Ess: 3}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [oct, exc]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This Charm allows the Mid-day Shadow to exercise her pickpocketing skills
+  through a small twist of Elsewhere, retrieving an object despite any mundane
+  barriers which lie between her and the target.  She can retrieve an object up
+  to (Essence) yards away, provided it is not within an area warded against
+  teleportation.  Any other barriers or wards will not stop her theft.  Alarms
+  triggered by the presence of something will stay dormant, though one triggered
+  by the absence of the stolen item would activate.
+  
+  Objects which are firmly held, such as weapons in use, cannot be taken with
+  this Charm, nor can attuned artifacts.  Furthermore, the conduit it provides
+  is not sufficient to allow feats of strength to be exercised through it.  If
+  the character is removing an item from someone's person, treat this as a
+  pickpockting attempt, with the base difficulty of the (Dexterity + Larceny)
+  roll being 1.  The difficulty is not increased by inanimate bindings.  Objects
+  in plain sight have difficulty 2, with success indicating that observers were
+  distracted.  Victims might notice the theft immediately, but attempts to
+  realise who carried out the theft, or where the object went, are at +5 to
+  difficulty.
+  
+  The character must have a reasonably accurate idea of the location of the item
+  before this Charm can be used.
+  
+--- !Charm
+id: wh
+name: "Wormhole Handshake"
+cost: 4m, 1wp
+mins: {Larceny: 4, Ess: 3}
+type: [Simple]
+keys: [Combo-OK, Obvious, Shaping]
+dur: Instant
+deps: [oct]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This Charm builds upon its prerequisite, allowing the Gatekeeper to instantly
+  change places with a target object or being within (Essence x 5) yards.  Wards
+  against teleportation will prevent this effect.  Unwilling beings can resist
+  as if resisting a grapple, but at an external penalty of -(character's Essence
+  x 2), since the attack comes from no particular direction.  Objects are only
+  valid targets if they could be lifted by the character as a feat of strength,
+  using (Strength + Athletics + Essence).
+  
+  If the character or the target was restrained before the exchange, those
+  restraints will switch from one to the other, though they may break or be too
+  loose.
+  
+--- !Charm
+id: nrm
+name: "Notion Relocation Method"
+cost: 5m
+mins: {Larceny: 3, Ess: 3}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK, Social]
+dur: Instant
+deps: []
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  Activating this Charm swaps one idea from the target's surface thoughts with
+  another from the Foolish Sage's own.  The character need not touch or lock
+  eyes with the target, but his target must be within (Essence x 5) yards and
+  clearly perceptible to him.  The target may resist, making an opposed roll of
+  (Wits + Integrity) against the character's (Wits + Larceny + Essence).  If the
+  target succeeds, he or she experiences a brief moment of distraction but is
+  otherwise unaffected.  If not, the character takes one thought or idea from
+  the target's surface mind and exchanges it with one of his own choosing, from
+  his own mind.
+  
+  The character cannot be certain what surface thoughts he will find, but must
+  proceed with the exchange if the target fails the roll.  A wise Fool will
+  therefore prime his own mind with some important and unimportant surface
+  thoughts in advance.  A willing target may choose not to resist, in which case
+  this Charm can be used for silent communication, of an odd sort.  An idea
+  planted in a target's head can be used as a basis for enhancing relevant
+  stunts in the same scene, adding an extra die (to the normal maximum of 3) if
+  the Storyteller judges that the new notion supports them.
+  
+  The ideas exchanged cannot be fundamental to the individuals concerned, e.g.,
+  in support of Motivation or Intimacies, nor can they counter awareness of an
+  ongoing situation, overcome survival instincts or the like.  For example, a
+  character could not cause a Dragon-Blooded target to temporarily lose his
+  hatred of Anathema, nor to ignore a glowing Solar Caste mark on the
+  character's forehead, nor to ignore the character as an enemy in an ongoing
+  battle.  However, the Charm could steal away suspicions that the character
+  //might// be Anathema, or might be carrying concealed weapons, provided there
+  was no ongoing evidence to support it.
+  
+  The effect is not strong enough to blind either party to reality: if some new
+  event occurs to support the idea, someone else points it out, or similar, he
+  will regain it.  In any case, the original ideas will come back to each after
+  the scene ends, and the replacements will remain in memory.  The target is
+  likely to treat the replacement thought as an unexpected idea of his own,
+  unless he has some reason to suspect mental tampering.
+  
+  If used as a defense in social combat, this Charm adds 2 to the character's
+  MDV, even if it fails, since he knows that the distraction is coming, whereas
+  the target does not.
+  
+  This Charm cannot be used against automata, although it can be used against
+  manses or warstriders which have an animating intelligence.
+  
+--- !Charm
+id: iii
+name: "Instant Image Improvisation"
+cost: 3m
+mins: {Larceny: 3, Ess: 2}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [exc]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This Charm supplements an action to create a disguise, enabling the character
+  to do so in a single action, rather than the many minutes it would normally
+  require, and use even the most tenuously applicable of props.  The character
+  gains (Larceny) additional successes on the roll to construct the disguise.
+  Note that the character's Recumbent Destiny applies as normal.
+  
+--- !Charm
+id: ftk
+name: "Flawless Transfiguration Knack"
+cost: 4m
+mins: {Larceny: 3, Ess: 2}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [exc]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This Charm supplements a Larceny action to construct a disguise, making it
+  possible to disguise one item as another, of roughly equivalent size, shape
+  and weight.  This explicitly allows the character to disguise one thing as
+  another, even if that would normally be wildly improbably.  For example, a
+  chest of drawers could be disguised as a sleeping cow.
+  
+  The disguise is not quite perfect but the character gains (Larceny) successes
+  on the roll to disguise the object.  The Mid-day Shadow can use this Charm to
+  construct a specific forgery, provided he has detailed information on the
+  object to be copied.  However, he may just as easily take a well-known object
+  and make it appear to be a quite mundane item of some other sort.  This Charm
+  cannot disguise the magical nature of things like artifacts, so those with
+  Essence sight might gain bonuses to attempts to see the true nature of a
+  magical item.  Then again, a cunning Discordian might just choose to disguise
+  a famous daiklave as an ordinary daiklave of the same magical material.
+  
+--- !Charm
+id: icc
+name: "Inhuman Countenance Construction"
+cost: 3m, 1wp
+mins: {Larceny: 4, Ess: 3}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [ftk, iii]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This Charm supplements a Disguise action in which the character attempts to
+  make herself up as some non-human being of roughly equivalent size, be it of
+  animal, spirit, demon or some other sort.  It removes any increases in
+  difficulty to the roll due to noticeable differences in size or gender, as
+  well as body type, although attempting to look like a specific individual
+  still adds +1 to the difficulty.  The natural senses of animals, demons
+  etc. gain them no bonuses in seeing through the deception, but supernatural
+  senses will help as normal.  The disguise does not affect the character's
+  Essence signature, but all Discordians may use their innate abilities to
+  disguise that.
+  
+--- !Charm
+id: it
+name: "Identity Theft"
+cost: 10m, 1wp
+mins: {Larceny: 5, Ess: 4}
+type: [Simple]
+keys: [Combo-OK, Shaping, Touch]
+dur: Indefinite
+deps: [nrm, ftk]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  This powerful Charm allows One Who Stands in the Doorway to take the identity
+  of another: not simply to copy their appearance, but possibly also to remove
+  their unique self from them.  Doing so requires a resisted roll of the
+  character's (Willpower + Larceny + Essence) against the target's (Wits +
+  Integrity + Essence).  A willing target may accept the effect without
+  resisting.
+  
+  Provided the character gains at least one success on his roll, he becomes
+  seemingly identical to the target, to all natural senses.  This includes
+  apparently duplicating all mundane and magical equipment.  Magical equipment
+  will be non-functional, though it will bear the appropriate Essence signature;
+  or, if the character possesses a reasonably similar artifact, he may cloak it
+  in the identity of part of the target's panoply.  Beings with inhumanly acute
+  senses may make a Perception + Awareness roll to spot an imperfection in this
+  mimicry, with no bonuses.  Those with magical senses such as Essence sight may
+  also do so, with a +2 bonus.  The character's Recumbent Destiny functions as
+  normal, so this imposturing may be forgotten once the character leaves.  If
+  the character and target are both within Fate, their strands appears to be
+  entwined; if one or other is outside Fate, the other strand appears frayed.
+  
+  If character gains at least one threshold success over the target, or the
+  target does not resist, that being is immediately subject to an effect similar
+  to those of a Recumbent Destiny.  All beings apart from the character himself
+  who observe the target must make a (Wits + Occult) roll at a difficulty equal
+  to the number of threshold successes.  If they fail, they will not later
+  accurately recall the presence, identity or actions of the target over the
+  duration, or even perceive them accurately while the target is still present.
+  Even if the target's presence is noted, her identity will appear to be that of
+  some miscellaneous extra, rather than her own.  Protestations from the victim
+  do not give any bonus on this roll.
+  
+--- !Charm
+id: vav
+name: "Value-Adding Veneer"
+cost: 4m
+mins: {Larceny: 3, Ess: 3}
+type: [Simple]
+keys: [Combo-OK, Illusion, Emotion]
+dur: Indefinite
+deps: [ftk]
+reviews:
+- 2011-06-25 RWG
+text: |
+  TODO
+  
+  The value or desirability of an object can be increased (or decreased) by
+  application of this Charm.  It casts an Illusion or Emotion effect over some
+  item, which subtly changes how it is perceived in one of two ways.
+  
+  In the simpler case, the character may choose to increase (or decrease, to a
+  minimum of 0) the item's apparent Resources value by up to her (Larceny ÷ 2).
+  Anyone may spend 1 Willpower to see through this Illusion; if they then point
+  it out to others, they will immediately see through it as well.
+  
+  Alternatively, she may use an Emotion effect to make it more viscerally
+  appealing.  At the time the Charm is acivated, the character rolls his
+  (Manipulation + Larceny + Essence) and records the number of successes.  All
+  who observe the item while the Charm remains active (apart from the character
+  himself) are subject to unnatural mental influence attack with that number of
+  successes, which they must defend against with their Dodge MDV.  If their
+  Dodge MDV is less, they gain a desire to obtain the item, though not
+  necessarily immediately.  The strength of the desire depends on the number of
+  successes above the threshold.  Again, observers may spend a point of
+  Willpower to shake off this desire, but doing so does not give them a way to
+  free others from the effect, since it is only their own desire which is
+  affected.  On the other hand, the character may free specific others from this
+  effect by telling them about it, before or after using the Charm.
+  
+...

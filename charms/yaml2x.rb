@@ -18,6 +18,8 @@ class Charm
   attr_accessor \
     :id,
     :name,
+    :group,
+    :file,
     :cost,
     :mins,
     :type,
@@ -33,6 +35,11 @@ class Charm
   def clean_name
     return @clean_name unless @clean_name.nil?
     @clean_name = name.gsub(/\>/, " ")
+  end
+
+  def safe_group
+    return @safe_group unless @safe_group.nil?
+    @safe_group = group.gsub(/ /, "_")
   end
 end
 
@@ -50,6 +57,8 @@ def process_file(infilename)
       end
       if obj.is_a? Charm
         charm = obj
+        charm.group = group_name
+        charm.file = infilename
         # p obj.name
         charms[charm.id] = charm
         # charm_full_id = group_name.downcase[0..2] + "-" + charm.id

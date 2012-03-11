@@ -1,8 +1,12 @@
 * {
-    font-family: Palatino, Times, serif 
+    font-family: 'OFL Sorts Mill Goudy TT', Palatino, Times, serif;
+}
+a {
+    line-height: 120%;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'American Typewriter', Courier, mono
+    font-family: 'Artisan12', 'American Typewriter', Courier, mono;
+    line-height: 80%;
 }
 ul.index_items {
     font-size: smaller;

@@ -9,7 +9,7 @@ def insert_charm(out, section_name, charms, charm)
 
   return if charm.name[0] == '('[0]
   if charm.name != '.'
-    # out.puts("<a name='#{charm.id}'/>\n")
+    out.puts("[[#{charm.safe_group}_#{charm.id}]]")
     out.puts("==== #{charm.clean_name}")
     mins = charm.mins.map { |min| min.join(" ") }.join(", ")
     type = charm.type[0]
@@ -52,14 +52,18 @@ if __FILE__ == $PROGRAM_NAME
 
   File.open(outfilename, "w") { |outfile|
     outfile.puts(":doctype: book")
+    outfile.puts(":themedir: ..")
+    outfile.puts(":theme: discordians")
+    outfile.puts(":linkcss:")
     outfile.puts
 
     process_file(filename) { |group_name, charms|
-      outfile.puts("=== " + group_name)
+      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
+      outfile.puts('[options="pgwide"]')
+      outfile.puts("image::#{pngfilename}[#{group_name} Charm Tree]")
       outfile.puts
 
-      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
-      outfile.puts("image::#{pngfilename}[#{group_name} Charm Tree]")
+      outfile.puts("=== " + group_name)
       outfile.puts
 
       charms.each_value { |charm|

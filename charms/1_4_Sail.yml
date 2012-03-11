@@ -142,7 +142,7 @@ text: |
   
 --- !Charm
 id: siatm
-name: "Storm-In-A-Teacup Method"
+name: "Storm-In-A-Teacup>Method"
 cost: (Special)m, 1wp
 mins: {Sail: 3, Ess: 3}
 type: [Simple, Dramatic Action]

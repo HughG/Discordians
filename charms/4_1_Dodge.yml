@@ -3,13 +3,12 @@
 name: Dodge
 --- !Charm
 id: exc
-name: "(Any Dodge Excellency)"
+name: "(Any Dodge>Excellency)"
 text: |
-  
-  
+    
 --- !Charm
 id: aci
-name: "Angelic Countenance of Innocence"
+name: "Angelic Countenance>of Innocence"
 cost: 2m
 mins: {Dodge: 2, Ess: 2}
 type: [Reflexive, Step 1]
@@ -92,7 +91,7 @@ text: |
   
 --- !Charm
 id: samt
-name: "Smoke and Mirrors Technique"
+name: "Smoke and Mirrors>Technique"
 cost: 3m
 mins: {Dodge: 3, Ess: 3}
 type: [Reflexive, Step 2]
@@ -157,7 +156,7 @@ text: |
   
 --- !Charm
 id: ema
-name: "Exponent of Manifold Avoidance"
+name: "Exponent of>Manifold Avoidance"
 cost: 8m, 1wp
 mins: {Dodge: 5, Ess: 4}
 type: [Simple]

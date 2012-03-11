@@ -3,13 +3,12 @@
 name: Occult
 --- !Charm
 id: exc
-name: "(Any Occult Excellency)"
+name: "(Any Occult>Excellency)"
 text: |
-  
   
 --- !Charm
 id: eee
-name: "Erisian Elemental Expression"
+name: "Erisian>Elemental Expression"
 cost: 3m, 1wp, plus 1m per level of effect
 mins: {Occult: 3, Ess: 3}
 type: [Reflexive]
@@ -102,7 +101,7 @@ text: |
   
 --- !Charm
 id: asi
-name: "Anima-Suppressing Intervention"
+name: "Anima-Suppressing>Intervention"
 cost: 2m per point of target's Essence rating
 mins: {Occult: 4, Ess: 3}
 type: [Reflexive, Step 1]
@@ -220,7 +219,7 @@ text: |
   
 --- !Charm
 id: tss
-name: "Triangular Circle Sorcery"
+name: "Triangular Circle>Sorcery"
 cost: --
 mins: {Occult: 3, Ess: 3}
 type: [Permanent]
@@ -240,7 +239,7 @@ text: |
   
 --- !Charm
 id: sss
-name: "Square Circle Sorcery"
+name: "Square Circle>Sorcery"
 cost: --
 mins: {Occult: 4, Ess: 4}
 type: [Permanent]
@@ -258,7 +257,7 @@ text: |
   
 --- !Charm
 id: pss
-name: "Appropriation of Adamantine Sorcery"
+name: "Appropriation>of Adamantine Sorcery"
 cost: 10m, 1wp
 mins: {Occult: 5, Ess: 5}
 type: [Reflexive, Step 2]

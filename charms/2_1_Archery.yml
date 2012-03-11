@@ -3,7 +3,7 @@
 name: Archery
 --- !Charm
 id: exc
-name: "(Any Archery Excellency)"
+name: "(Any Archery>Excellency)"
 text: |
   
   
@@ -140,7 +140,7 @@ text: |
   
 --- !Charm
 id: qosas
-name: "Quiver of Sticks and Stones"
+name: "Quiver of>Sticks and Stones"
 cost: 3m or 5m
 mins: {Arch: 1, Ess: 2}
 type: [Reflexive, Step 1 or Step 2]
@@ -368,7 +368,7 @@ text: |
   
 --- !Charm
 id: btwt
-name: "Bull-Takes-Wing Technique"
+name: "Bull-Takes-Wing>Technique"
 cost: 4m, 1wp
 mins: {Archery: 5, Ess: 3}
 type: [Reflexive]

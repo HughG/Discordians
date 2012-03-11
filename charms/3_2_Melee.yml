@@ -3,7 +3,7 @@
 name: Melee
 --- !Charm
 id: exc
-name: "(Any Melee Excellency)"
+name: "(Any Melee>Excellency)"
 text: |
   
   
@@ -146,7 +146,7 @@ text: |
   
 --- !Charm
 id: baba
-name: "Branch and Brush Armory"
+name: "Branch and Brush>Armory"
 cost: 3m or 5m
 mins: {Melee: 1, Ess: 2}
 type: [Reflexive, Step 1 or Step 2]
@@ -179,7 +179,7 @@ text: |
   
 --- !Charm
 id: soei
-name: "Sword of Essential Idiosyncrasy"
+name: "Sword of>Essential Idiosyncrasy"
 cost: 3m, 1wp
 mins: {Melee: 3, Ess: 3}
 type: [Simple]
@@ -232,7 +232,7 @@ text: |
   
 --- !Charm
 id: hrh
-name: "Hostility-Redirecting Hocus"
+name: "Hostility-Redirecting>Hocus"
 cost: 3m or 5m
 mins: {Melee: 3, Ess: 2}
 type: [Reflexive, Step 6]
@@ -260,7 +260,7 @@ text: |
   
 --- !Charm
 id: ktt
-name: "Knockback Takeaway Technique"
+name: "Knockback Takeaway>Technique"
 cost: 4m
 mins: {Melee: 4, Ess: 2}
 type: [Reflexive, Step 9]

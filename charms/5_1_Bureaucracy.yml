@@ -3,13 +3,12 @@
 name: Bureaucracy
 --- !Charm
 id: exc
-name: "(Any Bureaucracy Excellency)"
+name: "(Any Bureaucracy>Excellency)"
 text: |
-  
-  
+    
 --- !Charm
 id: fam
-name: "Faction Analysis Method"
+name: "Faction Analysis>Method"
 cost: 3m
 mins: {Bur: 2, Ess: 2}
 type: [Simple]
@@ -28,7 +27,7 @@ text: |
   
 --- !Charm
 id: wwws
-name: "Wheels Within Wheels Scheme"
+name: "Wheels Within Wheels>Scheme"
 cost: 8m
 mins: {Bur: 3, Ess: 3}
 type: [Simple, Dramatic Action]
@@ -77,7 +76,7 @@ text: |
   
 --- !Charm
 id: bbb
-name: "Bilateral Bargain Binding"
+name: "Bilateral Bargain>Binding"
 cost: 10m, 2wp
 mins: {Bur: 2, Ess: 3}
 type: [Simple, Dramatic Action]
@@ -117,7 +116,7 @@ text: |
   
 --- !Charm
 id: mom
-name: "Memorandum of Misunderstanding"
+name: "Memorandum>of Misunderstanding"
 cost: 3m, 1wp
 mins: {Bur: 2, Ess: 2}
 type: [Simple, Dramatic Action]

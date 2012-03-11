@@ -3,13 +3,13 @@
 name: Craft
 --- !Charm
 id: exc
-name: "(Any Craft Excellency)"
+name: "(Any Craft>Excellency)"
 text: |
   
   
 --- !Charm
 id: ics
-name: "Improvised Construction Scheme"
+name: "Improvised Construction>Scheme"
 cost: 3m
 mins: {Craft: 2, Essence: 1}
 type: [Supplemental]
@@ -56,7 +56,7 @@ text: |
   
 --- !Charm
 id: ort
-name: "Object Reconfiguration Technique"
+name: "Object Reconfiguration>Technique"
 cost: 5m, 1wp or 10m, 2wp
 mins: {Craft: 3, Essence: 3}
 type: [Supplemental]
@@ -145,7 +145,7 @@ text: |
   
 --- !Charm
 id: bem
-name: "Blueprint Extraction Methodology"
+name: "Blueprint Extraction>Methodology"
 cost: 4m
 mins: {Craft: 3, Essence: 2}
 type: [Simple, Dramatic Action]
@@ -193,7 +193,7 @@ text: |
   
 --- !Charm
 id: rrt
-name: "Reflection-Reification Technique"
+name: "Reflection-Reification>Technique"
 cost: 4m
 mins: {Craft: 3, Essence: 3}
 type: [Supplemental]
@@ -284,7 +284,7 @@ text: |
   
 --- !Charm
 id: cpc
-name: "Core Principle Concentration"
+name: "Core Principle>Concentration"
 cost: 3m, 1wp
 mins: {Craft: 3, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
@@ -315,7 +315,7 @@ text: |
   
 --- !Charm
 id: rwrt
-name: "Rainbow Warp Removal Technique"
+name: "Rainbow Warp Removal>Technique"
 cost: 6m, 1wp
 mins: {Craft: 3, Essence: 3}
 type: [Simple]
@@ -339,7 +339,7 @@ text: |
   
 --- !Charm
 id: eee
-name: "Edifying Embodiment of Efficacy"
+name: "Edifying Embodiment>of Efficacy"
 cost: 6m, 1wp
 mins: {Craft: 3, Essence: 3}
 type: [Simple]

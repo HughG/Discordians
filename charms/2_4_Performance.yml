@@ -3,7 +3,7 @@
 name: Performance
 --- !Charm
 id: exc
-name: "(Any Performance Excellency)"
+name: "(Any Performance>Excellency)"
 text: |
   
   
@@ -51,7 +51,7 @@ text: |
   
 --- !Charm
 id: lfaa
-name: "Legend For An Afternoon"
+name: "Legend>for an Afternoon"
 cost: 3m
 mins: {Perf: 2, Ess: 2}
 type: [Simple]
@@ -78,7 +78,7 @@ text: |
   
 --- !Charm
 id: shr
-name: "Sprouted History Recitation"
+name: "Sprouted History>Recitation"
 cost: 4m
 mins: {Perf: 2, Ess: 2}
 type: [Simple, Speed 3 in long ticks]

@@ -3,13 +3,13 @@
 name: Linguistics
 --- !Charm
 id: exc
-name: "(Any Linguistics Excellency)"
+name: "(Any Linguistics>Excellency)"
 text: |
   
   
 --- !Charm
 id: zsd
-name: "Zero-Second Duplication"
+name: "Zero-Second>Duplication"
 cost: 5m
 mins: {Linguistics: 2, Ess: 1}
 type: [Supplemental]
@@ -272,7 +272,7 @@ text: |
   
 --- !Charm
 id: nac
-name: "Noetic Alignment Concentration"
+name: "Noetic Alignment>Concentration"
 cost: (2m or 2m, 1wp) plus distance
 mins: {Linguistics: 3, Ess: 3}
 type: [Simple, Speed 6, DV -3]
@@ -320,7 +320,7 @@ text: |
   
 --- !Charm
 id: lwalt
-name: "Letter-Without-A-Letter Technique"
+name: "Letter-Without-A-Letter>Technique"
 cost: 6m, 1wp
 mins: {Linguistics: 4, Ess: 3}
 type: [Simple, Dramatic Action]

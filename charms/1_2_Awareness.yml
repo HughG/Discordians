@@ -3,7 +3,7 @@
 name: Awareness
 --- !Charm
 id: exc
-name: "(Any Awareness Excellency)"
+name: "(Any Awareness>Excellency)"
 text: |
   
   
@@ -47,7 +47,7 @@ text: |
   
 --- !Charm
 id: gopd
-name: "Gaze of Perfect Disregard"
+name: "Gaze of>Perfect Disregard"
 cost: 4m
 mins: {Awareness: 3, Ess: 3}
 type: [Reflexive, Step 1 or Step 2]
@@ -79,7 +79,7 @@ text: |
   
 --- !Charm
 id: hpp
-name: "Holographic Perception Praxis"
+name: "Holographic>Perception Praxis"
 cost: 3m
 mins: {Awareness: 3, Ess: 2}
 type: [Reflexive]
@@ -152,7 +152,7 @@ text: |
   
 --- !Charm
 id: ufm
-name: "Unwavering Focus Meditation"
+name: "Unwavering Focus>Meditation"
 cost: 3m
 mins: {Awareness: 2, Ess: 2}
 type: [Simple]

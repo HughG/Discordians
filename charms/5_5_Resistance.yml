@@ -6,7 +6,7 @@ text: |
   
 --- !Charm
 id: exc
-name: "(Any Resistance Excellency)"
+name: "(Any Resistance>Excellency)"
 text: |
   n/a
   
@@ -32,7 +32,7 @@ text: |
   
 --- !Charm
 id: sss
-name: "Stone Skin Substitution"
+name: "Stone Skin>Substitution"
 cost: 3m
 mins: {Resistance: 3, Essence: 2}
 type: [Reflexive, Step 7]
@@ -135,7 +135,7 @@ text: |
   
 --- !Charm
 id: oou
-name: "Omnipresent Ointment Understanding"
+name: "Omnipresent Ointment>Understanding"
 cost: 2m per level
 mins: {Resistance: 2, Essence: 2}
 type: [Simple]
@@ -171,7 +171,7 @@ text: |
   
 --- !Charm
 id: eer
-name: "Erisian Elemental Rejuvenation"
+name: "Erisian>Elemental Rejuvenation"
 cost: 5m, 1wp
 mins: {Resistance: 3, Essence: 3}
 type: [Simple]

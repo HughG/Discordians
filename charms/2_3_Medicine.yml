@@ -3,13 +3,13 @@
 name: Medicine
 --- !Charm
 id: exc
-name: "(Any Medicine Excellency)"
+name: "(Any Medicine>Excellency)"
 text: |
   n/a
   
 --- !Charm
 id: ahf
-name: "Anointment of the Hardy Fool"
+name: "Anointment of the>Hardy Fool"
 cost: 2m per point of penalty ignored
 mins: {Med: 2, Ess: 2}
 type: [Simple]
@@ -118,7 +118,7 @@ text: |
   
 --- !Charm
 id: wwm
-name: "Walking Wounded Manipulation"
+name: "Walking Wounded>Manipulation"
 cost: 7m + 1wp
 mins: {Med: 3, Ess: 3}
 type: [Simple, Dramatic Action]
@@ -179,7 +179,7 @@ text: |
   
 --- !Charm
 id: ifaab
-name: "Invigorating Flame And Acid Bath"
+name: "Invigorating>Flame And Acid Bath"
 cost: --
 mins: {Med: 4, Ess: 3}
 type: [Permanent]

@@ -3,13 +3,13 @@
 name: Investigation
 --- !Charm
 id: exc
-name: "(Any Investigation Excellency)"
+name: "(Any Investigation>Excellency)"
 text: |
   
   
 --- !Charm
 id: iai
-name: "Instant Assembly of Impressions"
+name: "Instant Assembly>of Impressions"
 cost: 4m
 mins: {Investigation: 2, Ess: 1}
 type: [Simple, Speed 1, DV -0]
@@ -78,7 +78,7 @@ text: |
   
 --- !Charm
 id: roi
-name: "Refuge of Intransigence"
+name: "Refuge>of Intransigence"
 cost: 3m or 6m
 mins: {Inv: 3, Ess: 2}
 type: [Reflexive, Step 2]
@@ -153,7 +153,7 @@ text: |
   
 --- !Charm
 id: rtsc
-name: "Reading the Soul's Compass"
+name: "Reading>the Soul's Compass"
 cost: 5m
 mins: {Investigation: 4, Ess: 2}
 type: [Simple]
@@ -305,7 +305,7 @@ text: |
   
 --- !Charm
 id: lla
-name: "Ladder and Loophole Awareness"
+name: "Ladder and Loophole>Awareness"
 cost: 8m, 1wp
 mins: {Inv: 4, Ess: 4}
 type: [Reflexive]

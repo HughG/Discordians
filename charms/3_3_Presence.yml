@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Presence
---- !Charm
-id: exc
-name: "(Any Presence Excellency)"
-text: |
-  
-  
 text: |
   TODO
+  
+--- !Charm
+id: exc
+name: "(Any Presence>Excellency)"
+text: |
   
 --- !Charm
 id: sos1
@@ -33,7 +32,7 @@ text: |
   
 --- !Charm
 id: ppi
-name: "Personal Prestige Insinuation"
+name: "Personal Prestige>Insinuation"
 cost: 4m
 mins: {Presence: 3, Ess: 2}
 type: [Supplemental]
@@ -257,7 +256,7 @@ text: |
   
 --- !Charm
 id: pma
-name: "Profile Minimization Approach"
+name: "Profile Minimization>Approach"
 cost: 4m
 mins: {Presence: 3, Ess: 3}
 type: [Simple]

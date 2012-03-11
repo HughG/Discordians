@@ -3,7 +3,7 @@
 name: Larceny
 --- !Charm
 id: exc
-name: "(Any Larceny Excellency)"
+name: "(Any Larceny>Excellency)"
 text: |
   
   
@@ -102,7 +102,7 @@ text: |
   
 --- !Charm
 id: nrm
-name: "Notion Relocation Method"
+name: "Notion Relocation>Method"
 cost: 5m
 mins: {Larceny: 3, Ess: 3}
 type: [Reflexive, Step 1 or Step 2]
@@ -179,7 +179,7 @@ text: |
   
 --- !Charm
 id: ftk
-name: "Flawless Transfiguration Knack"
+name: "Flawless Transfiguration>Knack"
 cost: 4m
 mins: {Larceny: 3, Ess: 2}
 type: [Supplemental]
@@ -209,7 +209,7 @@ text: |
   
 --- !Charm
 id: icc
-name: "Inhuman Countenance Construction"
+name: "Inhuman Countenance>Construction"
 cost: 3m, 1wp
 mins: {Larceny: 4, Ess: 3}
 type: [Supplemental]

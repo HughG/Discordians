@@ -30,7 +30,7 @@ text: |
   
 --- !Charm
 id: mpt
-name: "Mount-Promoting Touch"
+name: "Mount-Promoting>Touch"
 cost: 3m or 3m, 1wp
 mins: {Ride: 3, Ess: 3}
 type: [Simple]
@@ -103,7 +103,7 @@ text: |
   
 --- !Charm
 id: prm
-name: "Pigeon Rehoming Method"
+name: "Pigeon Rehoming>Method"
 cost: 5m, 1wp
 mins: {Ride: 1, Ess: 2}
 type: [Simple]

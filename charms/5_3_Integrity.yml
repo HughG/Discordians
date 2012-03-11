@@ -3,13 +3,13 @@
 name: Integrity
 --- !Charm
 id: exc
-name: "(Any Integrity Excellency)"
+name: "(Any Integrity>Excellency)"
 text: |
   
   
 --- !Charm
 id: umd
-name: "Unbalanced Mind Defence"
+name: "Unbalanced Mind>Defence"
 cost: 3m
 mins: {Integrity: 2, Ess: 2}
 type: [Reflexive, Step 2]
@@ -216,7 +216,7 @@ text: |
   
 --- !Charm
 id: iiov
-name: "Idiosyncratic Interpretation of (Virtue)"
+name: "Idiosyncratic Interpretation>of (Virtue)"
 cost: --
 mins: {Integrity: 2, Ess: 2}
 type: [Permanent]
@@ -245,7 +245,7 @@ text: |
   
 --- !Charm
 id: icc
-name: "Instant Commitment Contrivance"
+name: "Instant Commitment>Contrivance"
 cost: 2m, 2wp
 mins: {Integrity: 3, Ess: 3}
 type: [Simple]

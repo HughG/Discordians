@@ -6,7 +6,7 @@ text: |
   
 --- !Charm
 id: exc
-name: "(Any Survival Excellency)"
+name: "(Any Survival>Excellency)"
 text: |
   
   
@@ -212,7 +212,7 @@ text: |
   
 --- !Charm
 id: witd
-name: "Whistling in the Darkness"
+name: "Whistling>in the Darkness"
 cost: 8m + 1wp
 mins: {Survival: 3, Ess: 3}
 type: [Simple, Dramatic Action]

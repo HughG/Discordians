@@ -13,7 +13,7 @@ text: |
   
 --- !Charm
 id: hmm
-name: "Holographic Memory Modus"
+name: "Holographic Memory>Modus"
 cost: 3m
 mins: {Lore: 2, Ess: 2}
 type: [Supplemental]
@@ -119,7 +119,7 @@ text: |
   
 --- !Charm
 id: sant
-name: "Self-as-Notebook Technique"
+name: "Self-as-Notebook>Technique"
 cost: 2m
 mins: {Lore: 2, Ess: 2}
 type: [Simple]
@@ -251,7 +251,7 @@ text: |
   
 --- !Charm
 id: asa
-name: "Anima-Swathing Artifice"
+name: "Anima-Swathing>Artifice"
 cost: 2m
 mins: {Lore: 1, Ess: 2}
 type: [Reflexive]

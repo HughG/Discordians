@@ -10,7 +10,7 @@ def insert_charm(out, section_name, charms, charm)
   return if charm.name[0] == '('[0]
   if charm.name != '.'
     # out.puts("<a name='#{charm.id}'/>\n")
-    out.puts("==== #{charm.name}")
+    out.puts("==== #{charm.clean_name}")
     mins = charm.mins.map { |min| min.join(" ") }.join(", ")
     type = charm.type[0]
     if charm.type.length > 1
@@ -23,10 +23,20 @@ def insert_charm(out, section_name, charms, charm)
     out.puts("*Duration:* #{charm.dur} +")
     out.print("*Prerequisite Charms:* ")
     deps = charm.deps
-    if deps.empty?
+    if not deps or deps.empty?
       out.print("None")
     else
-      out.print(charm.deps.map {|d| charms[d].name.delete("()")}.join(", "))
+      out.print(charm.deps.map {|d|
+                  dep_charm = charms[d]
+                  # dep_charm is None if someone's put in a non-existent Charm
+                  # id to indicate that a Charm should have some
+                  # as-yet-undecided prerequisite.
+                  if dep_charm
+                    charms[d].clean_name.delete("()")
+                  else
+                    "*#{d}*"
+                  end
+                }.join(", "))
     end
     out.puts(" +")
   end
@@ -46,6 +56,10 @@ if __FILE__ == $PROGRAM_NAME
 
     process_file(filename) { |group_name, charms|
       outfile.puts("=== " + group_name)
+      outfile.puts
+
+      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
+      outfile.puts("image::#{pngfilename}[#{group_name} Charm Tree]")
       outfile.puts
 
       charms.each_value { |charm|

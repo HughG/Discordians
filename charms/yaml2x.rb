@@ -29,6 +29,11 @@ class Charm
     :reviews,
     :updates,
     :text
+
+  def clean_name
+    return @clean_name unless @clean_name.nil?
+    @clean_name = name.gsub(/\>/, " ")
+  end
 end
 
 def process_file(infilename)

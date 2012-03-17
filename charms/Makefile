@@ -53,6 +53,7 @@ $D/charms.pdf: charms.asc asciidoc/docbook-xsl/* $(ASC:./%=$D/%)
 
 test.pdf: test.asc asciidoc/docbook-xsl/*
 	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl test.asc
+	osascript show_pdf.scpt
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 #	./makewiki.rb . $W $(MAINWIKI)

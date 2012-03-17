@@ -90,14 +90,14 @@
   <xsl:choose>
     <xsl:when test="$double.sided != 0">0.75in</xsl:when>
     <!-- <xsl:otherwise>0.75in</xsl:otherwise> -->
-    <xsl:otherwise>0.5in</xsl:otherwise>
+    <xsl:otherwise>1.2in</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 <xsl:param name="page.margin.outer">
   <xsl:choose>
-    <xsl:when test="$double.sided != 0">0.5in</xsl:when>
+    <xsl:when test="$double.sided != 0">1.2in</xsl:when>
     <!-- <xsl:otherwise>0.5in</xsl:otherwise> -->
-    <xsl:otherwise>1.2in</xsl:otherwise>
+    <xsl:otherwise>0.5in</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 
@@ -209,10 +209,153 @@
   <xsl:attribute name="border">solid green</xsl:attribute>
 </xsl:attribute-set>
 
+<xsl:param name="header.rule" select="0"></xsl:param>
+<xsl:param name="header.column.widths">0 1 0</xsl:param>
+<xsl:param name="header.image.filename">file:../../book/Discordians_Title_Backdrop.png</xsl:param>
+<xsl:template name="header.content">
+  <xsl:param name="pageclass" select="''"/>
+  <xsl:param name="sequence" select="''"/>
+  <xsl:param name="position" select="''"/>
+  <xsl:param name="gentext-key" select="''"/>
+
+<!--
+  <fo:block>
+    <xsl:value-of select="$pageclass"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$sequence"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$position"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$gentext-key"/>
+  </fo:block>
+-->
+
+  <fo:block>
+
+    <!-- sequence can be odd, even, first, blank -->
+    <!-- position can be left, center, right -->
+    <xsl:choose>
+      <xsl:when test="$sequence = 'blank'">
+        <!-- nothing -->
+      </xsl:when>
+
+      <xsl:when test="$double.sided != 0 and $sequence = 'even'
+                      and $position='left'">
+	<xsl:attribute name="margin-{$direction.align.start}">-0.6in</xsl:attribute>
+	<fo:external-graphic content-height="0.6in">
+	  <xsl:attribute name="src">
+	    <xsl:call-template name="fo-external-image">
+	      <xsl:with-param name="filename" select="$header.image.filename"/>
+	    </xsl:call-template>
+	  </xsl:attribute>
+	</fo:external-graphic>
+      </xsl:when>
+
+      <xsl:when test="$double.sided != 0 and ($sequence = 'odd' or $sequence = 'first')
+                      and $position='right'">
+	<xsl:attribute name="margin-{$direction.align.end}">-0.6in</xsl:attribute>
+        <fo:external-graphic/>
+      </xsl:when>
+
+
+      <xsl:when test="$position='center'">
+        <!-- nothing for empty and blank sequences -->
+      </xsl:when>
+
+      <xsl:when test="$position='right'">
+        <!-- Same for odd, even, empty, and blank sequences -->
+        <xsl:call-template name="draft.text"/>
+      </xsl:when>
+
+      <xsl:when test="$sequence = 'first'">
+        <!-- nothing for first pages -->
+      </xsl:when>
+
+      <xsl:when test="$sequence = 'blank'">
+        <!-- nothing for blank pages -->
+      </xsl:when>
+    </xsl:choose>
+  </fo:block>
+</xsl:template>
+
 <xsl:attribute-set name="footer.content.properties">
   <xsl:attribute name="border">dashed red</xsl:attribute>
-  <xsl:attribute name="margin-{$direction.align.start}">0pt</xsl:attribute>
 </xsl:attribute-set>
+<xsl:param name="footer.column.widths">1 8 1</xsl:param>
+<xsl:template name="footer.content">
+  <xsl:param name="pageclass" select="''"/>
+  <xsl:param name="sequence" select="''"/>
+  <xsl:param name="position" select="''"/>
+  <xsl:param name="gentext-key" select="''"/>
+
+<!--
+  <fo:block>
+    <xsl:value-of select="$pageclass"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$sequence"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$position"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$gentext-key"/>
+  </fo:block>
+-->
+
+  <fo:block>
+    <!-- pageclass can be front, body, back -->
+    <!-- sequence can be odd, even, first, blank -->
+    <!-- position can be left, center, right -->
+    <xsl:choose>
+      <xsl:when test="$pageclass = 'titlepage'">
+        <!-- nop; no footer on title pages -->
+      </xsl:when>
+
+      <xsl:when test="$double.sided != 0 and $sequence = 'even'
+                      and $position='left'">
+	<xsl:attribute name="margin-{$direction.align.start}">-0.6in</xsl:attribute>
+        <fo:page-number/>
+      </xsl:when>
+
+      <xsl:when test="$double.sided != 0 and ($sequence = 'odd' or $sequence = 'first')
+                      and $position='right'">
+	<xsl:attribute name="margin-{$direction.align.end}">-0.6in</xsl:attribute>
+        <fo:page-number/>
+      </xsl:when>
+
+      <xsl:when test="$double.sided != 0 and $position='center'">
+	<xsl:apply-templates select="." mode="object.title.markup"/>
+<!--
+	<fo:retrieve-marker 
+	    retrieve-class-name="section.head.marker"
+	    retrieve-position="first-including-carryover"
+	    retrieve-boundary="page-sequence"/>
+-->
+      </xsl:when>
+
+      <xsl:when test="$double.sided = 0 and $position='center'">
+        <fo:page-number/>
+      </xsl:when>
+
+      <xsl:when test="$sequence='blank'">
+        <xsl:choose>
+          <xsl:when test="$double.sided != 0 and $position = 'left'">
+            <fo:page-number/>
+          </xsl:when>
+          <xsl:when test="$double.sided = 0 and $position = 'center'">
+            <fo:page-number/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- nop -->
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+
+
+      <xsl:otherwise>
+        <!-- nop -->
+      </xsl:otherwise>
+    </xsl:choose>
+  </fo:block>
+</xsl:template>
 
 <!--
 <xsl:template match="chapter|appendix" mode="intralabel.punctuation">

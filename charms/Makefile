@@ -47,9 +47,12 @@ $D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%
 	cp -f style.css $D/style.css
 	cp -f discordians.css $D/discordians.css
 
-$D/charms.pdf: charms.asc $(ASC:./%=$D/%)
+$D/charms.pdf: charms.asc asciidoc/docbook-xsl/* $(ASC:./%=$D/%)
 	cp charms.asc $D/charms.asc
 	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $D/charms.asc
+
+test.pdf: test.asc asciidoc/docbook-xsl/*
+	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl test.asc
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 #	./makewiki.rb . $W $(MAINWIKI)

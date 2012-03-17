@@ -10,6 +10,14 @@
   stylesheets. This means you don't need to edit the <xsl:import> elements on
   a machine by machine basis.
 -->
+
+<!--
+    TODO 2012-03-12 HUGR: Get better ruler and check paragraph indent.
+    TODO 2012-03-12 HUGR: Make Charm headers (and other bits) non-justified.
+    TODO 2012-03-12 HUGR: Change fonts.
+    TODO 2012-03-12 HUGR: Put page numbers in margin in footer.
+-->
+
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:fo="http://www.w3.org/1999/XSL/Format">
@@ -23,9 +31,10 @@
 <xsl:param name="paper.type" select="'A4'"/>
 -->
 <xsl:param name="paper.type" select="'USletter'"/>
-<xsl:param name="hyphenate">false</xsl:param>
+<xsl:param name="hyphenate">true</xsl:param>
 <!-- justify, left or right -->
-<xsl:param name="alignment">left</xsl:param>
+<xsl:param name="alignment">justify</xsl:param>
+<xsl:param name="double.sided" select="1"/>
 
 <xsl:param name="body.font.family" select="'serif'"/>
 <xsl:param name="body.font.master">12</xsl:param>
@@ -65,7 +74,8 @@
   <xsl:choose>
     <xsl:when test="$fop.extensions != 0">0pt</xsl:when>
     <xsl:when test="$passivetex.extensions != 0">0pt</xsl:when>
-    <xsl:otherwise>1pc</xsl:otherwise>
+    <!-- <xsl:otherwise>1pc</xsl:otherwise> -->
+    <xsl:otherwise>0pt</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 <xsl:param name="title.margin.left">
@@ -79,13 +89,15 @@
 <xsl:param name="page.margin.inner">
   <xsl:choose>
     <xsl:when test="$double.sided != 0">0.75in</xsl:when>
-    <xsl:otherwise>0.75in</xsl:otherwise>
+    <!-- <xsl:otherwise>0.75in</xsl:otherwise> -->
+    <xsl:otherwise>0.5in</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 <xsl:param name="page.margin.outer">
   <xsl:choose>
     <xsl:when test="$double.sided != 0">0.5in</xsl:when>
-    <xsl:otherwise>0.5in</xsl:otherwise>
+    <!-- <xsl:otherwise>0.5in</xsl:otherwise> -->
+    <xsl:otherwise>1.2in</xsl:otherwise>
   </xsl:choose>
 </xsl:param>
 
@@ -166,6 +178,12 @@
   <xsl:attribute name="padding-top">12pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">12pt</xsl:attribute>
 </xsl:attribute-set>
+<!--
+  This hack from http://www.sagehill.net/docbookxsl/MultiColumns.html
+  allows column spanning blocks within a section, rather than just
+  at the start of a section.
+-->
+<xsl:param name="section.container.element">wrapper</xsl:param>
 
 <!--
   Chapter heading customisation.
@@ -178,6 +196,7 @@
   <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
   <xsl:attribute name="border">solid blue</xsl:attribute>
   <xsl:attribute name="color">white</xsl:attribute>
+  <xsl:attribute name="text-align">center</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="component.titlepage.properties">
   <xsl:attribute name="span">all</xsl:attribute>
@@ -185,12 +204,16 @@
   <xsl:attribute name="padding-bottom">36pt</xsl:attribute>
   <xsl:attribute name="border">solid green</xsl:attribute>
 </xsl:attribute-set>
-<xsl:attribute-set name="component.title.properties">
-  <xsl:attribute name="text-align">center</xsl:attribute>
-  <xsl:attribute name="border">solid red</xsl:attribute>
-  <xsl:attribute name="margin-left">96pt</xsl:attribute>
-  <xsl:attribute name="margin-right">96pt</xsl:attribute>
+
+<xsl:attribute-set name="footer.table.properties">
+  <xsl:attribute name="border">solid green</xsl:attribute>
 </xsl:attribute-set>
+
+<xsl:attribute-set name="footer.content.properties">
+  <xsl:attribute name="border">dashed red</xsl:attribute>
+  <xsl:attribute name="margin-{$direction.align.start}">0pt</xsl:attribute>
+</xsl:attribute-set>
+
 <!--
 <xsl:template match="chapter|appendix" mode="intralabel.punctuation">
   <xsl:text>:</xsl:text>
@@ -232,10 +255,10 @@
       <xsl:variable name="my.number">
         <xsl:choose>
           <xsl:when test="$label.from.part != 0 and ancestor::part">
-            <xsl:number from="part" count="chapter" format="1" level="any"/>
+            <xsl:number from="part" count="chapter" format="1"/>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:number from="book" count="chapter" format="1" level="any"/>
+            <xsl:number from="book" count="chapter" format="1"/>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:variable>
@@ -251,5 +274,29 @@
     </xsl:when>
   </xsl:choose>
 </xsl:template>
+
+
+<!-- Section heading properties -->
+<xsl:attribute-set name="section.title.properties">
+  <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
+  <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="section.title.level1.properties">
+  <xsl:attribute name="font-size"><xsl:text>24pt</xsl:text></xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="section.title.level2.properties">
+  <xsl:attribute name="font-size"><xsl:text>14pt</xsl:text></xsl:attribute>
+</xsl:attribute-set>
+
+<!-- Indent paragraphs -->
+<xsl:attribute-set name="normal.para.spacing">
+  <xsl:attribute name="space-before.optimum">0pt</xsl:attribute>
+  <xsl:attribute name="space-before.minimum">0pt</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">0pt</xsl:attribute>
+  <xsl:attribute name="text-indent">18pt</xsl:attribute>
+</xsl:attribute-set>
 
 </xsl:stylesheet>

@@ -8,6 +8,7 @@ INPUT=$(wildcard ./*.yml)
 HTML=$(INPUT:.yml=.html)
 ASC=$(INPUT:.yml=.asc)
 PNG=$(INPUT:.yml=.png)
+CONFIG=asciidoc/docbook-xsl/* fop/* ../fonts/goudy-3.1/*
 
 all: destdir $D/$(MAINFILE) # $W/$(MAINWIKI)
 
@@ -47,12 +48,12 @@ $D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%
 	cp -f style.css $D/style.css
 	cp -f discordians.css $D/discordians.css
 
-$D/charms.pdf: charms.asc asciidoc/docbook-xsl/* $(ASC:./%=$D/%)
+$D/charms.pdf: charms.asc $(CONFIG) $(ASC:./%=$D/%)
 	cp charms.asc $D/charms.asc
 	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $D/charms.asc
 
-test.pdf: test.asc asciidoc/docbook-xsl/*
-	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl test.asc
+test.pdf: test.asc $(CONFIG)
+	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" test.asc
 	osascript show_pdf.scpt
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb

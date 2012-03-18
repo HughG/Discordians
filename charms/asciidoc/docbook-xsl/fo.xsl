@@ -36,11 +36,13 @@
 <xsl:param name="alignment">justify</xsl:param>
 <xsl:param name="double.sided" select="1"/>
 
-<xsl:param name="body.font.family" select="'serif'"/>
-<xsl:param name="body.font.master">12</xsl:param>
+<!--<xsl:param name="body.font.family" select="'serif'"/>-->
+<xsl:param name="body.font.family" select="'GoudyStMTT'"/>
+<xsl:param name="body.font.master">10</xsl:param>
 <xsl:param name="body.font.size">
  <xsl:value-of select="$body.font.master"/><xsl:text>pt</xsl:text>
 </xsl:param>
+<xsl:param name="line-height">110%</xsl:param>
 
 <xsl:param name="body.margin.bottom" select="'0.5in'"/>
 <xsl:param name="body.margin.top" select="'0.5in'"/>
@@ -95,7 +97,7 @@
 </xsl:param>
 <xsl:param name="page.margin.outer">
   <xsl:choose>
-    <xsl:when test="$double.sided != 0">1.2in</xsl:when>
+    <xsl:when test="$double.sided != 0">1.0in</xsl:when>
     <!-- <xsl:otherwise>0.5in</xsl:otherwise> -->
     <xsl:otherwise>0.5in</xsl:otherwise>
   </xsl:choose>
@@ -195,14 +197,24 @@
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
   <xsl:attribute name="border">solid blue</xsl:attribute>
+  <xsl:attribute name="min-height">300pt</xsl:attribute>
+  <xsl:attribute name="height">300pt</xsl:attribute>
   <xsl:attribute name="color">white</xsl:attribute>
-  <xsl:attribute name="text-align">center</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="component.titlepage.properties">
   <xsl:attribute name="span">all</xsl:attribute>
   <xsl:attribute name="padding-top">24pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">36pt</xsl:attribute>
   <xsl:attribute name="border">solid green</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="component.title.properties">
+  <xsl:attribute name="margin-left">84pt</xsl:attribute>
+  <xsl:attribute name="margin-right">84pt</xsl:attribute>
+  <xsl:attribute name="min-height">84pt</xsl:attribute>
+  <xsl:attribute name="border">solid red</xsl:attribute>
+  <xsl:attribute name="text-align">center</xsl:attribute>
+  <xsl:attribute name="line-height">120%</xsl:attribute>
+  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="footer.table.properties">
@@ -211,7 +223,7 @@
 
 <xsl:param name="header.rule" select="0"></xsl:param>
 <xsl:param name="header.column.widths">0 1 0</xsl:param>
-<xsl:param name="header.image.filename">file:../../book/Discordians_Title_Backdrop.png</xsl:param>
+<xsl:param name="header.image.filename">file:../book/Discordians_Title_Backdrop.png</xsl:param>
 <xsl:template name="header.content">
   <xsl:param name="pageclass" select="''"/>
   <xsl:param name="sequence" select="''"/>
@@ -424,6 +436,8 @@
   <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
+  <xsl:attribute name="line-height">170%</xsl:attribute>
+  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level1.properties">

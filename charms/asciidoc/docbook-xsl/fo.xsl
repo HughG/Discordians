@@ -14,8 +14,6 @@
 <!--
     TODO 2012-03-12 HUGR: Get better ruler and check paragraph indent.
     TODO 2012-03-12 HUGR: Make Charm headers (and other bits) non-justified.
-    TODO 2012-03-12 HUGR: Change fonts.
-    TODO 2012-03-12 HUGR: Put page numbers in margin in footer.
 -->
 
 <xsl:stylesheet version="1.0"
@@ -292,6 +290,7 @@
 
 <xsl:attribute-set name="footer.content.properties">
   <xsl:attribute name="border">dashed red</xsl:attribute>
+  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="footer.column.widths">1 8 1</xsl:param>
 <xsl:template name="footer.content">
@@ -321,26 +320,30 @@
         <!-- nop; no footer on title pages -->
       </xsl:when>
 
-      <xsl:when test="$double.sided != 0 and $sequence = 'even'
+      <xsl:when test="$double.sided != 0
+		      and $sequence = 'even'
                       and $position='left'">
 	<xsl:attribute name="margin-{$direction.align.start}">-0.6in</xsl:attribute>
         <fo:page-number/>
       </xsl:when>
 
-      <xsl:when test="$double.sided != 0 and ($sequence = 'odd' or $sequence = 'first')
+      <xsl:when test="$double.sided != 0
+		      and ($sequence = 'odd' or $sequence = 'first')
                       and $position='right'">
 	<xsl:attribute name="margin-{$direction.align.end}">-0.6in</xsl:attribute>
         <fo:page-number/>
       </xsl:when>
 
-      <xsl:when test="$double.sided != 0 and $position='center'">
-	<xsl:apply-templates select="." mode="object.title.markup"/>
-<!--
-	<fo:retrieve-marker 
-	    retrieve-class-name="section.head.marker"
-	    retrieve-position="first-including-carryover"
-	    retrieve-boundary="page-sequence"/>
--->
+      <xsl:when test="$double.sided != 0
+		      and $sequence = 'even'
+		      and $position='center'">
+	<xsl:call-template name="gentext">
+	  <xsl:with-param name="key" select="'Chapter'"/>
+	</xsl:call-template> 
+	<xsl:text> </xsl:text>
+	<xsl:apply-templates select="." mode="label.markup"/>
+	<xsl:text> &#x00b7; </xsl:text>
+	<xsl:apply-templates select="." mode="title.markup"/>
       </xsl:when>
 
       <xsl:when test="$double.sided = 0 and $position='center'">
@@ -369,11 +372,7 @@
   </fo:block>
 </xsl:template>
 
-<!--
-<xsl:template match="chapter|appendix" mode="intralabel.punctuation">
-  <xsl:text>:</xsl:text>
-</xsl:template>
--->
+<!-- Chapter label formatting -->
 <xsl:template match="chapter" mode="label.markup">
   <xsl:choose>
     <xsl:when test="@label">
@@ -392,21 +391,6 @@
                                mode="intralabel.punctuation"/>
         </xsl:if>
       </xsl:if>
-<!--
-      <xsl:variable name="format">
-        <xsl:call-template name="autolabel.format">
-          <xsl:with-param name="format" select="$chapter.autolabel"/>
-        </xsl:call-template>
-      </xsl:variable>
-      <xsl:choose>
-        <xsl:when test="$label.from.part != 0 and ancestor::part">
-          <xsl:number from="part" count="chapter" format="{$format}" level="any"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:number from="book" count="chapter" format="{$format}" level="any"/>
-        </xsl:otherwise>
-      </xsl:choose>
--->
       <xsl:variable name="my.number">
         <xsl:choose>
           <xsl:when test="$label.from.part != 0 and ancestor::part">
@@ -425,10 +409,65 @@
           Oops!
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:text>: </xsl:text>
     </xsl:when>
   </xsl:choose>
 </xsl:template>
+
+<!--
+<xsl:template match="chapter|appendix|section" mode="intralabel.punctuation">
+<xsl:template match="*" mode="intralabel.punctuation">
+  <xsl:text>:</xsl:text>
+</xsl:template>
+-->
+<xsl:param name="local.l10n.xml" select="document('')"/>
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
+  <l:l10n language="en">
+<!--
+    <l:context name="title">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+-->
+    <l:context name="title-numbered">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+<!--
+    <l:context name="title-unnumbered">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+-->
+    <l:context name="xref">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+    <l:context name="xref-number-and-title">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+  </l:l10n>
+</l:i18n>
+
+
+
+<xsl:param name="toc.section.depth" select="'0'"/>
+
+<!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
+<!--
+<xsl:template name="book.titlepage.before.verso" priority="1">
+  <xsl:variable name="toc.params">
+    <xsl:call-template name="find.path.params">
+      <xsl:with-param name="table"
+            select="normalize-space($generate.toc)"/>
+    </xsl:call-template>
+  </xsl:variable>
+  <xsl:if test="contains($toc.params, 'toc')">
+    <xsl:call-template name="division.toc">
+      <xsl:with-param name="toc.context" select="."/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template name="generate.book.toc">
+</xsl:template>
+-->
+
 
 
 <!-- Section heading properties -->

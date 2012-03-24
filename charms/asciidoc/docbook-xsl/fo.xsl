@@ -12,8 +12,14 @@
 -->
 
 <!--
-    TODO 2012-03-12 HUGR: Get better ruler and check paragraph indent.
     TODO 2012-03-12 HUGR: Make Charm headers (and other bits) non-justified.
+    TODO 2012-03-24 HUGR: Credits page.
+    TODO 2012-03-24 HUGR: Proper background image for header.
+    TODO 2012-03-24 HUGR: Proper background image for outer margin.
+    TODO 2012-03-24 HUGR: ... or combine the above two into page background?
+    TODO 2012-03-24 HUGR: Background image for page numbers.
+    TODO 2012-03-24 HUGR: Leading zeros in page numbers.
+    TODO 2012-03-24 HUGR: Footer rule.
 -->
 
 <xsl:stylesheet version="1.0"
@@ -33,6 +39,20 @@
 <!-- justify, left or right -->
 <xsl:param name="alignment">justify</xsl:param>
 <xsl:param name="double.sided" select="1"/>
+<xsl:template name="force.page.count">
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="master-reference" select="''"/>
+
+  no-force
+<!--
+  <xsl:choose>
+    <! - - double-sided output - - >
+    <xsl:when test="$double.sided != 0">end-on-even</xsl:when>
+    <! - - single-sided output - - >
+    <xsl:otherwise>no-force</xsl:otherwise>
+  </xsl:choose>
+-->
+</xsl:template>
 
 <xsl:param name="title.font.family" select="'Artisan12'"/>
 <xsl:param name="body.font.family" select="'GoudyStMTT'"/>
@@ -188,6 +208,17 @@
 <!--
   Chapter heading customisation.
 -->
+<xsl:attribute-set name="preface.titlepage.recto.style">
+  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
+  <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
+  <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
+  <xsl:attribute name="padding-top">36pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
+  <xsl:attribute name="border">solid blue</xsl:attribute>
+  <xsl:attribute name="min-height">300pt</xsl:attribute>
+  <xsl:attribute name="height">300pt</xsl:attribute>
+  <xsl:attribute name="color">white</xsl:attribute>
+</xsl:attribute-set>
 <xsl:attribute-set name="chapter.titlepage.recto.style">
   <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
   <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
@@ -214,13 +245,9 @@
   <xsl:attribute name="line-height">120%</xsl:attribute>
 </xsl:attribute-set>
 
-<xsl:attribute-set name="footer.table.properties">
-  <xsl:attribute name="border">solid green</xsl:attribute>
-</xsl:attribute-set>
-
 <xsl:param name="header.rule" select="0"></xsl:param>
 <xsl:param name="header.column.widths">0 1 0</xsl:param>
-<xsl:param name="header.image.filename">file:../book/Discordians_Title_Backdrop.png</xsl:param>
+<xsl:param name="header.image.filename">../book/Discordians_Title_Backdrop.png</xsl:param>
 <xsl:template name="header.content">
   <xsl:param name="pageclass" select="''"/>
   <xsl:param name="sequence" select="''"/>
@@ -248,7 +275,8 @@
         <!-- nothing -->
       </xsl:when>
 
-      <xsl:when test="$double.sided != 0 and $sequence = 'even'
+      <xsl:when test="$double.sided != 0
+		      and $sequence = 'even'
                       and $position='left'">
 	<xsl:attribute name="margin-{$direction.align.start}">-0.6in</xsl:attribute>
 	<fo:external-graphic content-height="0.6in">
@@ -260,10 +288,17 @@
 	</fo:external-graphic>
       </xsl:when>
 
-      <xsl:when test="$double.sided != 0 and ($sequence = 'odd' or $sequence = 'first')
+      <xsl:when test="$double.sided != 0
+		      and ($sequence = 'odd' or $sequence = 'first')
                       and $position='right'">
 	<xsl:attribute name="margin-{$direction.align.end}">-0.6in</xsl:attribute>
-        <fo:external-graphic/>
+	<fo:external-graphic content-height="0.6in">
+	  <xsl:attribute name="src">
+	    <xsl:call-template name="fo-external-image">
+	      <xsl:with-param name="filename" select="$header.image.filename"/>
+	    </xsl:call-template>
+	  </xsl:attribute>
+	</fo:external-graphic>
       </xsl:when>
 
 
@@ -287,8 +322,12 @@
   </fo:block>
 </xsl:template>
 
+<!--
+<xsl:attribute-set name="footer.table.properties">
+  <xsl:attribute name="border">solid green</xsl:attribute>
+</xsl:attribute-set>
+-->
 <xsl:attribute-set name="footer.content.properties">
-  <xsl:attribute name="border">dashed red</xsl:attribute>
   <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="footer.column.widths">1 8 1</xsl:param>
@@ -334,14 +373,16 @@
       </xsl:when>
 
       <xsl:when test="$double.sided != 0
-		      and $sequence = 'even'
+		      and ($sequence = 'odd' or $sequence = 'first')
 		      and $position='center'">
-	<xsl:call-template name="gentext">
-	  <xsl:with-param name="key" select="'Chapter'"/>
-	</xsl:call-template> 
-	<xsl:text> </xsl:text>
-	<xsl:apply-templates select="." mode="label.markup"/>
-	<xsl:text> &#x00b7; </xsl:text>
+	<xsl:if test="$gentext-key='Chapter' or $gentext-key='chapter'">
+	  <xsl:call-template name="gentext">
+	    <xsl:with-param name="key" select="$gentext-key"/>
+	  </xsl:call-template> 
+	  <xsl:text> </xsl:text>
+	  <xsl:apply-templates select="." mode="label.markup"/>
+	  <xsl:text> &#x00b7; </xsl:text>
+	</xsl:if>
 	<xsl:apply-templates select="." mode="title.markup"/>
       </xsl:when>
 
@@ -449,7 +490,99 @@
   </l:l10n>
 </l:i18n>
 
+<!--
+    Page numbering
+-->
+<xsl:template name="page.number.format">
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="master-reference" select="''"/>
 
+  1
+<!--
+  <xsl:choose>
+    <xsl:when test="$element = 'toc' and self::book">i</xsl:when>
+    <xsl:when test="$element = 'preface'">i</xsl:when>
+    <xsl:when test="$element = 'dedication'">i</xsl:when>
+    <xsl:when test="$element = 'acknowledgements'">i</xsl:when>
+    <xsl:otherwise>1</xsl:otherwise>
+  </xsl:choose>
+-->
+</xsl:template>
+
+<xsl:template name="initial.page.number">
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="master-reference" select="''"/>
+
+  <!-- Select the first content that the stylesheet places
+       after the TOC -->
+  <xsl:variable name="first.book.content" 
+                select="ancestor::book/*[
+                          not(self::title or
+                              self::subtitle or
+                              self::titleabbrev or
+                              self::bookinfo or
+                              self::info or
+                              self::dedication or
+                              self::acknowledgements or
+                              self::preface or
+                              self::toc or
+                              self::lot)][1]"/>
+  <xsl:choose>
+    <!-- double-sided output -->
+    <xsl:when test="$double.sided != 0">
+      <xsl:choose>
+<!--
+        <xsl:when test="$element = 'toc'">auto-odd</xsl:when>
+-->
+        <xsl:when test="$element = 'book'">1</xsl:when>
+        <!-- preface typically continues TOC roman numerals -->
+        <!-- Change page.number.format if not -->
+<!--
+        <xsl:when test="$element = 'preface'">auto-odd</xsl:when>
+        <xsl:when test="($element = 'dedication' or $element = 'article') 
+                    and not(preceding::chapter
+                            or preceding::preface
+                            or preceding::appendix
+                            or preceding::article
+                            or preceding::dedication
+                            or parent::part
+                            or parent::reference)">1</xsl:when>
+        <xsl:when test="generate-id($first.book.content) =
+                        generate-id(.)">1</xsl:when>
+        <xsl:otherwise>auto-odd</xsl:otherwise>
+-->
+        <xsl:otherwise>auto</xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+
+    <!-- single-sided output -->
+    <xsl:otherwise>
+      <xsl:choose>
+        <xsl:when test="$element = 'toc'">auto</xsl:when>
+        <xsl:when test="$element = 'book'">1</xsl:when>
+        <xsl:when test="$element = 'preface'">auto</xsl:when>
+<!--
+        <xsl:when test="($element = 'dedication' or $element = 'article') and
+                        not(preceding::chapter
+                            or preceding::preface
+                            or preceding::appendix
+                            or preceding::article
+                            or preceding::dedication
+                            or parent::part
+                            or parent::reference)">1</xsl:when>
+        <xsl:when test="generate-id($first.book.content) =
+                        generate-id(.)">1</xsl:when>
+-->
+        <xsl:otherwise>auto</xsl:otherwise>
+      </xsl:choose>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+
+<!--
+    Table of Contents
+-->
 
 <xsl:param name="toc.section.depth" select="'0'"/>
 <xsl:param name="autotoc.label.separator">: </xsl:param>
@@ -458,7 +591,7 @@
   <xsl:attribute name="font-size">14pt</xsl:attribute>
   <xsl:attribute name="margin-left">0.4in</xsl:attribute>
   <xsl:attribute name="margin-right">0.6in</xsl:attribute>
-  <xsl:attribute name="line-height">140%</xsl:attribute>
+  <xsl:attribute name="line-height">160%</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="toc.margin.properties">
   <xsl:attribute name="space-before.minimum">0.5em</xsl:attribute>
@@ -467,15 +600,37 @@
   <xsl:attribute name="space-after.minimum">0.5em</xsl:attribute>
   <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
   <xsl:attribute name="space-after.maximum">2em</xsl:attribute>
+  <xsl:attribute name="text-align">center</xsl:attribute>
+<!--
+  <xsl:attribute name="border">dashed red</xsl:attribute>
+-->
 </xsl:attribute-set>
 
 <!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
+<xsl:template name="table.of.contents.titlepage.before.recto">
+  <fo:block
+      padding-top="1.5in" padding-bottom="2.5in"
+      text-align="center"
+      >
+<!--
+      border="dashed purple">
+-->
+    <fo:external-graphic
+	block-progression-dimension="1.5in"
+      >
+<!--
+	border="solid thick purple">
+-->
+      <xsl:attribute name="src">
+	<xsl:call-template name="fo-external-image">
+	  <xsl:with-param name="filename" select="$header.image.filename"/>
+	</xsl:call-template>
+      </xsl:attribute>
+    </fo:external-graphic>
+  </fo:block>
+</xsl:template>
 <xsl:attribute-set name="table.of.contents.titlepage.recto.style">
-  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
-  <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
-  <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
-  <xsl:attribute name="text-align">center</xsl:attribute>
-  <xsl:attribute name="font-size">24pt</xsl:attribute>
+  <xsl:attribute name="border">solid orange</xsl:attribute>
 </xsl:attribute-set>
 <xsl:template name="toc.line">
   <xsl:param name="toc-context" select="NOTANODE"/>  

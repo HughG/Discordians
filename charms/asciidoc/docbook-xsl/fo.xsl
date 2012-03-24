@@ -34,7 +34,7 @@
 <xsl:param name="alignment">justify</xsl:param>
 <xsl:param name="double.sided" select="1"/>
 
-<!--<xsl:param name="body.font.family" select="'serif'"/>-->
+<xsl:param name="title.font.family" select="'Artisan12'"/>
 <xsl:param name="body.font.family" select="'GoudyStMTT'"/>
 <xsl:param name="body.font.master">10</xsl:param>
 <xsl:param name="body.font.size">
@@ -212,7 +212,6 @@
   <xsl:attribute name="border">solid red</xsl:attribute>
   <xsl:attribute name="text-align">center</xsl:attribute>
   <xsl:attribute name="line-height">120%</xsl:attribute>
-  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="footer.table.properties">
@@ -402,11 +401,17 @@
         </xsl:choose>
       </xsl:variable>
       <xsl:choose>
-        <xsl:when test="$my.number = '1'">
-          <xsl:text>One</xsl:text>
-        </xsl:when>
+        <xsl:when test="$my.number = '1'"><xsl:text>One</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '2'"><xsl:text>Two</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '3'"><xsl:text>Three</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '4'"><xsl:text>Four</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '5'"><xsl:text>Five</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '6'"><xsl:text>Six</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '7'"><xsl:text>Seven</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '8'"><xsl:text>Eight</xsl:text></xsl:when>
+        <xsl:when test="$my.number = '9'"><xsl:text>Nine</xsl:text></xsl:when>
         <xsl:otherwise>
-          Oops!
+          <xsl:text>OOPS!</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:when>
@@ -447,26 +452,71 @@
 
 
 <xsl:param name="toc.section.depth" select="'0'"/>
+<xsl:param name="autotoc.label.separator">: </xsl:param>
+<xsl:attribute-set name="toc.line.properties">
+  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
+  <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="margin-left">0.4in</xsl:attribute>
+  <xsl:attribute name="margin-right">0.6in</xsl:attribute>
+  <xsl:attribute name="line-height">140%</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="toc.margin.properties">
+  <xsl:attribute name="space-before.minimum">0.5em</xsl:attribute>
+  <xsl:attribute name="space-before.optimum">1em</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">2em</xsl:attribute>
+  <xsl:attribute name="space-after.minimum">0.5em</xsl:attribute>
+  <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
+  <xsl:attribute name="space-after.maximum">2em</xsl:attribute>
+</xsl:attribute-set>
 
 <!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
-<!--
-<xsl:template name="book.titlepage.before.verso" priority="1">
-  <xsl:variable name="toc.params">
-    <xsl:call-template name="find.path.params">
-      <xsl:with-param name="table"
-            select="normalize-space($generate.toc)"/>
-    </xsl:call-template>
+<xsl:attribute-set name="table.of.contents.titlepage.recto.style">
+  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
+  <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
+  <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
+  <xsl:attribute name="text-align">center</xsl:attribute>
+  <xsl:attribute name="font-size">24pt</xsl:attribute>
+</xsl:attribute-set>
+<xsl:template name="toc.line">
+  <xsl:param name="toc-context" select="NOTANODE"/>  
+  <xsl:variable name="id">  
+    <xsl:call-template name="object.id"/>
   </xsl:variable>
-  <xsl:if test="contains($toc.params, 'toc')">
-    <xsl:call-template name="division.toc">
-      <xsl:with-param name="toc.context" select="."/>
-    </xsl:call-template>
-  </xsl:if>
-</xsl:template>
 
-<xsl:template name="generate.book.toc">
+  <xsl:variable name="label">  
+    <xsl:apply-templates select="." mode="label.markup"/>  
+  </xsl:variable>
+
+  <fo:block xsl:use-attribute-sets="toc.line.properties">  
+    <fo:inline keep-with-next.within-line="always">
+      
+      <fo:basic-link internal-destination="{$id}">  
+
+        <xsl:if test="self::appendix or self::chapter">
+          <xsl:call-template name="gentext">
+            <xsl:with-param name="key" select="local-name()"/>
+          </xsl:call-template>
+          <xsl:text> </xsl:text>
+        </xsl:if>
+
+        <xsl:if test="$label != ''">
+          <xsl:copy-of select="$label"/>
+          <xsl:value-of select="$autotoc.label.separator"/>
+        </xsl:if>
+        <xsl:apply-templates select="." mode="title.markup"/>  
+      </fo:basic-link>
+    </fo:inline>
+    <fo:inline keep-together.within-line="always"> 
+      <xsl:text> </xsl:text>
+      <fo:leader leader-pattern="space"
+                 keep-with-next.within-line="always"/>
+      <xsl:text> </xsl:text>
+      <fo:basic-link internal-destination="{$id}">
+        <fo:page-number-citation ref-id="{$id}"/>
+      </fo:basic-link>
+    </fo:inline>
+  </fo:block>
 </xsl:template>
--->
 
 
 
@@ -476,15 +526,20 @@
   <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
   <xsl:attribute name="line-height">170%</xsl:attribute>
-  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level1.properties">
-  <xsl:attribute name="font-size"><xsl:text>24pt</xsl:text></xsl:attribute>
+  <xsl:attribute name="font-size">24pt</xsl:attribute>
+  <xsl:attribute name="line-height">120%</xsl:attribute>
+  <xsl:attribute name="margin-bottom">10pt</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level2.properties">
-  <xsl:attribute name="font-size"><xsl:text>14pt</xsl:text></xsl:attribute>
+  <xsl:attribute name="font-size">18pt</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="section.title.level3.properties">
+  <xsl:attribute name="font-size">14pt</xsl:attribute>
 </xsl:attribute-set>
 
 <!-- Indent paragraphs -->

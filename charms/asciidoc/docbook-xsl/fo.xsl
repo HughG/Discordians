@@ -20,6 +20,8 @@
     TODO 2012-03-24 HUGR: Background image for page numbers.
     TODO 2012-03-24 HUGR: Leading zeros in page numbers.
     TODO 2012-03-24 HUGR: Footer rule.
+    TODO 2012-03-25 HUGR: Make INDEX heading smaller.
+    TODO 2012-03-25 HUGR: Make index and appendix not appear in ToC.
 -->
 
 <xsl:stylesheet version="1.0"
@@ -205,6 +207,7 @@
 -->
 <xsl:param name="section.container.element">wrapper</xsl:param>
 
+
 <!--
   Chapter heading customisation.
 -->
@@ -230,17 +233,20 @@
   <xsl:attribute name="height">300pt</xsl:attribute>
   <xsl:attribute name="color">white</xsl:attribute>
 </xsl:attribute-set>
-<xsl:attribute-set name="component.titlepage.properties">
-  <xsl:attribute name="span">all</xsl:attribute>
+<xsl:attribute-set name="chapter.titlepage.recto.style">
   <xsl:attribute name="padding-top">24pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">36pt</xsl:attribute>
-  <xsl:attribute name="border">solid green</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="component.titlepage.properties">
+  <xsl:attribute name="span">all</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="component.title.properties">
   <xsl:attribute name="margin-left">84pt</xsl:attribute>
   <xsl:attribute name="margin-right">84pt</xsl:attribute>
   <xsl:attribute name="min-height">84pt</xsl:attribute>
+<!--
   <xsl:attribute name="border">solid red</xsl:attribute>
+-->
   <xsl:attribute name="text-align">center</xsl:attribute>
   <xsl:attribute name="line-height">120%</xsl:attribute>
 </xsl:attribute-set>
@@ -373,7 +379,7 @@
       </xsl:when>
 
       <xsl:when test="$double.sided != 0
-		      and ($sequence = 'odd' or $sequence = 'first')
+		      and ($sequence = 'odd')
 		      and $position='center'">
 	<xsl:if test="$gentext-key='Chapter' or $gentext-key='chapter'">
 	  <xsl:call-template name="gentext">
@@ -601,9 +607,7 @@
   <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
   <xsl:attribute name="space-after.maximum">2em</xsl:attribute>
   <xsl:attribute name="text-align">center</xsl:attribute>
-<!--
   <xsl:attribute name="border">dashed red</xsl:attribute>
--->
 </xsl:attribute-set>
 
 <!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
@@ -611,9 +615,9 @@
   <fo:block
       padding-top="1.5in" padding-bottom="2.5in"
       text-align="center"
-      >
-<!--
       border="dashed purple">
+<!--
+      >
 -->
     <fo:external-graphic
 	block-progression-dimension="1.5in"
@@ -673,6 +677,59 @@
   </fo:block>
 </xsl:template>
 
+
+<!--
+    Index
+-->
+<!--
+    Three columns in index
+-->
+<xsl:param name="column.count.index" select="3"/>
+<xsl:param name="column.gap.index">10pt</xsl:param>
+<xsl:attribute-set name="index.titlepage.recto.style">
+  <xsl:attribute name="padding-top">0pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">0pt</xsl:attribute>
+  <xsl:attribute name="margin-top">0pt</xsl:attribute>
+  <xsl:attribute name="margin-bottom">0pt</xsl:attribute>
+  <xsl:attribute name="font-size">18pt</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="index.div.title.properties">
+<!--
+  <xsl:attribute name="space-before.optimum"><xsl:value-of select="concat($body.font.master,'pt')"></xsl:value-of></xsl:attribute>
+  <xsl:attribute name="space-before.minimum"><xsl:value-of select="concat($body.font.master,'pt * 0.8')"></xsl:value-of></xsl:attribute>
+  <xsl:attribute name="space-before.maximum"><xsl:value-of select="concat($body.font.master,'pt * 1.2')"></xsl:value-of></xsl:attribute>
+-->
+  <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
+  <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="index.entry.properties">
+<!--
+  <xsl:attribute name="width">100%</xsl:attribute>
+-->
+  <xsl:attribute name="border">dashed orange</xsl:attribute>
+</xsl:attribute-set>
+<xsl:param name="index.term.separator">
+  <fo:inline
+      keep-together.within-line="always"
+      width="100%"
+      inline-progression-dimension="100%"
+      border="solid red"
+      >
+    <xsl:text>.</xsl:text>
+    <fo:leader
+	leader-pattern="dots"
+	leader-length.minimum="100%"
+	leader-length.optimum="100%"
+	leader-length.maximum="100%"
+	/>
+<!--
+	keep-with-next.within-line="always"
+	/>
+-->
+    <xsl:text> </xsl:text>
+  </fo:inline>
+</xsl:param>
 
 
 <!-- Section heading properties -->

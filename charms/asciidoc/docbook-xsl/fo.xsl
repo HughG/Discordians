@@ -13,14 +13,25 @@
 
 <!--
     TODO 2012-03-12 HUGR: Make Charm headers (and other bits) non-justified.
+
+    TODO 2012-03-12 HUGR: Background image(s) for sidebars.
+
     TODO 2012-03-24 HUGR: Credits page.
+
     TODO 2012-03-24 HUGR: Proper background image for header.
+
     TODO 2012-03-24 HUGR: Proper background image for outer margin.
+
     TODO 2012-03-24 HUGR: ... or combine the above two into page background?
+
     TODO 2012-03-24 HUGR: Background image for page numbers.
+
     TODO 2012-03-24 HUGR: Leading zeros in page numbers.
+
     TODO 2012-03-24 HUGR: Footer rule.
-    TODO 2012-03-25 HUGR: Make INDEX heading smaller.
+
+    TODO 2012-03-25 HUGR: Make INDEX & character sheeet heading smaller.  Need to fiddle with page templates.
+
     TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
 -->
 
@@ -155,17 +166,140 @@
 <xsl:attribute-set name="sidebar.properties" use-attribute-sets="formal.object.properties">
   <xsl:attribute name="border-style">solid</xsl:attribute>
   <xsl:attribute name="border-width">1pt</xsl:attribute>
-  <xsl:attribute name="border-color">silver</xsl:attribute>
-  <xsl:attribute name="background-color">#ffffee</xsl:attribute>
+  <xsl:attribute name="border-color">black</xsl:attribute>
+  <xsl:attribute name="background-color">#f0c0c0</xsl:attribute>
   <xsl:attribute name="padding-left">12pt</xsl:attribute>
   <xsl:attribute name="padding-right">12pt</xsl:attribute>
-  <xsl:attribute name="padding-top">6pt</xsl:attribute>
-  <xsl:attribute name="padding-bottom">6pt</xsl:attribute>
+  <xsl:attribute name="padding-top">12pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">12pt</xsl:attribute>
   <xsl:attribute name="margin-left">0pt</xsl:attribute>
-  <xsl:attribute name="margin-right">12pt</xsl:attribute>
+  <xsl:attribute name="margin-right">0pt</xsl:attribute>
   <xsl:attribute name="margin-top">6pt</xsl:attribute>
   <xsl:attribute name="margin-bottom">6pt</xsl:attribute>
 </xsl:attribute-set>
+
+<xsl:attribute-set name="sidebar.title.properties">
+  <xsl:attribute name="font-weight">bold</xsl:attribute>
+  <xsl:attribute name="hyphenate">false</xsl:attribute>
+  <xsl:attribute name="text-align">start</xsl:attribute>
+  <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
+  <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="space-after">6pt</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:template match="sidebar" name="sidebar">
+  <!-- Also does margin notes -->
+  <xsl:variable name="pi-type">
+    <xsl:call-template name="pi.dbfo_float-type"/>
+  </xsl:variable>
+
+  <xsl:variable name="id">
+    <xsl:call-template name="object.id"/>
+  </xsl:variable>
+
+  <!-- Some don't have a pgwide attribute, so may use a PI -->
+  <xsl:variable name="pgwide.pi">
+    <xsl:call-template name="pi.dbfo_pgwide"/>
+  </xsl:variable>
+
+  <xsl:variable name="pgwide">
+    <xsl:choose>
+      <xsl:when test="@pgwide">
+        <xsl:value-of select="@pgwide"/>
+      </xsl:when>
+      <xsl:when test="$pgwide.pi">
+        <xsl:value-of select="$pgwide.pi"/>
+      </xsl:when>
+      <!-- child element may set pgwide -->
+      <xsl:when test="*[@pgwide]">
+        <xsl:value-of select="*[@pgwide][1]/@pgwide"/>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$pi-type = 'margin.note'">
+      <xsl:call-template name="margin.note"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:variable name="content">
+	<xsl:choose>
+	  <!--
+	      HUGR 2012-03-30: Allow sidebars to use pgwide.properties.
+	  -->
+	  <xsl:when test="$pgwide = '1'">
+	    <fo:block xsl:use-attribute-sets="pgwide.properties
+					      sidebar.properties"
+		      id="{$id}">
+	      <xsl:call-template name="sidebar.titlepage"/>
+	      <xsl:apply-templates select="node()[not(self::title) and
+					   not(self::info) and
+					   not(self::sidebarinfo)]"/>
+	    </fo:block>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <fo:block xsl:use-attribute-sets="sidebar.properties"
+		      id="{$id}">
+	      <xsl:call-template name="sidebar.titlepage"/>
+	      <xsl:apply-templates select="node()[not(self::title) and
+					   not(self::info) and
+					   not(self::sidebarinfo)]"/>
+	    </fo:block>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:variable>
+
+      <xsl:variable name="pi-width">
+        <xsl:call-template name="pi.dbfo_sidebar-width"/>
+      </xsl:variable>
+
+      <xsl:variable name="position">
+        <xsl:choose>
+          <xsl:when test="$pi-type != ''">
+            <xsl:value-of select="$pi-type"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$sidebar.float.type"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+    
+      <xsl:call-template name="floater">
+        <xsl:with-param name="content" select="$content"/>
+        <xsl:with-param name="position" select="$position"/>
+        <xsl:with-param name="width">
+          <xsl:choose>
+            <xsl:when test="$pi-width != ''">
+              <xsl:value-of select="$pi-width"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$sidebar.float.width"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:with-param>
+        <xsl:with-param name="start.indent">
+          <xsl:choose>
+            <xsl:when test="$position = 'start' or 
+                            $position = 'left'">0pt</xsl:when>
+            <xsl:when test="$position = 'end' or 
+                            $position = 'right'">0.5em</xsl:when>
+            <xsl:otherwise>0pt</xsl:otherwise>
+          </xsl:choose>
+        </xsl:with-param>
+        <xsl:with-param name="end.indent">
+          <xsl:choose>
+            <xsl:when test="$position = 'start' or 
+                            $position = 'left'">0.5em</xsl:when>
+            <xsl:when test="$position = 'end' or 
+                            $position = 'right'">0pt</xsl:when>
+            <xsl:otherwise>0pt</xsl:otherwise>
+          </xsl:choose>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:otherwise>
+  </xsl:choose>
+
+</xsl:template>
 
 <xsl:param name="callout.graphics" select="'1'"/>
 
@@ -189,10 +323,7 @@
 </xsl:attribute-set>
 
 
-<!--
-<xsl:param name="section.autolabel" select="0"></xsl:param>
-<xsl:param name="chapter.autolabel" select="0"></xsl:param>
--->
+<xsl:param name="appendix.autolabel" select="0"></xsl:param>
 <!--
   Two-column by default.
 -->
@@ -473,12 +604,6 @@
   </xsl:choose>
 </xsl:template>
 
-<!--
-<xsl:template match="chapter|appendix|section" mode="intralabel.punctuation">
-<xsl:template match="*" mode="intralabel.punctuation">
-  <xsl:text>:</xsl:text>
-</xsl:template>
--->
 <xsl:param name="local.l10n.xml" select="document('')"/>
 <l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
   <l:l10n language="en">
@@ -906,5 +1031,26 @@
   <xsl:attribute name="space-before.maximum">0pt</xsl:attribute>
   <xsl:attribute name="text-indent">18pt</xsl:attribute>
 </xsl:attribute-set>
+
+<!-- Don't indent specially-marked paragraphs -->
+<xsl:attribute-set name="noindent.para.spacing">
+  <xsl:attribute name="space-before.optimum">0pt</xsl:attribute>
+  <xsl:attribute name="space-before.minimum">0pt</xsl:attribute>
+  <xsl:attribute name="space-before.maximum">0pt</xsl:attribute>
+  <xsl:attribute name="text-indent">0pt</xsl:attribute>
+</xsl:attribute-set>
+<xsl:template match="simpara[@role='noindent']">
+  <xsl:variable name="keep.together">
+    <xsl:call-template name="pi.dbfo_keep-together"/>
+  </xsl:variable>
+  <fo:block xsl:use-attribute-sets="noindent.para.spacing">
+    <xsl:if test="$keep.together != ''">
+      <xsl:attribute name="keep-together.within-column"><xsl:value-of
+                      select="$keep.together"/></xsl:attribute>
+    </xsl:if>
+    <xsl:call-template name="anchor"/>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
 
 </xsl:stylesheet>

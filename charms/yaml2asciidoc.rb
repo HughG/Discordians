@@ -10,11 +10,19 @@ def insert_charm(out, section_name, charms, charm)
   return if charm.name[0] == '('[0]
   if charm.name != '.'
     out.puts("[[#{charm.safe_group}_#{charm.id}]]")
-    out.puts("==== #{charm.clean_name}")
+    out.puts("===== #{charm.clean_name}")
     mins = charm.mins.map { |min| min.join(" ") }.join(", ")
     type = charm.type[0]
     if charm.type.length > 1
       type += " (" + charm.type[1] + ")"
+    end
+    out.puts("[role=\"noindent\"]")
+    # Need to have no line break after the indexterm macro, or we get a space
+    # at the start of the paragraph.
+    out.print("indexterm:[charm, #{charm.clean_name} (#{charm.group})]")
+    cost = charm.cost
+    if cost == "--" then
+      cost = "--&#x200B;"
     end
     out.puts("*Cost:* #{charm.cost}; " +
              "*Mins:* #{mins}; " +
@@ -38,32 +46,47 @@ def insert_charm(out, section_name, charms, charm)
                   end
                 }.join(", "))
     end
-    out.puts(" +")
+    out.puts
+    # out.puts(" +")
   end
   out.puts
   out.puts("#{charm.text}")
   out.puts
 end
 
+division_ordinals = ["1st", "2nd", "3rd", "4th", "5th"]
+division_names = ["Anchor", "Arrow", "Apple", "Archway", "Anvil"]
+
 if __FILE__ == $PROGRAM_NAME
 #  puts $PROGRAM_NAME + "..."
   filename = $*[0]
   outfilename = $*[1]
 
+  matches = /([0-9])_.*/.match(outfilename)
+  division = matches[1].to_i
+  division_name =
+    if division < 6 then
+      idx = division - 1
+      "#{division_ordinals[idx]} Division (#{division_names[idx]})"
+    else
+      "Martial Arts"
+    end
+
   File.open(outfilename, "w") { |outfile|
-    outfile.puts(":doctype: book")
-    outfile.puts(":themedir: ..")
-    outfile.puts(":theme: discordians")
-    outfile.puts(":linkcss:")
-    outfile.puts
+#     outfile.puts(":doctype: book")
+#     outfile.puts(":themedir: ..")
+#     outfile.puts(":theme: discordians")
+#     outfile.puts(":linkcss:")
+#     outfile.puts
 
     process_file(filename) { |group_name, charms|
-      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
+      outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")
       outfile.puts('[options="pgwide"]')
-      outfile.puts("image::#{pngfilename}[#{group_name} Charm Tree]")
+      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
+      outfile.puts("image::./output/#{pngfilename}[#{group_name} Charm Tree]")
       outfile.puts
 
-      outfile.puts("=== " + group_name)
+      outfile.puts("==== " + group_name)
       outfile.puts
 
       charms.each_value { |charm|

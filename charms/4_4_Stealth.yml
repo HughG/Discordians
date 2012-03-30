@@ -53,7 +53,7 @@ text: |
   
 --- !Charm
 id: ceop
-name: "?Conceal Evidence>of Passage?"
+name: "Conceal Evidence>of Passage???"
 cost: xxx
 mins: {Stealth: 3, Ess: 2}
 type: [Reflexive]
@@ -132,7 +132,7 @@ text: |
   
 --- !Charm
 id: hioo
-name: "?Hide Importance>of Object?"
+name: "Hide Importance>of Object???"
 cost: 3m
 mins: {Stealth: 3, Ess: 2}
 type: [Simple]
@@ -226,7 +226,7 @@ text: |
   
 --- !Charm
 id: erd
-name: "?Extend Recumbent Destiny?"
+name: "Extend Recumbent Destiny???"
 cost: xxx
 mins: {Stealth: 4, Ess: 3}
 type: [Simple]
@@ -247,7 +247,7 @@ text: |
   
 --- !Charm
 id: hfr
-name: "?Hiding From Reality?"
+name: "Hiding From Reality???"
 cost: 10m
 mins: {Stealth: 4, Ess: 3}
 type: [Reflexive, Step 1 or Step 2]
@@ -266,7 +266,7 @@ text: |
   
 --- !Charm
 id: hsag
-name: "?Hide Self as Group?"
+name: "Hide Self as Group???"
 cost: xxx
 mins: {Stealth: 4, Ess: 4}
 type: [Simple]
@@ -284,7 +284,7 @@ text: |
   
 --- !Charm
 id: dcp
-name: "?Deep Cover Persona?"
+name: "Deep Cover Persona???"
 cost: 10m, 2wp
 mins: {Stealth: 5, Ess: 4}
 type: [Simple]

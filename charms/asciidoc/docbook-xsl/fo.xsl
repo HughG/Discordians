@@ -12,8 +12,6 @@
 -->
 
 <!--
-    TODO 2012-03-12 HUGR: Make Charm headers (and other bits) non-justified.
-
     TODO 2012-03-12 HUGR: Background image(s) for sidebars.
 
     TODO 2012-03-24 HUGR: Credits page.
@@ -33,6 +31,10 @@
     TODO 2012-03-25 HUGR: Make INDEX & character sheeet heading smaller.  Need to fiddle with page templates.
 
     TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
+
+    TODO 2012-03-30 HUGR: Sort out hyphenation.
+
+    TODO 2012-03-30 HUGR: Sort out smart quotes.
 -->
 
 <!DOCTYPE xsl:stylesheet [
@@ -184,7 +186,10 @@
   <xsl:attribute name="text-align">start</xsl:attribute>
   <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
   <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="line-height">120%</xsl:attribute>
+<!--
   <xsl:attribute name="space-after">6pt</xsl:attribute>
+-->
 </xsl:attribute-set>
 
 <xsl:template match="sidebar" name="sidebar">
@@ -353,7 +358,9 @@
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
+<!--
   <xsl:attribute name="border">solid blue</xsl:attribute>
+-->
   <xsl:attribute name="min-height">300pt</xsl:attribute>
   <xsl:attribute name="height">300pt</xsl:attribute>
   <xsl:attribute name="color">white</xsl:attribute>
@@ -364,7 +371,9 @@
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">42pt</xsl:attribute>
+<!--
   <xsl:attribute name="border">solid blue</xsl:attribute>
+-->
   <xsl:attribute name="min-height">300pt</xsl:attribute>
   <xsl:attribute name="height">300pt</xsl:attribute>
   <xsl:attribute name="color">white</xsl:attribute>
@@ -372,6 +381,9 @@
 <xsl:attribute-set name="chapter.titlepage.recto.style">
   <xsl:attribute name="padding-top">24pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">36pt</xsl:attribute>
+</xsl:attribute-set>
+<xsl:attribute-set name="appendix.titlepage.recto.style">
+  <xsl:attribute name="text-transform">uppercase</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="component.titlepage.properties">
   <xsl:attribute name="span">all</xsl:attribute>
@@ -740,7 +752,9 @@
   <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
   <xsl:attribute name="space-after.maximum">2em</xsl:attribute>
   <xsl:attribute name="text-align">center</xsl:attribute>
+<!--
   <xsl:attribute name="border">dashed red</xsl:attribute>
+-->
 </xsl:attribute-set>
 
 <!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
@@ -748,9 +762,9 @@
   <fo:block
       padding-top="1.5in" padding-bottom="2.5in"
       text-align="center"
-      border="dashed purple">
-<!--
       >
+<!--
+      border="dashed purple">
 -->
     <fo:external-graphic
 	block-progression-dimension="1.5in"
@@ -767,7 +781,9 @@
   </fo:block>
 </xsl:template>
 <xsl:attribute-set name="table.of.contents.titlepage.recto.style">
+<!--
   <xsl:attribute name="border">solid orange</xsl:attribute>
+-->
 </xsl:attribute-set>
 <xsl:template name="toc.line">
   <xsl:param name="toc-context" select="NOTANODE"/>  
@@ -823,32 +839,39 @@
 -->
 <xsl:param name="column.count.index" select="3"/>
 <xsl:param name="column.gap.index">10pt</xsl:param>
+<!--
+    Allow specialised indices, for "Index of Charms"
+-->
+<xsl:param name="index.on.type" select="1"/>
+<!--
+    Index styling
+-->
 <xsl:attribute-set name="index.titlepage.recto.style">
   <xsl:attribute name="padding-top">0pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">0pt</xsl:attribute>
   <xsl:attribute name="margin-top">0pt</xsl:attribute>
   <xsl:attribute name="margin-bottom">0pt</xsl:attribute>
   <xsl:attribute name="font-size">18pt</xsl:attribute>
+  <xsl:attribute name="text-transform">uppercase</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="index.div.title.properties">
-<!--
-  <xsl:attribute name="space-before.optimum"><xsl:value-of select="concat($body.font.master,'pt')"></xsl:value-of></xsl:attribute>
-  <xsl:attribute name="space-before.minimum"><xsl:value-of select="concat($body.font.master,'pt * 0.8')"></xsl:value-of></xsl:attribute>
-  <xsl:attribute name="space-before.maximum"><xsl:value-of select="concat($body.font.master,'pt * 1.2')"></xsl:value-of></xsl:attribute>
--->
   <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="index.entry.properties">
   <xsl:attribute name="text-align-last">justify</xsl:attribute>
+<!--
   <xsl:attribute name="border">dashed orange</xsl:attribute>
+-->
 </xsl:attribute-set>
 <xsl:param name="index.term.separator">
     <fo:leader leader-pattern="space"
 	       keep-with-next.within-line="always"/>
 </xsl:param>
-
+<!--
+    Template overrides to make fo:leader work with FOP.
+-->
 <xsl:template match="indexterm" mode="reference">
   <xsl:param name="scope" select="."/>
   <xsl:param name="role" select="''"/>

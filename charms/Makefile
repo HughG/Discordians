@@ -50,11 +50,12 @@ $D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%
 
 $D/charms.pdf: charms.asc $(CONFIG) $(ASC:./%=$D/%)
 	cp charms.asc $D/charms.asc
-	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $D/charms.asc
+	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" $D/charms.asc
+	osascript show_pdf.scpt `pwd`/$D/charms.pdf
 
 test.pdf: test.asc $(CONFIG)
-	a2x -v -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" test.asc
-	osascript show_pdf.scpt
+	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" test.asc
+	osascript show_pdf.scpt `pwd`/test.pdf
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 #	./makewiki.rb . $W $(MAINWIKI)

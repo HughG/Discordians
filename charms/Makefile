@@ -55,7 +55,7 @@ $D/charms.pdf: charms.asc $(CONFIG) $(ASC:./%=$D/%)
 	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" $D/charms.asc
 	osascript show_pdf.scpt `pwd`/$D/charms.pdf
 
-test.pdf: test.asc $(CONFIG)
+test.pdf: test.asc test-docinfo.xml $(CONFIG)
 	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" test.asc
 	osascript show_pdf.scpt `pwd`/test.pdf
 

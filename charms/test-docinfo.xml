@@ -5,30 +5,21 @@
 
 <authorgroup>
   <author>
+<!--
     <honorific>Dr</honorific>
-    <firstname>Lois</firstname>
-    <surname>Common-Demoninator</surname>
+-->
+    <firstname>Hugh</firstname>
+    <surname>Greene</surname>
     <affiliation>
+<!--
       <shortaffil>Director, M. Behn School of Coop. Eng.</shortaffil>
-      <jobtitle>Director of Cooperative Efforts</jobtitle>
-      <orgname>The Marguerite Behn International School of
-               Cooperative Engineering</orgname>
+-->
+      <jobtitle>Indepenent Hacker</jobtitle>
+      <orgname>[TODO: Insert Discoridian made-up stuff here]</orgname>
     </affiliation>
   </author>
 
-  <author>
-    <honorific>Mr</honorific>
-    <firstname>Steven</firstname>
-    <surname>Norman</surname>
-    <othername role='mi'>T</othername>
-    <affiliation>
-      <shortaffil>ATI</shortaffil>
-      <jobtitle>Senior Application Analyst</jobtitle>
-      <orgname>Foobar, Inc.</orgname>
-      <orgdiv>Application Development</orgdiv>
-    </affiliation>
-  </author>
-
+<!--
   <editor>
     <firstname>Peter</firstname>
     <surname>Pan</surname>
@@ -40,20 +31,47 @@
       </para>
     </authorblurb>
   </editor>
+-->
 </authorgroup>
 
+<othercredit>
+    <firstname>Richard</firstname>
+    <surname>Greene</surname>
+    <contrib>Advice, inspiration, and detailed review</contrib>
+<!--
+    <othername role='mi'>T</othername>
+    <affiliation>
+      <shortaffil>ATI</shortaffil>
+      <jobtitle>Senior Application Analyst</jobtitle>
+      <orgname>Foobar, Inc.</orgname>
+      <orgdiv>Application Development</orgdiv>
+    </affiliation>
+-->
+</othercredit>
+
+<othercredit>
+    <firstname>Susan</firstname>
+    <surname>Dickson</surname>
+    <contrib>Support and random ideas</contrib>
+</othercredit>
+
+<abstract>
+  <simpara>
+    Abstract goes here (possibly including sidebars) ...
+  </simpara>
+</abstract>
+
 <copyright>
-  <year>2009</year>
-  <holder>Behn International</holder>
+  <year>2009-2012</year>
+  <holder>... Kopyleft!</holder>
 </copyright>
 
 <legalnotice>
   <simpara>
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+    All Rights Reversed.  You may do what you like with this text.
+    [TODO: Insert something about White Wolf terms and lawyers.]
   </simpara>
+<!--
   <simpara>
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -65,8 +83,10 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
   </simpara>
+-->
 </legalnotice>
 
+<!--
 <revhistory>
   <revision>
     <revnumber>1.1</revnumber>
@@ -85,3 +105,4 @@
     </revremark>
   </revision>
 </revhistory>
+-->

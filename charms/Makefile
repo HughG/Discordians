@@ -10,6 +10,8 @@ ASC=$(INPUT:.yml=.asc)
 PNG=$(INPUT:.yml=.png)
 CONFIG=asciidoc/* asciidoc/docbook-xsl/* fop/* ../fonts/goudy-3.1/*
 
+export FOP_HYPHENATION_PATH=fop/offo-hyphenation-binary/fop-hyph.jar
+
 all: destdir $D/$(MAINFILE) # $W/$(MAINWIKI)
 
 .PHONY: clean tmpclean

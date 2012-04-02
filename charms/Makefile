@@ -50,8 +50,9 @@ $D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%
 	cp -f style.css $D/style.css
 	cp -f discordians.css $D/discordians.css
 
-$D/charms.pdf: charms.asc $(CONFIG) $(ASC:./%=$D/%)
+$D/charms.pdf: charms.asc charms-docinfo.xml $(CONFIG) $(ASC:./%=$D/%)
 	cp charms.asc $D/charms.asc
+	cp charms-docinfo.xml $D/charms-docinfo.xml
 	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" $D/charms.asc
 	osascript show_pdf.scpt `pwd`/$D/charms.pdf
 

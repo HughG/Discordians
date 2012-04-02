@@ -39,28 +39,31 @@
 <xsl:param name="fop1.extensions" select="1" />
 
 <xsl:include href="fo-page.xsl"/>
+<xsl:include href="fo-bibliography.xsl"/>
 
 <xsl:param name="variablelist.as.blocks" select="1" />
+
+<!--
+    Workaround for FOP bug involving hyphenation and empty inline or
+    anchor elements.  Unicode FEFF is zero-width no-break space.
+
+    Bug:
+    https://issues.apache.org/bugzilla/show_bug.cgi?id=48765
+
+    Workaround:
+    https://issues.apache.org/bugzilla/show_bug.cgi?id=48765#c6
+-->
+<xsl:template match="anchor">
+  <xsl:variable name="id">
+    <xsl:call-template name="object.id"/>
+  </xsl:variable>
+  <fo:inline id="{$id}">&#xFEFF;</fo:inline>
+</xsl:template>
 
 <!-- overide setting in common.xsl -->
 <xsl:param name="table.frame.border.thickness" select="'2px'"/>
 
-<!-- Line break -->
-<xsl:template match="processing-instruction('asciidoc-br')">
-  <fo:block/>
-</xsl:template>
-
-<!-- Horizontal ruler -->
-<xsl:template match="processing-instruction('asciidoc-hr')">
-  <fo:block space-after="1em">
-    <fo:leader leader-pattern="rule" rule-thickness="0.5pt"  rule-style="solid" leader-length.minimum="100%"/>
-  </fo:block>
-</xsl:template>
-
-<!-- Hard page break -->
-<xsl:template match="processing-instruction('asciidoc-pagebreak')">
-   <fo:block break-after='page'/>
-</xsl:template>
+<xsl:include href="fo-asciidoc.xsl"/>
 
 <xsl:attribute-set name="monospace.properties">
   <xsl:attribute name="font-size">10pt</xsl:attribute>

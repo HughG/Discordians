@@ -114,6 +114,7 @@
   Two-column by default.
 -->
 <xsl:param name="column.count.body" select="2"/>
+<xsl:param name="column.count.front" select="2"/>
 <!--
   Single-column for pgwide attribute.
 -->

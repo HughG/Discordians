@@ -5,6 +5,19 @@ require "./yaml2x.rb"
 
 include REXML
 
+class Object
+  @@dia_attrs = {}
+
+  def self.dia_attr_accessor accessors
+    attr_accessor accessors.keys
+    dia_attrs.merge!(accessors)
+  end
+
+  def self.dia_type(dia_attr_symbol)
+    @@dia_attrs[dia_attr_symbol]
+  end
+end
+
 def add_attr(node, name)
   yield(node.add_element("dia:attribute", { "name" => name }))
 end
@@ -16,7 +29,11 @@ def add_typed_attr(node, name, type, value)
 end
 
 class DiaObject
-  attr_accessor :type, :obj_pos, :obj_bb
+  dia_attr_accessor {
+    :type => None,
+    :obj_pos => "point",
+    :obj_bb => "rectangle"
+  }
 
   def initialize(type, obj_pos, obj_bb)
     @type = type
@@ -26,8 +43,18 @@ class DiaObject
 
   def add_to_layer(node)
     obj = node.add_element("dia:object", { "type" => type })
-    add_typed_attr(obj, "obj_pos", "point", obj_pos)
-    add_typed_attr(obj, "obj_bb", "rectangle", obj_bb)
+    add_attr(obj, :obj_pos)
+    add_attr(obj, :obj_bb)
+  end
+
+  protected
+  def add_attr(obj, attr_sym, attr_value)
+    attr_str = attr_sym.to_s
+    attr_variable_sym = ("@" + attr_str).to_sym
+    add_typed_attr(obj,
+                   attr_symbol.to_s,
+                   dia_type(attr_symbol),
+                   instance_variable_get(attr_variable_sym))
   end
 end
 

@@ -20,14 +20,14 @@ end
 if __FILE__ == $PROGRAM_NAME
 #  puts $PROGRAM_NAME + "..."
 
-  CB_WIDTH = 98 # 49mm
-  CB_HEIGHT = 50 # 25mm
-  CB_HORIZ_GAP = 16 # 8mm
-  CB_VERT_GAP = 19 # 9.5mm
+  CB_WIDTH = 49 # 49mm
+  CB_HEIGHT = 25 # 25mm
+  CB_HORIZ_GAP = 8 # 8mm
+  CB_VERT_GAP = 9.5 # 9.5mm
   CB_COLUMNS = 3
   CB_ROWS = 5
-  POINTS = [[0,4], [18,4], [14,0], [84,0], [80,4], [98,4],
-            [98,46], [80,46], [84,50], [14,50], [18,46], [0,46]]
+  POINTS = [[0,2], [9,2], [7,0], [42,0], [40,2], [49,2],
+            [49,23], [40,23], [42,25], [7,25], [9,23], [0,23]]
 
   filename = $*[0]
   outfilename = $*[1]
@@ -43,8 +43,8 @@ if __FILE__ == $PROGRAM_NAME
     height = (CB_HEIGHT * CB_ROWS) + (CB_VERT_GAP * (CB_ROWS - 1))
     view_box = [-1, -1, width + 1, height + 1]
     svg = doc.add_element "svg", {
-      "width" => ((width + 2) / 2).to_s + "mm",
-      "height" => ((height + 2) / 2).to_s + "mm",
+      "width" => (width + 2).to_s + "mm",
+      "height" => (height + 2).to_s + "mm",
       "viewBox" => view_box.join(" ")
     }
     svg.add_namespace("http://www.w3.org/2000/svg")
@@ -65,6 +65,32 @@ if __FILE__ == $PROGRAM_NAME
           "style" => poly_style,
           "points" => make_path(points)
         }
+
+        ed_style = make_style({
+          "fill" => "#ffff00",
+          "stroke" => "#dcc593",
+          "stroke-width" => "0.3",
+        })
+        ad_style = make_style({
+          "fill" => "#ff0000",
+          "stroke" => "#dc9393",
+          "stroke-width" => "0.3",
+        })
+        for d in 0..4
+          ed1 = box.add_element "circle", {
+            "style" => ed_style,
+            "cx" => ((12.5 + (d * 6)) + x_offset),
+            "cy" => (2.5 + y_offset),
+            "r" => 2,
+          }
+          ad1 = box.add_element "circle", {
+            "style" => ad_style,
+            "cx" => ((12.5 + (d * 6)) + x_offset),
+            "cy" => ((25 - 2.5) + y_offset),
+            "r" => 2,
+          }
+        end
+
         text_style = make_style({
           "fill" => "#000000",
           "text-anchor" => "middle",
@@ -73,20 +99,23 @@ if __FILE__ == $PROGRAM_NAME
           "font-weight" => "500" # Normal
         })
         text = box.add_element "text", {
-          "font-size" => "7.90222", # What size is this?
-          # "font-size" => "5pt", # What size is this?
+          "font-size" => "3", #mm
+          TODO 2012-04-10 HUGR: Try 3.527777... ~~= 10pt
           "style" => text_style,
-          "x" => (49 + x_offset),
-          "y" => (21.0489 + y_offset),
+          "x" => (24.5 + x_offset),
+          # "y" => (10.5245 + y_offset),
+          "y" => (14 + y_offset),
         }
         tspan1 = text.add_element "tspan", {
-          "x" => (49 + x_offset),
-          "y" => (21.0489 + y_offset),
+          "x" => (24.5 + x_offset),
+          # "y" => (10.5245 + y_offset),
+          "y" => (12 + y_offset),
         }
-        tspan1.add Text.new("WISE-EYED COURTIER", false)
+        tspan1.add Text.new("Wise-Eyed Courtier", false)
         tspan2 = text.add_element "tspan", {
-          "x" => (49 + x_offset),
-          "y" => (30.9267 + y_offset),
+          "x" => (24.5 + x_offset),
+          # "y" => (15.4633 + y_offset),
+          "y" => (16 + y_offset),
         }
         tspan2.add Text.new("METHOD", false)
 

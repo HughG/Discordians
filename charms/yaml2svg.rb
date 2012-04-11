@@ -5,6 +5,13 @@ require "./yaml2x.rb"
 
 include REXML
 
+# Although the body text in the Exalted books is 10pt on 12pt, the Charm boxes
+# seem to use about 9pt on 11pt.
+PT_PER_MM = 25.4/72
+FONT_SIZE_IN_MM = (9 * PT_PER_MM)
+LINE_HEIGHT_IN_MM = (11 * PT_PER_MM)
+
+
 def make_style(hash)
   hash.map {|k,v| "#{k}: #{v}"}.join "; "
 end
@@ -59,6 +66,7 @@ if __FILE__ == $PROGRAM_NAME
           "fill" => "#fae88a",
           # "stroke" => "#dcc593",
           "stroke" => "#b7985b", # 183, 152, 91
+          "stroke-linejoin" => "round",
           "stroke-width" => "0.3",
         })
         poly = box.add_element "polygon", {
@@ -66,31 +74,47 @@ if __FILE__ == $PROGRAM_NAME
           "points" => make_path(points)
         }
 
-        ed_style = make_style({
+        grey_dot_style = make_style({
+          "fill" => "grey",
+          "stroke" => "silver",
+          "stroke-width" => "0.3",
+        })
+        essence_dot_style = make_style({
           "fill" => "#ffff00",
           "stroke" => "#dcc593",
           "stroke-width" => "0.3",
         })
-        ad_style = make_style({
+        attribute_dot_style = make_style({
           "fill" => "#ff0000",
           "stroke" => "#dc9393",
           "stroke-width" => "0.3",
         })
-        for d in 0..4
+        for d in 0..3
           ed1 = box.add_element "circle", {
-            "style" => ed_style,
+            "style" => essence_dot_style,
             "cx" => ((12.5 + (d * 6)) + x_offset),
             "cy" => (2.5 + y_offset),
-            "r" => 2,
+            "r" => 1.75,
           }
           ad1 = box.add_element "circle", {
-            "style" => ad_style,
+            "style" => attribute_dot_style,
             "cx" => ((12.5 + (d * 6)) + x_offset),
             "cy" => ((25 - 2.5) + y_offset),
-            "r" => 2,
+            "r" => 1.75,
           }
         end
-
+        ed1 = box.add_element "circle", {
+          "style" => grey_dot_style,
+          "cx" => ((12.5 + (4 * 6)) + x_offset),
+          "cy" => (2.5 + y_offset),
+          "r" => 1.5,
+        }
+        ad1 = box.add_element "circle", {
+          "style" => grey_dot_style,
+          "cx" => ((12.5 + (4 * 6)) + x_offset),
+          "cy" => ((25 - 2.5) + y_offset),
+          "r" => 1.5,
+        }
         text_style = make_style({
           "fill" => "#000000",
           "text-anchor" => "middle",
@@ -98,55 +122,73 @@ if __FILE__ == $PROGRAM_NAME
           "font-style" => "normal",
           "font-weight" => "500" # Normal
         })
+
+        line_count = 2
+        total_text_height =
+          FONT_SIZE_IN_MM +
+          (LINE_HEIGHT_IN_MM * (line_count - 1))
+        # We want to centre the lines of text within the Charm box.
+        first_line_top = (CB_HEIGHT - total_text_height) / 2
+        # We subtract an extra 1mm as a fudge factor, so that the descenders
+        # of the last line effectively aren't included in the centering.
+        first_line_offset = first_line_top + FONT_SIZE_IN_MM - 1
+        line_offset = first_line_offset
+
+        draw_grid = false
+        if (draw_grid)
+          grid_style = make_style({
+            "fill-opacity" => "0",
+            "stroke" => "silver",
+            "stroke-width" => "0.1",
+          })
+          grid_style2 = make_style({
+            "fill-opacity" => "0",
+            "stroke" => "grey",
+            "stroke-width" => "0.1",
+          })
+          for gx in 0..49
+            grid1 = box.add_element "line", {
+              "style" => (gx % 5 == 0) ? grid_style2 : grid_style,
+              "x1" => (gx + x_offset),
+              "y1" => (0 + y_offset),
+              "x2" => (gx + x_offset),
+              "y2" => (CB_HEIGHT + y_offset),
+            }
+          end
+          for gy in 0..25
+            grid1 = box.add_element "line", {
+              "style" => (gy % 5 == 0) ? grid_style2 : grid_style,
+              "x1" => (0 + x_offset),
+              "y1" => (gy + y_offset),
+              "x2" => (CB_WIDTH + x_offset),
+              "y2" => (gy + y_offset),
+            }
+          end
+        end
+
+
         text = box.add_element "text", {
-          "font-size" => "3", #mm
-          TODO 2012-04-10 HUGR: Try 3.527777... ~~= 10pt
+          "font-size" => FONT_SIZE_IN_MM,
           "style" => text_style,
           "x" => (24.5 + x_offset),
-          # "y" => (10.5245 + y_offset),
-          "y" => (14 + y_offset),
+          "y" => (line_offset + y_offset),
         }
         tspan1 = text.add_element "tspan", {
           "x" => (24.5 + x_offset),
-          # "y" => (10.5245 + y_offset),
-          "y" => (12 + y_offset),
+          "y" => (line_offset + y_offset),
         }
         tspan1.add Text.new("Wise-Eyed Courtier", false)
+        line_offset += LINE_HEIGHT_IN_MM
         tspan2 = text.add_element "tspan", {
           "x" => (24.5 + x_offset),
-          # "y" => (15.4633 + y_offset),
-          "y" => (16 + y_offset),
+          "y" => (line_offset + y_offset),
         }
         tspan2.add Text.new("METHOD", false)
 
       end
     end
-#     poly
-#     add_typed_attr(diagramdata, "background", "color", "#ffffff")
-#     layer = svg.add_element "dia:layer", {
-#       "name" => "Background",
-#       "visible" => "true",
-#       "active" => "true"
-#     }
-#     obj = DiaObject.new("Geometric - Perfect Square",
-#                         "3.58226,9.2875",
-#                         "3.53226,9.2375;7.34476,13.1738")
-#     obj.add_to_layer(layer)
 
     doc.write(outfile, 1, true)
-
-#     outfile.puts(":doctype: book")
-#     outfile.puts(":themedir: ..")
-#     outfile.puts(":theme: discordians")
-#     outfile.puts(":linkcss:")
-#     outfile.puts
-
-#     xml.favorites do 
-#       favorites.each do | name, choice |
-#         xml.favorite( choice, :item => name )
-#       end
-#     end
-
 
     process_file(filename) { |group_name, charms|
 #       outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")

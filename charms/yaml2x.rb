@@ -37,6 +37,11 @@ class Charm
     @clean_name = name.gsub(/\>/, " ")
   end
 
+  def multi_line_name
+    return @multi_line_name unless @multi_line_name.nil?
+    @multi_line_name = name.split(">")
+  end
+
   def safe_group
     return @safe_group unless @safe_group.nil?
     @safe_group = group.gsub(/ /, "_")

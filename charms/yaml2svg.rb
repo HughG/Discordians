@@ -5,6 +5,8 @@ require "./yaml2x.rb"
 
 include REXML
 
+ESSENCE_NAME = "Ess"
+
 # Although the body text in the Exalted books is 10pt on 12pt, the Charm boxes
 # seem to use about 9pt on 11pt.
 PT_PER_MM = 25.4/72
@@ -16,9 +18,10 @@ CB_HEIGHT = 25 # 25mm
 CB_HORIZ_GAP = 8 # 8mm
 CB_VERT_GAP = 9.5 # 9.5mm
 CB_COLUMNS = 3
-#CB_ROWS = 5
-POINTS = [[0,2], [9,2], [7,0], [42,0], [40,2], [49,2],
-          [49,23], [40,23], [42,25], [7,25], [9,23], [0,23]]
+OUTLINE_POINTS = [
+  [0,2], [9,2], [7,0], [42,0], [40,2], [49,2],
+  [49,23], [40,23], [42,25], [7,25], [9,23], [0,23]
+]
 
 def make_style(hash)
   hash.map {|k,v| "#{k}: #{v}"}.join "; "
@@ -32,48 +35,74 @@ def offset_points(x, y, points)
   points.map {|p| [p[0] + x, p[1] + y]}
 end
 
-def draw_dots(box, x_offset, y_offset)
-  grey_dot_style = make_style({
-    "fill" => "grey",
-    "stroke" => "silver",
-    "stroke-width" => "0.3",
-  })
-  essence_dot_style = make_style({
-    "fill" => "#ffff00",
-    "stroke" => "#dcc593",
-    "stroke-width" => "0.3",
-  })
-  attribute_dot_style = make_style({
-    "fill" => "#ff0000",
-    "stroke" => "#dc9393",
-    "stroke-width" => "0.3",
-  })
-  for d in 0..3
-    ed1 = box.add_element "circle", {
-      "style" => essence_dot_style,
-      "cx" => ((12.5 + (d * 6)) + x_offset),
-      "cy" => (2.5 + y_offset),
-      "r" => 1.75,
-    }
-    ad1 = box.add_element "circle", {
-      "style" => attribute_dot_style,
-      "cx" => ((12.5 + (d * 6)) + x_offset),
-      "cy" => ((25 - 2.5) + y_offset),
-      "r" => 1.75,
-    }
+def draw_outline(box, x, y)
+  points = offset_points(x, y, OUTLINE_POINTS)
+  poly_style = make_style({
+      "fill" => "#fae88a",
+      "stroke" => "#b7985b",
+      "stroke-linejoin" => "round",
+      "stroke-width" => "0.3",
+    })
+  poly = box.add_element "polygon", {
+    "style" => poly_style,
+    "points" => make_path(points)
+  }
+end
+
+FIRST_DOT_X = 12.5 # mm
+DOT_SPACING = 6 # mm
+DOT_INSET = 2.5 # mm
+
+def draw_dot(
+    box,
+    x,
+    y,
+    is_top,
+    index,
+    is_filled,
+    filled_style,
+    empty_style
+    )
+  style = is_filled ? filled_style : empty_style
+  y_pos = (is_top ? DOT_INSET : (CB_HEIGHT - DOT_INSET)) + y
+  r = is_filled ? 1.75 : 1.5
+  box.add_element "circle", {
+    "style" => style,
+    "cx" => FIRST_DOT_X + (index * DOT_SPACING) + x,
+    "cy" => y_pos,
+    "r" => r,
+  }
+end
+
+EMPTY_DOT_STYLE = make_style(
+  "fill" => "grey",
+  "stroke" => "silver",
+  "stroke-width" => "0.3",
+  )
+ESSENCE_DOT_STYLE = make_style(
+  "fill" => "#ffff00",
+  "stroke" => "#dcc593",
+  "stroke-width" => "0.3",
+  )
+GROUP_DOT_STYLE = make_style(
+  "fill" => "#ff0000",
+  "stroke" => "#dc9393",
+  "stroke-width" => "0.3",
+  )
+
+def draw_dots(box, x, y, essence_rating, group_rating)
+  for d in 0..4
+    draw_dot(
+      box, x, y,
+      true, d, d < essence_rating,
+      ESSENCE_DOT_STYLE, EMPTY_DOT_STYLE
+      )
+    draw_dot(
+      box, x, y,
+      false, d, d < group_rating,
+      GROUP_DOT_STYLE, EMPTY_DOT_STYLE
+      )
   end
-  ed1 = box.add_element "circle", {
-    "style" => grey_dot_style,
-    "cx" => ((12.5 + (4 * 6)) + x_offset),
-    "cy" => (2.5 + y_offset),
-    "r" => 1.5,
-  }
-  ad1 = box.add_element "circle", {
-    "style" => grey_dot_style,
-    "cx" => ((12.5 + (4 * 6)) + x_offset),
-    "cy" => ((25 - 2.5) + y_offset),
-    "r" => 1.5,
-  }
 end
 
 def draw_grid(box)
@@ -90,21 +119,56 @@ def draw_grid(box)
   for gx in 0..49
     grid1 = box.add_element "line", {
       "style" => (gx % 5 == 0) ? grid_style2 : grid_style,
-      "x1" => (gx + x_offset),
-      "y1" => (0 + y_offset),
-      "x2" => (gx + x_offset),
-      "y2" => (CB_HEIGHT + y_offset),
+      "x1" => (gx + x),
+      "y1" => (0 + y),
+      "x2" => (gx + x),
+      "y2" => (CB_HEIGHT + y),
     }
   end
   for gy in 0..25
     grid1 = box.add_element "line", {
       "style" => (gy % 5 == 0) ? grid_style2 : grid_style,
-      "x1" => (0 + x_offset),
-      "y1" => (gy + y_offset),
-      "x2" => (CB_WIDTH + x_offset),
-      "y2" => (gy + y_offset),
+      "x1" => (0 + x),
+      "y1" => (gy + y),
+      "x2" => (CB_WIDTH + x),
+      "y2" => (gy + y),
     }
   end
+end
+
+TEXT_STYLE = make_style(
+  "fill" => "#000000",
+  "text-anchor" => "middle",
+  "font-family" => "Artisan12",
+  "font-style" => "normal",
+  "font-weight" => "500" # Normal
+  )
+
+def draw_text(box, x, y, text_lines)
+  line_count = text_lines.length
+  total_text_height = FONT_SIZE_IN_MM + (LINE_HEIGHT_IN_MM * (line_count - 1))
+  # We want to centre the lines of text within the Charm box.
+  first_line_top = (CB_HEIGHT - total_text_height) / 2
+  # We subtract an extra 1mm as a fudge factor, so that the descenders
+  # of the last line effectively aren't included in the centering.
+  first_line_offset = first_line_top + FONT_SIZE_IN_MM - 1
+  line_offset = first_line_offset
+
+  text = box.add_element "text", {
+    "font-size" => FONT_SIZE_IN_MM,
+    "style" => TEXT_STYLE,
+    "x" => (24.5 + x),
+    "y" => (line_offset + y),
+  }
+  for line in text_lines
+    tspan = text.add_element "tspan", {
+      "x" => (24.5 + x),
+      "y" => (line_offset + y),
+    }
+    tspan.add Text.new(line, false)
+    line_offset += LINE_HEIGHT_IN_MM
+  end
+
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -144,66 +208,29 @@ if __FILE__ == $PROGRAM_NAME
     }
 
     charm_index = 0
-    for x_offset in (0..(CB_COLUMNS - 1)).map {|xo| xo * (CB_WIDTH + CB_HORIZ_GAP)}
-      for y_offset in (0..(cb_rows - 1)).map {|yo| yo * (CB_HEIGHT + CB_VERT_GAP)}
+    for col in 0..(CB_COLUMNS - 1)
+      for row in 0..(cb_rows - 1)
         charm = my_charms[charm_index]
         p charm
         break if charm == nil
 
-        points = offset_points(x_offset, y_offset, POINTS)
-        poly_style = make_style({
-          "fill" => "#fae88a",
-          # "stroke" => "#dcc593",
-          "stroke" => "#b7985b", # 183, 152, 91
-          "stroke-linejoin" => "round",
-          "stroke-width" => "0.3",
-        })
-        poly = box.add_element "polygon", {
-          "style" => poly_style,
-          "points" => make_path(points)
-        }
+        x = col * (CB_WIDTH + CB_HORIZ_GAP)
+        y = row * (CB_HEIGHT + CB_VERT_GAP)
 
-        draw_dots(box, x_offset, y_offset)
+        draw_outline(box, x, y)
+
+        if (charm.mins != nil)
+          essence_dots = charm.mins[ESSENCE_NAME]
+          group_dots = charm.mins[charm.group]
+          draw_dots(box, x, y, essence_dots, group_dots)
+        end
 
         if (false)
           draw_grid(box)
         end
 
-        text_style = make_style({
-          "fill" => "#000000",
-          "text-anchor" => "middle",
-          "font-family" => "Artisan12",
-          "font-style" => "normal",
-          "font-weight" => "500" # Normal
-        })
+        draw_text(box, x, y, charm.multi_line_name)
 
-        text_lines = charm.multi_line_name
-
-        line_count = text_lines.length
-        total_text_height =
-          FONT_SIZE_IN_MM +
-          (LINE_HEIGHT_IN_MM * (line_count - 1))
-        # We want to centre the lines of text within the Charm box.
-        first_line_top = (CB_HEIGHT - total_text_height) / 2
-        # We subtract an extra 1mm as a fudge factor, so that the descenders
-        # of the last line effectively aren't included in the centering.
-        first_line_offset = first_line_top + FONT_SIZE_IN_MM - 1
-        line_offset = first_line_offset
-
-        text = box.add_element "text", {
-          "font-size" => FONT_SIZE_IN_MM,
-          "style" => text_style,
-          "x" => (24.5 + x_offset),
-          "y" => (line_offset + y_offset),
-        }
-        for line in text_lines
-          tspan = text.add_element "tspan", {
-            "x" => (24.5 + x_offset),
-            "y" => (line_offset + y_offset),
-          }
-          tspan.add Text.new(line, false)
-          line_offset += LINE_HEIGHT_IN_MM
-        end
         charm_index += 1
       end
     end

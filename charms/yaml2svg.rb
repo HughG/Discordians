@@ -171,25 +171,26 @@ def draw_text(box, x, y, text_lines)
 
 end
 
-if __FILE__ == $PROGRAM_NAME
-#  puts $PROGRAM_NAME + "..."
+def draw_charm(box, x, y, charm)
+  draw_outline(box, x, y)
 
-  filename = $*[0]
-  outfilename = $*[1]
+  if (charm.mins != nil)
+    essence_dots = charm.mins[ESSENCE_NAME]
+    group_dots = charm.mins[charm.group]
+    draw_dots(box, x, y, essence_dots, group_dots)
+  end
 
-  matches = /([0-9])_.*/.match(outfilename)
-  division = matches[1].to_i
+  if (false)
+    draw_grid(box)
+  end
 
+  draw_text(box, x, y, charm.multi_line_name)
+end
+
+def draw_layout(charms, layout, outfilename)
   File.open(outfilename, "w") { |outfile|
-
-    my_charms = []
-    process_file(filename) { |group_name, charms|
-      my_charms = charms.values
-#       charms.each_value { |charm|
-#         p charm.multi_line_name
-#       }
-    }
-    cb_rows = (my_charms.length / CB_COLUMNS.to_f).ceil()
+    raw_charms = charms.values
+    cb_rows = (raw_charms.length / CB_COLUMNS.to_f).ceil()
 
     doc = Document.new
     doc << XMLDecl.new("1.0", "utf-8")
@@ -210,31 +211,37 @@ if __FILE__ == $PROGRAM_NAME
     charm_index = 0
     for col in 0..(CB_COLUMNS - 1)
       for row in 0..(cb_rows - 1)
-        charm = my_charms[charm_index]
-        p charm
+        charm = raw_charms[charm_index]
         break if charm == nil
 
         x = col * (CB_WIDTH + CB_HORIZ_GAP)
         y = row * (CB_HEIGHT + CB_VERT_GAP)
-
-        draw_outline(box, x, y)
-
-        if (charm.mins != nil)
-          essence_dots = charm.mins[ESSENCE_NAME]
-          group_dots = charm.mins[charm.group]
-          draw_dots(box, x, y, essence_dots, group_dots)
-        end
-
-        if (false)
-          draw_grid(box)
-        end
-
-        draw_text(box, x, y, charm.multi_line_name)
+        draw_charm(box, x, y, charm)
 
         charm_index += 1
       end
     end
 
     doc.write(outfile, 1, true)
+  }
+end
+
+if __FILE__ == $PROGRAM_NAME
+#  puts $PROGRAM_NAME + "..."
+
+  filename = $*[0]
+  outfilename = $*[1]
+
+  matches = /([0-9])_.*/.match(outfilename)
+  division = matches[1].to_i
+
+  process_file(filename) { |group_name, charms, layouts|
+    p layouts
+    if layouts.length > 1
+      $stderr << "Can only handle 1 layout for now"
+      exit(-1)
+    end
+
+    draw_layout(charms, layouts[0], outfilename)
   }
 end

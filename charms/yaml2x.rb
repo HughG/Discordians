@@ -5,12 +5,18 @@ require "psych"
 class CharmGroup
   yaml_tag "!CharmGroup"
   attr_accessor \
-    :name,
-    :text
+    :name, # string
+    :text # string
 
   def to_s
     puts @name, @text
   end
+end
+
+class CharmLayout
+  yaml_tag "!CharmLayout"
+  attr_accessor \
+    :grid # array of arrays of Charm#id
 end
 
 class Charm
@@ -52,6 +58,7 @@ def process_file(infilename)
   File.open(infilename, mode: "r", encoding: "utf-8") do |infile|
     group_name = ""
     charms = {}
+    layouts = []
     # charms_by_full_id = {}
 
     docs = Psych.parse_stream(infile).children
@@ -59,6 +66,9 @@ def process_file(infilename)
       obj = doc.to_ruby
       if obj.is_a? CharmGroup
         group_name = obj.name
+      end
+      if obj.is_a? CharmLayout
+        layouts << obj
       end
       if obj.is_a? Charm
         charm = obj
@@ -70,6 +80,6 @@ def process_file(infilename)
         # charms_by_full_id[charm_full_id] = charm
       end
     }
-    yield(group_name, charms)      
+    yield(group_name, charms, layouts)      
   end
 end

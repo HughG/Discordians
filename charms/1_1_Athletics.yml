@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Athletics
+--- !CharmLayout
+grid:
+- [nbt, exc, fash]
+- [hht, ~, fasu]
+- [ffm, ~, bu]
+- [ffm, gas, ec]
 --- !Charm
 id: exc
 name: "(Any Athletics>Excellency)"

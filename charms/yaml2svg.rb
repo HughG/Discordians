@@ -190,7 +190,7 @@ end
 def draw_layout(charms, layout, outfilename)
   File.open(outfilename, "w") { |outfile|
     raw_charms = charms.values
-    cb_rows = (raw_charms.length / CB_COLUMNS.to_f).ceil()
+    cb_rows = layout.grid.length
 
     doc = Document.new
     doc << XMLDecl.new("1.0", "utf-8")
@@ -208,17 +208,15 @@ def draw_layout(charms, layout, outfilename)
     box = svg.add_element "g", {
     }
 
-    charm_index = 0
-    for col in 0..(CB_COLUMNS - 1)
-      for row in 0..(cb_rows - 1)
-        charm = raw_charms[charm_index]
-        break if charm == nil
+    for row in 0..(cb_rows - 1)
+      # TODO 2012-04-13 HUGR: Check for >3 columns
+      for col in 0..2
+        charm = charms[layout.grid[row][col]]
+        next if charm == nil
 
         x = col * (CB_WIDTH + CB_HORIZ_GAP)
         y = row * (CB_HEIGHT + CB_VERT_GAP)
         draw_charm(box, x, y, charm)
-
-        charm_index += 1
       end
     end
 

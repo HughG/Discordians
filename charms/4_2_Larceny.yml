@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Larceny
+--- !CharmLayout
+grid:
+- [rpt, exc, iii]
+- [oct, ftk, icc]
+- [wh, vav, it]
+- [~, nrm, ~]
 --- !Charm
 id: exc
 name: "(Any Larceny>Excellency)"

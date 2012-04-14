@@ -5,8 +5,8 @@ name: Athletics
 grid:
 - [nbt, exc, fash]
 - [hht, ~, fasu]
-- [ffm, ~, bu]
-- [ffm, gas, ec]
+- [ffm, gas, bu]
+- [mopg, ~, ec]
 --- !Charm
 id: exc
 name: "(Any Athletics>Excellency)"

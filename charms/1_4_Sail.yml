@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Sail
+--- !CharmLayout
+grid:
+- [bofb, fhh, siafm]
+- [exc, fs, sofd]
+- [rri, sbfw, cop]
+- [wmi, ~, ~]
 --- !Charm
 id: exc
 name: "(Any Sail Excellency)"

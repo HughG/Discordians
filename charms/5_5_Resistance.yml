@@ -4,6 +4,12 @@ name: Resistance
 text: |
   *[TODO: essence/wp-gathering or overdrive]*
   
+--- !CharmLayout
+grid:
+- [oou, sss, iss]
+- [arr, eer, iia]
+- [csm, csp, csis]
+- [~, cbt, ~]
 --- !Charm
 id: exc
 name: "(Any Resistance>Excellency)"

@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Investigation
+--- !CharmLayout
+grid:
+- [iai, erm, pds]
+- [roi, exc, lla]
+- [rtsc, eft, kna]
+- [stt, ~, nacm]
 --- !Charm
 id: exc
 name: "(Any Investigation>Excellency)"
@@ -80,7 +86,7 @@ text: |
 id: roi
 name: "Refuge>of Intransigence"
 cost: 3m or 6m
-mins: {Inv: 3, Ess: 2}
+mins: {Investigation: 3, Ess: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Social, Stackable]
 dur: One scene
@@ -119,7 +125,7 @@ text: |
 id: eft
 name: "Even False Things"
 cost: 3m
-mins: {Inv: 3, Ess: 2}
+mins: {Investigation: 3, Ess: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Illusion, Social, Stackable]
 dur: Indefinite
@@ -179,7 +185,7 @@ text: |
 id: stt
 name: "Sifting Through Tells"
 cost: 5m
-mins: {Inv: 4, Ess: 3}
+mins: {Investigation: 4, Ess: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -208,7 +214,7 @@ text: |
 id: pds
 name: "Pattern-Disturbance Sense"
 cost: 4m
-mins: {Inv: 3, Ess: 2}
+mins: {Investigation: 3, Ess: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant
@@ -234,7 +240,7 @@ text: |
 id: kna
 name: "Knot and Needle Awareness"
 cost: 6m
-mins: {Inv: 4, Ess: 3}
+mins: {Investigation: 4, Ess: 3}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -278,7 +284,7 @@ text: |
 id: nacm
 name: "Needle As Compass Method"
 cost: 5m, 1wp
-mins: {Inv: 4, Ess: 4}
+mins: {Investigation: 4, Ess: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable, Touch]
 dur: Indefinite
@@ -307,7 +313,7 @@ text: |
 id: lla
 name: "Ladder and Loophole>Awareness"
 cost: 8m, 1wp
-mins: {Inv: 4, Ess: 4}
+mins: {Investigation: 4, Ess: 4}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene

@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Occult
+--- !CharmLayout
+grid:
+- [exc, etn, asi]
+- [ves, sw, rtm]
+- [eee, rio, cfp]
+- [tss, sss, pss]
 --- !Charm
 id: exc
 name: "(Any Occult>Excellency)"

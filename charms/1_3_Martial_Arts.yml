@@ -4,6 +4,10 @@ name: Martial Arts
 text: |
   TODO: Something emotional like the Archery one?
   
+--- !CharmLayout
+grid:
+- [form, ff, ~]
+- [eif, fie, ~]
 --- !Charm
 id: form
 name: "(Any Form-Type Charm)"

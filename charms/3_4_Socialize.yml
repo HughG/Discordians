@@ -22,6 +22,13 @@ text: |
   then triggers the specific desired response from a social group.  (Basically,
   a disguised long-term social action.)  [Maybe should be Bureaucracy?]
   
+--- !CharmLayout
+grid:
+- [dmi, pca, hci]
+- [hmi, sit, fm]
+- [exc, usn, ce]
+- [usa, psa, gsd]
+- [~, saic, ~]
 --- !Charm
 id: exc
 name: "(Any Socialize>Excellency)"

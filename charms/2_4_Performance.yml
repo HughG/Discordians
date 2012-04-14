@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Performance
+--- !CharmLayout
+grid:
+- [lfaa, gsa, ddr]
+- [ii, exc, shf]
+- [tonc, iss, shr]
+- [~, mit, ~]
 --- !Charm
 id: exc
 name: "(Any Performance>Excellency)"
@@ -11,7 +17,7 @@ text: |
 id: ii
 name: "Implausible Improvisation"
 cost: 1m
-mins: {Perf: 1, Ess: 1}
+mins: {Performance: 1, Ess: 1}
 type: [Simple]
 keys: [Combo-OK]
 dur: One scene
@@ -33,7 +39,7 @@ text: |
 id: tonc
 name: "Tale of Nine Cats"
 cost: 1m + 3m per extra action
-mins: {Perf: 3, Ess: 2}
+mins: {Performance: 3, Ess: 2}
 type: [Extra Action]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -53,7 +59,7 @@ text: |
 id: lfaa
 name: "Legend>for an Afternoon"
 cost: 3m
-mins: {Perf: 2, Ess: 2}
+mins: {Performance: 2, Ess: 2}
 type: [Simple]
 keys: [Combo-OK, Illusion, Social]
 dur: One day
@@ -80,7 +86,7 @@ text: |
 id: shr
 name: "Sprouted History>Recitation"
 cost: 4m
-mins: {Perf: 2, Ess: 2}
+mins: {Performance: 2, Ess: 2}
 type: [Simple, Speed 3 in long ticks]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -128,7 +134,7 @@ text: |
 id: iss
 name: "Intimate Seduction Serenade"
 cost: 6m
-mins: {Perf: 3, Ess: 2}
+mins: {Performance: 3, Ess: 2}
 type: [Supplemental]
 keys: [Combo-OK, Emotion, Social]
 dur: Instant
@@ -152,7 +158,7 @@ text: |
 id: shf
 name: "Subtle Heresy Foundation"
 cost: 10m, 1wp
-mins: {Perf: 4, Ess: 3}
+mins: {Performance: 4, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social, Training]
 dur: Instant
@@ -193,7 +199,7 @@ text: |
 id: gsa
 name: "Glory-Stealing Arrogance"
 cost: 3m, 1wp
-mins: {Perf: 4, Ess: 3}
+mins: {Performance: 4, Ess: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Shaping]
 dur: One scene
@@ -230,7 +236,7 @@ text: |
 id: ddr
 name: "Dramatic Death Rehearsal"
 cost: 5m
-mins: {Perf: 5, Ess: 3}
+mins: {Performance: 5, Ess: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion]
 dur: Instant
@@ -265,7 +271,7 @@ text: |
 id: mit
 name: "March Into Temptation"
 cost: 6m, 1wp
-mins: {Perf: 4, Ess: 3}
+mins: {Performance: 4, Ess: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion, Social, War, Stackable]
 dur: Indefinite

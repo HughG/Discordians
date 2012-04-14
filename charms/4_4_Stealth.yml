@@ -1,16 +1,22 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Stealth
+text: |
+  TODO
+  
+  Need maybe 1 more Charm.
+  
+--- !CharmLayout
+grid:
+- [exc, hipsa, sse]
+- [ywt, ceop, hsag]
+- [erd, hfr, hioo]
+- [~, dcp, ~]
 --- !Charm
 id: exc
 name: "(Any Stealth>Excellency)"
 text: |
   
-  
-text: |
-  TODO
-  
-  Need maybe 1 more Charm.
   
 --- !Charm
 id: hipsa

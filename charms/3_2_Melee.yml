@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Melee
+text: |
+  TODO: Action-longs (maybe as re-purchase?)
+  
+--- !CharmLayout
+grid:
+- [scd, bbt, exc]
+- [spr, ebs, fcf]
+- [soei, baba, eoa]
+- [hrh, rss, ktt]
+- [~, ama, ~]
 --- !Charm
 id: exc
 name: "(Any Melee>Excellency)"
 text: |
   
-  
-text: |
-  TODO: Action-longs (maybe as re-purchase?)
   
 --- !Charm
 id: scd

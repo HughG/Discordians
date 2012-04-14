@@ -11,6 +11,12 @@ text: |
   * Tree for throwing things with non-combat effects (magical containment,
     spying, pickpocketing)
   
+--- !CharmLayout
+grid:
+- [ate, exc, ctw]
+- [sts, tws, tsfg]
+- [pdwr, itw, bpp]
+- [etw, cni, tea]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"

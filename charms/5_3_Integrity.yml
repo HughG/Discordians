@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Integrity
+--- !CharmLayout
+grid:
+- [roe, sos2, iiov]
+- [ror, exc, icc]
+- [umd, sdc, uoth]
+- [cof, ddt. ~]
 --- !Charm
 id: exc
 name: "(Any Integrity>Excellency)"

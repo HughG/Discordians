@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Dodge
+--- !CharmLayout
+grid:
+- [cf, aci, samt]
+- [hpf, exc, vmn]
+- [pe, gss, ema]
+- [~, mse, ~]
 --- !Charm
 id: exc
 name: "(Any Dodge>Excellency)"

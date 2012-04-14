@@ -4,6 +4,12 @@ name: War
 text: |
   [TODO: Section intro text]
   
+--- !CharmLayout
+grid:
+- [flt, exc, btt]
+- [eomf, sin, bii]
+- [prf, mlws, bum]
+- [~, cmbf, ~]
 --- !Charm
 id: exc
 name: "(Any War Excellency)"

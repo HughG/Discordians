@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Craft
+--- !CharmLayout
+grid:
+- [ics, exc, rrt]
+- [ort, bem, est]
+- [bwr, cpc, rwt]
+- [eee, eed, prp]
 --- !Charm
 id: exc
 name: "(Any Craft>Excellency)"

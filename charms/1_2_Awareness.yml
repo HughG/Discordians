@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Awareness
+--- !CharmLayout
+grid:
+- [teo, exc, she]
+- [etu, hpp, sit]
+- [~, ufm, tgob]
 --- !Charm
 id: exc
 name: "(Any Awareness>Excellency)"

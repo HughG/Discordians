@@ -6,6 +6,12 @@ text: |
   
   * Group/contagious training?  Reallocate dots instead of just adding them?
   
+--- !CharmLayout
+grid:
+- [hmm, asa, erp]
+- [wii, enan, sant]
+- [exc, dlu, rtc]
+- [in, ~, rts]
 --- !Charm
 id: exc
 name: "(Any Lore Excellency)"

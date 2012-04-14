@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Medicine
+--- !CharmLayout
+grid:
+- [exc, psm, sos]
+- [sod, ssp, mad]
+- [fkp, ahf, vrt]
+- [wwm, ~, ifaab]
 --- !Charm
 id: exc
 name: "(Any Medicine>Excellency)"
@@ -11,7 +17,7 @@ text: |
 id: ahf
 name: "Anointment of the>Hardy Fool"
 cost: 2m per point of penalty ignored
-mins: {Med: 2, Ess: 2}
+mins: {Medicine: 2, Ess: 2}
 type: [Simple]
 keys: [Combo-OK, Touch]
 dur: One scene
@@ -36,7 +42,7 @@ text: |
 id: fkp
 name: "Flesh-Knitting Pattern"
 cost: 3m per lhl converted; or 5m per ahl converted + 1wp
-mins: {Med: 3, Ess: 2}
+mins: {Medicine: 3, Ess: 2}
 type: [Supplemental]
 keys: [Combo-OK, Touch]
 dur: Instant
@@ -57,7 +63,7 @@ text: |
 id: sos
 name: "Snake Oil Savior"
 cost: 2m
-mins: {Med: 1, Ess: 1}
+mins: {Medicine: 1, Ess: 1}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion]
 dur: Instant
@@ -94,7 +100,7 @@ text: |
 id: psm
 name: "Plague Substitution Method"
 cost: 3m + 1wp
-mins: {Med: 3, Ess: 2}
+mins: {Medicine: 3, Ess: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
 dur: Instant
@@ -120,7 +126,7 @@ text: |
 id: wwm
 name: "Walking Wounded>Manipulation"
 cost: 7m + 1wp
-mins: {Med: 3, Ess: 3}
+mins: {Medicine: 3, Ess: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Shaping, Touch]
 dur: Instant
@@ -149,7 +155,7 @@ text: |
 id: vrt
 name: "Venom Reversal Treatment"
 cost: (4 + Toxicity)m
-mins: {Med: 3, Ess: 3}
+mins: {Medicine: 3, Ess: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Shaping, Touch]
 dur: Special
@@ -181,7 +187,7 @@ text: |
 id: ifaab
 name: "Invigorating>Flame And Acid Bath"
 cost: --
-mins: {Med: 4, Ess: 3}
+mins: {Medicine: 4, Ess: 3}
 type: [Permanent]
 keys: [None]
 dur: Indefinite
@@ -202,7 +208,7 @@ text: |
 id: sod
 name: "Shadow of Death"
 cost: 5m + 1wp
-mins: {Med: 3, Ess: 2}
+mins: {Medicine: 3, Ess: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
 dur: One scene or Special
@@ -241,7 +247,7 @@ text: |
 id: ssp
 name: "Soul-Soothing Poultice"
 cost: 3m + Special
-mins: {Med: 4, Ess: 3}
+mins: {Medicine: 4, Ess: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Shaping]
 dur: Instant
@@ -267,7 +273,7 @@ text: |
 id: mad
 name: "Madness Adjustment Device"
 cost: 8m, plus 1wp per point adjustment
-mins: {Med: 5, Ess: 4}
+mins: {Medicine: 5, Ess: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Emotion]
 dur: Instant

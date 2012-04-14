@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Linguistics
+--- !CharmLayout
+grid:
+- [zsd, ftt, tti]
+- [fwt, exc, mm]
+- [eks, nac, tbd]
+- [~, lwalt, ~]
 --- !Charm
 id: exc
 name: "(Any Linguistics>Excellency)"

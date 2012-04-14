@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Ride
+--- !CharmLayout
+grid:
+- [exc, ems, hup]
+- [iss, ssa, mpt]
+- [prm, hal, brw]
 --- !Charm
 id: exc
 name: "(Any Ride Excellency)"

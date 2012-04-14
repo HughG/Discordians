@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Archery
+--- !CharmLayout
+# TODO 2012-04-14 HUGR: Two layouts, split at exc
+grid:
+- [bta, qosas, pth]
+- [fr, fafa, tflab]
+- [exc, wwa, hopa]
+- [bbta, bofa, sp]
+- [~, btwt, ~]
 --- !Charm
 id: exc
 name: "(Any Archery>Excellency)"
@@ -14,7 +22,7 @@ text: |
 id: bbta
 name: "Bow Bends the Air"
 cost: 2m
-mins: {Arch: 2, Ess: 2}
+mins: {Archery: 2, Ess: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -49,7 +57,7 @@ text: |
 id: wwa
 name: "Witch Way Arrow"
 cost: 4m
-mins: {Arch: 3, Ess: 3}
+mins: {Archery: 3, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -75,7 +83,7 @@ text: |
 id: sp
 name: "Suspended Perforation"
 cost: 2m, 1wp
-mins: {Arch: 4, Ess: 3}
+mins: {Archery: 4, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Indefinite
@@ -105,7 +113,7 @@ text: |
 id: fr
 name: "Fletcher's Rejoinder"
 cost: 3m
-mins: {Arch: 3, Ess: 2}
+mins: {Archery: 3, Ess: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -142,7 +150,7 @@ text: |
 id: qosas
 name: "Quiver of>Sticks and Stones"
 cost: 3m or 5m
-mins: {Arch: 1, Ess: 2}
+mins: {Archery: 1, Ess: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: One scene
@@ -179,7 +187,7 @@ text: |
 id: fafa
 name: "Feathers and Fins Attack"
 cost: 3m per attack; or 3m per attack, 1wp
-mins: {Arch: 4, Ess: 2}
+mins: {Archery: 4, Ess: 2}
 type: [Extra Action, Speed +1]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -208,7 +216,7 @@ text: |
 id: hopa
 name: "Handful of Pebbles Attack"
 cost: 3m or 6m per duplicate
-mins: {Arch: 4, Ess: 3}
+mins: {Archery: 4, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -237,7 +245,7 @@ text: |
 id: bta
 name: "Becoming the Arrow"
 cost: 3m or 3m, 1wp
-mins: {Arch: 3, Ess: 3}
+mins: {Archery: 3, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -270,7 +278,7 @@ text: |
 id: pth
 name: "Piercing the Heart"
 cost: 5m, or 8m + 1wp
-mins: {Arch: 4, Ess: 2}
+mins: {Archery: 4, Ess: 2}
 type: [Supplemental]
 keys: [Combo-OK, Emotion]
 dur: One scene or Special
@@ -310,7 +318,7 @@ text: |
 id: tflab
 name: "Time Flies Like a Banana"
 cost: 5m or 5m, 1wp
-mins: {Arch: 4, Ess: 3}
+mins: {Archery: 4, Ess: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -334,7 +342,7 @@ text: |
 id: bofa
 name: "Bolt of Fresh Air"
 cost: 3m, or 5m + 1wp
-mins: {Arch: 4, Ess: 3}
+mins: {Archery: 4, Ess: 3}
 type: [Supplemental]
 keys: [Combo-OK, Knockback]
 dur: Instant

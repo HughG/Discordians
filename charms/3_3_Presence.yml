@@ -4,6 +4,12 @@ name: Presence
 text: |
   TODO
   
+--- !CharmLayout
+grid:
+- [mtm, exc, opomt]
+- [ppi, htt, ppp]
+- [ipa, mlm, ewa]
+- [sos1, pma, ~]
 --- !Charm
 id: exc
 name: "(Any Presence>Excellency)"
@@ -13,7 +19,7 @@ text: |
 id: sos1
 name: "Softening of Suasion"
 cost: -- (+1wp)
-mins: {Integrity: 1, Ess: 2}
+mins: {Presence: 1, Ess: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent

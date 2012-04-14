@@ -9,21 +9,34 @@ def beads(bead, no_bead, count)
   bead_array.join(" ")
 end
 
-def insert_charm(out, section_name, charms, charm)
+def add_node(out, section_name, charms, charm)
   #p charm
 
-  return if charm.name == "."
+  min_ess = 1
+  min_att = 1
+  if charm.mins
+    essence = charm.mins['Essence']
+    if essence.nil?
+      essence = charm.mins['Ess']
+    end
+    min_ess = essence.to_i
+    min_att = charm.mins[section_name].to_i
+  end
+  out.puts "g.addNode(" +
+    "\"#{charm.id}\", " +
+    "{\"label\": \"#{charm.id} #{min_ess}/#{min_att}\"}" +
+    ");"
+end
+
+def add_edges(out, section_name, charms, charm)
+  #p charm
 
   deps = charm.deps
   has_deps = (deps and not deps.empty?)
-  #charm_name = if has_deps then charm.name else charm.name.upcase end
-  #charm_name.gsub!(/\>/, '\\n')
-  #out.puts("\t#{charm.id} [label=\"{#{min_ess}|#{charm_name}|#{min_att}}\"];")
   if has_deps
     deps.each { |dep|
       out.puts "g.addEdge(\"#{dep}\", \"#{charm.id}\", {\"directed\": true});"
     }
-  else
   end
 end
 
@@ -54,7 +67,10 @@ window.onload = function() {
 
     process_file(filename) { |group_name, charms|
       charms.each_value { |charm|
-        insert_charm(outfile, group_name, charms, charm)
+        add_node(outfile, group_name, charms, charm)
+      }
+      charms.each_value { |charm|
+        add_edges(outfile, group_name, charms, charm)
       }
     }
 

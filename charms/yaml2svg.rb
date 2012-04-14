@@ -5,6 +5,31 @@ require "./yaml2x.rb"
 
 include REXML
 
+# TODO 2012-04-13 HUGR: Correct shades of grey for empty dots.
+#
+# TODO 2012-04-13 HUGR: Add auto-routed arrows.
+#
+# TODO 2012-04-13 HUGR: Add fallback to no layout if layout is broken.
+# Highlight by drawing boxes differently?
+#
+# TODO 2012-04-13 HUGR: Add error-checking for Charms that aren't in any
+# layout, or appear more than once, or layouts with unknown IDs.
+#
+# TODO 2012-04-13 HUGR: Add error checking for deps that can't be auto-routed.
+#
+# TODO 2012-04-13 HUGR: Add manually-routed arrows.
+#
+# TODO 2012-04-13 HUGR: Add error checking for manual routing that doesn't
+# match deps.
+#
+# TODO 2012-04-13 HUGR: Allow for multiple layouts.
+#
+# TODO 2012-04-13 HUGR: Get arrow-heads right.
+#
+# TODO 2012-04-13 HUGR: Auto-place multiple layouts?
+#
+# TODO 2012-04-13 HUGR: Fix ESSENCE_NAME in all Charms.
+
 ESSENCE_NAME = "Ess"
 
 # Although the body text in the Exalted books is 10pt on 12pt, the Charm boxes

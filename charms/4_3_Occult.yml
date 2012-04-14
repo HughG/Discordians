@@ -108,7 +108,7 @@ text: |
 --- !Charm
 id: asi
 name: "Anima-Suppressing>Intervention"
-cost: 2m per point of target's Essence rating
+cost: "2m per point of target's Essence rating"
 mins: {Occult: 4, Ess: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Shaping, Touch]

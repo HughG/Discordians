@@ -16,22 +16,42 @@ text: |
 --- !Charm
 id: fam
 name: "Faction Analysis>Method"
-cost: 3m
+cost: 5m, 1wp
 mins: {Bureaucracy: 2, Ess: 2}
-type: [Simple]
-keys: [Combo-OK]
+type: [Simple, Speed 6 in long ticks]
+keys: [Combo-OK, Social]
 dur: One scene
-deps: []
+deps: [exc]
+reviews:
+- 2012-04-14 RWG
 text: |
-  Provides clear understanding of all departments and factions within the
-  organisation, official and unofficial, identifying the true leaders of each.
-  This gives the character (Essence ÷ 2) bonus successes to subsequent
-  Bureaucracy actions in the scene which relate to influencing one specific
-  faction, or altering tensions between groups.  Information on the leaders'
-  identities is retained permanently, though leadership may change later.
+  This Charm gives the character a clear understanding of an organization with
+  which she is interacting, providing knowledge of all departments and
+  factions within an organization, official and unofficial, and identifying
+  the true leaders of each.  For each faction or leader attempting to remain
+  unknown, the character must make a successful ([Perception or Intelligence]
+  + Bureaucracy) roll.  The difficulty is 1 but the roll is subject to an
+  external penalty, determined by the Storyteller on the basis of how much
+  effort the targets are putting into concealment--typically ([Manipulation +
+  Socialize + Magnitude] ÷ 2).  Information on the leaders' identities is
+  retained permanently, though leadership may change later.  The maximum
+  Magnitude of organization which can be read is equal to the character's
+  (Essence + Bureaucracy).  For larger entities, the character will receive
+  infomation about a subset of groups and factions up to that size.  The
+  Storyteller is the final arbiter of what information is available.
+
+  Furthermore, for the rest of the scene, any external penalties on actions
+  related to influencing a faction, or relationships between factions, are
+  reduced.  The reduction is equal to the lower of (her Bureaucracy rating)
+  and (the Magnitude of those present who belong to the relevant factions).
   
-  *[TODO: Might need to limit scope/size of organisation.]*
-  
+  At Essence 3+ the character can apply this Charm to a group which she can
+  perceive, without having to interact with them or even reveal her presence,
+  though she must observe them for a scene first to do so.  At Essence 4+ the
+  Magnitude of those present no longer limits the reduction in external
+  penalties: she can obtain her full (Bureaucracy) rating in reduction on the
+  basis of interacting with or observing even a single individual.
+
 --- !Charm
 id: wwws
 name: "Wheels Within Wheels>Scheme"
@@ -43,10 +63,10 @@ dur: Indefinite
 deps: [fam]
 text: |
   With knowledge of the overt and covert roles and communication channels
-  in an organisation, the Exalt is able to arrange for her own pet project to be
+  in an organization, the Exalt is able to arrange for her own pet project to be
   achieved without drawing attention to it.  The maximum duration of the project
   in days is equal to the largest group size for a Magnitude one less than the
-  organisation's size; for example, a bureaucracy of 200 is Magnitude 4, so the
+  organization's size; for example, a bureaucracy of 200 is Magnitude 4, so the
   maximum duration would be 150 days (the largest size of a Magnitude 3 group),
   or a little over 5 months.  The maximum Resources which can be diverted
   without attracting attention is half the group's Magnitude, rounded up, but no
@@ -64,10 +84,10 @@ keys: [Combo-OK]
 dur: Instant
 deps: [wwws]
 text: |
-  Whereas some would improve the efficiency of an organisation by directly
+  Whereas some would improve the efficiency of an organization by directly
   reshaping it, the Discordian knows that the same ends can often be achieved
   simply by gently adjusting the goals of the individuals within it.  The Exalt
-  subtly influences the organisation so that, despite still following selfish
+  subtly influences the organization so that, despite still following selfish
   internal goals, its various parts effectively work much more successfully
   towards an overall aim.  The Charm supplements a dramatic action, adding the
   character's subtle guidance and suggestion to a project.  He mst be involved
@@ -132,23 +152,23 @@ dur: Indefinite
 deps: [exc]
 text: |
   The Bishops of Greyface enjoy spreading confusion, particularly around
-  the fundamental issue, for an organisation, of exactly what it is supposed to
+  the fundamental issue, for an organization, of exactly what it is supposed to
   be doing.  Employing this charm, the player rolls ([Charisma or Manipulation]
   + Bureaucracy + Essence) with a difficulty equal to the leader's MDV.  If
-  successful, the organisation forgets its Motivation; it will not act against
+  successful, the organization forgets its Motivation; it will not act against
   it (unless otherwise compelled) but neither will it act in support of it, with
   the leader likely to spend Loyalty points to resist external attempts to
-  persuade the organisation to do so.  The leader may also spend Loyalty to
+  persuade the organization to do so.  The leader may also spend Loyalty to
   resist or shake off this Illusion, however.  Spending one point lifts it for a
   single scene, and spending a cumulative total of three ends the effect.
   
-  An organisation affected by this Illusion is not completely paralysed.  It
+  An organization affected by this Illusion is not completely paralysed.  It
   will still carry on minor day-to-day activities, giving the surface appearance
   of being functional.  It may also successfully carry out activities not
   related to its main Motivation.  Applying this Charm to small outposts of the
   Immaculate Order can be particularly amusing.
   
-  *[TODO: Might need to limit scope/size of organisation.]*
+  *[TODO: Might need to limit scope/size of organization.]*
   
 --- !Charm
 id: mrp
@@ -162,7 +182,7 @@ deps: [mom]
 text: |
   The sometimes crazed notions of the Unbending Arm are nonetheless
   unusually compelling.  Using this Charm, the character communicates a new
-  Policy to an organisation, the means depending on its magnitude and how widely
+  Policy to an organization, the means depending on its magnitude and how widely
   spread it is.  It may be sufficient to talk directly to senior figures, or it
   may be necessary to send memos to each department.
   
@@ -174,7 +194,7 @@ text: |
   to resist this effect.  If the roll succeeds but the mission is in conflict
   with the group's Motivation, it loses a dot of Magnitude, and those lost
   immediately form a splinter group with the mission as their Motivation.  If
-  the new goal is in line with the organisation's Motivation, then they will
+  the new goal is in line with the organization's Motivation, then they will
   drop all other activities to pursue it for the first (Essence) days, throwing
   financial and political caution to the winds (although not ignoring the need
   to eat and sleep -- work/life balance is important, y'know).
@@ -182,13 +202,13 @@ text: |
   If persuaded departments are sufficiently distant from each other, the new
   mission will not actually affect them until they get word of it.  Spreading
   the mission to these departments will be one of the first priorities of the
-  organisation.  However, if a message fails to reach within (Essence) weeks of
+  organization.  However, if a message fails to reach within (Essence) weeks of
   it being sent, it will have lost its magic and be ignored on receipt.  This
   can result in even greater confusion as different departments act on the
   mission at different times.  There is still only a single roll to determine
   whether the mission is adopted, however.
   
-  *[TODO: Might need to limit scope/size of organisation.]*
+  *[TODO: Might need to limit scope/size of organization.]*
   
 --- !Charm
 id: ln
@@ -216,7 +236,7 @@ text: |
   to normal, or until the Leader spends a point of Loyalty to reassert control,
   in which case penalties vanish immediately.
   
-  Applied to a bureaucratic organisation it is even more effective, in a
+  Applied to a bureaucratic organization it is even more effective, in a
   narrower way.  In relation to a chosen project, memos are lost, official seals
   break, key staff members fall ill and so on.  All this imposes a -4 external
   penalty to all its actions for the day and, once the scene has ended, the
@@ -232,7 +252,7 @@ text: |
   misdirected, causing them to work poorly, if at all.  These penalties vanish
   the next day.
   
-  *[TODO: Might need to limit scope/size of organisation.]*
+  *[TODO: Might need to limit scope/size of organization.]*
   
 --- !Charm
 id: frf
@@ -278,13 +298,13 @@ text: |
   taken advantage of.  This Charm causes an organistion to lose all record of a
   particular fact, or introduces a new "fact" into their archives and common
   understanding.  It must be activated in the presence of a member of the
-  organisation, or in one of its offices, permanent or temporary.  The
-  organisation must have a Magnitude of no more than the character's (Essence +
+  organization, or in one of its offices, permanent or temporary.  The
+  organization must have a Magnitude of no more than the character's (Essence +
   Bureaucracy).  The datum added or removed must be about something external to
-  the organisation; so, for example, an Erisian cannot make himself the new
+  the organization; so, for example, an Erisian cannot make himself the new
   leader of the Immaculate Order.
   
-  Any member of the organisation who was in the process of dealing with that
+  Any member of the organization who was in the process of dealing with that
   fact (if it disappeared) or a closely related subject (if it just appeared)
   may resist the effect as unnatural mental influence, at a cost of 1 Willpower
   per scene, with the effect lifting (for them) once they have spend a
@@ -293,11 +313,11 @@ text: |
   baffled by their strange opinion.  For those who cannot or fail to resist,
   they immediately come to believe the new truth.
   
-  Note that there is nothing preventing the organisation from subsequently
+  Note that there is nothing preventing the organization from subsequently
   correcting its observations and updating its records.  However, in the short
   term, this Charm can be remarkably useful for such tasks as escaping from the
   attentions of the Wyld Hunt.  Also, for information which is truly hard to
-  discover, the organisation may never be able to re-learn the truth.
+  discover, the organization may never be able to re-learn the truth.
   
 --- !Charm
 id: dbp
@@ -311,8 +331,8 @@ deps: [frf]
 text: |
   A word in the right butterfly-like ear can have unexpected effects far
   away.  This Charm supplements an attempt by the character to manipulate a
-  single in-process decision within an organisation.  Its target is any single
-  member of the organisation, no matter how lowly: the magic of the Charm will
+  single in-process decision within an organization.  Its target is any single
+  member of the organization, no matter how lowly: the magic of the Charm will
   work its way toward the real decision-maker (who may or may not be the one
   officially in that role).
   
@@ -322,12 +342,12 @@ text: |
   exceeds the Exalt's Essence, the attempt automatically fails.  Mere Policies
   (Intimacies) do not afford this protection, however.  If successful, the
   decision will go the way the character desires.  As with the Record-Correction
-  Maneuver, there is nothing to prevent the organisation from changing the
+  Maneuver, there is nothing to prevent the organization from changing the
   decision later, depending on its Motivation and tendencies -- unless, of
   course, it's too late.  The decision will not be changed back for at least
   (character's Essence) days, however.
   
-  This Charm is only effective upon decisions which the organisation was already
+  This Charm is only effective upon decisions which the organization was already
   intending to make, and has not yet settled.  It cannot force a group to decide
   to do something which had never crossed its collective mind.
   
@@ -341,10 +361,10 @@ keys: [Combo-OK, Social, Illusion]
 dur: One scene
 deps: [rcm, dbp]
 text: |
-  Trying to maintain control of a large organisation is a wearing task,
+  Trying to maintain control of a large organization is a wearing task,
   which is why the Children of Eris prefer to just jump to the top of the heap
   temporarily.  With this Charm, the hand of Authority takes control of an
-  organisation for one scene.  The original Leader is supplanted and all members
+  organization for one scene.  The original Leader is supplanted and all members
   of the group will recognise the character as the woman in charge.  They are
   not blindly compelled to obey orders, but will generally accept even drastic
   changes in the Motivation of the group, for example, unless they have strong

@@ -261,29 +261,30 @@ text: |
 --- !Charm
 id: usn
 name: "Understanding social norms"
-cost: 3m, 1wp
+cost: 5m, 1wp
 mins: {Socialize: 2, Ess: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
 dur: One scene
 deps: [exc]
 reviews:
-- 
-text: |
+- 2012-04-14 RWG
+reviews:
+- text: |
   TODO
   
   This Charm gives the character insight into the social norms, pressures and
   desires of a group with which she is interacting.  As long as the Charm
-  remains active, she adds bonus dice to all rolls related to understanding and
-  taking advantage of knowledge of the Intimacies, Motivation, customs and
-  taboos of a specific group.  The number of dice is equal to the lower of (her
-  Socialize) and (the Magnitude of those present who belong to the group).  As
-  well as Socialize rolls (for example, to identify individuals who oppose the
-  norms), this bonus can apply to other abilities.  For example, it could apply
-  to Larceny rolls to pass herself off as a member of the group, Medicine rolls
-  to realize that a certain treatment is considered heretical, Bureacracy rolls
-  to guess the local favored form of bribes, and so on.  Arbitration of the
-  scope is up to the Storyteller.
+  remains active, she reduced external penalties on actions related to
+  understanding and taking advantage of knowledge of the Intimacies,
+  Motivation, customs and taboos of a specific group.  The reduction is equal
+  to the lower of (her Socialize) and (the Magnitude of those present who
+  belong to the group).  As well as Socialize rolls (for example, to identify
+  individuals who oppose the norms), this bonus can apply to other abilities.
+  For example, it could apply to Larceny rolls to pass herself off as a member
+  of the group, Medicine rolls to realize that a certain treatment is
+  considered heretical, Bureacracy rolls to guess the local favored form of
+  bribes, and so on.  Arbitration of the scope is up to the Storyteller.
   
   By default, the group to which Charm's effect relates will be the group which
   the majority of beings visible (or otherwise clearly perceptible) to the Exalt
@@ -295,20 +296,21 @@ text: |
   
   She may also opt to fish for groupings which are secret or simply unknown to
   her.  This requires a successful ([Perception or Intelligence] + Socialize)
-  roll, with a difficulty determined by the Storyteller on the basis of how much
-  effort those present are putting into concealing their allegiances.  If the
-  roll fails, or no such groupings exist, the Charm's effect is spent.  If
-  successful, the character will know that such a grouping exists, but will not
-  automatically know anything about it, nor which persons present are members.
-  Further rolls are required, possibly with bonus dice from this Charm, to learn
-  more about it.
+  roll.  The difficulty is 1 but the roll is subject to an external penalty,
+  determined by the Storyteller on the basis of how much effort those present
+  are putting into concealing their allegiances--typically ([Manipulation +
+  Socialize + Magnitude] ÷ 2).  If the roll fails, or no such groupings exist,
+  the Charm's effect is spent.  If successful, the character will know that
+  such a grouping exists, but will not automatically know anything about it,
+  nor which persons present are members.  Further rolls are required, possibly
+  with bonus dice from this Charm, to learn more about it.
   
   At Essence 3+ the character can apply this Charm to a group which she can
   perceive, without having to interact with them or even reveal her presence,
   though she must observe them for a scene first to do so.  At Essence 4+ the
-  Magnitude of those present no longer caps her bonus: she can obtain her full
-  (Socialize) rating in bonus dice on the basis of interactng with or observing
-  even a single individual.
+  Magnitude of those present no longer limits the reduction of external
+  penalties: she can obtain her full (Socialize) rating in reduction on the
+  basis of interacting with or observing even a single individual.
   
 --- !Charm
 id: ce

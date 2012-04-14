@@ -74,16 +74,16 @@ if __FILE__ == $PROGRAM_NAME
 
   File.open(outfilename, "w") { |outfile|
 #     outfile.puts(":doctype: book")
-#     outfile.puts(":themedir: ..")
-#     outfile.puts(":theme: discordians")
-#     outfile.puts(":linkcss:")
-#     outfile.puts
+    outfile.puts(":themedir: ..")
+    outfile.puts(":theme: discordians")
+    outfile.puts(":linkcss:")
+    outfile.puts
 
-    process_file(filename) { |group_name, charms|
+    process_file(filename) { |group_name, charms, layouts|
       outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")
       outfile.puts('[options="pgwide"]')
       pngfilename = File.basename(filename).sub(/\.yml/, ".png")
-      outfile.puts("image::./output/#{pngfilename}[#{group_name} Charm Tree]")
+      outfile.puts("image::./#{pngfilename}[#{group_name} Charm Tree]")
       outfile.puts
 
       outfile.puts("==== " + group_name)

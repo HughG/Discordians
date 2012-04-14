@@ -46,7 +46,7 @@ if __FILE__ == $PROGRAM_NAME
     outfile.puts("digraph foo {")
     outfile.puts("\tnode [shape=Mrecord,fontname=Palatino,fontsize=10,width=1.9,height=1,fixedsize];")
 
-    process_file(filename) { |group_name, charms|
+    process_file(filename) { |group_name, charms, layouts|
       charms.each_value { |charm|
         insert_charm(outfile, group_name, charms, charm)
       }

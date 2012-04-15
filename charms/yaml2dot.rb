@@ -17,11 +17,7 @@ def insert_charm(out, section_name, charms, charm)
   min_ess = ""
   min_att = ""
   if charm.mins
-    essence = charm.mins['Essence']
-    if essence.nil?
-      essence = charm.mins['Ess']
-    end
-    min_ess = beads("•", "¤", essence.to_i)
+    min_ess = beads("•", "¤", charm.mins['Essence'].to_i)
     min_att = beads("•", "¤", charm.mins[section_name].to_i)
   end
   deps = charm.deps

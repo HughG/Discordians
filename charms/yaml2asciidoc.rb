@@ -82,8 +82,8 @@ if __FILE__ == $PROGRAM_NAME
     process_file(filename) { |group_name, charms, layouts|
       outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")
       outfile.puts('[options="pgwide"]')
-      pngfilename = File.basename(filename).sub(/\.yml/, ".png")
-      outfile.puts("image::./#{pngfilename}[#{group_name} Charm Tree]")
+      imgfilename = File.basename(filename).sub(/\.yml/, ".{charm-image-ext}")
+      outfile.puts("image::{image-dir}#{imgfilename}[#{group_name} Charm Tree]")
       outfile.puts
 
       outfile.puts("==== " + group_name)

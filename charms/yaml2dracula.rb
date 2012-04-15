@@ -15,11 +15,7 @@ def add_node(out, section_name, charms, charm)
   min_ess = 1
   min_att = 1
   if charm.mins
-    essence = charm.mins['Essence']
-    if essence.nil?
-      essence = charm.mins['Ess']
-    end
-    min_ess = essence.to_i
+    min_ess = charm.mins['Essence'].to_i
     min_att = charm.mins[section_name].to_i
   end
   out.puts "g.addNode(" +

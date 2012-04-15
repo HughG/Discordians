@@ -27,10 +27,6 @@ include REXML
 # TODO 2012-04-13 HUGR: Get arrow-heads right.
 #
 # TODO 2012-04-13 HUGR: Auto-place multiple layouts?
-#
-# TODO 2012-04-13 HUGR: Fix ESSENCE_NAME in all Charms.
-
-ESSENCE_NAME = "Ess"
 
 # Although the body text in the Exalted books is 10pt on 12pt, the Charm boxes
 # seem to use about 9pt on 11pt.
@@ -200,7 +196,7 @@ def draw_charm(box, x, y, charm)
   draw_outline(box, x, y)
 
   if (charm.mins != nil)
-    essence_dots = charm.mins[ESSENCE_NAME]
+    essence_dots = charm.mins["Essence"]
     group_dots = charm.mins[charm.group]
     draw_dots(box, x, y, essence_dots, group_dots)
   end
@@ -259,12 +255,14 @@ if __FILE__ == $PROGRAM_NAME
   division = matches[1].to_i
 
   process_file(filename) { |group_name, charms, layouts|
-    p layouts
-    if layouts.length > 1
-      $stderr << "Can only handle 1 layout for now"
+    if layouts.length == 0
+      $stderr << "No layout for #{group_name}\n"
+    elsif layouts.length > 1
+      p layouts
+      $stderr << "Can only handle 1 layout for now\n"
       exit(-1)
+    else
+      draw_layout(charms, layouts[0], outfilename)
     end
-
-    draw_layout(charms, layouts[0], outfilename)
   }
 end

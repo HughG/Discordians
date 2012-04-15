@@ -5,10 +5,6 @@ require "./yaml2x.rb"
 
 include REXML
 
-# TODO 2012-04-13 HUGR: Correct shades of grey for empty dots.
-#
-# TODO 2012-04-13 HUGR: Add auto-routed arrows.
-#
 # TODO 2012-04-13 HUGR: Add fallback to no layout if layout is broken.
 # Highlight by drawing boxes differently?
 #
@@ -25,6 +21,9 @@ include REXML
 # TODO 2012-04-13 HUGR: Allow for multiple layouts.
 #
 # TODO 2012-04-13 HUGR: Get arrow-heads right.
+#
+# TODO 2012-04-13 HUGR: Make source end of arrows always appear "inside" the
+# boxes, even though the destination end must be just touching.
 #
 # TODO 2012-04-13 HUGR: Auto-place multiple layouts?
 
@@ -44,6 +43,12 @@ OUTLINE_POINTS = [
   [49,23], [40,23], [42,25], [7,25], [9,23], [0,23]
 ]
 
+ARROW_POINTS = [
+  [ [0,2], [24.5, 0], [49, 2] ],
+  [ [0, 12.5], nil, [49, 12.5] ],
+  [ [0, 23], [24.5, 25], [49, 23] ]
+]
+
 def make_style(hash)
   hash.map {|k,v| "#{k}: #{v}"}.join "; "
 end
@@ -56,16 +61,18 @@ def offset_points(x, y, points)
   points.map {|p| [p[0] + x, p[1] + y]}
 end
 
+CB_STYLE = make_style(
+  "fill" => "#fae88a",
+  # "fill-opacity" => "0", # transparent
+  "stroke" => "#b7985b",
+  "stroke-linejoin" => "round",
+  "stroke-width" => "0.3",
+)
+
 def draw_outline(box, x, y)
   points = offset_points(x, y, OUTLINE_POINTS)
-  poly_style = make_style({
-      "fill" => "#fae88a",
-      "stroke" => "#b7985b",
-      "stroke-linejoin" => "round",
-      "stroke-width" => "0.3",
-    })
   poly = box.add_element "polygon", {
-    "style" => poly_style,
+    "style" => CB_STYLE,
     "points" => make_path(points)
   }
 end
@@ -96,8 +103,8 @@ def draw_dot(
 end
 
 EMPTY_DOT_STYLE = make_style(
-  "fill" => "grey",
-  "stroke" => "silver",
+  "fill" => "#3e494d",
+  "stroke" => "#2a2a11",
   "stroke-width" => "0.3",
   )
 ESSENCE_DOT_STYLE = make_style(
@@ -205,7 +212,82 @@ def draw_charm(box, x, y, charm)
     draw_grid(box)
   end
 
-  draw_text(box, x, y, charm.multi_line_name)
+  text_lines = charm.multi_line_name
+  if charm.deps.nil? or charm.deps.empty?
+    text_lines.map! {|s| s.upcase}
+  end
+  draw_text(box, x, y, text_lines)
+end
+
+ARROW_LINE_STYLE = make_style(
+  "stroke" => "black",
+  "stroke-width" => "0.75",
+  )
+
+def draw_arrows(box, charms, layout)
+  cb_rows = layout.grid.length
+
+  # Create reverse mapping from charm name to row/column, for arrows.
+  charm_grid_pos = {}
+  for row in 0..(cb_rows - 1)
+    # TODO 2012-04-13 HUGR: Check for >3 columns
+    for col in 0..2
+      charm = charms[layout.grid[row][col]]
+      next if charm == nil
+      charm_grid_pos[charm.id] = [row, col]
+    end
+  end
+
+  charm_grid_pos.each { |charm_id, dst_pos|
+    charm = charms[charm_id]
+    if charm.deps != nil
+      charm.deps.each { |dep|
+        src_pos = charm_grid_pos[dep]
+        puts "#{dep}@#{src_pos} -> #{charm.id}@#{dst_pos}"
+        src_to_dst_dir = [
+          dst_pos[0] <=> src_pos[0],
+          dst_pos[1] <=> src_pos[1]
+        ]
+        src_to_dst_anchor = [
+          src_to_dst_dir[0] + 1,
+          src_to_dst_dir[1] + 1
+        ]
+        dst_to_src_anchor = [
+          -src_to_dst_dir[0] + 1,
+          -src_to_dst_dir[1] + 1
+        ]
+        #puts "  #{dep}/#{src_to_dst_anchor} -> #{charm.id}/#{dst_to_src_anchor}"
+        src_point = ARROW_POINTS[src_to_dst_anchor[0]][src_to_dst_anchor[1]]
+        dst_point = ARROW_POINTS[dst_to_src_anchor[0]][dst_to_src_anchor[1]]
+        #puts "  #{dep}/#{src_point} -> #{charm.id}/#{dst_point}"
+
+        src_row = src_pos[0]
+        src_col = src_pos[1]
+        src_x = src_col * (CB_WIDTH + CB_HORIZ_GAP)
+        src_y = src_row * (CB_HEIGHT + CB_VERT_GAP)
+
+        dst_row = dst_pos[0]
+        dst_col = dst_pos[1]
+        dst_x = dst_col * (CB_WIDTH + CB_HORIZ_GAP)
+        dst_y = dst_row * (CB_HEIGHT + CB_VERT_GAP)
+
+        box.add_element "line", {
+          "style" => ARROW_LINE_STYLE,
+          "x1" => src_point[0] + src_x,
+          "y1" => src_point[1] + src_y,
+          "x2" => dst_point[0] + dst_x,
+          "y2" => dst_point[1] + dst_y,
+        }
+
+        box.add_element "circle", {
+          "style" => ARROW_LINE_STYLE,
+          "cx" => dst_point[0] + dst_x,
+          "cy" => dst_point[1] + dst_y,
+          "r" => 1.25,
+        }
+      }
+    end
+  }
 end
 
 def draw_layout(charms, layout, outfilename)
@@ -228,6 +310,8 @@ def draw_layout(charms, layout, outfilename)
     svg.add_namespace("xlink", "http://www.w3.org/1999/xlink")
     box = svg.add_element "g", {
     }
+
+    draw_arrows(box, charms, layout)
 
     for row in 0..(cb_rows - 1)
       # TODO 2012-04-13 HUGR: Check for >3 columns

@@ -35,10 +35,10 @@ destdir:
 	mkdir -p $D
 #	mkdir -p $W
 
-$D/%.dot: %.yml yaml2dot.rb
+$D/%.dot: %.yml yaml2dot.rb yaml2x.rb
 	./yaml2dot.rb $< $@
 
-$D/%.asc: %.yml yaml2asciidoc.rb
+$D/%.asc: %.yml yaml2asciidoc.rb yaml2x.rb
 	./yaml2asciidoc.rb $< $@
 
 $D/%.html: $D/%.asc $D/%.png
@@ -50,7 +50,7 @@ $D/%.html: $D/%.asc $D/%.png
 $D/%.png: $D/%.dot
 	/Applications/Graphviz.app/Contents/MacOS/dot -Tpng $< >$@
 
-$D/%.svg: %.yml
+$D/%.svg: %.yml yaml2svg.rb yaml2x.rb
 	./yaml2svg.rb $< $@
 
 $D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%) $(PNG:./%=$D/%)

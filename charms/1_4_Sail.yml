@@ -3,7 +3,7 @@
 name: Sail
 --- !CharmLayout
 grid:
-- [bofb, fhh, siafm]
+- [bofb, fhh, siatm]
 - [exc, fs, sofd]
 - [rri, sbfw, cop]
 - [wmi, ~, ~]

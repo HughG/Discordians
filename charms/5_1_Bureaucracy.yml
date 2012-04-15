@@ -3,7 +3,7 @@
 name: Bureaucracy
 --- !CharmLayout
 grid:
-- [bbb, xxx, bpp]
+- [bbb, ~, bpp]
 - [wwws, fam, exc]
 - [bots, frf, mom]
 - [dbp, rcm, mrp]
@@ -387,12 +387,14 @@ mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion]
 dur: Instant
-deps: [xxx]
+deps: []
 refs:
 - [TID, Core, 238]
 - [TCM, Lunars, 170]
 text: |
-  TODO
+  TODO: Needs some prerequisite(s).
+
+  TODO: fluff.
   
   This Charm allows a character to indirectly influence the behaviour of a group
   by manipulating its circumstances.  It supplements a Bureacracy action which

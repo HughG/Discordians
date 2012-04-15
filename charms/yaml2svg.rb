@@ -243,7 +243,7 @@ def draw_arrows(box, charms, layout)
     if charm.deps != nil
       charm.deps.each { |dep|
         src_pos = charm_grid_pos[dep]
-        puts "#{dep}@#{src_pos} -> #{charm.id}@#{dst_pos}"
+        # puts "#{dep}@#{src_pos} -> #{charm.id}@#{dst_pos}"
         src_to_dst_dir = [
           dst_pos[0] <=> src_pos[0],
           dst_pos[1] <=> src_pos[1]
@@ -298,7 +298,7 @@ def draw_layout(charms, layout, outfilename)
     doc = Document.new
     doc << XMLDecl.new("1.0", "utf-8")
     doc << DocType.new("svg", 'PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd"')
-    width = (CB_WIDTH * CB_COLUMNS) + (CB_HORIZ_GAP * (CB_COLUMNS - 1))
+    width = (CB_WIDTH * CB_COLUMNS) + (CB_HORIZ_GAP * (CB_COLUMNS - 1)) + 1
     height = (CB_HEIGHT * cb_rows) + (CB_VERT_GAP * (cb_rows - 1))
     view_box = [-1, -1, width + 1, height + 1]
     svg = doc.add_element "svg", {

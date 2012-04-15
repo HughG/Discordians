@@ -16,7 +16,7 @@ text: |
 id: aci
 name: "Angelic Countenance>of Innocence"
 cost: 2m
-mins: {Dodge: 2, Ess: 2}
+mins: {Dodge: 2, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant
@@ -35,7 +35,7 @@ text: |
 id: cf
 name: "Centrifugal Farce"
 cost: 3m
-mins: {Dodge: 2, Ess: 2}
+mins: {Dodge: 2, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Touch, Counterattack]
 dur: Instant
@@ -54,7 +54,7 @@ text: |
 id: hpf
 name: "Hostility-Proof Facade"
 cost: 4m
-mins: {Dodge: 3, Ess: 2}
+mins: {Dodge: 3, Essence: 2}
 type: [Reflexive, Step 6]
 keys: [Combo-OK, Compulsion]
 dur: Instant
@@ -76,7 +76,7 @@ text: |
 id: pe
 name: "Perfect Excuse"
 cost: 4m
-mins: {Dodge: 4, Ess: 2}
+mins: {Dodge: 4, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -99,7 +99,7 @@ text: |
 id: samt
 name: "Smoke and Mirrors>Technique"
 cost: 3m
-mins: {Dodge: 3, Ess: 3}
+mins: {Dodge: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Obvious]
 dur: Until next action
@@ -139,7 +139,7 @@ text: |
 id: vmn
 name: "Villain Multiplication Nature"
 cost: 5m
-mins: {Dodge: 4, Ess: 3}
+mins: {Dodge: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Until next action
@@ -164,7 +164,7 @@ text: |
 id: ema
 name: "Exponent of>Manifold Avoidance"
 cost: 8m, 1wp
-mins: {Dodge: 5, Ess: 4}
+mins: {Dodge: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK]
 dur: One scene
@@ -185,7 +185,7 @@ text: |
 id: gss
 name: "Grey-Space Shuffle"
 cost: 4m
-mins: {Dodge: 4, Ess: 3}
+mins: {Dodge: 4, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-Basic, Counterattack]
 dur: Instant
@@ -219,7 +219,7 @@ text: |
 id: mse
 name: "Moment of Spatial Eructation"
 cost: -- (+3m per dot of Magnitude + 1wp)
-mins: {Dodge: 5, Ess: 4}
+mins: {Dodge: 5, Essence: 4}
 type: [Permanent]
 keys: [Combo-Basic, War]
 dur: Permanent

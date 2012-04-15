@@ -17,7 +17,7 @@ text: |
 id: ffm
 name: "Flawless Footstep>Meditation"
 cost: 2m
-mins: {Athletics: 2, Ess: 2}
+mins: {Athletics: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene
@@ -39,7 +39,7 @@ text: |
 id: gas
 name: "Ground-Avoiding Step"
 cost: 2m; or 5m, 1wp
-mins: {Athletics: 4, Ess: 2}
+mins: {Athletics: 4, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -60,7 +60,7 @@ text: |
 id: mopg
 name: "Moment of Perfect Gravity"
 cost: 6m, 1wp
-mins: {Athletics: 5, Ess: 4}
+mins: {Athletics: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Obvious]
 dur: Indefinite
@@ -92,7 +92,7 @@ text: |
 id: bu
 name: "Balanced Unbalance"
 cost: 2m
-mins: {Athletics: 2, Ess: 2}
+mins: {Athletics: 2, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Knockback]
 dur: Instant
@@ -124,7 +124,7 @@ text: |
 id: ec
 name: "Equilibrium Catapult"
 cost: 3m
-mins: {Athletics: 3, Ess: 3}
+mins: {Athletics: 3, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Knockback]
 dur: Instant
@@ -153,7 +153,7 @@ text: |
 id: nbt
 name: "Narcissus Blossom Technique"
 cost: 2m + 3m per dot
-mins: {Athletics: 3, Ess: 2}
+mins: {Athletics: 3, Essence: 2}
 type: [Simple]
 keys: [None]
 dur: One scene
@@ -176,7 +176,7 @@ text: |
 id: hht
 name: "Hurtling Hermit Technique"
 cost: 4m, 1wp
-mins: {Athletics: 3, Ess: 3}
+mins: {Athletics: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
@@ -205,7 +205,7 @@ text: |
 id: fash
 name: "Feather and Snowflake>Harmony"
 cost: 1m per point
-mins: {Athletics: 3, Ess: 2}
+mins: {Athletics: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -232,7 +232,7 @@ text: |
 id: fasu
 name: "Feather and Snowflake>Unison"
 cost: 5m, 1wp
-mins: {Athletics: 5, Ess: 2}
+mins: {Athletics: 5, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: One scene

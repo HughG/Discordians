@@ -69,7 +69,7 @@ text: |
 id: hci
 name: "Holding conflicting Intimacies"
 cost: -- (+2m, 1wp)
-mins: {Socialize: 3, Ess: 3}
+mins: {Socialize: 3, Essence: 3}
 type: [Permanent]
 keys: [None]
 dur: Instant
@@ -106,7 +106,7 @@ text: |
 id: dmi
 name: "Disguising Motivation>and Intimacies"
 cost: 4m
-mins: {Socialize: 3, Ess: 2}
+mins: {Socialize: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -132,7 +132,7 @@ text: |
 id: hmi
 name: "Hiding Motivation>and Intimacies"
 cost: 3m, 1wp
-mins: {Socialize: 4, Ess: 3}
+mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
 dur: Instant
@@ -155,7 +155,7 @@ text: |
 id: psa
 name: "Perfect social attack"
 cost: 3m or 5m
-mins: {Socialize: 3, Ess: 2}
+mins: {Socialize: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 9]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -177,7 +177,7 @@ text: |
 id: gsd
 name: "General social defence"
 cost: 4m
-mins: {Socialize: 3, Ess: 3}
+mins: {Socialize: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -205,7 +205,7 @@ text: |
 id: usa
 name: "Unexpected social attack"
 cost: 3m
-mins: {Socialize: 3, Ess: 2}
+mins: {Socialize: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -236,7 +236,7 @@ text: |
 id: saic
 name: "Social actions>in combat"
 cost: 2m, 1wp
-mins: {Socialize: 4, Ess: 2}
+mins: {Socialize: 4, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK, War]
 dur: One scene
@@ -262,15 +262,14 @@ text: |
 id: usn
 name: "Understanding social norms"
 cost: 5m, 1wp
-mins: {Socialize: 2, Ess: 2}
+mins: {Socialize: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
 dur: One scene
 deps: [exc]
 reviews:
 - 2012-04-14 RWG
-reviews:
-- text: |
+text: |
   TODO
   
   This Charm gives the character insight into the social norms, pressures and
@@ -316,7 +315,7 @@ reviews:
 id: ce
 name: "Contagious Effect"
 cost: 3m per extra dot of Magnitude, 2wp [or, "(3m, 1wp) per dot"?]
-mins: {Socialize: 3, Ess: 3}
+mins: {Socialize: 3, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Sickness, Social]
 dur: (Socialize) scenes
@@ -402,7 +401,7 @@ text: |
 id: fm
 name: "Flashmob!"
 cost: 4m or 4m, 1wp
-mins: {Socialize: 4, Ess: 3}
+mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Compulsion, Social]
 dur: One scene

@@ -17,7 +17,7 @@ text: |
 id: umd
 name: "Unbalanced Mind>Defence"
 cost: 3m
-mins: {Integrity: 2, Ess: 2}
+mins: {Integrity: 2, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -38,7 +38,7 @@ text: |
 id: sdc
 name: "Subtle Daydream Concoction"
 cost: 6m
-mins: {Integrity: 3, Ess: 2}
+mins: {Integrity: 3, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-Basic, Counterattack, Illusion, Social]
 dur: Instant
@@ -83,7 +83,7 @@ text: |
 id: ddt
 name: "Dream Deflection Technique"
 cost: 5m
-mins: {Integrity: 4, Ess: 3}
+mins: {Integrity: 4, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion, Social]
 dur: Instant
@@ -104,7 +104,7 @@ text: |
 id: cof
 name: "Cocoon of Fables"
 cost: 10m, 2wp
-mins: {Integrity: 4, Ess: 4}
+mins: {Integrity: 4, Essence: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -128,7 +128,7 @@ text: |
 id: sos2
 name: "Savor of Submission"
 cost: -- (1wp)
-mins: {Integrity: 1, Ess: 2}
+mins: {Integrity: 1, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -161,7 +161,7 @@ text: |
 id: roe
 name: "Running on Emptiness"
 cost: --
-mins: {Integrity: 2, Ess: 2}
+mins: {Integrity: 2, Essence: 2}
 type: [Permanent]
 keys: [Stackable]
 dur: Permanent
@@ -192,7 +192,7 @@ text: |
 id: ror
 name: "Reallocation of Resolve"
 cost: 4m plus 4m per point of Willpower
-mins: {Integrity: 3, Ess: 2}
+mins: {Integrity: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Obvious, Touch]
 dur: Instant
@@ -224,7 +224,7 @@ text: |
 id: iiov
 name: "Idiosyncratic Interpretation>of (Virtue)"
 cost: --
-mins: {Integrity: 2, Ess: 2}
+mins: {Integrity: 2, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -253,7 +253,7 @@ text: |
 id: icc
 name: "Instant Commitment>Contrivance"
 cost: 2m, 2wp
-mins: {Integrity: 3, Ess: 3}
+mins: {Integrity: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic, Social, Stackable]
 dur: Indefinite
@@ -300,7 +300,7 @@ text: |
 id: uoth
 name: "Umbrella of the Heart"
 cost: 4m, 1wp
-mins: {Integrity: 4, Ess: 3}
+mins: {Integrity: 4, Essence: 3}
 type: [Reflexive]
 keys: [None]
 dur: Indefinite

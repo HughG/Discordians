@@ -17,7 +17,7 @@ text: |
 id: fam
 name: "Faction Analysis>Method"
 cost: 5m, 1wp
-mins: {Bureaucracy: 2, Ess: 2}
+mins: {Bureaucracy: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -56,7 +56,7 @@ text: |
 id: wwws
 name: "Wheels Within Wheels>Scheme"
 cost: 8m
-mins: {Bureaucracy: 3, Ess: 3}
+mins: {Bureaucracy: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Indefinite
@@ -78,7 +78,7 @@ text: |
 id: bots
 name: "Blessing of True Synergy"
 cost: 10m, 1wp
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -105,7 +105,7 @@ text: |
 id: bbb
 name: "Bilateral Bargain>Binding"
 cost: 10m, 2wp
-mins: {Bureaucracy: 2, Ess: 3}
+mins: {Bureaucracy: 2, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Instant
@@ -145,7 +145,7 @@ text: |
 id: mom
 name: "Memorandum>of Misunderstanding"
 cost: 3m, 1wp
-mins: {Bureaucracy: 2, Ess: 2}
+mins: {Bureaucracy: 2, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
@@ -174,7 +174,7 @@ text: |
 id: mrp
 name: "Mission Restatement Process"
 cost: 6m, 1wp
-mins: {Bureaucracy: 3, Ess: 3}
+mins: {Bureaucracy: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Servitude]
 dur: Instant
@@ -214,7 +214,7 @@ text: |
 id: ln
 name: "Logistical Nightmare"
 cost: 6m, 1wp
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Social, War]
 dur: One day
@@ -258,7 +258,7 @@ text: |
 id: frf
 name: "Form Request Form"
 cost: 8m
-mins: {Bureaucracy: 4, Ess: 2}
+mins: {Bureaucracy: 4, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Form-type, Obvious]
 dur: One scene
@@ -287,7 +287,7 @@ text: |
 id: rcm
 name: "Record-Correction Maneuver"
 cost: 8m, 1wp or 12m
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Social, Compulsion]
 dur: Instant
@@ -323,7 +323,7 @@ text: |
 id: dbp
 name: "Decision-Bending Prana"
 cost: 8m, 1wp or 12m
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -355,7 +355,7 @@ text: |
 id: mu
 name: "Minor Usurpation"
 cost: 10m plus 2wp, or 15m plus 1wp
-mins: {Bureaucracy: 5, Ess: 4}
+mins: {Bureaucracy: 5, Essence: 4}
 type: [Supplemental]
 keys: [Combo-OK, Social, Illusion]
 dur: One scene
@@ -383,7 +383,7 @@ text: |
 id: bpp
 name: "Bandwagon Pedlar Ploy"
 cost: 6m, 1wp
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion]
 dur: Instant

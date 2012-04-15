@@ -16,7 +16,7 @@ text: |
 id: teo
 name: "Third Eye Open"
 cost: 1m
-mins: {Awareness: 3, Ess: 1}
+mins: {Awareness: 3, Essence: 1}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -33,7 +33,7 @@ text: |
 id: etu
 name: "Expect the Unexpected"
 cost: 4m
-mins: {Awareness: 3, Ess: 2}
+mins: {Awareness: 3, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 dur: Until next action
@@ -54,7 +54,7 @@ text: |
 id: gopd
 name: "Gaze of>Perfect Disregard"
 cost: 4m
-mins: {Awareness: 3, Ess: 3}
+mins: {Awareness: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -86,7 +86,7 @@ text: |
 id: hpp
 name: "Holographic>Perception Praxis"
 cost: 3m
-mins: {Awareness: 3, Ess: 2}
+mins: {Awareness: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene
@@ -120,7 +120,7 @@ text: |
 id: she
 name: "Sense-Hopping Excursion"
 cost: 4m
-mins: {Awareness: 3, Ess: 2}
+mins: {Awareness: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
@@ -159,7 +159,7 @@ text: |
 id: ufm
 name: "Unwavering Focus>Meditation"
 cost: 3m
-mins: {Awareness: 2, Ess: 2}
+mins: {Awareness: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
@@ -199,7 +199,7 @@ text: |
 id: sit
 name: "Sensory Insinuation Trick"
 cost: 6m, 1wp
-mins: {Awareness: 3, Ess: 3}
+mins: {Awareness: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
@@ -230,7 +230,7 @@ text: |
 id: tgob
 name: "The Gifts of Belief"
 cost: 8m, 1wp
-mins: {Awareness: 4, Ess: 4}
+mins: {Awareness: 4, Essence: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Shaping]
 dur: Special

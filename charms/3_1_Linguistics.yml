@@ -17,7 +17,7 @@ text: |
 id: zsd
 name: "Zero-Second>Duplication"
 cost: 5m
-mins: {Linguistics: 2, Ess: 1}
+mins: {Linguistics: 2, Essence: 1}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Indefinite
@@ -46,7 +46,7 @@ text: |
 id: eks
 name: "Everybody Knows Shapes"
 cost: 4m + 2m per other communicator
-mins: {Linguistics: 3, Ess: 2}
+mins: {Linguistics: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK, Obvious, Social]
 dur: One scene
@@ -72,7 +72,7 @@ text: |
 id: mm
 name: "Mondo Moment"
 cost: 3m
-mins: {Linguistics: 2, Ess: 2}
+mins: {Linguistics: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Compulsion, War]
 dur: Instant
@@ -103,7 +103,7 @@ text: |
 id: tbd
 name: "Turkey-Based Distraction"
 cost: 4m or 4m, 1wp
-mins: {Linguistics: 3, Ess: 3}
+mins: {Linguistics: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Social]
 dur: Instant
@@ -131,7 +131,7 @@ text: |
 id: ftt
 name: "Forked Tongue Technique"
 cost: 3m per action
-mins: {Linguistics: 3, Ess: 2}
+mins: {Linguistics: 3, Essence: 2}
 type: [Extra Action]
 keys: [Combo-OK, Obvious, Social, War]
 dur: Instant
@@ -153,7 +153,7 @@ text: |
 id: tti
 name: "Tongue-Twisting Impedition"
 cost: 3m; or 3m, 1wp
-mins: {Linguistics: 4, Ess: 3}
+mins: {Linguistics: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Social, Stackable, War]
 dur: Indefinite
@@ -206,7 +206,7 @@ text: |
 id: fwt
 name: "Fight With Tools"
 cost: (2m, plus 2m per dot of rating), 1wp
-mins: {Linguistics: 3, Ess: 3}
+mins: {Linguistics: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Illusion, Stackable]
 dur: One scene
@@ -280,7 +280,7 @@ text: |
 id: nac
 name: "Noetic Alignment>Concentration"
 cost: (2m or 2m, 1wp) plus distance
-mins: {Linguistics: 3, Ess: 3}
+mins: {Linguistics: 3, Essence: 3}
 type: [Simple, Speed 6, DV -3]
 keys: [Combo-OK, Social, War]
 dur: Instant
@@ -328,7 +328,7 @@ text: |
 id: lwalt
 name: "Letter-Without-A-Letter>Technique"
 cost: 6m, 1wp
-mins: {Linguistics: 4, Ess: 3}
+mins: {Linguistics: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Instant

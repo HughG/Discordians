@@ -19,7 +19,7 @@ text: |
 id: sos1
 name: "Softening of Suasion"
 cost: -- (+1wp)
-mins: {Presence: 1, Ess: 2}
+mins: {Presence: 1, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -40,7 +40,7 @@ text: |
 id: ppi
 name: "Personal Prestige>Insinuation"
 cost: 4m
-mins: {Presence: 3, Ess: 2}
+mins: {Presence: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -76,7 +76,7 @@ text: |
 id: mtm
 name: "Mantle-Trading Misdirection"
 cost: 8m, 1wp
-mins: {Presence: 3, Ess: 3}
+mins: {Presence: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion, Shaping, Touch]
 dur: Indefinite
@@ -113,7 +113,7 @@ text: |
 id: mlm
 name: "Mind-Luring Mien"
 cost: 3m
-mins: {Presence: 2, Ess: 2}
+mins: {Presence: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Compulsion, Obvious, Social]
 dur: (Essence) actions
@@ -140,7 +140,7 @@ text: |
 id: ipa
 name: "Instant Parley Agreement"
 cost: 3m
-mins: {Presence: 3, Ess: 2}
+mins: {Presence: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion, Emotion, War, Social]
 dur: One scene
@@ -185,7 +185,7 @@ text: |
 id: htt
 name: "Heart's Treasure Transposed"
 cost: 5m, 1wp
-mins: {Presence: 4, Ess: 3}
+mins: {Presence: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Compulsion, Social]
 dur: Indefinite
@@ -215,7 +215,7 @@ text: |
 id: ppp
 name: "Paralocative Presence Prana"
 cost: 8m, 1wp
-mins: {Presence: 4, Ess: 3}
+mins: {Presence: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic, Obvious, Shaping, Stackable]
 dur: Indefinite
@@ -264,7 +264,7 @@ text: |
 id: pma
 name: "Profile Minimization>Approach"
 cost: 4m
-mins: {Presence: 3, Ess: 3}
+mins: {Presence: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
 dur: One scene
@@ -295,7 +295,7 @@ text: |
 id: ewa
 name: "Epic Winning Attitude"
 cost: 3m
-mins: {Presence: 3, Ess: 2}
+mins: {Presence: 3, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Overdrive]
 dur: One scene
@@ -315,7 +315,7 @@ text: |
 id: opomt
 name: "One Plus One Makes Three"
 cost: 2m
-mins: {Presence: 2, Ess: 2}
+mins: {Presence: 2, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant

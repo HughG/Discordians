@@ -21,7 +21,7 @@ text: |
 id: scd
 name: "Short-Cut Draw"
 cost: 2m
-mins: {Melee: 2, Ess: 2}
+mins: {Melee: 2, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -50,7 +50,7 @@ text: |
 id: rss
 name: "Reflected Steel Stroke"
 cost: 4m
-mins: {Melee: 4, Ess: 2}
+mins: {Melee: 4, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 dur: Instant
@@ -74,7 +74,7 @@ text: |
 id: bbt
 name: "Breastplate Bypass Technique"
 cost: 4m
-mins: {Melee: 3, Ess: 3}
+mins: {Melee: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -104,7 +104,7 @@ text: |
 id: ebs
 name: "Elusive Blade Stroke"
 cost: 1m, 1wp
-mins: {Melee: 4, Ess: 3}
+mins: {Melee: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -127,7 +127,7 @@ text: |
 id: fcf
 name: "Foe-Cleaving Flow"
 cost: 5m, 1wp; or 7m, 1wp
-mins: {Melee: 5, Ess: 4}
+mins: {Melee: 5, Essence: 4}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -157,7 +157,7 @@ text: |
 id: baba
 name: "Branch and Brush>Armory"
 cost: 3m or 5m
-mins: {Melee: 1, Ess: 2}
+mins: {Melee: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: One scene
@@ -190,7 +190,7 @@ text: |
 id: soei
 name: "Sword of>Essential Idiosyncrasy"
 cost: 3m, 1wp
-mins: {Melee: 3, Ess: 3}
+mins: {Melee: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious]
 dur: One scene
@@ -243,7 +243,7 @@ text: |
 id: hrh
 name: "Hostility-Redirecting>Hocus"
 cost: 3m or 5m
-mins: {Melee: 3, Ess: 2}
+mins: {Melee: 3, Essence: 2}
 type: [Reflexive, Step 6]
 keys: [Combo-OK, Compulsion]
 dur: Instant
@@ -271,7 +271,7 @@ text: |
 id: ktt
 name: "Knockback Takeaway>Technique"
 cost: 4m
-mins: {Melee: 4, Ess: 2}
+mins: {Melee: 4, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 tags: [Flurry-Breaker]
@@ -303,7 +303,7 @@ text: |
 id: ama
 name: "Absent-Minded Absorption"
 cost: 5m or 5m, 1wp
-mins: {Melee: 4, Ess: 3}
+mins: {Melee: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
@@ -329,7 +329,7 @@ text: |
 id: spr
 name: "Shattered Pond Ripples"
 cost: 3m per attack; or 3m per attack, 1wp
-mins: {Melee: 4, Ess: 2}
+mins: {Melee: 4, Essence: 2}
 type: [Extra Action, Speed +1]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -362,7 +362,7 @@ text: |
 id: eoa
 name: "Excision of Awareness"
 cost: 5m, 1wp
-mins: {Melee: 4, Ess: 2}
+mins: {Melee: 4, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
 dur: One scene

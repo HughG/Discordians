@@ -17,7 +17,7 @@ text: |
 id: rri
 name: "Ripple-Reading Insight"
 cost: 2m
-mins: {Sail: 2, Ess: 2}
+mins: {Sail: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, War]
 dur: Instant
@@ -47,7 +47,7 @@ text: |
 id: wmi
 name: "Wave-Mind Intuition"
 cost: --
-mins: {Sail: 4, Ess: 2}
+mins: {Sail: 4, Essence: 2}
 type: [Permanent]
 keys: [Combo-OK, War]
 dur: Permanent
@@ -68,7 +68,7 @@ text: |
 id: fhh
 name: "Flotsam Half-Hitch"
 cost: 2m per hl; or 2m per hl, 1wp
-mins: {Sail: 2, Ess: 2}
+mins: {Sail: 2, Essence: 2}
 type: [Reflexive, Step 10 or Simple, Dramatic Action]
 keys: [Combo-OK, War]
 dur: Instant
@@ -99,7 +99,7 @@ text: |
 id: fs
 name: "Fantail Shimmy"
 cost: -- (+ 4m)
-mins: {Sail: 4, Ess: 2}
+mins: {Sail: 4, Essence: 2}
 type: [Permanent]
 keys: [Obvious, Touch, War]
 dur: Permanent
@@ -121,7 +121,7 @@ text: |
 id: sbtw
 name: "Sailing Between the Waves"
 cost: 7m, 1wp
-mins: {Sail: 4, Ess: 3}
+mins: {Sail: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping, War]
 dur: One scene
@@ -150,7 +150,7 @@ text: |
 id: siatm
 name: "Storm-In-A-Teacup>Method"
 cost: (Special)m, 1wp
-mins: {Sail: 3, Ess: 3}
+mins: {Sail: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Compulsion]
 dur: Indefinite
@@ -197,7 +197,7 @@ text: |
 id: sofd
 name: "Ship of Five Days"
 cost: 6m
-mins: {Sail: 4, Ess: 3}
+mins: {Sail: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
 dur: Five days
@@ -232,7 +232,7 @@ text: |
 id: cop
 name: "Convergence of Parallels"
 cost: 10m, (1wp per individual)
-mins: {Sail: 5, Ess: 4}
+mins: {Sail: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK]
 dur: One day
@@ -270,7 +270,7 @@ text: |
 id: bofb
 name: "Blessing of Five Bells"
 cost: -- (+ 3m, 1wp)
-mins: {Sail: 5, Ess: 4}
+mins: {Sail: 5, Essence: 4}
 type: [Permanent]
 keys: [Obvious, War]
 dur: Permanent

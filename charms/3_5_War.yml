@@ -20,7 +20,7 @@ text: |
 id: flt
 name: "Friends Like These"
 cost: 4m or 4m, 1wp
-mins: {War: 2, Ess: 2}
+mins: {War: 2, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Compulsion, Social, War]
 dur: Indefinite
@@ -52,7 +52,7 @@ text: |
 id: eomf
 name: "Enemy Of My Friend"
 cost: 6m, 1wp
-mins: {War: 3, Ess: 2}
+mins: {War: 3, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Illusion, Social, War]
 dur: Indefinite
@@ -87,7 +87,7 @@ text: |
 id: btt
 name: "Battlefield Taunt>Technique"
 cost: 3m
-mins: {War: 2, Ess: 1}
+mins: {War: 2, Essence: 1}
 type: [Supplemental]
 keys: [Combo-OK, War]
 dur: Instant
@@ -109,7 +109,7 @@ text: |
 id: bii
 name: "Battle Intelligence Instinct"
 cost: 4m, 1wp
-mins: {War: 4, Ess: 2}
+mins: {War: 4, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, War]
 dur: One scene
@@ -143,7 +143,7 @@ text: |
 id: prf
 name: "Perfect Rabble>Formation"
 cost: 3m
-mins: {War: 3, Ess: 2}
+mins: {War: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, War]
 dur: Instant
@@ -163,7 +163,7 @@ text: |
 id: mlws
 name: "Marching-Like-Water System"
 cost: 4m
-mins: {War: 3, Ess: 2}
+mins: {War: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, War]
 dur: One scene
@@ -185,7 +185,7 @@ text: |
 id: cmbf
 name: "Carrying-My-Brother>Formation"
 cost: 5m, 1wp
-mins: {War: 4, Ess: 3}
+mins: {War: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, War]
 dur: Indefinite
@@ -210,7 +210,7 @@ text: |
 id: bum
 name: "Bamboo Unbending>Maneuver"
 cost: 5m
-mins: {War: 4, Ess: 2}
+mins: {War: 4, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, War]
 dur: Instant
@@ -233,7 +233,7 @@ text: |
 id: sin
 name: "Strength in Numbers"
 cost: 6m; or 10m, 1wp
-mins: {War: 4, Ess: 3}
+mins: {War: 4, Essence: 3}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Shaping, Social, War]
 dur: One scene

@@ -21,7 +21,7 @@ text: |
 id: hmm
 name: "Holographic Memory>Modus"
 cost: 3m
-mins: {Lore: 2, Ess: 2}
+mins: {Lore: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -63,7 +63,7 @@ text: |
 id: wii
 name: "Wisp Interpolation Insights"
 cost: 4m
-mins: {Lore: 4, Ess: 2}
+mins: {Lore: 4, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -98,7 +98,7 @@ text: |
 id: enan
 name: "Each Name A Net"
 cost: 5m, 1wp
-mins: {Lore: 5, Ess: 3}
+mins: {Lore: 5, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
 dur: Instant
@@ -127,7 +127,7 @@ text: |
 id: sant
 name: "Self-as-Notebook>Technique"
 cost: 2m
-mins: {Lore: 2, Ess: 2}
+mins: {Lore: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Touch]
 dur: One scene
@@ -153,7 +153,7 @@ text: |
 id: rtc
 name: "Rewriting the Cover"
 cost: 10m, 1wp
-mins: {Lore: 3, Ess: 3}
+mins: {Lore: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping, Touch]
 dur: One scene
@@ -191,7 +191,7 @@ text: |
 id: rts
 name: "Rewriting the Spine"
 cost: -- (+1m per dot)
-mins: {Lore: 4, Ess: 4}
+mins: {Lore: 4, Essence: 4}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -215,7 +215,7 @@ text: |
 id: dlu
 name: "Dream Lotus Unfolding"
 cost: 5m, 1wp
-mins: {Lore: 4, Ess: 3}
+mins: {Lore: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Shaping, Stackable, Touch]
 dur: One scene
@@ -259,7 +259,7 @@ text: |
 id: asa
 name: "Anima-Swathing>Artifice"
 cost: 2m
-mins: {Lore: 1, Ess: 2}
+mins: {Lore: 1, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene
@@ -296,7 +296,7 @@ text: |
 id: erp
 name: "Essence Reflux Prana"
 cost: 2m plus 1m per 2 motes, 1wp
-mins: {Lore: 3, Ess: 2}
+mins: {Lore: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Obvious, Touch]
 dur: One scene

@@ -37,7 +37,7 @@ text: |
 id: malkuth
 name: "Ruler of Passions Nature (Malkuth)"
 cost: --
-mins: {Martial Arts: 1, Ess: 1}
+mins: {Martial Arts: 1, Essence: 1}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -76,7 +76,7 @@ text: |
 id: yesod
 name: "Abiding Foundation Stance (Yesod)"
 cost: 2+m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Reflexive, Step 10]
 keys: [Combo-OK]
 dur: Instant
@@ -102,7 +102,7 @@ text: |
 id: hod
 name: "Suffering-the-Wicked Stance (Hod)"
 cost: 3m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One action
@@ -137,7 +137,7 @@ text: |
 id: netzah
 name: "Firm Hand of Kindness (Netzah)"
 cost: 2m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Knockback]
 dur: Instant
@@ -168,7 +168,7 @@ text: |
 id: tiferet
 name: "Lotus Tree Form (Tiferet)"
 cost: 5m
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Simple]
 keys: [Form-type]
 dur: One scene
@@ -208,7 +208,7 @@ text: |
 id: gevurah
 name: "Righteous Judgement Mien (Gevurah)"
 cost: 4m
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Emotion]
 dur: (Essence) actions
@@ -238,7 +238,7 @@ text: |
 id: chesed
 name: "Spontaneous Oblation Strike (Chesed)"
 cost: 3m
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -265,7 +265,7 @@ text: |
 id: daat
 name: "Will-and-Wisdom Unity (Da'at)"
 cost: 5m, 1wp
-mins: {Martial Arts: 4, Ess: 3}
+mins: {Martial Arts: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic, Enlightening]
 dur: One scene
@@ -300,7 +300,7 @@ text: |
 id: binah
 name: "Untwining The Instant (Binah)"
 cost: 3m, 1wp
-mins: {Martial Arts: 5, Ess: 3}
+mins: {Martial Arts: 5, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -330,7 +330,7 @@ text: |
 id: chokhmah
 name: "Penetrating Insight Strike (Chokhmah)"
 cost: 3m, 1wp
-mins: {Martial Arts: 5, Ess: 3}
+mins: {Martial Arts: 5, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -358,7 +358,7 @@ text: |
 id: keter
 name: "Fist-and-Foe Unity (Keter)"
 cost: 5m, 1wp
-mins: {Martial Arts: 5, Ess: 4}
+mins: {Martial Arts: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Counterattack]
 dur: One scene

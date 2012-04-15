@@ -16,7 +16,7 @@ text: |
 id: eee
 name: "Erisian>Elemental Expression"
 cost: 3m, 1wp, plus 1m per level of effect
-mins: {Occult: 3, Ess: 3}
+mins: {Occult: 3, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -42,7 +42,7 @@ text: |
 id: sw
 name: "Spirit Whiskers"
 cost: 3m
-mins: {Occult: 2, Ess: 2}
+mins: {Occult: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
 dur: One scene
@@ -60,7 +60,7 @@ text: |
 id: ves
 name: "Voodoo Exchange Student"
 cost: 5m, 1wp
-mins: {Occult: 3, Ess: 3}
+mins: {Occult: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Shaping]
 dur: Instant
@@ -86,7 +86,7 @@ text: |
 id: etn
 name: "Ethereal Trawling Net"
 cost: 6m
-mins: {Occult: 5, Ess: 2}
+mins: {Occult: 5, Essence: 2}
 type: [Simple]
 keys: [None]
 dur: One scene
@@ -109,7 +109,7 @@ text: |
 id: asi
 name: "Anima-Suppressing>Intervention"
 cost: "2m per point of target's Essence rating"
-mins: {Occult: 4, Ess: 3}
+mins: {Occult: 4, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Shaping, Touch]
 dur: Instant
@@ -130,7 +130,7 @@ text: |
 id: rio
 name: "Ritual of Instant Ordination"
 cost: 10+m, 1wp
-mins: {Occult: 4, Ess: 3}
+mins: {Occult: 4, Essence: 3}
 type: [Simple]
 keys: [Shaping]
 dur: Indefinite
@@ -155,7 +155,7 @@ text: |
 id: cfp
 name: "Charm-Filching Prana"
 cost: 10m, 1wp
-mins: {Occult: 5, Ess: 4}
+mins: {Occult: 5, Essence: 4}
 type: [Simple]
 keys: [Shaping, Touch]
 dur: Indefinite
@@ -182,7 +182,7 @@ text: |
 id: rtm
 name: "Recasting the Mold"
 cost: 10m, 2wp
-mins: {Occult: 5, Ess: 4}
+mins: {Occult: 5, Essence: 4}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-Basic, Shaping, Touch]
 dur: Indefinite
@@ -227,7 +227,7 @@ text: |
 id: tss
 name: "Triangular Circle>Sorcery"
 cost: --
-mins: {Occult: 3, Ess: 3}
+mins: {Occult: 3, Essence: 3}
 type: [Permanent]
 keys: [None]
 dur: Instant
@@ -247,7 +247,7 @@ text: |
 id: sss
 name: "Square Circle>Sorcery"
 cost: --
-mins: {Occult: 4, Ess: 4}
+mins: {Occult: 4, Essence: 4}
 type: [Permanent]
 keys: [None]
 dur: Instant
@@ -265,7 +265,7 @@ text: |
 id: pss
 name: "Appropriation>of Adamantine Sorcery"
 cost: 10m, 1wp
-mins: {Occult: 5, Ess: 5}
+mins: {Occult: 5, Essence: 5}
 type: [Reflexive, Step 2]
 keys: [Combo-Basic]
 dur: Indefinite

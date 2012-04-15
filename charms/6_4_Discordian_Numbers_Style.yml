@@ -42,7 +42,7 @@ text: |
 id: malkhut
 name: "Malkhut"
 cost: --
-mins: {Martial Arts: 1, Ess: 1}
+mins: {Martial Arts: 1, Essence: 1}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -65,7 +65,7 @@ text: |
 id: yesod
 name: "Yesod"
 cost: 3m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene
@@ -94,7 +94,7 @@ text: |
 id: hod
 name: "Hod"
 cost: 3m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -119,7 +119,7 @@ text: |
 id: netzah
 name: "Netzah"
 cost: 3m
-mins: {Martial Arts: 2, Ess: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Knockback]
 dur: Instant
@@ -144,7 +144,7 @@ text: |
 id: tiferet
 name: "Tiferet"
 cost: 5m
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Simple]
 keys: [Form-type]
 dur: One scene
@@ -172,7 +172,7 @@ text: |
 id: gevurah
 name: "Gevurah"
 cost: 5m, 1wp
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Compulsion, Knockback]
 dur: (Essence) actions
@@ -206,7 +206,7 @@ text: |
 id: hesed
 name: "Hesed"
 cost: (1m per bhl or 2m per lhl), 1wp
-mins: {Martial Arts: 3, Ess: 3}
+mins: {Martial Arts: 3, Essence: 3}
 type: [Simple, Speed 3, DV -0]
 keys: [Combo-OK, Obvious]
 dur: Instant
@@ -228,7 +228,7 @@ text: |
 id: daat
 name: "Daat"
 cost: 6m, 1wp
-mins: {Martial Arts: 4, Ess: 4}
+mins: {Martial Arts: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-Basic, Enlightening]
 dur: One scene
@@ -269,7 +269,7 @@ text: |
 id: binah
 name: "Binah"
 cost: 7m, 1wp
-mins: {Martial Arts: 4, Ess: 4}
+mins: {Martial Arts: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-Basic, Counterattack]
 dur: One scene
@@ -297,7 +297,7 @@ text: |
 id: hokhmah
 name: "Hokhmah"
 cost: 8m, 1wp
-mins: {Martial Arts: 4, Ess: 4}
+mins: {Martial Arts: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-Basic, Shaping]
 dur: One scene
@@ -334,7 +334,7 @@ text: |
 id: keter
 name: "Keter"
 cost: --
-mins: {Martial Arts: 5, Ess: 5}
+mins: {Martial Arts: 5, Essence: 5}
 type: [Permanent]
 keys: [None]
 dur: Permanent

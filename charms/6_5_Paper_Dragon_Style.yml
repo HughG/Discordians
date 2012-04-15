@@ -106,7 +106,7 @@ text: |
 id: pdc
 name: "Paper Dragon Coils"
 cost: 2m
-mins: {Bureaucracy: 3, Ess: 3}
+mins: {Bureaucracy: 3, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -167,7 +167,7 @@ text: |
 id: pdk
 name: "Paper Dragon Claws"
 cost: 2m
-mins: {Bureaucracy: 3, Ess: 3}
+mins: {Bureaucracy: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -189,7 +189,7 @@ text: |
 id: pds
 name: "Paper Dragon Scales"
 cost: 2m
-mins: {Bureaucracy: 3, Ess: 3}
+mins: {Bureaucracy: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Stackable]
 dur: One scene
@@ -225,7 +225,7 @@ text: |
 id: tpfp
 name: "Threefold Paper Fan Process"
 cost: 3m per action; or 3m per action, 1wp
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Extra Action]
 keys: [Combo-OK]
 dur: Instant or Indefinite
@@ -256,7 +256,7 @@ text: |
 id: crk
 name: "Contract-Rending Claws"
 cost: 4m, 1wp
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -289,7 +289,7 @@ text: |
 id: pdf
 name: "Paper Dragon Form"
 cost: 
-mins: {Bureaucracy: 4, Ess: 3}
+mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Form-type, Social]
 dur: One scene
@@ -311,7 +311,7 @@ text: |
 id: rcm
 name: "Record-Correction Maneuver"
 cost: 8m, 1wp
-mins: {Bur: 4, Ess: 3}
+mins: {Bur: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Illusion]
 dur: Instant
@@ -359,7 +359,7 @@ text: |
 id: dbp
 name: "Decision-Bending Prana"
 cost: 8m, 1wp
-mins: {Bur: 4, Ess: 3}
+mins: {Bur: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social, Compulsion]
 dur: Instant

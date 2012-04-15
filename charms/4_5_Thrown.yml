@@ -47,7 +47,7 @@ text: |
 id: sts
 name: "Shadow-Throwing Style"
 cost: X
-mins: {Thrown: 3, Ess: 3}
+mins: {Thrown: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
@@ -117,7 +117,7 @@ text: |
 id: bpp
 name: "Butterfly Pinion Pitch"
 cost: 6m
-mins: {Thrown: 3, Ess: 2}
+mins: {Thrown: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion]
 dur: One scene

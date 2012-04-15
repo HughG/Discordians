@@ -17,7 +17,7 @@ text: |
 id: oct
 name: "Occulted Cargo Trick"
 cost: 2m, or 2m, 1wp
-mins: {Larceny: 3, Ess: 2}
+mins: {Larceny: 3, Essence: 2}
 type: [Simple, Speed 5]
 keys: [Combo-OK]
 dur: Indefinite
@@ -48,7 +48,7 @@ text: |
 id: rpt
 name: "Ragged Pocket Trick"
 cost: 6m
-mins: {Larceny: 5, Ess: 3}
+mins: {Larceny: 5, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -84,7 +84,7 @@ text: |
 id: wh
 name: "Wormhole Handshake"
 cost: 4m, 1wp
-mins: {Larceny: 4, Ess: 3}
+mins: {Larceny: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Shaping]
 dur: Instant
@@ -110,7 +110,7 @@ text: |
 id: nrm
 name: "Notion Relocation>Method"
 cost: 5m
-mins: {Larceny: 3, Ess: 3}
+mins: {Larceny: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -167,7 +167,7 @@ text: |
 id: iii
 name: "Instant Image Improvisation"
 cost: 3m
-mins: {Larceny: 3, Ess: 2}
+mins: {Larceny: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -187,7 +187,7 @@ text: |
 id: ftk
 name: "Flawless Transfiguration>Knack"
 cost: 4m
-mins: {Larceny: 3, Ess: 2}
+mins: {Larceny: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -217,7 +217,7 @@ text: |
 id: icc
 name: "Inhuman Countenance>Construction"
 cost: 3m, 1wp
-mins: {Larceny: 4, Ess: 3}
+mins: {Larceny: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -242,7 +242,7 @@ text: |
 id: it
 name: "Identity Theft"
 cost: 10m, 1wp
-mins: {Larceny: 5, Ess: 4}
+mins: {Larceny: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Touch]
 dur: Indefinite
@@ -287,7 +287,7 @@ text: |
 id: vav
 name: "Value-Adding Veneer"
 cost: 4m
-mins: {Larceny: 3, Ess: 3}
+mins: {Larceny: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion, Emotion]
 dur: Indefinite

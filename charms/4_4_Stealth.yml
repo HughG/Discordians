@@ -22,7 +22,7 @@ text: |
 id: hipsa
 name: "Hidden in Plain Sight>Attitude"
 cost: 4m
-mins: {Stealth: 2, Ess: 2}
+mins: {Stealth: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
@@ -61,7 +61,7 @@ text: |
 id: ceop
 name: "Conceal Evidence>of Passage???"
 cost: xxx
-mins: {Stealth: 3, Ess: 2}
+mins: {Stealth: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Indefinite
@@ -81,7 +81,7 @@ text: |
 id: sse
 name: "Standing Somewhere Else"
 cost: 6m, 1wp
-mins: {Stealth: 4, Ess: 3}
+mins: {Stealth: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic]
 dur: Indefinite
@@ -140,7 +140,7 @@ text: |
 id: hioo
 name: "Hide Importance>of Object???"
 cost: 3m
-mins: {Stealth: 3, Ess: 2}
+mins: {Stealth: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Illusion, Stackable, Touch]
 dur: Indefinite
@@ -192,7 +192,7 @@ text: |
 id: ywt
 name: "Yeddim Whitewash Trick"
 cost: 4m, 1wp
-mins: {Stealth: 3, Ess: 3}
+mins: {Stealth: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, War]
 dur: Indefinite
@@ -234,7 +234,7 @@ text: |
 id: erd
 name: "Extend Recumbent Destiny???"
 cost: xxx
-mins: {Stealth: 4, Ess: 3}
+mins: {Stealth: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 dur: Indefinite
@@ -255,7 +255,7 @@ text: |
 id: hfr
 name: "Hiding From Reality???"
 cost: 10m
-mins: {Stealth: 4, Ess: 3}
+mins: {Stealth: 4, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Shaping]
 dur: Indefinite
@@ -274,7 +274,7 @@ text: |
 id: hsag
 name: "Hide Self as Group???"
 cost: xxx
-mins: {Stealth: 4, Ess: 4}
+mins: {Stealth: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 dur: Indefinite
@@ -292,7 +292,7 @@ text: |
 id: dcp
 name: "Deep Cover Persona???"
 cost: 10m, 2wp
-mins: {Stealth: 5, Ess: 4}
+mins: {Stealth: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable]
 dur: Indefinite

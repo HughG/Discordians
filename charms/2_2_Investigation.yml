@@ -17,7 +17,7 @@ text: |
 id: iai
 name: "Instant Assembly>of Impressions"
 cost: 4m
-mins: {Investigation: 2, Ess: 1}
+mins: {Investigation: 2, Essence: 1}
 type: [Simple, Speed 1, DV -0]
 keys: [Combo-OK, Stackable]
 dur: Indefinite
@@ -47,7 +47,7 @@ text: |
 id: erm
 name: "Evidence Reweaving Method"
 cost: 3m
-mins: {Investigation: 3, Ess: 2}
+mins: {Investigation: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -86,7 +86,7 @@ text: |
 id: roi
 name: "Refuge>of Intransigence"
 cost: 3m or 6m
-mins: {Investigation: 3, Ess: 2}
+mins: {Investigation: 3, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Social, Stackable]
 dur: One scene
@@ -125,7 +125,7 @@ text: |
 id: eft
 name: "Even False Things"
 cost: 3m
-mins: {Investigation: 3, Ess: 2}
+mins: {Investigation: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Illusion, Social, Stackable]
 dur: Indefinite
@@ -161,7 +161,7 @@ text: |
 id: rtsc
 name: "Reading>the Soul's Compass"
 cost: 5m
-mins: {Investigation: 4, Ess: 2}
+mins: {Investigation: 4, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -185,7 +185,7 @@ text: |
 id: stt
 name: "Sifting Through Tells"
 cost: 5m
-mins: {Investigation: 4, Ess: 3}
+mins: {Investigation: 4, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Social]
 dur: One scene
@@ -214,7 +214,7 @@ text: |
 id: pds
 name: "Pattern-Disturbance Sense"
 cost: 4m
-mins: {Investigation: 3, Ess: 2}
+mins: {Investigation: 3, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant
@@ -240,7 +240,7 @@ text: |
 id: kna
 name: "Knot and Needle Awareness"
 cost: 6m
-mins: {Investigation: 4, Ess: 3}
+mins: {Investigation: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -284,7 +284,7 @@ text: |
 id: nacm
 name: "Needle As Compass Method"
 cost: 5m, 1wp
-mins: {Investigation: 4, Ess: 4}
+mins: {Investigation: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable, Touch]
 dur: Indefinite
@@ -313,7 +313,7 @@ text: |
 id: lla
 name: "Ladder and Loophole>Awareness"
 cost: 8m, 1wp
-mins: {Investigation: 4, Ess: 4}
+mins: {Investigation: 4, Essence: 4}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene

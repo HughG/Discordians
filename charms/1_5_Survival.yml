@@ -20,7 +20,7 @@ text: |
 id: dbr
 name: "Dancing Between Raindrops"
 cost: 3m
-mins: {Survival: 2, Ess: 2}
+mins: {Survival: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -37,7 +37,7 @@ text: |
 id: wotch
 name: "Way of the Cloven Hoofprint"
 cost: 3m
-mins: {Survival: 3, Ess: 2}
+mins: {Survival: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -59,7 +59,7 @@ text: |
 id: am
 name: "Animal Magnetism"
 cost: 3m
-mins: {Survival: 2, Ess: 3}
+mins: {Survival: 2, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
@@ -84,7 +84,7 @@ text: |
 id: bib
 name: "Bathing in Brimstone"
 cost: 5m
-mins: {Survival: 3, Ess: 4}
+mins: {Survival: 3, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Stackable, Obvious]
 dur: One scene
@@ -113,7 +113,7 @@ text: |
 id: fafa
 name: "Fang-And-Feather Aura"
 cost: 4m
-mins: {Survival: 3, Ess: 3}
+mins: {Survival: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
@@ -144,7 +144,7 @@ text: |
 id: teims
 name: "The Earth is My Sheepdog"
 cost: 4m + 1wp
-mins: {Survival: 3, Ess: 3}
+mins: {Survival: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Shaping]
 dur: One scene
@@ -182,7 +182,7 @@ text: |
 id: lwra
 name: "Living-With-Rocks Approach"
 cost: 6m + 1wp
-mins: {Survival: 4, Ess: 4}
+mins: {Survival: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 dur: Indefinite
@@ -220,7 +220,7 @@ text: |
 id: witd
 name: "Whistling>in the Darkness"
 cost: 8m + 1wp
-mins: {Survival: 3, Ess: 3}
+mins: {Survival: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Indefinite
@@ -256,7 +256,7 @@ text: |
 id: monu
 name: "Mantra of Necessary Union"
 cost: 4m + 1wp
-mins: {Survival: 4, Ess: 4}
+mins: {Survival: 4, Essence: 4}
 type: [Reflexive]
 keys: [Combo-OK, Servitude]
 dur: Indefinite (Special)

@@ -18,7 +18,7 @@ text: |
 id: eif
 name: "Emptiness is Form"
 cost: 2m
-mins: {Martial Arts: 3, Ess: 1}
+mins: {Martial Arts: 3, Essence: 1}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -36,7 +36,7 @@ text: |
 id: ff
 name: "Formless Form"
 cost: -- (+1wp)
-mins: {Martial Arts: 4, Ess: 2}
+mins: {Martial Arts: 4, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -64,7 +64,7 @@ text: |
 id: fie
 name: "Form is Emptiness"
 cost: 3m
-mins: {Martial Arts: 4, Ess: 3}
+mins: {Martial Arts: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Obvious]
 dur: One action

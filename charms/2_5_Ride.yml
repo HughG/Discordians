@@ -16,7 +16,7 @@ text: |
 id: iss
 name: "Instinctive Stallion Sympathy"
 cost: --
-mins: {Ride: 2, Ess: 2}
+mins: {Ride: 2, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
@@ -37,7 +37,7 @@ text: |
 id: mpt
 name: "Mount-Promoting>Touch"
 cost: 3m or 3m, 1wp
-mins: {Ride: 3, Ess: 3}
+mins: {Ride: 3, Essence: 3}
 type: [Simple]
 keys: [Touch]
 dur: One scene or Indefinite
@@ -64,7 +64,7 @@ text: |
 id: brw
 name: "Border-Riding Ward"
 cost: 5m, 1wp
-mins: {Ride: 4, Ess: 3}
+mins: {Ride: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Indefinite
@@ -110,7 +110,7 @@ text: |
 id: prm
 name: "Pigeon Rehoming>Method"
 cost: 5m, 1wp
-mins: {Ride: 1, Ess: 2}
+mins: {Ride: 1, Essence: 2}
 type: [Simple]
 keys: [Compulsion]
 dur: Instant
@@ -156,7 +156,7 @@ text: |
 id: hal
 name: "Horseshoe Affinity Lure"
 cost: -- (+3m)
-mins: {Ride: 3, Ess: 3}
+mins: {Ride: 3, Essence: 3}
 type: [Permanent]
 keys: [Compulsion]
 dur: Permanent
@@ -182,7 +182,7 @@ text: |
 id: ems
 name: "Eager Mount Spirit"
 cost: 2m
-mins: {Ride: 2, Ess: 2}
+mins: {Ride: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Touch]
 dur: Instant
@@ -203,7 +203,7 @@ text: |
 id: ssa
 name: "Soaring Steed Attitude"
 cost: 6m, 1wp
-mins: {Ride: 5, Ess: 3}
+mins: {Ride: 5, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Touch]
 dur: One scene
@@ -229,7 +229,7 @@ text: |
 id: hup
 name: "Horse-Unification Posture"
 cost: 8m, 1wp
-mins: {Ride: 4, Ess: 4}
+mins: {Ride: 4, Essence: 4}
 type: [Simple]
 keys: [Touch, Obvious]
 dur: Indefinite

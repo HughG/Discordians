@@ -50,7 +50,10 @@ def insert_charm(out, section_name, charms, charm)
     # out.puts(" +")
   end
   out.puts
-  out.puts("#{charm.text}")
+  # We never want explict line breaks in Charm text, so automagically escape
+  # any '+' at the end of a line.
+  fixed_text = charm.text.gsub(/\+\s*$/,'&#x2b;')
+  out.puts(fixed_text)
   out.puts
 end
 

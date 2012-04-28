@@ -298,8 +298,9 @@ def draw_layout(charms, layout, outfilename)
     doc = Document.new
     doc << XMLDecl.new("1.0", "utf-8")
     doc << DocType.new("svg", 'PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd"')
+    # Add 1mm to height and width to avoid clipping of right-/bottom-most pixels
     width = (CB_WIDTH * CB_COLUMNS) + (CB_HORIZ_GAP * (CB_COLUMNS - 1)) + 1
-    height = (CB_HEIGHT * cb_rows) + (CB_VERT_GAP * (cb_rows - 1))
+    height = (CB_HEIGHT * cb_rows) + (CB_VERT_GAP * (cb_rows - 1)) + 1
     view_box = [-1, -1, width + 1, height + 1]
     svg = doc.add_element "svg", {
       "width" => (width + 2).to_s + "mm",
@@ -316,8 +317,13 @@ def draw_layout(charms, layout, outfilename)
     for row in 0..(cb_rows - 1)
       # TODO 2012-04-13 HUGR: Check for >3 columns
       for col in 0..2
-        charm = charms[layout.grid[row][col]]
-        next if charm == nil
+        charm_id = layout.grid[row][col]
+        next if charm_id == nil
+        charm = charms[charm_id]
+        if charm == nil
+          $stderr << "No charm matching id #{charm_id}\n"
+          exit(-1)
+        end
 
         x = col * (CB_WIDTH + CB_HORIZ_GAP)
         y = row * (CB_HEIGHT + CB_VERT_GAP)

@@ -22,11 +22,12 @@ keys: [Combo-OK]
 dur: Instant
 deps: []
 text: |
-  The phrase, "I didn't do it!", is a blunt and blatant excuse which
+
+  The phrase, ``I didn't do it!'', is a blunt and blatant excuse which
   captures the essence of all excuses, and with just the right amount of charm
-  it can be made to work.  By activating this particular Charm, the Unhinged are
-  able to prevent a counterattack taking place.  This is not a defence against
-  the attack, rather it removes the character as a valid target for a
+  it can be made to work.  By activating this particular Charm, the Unhinged
+  are able to prevent a counterattack taking place.  This is not a defence
+  against the attack, rather it removes the character as a valid target for a
   counterattack.  Thus the attacker will not waste any motes or other
   expenditure on their counterattack.  Also, it means that this Charm avoids
   perfect attacks made as part of a counterattack.
@@ -41,14 +42,15 @@ keys: [Combo-OK, Touch, Counterattack]
 dur: Instant
 deps: []
 text: |
+
   Those who throw themselves at the Foolish Sages may find themselves the
   greater fools.  A character may employ this Charm whenever he uses his Dodge
   DV against an attack, successfully or not, provided the opponent is within
   touching distance.  This is assumed to be true unless the attack was ranged,
-  or used a weapon with the "R" (Reach) tag.  A momentary magical redistribution
-  of forces gives the attacker a penalty of -(character's Essence) to his Dodge
-  DV until his next action, and a -1 external penalty on his next attack roll
-  (but not damage roll).
+  or used a weapon with the ``R'' (Reach) tag.  A momentary magical
+  redistribution of forces gives the attacker a penalty of -(character's
+  Essence) to his Dodge DV until his next action, and a -1 external penalty on
+  his next attack roll (but not damage roll).
   
 --- !Charm
 id: hpf
@@ -60,9 +62,10 @@ keys: [Combo-OK, Compulsion]
 dur: Instant
 deps: [aci, cf]
 text: |
-  Surely, those who bring true understanding of the nature of things
-  should not be hated, but loved?  This Charm convinces an attacker, at least on
-  an unconscious level, that the Priestess of Eris is not worthy of their ire;
+
+  Surely, those who bring true understanding of the nature of things should
+  not be hated, but loved?  This Charm convinces an attacker, at least on an
+  unconscious level, that the Priestess of Eris is not worthy of their ire;
   but, there being a need for balance in all things, someone else has to take
   the fall.  If the character attempts to dodge an attack and fails, she may
   activate this Charm to cause the attack to be re-rolled against any other
@@ -82,11 +85,12 @@ keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [hpf]
 text: |
-  Rather than bother attempting to convince his enemy of his
-  righteousness, a powerful Discordian will simply convince the fabric of
-  reality to believe him.  This Charm rearranges the moment to provide a dodge
-  which perfectly defends against any attack, even if it is undodgeable.  This
-  Charm has one of the Four Flaws of Invulnerability.
+
+  Rather than bother attempting to convince his enemy of his righteousness, a
+  powerful Discordian will simply convince the fabric of reality to believe
+  him.  This Charm rearranges the moment to provide a dodge which perfectly
+  defends against any attack, even if it is undodgeable.  This Charm has one
+  of the Four Flaws of Invulnerability.
 
   *[TODO: Should Erisians have the same Flaws as Solars, or something
    different?]*
@@ -105,15 +109,16 @@ keys: [Combo-OK, Illusion, Obvious]
 dur: Until next action
 deps: [exc, aci]
 text: |
-  Not everything can be done with smoke and mirrors, but they come in
-  handy in a pinch.  With this Charm, the Foolish Sage appears to split into a
-  number of smoky, slightly translucent copies of himself, equal to (his
-  permanent Essence).  The attacker must roll his (Perception + [attack
-  Ability]) against the character's ([Manipulation or Wits] + Dodge) at Step 10
-  of the attack.  Failure means that she struck one of the smoky duplicates
-  instead, which immediately vanishes.  For a flurry or multiple attack
-  sequence, or for multiple attackers, each action requires a separate roll to
-  succeed, and will eliminate a separate duplicate if it fails.
+
+  Not everything can be done with smoke and mirrors, but they come in handy in
+  a pinch.  With this Charm, the Foolish Sage appears to split into a number
+  of smoky, slightly translucent copies of himself, equal to (his permanent
+  Essence).  The attacker must roll his (Perception + [attack Ability])
+  against the character's ([Manipulation or Wits] + Dodge) at Step 10 of the
+  attack.  Failure means that she struck one of the smoky duplicates instead,
+  which immediately vanishes.  For a flurry or multiple attack sequence, or
+  for multiple attackers, each action requires a separate roll to succeed, and
+  will eliminate a separate duplicate if it fails.
   
   At any point the attacker may spend a point of Willpower to ignore the
   Illusion, after which no further rolls are required.  Similarly, if all the
@@ -122,9 +127,9 @@ text: |
   disappear.
   
   Perfect attacks against a single target are affected by this Charm -- the
-  attacker may perfectly hit the wrong target, depending on the roll.  However,
-  area effects, environmental hazards and ongoing sources of damage such as
-  poison are not affected.
+  attacker may perfectly hit the wrong target, depending on the roll.
+  However, area effects, environmental hazards and ongoing sources of damage
+  such as poison are not affected.
 
   *[TODO 2011-01-03 HUGR: RWG says this is a bit over-powerful - or, hard to
   tell how powerful it is.  For evenly-match traits, it means you avoid (Ess /
@@ -145,11 +150,12 @@ keys: [Combo-OK]
 dur: Until next action
 deps: [samt]
 text: |
+
   Erisians laugh in the face of danger (or sometimes behind its back), and
-  laugh all the louder when it comes from all sides.  This Charm is used against
-  coordinated attacks, multiple attacks and flurries.  Until his next action,
-  penalties to the character's DV from coordinated attacks or onslaught instead
-  become bonuses, for the purposes of dodging.
+  laugh all the louder when it comes from all sides.  This Charm is used
+  against coordinated attacks, multiple attacks and flurries.  Until his next
+  action, penalties to the character's DV from coordinated attacks or
+  onslaught instead become bonuses, for the purposes of dodging.
   
   If hemmed in by multiple opponents, possibly in combination with restrictive
   terrain, the character replaces the usual -2 DV penalty with a +2 DV bonus.
@@ -170,16 +176,17 @@ keys: [Combo-OK]
 dur: One scene
 deps: [vmn]
 text: |
-  Some of the most powerful Mid-day Shadows go even futher in turning
-  their enemies' hostility against them.  *[TODO: more fluff]*
+
+  Some of the most powerful Mid-day Shadows go even futher in turning their
+  enemies' hostility against them.  *[TODO: more fluff]*
   
   This Charm extends the effects of Villain Multiplication Nature to a whole
-  scene.  In addition, if the character tries but fails to dodge a single attack
-  (i.e., without a flurry or multiple attack effect) from a single opponent, he
-  gains a +1 bonus to Dodge DV until the end of the scene.  This bonus
-  accumulates from action to action, and remains until the scene ends.  As with
-  the prerequisite Charm, area, environmental and undodgeable attacks are not
-  included (unless by some other Charm in a Combo).
+  scene.  In addition, if the character tries but fails to dodge a single
+  attack (i.e., without a flurry or multiple attack effect) from a single
+  opponent, he gains a +1 bonus to Dodge DV until the end of the scene.  This
+  bonus accumulates from action to action, and remains until the scene ends.
+  As with the prerequisite Charm, area, environmental and undodgeable attacks
+  are not included (unless by some other Charm in a Combo).
   
 --- !Charm
 id: gss
@@ -191,13 +198,15 @@ keys: [Combo-Basic, Counterattack]
 dur: Instant
 deps: [exc]
 text: |
-  TODO.
+
+  TODO
   
   This Charm allows the Unhinged to instantly transport herself for a short
-  distance, if she has used her Dodge DV to respond to an attack.  The distance
-  is determined by rolling the charcter's [Wits + Dodge] and multiplying the
-  successes by her normal Move distance.  This movement happens instantly, going
-  via Elsewhere, but uses up the character's Move action.
+  distance, if she has used her Dodge DV to respond to an attack.  The
+  distance is determined by rolling the charcter's [Wits + Dodge] and
+  multiplying the successes by her normal Move distance.  This movement
+  happens instantly, going via Elsewhere, but uses up the character's Move
+  action.
   
   The character can choose the direction of movement but must travel the full
   distance rolled, and must know (or at least firmly believe) that there is a
@@ -205,15 +214,15 @@ text: |
   suffice, if she might reasonably be able to swim, though acid normally would
   not.  There need not be a clear path to the endpoint, and indeed this Charm
   can move the character through solid walls etc.  Intentional movement into
-  midair is not possible, although it might happen accidentally if the character
-  is mistaken in her beliefs about the terrain.
+  midair is not possible, although it might happen accidentally if the
+  character is mistaken in her beliefs about the terrain.
   
   This Charm cannot be used except when dodging, and does not by itself defend
   against perfect or undodgeable attacks.  It is perfectly acceptable to use
   this Charm to appear behind an opponent.  The movement is as silent as it is
   instant, so an unexpected attack on the next action may be possible.  This
-  Charm is resolved as a Counterattack, even though it is not hostile; it cannot
-  be used with a counterattack and it reduces the character's DV by 1.
+  Charm is resolved as a Counterattack, even though it is not hostile; it
+  cannot be used with a counterattack and it reduces the character's DV by 1.
   
 --- !Charm
 id: mse
@@ -225,21 +234,22 @@ keys: [Combo-Basic, War]
 dur: Permanent
 deps: [gss]
 text: |
+
   Discordians often work alone, but friends are important, too.
   
   This Charm upgrades its prerequisite, allowing the Unhinged to apply it to a
   group of beings (or like-sized objects) up to (character's Essence) in
-  Magnitude.  The group need not be a pre-existing unit, but it must include the
-  character.  Unwilling targets may choose to remain where they are.  Used in
-  this fashion, the Charm cost increases by one point of Willpower, plus 3 motes
-  per dot of Magnitude of the group.
+  Magnitude.  The group need not be a pre-existing unit, but it must include
+  the character.  Unwilling targets may choose to remain where they are.  Used
+  in this fashion, the Charm cost increases by one point of Willpower, plus 3
+  motes per dot of Magnitude of the group.
   
-  The distance in this case determined by rolling the charcter's [Wits + Dodge]
-  and multiplying the successes by her normal Dash (not Move) distance.  The
-  Charm can only be applied in response to an attack on (or an area attack which
-  includes) any member of the group, and only when it would be valid for the
-  character herself (who may not be the actual target) to try to dodge the
-  attack.  The group must travel the full distance, and the distance is measured
-  from the outside of the group, not its centre.
+  The distance in this case determined by rolling the charcter's [Wits +
+  Dodge] and multiplying the successes by her normal Dash (not Move) distance.
+  The Charm can only be applied in response to an attack on (or an area attack
+  which includes) any member of the group, and only when it would be valid for
+  the character herself (who may not be the actual target) to try to dodge the
+  attack.  The group must travel the full distance, and the distance is
+  measured from the outside of the group, not its centre.
   
 ...

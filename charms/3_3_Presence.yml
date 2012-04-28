@@ -27,14 +27,15 @@ deps: []
 reviews:
 - 
 text: |
+
   TODO
   
-  When activating any Charm or Combo which applies unnatural mental influence to
-  its target, the character can pay an additional point of Willpower to remove
-  the unnatural quality, though any specific keywords remain.  Doing this allows
-  the character to reduce her Hodge rating by one point, to a minimum of zero,
-  regardless of whether or not the target expends Willpower to reduce the
-  natural mental influence.
+  When activating any Charm or Combo which applies unnatural mental influence
+  to its target, the character can pay an additional point of Willpower to
+  remove the unnatural quality, though any specific keywords remain.  Doing
+  this allows the character to reduce her Hodge rating by one point, to a
+  minimum of zero, regardless of whether or not the target expends Willpower
+  to reduce the natural mental influence.
   
 --- !Charm
 id: ppi
@@ -48,21 +49,22 @@ deps: []
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
-  This Charm supplements a Presence-based social attack to cause its targets to
-  believe that the Overseer has a certain level of authority, making it
+  This Charm supplements a Presence-based social attack to cause its targets
+  to believe that the Overseer has a certain level of authority, making it
   undodgeable and adding his Essence in automatic successes.  Note that this
   Charm does not involve unnatural mental influence.
   
   The attack targets all who can perceive him, even if they do not share a
-  common language.  The authority is asserted in relation to personal power and
-  skill, rather than any formal hierarchy.  Thus, he may claim to be a seasoned
-  general, but not to currently command a specific force.  Also, the Charm does
-  not convey any particular identity, so attempts to impersonate someone may
-  require further disguise.  At the end of the scene, affected targets are free
-  to change their mind about the character but they will not necessarily do so
-  unless he acts out of line with his purported authority.
+  common language.  The authority is asserted in relation to personal power
+  and skill, rather than any formal hierarchy.  Thus, he may claim to be a
+  seasoned general, but not to currently command a specific force.  Also, the
+  Charm does not convey any particular identity, so attempts to impersonate
+  someone may require further disguise.  At the end of the scene, affected
+  targets are free to change their mind about the character but they will not
+  necessarily do so unless he acts out of line with his purported authority.
   
   His position can be defined in relation to those present and to any other
   individuals he mentions, assuming the targets have a sense of those
@@ -84,30 +86,32 @@ deps: [exc, ppi]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
   This Charm allows the Erisian to exchange his current air of personal
-  authority with that of its target.  If the target is unwilling, the character
-  must treat this Charm as an undodgeable Presence-based social attack (which
-  still requires touch).  If the attack succeeds, or the target was willing in
-  the first place, both parties radiate an Illusion effect which causes those
-  who encounter them to treat them as if each had the personal authority of the
-  other.  Witnesses will tend to follow instructions and believe statements of
-  prowess accordingly, noting that the authority is in personal terms, rather
-  than that of a formal hierarchy.  The exchanged authority is based on what
-  onlookers knew or sensed about the two affected parties at the time the Charm
-  was activated, which may or may not have been a reflection of their true
-  status.  This illusion may be resisted for a scene by spending a point of
-  Willpower, and an observer who spends three points is no longer subject to the
-  illusion for that Charm activation.  Since this Charm's duration may be longer
-  than a single scene, the character may gain more than one point of Hodge over
-  its course, from witnesses resisting the Illusion.
+  authority with that of its target.  If the target is unwilling, the
+  character must treat this Charm as an undodgeable Presence-based social
+  attack (which still requires touch).  If the attack succeeds, or the target
+  was willing in the first place, both parties radiate an Illusion effect
+  which causes those who encounter them to treat them as if each had the
+  personal authority of the other.  Witnesses will tend to follow instructions
+  and believe statements of prowess accordingly, noting that the authority is
+  in personal terms, rather than that of a formal hierarchy.  The exchanged
+  authority is based on what onlookers knew or sensed about the two affected
+  parties at the time the Charm was activated, which may or may not have been
+  a reflection of their true status.  This illusion may be resisted for a
+  scene by spending a point of Willpower, and an observer who spends three
+  points is no longer subject to the illusion for that Charm activation.
+  Since this Charm's duration may be longer than a single scene, the character
+  may gain more than one point of Hodge over its course, from witnesses
+  resisting the Illusion.
   
   Separately from the Illusion effect, the two have their Presence ratings and
-  specialties exchanged for the purpose of any dice rolls, though not for other
-  purposes such as Charm minimums.  In addition, the target may use any of the
-  character's Presence Excellencies, if he or she is able to use Charms.  This
-  aspect of the Charm is a Shaping effect.
+  specialties exchanged for the purpose of any dice rolls, though not for
+  other purposes such as Charm minimums.  In addition, the target may use any
+  of the character's Presence Excellencies, if he or she is able to use
+  Charms.  This aspect of the Charm is a Shaping effect.
   
 --- !Charm
 id: mlm
@@ -123,18 +127,20 @@ reviews:
 updates:
 - 2012-01-13 HG: Added natural Compulsion
 text: |
+
   TODO
   
   When this Charm is activated, all creatures who can perceive the Erisian
   Knight find his presence so overwhelming and intrusive that they find it
-  difficult to ignore him.  The character rolls (an appropriate Social Attribute
-  + Presence) and compares it to the MDV of each onlooker.  Any whose MDV is
-  exceeded by this total suffer a natural mental influence which applies a -2
-  external penalty to all actions whose focus does not include the character,
-  for the duration of the Charm.  Targets will instinctively realise that it
-  will be easier to interact with the character than to ignore him.  However, if
-  a target succeeds at an action which excludes the character, the penalty drops
-  to -1.  This Charm may be used in both combat and social situations.
+  difficult to ignore him.  The character rolls (an appropriate Social
+  Attribute + Presence) and compares it to the MDV of each onlooker.  Any
+  whose MDV is exceeded by this total suffer a natural mental influence which
+  applies a -2 external penalty to all actions whose focus does not include
+  the character, for the duration of the Charm.  Targets will instinctively
+  realise that it will be easier to interact with the character than to ignore
+  him.  However, if a target succeeds at an action which excludes the
+  character, the penalty drops to -1.  This Charm may be used in both combat
+  and social situations.
   
 --- !Charm
 id: ipa
@@ -148,38 +154,40 @@ deps: [ppi, mlm]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   The first step to winning is not to be defeated, and sometimes the best
-  defense is to give no offense.  This Charm supplements a Presence-based social
-  attack targeting up to (Essence x 5) individuals joined in battle or debate or
-  about to join or, in mass combat, the leader of a unit with Magnitude up to
-  the Erisian's Essence.  The roll is an attempt to persuade the participants
-  that battle (or social conflict) is not a good idea after all, at least for
-  the moment.  Each target or unit which is successfully affected is persuaded
-  to refrain from attacking.  The effect lasts for the rest of the scene, or
-  until any affected individual or unit makes another Join Battle, Join War or
-  Join Debate roll.  If a target has been wounded in an exchange already, from
-  the character or others who are clearly his allies, they gain a number bonus
-  dice to defend against the attack equal to the number of Health levels or (for
-  social units) Loyalty points lost so far.  The target individual or unit
-  leader must be able to hear or see the character for this Charm to work,
-  though they do not need to share a language.
+  defense is to give no offense.  This Charm supplements a Presence-based
+  social attack targeting up to (Essence x 5) individuals joined in battle or
+  debate or about to join or, in mass combat, the leader of a unit with
+  Magnitude up to the Erisian's Essence.  The roll is an attempt to persuade
+  the participants that battle (or social conflict) is not a good idea after
+  all, at least for the moment.  Each target or unit which is successfully
+  affected is persuaded to refrain from attacking.  The effect lasts for the
+  rest of the scene, or until any affected individual or unit makes another
+  Join Battle, Join War or Join Debate roll.  If a target has been wounded in
+  an exchange already, from the character or others who are clearly his
+  allies, they gain a number bonus dice to defend against the attack equal to
+  the number of Health levels or (for social units) Loyalty points lost so
+  far.  The target individual or unit leader must be able to hear or see the
+  character for this Charm to work, though they do not need to share a
+  language.
   
   The initial effect is an unnatural mental influence of Compulsion and may be
-  resisted by spending a point of temporary Willpower.  Any compelled character
-  or unit who breaks the truce is subject to a further Emotion effect of shame
-  at their betrayal, inflicting a -2 internal penalty for the rest of the scene,
-  which costs a further 2 Willpower to resist.  Spending Willpower to resist
-  both of these effects exempts a character from any further invocations of this
-  Charm in the scene.  Any character or unit who is attacked, whether by another
-  affected by this Charm or by a third party, is immediately released from the
-  Charm's effects.
+  resisted by spending a point of temporary Willpower.  Any compelled
+  character or unit who breaks the truce is subject to a further Emotion
+  effect of shame at their betrayal, inflicting a -2 internal penalty for the
+  rest of the scene, which costs a further 2 Willpower to resist.  Spending
+  Willpower to resist both of these effects exempts a character from any
+  further invocations of this Charm in the scene.  Any character or unit who
+  is attacked, whether by another affected by this Charm or by a third party,
+  is immediately released from the Charm's effects.
   
   Depending on how the character handles the parley, the opponent(s) may not
-  realise they were under the effects of a Charm when the scene ends, and may or
-  may not choose to continue with hostilities.  If the Discordian side simply
-  decides to flee, they gain a head start: automatic successes on the first of
-  any contested Tracking/Evasion rolls, equal to the character's Essence,
-  reducing by one on each subsequent roll, down to 0.
+  realise they were under the effects of a Charm when the scene ends, and may
+  or may not choose to continue with hostilities.  If the Discordian side
+  simply decides to flee, they gain a head start: automatic successes on the
+  first of any contested Tracking/Evasion rolls, equal to the character's
+  Essence, reducing by one on each subsequent roll, down to 0.
   
 --- !Charm
 id: htt
@@ -193,23 +201,25 @@ deps: [exc]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
   This Charm exerts unnatural mental influence to exchange one of the
-  Discordian's Intimacies with one from her target.  The target may spend three
-  points of Willpower to resist the effects of the Charm at the time it is
-  invoked.  Otherwise, the character chooses an Intimacy of her own to pass to
-  the target, and a known Intimatcy from the target to take for herself.  If the
-  character has not already identified any of the target's Intimacies, or wishes
-  to leave the selection to chance, the Storyteller chooses one for her to gain.
+  Discordian's Intimacies with one from her target.  The target may spend
+  three points of Willpower to resist the effects of the Charm at the time it
+  is invoked.  Otherwise, the character chooses an Intimacy of her own to pass
+  to the target, and a known Intimatcy from the target to take for herself.
+  If the character has not already identified any of the target's Intimacies,
+  or wishes to leave the selection to chance, the Storyteller chooses one for
+  her to gain.
   
   When the character releases her mote commitment, the Intimacies immediately
   revert to their original holders.  In the meantime, however, each character
   may work to strengthen or weaken the exchanged Intimacy.  If either Intimacy
-  is lost, the Charm's effect continues, and the character (or Storyteller) may
-  choose a different Intimacy to replace it and be swapped back when the Charm
-  ends.  If both are lost, the Charm ends immediately and no further Intimacies
-  are exchanged.
+  is lost, the Charm's effect continues, and the character (or Storyteller)
+  may choose a different Intimacy to replace it and be swapped back when the
+  Charm ends.  If both are lost, the Charm ends immediately and no further
+  Intimacies are exchanged.
   
 --- !Charm
 id: ppp
@@ -223,36 +233,38 @@ deps: [htt]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
   This Charm allows the Discordian to create a physical duplicate of herself.
   It may be activated multiple times to create further duplicates, but no more
-  than (Essence) may be maintained at once.  Each duplicate is based on a single
-  Intimacy, adopting it as the focus of its Motivation and effectively removing
-  it from the character.  If and when the duplicate ceases to exist, the
-  character regains the Intimacy.  In the mean time, that Intimacy still counts
-  towards the maximum number she can have herself.  The duplicate can have no
-  Intimacies of its own, being single-minded in its point of view.
+  than (Essence) may be maintained at once.  Each duplicate is based on a
+  single Intimacy, adopting it as the focus of its Motivation and effectively
+  removing it from the character.  If and when the duplicate ceases to exist,
+  the character regains the Intimacy.  In the mean time, that Intimacy still
+  counts towards the maximum number she can have herself.  The duplicate can
+  have no Intimacies of its own, being single-minded in its point of view.
   
   A character's duplciates are essentially mortal, with a permanent Essence
   rating of 1 and no mote pool.  They have their own Health tracks and Virtue
-  channels, but all share one Willpower pool with the character.  They may draw
-  on her Charms and mote pool, but only for actions which are in support of
-  their Motivation.  If a duplicate does so, it counts as the original
-  character's Charm use for that action, though the character may veto this use.
-  Similarly, they may take Numerology actions in support of their Motivation,
-  but doing so prevents the character from using Numerology in the same action.
-  The character may also veto attempts by the duplicates to spend from her
-  Willpower pool.  The copies are not under the character's control, other than
-  by persuasion, and may act against her wishes in support of their drive.
+  channels, but all share one Willpower pool with the character.  They may
+  draw on her Charms and mote pool, but only for actions which are in support
+  of their Motivation.  If a duplicate does so, it counts as the original
+  character's Charm use for that action, though the character may veto this
+  use.  Similarly, they may take Numerology actions in support of their
+  Motivation, but doing so prevents the character from using Numerology in the
+  same action.  The character may also veto attempts by the duplicates to
+  spend from her Willpower pool.  The copies are not under the character's
+  control, other than by persuasion, and may act against her wishes in support
+  of their drive.
   
   The Discordian and her duplicates can take a miscellaceous action to share
   awareness for one scene, each continually able to know what the others are
   perceiving, thinking and doing.  This spreading of identity imposes a -1
   internal penalty on all actions.  The duplicates cannot share any magical
   equipment, although the Charm will copy mundane items carried on the
-  character's person when it is activated.  Equipment is imperfectly copied, so
-  stamped coins, scrip and so on will be worthless, and perfect mundane
+  character's person when it is activated.  Equipment is imperfectly copied,
+  so stamped coins, scrip and so on will be worthless, and perfect mundane
   equipment becomes at best excellent.
   
   If a duplicate is killed, or subject to an effect which undoes Shaping, it
@@ -274,22 +286,24 @@ refs:
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
-  A Discordian uses this Charm to adjust her bearing and demeanor to put herself
-  beneath the notice of others.  Attempts to perceive her among a large number
-  of people suffer a -4 external penalty, and even in a gathering of 5-20 people
-  a -2 penalty applies.  Below that number, a -2 penalty applies only if the
-  character makes an effort to stay in the background and not engage with
-  anyone.  If she takes any action which draws attention to herself, including
-  use of any Obvious Charms, the effect ends.  If someone notices her and draws
-  attention to her, the penalty is halved but the effect does not end.
+  A Discordian uses this Charm to adjust her bearing and demeanor to put
+  herself beneath the notice of others.  Attempts to perceive her among a
+  large number of people suffer a -4 external penalty, and even in a gathering
+  of 5-20 people a -2 penalty applies.  Below that number, a -2 penalty
+  applies only if the character makes an effort to stay in the background and
+  not engage with anyone.  If she takes any action which draws attention to
+  herself, including use of any Obvious Charms, the effect ends.  If someone
+  notices her and draws attention to her, the penalty is halved but the effect
+  does not end.
   
-  Afterwards observers will be uncertain about whether the character was present
-  unless they succeed on a single (Wits + Occult) roll, at a difficulty equal to
-  the Exalt's Essence.  This is a side-effect of the character's Recumbent
-  Destiny, rather than unnatural mental influence, and applies regardless of
-  whether that Destiny is active or suppressed.
+  Afterwards observers will be uncertain about whether the character was
+  present unless they succeed on a single (Wits + Occult) roll, at a
+  difficulty equal to the Exalt's Essence.  This is a side-effect of the
+  character's Recumbent Destiny, rather than unnatural mental influence, and
+  applies regardless of whether that Destiny is active or suppressed.
   
 --- !Charm
 id: ewa
@@ -303,6 +317,7 @@ deps: [mlm]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
   This Charm adds to the benefits which the character can gain from his stunts
@@ -323,21 +338,22 @@ deps: [exc]
 reviews:
 - 2011-06-25 RWG
 text: |
+
   TODO
   
-  This Charm benefits any action in which the character co-ordinates her efforts
-  with others.  She need not lead the action, and it need not be a
+  This Charm benefits any action in which the character co-ordinates her
+  efforts with others.  She need not lead the action, and it need not be a
   Presence-based action.  The action may be covered under the teamwork rules
   (Exalted Core, p. 125) or it may be a coordinated attack (Exalted Core,
   p. 144).  For teamwork actions where all charcters can apply their full
-  effort, it adds one die per participant, to a maximum of (Presence + Essence).
-  For actions where additional participants can contribute only partially, it
-  adds one bonus die per participant with at least a single dot in the relevant
-  Ability (giving two bonus per such participant in total), and the maximum
-  numer of dice increases to (leader's Ability + character's Presence).  For
-  co-ordinated attacks, it reduces the difficulty of the action by the
-  character's Presence rating, to a minimum of 1, and allows the roll to be
-  (Charisma + Presence) or (Charisma + War).  This Charm is explicitly permitted
-  to be used in Combos with Charms from other Abilities.
+  effort, it adds one die per participant, to a maximum of (Presence +
+  Essence).  For actions where additional participants can contribute only
+  partially, it adds one bonus die per participant with at least a single dot
+  in the relevant Ability (giving two bonus per such participant in total),
+  and the maximum numer of dice increases to (leader's Ability + character's
+  Presence).  For co-ordinated attacks, it reduces the difficulty of the
+  action by the character's Presence rating, to a minimum of 1, and allows the
+  roll to be (Charisma + Presence) or (Charisma + War).  This Charm is
+  explicitly permitted to be used in Combos with Charms from other Abilities.
   
 ...

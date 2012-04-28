@@ -23,17 +23,18 @@ keys: [Combo-OK]
 dur: One scene
 deps: [exc]
 text: |
-  The Wondering Minstrels do whatever they can to engage the hearts and
-  minds of their audience, even if appropriate props are not available.
+
+  The Wondering Minstrels do whatever they can to engage the hearts and minds
+  of their audience, even if appropriate props are not available.
   
-  This Charm affects all Performance actions for the rest of the scene, allowing
-  the character to improvise instruments, scenery, costumes, dramatic lighting
-  etc., provided some at least vaguely suitable materials are to hand.  Hence
-  external penalties due to lack of props etc. are removed.  This Charm does not
-  allow the character to properly play unfamiliar instruments, but it will allow
-  them to use the instrument in an incorrect but entertaining manner, e.g.,
-  treating a shamisen as a drum.  This Charm also reduces the difficulty of all
-  Performance actions, including prayer, by 1.
+  This Charm affects all Performance actions for the rest of the scene,
+  allowing the character to improvise instruments, scenery, costumes, dramatic
+  lighting etc., provided some at least vaguely suitable materials are to
+  hand.  Hence external penalties due to lack of props etc. are removed.  This
+  Charm does not allow the character to properly play unfamiliar instruments,
+  but it will allow them to use the instrument in an incorrect but
+  entertaining manner, e.g., treating a shamisen as a drum.  This Charm also
+  reduces the difficulty of all Performance actions, including prayer, by 1.
   
 --- !Charm
 id: tonc
@@ -45,6 +46,7 @@ keys: [Combo-OK, Social]
 dur: Instant
 deps: [ii]
 text: |
+
   Experts in the misunderstandings of meaning and meaninglessness, the
   children of Eris can choose their words and actions to convey more than one
   story at once, carefully tuned to different audiences.
@@ -65,22 +67,24 @@ keys: [Combo-OK, Illusion, Social]
 dur: One day
 deps: []
 text: |
-  In a matter of minutes, the Midnight Lyres can persuade folk that they
-  are epic heroes, infamous villains or otherwise dramatic characters.
-  Activating this Charm, the character spends a few minutes talking to a group
-  (of Magnitude up to the character's Essence), attempting to convince them that
+
+  In a matter of minutes, the Midnight Lyres can persuade folk that they are
+  epic heroes, infamous villains or otherwise dramatic characters.  Activating
+  this Charm, the character spends a few minutes talking to a group (of
+  Magnitude up to the character's Essence), attempting to convince them that
   he is some famous individual, either one already known to them or some
-  completely invented figure.  This Charm supplements the relevant social attack
-  roll, adding one automatic success and making it a form of unnatural mental
-  influence.  As usual, targets may spend 1 point of Willpower to resist.
-  
-  If the character is still present when the Charm's duration ends, twenty-five
-  hours later, affected targets will likely be most upset.  However, they will
-  also become subject to the effects of the character's recumbent destiny,
-  unless it is supressed.  If the character leaves before then, he will remain
-  in their memory as this figure of legend.  The character may use the Charm
-  repeatedly to sustain the Illusion, though targets gain a fresh opportunity to
+  completely invented figure.  This Charm supplements the relevant social
+  attack roll, adding one automatic success and making it a form of unnatural
+  mental influence.  As usual, targets may spend 1 point of Willpower to
   resist.
+  
+  If the character is still present when the Charm's duration ends,
+  twenty-five hours later, affected targets will likely be most upset.
+  However, they will also become subject to the effects of the character's
+  recumbent destiny, unless it is supressed.  If the character leaves before
+  then, he will remain in their memory as this figure of legend.  The
+  character may use the Charm repeatedly to sustain the Illusion, though
+  targets gain a fresh opportunity to resist.
   
 --- !Charm
 id: shr
@@ -92,19 +96,20 @@ keys: [Combo-OK, Social]
 dur: Instant
 deps: []
 text: |
+
   TODO
   
-  Opening mouth and mind, the character activates this Charm in the presence of
-  any being, and finds himself recounting excerpts from the history of that
+  Opening mouth and mind, the character activates this Charm in the presence
+  of any being, and finds himself recounting excerpts from the history of that
   individual's deeds.  The information comes not from the Exalt's own mind but
   from the power of stories themselves (in game terms, from the storyteller),
   and so the information revealed will be generally known, though not
   necessarily in the surrounding location.  In a matter of a few minutes, the
-  character will have spoken of some of the major encounters and actions of the
-  target's life, including some trivial but entertaining details, and some which
-  hint at the target's Motivation and/or Intimacies.  All information will be
-  true, and the character is guaranteed to learn at least one new thing, though
-  he may or may not recognise that.
+  character will have spoken of some of the major encounters and actions of
+  the target's life, including some trivial but entertaining details, and some
+  which hint at the target's Motivation and/or Intimacies.  All information
+  will be true, and the character is guaranteed to learn at least one new
+  thing, though he may or may not recognise that.
   
   If the target has successfully disguised themselves from the character, the
   stories will adapt to avoid revealing their true identity.  For example, a
@@ -116,14 +121,14 @@ text: |
   great skill in cold reading plus a smattering of unexpected inside
   information.  Nevertheless, in social combat it is unnerving.  The character
   rolls (Perception + Performance + Essence) and compares it to the target's
-  Dodge MDV.  If the roll is greater, the target suffers an internal penalty of
-  (-Performance) on the next action, due to a brief feeling of emotional
+  Dodge MDV.  If the roll is greater, the target suffers an internal penalty
+  of (-Performance) on the next action, due to a brief feeling of emotional
   exposure.
   
   The target must be able to hear the character's words (or otherwise perceive
   them clearly and immediately).  A city, building, demesne or other location
-  may also be a valid target for this Charm, as long as the character can find a
-  resident to whom his performance can be directed.
+  may also be a valid target for this Charm, as long as the character can find
+  a resident to whom his performance can be directed.
   
   This Charm may be used on a given target at most once per story, unless the
   target has since done more significant deeds, or the character learns facts
@@ -140,12 +145,13 @@ keys: [Combo-OK, Emotion, Social]
 dur: Instant
 deps: [exc, shr]
 text: |
+
   TODO
   
   This Charm supplements a Performance roll targeted at a single individual,
   singing the praises of some individual, to win or weaken the affections and
-  loyalty of the target.  The subject of the song, poem, oratary etc. may be the
-  Exalt herself, or any other being living or dead, real or imagined.  The
+  loyalty of the target.  The subject of the song, poem, oratary etc. may be
+  the Exalt herself, or any other being living or dead, real or imagined.  The
   target forms a positive or negative Intimacy towards that individual, which
   may be one of love, lust, loyalty or some other emotion chosen by the
   character.  If the target already has an Intimacy to the subject, both are
@@ -164,36 +170,38 @@ keys: [Combo-OK, Social, Training]
 dur: Instant
 deps: [exc, shr]
 text: |
+
   TODO
   
   This Charm supplements a Performance roll targeted at a social group, which
   encourages them towards an almost or actually religious faith in some new
   idea.  The object of this faith cannot be the character herself.  The idea
-  need not actually be heretical but it must be one which the people have not so
-  far, as a group, considered as a serious belief, and which unbalances the
+  need not actually be heretical but it must be one which the people have not
+  so far, as a group, considered as a serious belief, and which unbalances the
   current order.
   
   The Moonlight Lyre must spend a scene addressing the group.  At the end of
-  this time, if her persuasion was successful, the character will have created a
-  new cult, which contributes to a Training effect which raises her Cult
+  this time, if her persuasion was successful, the character will have created
+  a new cult, which contributes to a Training effect which raises her Cult
   Background.  To raise the Cult rating to a given level, the character must
   found that many brand new cults, each with a separate use of the Charm.  For
-  example, to go from Cult 2 to Cult 3 requires three successful applications of
-  this Charm.  The character may start as many new cults as the storyteller will
-  allow, though her Cult Background cannot be increased beyond normal limits.
-  Also, a cult only counts towards the Training effect of this Charm if it has a
-  different object from any other that the character has previously founded
-  using this Charm.  Cults founded by this Charm may grow later, of course.
+  example, to go from Cult 2 to Cult 3 requires three successful applications
+  of this Charm.  The character may start as many new cults as the storyteller
+  will allow, though her Cult Background cannot be increased beyond normal
+  limits.  Also, a cult only counts towards the Training effect of this Charm
+  if it has a different object from any other that the character has
+  previously founded using this Charm.  Cults founded by this Charm may grow
+  later, of course.
   
-  If the object of a new cult is a being, that being also gains a rating of Cult
-  1, if it does not already have a Cult rating.  The character may choose some
-  individual other than herself as the target of the Training effect, in which
-  case that individual cannot be the object of the new cult(s).  If the target
-  does not explicitly consent to this indirect worship, the Discordian must pay
-  the experience point cost for this Training.
+  If the object of a new cult is a being, that being also gains a rating of
+  Cult 1, if it does not already have a Cult rating.  The character may choose
+  some individual other than herself as the target of the Training effect, in
+  which case that individual cannot be the object of the new cult(s).  If the
+  target does not explicitly consent to this indirect worship, the Discordian
+  must pay the experience point cost for this Training.
   
-  The Charm does not in itself involve unnatural mental influence, though it may
-  be supplemented with such.
+  The Charm does not in itself involve unnatural mental influence, though it
+  may be supplemented with such.
   
 --- !Charm
 id: gsa
@@ -205,30 +213,31 @@ keys: [Combo-OK, Shaping]
 dur: One scene
 deps: [lfaa]
 text: |
-  The Matchmakers are so tied to the notion of "union with the other" that
+
+  The Matchmakers are so tied to the notion of ``union with the other'' that
   they may seek to impress and take nourishment from even their enemies.
   Striking a tragic pose of weakened defense in battle, bustling around during
   delicate surgery, or otherwise trying to look like he is being epically
   helpful, the Hand takes some of the glory.
   
-  While this Charm is active, the character may benefit from stunts by any other
-  character; those which occur within (Essence x 5) yards, plus any associated
-  with an action of which he is the target (regardless of range).  The
-  individual performing the stunt gains the full rewards but, in addition, the
-  character gains half that, rounded up in the case of Willpower.  Taking the
-  reflected glory of a reward in this way costs 1 mote, which must be paid after
-  the character knows that a stunt has been awarded to the target, but before
-  the relevant roll is made.  The character must be aware of the action:
-  unexpected or concealed actions cannot be affected by this Charm.  The entity
-  taking the action still gains the relevant bonus dice, and if the stunt is
-  good enough to result in a reward of experience in place of Willpower, the
-  character does not gain experience.
+  While this Charm is active, the character may benefit from stunts by any
+  other character; those which occur within (Essence x 5) yards, plus any
+  associated with an action of which he is the target (regardless of range).
+  The individual performing the stunt gains the full rewards but, in addition,
+  the character gains half that, rounded up in the case of Willpower.  Taking
+  the reflected glory of a reward in this way costs 1 mote, which must be paid
+  after the character knows that a stunt has been awarded to the target, but
+  before the relevant roll is made.  The character must be aware of the
+  action: unexpected or concealed actions cannot be affected by this Charm.
+  The entity taking the action still gains the relevant bonus dice, and if the
+  stunt is good enough to result in a reward of experience in place of
+  Willpower, the character does not gain experience.
   
-  This siphoning of benefits is a Shaping effect, although it does not directly
-  target the victim, instead applying to the overall stage of endeavors.  Thus
-  personal resistance to Shaping cannot counter this Charm, but area effects
-  can.  The mathematically apt will note that activating this effect for a 1-die
-  stunt is pointless.
+  This siphoning of benefits is a Shaping effect, although it does not
+  directly target the victim, instead applying to the overall stage of
+  endeavors.  Thus personal resistance to Shaping cannot counter this Charm,
+  but area effects can.  The mathematically apt will note that activating this
+  effect for a 1-die stunt is pointless.
   
   *[TODO: Add Reactor keyword when reviewing all Charms for new Charm tech.]*
   
@@ -242,23 +251,24 @@ keys: [Combo-OK, Counterattack, Illusion]
 dur: Instant
 deps: [gsa]
 text: |
-  We know not the moment of our deaths (unless we're unlucky enough to
-  feature in accurate prophecy); therefore, some Discordians choose to practise,
-  just to be prepared.  An Exalt who employs this Charm appears to die in a
+
+  We know not the moment of our deaths (unless we're unlucky enough to feature
+  in accurate prophecy); therefore, some Discordians choose to practise, just
+  to be prepared.  An Exalt who employs this Charm appears to die in a
   dramatic fashion, reducing all damage from a single source to zero after all
   other modifiers in Step 10 and becoming Inactive.  This Charm functions as a
   perfect defence, with the special Flaw of Invulnerability that the character
-  must remain Inactive for at least one full action after activating it.  Damage
-  from one-off environmental effects can be avoided with this Charm, but not
-  ongoing effects such as general scorching heat.
+  must remain Inactive for at least one full action after activating it.
+  Damage from one-off environmental effects can be avoided with this Charm,
+  but not ongoing effects such as general scorching heat.
   
-  He will seem dead to any casual mundane or magical inspection: his pulse will
-  seem to stop, his Essence flicker out.  Observers who have reason to
+  He will seem dead to any casual mundane or magical inspection: his pulse
+  will seem to stop, his Essence flicker out.  Observers who have reason to
   disbelieve this, or are especially motivated to be quite certain that the
-  Erisian character is dead ("bring me his head!"), will find themselves subject
-  to an Illusion effect to accept the death and move on.  If any observer
-  successfully resists the mental influence of the Illusion, the Exalt will know
-  of it.  The Illusion costs 2 points of Willpower to resist.
+  Erisian character is dead (``bring me his head!"), will find themselves
+  subject to an Illusion effect to accept the death and move on.  If any
+  observer successfully resists the mental influence of the Illusion, the
+  Exalt will know of it.  The Illusion costs 2 points of Willpower to resist.
   
   The effect lasts as long as he remains Inactive, though he may choose to
   reflexively end this at any time after the first action.  Once he becomes
@@ -277,24 +287,25 @@ keys: [Combo-OK, Illusion, Social, War, Stackable]
 dur: Indefinite
 deps: [iss]
 text: |
+
   Music may soothe the savage beast, or it may make things even worse.
-  Playing an instrument of her choice, or simply singing, the Matchmaker employs
-  this Charm to exert an unnatural mental influence on a group of Magnitude up
-  to the Exalt's Essence.  Those affected have either their Willpower, or one of
-  their Virtues (at the character's choice) reduced by the character's Essence,
-  to a minimum of 0, for as long as she continues to perform.  Alternatively,
-  the character can provide all affected targets with (Essence) bonus dice to
-  all rolls for one chosen Virtue, or Willpower, for the duration.  In mass
-  combat, this Charm may be used to alter Drill, Morale or the effective number
-  of Relays.  Although this Charm is Stackable, stacked uses cannot benefit the
-  same Trait.
+  Playing an instrument of her choice, or simply singing, the Matchmaker
+  employs this Charm to exert an unnatural mental influence on a group of
+  Magnitude up to the Exalt's Essence.  Those affected have either their
+  Willpower, or one of their Virtues (at the character's choice) reduced by
+  the character's Essence, to a minimum of 0, for as long as she continues to
+  perform.  Alternatively, the character can provide all affected targets with
+  (Essence) bonus dice to all rolls for one chosen Virtue, or Willpower, for
+  the duration.  In mass combat, this Charm may be used to alter Drill, Morale
+  or the effective number of Relays.  Although this Charm is Stackable,
+  stacked uses cannot benefit the same Trait.
   
-  At any time each member of the group may pay one point of temporary Willpower
-  to resist the influence for one scene.  If the character continues to play
-  beyond the end of one scene, however, they must spend again or come under the
-  Charm's effects.  After spending a total of three points of Willpower against
-  the effects of this Charm, a given individual will be free of its effects.
-  The target group must be able to hear or see the character for this Charm to
-  work.
+  At any time each member of the group may pay one point of temporary
+  Willpower to resist the influence for one scene.  If the character continues
+  to play beyond the end of one scene, however, they must spend again or come
+  under the Charm's effects.  After spending a total of three points of
+  Willpower against the effects of this Charm, a given individual will be free
+  of its effects.  The target group must be able to hear or see the character
+  for this Charm to work.
   
 ...

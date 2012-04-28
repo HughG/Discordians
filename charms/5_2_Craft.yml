@@ -5,7 +5,7 @@ name: Craft
 grid:
 - [ics, exc, rrt]
 - [ort, bem, est]
-- [bwr, cpc, rwt]
+- [bwr, cpc, rwrt]
 - [eee, eed, prp]
 --- !Charm
 id: exc
@@ -25,40 +25,42 @@ deps: [exc]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm supplements a dramatic action to craft or repair a non-magical
   object, allowing the character to quickly cobble together a rough, temporary
   but serviceable version of the item she desires.  It reduces the Resources
-  cost of the required materials by 1 and reduces the duration by an order
-  of magnitude: hours become minutes, days become hours etc.
+  cost of the required materials by 1 and reduces the duration by an order of
+  magnitude: hours become minutes, days become hours etc.
   
-  This Charm does not remove the need for tools and some sort of materials.  The
-  Resources cost reduction can go as low as 0, if the character could
+  This Charm does not remove the need for tools and some sort of materials.
+  The Resources cost reduction can go as low as 0, if the character could
   conceivably improvise from materials lying around; otherwise, the minimum is
-  1.  The Resources value of the constructed or patched-up object is reduced by
-  the same amount, so the object may not be as aesthetically pleasing or
+  1.  The Resources value of the constructed or patched-up object is reduced
+  by the same amount, so the object may not be as aesthetically pleasing or
   saleable, but it will perform its intended functions.
   
   The finished item will revert to its original state after an amount of time
   which is an order of magnitude greater than the time which would normally be
   needed to make the object from scratch (even if it was only mended).  For
   instance, making a simple table might normally take a few days: this Charm
-  will produce an item which lasts only that number of weeks, before it suddenly
-  collapses.
+  will produce an item which lasts only that number of weeks, before it
+  suddenly collapses.
   
-  At Essence 3, the Resources cost is reduced by (Essence ÷ 2) and, rather than
-  reduce the duration by an order of magnitude, it allows the character to
-  complete her work in a single dramatic action.  If she also possesses the
+  At Essence 3, the Resources cost is reduced by (Essence ÷ 2) and, rather
+  than reduce the duration by an order of magnitude, it allows the character
+  to complete her work in a single dramatic action.  If she also possesses the
   appropriate Craft at 3, the character can repair (but not build) magical
   devices which have replaceable parts, such as Magitech and perhaps some
   motonic technology.  With a stunt, she may do so even with inappropriate or
-  non-magical parts.  Likewise she may apply this Charm to temporarily patching
-  a damaged manse which (as described in Oadenol's Codex, p. 63) requires one
-  manse design roll of (Intelligence + [lowest of Craft, Occult or Lore]) at a
-  difficulty of 3, for each point of power failure.  The equipment to patch a
-  damaged manse is normally a Resources 4 purchase, but this Charm reduces it to
-  3, and again allows stunting to use other materials.
+  non-magical parts.  Likewise she may apply this Charm to temporarily
+  patching a damaged manse which (as described in Oadenol's Codex, p. 63)
+  requires one manse design roll of (Intelligence + [lowest of Craft, Occult
+  or Lore]) at a difficulty of 3, for each point of power failure.  The
+  equipment to patch a damaged manse is normally a Resources 4 purchase, but
+  this Charm reduces it to 3, and again allows stunting to use other
+  materials.
   
 --- !Charm
 id: ort
@@ -72,27 +74,30 @@ deps: [ics]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  This Charm supplements a dramatic action to craft a non-magical item, allowing
-  the character to rapidly create one object from another of roughly similar
-  size and materials.  To make objects significantly smaller or larger than the
-  originals, the character may respectively create or combine multiple similar
-  objects.  For example, a wooden cart could be converted into a similar-sized
-  shack, or several smaller chairs; or several carts could be combined into a
-  wooden house.  It is also possible to use this Charm to reconfigure part of a
-  large structure.  The reconfiguration takes place in a single dramatic action.
+  This Charm supplements a dramatic action to craft a non-magical item,
+  allowing the character to rapidly create one object from another of roughly
+  similar size and materials.  To make objects significantly smaller or larger
+  than the originals, the character may respectively create or combine
+  multiple similar objects.  For example, a wooden cart could be converted
+  into a similar-sized shack, or several smaller chairs; or several carts
+  could be combined into a wooden house.  It is also possible to use this
+  Charm to reconfigure part of a large structure.  The reconfiguration takes
+  place in a single dramatic action.
   
-  At Essence 4, the time to reconfigure a mundane object is reduced to a single
-  combat action.  At Essence 5, the character may double the Charm's cost to
-  reconfigure an artifact or even a manse, which requires a single dramatic
-  action.  This cannot change the power level of the object, nor substantially
-  alter any effects it has, though these might shift somewhat.  For instance, a
-  daiklave might be reformed into a shield, having appropriate armor bonuses for
-  the relevant magical material, instead of weapon bonuses.  Or, a reconfigure
-  manse might contain traps which are equally as deadly as in its original form,
-  but different in mechanism.  The storyteller is the arbiter of what changes
-  are possible.  This Charm does not remove the need for tools.
+  At Essence 4, the time to reconfigure a mundane object is reduced to a
+  single combat action.  At Essence 5, the character may double the Charm's
+  cost to reconfigure an artifact or even a manse, which requires a single
+  dramatic action.  This cannot change the power level of the object, nor
+  substantially alter any effects it has, though these might shift somewhat.
+  For instance, a daiklave might be reformed into a shield, having appropriate
+  armor bonuses for the relevant magical material, instead of weapon bonuses.
+  Or, a reconfigure manse might contain traps which are equally as deadly as
+  in its original form, but different in mechanism.  The storyteller is the
+  arbiter of what changes are possible.  This Charm does not remove the need
+  for tools.
   
 --- !Charm
 id: bwr
@@ -106,6 +111,7 @@ deps: [ort]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm provides a dramatic action in which the Stone-Carver combines two
@@ -123,31 +129,32 @@ text: |
   
   The Child of Eris can combine artifacts by spending a point of Willpower per
   dot of rating of the resulting item.  The rating will be one more than the
-  greater of the original items, to a maximum of 5.  The resulting artifact will
-  have effects related to both original objects, but not more powerful than its
-  new rating allows.  It is not possible to combine a 5-dot artifact with
-  another, unless the character has at least Essence 6.  The resulting artifact
-  lasts as long as the motes remain committed to this Charm, after which it
-  splits into its two original parts.  The commitment cost for the new artifact
-  is the sum of that for its original parts, and the character may attune it
-  immediately.  The artifact can be given to others.
+  greater of the original items, to a maximum of 5.  The resulting artifact
+  will have effects related to both original objects, but not more powerful
+  than its new rating allows.  It is not possible to combine a 5-dot artifact
+  with another, unless the character has at least Essence 6.  The resulting
+  artifact lasts as long as the motes remain committed to this Charm, after
+  which it splits into its two original parts.  The commitment cost for the
+  new artifact is the sum of that for its original parts, and the character
+  may attune it immediately.  The artifact can be given to others.
   
-  The time, successes and Ability minimums for combining artifacts are as normal
-  for this resultant rating.  If the lesser artifact is rated 3 or more, then
-  the character may treat his relevant Ability ratings as (Artifact rating - 2)
-  higher, for the sole purpose of determining whether his ratings allow him to
-  build the resultant artifact.  Thus, combining two level 3 artifacts would
-  result in a level 4 artifact, and allow the character to treat his Abilities
-  as 1 higher.  With all relevant Abilities at 5, he would therefore be able to
-  build it.  Similarly he could combine two 4-dot artifacts into a 5-dot wonder.
+  The time, successes and Ability minimums for combining artifacts are as
+  normal for this resultant rating.  If the lesser artifact is rated 3 or
+  more, then the character may treat his relevant Ability ratings as (Artifact
+  rating - 2) higher, for the sole purpose of determining whether his ratings
+  allow him to build the resultant artifact.  Thus, combining two level 3
+  artifacts would result in a level 4 artifact, and allow the character to
+  treat his Abilities as 1 higher.  With all relevant Abilities at 5, he would
+  therefore be able to build it.  Similarly he could combine two 4-dot
+  artifacts into a 5-dot wonder.
   
   No Stone-Carver has been able to combine two manses, simply because they are
   almost never fully mobile.  However, if such a manse were found, or some
   powerful magic could co-locate the space occupied by them for long enough to
   allow the carfting to be carried out, this Charm might serve.  Doing so,
   however, would likely alter the nature of the underlying demesne in
-  unpredictable ways, leaving the character with limited control over the final
-  form.
+  unpredictable ways, leaving the character with limited control over the
+  final form.
   
 --- !Charm
 id: bem
@@ -161,6 +168,7 @@ deps: [exc]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm represents a dramatic action to study an existing object, magical
@@ -170,27 +178,27 @@ text: |
   hours to understand the complete design, with a minumum of 1 hour.  This
   extracted design then allows her to halve the cumulative number of Craft
   successes required to construct an identical item in future.  Only artifacts
-  with a rating less than or equal to the character's Essence are valid targets
-  for this Charm.
+  with a rating less than or equal to the character's Essence are valid
+  targets for this Charm.
   
   For manses and very large artifacts, the time for analysis is ([artifact or
-  manse rating x 3] - Essence) days, rather than hours.  It will almost never be
-  possible to construct an identical manse, since dragon lines vary so much.
-  However, the extracted information can be used to help design a manse with the
-  same powers on a different site, if it has the same aspect.  In this case the
-  the design time for the manse is reduced from one month to one week, and the
-  difficulty of the roll is reduced by the character's Essence, to a minimum of
-  1.  Again, only those with a rating no greater than the character's Essence
-  are valid targets.
+  manse rating x 3] - Essence) days, rather than hours.  It will almost never
+  be possible to construct an identical manse, since dragon lines vary so
+  much.  However, the extracted information can be used to help design a manse
+  with the same powers on a different site, if it has the same aspect.  In
+  this case the the design time for the manse is reduced from one month to one
+  week, and the difficulty of the roll is reduced by the character's Essence,
+  to a minimum of 1.  Again, only those with a rating no greater than the
+  character's Essence are valid targets.
   
   Applied to mundane objects, this Charm takes ([Resources rating x 3] -
   Essence) hours or days depending on the scale of the object.  The knowledge
   gained reduces the difficulty of the Craft roll to produce an identical item
-  by 1, to a minimum of 1, and reduces the construction time by up to half.  The
-  time reduction is at the storyteller's discretion: large, long-term projects
-  involving many laborers cannot be sped up so easily.  There is no limit on the
-  Resources rating of mundane objects which can be analysed, but the character
-  must have the relevant Craft rated at least 3.
+  by 1, to a minimum of 1, and reduces the construction time by up to half.
+  The time reduction is at the storyteller's discretion: large, long-term
+  projects involving many laborers cannot be sped up so easily.  There is no
+  limit on the Resources rating of mundane objects which can be analysed, but
+  the character must have the relevant Craft rated at least 3.
   
   Having gained this design knowledge, the character may at any point spend a
   like number of days to record it for others to use.  This Charm does not
@@ -209,33 +217,34 @@ deps: [bem]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm supplements Craft actions as part of an extended construction
-  project, allowing the Architect to create multiple copies of a mundane object,
-  using the same amount of raw materials as she would require for a single
-  instance.  The character may create up to (Craft x [Essence - 1]) objects in
-  total, but for each (Craft) copies or part thereof, beyond the first (Craft)
-  items, all the items suffer penalties equivalent to the bonuses provided by
-  fine, exceptional or pefect craftsmanship (Exalted, p. 365), due to necessary
-  corner-cutting.  Penalties do not get worse than those equivalent to perfect,
-  if the character makes more than (Craft x 4) copies.  Thus a character who
-  learns this Charm is immediately able to produce 6 suits of superheavy plate
-  armor for the cost of 1, but they suffer penalties equivalent to the bonuses
-  of exceptional workmanship.
+  project, allowing the Architect to create multiple copies of a mundane
+  object, using the same amount of raw materials as she would require for a
+  single instance.  The character may create up to (Craft x [Essence - 1])
+  objects in total, but for each (Craft) copies or part thereof, beyond the
+  first (Craft) items, all the items suffer penalties equivalent to the
+  bonuses provided by fine, exceptional or pefect craftsmanship (Exalted,
+  p. 365), due to necessary corner-cutting.  Penalties do not get worse than
+  those equivalent to perfect, if the character makes more than (Craft x 4)
+  copies.  Thus a character who learns this Charm is immediately able to
+  produce 6 suits of superheavy plate armor for the cost of 1, but they suffer
+  penalties equivalent to the bonuses of exceptional workmanship.
   
   At Essence 4 the character may attempt to mass-produce artifacts.  However,
   she may make at most ([Craft - Artifact rating] x [Essence - 1]) items in
   total.  For each copy beyond the original, all items must take one dot of
   drawbacks (as described in Oadenol's Codex, p. 16), which do not reduce the
-  Artifact's rating.  Since the character is mass-producing artifacts, they must
-  all have the same disadvantages.
+  Artifact's rating.  Since the character is mass-producing artifacts, they
+  must all have the same disadvantages.
   
   This Charm's cost must be spent for every roll in an extended Crafting
-  project, or the entire project will fail, leaving scattered piles of battered
-  and tarnished materials.  Although this Charm bears the Shaping keyword, this
-  is only relevant during the construction process.  The resulting objects
-  cannot be un-made by anti-Shaping magic.
+  project, or the entire project will fail, leaving scattered piles of
+  battered and tarnished materials.  Although this Charm bears the Shaping
+  keyword, this is only relevant during the construction process.  The
+  resulting objects cannot be un-made by anti-Shaping magic.
   
 --- !Charm
 id: est
@@ -249,44 +258,45 @@ deps: [bem]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   By exerting her Eristic will, the Stone-Carver can instantly form whole
   objects from raw materials, if only for a short time.  She requires all raw
-  materials for the construction to be present, but needs no workspace or tools.
-  For non-magical items, the Resources rating of the finished product cannot
-  exceed the character's Craft rating.
+  materials for the construction to be present, but needs no workspace or
+  tools.  For non-magical items, the Resources rating of the finished product
+  cannot exceed the character's Craft rating.
   
-  At Essence 4, the character can form artifacts by spending an additional point
-  of Willpower per dot of rating.  The Artifact rating cannot exceed her
-  (Essence - 2).  She will be immediately attuned to the artifact, provided she
-  pays the attunement cost.  The character must already have created or obtained
-  a design for the artifact.
+  At Essence 4, the character can form artifacts by spending an additional
+  point of Willpower per dot of rating.  The Artifact rating cannot exceed her
+  (Essence - 2).  She will be immediately attuned to the artifact, provided
+  she pays the attunement cost.  The character must already have created or
+  obtained a design for the artifact.
   
   Also at Essence 4, she can pay the increased cost to raise a manse on an
-  uncapped demesne.  The Manse rating can be no more than her (Essence - 1), and
-  she must be within and attuned to the demesne.  She will be attuned to the
-  manse, and find herself standing within the hearth room, in front of the
-  hearthstone.  Because the manse is constructed instantly, there is no time to
-  fine-tune the design, so the number of Creation Points is fixed at (rating x
-  2): drawbacks cannot be introduced to increase this.  In order to ensure the
-  dragon lines are balanced correctly, no other beings may be attuned to the
-  demesne, and no creatures with Essence greater than 1 may be within its
-  boundaries, or else the Charm cannot be activated.  If the demesne rating is
-  greater than that of the resultant manse, the manse will have appropriate
-  points of Essence Vents to rebalance the power level.  Once the manse
-  vanishes, the demesne will be drained, providing no Essence (and causing no
-  harm) for as many days as the manse's rating.
+  uncapped demesne.  The Manse rating can be no more than her (Essence - 1),
+  and she must be within and attuned to the demesne.  She will be attuned to
+  the manse, and find herself standing within the hearth room, in front of the
+  hearthstone.  Because the manse is constructed instantly, there is no time
+  to fine-tune the design, so the number of Creation Points is fixed at
+  (rating x 2): drawbacks cannot be introduced to increase this.  In order to
+  ensure the dragon lines are balanced correctly, no other beings may be
+  attuned to the demesne, and no creatures with Essence greater than 1 may be
+  within its boundaries, or else the Charm cannot be activated.  If the
+  demesne rating is greater than that of the resultant manse, the manse will
+  have appropriate points of Essence Vents to rebalance the power level.  Once
+  the manse vanishes, the demesne will be drained, providing no Essence (and
+  causing no harm) for as many days as the manse's rating.
   
-  At the end of the scene, or after (Essence) hours if this is sooner, a mundane
-  object constructed using this Charm will be consumed by the powerful Shaping
-  forces at work, and vanish in a shimmering cloud.  Magical objects will
-  collapse into their component parts, and the magical ingredients involved will
-  be tarnished or mixed with impurities.  Re-using amounts of the standard
-  magical materials is possible, but requires effort equivalent to smelting them
-  in the first place (Oadenol's Codex, p. 23).  Unique magical ingredients may
-  be destroyed, transmuted or salvagable in some other way, at the storyteller's
-  whim.
+  At the end of the scene, or after (Essence) hours if this is sooner, a
+  mundane object constructed using this Charm will be consumed by the powerful
+  Shaping forces at work, and vanish in a shimmering cloud.  Magical objects
+  will collapse into their component parts, and the magical ingredients
+  involved will be tarnished or mixed with impurities.  Re-using amounts of
+  the standard magical materials is possible, but requires effort equivalent
+  to smelting them in the first place (Oadenol's Codex, p. 23).  Unique
+  magical ingredients may be destroyed, transmuted or salvagable in some other
+  way, at the storyteller's whim.
   
 --- !Charm
 id: cpc
@@ -302,12 +312,13 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm draws upon and enhances the true purpose of an object.  When
   applied to any non-magical, non-sentient object (including most plants and
-  basic automata), this Charm temporarily increases the difficulty of any rolled
-  attempts to damage or (by feats of Strength) break an object by the
+  basic automata), this Charm temporarily increases the difficulty of any
+  rolled attempts to damage or (by feats of Strength) break an object by the
   character's (Essence).  It similarly increases the difficulty of any rolled
   actions to re-work it (naturally or by magical means, including Shaping) to
   fulfil any other purpose.
@@ -331,17 +342,19 @@ deps: [cpc]
 reviews:
 - 2012-02-01 RWG
 text: |
-  Just as the Grey-faced ones do not hold unwanted forms for long, they do
-  not tolerate things being re-Shaped in a way which does not suit them.  With
+
+  Just as the Grey-faced ones do not hold unwanted forms for long, they do not
+  tolerate things being re-Shaped in a way which does not suit them.  With
   this Charm the character may undo any one Shaping effect which has altered
-  some object.  If the object is owned or attuned by some other individual, they
-  must agree to the un-Shaping.  The character cannot affect an object larger
-  than a small castle with this Charm, although he may apply it to only part of
-  a larger structure.  A ghostly rainbow-tinged outline of the original object
-  will persist, hanging in space for one scene, containing the effect which was
-  removed.  If any other object touches it before the scene expires, which was
-  not touching it before this Charm was activated, the original effect is
-  immediately applied to that object, unless it is somehow protected.
+  some object.  If the object is owned or attuned by some other individual,
+  they must agree to the un-Shaping.  The character cannot affect an object
+  larger than a small castle with this Charm, although he may apply it to only
+  part of a larger structure.  A ghostly rainbow-tinged outline of the
+  original object will persist, hanging in space for one scene, containing the
+  effect which was removed.  If any other object touches it before the scene
+  expires, which was not touching it before this Charm was activated, the
+  original effect is immediately applied to that object, unless it is somehow
+  protected.
   
 --- !Charm
 id: eee
@@ -355,48 +368,49 @@ deps: [cpc]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  This Charm is used at the inception of a crafting project in which the Carver
-  builds an object which allows her, or anyone else who comes to own it, to
-  improve in relation to a particular Ability.  The object created may be
-  magical or mundane, and must typify the skill to be learned.  Creativity may
-  be required to find a suitable object which the character can make, given the
-  Crafts she knows.
+  This Charm is used at the inception of a crafting project in which the
+  Carver builds an object which allows her, or anyone else who comes to own
+  it, to improve in relation to a particular Ability.  The object created may
+  be magical or mundane, and must typify the skill to be learned.  Creativity
+  may be required to find a suitable object which the character can make,
+  given the Crafts she knows.
   
-  The owner of such an object may gain a single dot of the Ability it embodies,
-  or two dots of a particular Specialty, as a Training effect.  This occurs
-  instantly, but may put the owner into experience debt.  Abilities cannot be
-  raised past the normal maximums for the trainee, but are not limited by the
-  skill levels of the Carver.  A being cannot gain more than one dot in a given
-  Trait from any number of objects created by this Charm.
+  The owner of such an object may gain a single dot of the Ability it
+  embodies, or two dots of a particular Specialty, as a Training effect.  This
+  occurs instantly, but may put the owner into experience debt.  Abilities
+  cannot be raised past the normal maximums for the trainee, but are not
+  limited by the skill levels of the Carver.  A being cannot gain more than
+  one dot in a given Trait from any number of objects created by this Charm.
   
-  The object may be a symbolic representation of the relevant discipline, rather
-  than an item to be used in practice.  The trainee must establish ownership
-  (Exalted, p. 238) of the object and treat it with care, at least until the
-  normal training time has passed and any experience debt is paid off.  If this
-  effort is not put in, or the object is lost, discarded or damaged before then,
-  the dot of Ability is lost, though any experience spent on it is regained.
-  Once the training time and debt is gone, however, the object may be passed on
-  for someone else to gain its benefits. Damaged objects may be repaired but
-  will have lost their educational magic.
+  The object may be a symbolic representation of the relevant discipline,
+  rather than an item to be used in practice.  The trainee must establish
+  ownership (Exalted, p. 238) of the object and treat it with care, at least
+  until the normal training time has passed and any experience debt is paid
+  off.  If this effort is not put in, or the object is lost, discarded or
+  damaged before then, the dot of Ability is lost, though any experience spent
+  on it is regained.  Once the training time and debt is gone, however, the
+  object may be passed on for someone else to gain its benefits. Damaged
+  objects may be repaired but will have lost their educational magic.
   
   At Craft 4 and Essence 4, the Carver can make objects which train Attributes
-  (but not Attribute Specialties), Virtues or Willpower.  Alternatively she may
-  create items which are not training aids but powerful talismans: once per day
-  the owner may pay a point of Willpower to add one die to all rolls for a
-  specific Ability, until the end of the scene.  This does not count as a die
-  added by Charms, but the owner may benefit from only one such talisman.  As
-  before, the item may passed to other owners, may be magical or mundane, and
-  will permanently lose this power if damaged.
+  (but not Attribute Specialties), Virtues or Willpower.  Alternatively she
+  may create items which are not training aids but powerful talismans: once
+  per day the owner may pay a point of Willpower to add one die to all rolls
+  for a specific Ability, until the end of the scene.  This does not count as
+  a die added by Charms, but the owner may benefit from only one such
+  talisman.  As before, the item may passed to other owners, may be magical or
+  mundane, and will permanently lose this power if damaged.
   
   A second purchase of this Charm at Craft 5 and Essence 5 means that her
   creations can train even Essence, to a maximum of the character's (Essence -
-  2), though they cannot enlighten those who do not already have access to their
-  Essence.  Additionally she may forge a Grace for a particular being, given a
-  dot of gossamer.  The Carver need have no specific skill in crafting gossamer,
-  but the Grace must be forged as a magical artifact of some sort.  If it passes
-  to someone else, the normal consequences follow for its bearer.
+  2), though they cannot enlighten those who do not already have access to
+  their Essence.  Additionally she may forge a Grace for a particular being,
+  given a dot of gossamer.  The Carver need have no specific skill in crafting
+  gossamer, but the Grace must be forged as a magical artifact of some sort.
+  If it passes to someone else, the normal consequences follow for its bearer.
   
 --- !Charm
 id: eed
@@ -410,25 +424,27 @@ deps: [eee]
 reviews:
 - 2012-02-01 RWG
 text: |
-  According to legend, Eris was excluded from a party of the gods, and
-  took her revenge by seeding discord among the attendees; you can bet she
-  swiped some Celestial Wine while she was there.
+
+  According to legend, Eris was excluded from a party of the gods, and took
+  her revenge by seeding discord among the attendees; you can bet she swiped
+  some Celestial Wine while she was there.
   
-  Inspired by this spirit of mischief, this Charm supplements a dramatic action
-  in which the character distills the Erisian element to which she is attuned,
-  into a healing draught.  The character must find a location, item or other
-  powerful manifestation of the element, as per Erisian Elemental Rejuvenation
-  [TODO: link], and bring suitable tools or equipment to work it (or take it to
-  such tools).  The distillation requires physical crafting work, even though
-  some elements may have non-physical manifestations.  The character must spend
-  (Essence) motes in addition to making a suitable Craft roll.  Success produces
-  a single draft of liquid, whose appearance depends on its source.
+  Inspired by this spirit of mischief, this Charm supplements a dramatic
+  action in which the character distills the Erisian element to which she is
+  attuned, into a healing draught.  The character must find a location, item
+  or other powerful manifestation of the element, as per Erisian Elemental
+  Rejuvenation [TODO: link], and bring suitable tools or equipment to work it
+  (or take it to such tools).  The distillation requires physical crafting
+  work, even though some elements may have non-physical manifestations.  The
+  character must spend (Essence) motes in addition to making a suitable Craft
+  roll.  Success produces a single draft of liquid, whose appearance depends
+  on its source.
   
   Drinking the liquid is sufficient to heal (Essence) levels of bashing or
   lethal damage, or to regain one point of Willpower.  This power is only made
-  physical by the character's own will and Essence, so there cannot be more than
-  (Essence) draughts she has created in existence at once.  Attempts to make
-  more will automatically fail, until some of those draughts are used up.
+  physical by the character's own will and Essence, so there cannot be more
+  than (Essence) draughts she has created in existence at once.  Attempts to
+  make more will automatically fail, until some of those draughts are used up.
   
 --- !Charm
 id: prp
@@ -442,6 +458,7 @@ deps: [cpc]
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   By varnishing, embroidering or otherwise lavishing care and decoration on an
@@ -450,31 +467,31 @@ text: |
   crafted specially for the purpose.  This awakening takes several hours, or
   even days, of careful craft-work, after which the character's Familiar
   background increases by one dot.  It may be necessary to apply the Charm
-  several times to reach the necessary rating, depending on the size, complexity
-  and usefulness of the object.
+  several times to reach the necessary rating, depending on the size,
+  complexity and usefulness of the object.
   
   The awoken object can communicate with its owner, through subtle shifts in
-  appearance, heft and so on, though its awareness of the world will be strongly
-  colored by its nature.  Few objects have the ability to move by themselves,
-  but they have a limited sense of their surroundings, and may have some expert
-  understanding in relation to their purview.  Also, since objects do not sleep,
-  they may have some use as watch-keepers.  Its levels of mobility, intelligence
-  and so on are dependent on the number of dots of the Familiar background which
-  the Storyteller allows the player to buy.
+  appearance, heft and so on, though its awareness of the world will be
+  strongly colored by its nature.  Few objects have the ability to move by
+  themselves, but they have a limited sense of their surroundings, and may
+  have some expert understanding in relation to their purview.  Also, since
+  objects do not sleep, they may have some use as watch-keepers.  Its levels
+  of mobility, intelligence and so on are dependent on the number of dots of
+  the Familiar background which the Storyteller allows the player to buy.
   
   The character can maintain at most one familiar through use of this Charm,
-  though she may have more by other means.  Applying the Charm to another object
-  will break the bond and leave the spirit to lapse into quiescence.  Failing to
-  take care of the object regularly will have the same effect, though taking
-  ownership once more will re-awaken it, without the need to re-apply this
-  Charm.
+  though she may have more by other means.  Applying the Charm to another
+  object will break the bond and leave the spirit to lapse into quiescence.
+  Failing to take care of the object regularly will have the same effect,
+  though taking ownership once more will re-awaken it, without the need to
+  re-apply this Charm.
   
   Objects formed in other realms of reality than Creation have similar Essence
   structures which can be awoken, even if they do not fit into the Terrestrial
   hierarchy.  This Charm cannot be applied to objects which belong to another,
-  though it can be applied to things which the character has taken ownership of
-  including, for example, forged raksha Graces.  Living things, or things which
-  already have human-level awareness, such as advanced automata or sapient
-  Infernal relics, are not valid targets for this Charm.
+  though it can be applied to things which the character has taken ownership
+  of including, for example, forged raksha Graces.  Living things, or things
+  which already have human-level awareness, such as advanced automata or
+  sapient Infernal relics, are not valid targets for this Charm.
   
 ...

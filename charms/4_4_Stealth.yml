@@ -2,6 +2,7 @@
 --- !CharmGroup
 name: Stealth
 text: |
+
   TODO
   
   Need maybe 1 more Charm.
@@ -33,20 +34,21 @@ refs:
 reviews:
 - 2012-02-18 RWG
 text: |
+
   TODO
   
   The character adopts a position and stance which enable him to fit into his
   current environment, and activates this Charm, helping him appear to be part
-  of the scenery.  Firstly, it removes all penalties to contested Stealth rolls
-  due to an inappropriate environment (for example, lack of cover).  Secondly,
-  it adds (Stealth ÷ 2) automatic successes to all such rolls.  Lastly, it
-  allows him to use Manipulation in place of Dexterity when making the Stealth
-  roll, if desired.  Other beings will not normally walk into the character
-  accidentally, since they see him but do not recognise him for what he is,
-  subliminally assuming him to be a lamp, bush, dead body or other appropriate
-  item.  Effects which reveal information contradicting this may give a bonus to
-  those attempting to notice the character, such as those which detect life or
-  essence.
+  of the scenery.  Firstly, it removes all penalties to contested Stealth
+  rolls due to an inappropriate environment (for example, lack of cover).
+  Secondly, it adds (Stealth ÷ 2) automatic successes to all such rolls.
+  Lastly, it allows him to use Manipulation in place of Dexterity when making
+  the Stealth roll, if desired.  Other beings will not normally walk into the
+  character accidentally, since they see him but do not recognise him for what
+  he is, subliminally assuming him to be a lamp, bush, dead body or other
+  appropriate item.  Effects which reveal information contradicting this may
+  give a bonus to those attempting to notice the character, such as those
+  which detect life or essence.
   
   This Charm ends immediately if the character moves, makes some sensory
   impression greater than the background level, activates an Obvious Charm, or
@@ -54,8 +56,8 @@ text: |
   this Charm to an unexpected attack as his first action.  The concealment
   enhancements offered by this Charm have no effect on those who were able to
   perceive the character in the tick before he activated it, so the character
-  cannot use it to reestablish surprise during battle without first finding some
-  other way to hide.
+  cannot use it to reestablish surprise during battle without first finding
+  some other way to hide.
   
 --- !Charm
 id: ceop
@@ -72,10 +74,11 @@ refs:
 reviews:
 - 
 text: |
+
   TODO
   
   Conceal evidence of passage and actions, effetively getting a free continual
-  "Conceal Evidence" action with bonuses.
+  ``Conceal Evidence'' action with bonuses.
   
 --- !Charm
 id: sse
@@ -91,49 +94,52 @@ refs:
 reviews:
 - 2012-02-18 RWG
 text: |
+
   TODO
   
   This Charm allows the character to draw a twisting, fractal-folded shroud of
   the unfabric of Elsewhere around her form, almost entirely removing her from
-  the reality in which she stands.  While hidden she cannot move with respect to
-  her original location, and will always reappear there when the Charm ends.
+  the reality in which she stands.  While hidden she cannot move with respect
+  to her original location, and will always reappear there when the Charm
+  ends.
   
   All mundane attempts to observe or interact with her automatically fail,
-  meaning that mortals may walk right through the space she previously occupied.
-  Charms or other magic which attempt to locate her, or hidden things, or the
-  magic of the Charm itself, have their base difficulty increased to her
-  (Stealth + Essence) if it would otherwise be less.  If detection succeeds, the
-  character's location is determined with an accuracy of ([threshold successes -
-  character's Stealth] x 5) yards, to a minimum of pinpoint accuracy at zero
-  yards.  Against automatically successful effects such as Eye of the
-  Unconquered Sun, this Charm forces a contested roll and adds the character's
-  Stealth in automatic successes.
+  meaning that mortals may walk right through the space she previously
+  occupied.  Charms or other magic which attempt to locate her, or hidden
+  things, or the magic of the Charm itself, have their base difficulty
+  increased to her (Stealth + Essence) if it would otherwise be less.  If
+  detection succeeds, the character's location is determined with an accuracy
+  of ([threshold successes - character's Stealth] x 5) yards, to a minimum of
+  pinpoint accuracy at zero yards.  Against automatically successful effects
+  such as Eye of the Unconquered Sun, this Charm forces a contested roll and
+  adds the character's Stealth in automatic successes.
   
   While concealed, the character cannot be spatially targeted for any actions
-  other than attempts to locate her.  Even once her location is precisely known,
-  she cannot be targeted with physical weapons, even magical ones, or Touch
-  effects.  Damage and other unpleasant effects from natural area effects are
-  completely negated, while those from magical sources are delayed (Essence)
-  actions as the magic must work its way through strange folds of space to reach
-  the character.  If the character notices such an effect and deactivates the
-  Charm before it reaches her, she is unaffected, though the effect might still
-  be active in her original location.
+  other than attempts to locate her.  Even once her location is precisely
+  known, she cannot be targeted with physical weapons, even magical ones, or
+  Touch effects.  Damage and other unpleasant effects from natural area
+  effects are completely negated, while those from magical sources are delayed
+  (Essence) actions as the magic must work its way through strange folds of
+  space to reach the character.  If the character notices such an effect and
+  deactivates the Charm before it reaches her, she is unaffected, though the
+  effect might still be active in her original location.
   
-  The downside of this Charm is that the character's isolation works both ways,
-  so she suffers a -4 external penalty to perceive events in her original
-  location, including magical area effects which might hurt her after a delay.
-  She cannot target anything or anyone there with any individually targeted or
-  area actions or effects, mundane or magical, other than to observe them.
+  The downside of this Charm is that the character's isolation works both
+  ways, so she suffers a -4 external penalty to perceive events in her
+  original location, including magical area effects which might hurt her after
+  a delay.  She cannot target anything or anyone there with any individually
+  targeted or area actions or effects, mundane or magical, other than to
+  observe them.
   
   Effects which allow someone to see into Elsewhere completely bypass this
   Charm's concealment, but do not normally work around the protection from
   damage it provides.  It is not possible for the character to use any magical
   effects which guarantee absolute success to see out from under her cloak,
   though she may enhance her senses, including use of the second excellency.
-  Effects which target a being as a unique individual or through some arcane or
-  other remote link also completely bypass this Charm's shield, in either
-  direction, and are not delayed by it.  The character is not made immaterial by
-  this Charm and so is not specially affected by magic which targets such
+  Effects which target a being as a unique individual or through some arcane
+  or other remote link also completely bypass this Charm's shield, in either
+  direction, and are not delayed by it.  The character is not made immaterial
+  by this Charm and so is not specially affected by magic which targets such
   beings.
   
 --- !Charm
@@ -151,16 +157,17 @@ refs:
 reviews:
 - 
 text: |
+
   TODO
   
   *[TODO: Work out how to ref Ink Monkeys Charms in two places: by volume and
   in the collected works.]*
   
-  *[TODO: Dammit, this is basically a duplicate of the Larceny Charm "Flawless
-  Transfiguration Knack".  Need to merge the two.  Maybe turn this into a
-  Charm to hide an item altogether, possibly by placing it among similar
-  items, or even similar shapes -- e.g., hiding a sword among hanging folds of
-  a cloak?]*
+  *[TODO: Dammit, this is basically a duplicate of the Larceny Charm
+  ``Flawless Transfiguration Knack''.  Need to merge the two.  Maybe turn this
+  into a Charm to hide an item altogether, possibly by placing it among
+  similar items, or even similar shapes -- e.g., hiding a sword among hanging
+  folds of a cloak?]*
   
   The character applies this Charm to a mundane object to make make it seem
   unremarkable.  Resisting this Illusion costs two points of temporary
@@ -170,21 +177,21 @@ text: |
   straightening a curved sword might be appropriate in some parts of creation,
   or the reverse in other places, but it could never be disguised as a staff.
   The Storyteller is the final arbiter of what is possible.  The disguise can
-  reduce the apparent Resources value of an object by up to (Stealth ÷ 2), to a
-  minimum of one dot, and can disguise perfect, exceptional or fine items as
+  reduce the apparent Resources value of an object by up to (Stealth ÷ 2), to
+  a minimum of one dot, and can disguise perfect, exceptional or fine items as
   ones of a lesser degree of superiority, or of a standard level of quality.
   Observers can still provide an accurate description of the object, but that
   description is likely to match many other instances of its kind.
   
   At Essence 3, this Charm can also be applied to artifacts, either to make a
-  unique item appear generic, or even concealing magical items as mundane.  The
-  character can create an Illusion which removes unique features from an
+  unique item appear generic, or even concealing magical items as mundane.
+  The character can create an Illusion which removes unique features from an
   artifact's appearance, or reduces the apparent Artifact rating of an item by
   up to (Stealth) dots, to a minimum of zero, or both.
   
-  At higher Stealth/Ess, apply to objects not in the character's possession, and
-  to living beings?  BUT compare to Larceny Charms Instant Image Improvisation
-  and Identity Theft.
+  At higher Stealth/Ess, apply to objects not in the character's possession,
+  and to living beings?  BUT compare to Larceny Charms Instant Image
+  Improvisation and Identity Theft.
   
   *[NOTE: sort of the opposite of Larceny Charm Value-Adding Veneer.]*
   
@@ -200,25 +207,26 @@ deps: [exc, hipsa]
 reviews:
 - 2012-02-18 RWG
 text: |
+
   TODO
   
-  This Charm improves its prerequisite, allowing it to be applied to a group of
-  beings up to the character's (Essence - 1) in Magnitude, or to one or more
-  inanimate objects in a volume of space roughly equivalent in size to that
-  number of humans, or any equivalent combination of beings and objects.
+  This Charm improves its prerequisite, allowing it to be applied to a group
+  of beings up to the character's (Essence - 1) in Magnitude, or to one or
+  more inanimate objects in a volume of space roughly equivalent in size to
+  that number of humans, or any equivalent combination of beings and objects.
   Observers who fail to see through the concealment will intepret the group as
   some larger innocuous background object, such as a hedge or pile of rubble.
   
-  Additionally, the group may take Move, but not Dash, actions at up to a third
-  of its normal movement rate.  Doing so does not automatically break
+  Additionally, the group may take Move, but not Dash, actions at up to a
+  third of its normal movement rate.  Doing so does not automatically break
   concealment but prompts another (Perception + Awareness) roll from observers
   and gives them a +2 dice circumstance bonus: observers may not see the group
-  as a moving large object, but may become suspicious and notice that it doesn't
-  quite seem to be in the same place at different points in time.  The character
-  may use this Charm on himself alone to allow movement while concealed.  If the
-  Charm is deactived once those concealed have found some other suitable cover,
-  it provides no benefits on further Awareness checks, but ending the Charm does
-  not in itself prompt such a check.
+  as a moving large object, but may become suspicious and notice that it
+  doesn't quite seem to be in the same place at different points in time.  The
+  character may use this Charm on himself alone to allow movement while
+  concealed.  If the Charm is deactived once those concealed have found some
+  other suitable cover, it provides no benefits on further Awareness checks,
+  but ending the Charm does not in itself prompt such a check.
   
   Used in War, the Charm has a Speed of 5 long ticks and may conceal any unit
   that the character is a member of, not only one he leads, though he must be
@@ -244,10 +252,12 @@ refs:
 reviews:
 - 
 text: |
+
   TODO
   
-  Extend Recumbent Destiny to a social or mass combat group ... once I've worked
-  out what RD should really be.  Maybe should be Occult, if RD still works that way.
+  Extend Recumbent Destiny to a social or mass combat group ... once I've
+  worked out what RD should really be.  Maybe should be Occult, if RD still
+  works that way.
   
   *[TODO: State range.]*
   
@@ -263,6 +273,7 @@ deps: [ceop]
 reviews:
 - 
 text: |
+
   TODO
   
   Concealing self from Fate, scrying (Level 3 Geomancy Procedure in Oadenol's
@@ -282,11 +293,12 @@ deps: [hipsa, hfr]
 reviews:
 - 
 text: |
+
   TODO
   
   Hide self as a group of apparent extras.
   
-  See also Survival Charm "Living-With-Rocks Approach".
+  See also Survival Charm ``Living-With-Rocks Approach''.
   
 --- !Charm
 id: dcp
@@ -302,6 +314,7 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm wraps the Exalt's normal self inside another, constructed
@@ -309,38 +322,39 @@ text: |
   prolonged period.
   
   Her identity is buried so deeply that even she will not be aware of who she
-  truly is.  On activation she must specify at least one trigger condition which
-  will cause the Charm to end, and may specify up to (Essence) independent
-  triggers.  The condition must be one which her new identity would be able to
-  perceive and understand, in terms of normal and magical senses, languages
-  known and so on.  It can be as simple or as complex as desired, but will only
-  be triggered when the new identity becomes aware of it.  So, for example, a
-  trigger to end the Charm "when the Jade Prison is broken" would only take
-  effect when the new self learned that it had happened, not when it actually
-  occurred.  Indeed, it would trigger when he believed that it had happened,
-  even if the prison was in fact still sealed.  Similarly, "when I meet Chejop
-  Kejak's murderer" would trigger when the new self believed that he had met
-  someone who had committed that murder, even if they had not, nor if he met the
-  murderer but didn't realise it.
+  truly is.  On activation she must specify at least one trigger condition
+  which will cause the Charm to end, and may specify up to (Essence)
+  independent triggers.  The condition must be one which her new identity
+  would be able to perceive and understand, in terms of normal and magical
+  senses, languages known and so on.  It can be as simple or as complex as
+  desired, but will only be triggered when the new identity becomes aware of
+  it.  So, for example, a trigger to end the Charm ``when the Jade Prison is
+  broken'' would only take effect when the new self learned that it had
+  happened, not when it actually occurred.  Indeed, it would trigger when he
+  believed that it had happened, even if the prison was in fact still sealed.
+  Similarly, ``when I meet Chejop Kejak's murderer'' would trigger when the
+  new self believed that he had met someone who had committed that murder,
+  even if they had not, nor if he met the murderer but didn't realise it.
   
-  The character may choose any of the following types of being for her new self:
-  another Discordian of the same Division and Parametadivision, having up to her
-  current Essence; a being of the type which her Parametadivision mimics, again
-  having up to her current Essence; a mortal or unenlightened heroic mortal up
-  to Essence 2 (or equivalent unenlightened being in any realm of reality); or
-  even a god, spirit, demon or similar being not belonging to a
-  Parametadivision, up to her current Essence, although this choice is risky
-  because she is granted no particular magic to mimic the powers of such beings.
+  The character may choose any of the following types of being for her new
+  self: another Discordian of the same Division and Parametadivision, having
+  up to her current Essence; a being of the type which her Parametadivision
+  mimics, again having up to her current Essence; a mortal or unenlightened
+  heroic mortal up to Essence 2 (or equivalent unenlightened being in any
+  realm of reality); or even a god, spirit, demon or similar being not
+  belonging to a Parametadivision, up to her current Essence, although this
+  choice is risky because she is granted no particular magic to mimic the
+  powers of such beings.
   
   If the character chooses an unenlightened identity, she cannot spend motes
   except to subconsiously activate non-Obvious Reflexive Charms using her
   Personal pool.  She will interpret these powers as moments of good fortune.
-  Other expenditures will end the Charm.  Applying or resisting unnatural mental
-  influence still gains the character points of Hodge and Podge while in her
-  disguised form, though she will be unaware of their effects and may not
-  understand when she enters Limit Break.  Any magical effects which have made
-  certain things unacceptable orders, beyond those which would harm her, still
-  apply to her new self.
+  Other expenditures will end the Charm.  Applying or resisting unnatural
+  mental influence still gains the character points of Hodge and Podge while
+  in her disguised form, though she will be unaware of their effects and may
+  not understand when she enters Limit Break.  Any magical effects which have
+  made certain things unacceptable orders, beyond those which would harm her,
+  still apply to her new self.
   
   The new self may have any physical appearance appropriate to the chosen type
   of being, with the same Appearance rating.  The Charm cannot perfectly
@@ -349,39 +363,41 @@ text: |
   
   Donning this new guise, the character is subject to a reversed Recumbent
   Destiny effect, as powerful as if she had spent her full temporary Willpower
-  pool on it.  Memories and minor details of reality are shaped to make it seem
-  that this new identity has existed since the onset time of the Recumbent
-  Destiny, and those affected will remember the new face clearly.  Attempts to
-  find the character with the Loom of Fate are not impeded.  Instead the
-  increased difficulty applies if anyone tries to follow the thread back to the
-  original identity.
+  pool on it.  Memories and minor details of reality are shaped to make it
+  seem that this new identity has existed since the onset time of the
+  Recumbent Destiny, and those affected will remember the new face clearly.
+  Attempts to find the character with the Loom of Fate are not impeded.
+  Instead the increased difficulty applies if anyone tries to follow the
+  thread back to the original identity.
   
-  The Discordian's new self has the same Traits as her original self, except for
-  Motivation, Intimacies and Backgrounds.  The new identity has an entirely new
-  Motivation, selected by the character when the Charm is activated.  Likewise
-  new Intimacies are selected, under the control of the Storyteller, though the
-  player may make suggestions.  The character loses access to all her existing
-  Backgrounds except for Artifact and Manse (and its Underworld and Heavenly
-  variants), and will lose even Manse if she chooses an unenlightened identity.
-  However, she gains up to 15 dots of Backgrounds appropriate to her new
-  identity.  Those involving power and other people will not extend beyond the
-  Magnitued of people affected by the reversed Recumbent Destiny effect which
-  accompanies this Charm.
+  The Discordian's new self has the same Traits as her original self, except
+  for Motivation, Intimacies and Backgrounds.  The new identity has an
+  entirely new Motivation, selected by the character when the Charm is
+  activated.  Likewise new Intimacies are selected, under the control of the
+  Storyteller, though the player may make suggestions.  The character loses
+  access to all her existing Backgrounds except for Artifact and Manse (and
+  its Underworld and Heavenly variants), and will lose even Manse if she
+  chooses an unenlightened identity.  However, she gains up to 15 dots of
+  Backgrounds appropriate to her new identity.  Those involving power and
+  other people will not extend beyond the Magnitued of people affected by the
+  reversed Recumbent Destiny effect which accompanies this Charm.
   
-  At Essence 5+, this hiding of self persists even after death.  The character's
-  death will not end the Charm's effects and, if the Storyteller decides that
-  Discordian Exaltations pass on to new hosts, then the new host will not
-  experience the effects of Exaltation, or be aware of his power, until the
-  trigger conditions are satisfied.  This may be part of the reason why no
-  Erisian Exalts have been seen for a long time.
+  At Essence 5+, this hiding of self persists even after death.  The
+  character's death will not end the Charm's effects and, if the Storyteller
+  decides that Discordian Exaltations pass on to new hosts, then the new host
+  will not experience the effects of Exaltation, or be aware of his power,
+  until the trigger conditions are satisfied.  This may be part of the reason
+  why no Erisian Exalts have been seen for a long time.
   
   Lastly, this Charm is Stackable: the character can activate as many
-  simultaneous hidden identities at once as her temporary Willpower pool affords
-  her.  The stacking of these identities must be decided in advance, so that
-  triggering the end of one will shift her to another preselected one, losing
-  the first completely.  The reversed Recumbent Destiny effect is triggered at
-  the same time, so that her new identity is more likely to be accepted.
+  simultaneous hidden identities at once as her temporary Willpower pool
+  affords her.  The stacking of these identities must be decided in advance,
+  so that triggering the end of one will shift her to another preselected one,
+  losing the first completely.  The reversed Recumbent Destiny effect is
+  triggered at the same time, so that her new identity is more likely to be
+  accepted.
   
-  *[TODO: Also add follow-on for Survival Charm "Living-With-Rocks Approach"?]*
+  *[TODO: Also add follow-on for Survival Charm ``Living-With-Rocks
+   Approach''?]*
   
 ...

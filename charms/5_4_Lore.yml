@@ -2,6 +2,7 @@
 --- !CharmGroup
 name: Lore
 text: |
+
   TODO
   
   * Group/contagious training?  Reallocate dots instead of just adding them?
@@ -29,35 +30,36 @@ deps: []
 reviews:
 - 2012-02-01 RWG
 text: |
-  The Children of Chaos are not really as all-knowing as they would
-  sometimes like others to think, but they have surprising sources of
-  information.  This Charm enhances a roll involving the Lore Ability by
-  allowing the character to draw on the knowledge held in the environment and
-  society around her.  The subject of the roll must be something about the
-  character's physical surroundings, or something which is recorded in nearby
-  books, memory crystals etc., or something generally known by people nearby.
-  The range depends on the character's Essence rating: at Essence 2, it is 100
-  yards; at 3, 1 mile; at 4, 10 miles, and so on.  The information sought must
-  be something generally known or specifically recorded, so this Charm tends not
+
+  The Children of Chaos are not really as all-knowing as they would sometimes
+  like others to think, but they have surprising sources of information.  This
+  Charm enhances a roll involving the Lore Ability by allowing the character
+  to draw on the knowledge held in the environment and society around her.
+  The subject of the roll must be something about the character's physical
+  surroundings, or something which is recorded in nearby books, memory
+  crystals etc., or something generally known by people nearby.  The range
+  depends on the character's Essence rating: at Essence 2, it is 100 yards; at
+  3, 1 mile; at 4, 10 miles, and so on.  The information sought must be
+  something generally known or specifically recorded, so this Charm tends not
   to be of use in, for example, investigating crime scenes.
   
   The effect of the Charm differs depending on whether or not the subject is
   something the character would reasonably be expected to know.  If not, this
   Charm allows the character to make a normal Lore roll, as if it were in fact
   within the character's experience.  If it is something the character might
-  already know, this Charm reduces the difficulty by at least 1, and possibly by
-  more at storyteller discretion, to a minimum of zero.
+  already know, this Charm reduces the difficulty by at least 1, and possibly
+  by more at storyteller discretion, to a minimum of zero.
   
   *[TODO 2012-02-01 RWG: Give examples of what would count as what level of
-  difficulty reduction.  Maybe connect it with the "first age library" example
-  below.]*
+  difficulty reduction.  Maybe connect it with the ``first age library''
+  example below.]*
   
   The character does not need to speak or read any languages in which the
   information is recorded, nor actually find a partcular book or person to
   consult.  This means that, for example, one of the Authority can enhance her
-  chances of success in operating an ancient artifact simply by standing briefly
-  in the middle of a relevant First Age library.  Lastly, bear in mind that
-  things which are generally known may not be correct.
+  chances of success in operating an ancient artifact simply by standing
+  briefly in the middle of a relevant First Age library.  Lastly, bear in mind
+  that things which are generally known may not be correct.
   
 --- !Charm
 id: wii
@@ -73,26 +75,27 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  This Charm allows the character to make a Lore roll on topics which are known,
-  but not widely, in a given area.  The subject must be one about which the
-  character could not otherwise validly make a Lore roll.  Such facts and
+  This Charm allows the character to make a Lore roll on topics which are
+  known, but not widely, in a given area.  The subject must be one about which
+  the character could not otherwise validly make a Lore roll.  Such facts and
   figures may be actively-kept secrets, obscure trivia in libraries, or simply
-  humdrum details of interest to few.  The information need not be written down,
-  but it must be known, even instinctively, by a number beings of at least
-  Magnitude 2, and of at least animal intelligence.
+  humdrum details of interest to few.  The information need not be written
+  down, but it must be known, even instinctively, by a number beings of at
+  least Magnitude 2, and of at least animal intelligence.
   
   The range follows the character's Essence rating as with Holographic Memory
   Modus.  The character need not share a common language with the beings which
-  hold the desired information but, if not, it may be communicated less clearly,
-  particularly if it comes from an animal-level intelligence.  Knowledge sought
-  may include hypotheses, opinions, and other such uncertain "knowledge".  If
-  different information is available from separate groups, the character will
-  gain insight from only the smallest of them, or one chosen by the Storyteller
-  if there are several of equivalent Magnitude.  As with its precursor,
-  information from this Charm will accurately represent knowledge from nearby
-  beings, but their knowledge may not be correct.
+  hold the desired information but, if not, it may be communicated less
+  clearly, particularly if it comes from an animal-level intelligence.
+  Knowledge sought may include hypotheses, opinions, and other such uncertain
+  ``knowledge''.  If different information is available from separate groups,
+  the character will gain insight from only the smallest of them, or one
+  chosen by the Storyteller if there are several of equivalent Magnitude.  As
+  with its precursor, information from this Charm will accurately represent
+  knowledge from nearby beings, but their knowledge may not be correct.
   
 --- !Charm
 id: enan
@@ -106,8 +109,9 @@ deps: [exc, wii]
 reviews:
 - 2012-02-01 RWG
 text: |
-  The Priests of Discord change names almost as often as they change hats,
-  and most often the true name of something really doesn't matter at all.  But
+
+  The Priests of Discord change names almost as often as they change hats, and
+  most often the true name of something really doesn't matter at all.  But
   there are times when it can be a distinct advantage to know with whom one is
   dealing.
   
@@ -120,8 +124,8 @@ text: |
   character will learn that.
   
   If the target has ancestors who are anything other than extras, this Charm
-  will additionally reveal those on the single most powerful lineage, going back
-  (character's Essence) generations.
+  will additionally reveal those on the single most powerful lineage, going
+  back (character's Essence) generations.
   
 --- !Charm
 id: sant
@@ -135,6 +139,7 @@ deps: []
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm allows the character to temporarily redirect someone's focus,
@@ -144,10 +149,10 @@ text: |
   added for a new Specialty in a trait for which the target already has
   Specialties, but cannot simply add dots to an existing Specialty.  Normally
   Lunar and Alchemical Exalted can only gain Specialties in Attributes, and
-  other beings in Abilities, unless the being has somehow gained Specialties in
-  some atypical kind of trait.  If the character or target knows any version of
-  Idiosyncratic Interpretation of (Virtue), Specialty dots can be temporarily
-  gained in any Virtue.
+  other beings in Abilities, unless the being has somehow gained Specialties
+  in some atypical kind of trait.  If the character or target knows any
+  version of Idiosyncratic Interpretation of (Virtue), Specialty dots can be
+  temporarily gained in any Virtue.
   
 --- !Charm
 id: rtc
@@ -165,16 +170,19 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  A roll of the character's (Lore + Essence) is compared against a difficulty of
-  the target's Essence.  For willing targets, add dice equal to the target's own
-  Essence.  If the character targets himself, the difficulty is reduced to one.
+  A roll of the character's (Lore + Essence) is compared against a difficulty
+  of the target's Essence.  For willing targets, add dice equal to the
+  target's own Essence.  If the character targets himself, the difficulty is
+  reduced to one.
   
-  Each success provides one point of temporary Ability increase for the target,
-  which may be divided among up to (Essence) Abilities.  Any given Ability can
-  be increased by at most one dot, and cannot be increased beyond the normal
-  maximum for the target.  Extra successes beyond these limits are wasted.
+  Each success provides one point of temporary Ability increase for the
+  target, which may be divided among up to (Essence) Abilities.  Any given
+  Ability can be increased by at most one dot, and cannot be increased beyond
+  the normal maximum for the target.  Extra successes beyond these limits are
+  wasted.
   
   At Essence 4, the duration increases to (Essence) days per success on the
   roll, and the Charm gains the Training Keyword, meaning that, at the end of
@@ -182,8 +190,8 @@ text: |
   the changes permanent, and may go into experience point debt to do so.
   However, this permanent training cannot raise an Ability beyond 4.  If the
   Shaping effect is undone or the Charm otherwise ends before experience is
-  spent, this Training opportunity is lost.  At Essence 5 the duration increases
-  to (Essence) weeks per success.
+  spent, this Training opportunity is lost.  At Essence 5 the duration
+  increases to (Essence) weeks per success.
   
   *[TODO: Balance this against Numerology.]*
   
@@ -203,11 +211,13 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm extends its prerequisite, allowing the character to add dice to
-  Attributes and Virtues, as well as Abilities.  The pool of successes from the
-  (Lore + Essence) roll may be split among up to (Essence) traits in total.
+  Attributes and Virtues, as well as Abilities.  The pool of successes from
+  the (Lore + Essence) roll may be split among up to (Essence) traits in
+  total.
   
   *[TODO: Balance this against Numerology.]*
   
@@ -228,30 +238,32 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  A roll of the character's (Lore + Essence) is compared against a difficulty of
-  the target's Essence.  For willing targets, add dice equal to the target's own
-  Essence.  If the character targets himself, the difficulty is reduced to one.
+  A roll of the character's (Lore + Essence) is compared against a difficulty
+  of the target's Essence.  For willing targets, add dice equal to the
+  target's own Essence.  If the character targets himself, the difficulty is
+  reduced to one.
   
-  Each success provides one point of mutation which the character may inflict on
-  the target.  However, the mutation takes its outward appearance from the
+  Each success provides one point of mutation which the character may inflict
+  on the target.  However, the mutation takes its outward appearance from the
   target's own sense of self, so he or she may choose cosmetic details.
   Specifically, this automatically removes the benefit of the Solars'
   Destiny-Manifesting Method, though it will not overcome direct defenses like
   Integrity-Protecting Prana, except when used on a willing target.  The
   mutations unfold smoothly through the target's being in a matter of moments,
-  in a disturbing yet painless and aesthetically pleasing ripple, taking effect
-  at the start of the target's next action.
+  in a disturbing yet painless and aesthetically pleasing ripple, taking
+  effect at the start of the target's next action.
   
   At Essence 4, the duration increases to (Essence) days per success on the
   roll, and the Charm gains the Training Keyword, meaning that, at the end of
   the Charm's duration, the target can spend experience to make some or all of
-  the changes permanent, and may go into experience point debt to do so.  If the
-  Shaping effect is undone or the Charm otherwise ends before experience is
-  spent, this Training opportunity is lost.  At Essence 5 the duration increases
-  to (Essence) weeks per success, and any Mutations taken on as Training have
-  the potential to breed true.
+  the changes permanent, and may go into experience point debt to do so.  If
+  the Shaping effect is undone or the Charm otherwise ends before experience
+  is spent, this Training opportunity is lost.  At Essence 5 the duration
+  increases to (Essence) weeks per success, and any Mutations taken on as
+  Training have the potential to breed true.
   
   *[TODO: Allow Numerology to induce Mutations as well?]*
   
@@ -269,23 +281,24 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
-  Once activated, this Charm reduces the effect on the character's anima of her
-  spending Essence from her Peripheral pool.  The total number of motes spent in
-  each action period is divided by two, rounded down, to a minimum of one, to
-  determine its contribution to the level of Divisional mark and anima visibility.
-  Obvious Charms remain so.  This does not increase the effective size of her
-  mote pool.
+  Once activated, this Charm reduces the effect on the character's anima of
+  her spending Essence from her Peripheral pool.  The total number of motes
+  spent in each action period is divided by two, rounded down, to a minimum of
+  one, to determine its contribution to the level of Divisional mark and anima
+  visibility.  Obvious Charms remain so.  This does not increase the effective
+  size of her mote pool.
   
   If the Chaos Child currently has motes and Willpower committed to make her
   appear as a mortal with no mote pool, using the ability innate to all
-  Discordians, then this Charm itself does not contribute to anima visibility at
-  all, and its duration increases to Indefinite.  In that case, when this Charm
-  ends, the character's Divisional mark and anima immediately show at a level
-  matching her currently level of expenditure from her Peripheral pool.  This
-  may result in a totemic-level flare, even though she is not at that moment
-  spending Essence.
+  Discordians, then this Charm itself does not contribute to anima visibility
+  at all, and its duration increases to Indefinite.  In that case, when this
+  Charm ends, the character's Divisional mark and anima immediately show at a
+  level matching her currently level of expenditure from her Peripheral pool.
+  This may result in a totemic-level flare, even though she is not at that
+  moment spending Essence.
   
   *[TODO: Maybe this and/or ERP should move into Occult, along with
   Anima-Supressing Intervention?  It already has a lot of Charms, but 2-3 are
@@ -306,33 +319,36 @@ refs:
 reviews:
 - 2012-02-01 RWG
 text: |
+
   TODO
   
   This Charm transfers up to (Lore + Essence) motes between the character and
   the target, in either direction.  If the target has multiple Essence pools,
-  such as the Personal and Peripheral pools of the Exalted, it chooses how many
-  motes are drawn from or added to each pool.  Beings without an Essence pool
-  are not valid targets for this Charm.
+  such as the Personal and Peripheral pools of the Exalted, it chooses how
+  many motes are drawn from or added to each pool.  Beings without an Essence
+  pool are not valid targets for this Charm.
   
   If the target is unwilling, the character must make a successful attack roll
   to touch it, and the two make a contested (Essence + Lore) roll.  If the
   Erisian wins, the transfer is in the desired direction, and he gains a point
   of Podge.  If he fails, the direction is reversed, and he gains a point of
-  Hodge.  In the case of a tie, nothing happens, but the motes are spent.  Used
-  on a willing target, there is no contested roll and no gain of Hodge or Podge.
+  Hodge.  In the case of a tie, nothing happens, but the motes are spent.
+  Used on a willing target, there is no contested roll and no gain of Hodge or
+  Podge.
   
-  In any case, this Charm cannot reduce either being's mote pool below zero, nor
-  increase it beyond its maximum.
+  In any case, this Charm cannot reduce either being's mote pool below zero,
+  nor increase it beyond its maximum.
   
 --- !Charm
 id: in
 name: "(Improve Numerology)"
 text: |
+
   TODO
   
-  This Charm allows an Erisian to spend three motes when performing a Numerology
-  action to regard herself as belonging to a different Division, for the
-  purposes of determining the cost of each numerical adjustment.  For example
-  *[TODO: insert example]*.
+  This Charm allows an Erisian to spend three motes when performing a
+  Numerology action to regard herself as belonging to a different Division,
+  for the purposes of determining the cost of each numerical adjustment.  For
+  example *[TODO: insert example]*.
   
 ...

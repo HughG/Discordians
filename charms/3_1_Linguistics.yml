@@ -23,24 +23,25 @@ keys: [Combo-OK]
 dur: Indefinite
 deps: []
 text: |
+
   TODO
   
   As long as motes remain committed to this Charm, the character can copy
-  existing messages at (her Essence x 100) times her normal rate.  However, the
-  copies are imperfect, with (Essence) words in 100 being transcribed
+  existing messages at (her Essence x 100) times her normal rate.  However,
+  the copies are imperfect, with (Essence) words in 100 being transcribed
   incorrectly, to a minimum of (Essence) words.  Each copy made with a given
-  activation of this Charm will have exactly the same mistakes.  This imposes a
-  -1 external penalty to any actions which make use of the copies.
+  activation of this Charm will have exactly the same mistakes.  This imposes
+  a -1 external penalty to any actions which make use of the copies.
   Alternatively, the Storyteller may choose some other inconvenient or amusing
   consequence of the mistakes.
   
-  If the character must translate the message from one language to another, she
-  works at only (her Essence x 10) times normal speed.  If she wishes to write
-  down her own thoughts, or thoughts placed in her head by others, she can do so
-  at (Essence x 5) times normal.  The error rate remains the same in either
-  case.  However, she gains no speed benefit when writing down speech as she
-  hears it.  At Essence 3, the character can write copies without a supply of
-  ink, though she still needs a brush, quill or similar.
+  If the character must translate the message from one language to another,
+  she works at only (her Essence x 10) times normal speed.  If she wishes to
+  write down her own thoughts, or thoughts placed in her head by others, she
+  can do so at (Essence x 5) times normal.  The error rate remains the same in
+  either case.  However, she gains no speed benefit when writing down speech
+  as she hears it.  At Essence 3, the character can write copies without a
+  supply of ink, though she still needs a brush, quill or similar.
   
 --- !Charm
 id: eks
@@ -52,20 +53,22 @@ keys: [Combo-OK, Obvious, Social]
 dur: One scene
 deps: [exc]
 text: |
+
   TODO
   
-  For the duration of this Charm, all intelligent beings who can see the Offendi
-  can understand his meaning, as conveyed through posture and gesture, without
-  the need for a common language.  Sufficiently intelligent animals will be
-  clear about his meaning, as far as they are able to understand the concepts.
-  Beings who cannot see the character can understand him if he touches them.
-  Communicating particularly abstract or complex concepts requires a successful
-  (Intelligence + Linguistics) roll for every five long ticks, and any Social
-  attack the character would make first requires success a similar roll.
+  For the duration of this Charm, all intelligent beings who can see the
+  Offendi can understand his meaning, as conveyed through posture and gesture,
+  without the need for a common language.  Sufficiently intelligent animals
+  will be clear about his meaning, as far as they are able to understand the
+  concepts.  Beings who cannot see the character can understand him if he
+  touches them.  Communicating particularly abstract or complex concepts
+  requires a successful (Intelligence + Linguistics) roll for every five long
+  ticks, and any Social attack the character would make first requires success
+  a similar roll.
   
   By default, this Charm does not enable the character to understand others,
   only to convey his messages to them.  He can extend the effect to other
-  "speakers" at a cost of 2 motes each, up to a maximum of (Essence)
+  ``speakers'' at a cost of 2 motes each, up to a maximum of (Essence)
   individuals, including himself.
   
 --- !Charm
@@ -78,6 +81,7 @@ keys: [Combo-OK, Compulsion, War]
 dur: Instant
 deps: [exc]
 text: |
+
   The Rambling Minstrels add their own magical spin to the simple act of
   confusing someone with a well-placed word, uttering a short phrase which
   almost makes sense, but doesn't quite.  This Charm requires a contested roll
@@ -94,8 +98,8 @@ text: |
   provided the target can perceive the character and could understand the
   character's communications, were they not deliberately confusing.  That is,
   they must share a common language, or some other effect must allow
-  understanding.  Communication must be verbal, unless some other effect allows
-  alternative channels of communication to be used.  Lastly, this Charm
+  understanding.  Communication must be verbal, unless some other effect
+  allows alternative channels of communication to be used.  Lastly, this Charm
   constitutes unnatural mental influence and may be resisted by paying 1 point
   of Willpower.
   
@@ -109,14 +113,15 @@ keys: [Combo-OK, Obvious, Social]
 dur: Instant
 deps: [mm]
 text: |
-  Whether in courtly settings or street confrontations, most debates hinge
-  on the persuasiveness or deceit of the speakers.  In a pinch, however, the
-  best way to fend off intense negativity may be to utterly confuse one's
-  opponent.  Taking a stance with a strange mixture of aggression and
-  sensuality, and waving his arms in a psuedo-arcane fashion, the character
-  shouts some nonsense phrase, such as the well-known Turkey Curse: "Gobble!
-  Gobble! Gobble! Gobble! Gobble!"  This Charm perfectly dodges any social
-  attack which is not unexpected, even if the attack is undodgeable.
+
+  Whether in courtly settings or street confrontations, most debates hinge on
+  the persuasiveness or deceit of the speakers.  In a pinch, however, the best
+  way to fend off intense negativity may be to utterly confuse one's opponent.
+  Taking a stance with a strange mixture of aggression and sensuality, and
+  waving his arms in a psuedo-arcane fashion, the character shouts some
+  nonsense phrase, such as the well-known Turkey Curse: ``Gobble!  Gobble!
+  Gobble! Gobble! Gobble!"  This Charm perfectly dodges any social attack
+  which is not unexpected, even if the attack is undodgeable.
   
   At Linguistics 4+, the Offendi can spend a point of Willpower to apply the
   defence of this Charm to another character, provided he is aware of the
@@ -124,8 +129,8 @@ text: |
   attack provided he can perceive both attacker and target, and the target is
   aware of the attack, since the targets reactions will show that he or she is
   under attack.  Some effects may prevent this; for example, the Solar Charm
-  Hypnotic Tongue Technique specifically makes the target unaware of its effects
-  unless he or she pays Willpower.
+  Hypnotic Tongue Technique specifically makes the target unaware of its
+  effects unless he or she pays Willpower.
   
 --- !Charm
 id: ftt
@@ -137,17 +142,18 @@ keys: [Combo-OK, Obvious, Social, War]
 dur: Instant
 deps: [exc, zsd]
 text: |
-  "Out of chaos comes order," a wise man said more than once.  The Knights
-  of Five are able to transmit their orders along many channels at once, weaving
-  words and symbols in seemingly-random strands which nonetheless converge on
-  their intended targets.
+
+  ``Out of chaos comes order,'' a wise man said more than once.  The Knights
+  of Five are able to transmit their orders along many channels at once,
+  weaving words and symbols in seemingly-random strands which nonetheless
+  converge on their intended targets.
   
   This Charm provides a magical flurry of between two and (Essence) spoken or
-  written actions, with a DV or MDV penalty equal to the highest penalty for any
-  one action.  Each action may be directed at any valid target, including the
-  same target more than once.  The actions may also be used to Signal units in
-  war, though target units are not themselves granted extra actions: they may
-  receive multiple messages, but act at a normal pace.
+  written actions, with a DV or MDV penalty equal to the highest penalty for
+  any one action.  Each action may be directed at any valid target, including
+  the same target more than once.  The actions may also be used to Signal
+  units in war, though target units are not themselves granted extra actions:
+  they may receive multiple messages, but act at a normal pace.
   
 --- !Charm
 id: tti
@@ -159,21 +165,22 @@ keys: [Combo-OK, Social, Stackable, War]
 dur: Indefinite
 deps: [ftt]
 text: |
+
   TODO
   
   Targeted on a single conversation, this Charm allows the Taskmaster to
-  manipulate each participant's messages to others.  The character must be able
-  to see, hear or otherwise perceive all speakers (depending on the medium) and
-  understand them.  Magical eavesdropping is applicable, and there is no
-  distance limit beyond that of the character's (possibly enhanced) senses.  The
-  player rolls (Manipulation + Linguistics) and the number of successes
-  determines the degree of control over the conversation.  A single success
-  allows alteration of minor details; three or more successes mean important
-  details can be changed; and five or more successes allow complete control over
-  the exchange.
+  manipulate each participant's messages to others.  The character must be
+  able to see, hear or otherwise perceive all speakers (depending on the
+  medium) and understand them.  Magical eavesdropping is applicable, and there
+  is no distance limit beyond that of the character's (possibly enhanced)
+  senses.  The player rolls (Manipulation + Linguistics) and the number of
+  successes determines the degree of control over the conversation.  A single
+  success allows alteration of minor details; three or more successes mean
+  important details can be changed; and five or more successes allow complete
+  control over the exchange.
   
-  If a given participant makes a social attack against others, the character may
-  choose to replace the target's dice pool with his own (Manipulation +
+  If a given participant makes a social attack against others, the character
+  may choose to replace the target's dice pool with his own (Manipulation +
   [Performance or Presence as appropriate]), and do anything he could normally
   do with such an attack, or refrain from attacking.  If the Social attack
   involves magic, the character must pay a surcharge of 5 motes or 1 willpower
@@ -183,24 +190,25 @@ text: |
   
   In mass combat, this Charm allows the character to control messages sent
   between units with a Signal action, or orders sent within a single unit via
-  relays.  Only one or the other mode may be used on a given activation.  Coded
-  messages between units cannot be changed to something else unless the
+  relays.  Only one or the other mode may be used on a given activation.
+  Coded messages between units cannot be changed to something else unless the
   character knows the code, but they can be rendered meaningless.
   
-  This Charm may be activated up to (Essence - 1) times concurrently, either to
-  influence several different conversations, or to control different
+  This Charm may be activated up to (Essence - 1) times concurrently, either
+  to influence several different conversations, or to control different
   communcation channels in the same conversation: spoken, written, visual, or
   even olfactory and tactile methods.
   
   If the character spends only motes on the Charm, then each participant may
-  make a reflexive (Perception + Awareness) roll, with a difficulty equal to the
-  character's Essence, to realise that their communcation is being interfered
-  with.  If they do, they are free to use some other means to point out the
-  deception, provided that channel has not also been compromised.  Spending one
-  point of Willpower in addition gives the Charm the Illusion keyword, and
-  requires the targets to spend one point of Willpower before they can make a
-  roll.  Regardless of how many participants spend Willpower to resist, the
-  character will gain at most one point of Podge per activation of this Charm.
+  make a reflexive (Perception + Awareness) roll, with a difficulty equal to
+  the character's Essence, to realise that their communcation is being
+  interfered with.  If they do, they are free to use some other means to point
+  out the deception, provided that channel has not also been compromised.
+  Spending one point of Willpower in addition gives the Charm the Illusion
+  keyword, and requires the targets to spend one point of Willpower before
+  they can make a roll.  Regardless of how many participants spend Willpower
+  to resist, the character will gain at most one point of Podge per activation
+  of this Charm.
   
 --- !Charm
 id: fwt
@@ -214,48 +222,48 @@ deps: [zsd]
 text: |
   TODO
   
-  [TODO: This might fit in better as Performance, given the other Charms I have
-  there.]
+  [TODO: This might fit in better as Performance, given the other Charms I
+  have there.]
   
-  This Charm supplements an action to Join Battle or Ready Weapons, allowing the
-  Erisian Knight to fashion an Illusion of any weapon of his choice by
+  This Charm supplements an action to Join Battle or Ready Weapons, allowing
+  the Erisian Knight to fashion an Illusion of any weapon of his choice by
   describing it in some way, be it literally, in terms of the threat it poses,
   the great battles in which it has been used, or similar.  Onlookers need not
   understand the character's words to be affected, and can resist the Illusion
-  by spending 1 point of Willpower.  If the player provides a description which
-  merits a 2- or 3-die stunt, the cost to resist the Illusion rises to 2 or 3
-  points of Willpower respectively.  Observers gain another opportunity to
-  resist if any of the following happen: one character sees through the Illusion
-  and tries to convince others; the character is disarmed or lays down the
-  weapon, in which case it vanishes, unless the disappearance is suitably
-  stunted (e.g., "He sheathes his sword."); the weapon appears mundane and
-  parries an attack that causes at least 25L damage before soak, since it does
-  not break.  Illusory ammunition for bows and the like disappears after impact,
-  but this will not be noticed in the heat of battle, unless someone
-  specifically looks for it happening.  In any case, each observer gains no more
-  than two opportunities in a scene, and the character gains no more than one
-  point of Hodge in a scene.
+  by spending 1 point of Willpower.  If the player provides a description
+  which merits a 2- or 3-die stunt, the cost to resist the Illusion rises to 2
+  or 3 points of Willpower respectively.  Observers gain another opportunity
+  to resist if any of the following happen: one character sees through the
+  Illusion and tries to convince others; the character is disarmed or lays
+  down the weapon, in which case it vanishes, unless the disappearance is
+  suitably stunted (e.g., ``He sheathes his sword."); the weapon appears
+  mundane and parries an attack that causes at least 25L damage before soak,
+  since it does not break.  Illusory ammunition for bows and the like
+  disappears after impact, but this will not be noticed in the heat of battle,
+  unless someone specifically looks for it happening.  In any case, each
+  observer gains no more than two opportunities in a scene, and the character
+  gains no more than one point of Hodge in a scene.
   
   The weapon conjured may have the appearance and statistics of any mundane or
-  artifact example of its type, of any Artifact rating.  However, the effective
-  Artifact rating can be no more than (Linguistics - 2), to a maximum of
-  Artifact 3.  The character is further limited in that his Abilities are
-  considered to be no more than (Linguistics - 1) for the puporses of minimums
-  required to wield the weapon.  Thus, a Knight needs Linguistics 4 to wield a
-  Grand Daiklave, and 5 for a Grand Goremaul, as well as the relevant Strength
-  rating.  The character may weave an Illusion of paired weapons in a single use
-  of this Charm, but in that case the maximum effective Artifact rating he can
-  achieve is reduced by 1 for each.
+  artifact example of its type, of any Artifact rating.  However, the
+  effective Artifact rating can be no more than (Linguistics - 2), to a
+  maximum of Artifact 3.  The character is further limited in that his
+  Abilities are considered to be no more than (Linguistics - 1) for the
+  puporses of minimums required to wield the weapon.  Thus, a Knight needs
+  Linguistics 4 to wield a Grand Daiklave, and 5 for a Grand Goremaul, as well
+  as the relevant Strength rating.  The character may weave an Illusion of
+  paired weapons in a single use of this Charm, but in that case the maximum
+  effective Artifact rating he can achieve is reduced by 1 for each.
   
   The weapon may appear to be made of any materials, or to glow, burn or
   otherwise be obviously magical, but it provides no magical material or other
   bonuses.  It may also have hearthstone settings, filled as the character
-  desires, but these are non-functional.  The weapon also cannot have any unique
-  magical abilities, although the character can cause it to show any decorative,
-  non-functional sensory effects at any time.  Lastly, the character cannot make
-  an unexpected attack with this weapon, unless the target has already seen him
-  wielding it in the same scene: if they are unaware of its existence, they
-  cannot be harmed by their belief in it.
+  desires, but these are non-functional.  The weapon also cannot have any
+  unique magical abilities, although the character can cause it to show any
+  decorative, non-functional sensory effects at any time.  Lastly, the
+  character cannot make an unexpected attack with this weapon, unless the
+  target has already seen him wielding it in the same scene: if they are
+  unaware of its existence, they cannot be harmed by their belief in it.
   
   A second purchase of this Charm allows the character to use it to conjure
   armor as well as weapons.  The maximum effective Artifact rating is still
@@ -269,12 +277,13 @@ text: |
   he could describe a fiery suit of superheavy plate, in the hope of
   intimidating opponents.
   
-  With the second purchase and Linguistics 4 the Charm gains the War keyword and
-  can be used in large battles.  The character may spend 6 motes and 1 Willpower
-  to activate the Charm to summon illusory weapons for a unit of Magnitude up to
-  the character's Essence, which raises the Might and Morale of that unit by 1
-  for as long as opposing troops do not see through it.  The character must be a
-  member of the unit, but need not lead it nor be a special character within it.
+  With the second purchase and Linguistics 4 the Charm gains the War keyword
+  and can be used in large battles.  The character may spend 6 motes and 1
+  Willpower to activate the Charm to summon illusory weapons for a unit of
+  Magnitude up to the character's Essence, which raises the Might and Morale
+  of that unit by 1 for as long as opposing troops do not see through it.  The
+  character must be a member of the unit, but need not lead it nor be a
+  special character within it.
   
 --- !Charm
 id: nac
@@ -286,43 +295,44 @@ keys: [Combo-OK, Social, War]
 dur: Instant
 deps: []
 text: |
+
   TODO
   
-  With this Charm, a Taskmaster can achieve momentary conceptual resonance with
-  another being and send orders or other messages directly into its mind.  She
-  must know the target by name, and the two must either have met and exchanged
-  words before, or the character must hold an item giving some kind of arcane
-  link to the target.  If the target goes under several names, any of them will
-  do.  The Erisian principlnes of balance mean that the target can send a
-  corresponding message on the following action, at no additional cost to either
-  party.
+  With this Charm, a Taskmaster can achieve momentary conceptual resonance
+  with another being and send orders or other messages directly into its mind.
+  She must know the target by name, and the two must either have met and
+  exchanged words before, or the character must hold an item giving some kind
+  of arcane link to the target.  If the target goes under several names, any
+  of them will do.  The Erisian principlnes of balance mean that the target
+  can send a corresponding message on the following action, at no additional
+  cost to either party.
   
   The target must be within range, where the base range is (Essence x 100)
-  yards, with each additional 2 motes spend multiplying the range by 10.  If the
-  target is in some other realm of existence, the message can still reach them
-  at an additional cost of 1 point of Willpower, provided some connection exists
-  between the realms, which the character could traverse.  The effective
-  distance added by this connection is 10 times whatever the journey would take
-  at walking pace.  Thus, a message sent from Creation through an open gateway
-  to Yu-Shan would incur no additional cost; but one sent across the five-day
-  journey of Cecelyne's sands would have to travel an effective 750 miles
-  further.  The character must pay the full cost if she is able, even though she
-  may not know the exact cost in advance.  The cost of contacting someone who
-  turns out to be in the Deep Wyld may thus be an unpleasant surprise.  If
-  target is out of range, or magically protected from eavesdropping or
-  mind-reading, or the character does not have sufficient motes, her Charm fails
-  to activate and no motes are spent.
+  yards, with each additional 2 motes spend multiplying the range by 10.  If
+  the target is in some other realm of existence, the message can still reach
+  them at an additional cost of 1 point of Willpower, provided some connection
+  exists between the realms, which the character could traverse.  The
+  effective distance added by this connection is 10 times whatever the journey
+  would take at walking pace.  Thus, a message sent from Creation through an
+  open gateway to Yu-Shan would incur no additional cost; but one sent across
+  the five-day journey of Cecelyne's sands would have to travel an effective
+  750 miles further.  The character must pay the full cost if she is able,
+  even though she may not know the exact cost in advance.  The cost of
+  contacting someone who turns out to be in the Deep Wyld may thus be an
+  unpleasant surprise.  If target is out of range, or magically protected from
+  eavesdropping or mind-reading, or the character does not have sufficient
+  motes, her Charm fails to activate and no motes are spent.
   
   The messages will be received as verbal impressions, almost as if the
-  recipient had day-dreamed someone speaking next to them, although there is no
-  actual sound.  The message may be anything which could be communicated within
-  a single combat action, i.e., about 25 words, even if used in social or mass
-  combat situations.  Social attacks which can be made verbally can be applied
-  within the communication.  The target may make a social counterattack, and may
-  also make a social attack on their next action, if they choose to send back a
-  reply.  Note that the effort involved in un-hitching her consciousness from
-  her immediate surroundings puts the character at a greater disadvantage than
-  most Charm activations.
+  recipient had day-dreamed someone speaking next to them, although there is
+  no actual sound.  The message may be anything which could be communicated
+  within a single combat action, i.e., about 25 words, even if used in social
+  or mass combat situations.  Social attacks which can be made verbally can be
+  applied within the communication.  The target may make a social
+  counterattack, and may also make a social attack on their next action, if
+  they choose to send back a reply.  Note that the effort involved in
+  un-hitching her consciousness from her immediate surroundings puts the
+  character at a greater disadvantage than most Charm activations.
   
 --- !Charm
 id: lwalt
@@ -334,37 +344,40 @@ keys: [Combo-OK]
 dur: Instant
 deps: [nac, eks]
 text: |
+
   TODO
   
   This Charm allows an Apple-Corpsman to conceal a short message (about 100
   words) within the subtle arrangement of objects, lighting, ambient sounds or
   other such structures.  The message can only be understood by its intended
   target, which may be an individual or some set of beings identified by their
-  inherent nature.  So, for example, "all mortal men" or "all Dragon-Blooded
-  born on the Blessed Isle" would be valid targets, but "my father's killer" or
-  "all men who live within 100 miles" would not.  Holding a particular
-  Exaltation is considered part of a being's nature, for this purpose.  Other
-  beings will fail to see the message without some appropriate magic, even if it
-  is pointed out to them, or to understand it, even if they can see it.
+  inherent nature.  So, for example, ``all mortal men'' or ``all
+  Dragon-Blooded born on the Blessed Isle'' would be valid targets, but ``my
+  father's killer'' or ``all men who live within 100 miles'' would not.
+  Holding a particular Exaltation is considered part of a being's nature, for
+  this purpose.  Other beings will fail to see the message without some
+  appropriate magic, even if it is pointed out to them, or to understand it,
+  even if they can see it.
   
-  The message may be formed from portable items or written onto fixed surfaces.
-  Insofar as he is able, the character may carve, mark or otherwise change
-  objects to form his message, rather than rely on placement alone.  There is no
-  limit to the area which can be affected by this Charm, but the character must
-  keep the motes comitted while he writes the message, which may take days over
-  a large area.  Also, a being must be able to see the whole area at once, to
-  receive the message, and messages written across larger areas will fade more
-  quickly.  This Charm allows the message to survive gentle movements and
-  natural wear and tear for up to (Essence x 10) years, but significant changes
-  such as flood, fire or simply painting over a wall will obscure a
-  proportionate amount of the message.  Of course, the character may re-apply
-  the Charm later.
+  The message may be formed from portable items or written onto fixed
+  surfaces.  Insofar as he is able, the character may carve, mark or otherwise
+  change objects to form his message, rather than rely on placement alone.
+  There is no limit to the area which can be affected by this Charm, but the
+  character must keep the motes comitted while he writes the message, which
+  may take days over a large area.  Also, a being must be able to see the
+  whole area at once, to receive the message, and messages written across
+  larger areas will fade more quickly.  This Charm allows the message to
+  survive gentle movements and natural wear and tear for up to (Essence x 10)
+  years, but significant changes such as flood, fire or simply painting over a
+  wall will obscure a proportionate amount of the message.  Of course, the
+  character may re-apply the Charm later.
   
   The message may contain mental influence, but the recipient percieves the
   message clearly, so it is not inherently unexpected.  The recipient need not
-  share a common language with the author, since the communcation is sub-verbal.
+  share a common language with the author, since the communcation is
+  sub-verbal.
   
-  [TODO: Not sure about "Ess x 10 years".  Maybe upgrade duration at higher
+  [TODO: Not sure about ``Ess x 10 years''.  Maybe upgrade duration at higher
   Essence?]
   
 ...

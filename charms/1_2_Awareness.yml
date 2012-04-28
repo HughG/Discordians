@@ -22,12 +22,13 @@ keys: [Combo-OK]
 dur: Instant
 deps: [exc]
 text: |
+
   TODO
   
-  This Charm supplements any action, removing all external penalties due to the
-  character's senses being obscured.  This covers most sensory penalties, such
-  as wearing a blindfold, acting in complete darkness, etc.  It does not apply
-  to internal penalties such as blindness, however.
+  This Charm supplements any action, removing all external penalties due to
+  the character's senses being obscured.  This covers most sensory penalties,
+  such as wearing a blindfold, acting in complete darkness, etc.  It does not
+  apply to internal penalties such as blindness, however.
   
 --- !Charm
 id: etu
@@ -39,6 +40,7 @@ keys: [Combo-OK, Counterattack]
 dur: Until next action
 deps: [teo]
 text: |
+
   TODO
   
   The Chosen of Eris invokes this Charm in response to an attack which is
@@ -47,8 +49,9 @@ text: |
   longer unexpected: it works because the attacker believes their attack is a
   surprise.  The character is permitted a counterattack against the original
   attack, and against any other attacks, unexpected or not, until her next
-  action.  This Charm does not guarantee that a counterattack is possible (e.g.,
-  ranged attackers may not be valid targets), only that the opportunity exists.
+  action.  This Charm does not guarantee that a counterattack is possible
+  (e.g., ranged attackers may not be valid targets), only that the opportunity
+  exists.
   
 --- !Charm
 id: gopd
@@ -60,12 +63,13 @@ keys: [Combo-OK, Social]
 dur: Instant
 deps: []
 text: |
-  The Wholly Fools see the inner and outer worlds of body and mind as one,
-  and may attend to or ignore any part with equal ease.
+
+  The Wholly Fools see the inner and outer worlds of body and mind as one, and
+  may attend to or ignore any part with equal ease.
   
   This Charm has two alternative effects.  Activated in one way, in Step 2 of
-  social combat, the character turns his focus inward, ignoring the pressures of
-  the outside world.  In this way it provides a perfect social dodge, even
+  social combat, the character turns his focus inward, ignoring the pressures
+  of the outside world.  In this way it provides a perfect social dodge, even
   against social attacks which are undodgeable.  Afterwards, he will remember
   that the attack occurred, who made it (if he was aware of that), and that he
   defended himself against it, but will have no memory of the intent of the
@@ -79,8 +83,8 @@ text: |
   ongoing Compulsion, Illusion or Emotion effect, or to suppress a Virtue
   without paying a point of Willpower.  This does not allow him to sidestep
   Servitude effects, since their continuing power is focused in the outside
-  world, nor does it fend off the impact of Limit Break.  In addition, since he
-  is ignoring his Virtues, he cannot channel them on this action.
+  world, nor does it fend off the impact of Limit Break.  In addition, since
+  he is ignoring his Virtues, he cannot channel them on this action.
   
 --- !Charm
 id: hpp
@@ -92,15 +96,16 @@ keys: [Combo-OK]
 dur: One scene
 deps: []
 text: |
+
   TODO
   
   With this Charm, the Ignorant Child is able to apply all his senses at every
   point within (Essence x 10) yards simultaneously, regardless of intervening
   barriers.  This effectively means that he can see through walls, behind
-  people's backs and so on.  Any external penalties to his senses may be reduced
-  by up to (Essence) points, at storyteller discretion, if they do not apply
-  over most of the area.  For example, attempting to blind the character by
-  shining a light or throwing sand in his eyes will likely be ineffective.
+  people's backs and so on.  Any external penalties to his senses may be
+  reduced by up to (Essence) points, at storyteller discretion, if they do not
+  apply over most of the area.  For example, attempting to blind the character
+  by shining a light or throwing sand in his eyes will likely be ineffective.
   
   He cannot be surprised by an attack from behind, from cover etc., and
   penalties from coordinated attacks are reduced by (Essence).  The character
@@ -126,6 +131,7 @@ keys: [Combo-OK]
 dur: Indefinite
 deps: [exc]
 text: |
+
   TODO
   
   Using this Charm, one of the Traveling Sailsmen can borrow the senses of a
@@ -133,27 +139,28 @@ text: |
   character must be able to identify the initial target through at least one
   sense, not necessarily sight.  From that point on, the character can observe
   through any of the target's senses, so long as it remains within (Essence)
-  miles.  Furthermore, the character can reflexively shift his awareness to any
-  other being which the current target can identify, by spending a further 1
-  mote of Essence.
+  miles.  Furthermore, the character can reflexively shift his awareness to
+  any other being which the current target can identify, by spending a further
+  1 mote of Essence.
   
-  When the Charm is activated, and whenever the character attempts to move to a
-  new target, the players of the character and the new target make an opposed
-  (Awareness + Essence) roll.  The player must obtain at least one success for
-  the hop to take effect.  A tie or failure leaves the character's senses in the
-  same place as before.  If the player fails and the new target is an Exalt,
-  that target may makes a reflexive Awareness roll, difficulty 3, to notice that
-  someone was attempting to ride his senses.  If he is somehow able to find the
-  source of the effect, it will appear to be coming from wherever the Exalt's
-  senses are currently based, i.e., possibly an existing subject of the effect.
+  When the Charm is activated, and whenever the character attempts to move to
+  a new target, the players of the character and the new target make an
+  opposed (Awareness + Essence) roll.  The player must obtain at least one
+  success for the hop to take effect.  A tie or failure leaves the character's
+  senses in the same place as before.  If the player fails and the new target
+  is an Exalt, that target may makes a reflexive Awareness roll, difficulty 3,
+  to notice that someone was attempting to ride his senses.  If he is somehow
+  able to find the source of the effect, it will appear to be coming from
+  wherever the Exalt's senses are currently based, i.e., possibly an existing
+  subject of the effect.
   
-  The concentration required to read another's senses puts the character at a -2
-  internal penalty to be aware of his own surroundings.  He can move at most
-  half his normal walking speed, and any actions other than movement will cause
-  him to miss details from the borrowed senses.  Note that the character gains
-  any benefits of unusual senses which the current target has or activates, but
-  is limited to his own understanding to interpret those impressions.  He cannot
-  use any Charms through the target.
+  The concentration required to read another's senses puts the character at a
+  -2 internal penalty to be aware of his own surroundings.  He can move at
+  most half his normal walking speed, and any actions other than movement will
+  cause him to miss details from the borrowed senses.  Note that the character
+  gains any benefits of unusual senses which the current target has or
+  activates, but is limited to his own understanding to interpret those
+  impressions.  He cannot use any Charms through the target.
   
 --- !Charm
 id: ufm
@@ -165,35 +172,36 @@ keys: [Combo-OK]
 dur: Indefinite
 deps: []
 text: |
+
   TODO
   
   Activating this Charm, the Exalt focuses her attention on a single small
   object, often a candle flame.  As long as she maintains her commitment of
-  attention and motes, the rate at which she regains Essence, from all sources,
-  is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she may roll
-  to regain Willpower once every (25 ÷ Essence) hours.
+  attention and motes, the rate at which she regains Essence, from all
+  sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she
+  may roll to regain Willpower once every (25 ÷ Essence) hours.
   
-  [TODO: Being completely unaware of surroundings and time seems rubbish.  Maybe
-  just a -(Essence) penalty to Per+Awr and Join Battle?]
+  [TODO: Being completely unaware of surroundings and time seems rubbish.
+  Maybe just a -(Essence) penalty to Per+Awr and Join Battle?]
   
   This Charm cannot be used while the character is sleeping or otherwise
   unconscious, and is incompatible with the Charms or other actions which
   require the senses to be focused elsewhere, e.g., Holographic Perception
   Praxis.  While the Charm is in effect, the character is Inactive: she is
   completely unaware of her surroundings, and cannot tell the passage of time,
-  though she can tell when she has regained as much Essence as she can.  She may
-  choose to end the Charm normally at any time, in which case she remains
+  though she can tell when she has regained as much Essence as she can.  She
+  may choose to end the Charm normally at any time, in which case she remains
   Inactive for (Essence) further actions.  If some gentle stimulus affects the
   character directly, she may ignore it or end the Charm normally.
   
   While in this focused state any attacks are unexpected, unless other effects
-  prevent the character from being subject unexpected attacks.  If attacked, or
-  at any time, the character may choose to end her meditation abruptly, in which
-  case she forfeits all Essence regained in the preceding hour, and becomes
-  immediately active, with an effective Join Battle roll of 0.  She cannot
-  attack or counterattack until her next action, only reflexively defend.  She
-  will suffer a (-Essence) internal penalty to all rolls on her first action,
-  this penalty decreasing each action until it reaches 0.
+  prevent the character from being subject unexpected attacks.  If attacked,
+  or at any time, the character may choose to end her meditation abruptly, in
+  which case she forfeits all Essence regained in the preceding hour, and
+  becomes immediately active, with an effective Join Battle roll of 0.  She
+  cannot attack or counterattack until her next action, only reflexively
+  defend.  She will suffer a (-Essence) internal penalty to all rolls on her
+  first action, this penalty decreasing each action until it reaches 0.
   
 --- !Charm
 id: sit
@@ -205,20 +213,21 @@ keys: [Combo-OK, Illusion]
 dur: Indefinite
 deps: [hpp, she]
 text: |
+
   TODO
   
   This Charm allows the Exalt to impose part or all of his own perceptions on
-  the target.  At the point at which the Charm is activated, the character must
-  be able to identify the target through at least one sense, not necessarily
-  sight.  Thereafter the effect is maintained as long as the target can still be
-  sensed or remains within (Essence x 100) yards.
+  the target.  At the point at which the Charm is activated, the character
+  must be able to identify the target through at least one sense, not
+  necessarily sight.  Thereafter the effect is maintained as long as the
+  target can still be sensed or remains within (Essence x 100) yards.
   
   The character may pick out any objects or creatures he can percieve, or even
   general aspects of his own external or internal senses (darkness, nausea
-  etc.), to apply to the target's senses.  In the case of objects or creatures,
-  he may cause them to appear anywhere around the target, though he cannot
-  control their apparent behaviour, unless he can control the actual behaviour
-  of the original.
+  etc.), to apply to the target's senses.  In the case of objects or
+  creatures, he may cause them to appear anywhere around the target, though he
+  cannot control their apparent behaviour, unless he can control the actual
+  behaviour of the original.
   
   The conentration required to transfer perceptions in this way puts the
   character at a -2 internal penalty to all actions which require use of the
@@ -236,8 +245,9 @@ keys: [Combo-OK, Shaping]
 dur: Special
 deps: [ufm, sit]
 text: |
-  Those who are a Law Unto Themselves choose their own beliefs, though
-  they may accept another's viewpoint if it suits them.
+
+  Those who are a Law Unto Themselves choose their own beliefs, though they
+  may accept another's viewpoint if it suits them.
   
   This Charm may be activated whenever the character is subject to an Illusion
   which she could resist in her current state.  Instead of resisting she
@@ -251,18 +261,18 @@ text: |
   effects using the traits of the Illusion's creator to determine their power
   (or the minimum trait values, if the creator does not meet them).  These
   changes disappear if the Illusion's creator ends the effect, or some other
-  effect undoes the Shaping (which ends the Illusion also), or the character has
-  another opportunity to resist the Illusion and successfully does so.  However,
-  any consequential changes, such as damage, remain.
+  effect undoes the Shaping (which ends the Illusion also), or the character
+  has another opportunity to resist the Illusion and successfully does so.
+  However, any consequential changes, such as damage, remain.
   
-  This is a Shaping effect that can take place in Creation (or any other realm)
-  and makes Shaping attacks and effects as dictated by the content of the
-  Illusion.  An Illusion that mimics powerful supernatural entities or phenomena
-  will only generate effects mimicing that entity or phenomena's effects to the
-  extent that a Shaping action would be able to do so.  The user of this Charm
-  has no special protection from these effects, nor control over them, she
-  simply allows for Shaping effects to reinforce whatever the Illusion would
-  otherwise appear to do.
+  This is a Shaping effect that can take place in Creation (or any other
+  realm) and makes Shaping attacks and effects as dictated by the content of
+  the Illusion.  An Illusion that mimics powerful supernatural entities or
+  phenomena will only generate effects mimicing that entity or phenomena's
+  effects to the extent that a Shaping action would be able to do so.  The
+  user of this Charm has no special protection from these effects, nor control
+  over them, she simply allows for Shaping effects to reinforce whatever the
+  Illusion would otherwise appear to do.
   
   [TODO: How should this affect the Wyld?  One idea (pre-Fair-Folk-errata) is
   that it should increase the bonuses a character gets for submitting to a

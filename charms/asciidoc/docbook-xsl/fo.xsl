@@ -388,6 +388,7 @@
   <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
   <xsl:attribute name="line-height">170%</xsl:attribute>
+  <xsl:attribute name="hyphenate">false</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level1.properties">

@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Bureaucracy
+
 --- !CharmLayout
 grid:
-- [bbb, ~, bpp]
-- [wwws, fam, exc]
-- [bots, frf, mom]
-- [dbp, rcm, mrp]
-- [~, mu, ln]
+- [ici, exc, bbb]
+- [fam, wwws, bots]
+- [mrp, mom, bpp]
+- [dbp, rcm, ln]
+- [~, mu, ~]
 --- !Charm
 id: exc
 name: "(Any Bureaucracy>Excellency)"
@@ -21,11 +22,13 @@ mins: {Bureaucracy: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social]
 dur: One scene
-deps: [exc]
+deps: []
 reviews:
 - 2012-04-14 RWG
 text: |
 
+  TODO
+  
   This Charm gives the character a clear understanding of an organization with
   which she is interacting, providing knowledge of all departments and
   factions within an organization, official and unofficial, and identifying
@@ -52,6 +55,56 @@ text: |
   Magnitude of those present no longer limits the reduction in external
   penalties: she can obtain her full (Bureaucracy) rating in reduction on the
   basis of interacting with or observing even a single individual.
+
+--- !Charm
+id: ici
+name: "Inner Circle>Insinuation"
+cost: 5m, 1wp
+mins: {Bureaucracy: 2, Essence: 2}
+type: [Simple, Speed 6 in long ticks]
+keys: [Combo-OK, Social]
+dur: One scene
+deps: [fam]
+reviews:
+- 2012-04-14 RWG
+text: |
+
+  TODO
+
+  This Charm allows the character to temporily take the advantages of certain
+  Backgrounds related to groups and apply them to other related groups.  The
+  relevant Backgrounds are Abyssal Command, Backing, Command, Contacts, Cult,
+  Followers, Henchmen, Influence, and Spies, or any other set which the
+  Storyteller deems apprpriate. *[TODO: What about Class, Liege, Infamy,
+  ...?]*
+
+  Initially, the character can only apply this to benefit from association
+  with groups which are wholly contained within groups for which he already
+  has one or more dots of the relevant Background.  The character need only
+  know of the existence of such sub-groups, not the details of their make-up
+  or operations.  The magic of the Charm provides the necessary information to
+  be identified as an acceptable contact for the group.
+
+  *[TODO: Provide scene-long bonuses, or removal of penalties, as well?]*
+
+  At Bureaucracy 3+, the character can insinuate his way into a related group,
+  even if only partially overlaps with one he already has a connection to--it
+  need not be a strict sub-group.
+
+  At Essence 3+ the character can, at the end of the scene, spend experience
+  points to permanently shift her association.  One or more dots of the
+  original Background, associated with a single group, can be converted to
+  relate to the chosen new group, at a cost of 1xp per dot.  Alternatively,
+  new dots in that Background can be bought for the new group, leaving the
+  original association intact, at a cost of 2xp per dot.
+
+  At Essence 4+ the character can also use his association with this new group
+  to buy dots in different Backgrounds related to the group: Allies, Artifact,
+  Class, Echoes, Familiar, Infamy, Liege, Manse, Mentor, Resources, Sufi,
+  Underworld Manse, and Whispers.  The Storyteller will probably require
+  additional justification for some of these.  Furthermore, posessing dots in
+  some of these Backgrounds without also having wider, related backing of some
+  sort is liable to lead the character into some tricky situations.
 
 --- !Charm
 id: wwws
@@ -94,11 +147,11 @@ text: |
   selfish internal goals, its various parts effectively work much more
   successfully towards an overall aim.  The Charm supplements a dramatic
   action, adding the character's subtle guidance and suggestion to a project.
-  He mst be involved in its execution, but need not lead the action, nor even
+  He must be involved in its execution, but need not lead the action, nor even
   be a member of the group.  It reduces internal penaltes on the action by the
   group's Magnitude.  If the character's involvement is not obvious to most of
   the group, and the action succeeds, then the group puts this success down in
-  good part to the particular way they worked, thereby permanently reducing
+  large part to the particular way they worked, thereby permanently reducing
   internal penalties by one point, as a mysterious air of good feeling
   persists after the project.  The total permanent reduction in penalties for
   a given group over repeated application of this Charm cannot exceed the
@@ -112,14 +165,14 @@ mins: {Bureaucracy: 2, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Instant
-deps: []
+deps: [exc]
 text: |
 
   Eclipse-caste Solars bind others, not always willing, in oaths of servitude
   enforced by the might of Heaven.  The Unbending Arm, however, recognises
   that oaths are more likely to remain unbroken if they are fairly made, and
-  can seal a pargain with the unbalanced balance of the power of Eris.  This
-  Charm allows a Discordian to magically reinforce an oath between two
+  they can seal a bargain with the unbalanced balance of the power of Eris.
+  This Charm allows a Discordian to magically reinforce an oath between two
   individuals or groups, provided each side swears freely.  The character may
   be one of those affected, but need not be.  Unwilling parties are not valid
   targets for this Charm, nor are those whose willingness comes only through
@@ -131,19 +184,20 @@ text: |
   magic of the Charm ensures that the first party to break the oath will
   suffer a single occurrence of terrible misfortune, similar to the
   Eclipse-caste anima ability.  At the same time, all beings bound by the oath
-  (and the character, if he is not one of the parties) will know that the it
-  was broken, and by whom.  If the wronged party subsequently takes steps to
-  gain redress, they will benefit from a perfect success on one action in
+  (and the character, even if he is not one of the parties) will know that the
+  it was broken, and by whom.  If the wronged party subsequently takes steps
+  to gain redress, they will benefit from a perfect success on one action in
   pursuit of that goal, at a highly opportune moment.
   
-  Without the power of Yu-Shan behind it, given that Eris generally likes folk
-  to fend for themselves, this binding lasts only until the Exalt dies.  Both
-  parties will know if this happens, and can distinguish it from a breaking of
-  the oath.  Eliciting an oath of truce from some enemy may therefore not be
-  particularly useful, but a fair trade may fend off violence, at least until
-  both sides have done their part.  There are no ancient pacts to protect any
-  Division of Discordians as they wander the worlds, but most intelligent
-  beings can be bargained with, if the price is right.
+  Without the power of Yu-Shan behind it, given that Eris generally leaves
+  folk to work things out for themselves, this binding lasts only until the
+  Exalt dies.  Both parties will know if this happens, and can distinguish it
+  from a breaking of the oath.  Eliciting an oath of truce from some enemy may
+  therefore not be particularly useful, but a fair trade may fend off
+  violence, at least until both sides have done their part.  There are no
+  ancient pacts to protect any Division of Discordians as they wander the
+  worlds, but most intelligent beings can be bargained with, if the price is
+  right.
   
 --- !Charm
 id: mom
@@ -153,7 +207,7 @@ mins: {Bureaucracy: 2, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
-deps: [exc]
+deps: []
 text: |
 
   The Bishops of Greyface enjoy spreading confusion, particularly around the
@@ -175,6 +229,8 @@ text: |
   
   *[TODO: Might need to limit scope/size of organization.]*
   
+  *[TODO: Should the duration be Instant?]*
+  
 --- !Charm
 id: mrp
 name: "Mission Restatement Process"
@@ -183,7 +239,7 @@ mins: {Bureaucracy: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Servitude]
 dur: Instant
-deps: [mom]
+deps: [wwws, mom]
 text: |
 
   The sometimes crazed notions of the Unbending Arm are nonetheless unusually
@@ -225,7 +281,7 @@ mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Social, War]
 dur: One day
-deps: [mrp]
+deps: [mom]
 text: |
 
   Confusion can be a gift, in the right hands; though, as ever, it is better
@@ -263,35 +319,21 @@ text: |
   
   *[TODO: Might need to limit scope/size of organization.]*
   
---- !Charm
-id: frf
-name: "Form Request Form"
-cost: 8m
-mins: {Bureaucracy: 4, Essence: 2}
-type: [Simple, Dramatic Action]
-keys: [Form-type, Obvious]
-dur: One scene
-deps: [fam, mom]
-text: |
-
-  So dedicated are the Priests of Eris to meddling with established order that
-  they have elevated its practice to a level of refinement normally reserved
-  for martial artists.  The Greyface Exalt brings forth an official-looking
-  but nonsesical form, or improvises one from materials at hand, and meditates
-  briefly on the futilty of filling it out, after which it disappears in a
-  puff of smoke.  While this Charm is active, he adds half of the highest of
-  his Backing, Contacts, Cult, Followers and Influence Backgrounds to his
-  Dodge DV and Dodge MDV, as he bends strands of Fate (or other dominant
-  reality substrate) to redirect possible injury into these larger structures.
-  The mote cost of all Bureaucracy Charms is reduced by (his permanent
-  Essence), to a minimum of 1m, and the durations of any Dramatic Actions
-  based on Bureaucracy (using Charms or not), started during that scene, are
-  divided by (his permanent Essence).  Lastly, for the duration of the scene,
-  the character may use any individual Martial Arts Charm, or Martial Arts
-  Combo, as part of an impromptu Combo with any single Bureaucracy Charm, or
-  Bureaucracy Combo, at the cost of an additional point of Willpower each
-  time.  This is likely to be most useful with Excellencies, or with some
-  peculiar Sidereal Martial Arts.
+# --- !Charm
+# id: frf
+# name: "Form Request Form"
+# cost: 8m
+# mins: {Bureaucracy: 4, Essence: 2}
+# type: [Simple, Dramatic Action]
+# keys: [Form-type, Obvious]
+# dur: One scene
+# deps: [fam, mom]
+# text: |
+#
+#   ...  While this Charm is active, he adds half of the highest of his
+#   Backing, Contacts, Cult, Followers and Influence Backgrounds to his Dodge
+#   DV and Dodge MDV, as he bends strands of Fate (or other dominant reality
+#   substrate) to redirect possible injury into these larger structures.  ...
   
 --- !Charm
 id: rcm
@@ -301,11 +343,11 @@ mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Social, Compulsion]
 dur: Instant
-deps: [frf]
+deps: [ln]
 text: |
 
   Too often, those who serve a larger cause get caught up in that service and
-  give it more credence than they give themselves; which is something to be
+  give it more credence than they give themselves, which is something to be
   taken advantage of.  This Charm causes an organistion to lose all record of
   a particular fact, or introduces a new ``fact'' into their archives and
   common understanding.  It must be activated in the presence of a member of
@@ -338,7 +380,7 @@ mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social]
 dur: Instant
-deps: [frf]
+deps: [mom]
 text: |
 
   A word in the right butterfly-like ear can have unexpected effects far away.
@@ -400,13 +442,16 @@ mins: {Bureaucracy: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion]
 dur: Instant
-deps: []
+deps: [wwws, mom]
 refs:
 - [TID, Core, 238]
 - [TCM, Lunars, 170]
 text: |
 
-  TODO: Needs some prerequisite(s).
+  *[TODO: Needs some prerequisite(s).]*
+
+  *[TODO: Is this sufficiently different from Mission Restatement Process?
+   Maybe this should replace that one, perhaps picking up some mechanics.]*
 
   TODO: fluff.
   

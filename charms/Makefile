@@ -13,13 +13,13 @@ CONFIG=asciidoc/* asciidoc/docbook-xsl/* fop/* ../fonts/goudy-3.1/*
 
 export FOP_HYPHENATION_PATH=fop/offo-hyphenation-binary/fop-hyph.jar
 
-all: destdir html # charms-pdf wiki
+all: html # charms-pdf wiki
 
-html: $D/$(MAINFILE)
+html: destdir $D/$(MAINFILE)
 
-charms-pdf: $D/charms.pdf
+charms-pdf: destdir $D/charms.pdf
 
-wiki: $W/$(MAINWIKI)
+wiki: destdir $W/$(MAINWIKI)
 
 .PHONY: clean tmpclean
 

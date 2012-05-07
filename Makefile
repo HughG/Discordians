@@ -5,6 +5,7 @@ SCRIPTS=tools/protocol23
 CONF_IN=src/conf
 FONTS_IN=src/fonts
 CHARMS_IN=src/text/charms
+BOOK_IN=src/text/book
 # Output / Intermediate
 OUT=out
 HTML_OUT=$(OUT)/html
@@ -28,6 +29,7 @@ SHOW_PDF=osascript tools/show_pdf.scpt
 HTML_MAIN=charms.html
 #MAINWIKI=charms_wiki.txt
 CHARMS_IN_LIST=$(wildcard $(CHARMS_IN)/*.yml)
+BOOK_IN_LIST=$(wildcard $(BOOK_IN)/*.asc)
 HTML=$(CHARMS_IN_LIST:.yml=.html)
 ASC=$(CHARMS_IN_LIST:.yml=.asc)
 SVG=$(CHARMS_IN_LIST:.yml=.svg)
@@ -50,9 +52,8 @@ $(DOT_MED):
 	$(MKDIR) $(DOT_MED)
 
 html: $(HTML_OUT) $(HTML_OUT)/$(HTML_MAIN)
-
 charms-pdf: $(PDF_OUT)/charms.pdf
-
+book: $(PDF_OUT)/Discordians.pdf
 test-pdf: $(PDF_OUT)/test.pdf
 
 #wiki: destdir $W/$(MAINWIKI)
@@ -97,6 +98,10 @@ $(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(CHARMS_IN)/intro.html $(CHARM
 $(PDF_OUT)/charms.pdf: $(CHARMS_IN)/charms.asc $(CHARMS_IN)/charms-docinfo.xml $(CONFIG) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/charms.asc
 	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/charms.pdf
+
+$(PDF_OUT)/Discordians.pdf: $(BOOK_IN)/Discordians.asc $(BOOK_IN)/Discordians-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(PDF_OUT)
+	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(BOOK_IN)/Discordians.asc
+	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/Discordians.pdf
 
 $(PDF_OUT)/test.pdf: $(CHARMS_IN)/test.asc $(CHARMS_IN)/test-docinfo.xml $(CONFIG) $(PDF_OUT)
 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/test.asc

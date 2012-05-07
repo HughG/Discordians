@@ -92,6 +92,7 @@ def make_html(indir, outdir, outfilename)
       end
       section_name = matches[3].tr('_', " ")
       section_filename = file.sub(/\.yml$/, ".html")
+      section_filename = section_filename.sub(/^#{indir}/, ".")
       out.print("<a target='text' ",
                 "href='#{section_filename}'>#{section_name}</a><br/>\n")
 

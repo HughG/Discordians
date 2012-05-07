@@ -1,7 +1,7 @@
 #! /opt/local/bin/ruby1.9
 
 require "psych"
-require "./yaml2x"
+require File.expand_path(File.dirname(__FILE__)) + "/yaml2x"
 
 def write_tag_index_as_html(out, all_charms, get_tags, excluded_tags,
                             extract_tags=lambda {|tag_value| tag_value})

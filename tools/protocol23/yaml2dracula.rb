@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 require "psych"
-require "./yaml2x"
+require File.expand_path(File.dirname(__FILE__)) + "/yaml2x"
 
 def beads(bead, no_bead, count)
   bead_array = ([bead] * count) + ([no_bead] * (5 - count))

@@ -1,7 +1,7 @@
 #! /opt/local/bin/ruby1.9
 
 require "psych"
-require "./yaml2x"
+require File.expand_path(File.dirname(__FILE__)) + "/yaml2x"
 
 def insert_charm(out, section_name, charms, charm)
 #  $stderr << '  ' << charm.name << "\n"

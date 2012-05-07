@@ -1,7 +1,7 @@
 #! /opt/local/bin/ruby1.9
 
 require "rexml/document"
-require "./yaml2x.rb"
+require File.expand_path(File.dirname(__FILE__)) + "/yaml2x.rb"
 
 include REXML
 

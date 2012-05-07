@@ -1,74 +1,111 @@
-D=output
-MAINFILE=charms.html
+### Tools
+MKDIR=mkdir -p
+RM=rm -rf
+CP=cp -f
+TOUCH=touch
+ASCIIDOC=asciidoc
+A2X=a2x
+DOT=/Applications/Graphviz.app/Contents/MacOS/dot
+SHOW_PDF=osascript show_pdf.scpt
+
+### Locations
+# Tools
+SCRIPTS=tools/protocol23
+# Input
+CONF_IN=src/conf
+FONTS_IN=src/fonts
+CHARMS_IN=src/text/charms
+# Output / Intermediate
+#D=out
+OUT=out
+HTML_OUT=$(OUT)/html
+IMG_OUT=$(OUT)/images
+PDF_OUT=$(OUT)/PDF
+ASC_MED=$(OUT)/asciidoc
+DOT_MED=$(OUT)/dot
+
+HTML_MAIN=charms.html
 
 #W=output_wiki
 #MAINWIKI=charms_wiki.txt
 
-INPUT=$(wildcard ./*.yml)
-HTML=$(INPUT:.yml=.html)
-ASC=$(INPUT:.yml=.asc)
-SVG=$(INPUT:.yml=.svg)
-PNG=$(INPUT:.yml=.png)
-CONFIG=asciidoc/* asciidoc/docbook-xsl/* fop/* ../fonts/goudy-3.1/*
+CHARMS_IN_LIST=$(wildcard $(CHARMS_IN)/*.yml)
+SCRIPTS_LIST=$(wildcard $(SCRIPTS)/*.rb)
+HTML=$(CHARMS_IN_LIST:.yml=.html)
+ASC=$(CHARMS_IN_LIST:.yml=.asc)
+SVG=$(CHARMS_IN_LIST:.yml=.svg)
+PNG=$(CHARMS_IN_LIST:.yml=.png)
+CONFIG=$(CONF_DIR)/asciidoc/* $(CONF_DIR)/asciidoc/docbook-xsl/* $(CONF_DIR)/fop/* $(FONTS_IN)/goudy-3.1/*
 
-export FOP_HYPHENATION_PATH=fop/offo-hyphenation-binary/fop-hyph.jar
+export FOP_HYPHENATION_PATH=tools/fop/offo-hyphenation-binary/fop-hyph.jar
 
 all: html # charms-pdf wiki
 
-html: destdir $D/$(MAINFILE)
+$(HTML_OUT):
+	$(MKDIR) $(HTML_OUT)
+$(IMG_OUT):
+	$(MKDIR) $(IMG_OUT)
+$(ASC_MED):
+	$(MKDIR) $(ASC_MED)
+$(DOT_MED):
+	$(MKDIR) $(DOT_MED)
 
-charms-pdf: destdir $D/charms.pdf
+html: $(HTML_OUT) $(HTML_OUT)/$(HTML_MAIN)
 
-wiki: destdir $W/$(MAINWIKI)
+#charms-pdf: destdir $D/charms.pdf
+
+#wiki: destdir $W/$(MAINWIKI)
 
 .PHONY: clean tmpclean
 
-.PRECIOUS: $D/%.png $D/%.asc
+.PRECIOUS: $(IMG_OUT)/%.png $(ASC_MED)/%.asc $(DOT_MED)/%.dot
 
 clean:
-	-rm -rf $D # $W
+	-$(RM) $(OUT) # $W
 
 tmpclean:
-	-rm -rf ./*~ $D/*~ # $W/*~
+	-$(RM) src/*~ src/*/*~ $(OUT)/*~ $(OUT)/*/*~ # $W/*~
 
-destdir:
-	mkdir -p $D
-#	mkdir -p $W
+#destdir:
+#	mkdir -p $D
+##	mkdir -p $W
 
-$D/%.dot: %.yml yaml2dot.rb yaml2x.rb
-	./yaml2dot.rb $< $@
+$(DOT_MED)/%.dot: $(CHARMS_IN)/%.yml $(SCRIPTS_LIST) $(DOT_MED)
+	$(SCRIPTS)/yaml2dot.rb $< $@
 
-$D/%.asc: %.yml yaml2asciidoc.rb yaml2x.rb
-	./yaml2asciidoc.rb $< $@
+$(ASC_MED)/%.asc: $(CHARMS_IN)/%.yml $(SCRIPTS_LIST) $(ASC_MED)
+	$(SCRIPTS)/yaml2asciidoc.rb $< $@
 
-$D/%.html: $D/%.asc $D/%.png
-	asciidoc --attribute=image-dir=./ --attribute=charm-image-ext=png $<
+$(HTML_OUT)/%.html: $(ASC_MED)/%.asc $(IMG_OUT)/%.png $(HTML_OUT)
+	$(ASCIIDOC) --attribute=image-dir=./ --attribute=charm-image-ext=png --out-file=$@ $<
 
 #$D/%.pdf: $D2/%.asc $D/%.png
-#	a2x -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $<
+#	$(A2X) -vv -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl $<
 
-$D/%.png: $D/%.dot
-	/Applications/Graphviz.app/Contents/MacOS/dot -Tpng $< >$@
+$(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
+	$(DOT) -Tpng $< >$@
 
-$D/%.svg: %.yml yaml2svg.rb yaml2x.rb
-	./yaml2svg.rb $< $@
+$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS_LIST) $(IMG_OUT)
+	$(SCRIPTS)/yaml2svg.rb $< $@
 
-$D/$(MAINFILE): makehtml.rb intro.html style.css discordians.css $(HTML:./%=$D/%) $(PNG:./%=$D/%)
-	./makehtml.rb . $D $(MAINFILE)
-	touch $D/$(MAINFILE)
-	cp -f intro.html $D/intro.html
-	cp -f style.css $D/style.css
-	cp -f discordians.css $D/discordians.css
+$(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS_LIST) $(CHARMS_IN)/intro.html $(CHARMS_IN)/style.css $(CHARMS_IN)/discordians.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)
+	$(SCRIPTS)/makehtml.rb . $(HTML_OUT) $(HTML_MAIN)
+	$(TOUCH) $(HTML_OUT)/$(HTML_MAIN)
+	$(CP) $(CHARMS_IN)/intro.html $(HTML_OUT)
+	$(CP) $(CHARMS_IN)/style.css $(HTML_OUT)
+	$(CP) $(CHARMS_IN)/discordians.css $(HTML_OUT)
 
-$D/charms.pdf: charms.asc charms-docinfo.xml $(CONFIG) $(ASC:./%=$D/%) $(SVG:./%=$D/%)
-	cp charms.asc $D/charms.asc
-	cp charms-docinfo.xml $D/charms-docinfo.xml
-	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf --attribute=image-dir=$D/ --attribute=charm-image-ext=svg" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" $D/charms.asc
-	osascript show_pdf.scpt `pwd`/$D/charms.pdf
+$(PDF_OUT)/charms.pdf: charms.asc charms-docinfo.xml $(CONFIG) $(ASC:./%=$D/%) $(SVG:./%=$D/%) $(PDF_OUT)
+#	$(CP) charms.asc $(OUT)
+#	$(CP) charms-docinfo.xml $(OUT)
+	$(A2X) -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" -D $(PDF_OUT) charms.asc
+	$(SHOW_PDF) `pwd`/$(PDF_OUT)/charms.pdf
 
-test.pdf: test.asc test-docinfo.xml $(CONFIG)
-	a2x -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" test.asc
-	osascript show_pdf.scpt `pwd`/test.pdf
+$(PDF_OUT)/test.pdf: test.asc test-docinfo.xml $(CONFIG) $(PDF_OUT)
+#	$(CP) test.asc $(OUT)
+#	$(CP) test-docinfo.xml $(OUT)
+	$(A2X) -vv -k --asciidoc-opts "--conf-file=asciidoc/docbook45.conf" -f pdf --fop --xsl-file=asciidoc/docbook-xsl/fo.xsl --fop-opts "-c fop/fop.xconf -d" -D $(PDF_OUT) test.asc
+	$(SHOW_PDF) `pwd`/$(PDF_OUT)/test.pdf
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 #	./makewiki.rb . $W $(MAINWIKI)

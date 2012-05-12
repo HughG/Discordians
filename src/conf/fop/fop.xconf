@@ -79,18 +79,18 @@ the location of this file.
         </font>
         -->
 
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/fonts/goudy-3.1/GoudyStMTT-Condensed.ttf">
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Condensed.ttf">
           <font-triplet name="GoudyStMTT" style="normal" weight="normal"/>
         </font>
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/fonts/goudy-3.1/GoudyStMTT-Condensed-Bold.ttf">
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Condensed-Bold.ttf">
           <font-triplet name="GoudyStMTT" style="normal" weight="bold"/>
         </font>
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/fonts/goudy-3.1/GoudyStMTT-Italic.ttf">
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Italic.ttf">
           <font-triplet name="GoudyStMTT" style="italic" weight="normal"/>
           <font-triplet name="GoudyStMTT" style="italic" weight="bold"/>
         </font>
 
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/fonts/artisan12.ttf">
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/artisan12.ttf">
           <font-triplet name="Artisan12" style="normal" weight="normal"/>
         </font>
       </fonts>

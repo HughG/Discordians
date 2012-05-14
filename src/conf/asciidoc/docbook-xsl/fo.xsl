@@ -434,4 +434,131 @@
   </fo:block>
 </xsl:template>
 
+
+
+
+
+<xsl:attribute-set name="table.cell.padding">
+  <xsl:attribute name="padding-start">3pt</xsl:attribute>
+  <xsl:attribute name="padding-end">3pt</xsl:attribute>
+  <xsl:attribute name="padding-top">3pt</xsl:attribute>
+  <xsl:attribute name="padding-bottom">3pt</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="table.properties" use-attribute-sets="formal.object.properties">
+  <xsl:attribute name="margin-left">-3pt</xsl:attribute>
+  <xsl:attribute name="margin-right">-3pt</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:attribute-set name="informaltable.properties" use-attribute-sets="informal.object.properties">
+  <xsl:attribute name="margin-left">-3pt</xsl:attribute>
+  <xsl:attribute name="margin-right">-3pt</xsl:attribute>
+</xsl:attribute-set>
+
+<!-- Expand this template to add properties to any cell's block -->
+<xsl:template name="table.cell.block.properties">
+  <!-- highlight this entry? -->
+  <xsl:choose>
+    <xsl:when test="ancestor::thead or ancestor::tfoot">
+      <xsl:attribute name="font-weight">bold</xsl:attribute>
+      <xsl:attribute name="hyphenate">false</xsl:attribute>
+    </xsl:when>
+    <!-- Make row headers bold too -->
+    <xsl:when test="ancestor::tbody and 
+                    (ancestor::table[@rowheader = 'firstcol'] or
+                    ancestor::informaltable[@rowheader = 'firstcol']) and
+                    ancestor-or-self::entry[1][count(preceding-sibling::entry) = 0]">
+      <xsl:attribute name="font-weight">bold</xsl:attribute>
+      <xsl:attribute name="hyphenate">false</xsl:attribute>
+    </xsl:when>
+  </xsl:choose>
+</xsl:template>
+
+<!-- Returns the table role for the context element -->
+<xsl:template name="tabrole">
+  <xsl:param name="node" select="."/>
+
+  <xsl:variable name="tgroup" select="$node/tgroup[1] | 
+                                      $node/ancestor-or-self::tgroup[1]"/>
+
+  <xsl:variable name="table" 
+                select="($node/ancestor-or-self::table | 
+                         $node/ancestor-or-self::informaltable)[last()]"/>
+
+  <xsl:variable name="tabrole">
+    <xsl:choose>
+      <xsl:when test="$table/@role != ''">
+        <xsl:value-of select="normalize-space($table/@role)"/>
+      </xsl:when>
+      <xsl:when test="$tgroup/@role != ''">
+        <xsl:value-of select="normalize-space($tgroup/@role)"/>
+      </xsl:when>
+      <xsl:otherwise>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:value-of select="$tabrole"/>
+</xsl:template>
+
+<xsl:template name="table.row.properties">
+
+  <xsl:variable name="tabrole">
+    <xsl:call-template name="tabrole"/>
+  </xsl:variable>
+
+  <xsl:variable name="row-height">
+    <xsl:if test="processing-instruction('dbfo')">
+      <xsl:call-template name="pi.dbfo_row-height"/>
+    </xsl:if>
+  </xsl:variable>
+
+  <xsl:if test="$row-height != ''">
+    <xsl:attribute name="block-progression-dimension">
+      <xsl:value-of select="$row-height"/>
+    </xsl:attribute>
+  </xsl:if>
+
+  <xsl:variable name="bgcolor">
+    <xsl:call-template name="pi.dbfo_bgcolor"/>
+  </xsl:variable>
+
+  <xsl:variable
+      name="header_count"
+      select="count(ancestor::table/thead) +
+	      count(ancestor::informaltable/thead)"/>
+
+  <xsl:variable name="rownum">
+    <xsl:number from="tgroup" count="row"/>
+  </xsl:variable>
+
+  <xsl:choose>
+    <xsl:when test="$bgcolor != ''">
+      <xsl:attribute name="background-color">
+        <xsl:value-of select="$bgcolor"/>
+      </xsl:attribute>
+    </xsl:when>
+<!--
+    NOTE 2012-05-14 HUGR: Not sure if I need an explicit role tag, or if
+    I can just say that all tables are striped, unless they're in sidebars.
+
+    <xsl:when test="$tabrole = 'striped'">
+-->
+    <xsl:when test="not(ancestor::sidebar)">
+      <xsl:if test="($rownum - $header_count) mod 2 = 0">
+        <xsl:attribute name="background-color">#D2D2D2</xsl:attribute>
+      </xsl:if>
+    </xsl:when>
+  </xsl:choose>
+
+  <!-- Keep header row with next row -->
+  <xsl:if test="ancestor::thead">
+    <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
+  </xsl:if>
+
+</xsl:template>
+
+
+
+
 </xsl:stylesheet>

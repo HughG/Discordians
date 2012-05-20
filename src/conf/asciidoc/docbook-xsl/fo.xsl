@@ -245,7 +245,7 @@
   Chapter heading customisation.
 -->
 <xsl:attribute-set name="preface.titlepage.recto.style">
-  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
+  <xsl:attribute name="background-image">url('src/text/book/Discordians_Title_Backdrop.png')</xsl:attribute>
   <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
@@ -258,7 +258,7 @@
   <xsl:attribute name="color">white</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="chapter.titlepage.recto.style">
-  <xsl:attribute name="background-image">url('../book/Discordians_Title_Backdrop.png')</xsl:attribute>
+  <xsl:attribute name="background-image">url('src/text/book/Discordians_Title_Backdrop.png')</xsl:attribute>
   <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>

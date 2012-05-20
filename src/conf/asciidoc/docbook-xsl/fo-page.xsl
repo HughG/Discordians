@@ -59,7 +59,9 @@
 <xsl:param name="body.margin.bottom" select="'0.3in'"/>
 <xsl:param name="body.margin.top" select="'0in'"/>
 
+<!--
 <xsl:param name="draft.mode" select="'yes'"/>
+-->
 <!-- Default fetches image from Internet (long timeouts) -->
 <xsl:param name="draft.watermark.image">../book/background_marble.png</xsl:param>
 

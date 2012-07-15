@@ -4,11 +4,11 @@ name: Bureaucracy
 
 --- !CharmLayout
 grid:
-- [ici, exc, bbb]
-- [fam, wwws, bots]
-- [mrp, mom, bpp]
-- [dbp, rcm, ln]
-- [~, mu, ~]
+- [exc, bbb, bots]
+- [ici, fam, wwws]
+- [xxx, dbp, mu]
+- [bpp, mom, rcm]
+- [mrp, ~, ln]
 --- !Charm
 id: exc
 name: "(Any Bureaucracy>Excellency)"
@@ -378,7 +378,7 @@ text: |
   penalties vanish the next day.
   
   *[TODO: Might need to limit scope/size of organization.]*
-  
+
 # --- !Charm
 # id: frf
 # name: "Form Request Form"
@@ -502,5 +502,66 @@ text: |
   directly interacted with her on previous occasions may resist the effect at
   a reduced cost of two Willpower points the first time, and one Willpower
   thereafter.
+    
+--- !Charm
+id: xxx
+name: "TODO"
+cost: "3m *[TODO , 1wp?]*"
+mins: {Bureaucracy: 4, Essence: 3}
+type: [Simple]
+keys: [Combo-OK, Stackable]
+dur: Indefinite
+deps: [fam]
+refs:
+- [WSS, Lunars, 181]
+- [GSP, Lunars, 181]
+- [OEA, LordsOfC, 77]
+text: |
+  
+  TODO
+  
+  This Charm allows the Overseer to monitor the workings of the systems in
+  which he is entwined.  Activating the Charm, he selects a particular Policy,
+  Project or official (effectively, anyone with at least Backing 1) of any
+  organization of which he is a member.  For the duration, he becomes
+  instantly aware if something occurs within the organization, or in its
+  interactions with the rest of the world, which significantly affects the
+  topic which he has chosen to monitor.  He will know whether the influence of
+  the event is positive, negative, or as yet unclear, and he will know where
+  it happened (both physically, and in terms of the organization's structure).
+  However, he senses nothing through this Charm's effect until it impinges on
+  the organization.  Thus, planned bribery, proposed changes in the law,
+  conspiracies to assassinate key members and so on will be undetected until
+  they happen (unless this scheming goes on within the organization, of
+  course).  He also does not automatically notice events whose effect on the
+  organization is not obvious.  For example, a spy joining the ranks will not
+  attract his attention, but the same spy gaining unauthorized access to
+  confidential documents would do.
+  
+  On being made aware of such an occurrence, the character can pay an
+  additional *[TODO 2m, 1wp?]* to extend his senses to the relevant location
+  indefinitely.  He remains clearly aware of his surroundings and able to
+  operate normally.
+  
+  This Charm can be concurrently activated to cover multiple topics within one
+  group, or aspects of multiple organizations.  At Essence 4, the character
+  need only activate it once per organization, being automatically aware of
+  events which affect any significant Project, aspect of Policy, or relatively
+  senior official.  He may further designate interest in up to (Essence)
+  additional topics of the same sort, which might otherwise seem
+  insignificant.  A second purchase at Essence 4 allows the character to
+  activate the Charm to monitor all significant aspects of the affairs of any
+  organization with which he has interacted in the last month.  He need not be
+  a member of the group, but this Charm does not reveal the Policies, Projects
+  or officials of organization to him.  Therefore he will only be made aware
+  of impacts on those topics that he already knows or later learns about.
+  Paying the Charm's additional cost to extend his senses and monitor events
+  is a valid way to learn about new topics, of course.
+  *[TODO: This could be too powerful, in terms of spying.  Maybe sense
+  extension doesn't work for monitoring other organizations?  Or costs a lot
+  more?]*
+  
+  *[TODO: Might need to limit scope/size of organization.  Might need separate
+  limit for repurchase.]*
     
 ...

@@ -23,15 +23,15 @@ def write_tag_index_as_html(out, all_charms, get_tags, excluded_tags,
   }
   sorted_tags = charms_by_tag.keys.sort.reject { |k| excluded_tags.include?(k) }
   sorted_tags.each { |tag|
-    out.print("<h3>", tag, "</h3><ul class='index_items'>")
+    out.print("<h3>", tag, "</h3>\n<ul class='index_items'>\n")
     charms_by_tag[tag].each { |charm|
-      output_filename = charm.file.sub(/\.yml$/, ".html")
+      output_filename = File.basename(charm.file).sub(/\.yml$/, ".html")
 
       out.print("<li><a href='#{output_filename}##{charm.safe_group}_#{charm.id}' target='text'>",
                 charm.clean_name,
-                "</a></li>")
+                "</a></li>\n")
     }
-    out.print("</ul>")
+    out.print("</ul>\n")
   }
 end
 

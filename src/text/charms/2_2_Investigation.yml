@@ -4,9 +4,9 @@ name: Investigation
 --- !CharmLayout
 grid:
 - [iai, erm, pds]
-- [roi, exc, lla]
-- [rtsc, eft, kna]
-- [stt, ~, nacm]
+- [iod, exc, lla]
+- [roi, eft, kna]
+- [rtsc, stt, nacm]
 --- !Charm
 id: exc
 name: "(Any Investigation>Excellency)"
@@ -88,6 +88,43 @@ text: |
   misdirection'' should be half the successes, or something?]*
   
 --- !Charm
+id: iod
+name: "Imposition of Deduction"
+cost: 6m, 1wp
+mins: {Investigation: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Compulsion, Social, Stackable]
+dur: Instant
+deps: [erm]
+text: |
+
+  The Puppeteer sees the world from his own unique vantage point, and makes
+  those who inhabit it dance and dream as he wishes.  His power brings others
+  closer to his vision of how things should be, or at least further from their
+  own.
+
+  This Charm supplements an Investigation roll to investigate the motivation
+  behind someone's words or actions in a social situation.  If the roll
+  succeeds, the character may state any other intent which might plausibly
+  explain the observed behavior or evidence.  Plausibility is judged by the
+  storyteller, and good stunts should be awarded extra leniency.  The Charm
+  then exterts unnatural mental influence, applying a Compulsion to follow the
+  character's alternative narrative.  This influence costs 3 Willpower to
+  resist, which may be paid immediately, or cumulatively in the same scene or
+  later ones.
+
+  At Investigation 4+, this Charm can also supplement an attempt to
+  investigate a scene for non-obvious signs of activity.  In this case a
+  successful roll leads to the Charm targeting any one individual involved in
+  producing the traces discovered, using the evidence as a temporary arcane
+  link.  If the evidence was left by several individuals, the character can
+  choose one from among them to the extent that he can distinguish them from
+  that evidence--otherwise the storyteller chooses one. The targeted
+  individual is compelled to henceforth follow any other intention or plan
+  which might also have been served by any activity the character can imagine
+  might have left the same traces.
+
+--- !Charm
 id: roi
 name: "Refuge>of Intransigence"
 cost: 3m or 6m
@@ -168,7 +205,7 @@ text: |
 id: rtsc
 name: "Reading>the Soul's Compass"
 cost: 5m
-mins: {Investigation: 4, Essence: 2}
+mins: {Investigation: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Social]
 dur: Instant
@@ -358,8 +395,8 @@ text: |
   not accrue Podge.)  However, the identity of the disguised person or object
   remains unknown.  If the digsuise itself imposes any penalties on the
   character, they are halved.  Furthermore, the character may add 2 dice to
-  any rolls (of any Ablity) to see through or undo the disguise.  For the
-  avoidance of doubt, raksha Assumption charms do not count as disguises for
-  the purposes of this Charm.
+  any rolls (of any sort, not just Investigation) to see through or undo the
+  disguise.  For the avoidance of doubt, raksha Assumption charms do not count
+  as disguises for the purposes of this Charm.
   
 ...

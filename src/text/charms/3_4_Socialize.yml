@@ -26,10 +26,10 @@ text: |
   
 --- !CharmLayout
 grid:
+- [usa, psa, gsd]
 - [dmi, pca, hci]
 - [hmi, sit, fm]
 - [exc, usn, ce]
-- [usa, psa, gsd]
 - [~, saic, ~]
 --- !Charm
 id: exc
@@ -65,8 +65,13 @@ text: |
   though bonuses and penalties from these conflicting values may cancel out.
   
   The character can target himself with this Charm, including using it in Step
-  2 as a form of defence.  Note that, being Reflexive, this Charm can enhance
-  rolls and be used in Combos with Charms from other Abilities.
+  2 as a form of defence.  *[TODO Not clear what I meant there.  Did I mean
+  the character could attack himself, in response to an attack, to give
+  himself a defensive Intimacy?  If so, that doesn't really work, in terms of
+  attack resolution timing.  Maybe it could allow the character to remove any
+  MDV penalties he would have due to his own Intimacies etc.?]* Note that,
+  being Reflexive, this Charm can enhance rolls and be used in Combos with
+  Charms from other Abilities.
   
 --- !Charm
 id: hci
@@ -157,6 +162,10 @@ text: |
   otherwise afffect the chosen aspect, including relevant Emotion and
   Compulsion effects, and this Charm itself.  The Charm can be applied to a
   social group of Magnitude up to (Socialize ÷ 2).
+
+  *[TODO: Should this be Indefinite?  If not, then excluding detection of this
+   Charm makes no sense, as it won't be in effect; and, when would it wear
+   off, or how could it be countered?]*
   
 --- !Charm
 id: psa
@@ -166,7 +175,7 @@ mins: {Socialize: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 9]
 keys: [Combo-OK, Social]
 dur: Instant
-deps: []
+deps: [pca]
 reviews:
 - 
 text: |
@@ -269,6 +278,9 @@ text: |
   
   *[TODO: Some recent forum thread spoke about Lunar follow-ups to Charismatic
   Lunar Trick?]*
+
+  *[TODO: Also allow things like reading motivation from combat moves,
+   counting combat as a period of social interaction, etc.]*
   
 --- !Charm
 id: usn
@@ -410,10 +422,11 @@ text: |
   helps the Leader resist this.  Assuming Loyalty can be spent to resist the
   effect, the amount of Loyalty to resist for a single scene is halved, to a
   minimum of one, and the total amount of Loyalty the Leader must spend to
-  shake it off is reduced by the character's Essence.  If the Leader cannot
-  validly resist the effect, the group automatically loses a dot of Magnitude
-  as the innoculated members, in a last-ditch attempt to protect their
-  loyalty, all leave at once to form a new group.
+  shake it off is reduced by the character's Essence, again to a minimum of
+  one.  If the Leader cannot validly resist the effect, the group
+  automatically loses a dot of Magnitude as the innoculated members, in a
+  last-ditch attempt to protect their loyalty, all leave at once to form a new
+  group.
   
 --- !Charm
 id: fm

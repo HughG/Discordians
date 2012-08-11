@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Bureaucracy
@@ -6,7 +7,7 @@ name: Bureaucracy
 grid:
 - [exc, bbb, bots]
 - [ici, fam, wwws]
-- [xxx, dbp, mu]
+- [pps, dbp, mu]
 - [bpp, mom, rcm]
 - [mrp, ~, ln]
 --- !Charm
@@ -504,8 +505,8 @@ text: |
   thereafter.
     
 --- !Charm
-id: xxx
-name: "TODO"
+id: pps
+name: Policy Perturbation>Sense
 cost: "3m *[TODO , 1wp?]*"
 mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple]
@@ -525,7 +526,7 @@ text: |
   Project or official (effectively, anyone with at least Backing 1) of any
   organization of which he is a member.  For the duration, he becomes
   instantly aware if something occurs within the organization, or in its
-  interactions with the rest of the world, which significantly affects the
+  interactions with the rest of the world, which significantly relates to the
   topic which he has chosen to monitor.  He will know whether the influence of
   the event is positive, negative, or as yet unclear, and he will know where
   it happened (both physically, and in terms of the organization's structure).
@@ -533,15 +534,14 @@ text: |
   the organization.  Thus, planned bribery, proposed changes in the law,
   conspiracies to assassinate key members and so on will be undetected until
   they happen (unless this scheming goes on within the organization, of
-  course).  He also does not automatically notice events whose effect on the
-  organization is not obvious.  For example, a spy joining the ranks will not
-  attract his attention, but the same spy gaining unauthorized access to
-  confidential documents would do.
+  course).  Even a spy joining the ranks would not attract his attention,
+  until she did something which related to a monitored topic, such as gaining
+  unauthorized access to confidential documents.
   
-  On being made aware of such an occurrence, the character can pay an
-  additional *[TODO 2m, 1wp?]* to extend his senses to the relevant location
-  indefinitely.  He remains clearly aware of his surroundings and able to
-  operate normally.
+  On being made aware of such an occurrence, the character can reflexively pay
+  an additional *[TODO 2m, 1wp?]* to extend his senses to the relevant
+  location indefinitely.  He remains clearly aware of his surroundings and
+  able to operate normally.
   
   This Charm can be concurrently activated to cover multiple topics within one
   group, or aspects of multiple organizations.  At Essence 4, the character

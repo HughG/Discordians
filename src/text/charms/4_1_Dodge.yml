@@ -142,7 +142,7 @@ text: |
   
 --- !Charm
 id: vmn
-name: "Villain Multiplication Nature"
+name: "Villain Multiplication>Nature"
 cost: 5m
 mins: {Dodge: 4, Essence: 3}
 type: [Reflexive, Step 2]
@@ -226,7 +226,7 @@ text: |
   
 --- !Charm
 id: mse
-name: "Moment of Spatial Eructation"
+name: "Moment of>Spatial Eructation"
 cost: -- (+3m per dot of Magnitude + 1wp)
 mins: {Dodge: 5, Essence: 4}
 type: [Permanent]

@@ -65,7 +65,7 @@ text: |
   
 --- !Charm
 id: wii
-name: "Wisp Interpolation Insights"
+name: "Wisp Interpolation>Insights"
 cost: 4m
 mins: {Lore: 4, Essence: 2}
 type: [Supplemental]

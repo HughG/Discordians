@@ -137,7 +137,7 @@ text: |
   
 --- !Charm
 id: iss
-name: "Intimate Seduction Serenade"
+name: "Intimate Seduction>Serenade"
 cost: 6m
 mins: {Performance: 3, Essence: 2}
 type: [Supplemental]

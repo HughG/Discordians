@@ -120,7 +120,7 @@ text: |
   
 --- !Charm
 id: iia
-name: "Infinite Impact Absorption"
+name: "Infinite Impact>Absorption"
 cost: 5m
 mins: {Resistance: 4, Essence: 3}
 type: [Reflexive, Step 7]
@@ -220,7 +220,7 @@ text: |
   
 --- !Charm
 id: arr
-name: "Ailment-Redirecting Regimen"
+name: "Ailment-Redirecting>Regimen"
 cost: 3m
 mins: {Resistance: 3, Essence: 2}
 type: [Reflexive, Step 10]

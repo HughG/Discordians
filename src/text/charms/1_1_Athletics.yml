@@ -157,7 +157,7 @@ text: |
   
 --- !Charm
 id: nbt
-name: "Narcissus Blossom Technique"
+name: "Narcissus Blossom>Technique"
 cost: 2m + 3m per dot
 mins: {Athletics: 3, Essence: 2}
 type: [Simple]

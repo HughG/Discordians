@@ -76,7 +76,7 @@ text: |
   
 --- !Charm
 id: mtm
-name: "Mantle-Trading Misdirection"
+name: "Mantle-Trading>Misdirection"
 cost: 8m, 1wp
 mins: {Presence: 3, Essence: 3}
 type: [Simple]
@@ -191,7 +191,7 @@ text: |
   
 --- !Charm
 id: htt
-name: "Heart's Treasure Transposed"
+name: "Heart's Treasure>Transposed"
 cost: 5m, 1wp
 mins: {Presence: 4, Essence: 3}
 type: [Simple]
@@ -223,7 +223,7 @@ text: |
   
 --- !Charm
 id: ppp
-name: "Paralocative Presence Prana"
+name: "Paralocative Presence>Prana"
 cost: 8m, 1wp
 mins: {Presence: 4, Essence: 3}
 type: [Simple]

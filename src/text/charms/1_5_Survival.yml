@@ -36,7 +36,7 @@ text: |
   
 --- !Charm
 id: wotch
-name: "Way of the Cloven Hoofprint"
+name: "Way of the>Cloven Hoofprint"
 cost: 3m
 mins: {Survival: 3, Essence: 2}
 type: [Supplemental]
@@ -188,7 +188,7 @@ text: |
   
 --- !Charm
 id: lwra
-name: "Living-With-Rocks Approach"
+name: "Living-With-Rocks>Approach"
 cost: 6m + 1wp
 mins: {Survival: 4, Essence: 4}
 type: [Simple]

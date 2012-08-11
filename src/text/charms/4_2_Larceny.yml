@@ -170,7 +170,7 @@ text: |
   
 --- !Charm
 id: iii
-name: "Instant Image Improvisation"
+name: "Instant>Image Improvisation"
 cost: 3m
 mins: {Larceny: 3, Essence: 2}
 type: [Supplemental]

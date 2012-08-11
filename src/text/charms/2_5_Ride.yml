@@ -14,7 +14,7 @@ text: |
   
 --- !Charm
 id: iss
-name: "Instinctive Stallion Sympathy"
+name: "Instinctive>Stallion Sympathy"
 cost: --
 mins: {Ride: 2, Essence: 2}
 type: [Permanent]

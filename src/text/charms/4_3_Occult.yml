@@ -133,7 +133,7 @@ text: |
   
 --- !Charm
 id: rio
-name: "Ritual of Instant Ordination"
+name: "Ritual>of Instant Ordination"
 cost: 10+m, 1wp
 mins: {Occult: 4, Essence: 3}
 type: [Simple]

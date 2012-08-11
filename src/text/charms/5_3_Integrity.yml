@@ -37,7 +37,7 @@ text: |
   
 --- !Charm
 id: sdc
-name: "Subtle Daydream Concoction"
+name: "Subtle Daydream>Concoction"
 cost: 6m
 mins: {Integrity: 3, Essence: 2}
 type: [Reflexive, Step 9]
@@ -83,7 +83,7 @@ text: |
   
 --- !Charm
 id: ddt
-name: "Dream Deflection Technique"
+name: "Dream Deflection>Technique"
 cost: 5m
 mins: {Integrity: 4, Essence: 3}
 type: [Reflexive, Step 9]
@@ -231,7 +231,7 @@ text: |
   
 --- !Charm
 id: iiov
-name: "Idiosyncratic Interpretation>of (Virtue)"
+name: "Idiosyncratic>Interpretation>of (Virtue)"
 cost: --
 mins: {Integrity: 2, Essence: 2}
 type: [Permanent]

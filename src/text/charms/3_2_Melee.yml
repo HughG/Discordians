@@ -75,7 +75,7 @@ text: |
   
 --- !Charm
 id: bbt
-name: "Breastplate Bypass Technique"
+name: "Breastplate Bypass>Technique"
 cost: 4m
 mins: {Melee: 3, Essence: 3}
 type: [Supplemental]

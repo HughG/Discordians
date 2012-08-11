@@ -248,7 +248,7 @@ text: |
   
 --- !Charm
 id: est
-name: "Echo-Solidification Technique"
+name: "Echo-Solidification>Technique"
 cost: 5m or 5m, (1wp per rating point)
 mins: {Craft: 4, Essence: 3}
 type: [Simple]
@@ -414,7 +414,7 @@ text: |
   
 --- !Charm
 id: eed
-name: "Erisian Elemental Distillation"
+name: "Erisian Elemental>Distillation"
 cost: 3m+, 1wp
 mins: {Craft: 3, Essence: 3}
 type: [Supplemental]

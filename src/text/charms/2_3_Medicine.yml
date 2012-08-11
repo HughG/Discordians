@@ -102,7 +102,7 @@ text: |
   
 --- !Charm
 id: psm
-name: "Plague Substitution Method"
+name: "Plague Substitution>Method"
 cost: 3m + 1wp
 mins: {Medicine: 3, Essence: 2}
 type: [Simple, Dramatic Action]

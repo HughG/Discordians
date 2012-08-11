@@ -58,7 +58,7 @@ text: |
 
 --- !Charm
 id: ici
-name: "Inner Circle>Insinuation"
+name: "Inner Circle>Infiltration"
 cost: 5m, 1wp
 mins: {Bureaucracy: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
@@ -298,7 +298,7 @@ text: |
   
 --- !Charm
 id: mrp
-name: "Mission Restatement Process"
+name: "Mission Restatement>Process"
 cost: --
 mins: {Bureaucracy: 4, Essence: 4}
 type: [Permanent]
@@ -397,7 +397,7 @@ text: |
   
 --- !Charm
 id: rcm
-name: "Record-Correction Maneuver"
+name: "Record Correction>Maneuver"
 cost: 8m, 1wp or 12m
 mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple, Dramatic Action]

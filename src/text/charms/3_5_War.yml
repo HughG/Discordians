@@ -111,7 +111,7 @@ text: |
   
 --- !Charm
 id: bii
-name: "Battle Intelligence Instinct"
+name: "Battle Intelligence>Instinct"
 cost: 4m, 1wp
 mins: {War: 4, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
@@ -167,7 +167,7 @@ text: |
   
 --- !Charm
 id: mlws
-name: "Marching-Like-Water System"
+name: "Marching-Like-Water>System"
 cost: 4m
 mins: {War: 3, Essence: 2}
 type: [Supplemental]

@@ -265,7 +265,7 @@ text: |
   
   This Charm supplements an Archery action by allowing the character to use
   himself as ammunition.  This allows him to Jump towards his target, up to
-  one tenth the range which the attack would otherwise have.  If the action is
+  one fifth the range which the attack would otherwise have.  If the action is
   an attack, the character may make an unarmed attack, or one which uses
   weapons which can be wielded at the same time as his current Archery weapon
   (e.g., a smashfist worn while using a bow).  This attack gains the Knockback
@@ -367,7 +367,7 @@ text: |
   This Charm supplements an Archery-based attack by the character, rapidly
   opening and closing a semi-stable portal to Elsewhere at the point of
   impact, causing a violent upsetting of the target's balance.  The target
-  must roll his (Stamina + Resistance) againt the character's (Strength +
+  must roll his (Stamina + Resistance) against the character's (Strength +
   Archery).  The attack must hit (i.e., not be dodged or parried), but need
   not inflict damage.  If the target fails this check, he is knocked prone (as
   a Knockdown effect, rather than Knockback).
@@ -377,10 +377,11 @@ text: |
   for Knockback, each rolling (Stamina + Resistance) againt the character's
   (Strength + Archery).  Inanimate objects up to roughly human mass will, if
   they are not fastened down, also be knocked back.  If the target dodged or
-  parried the attack, they must make a second check to avoid being knocked
-  back from wherever the projectile landed.  If the Erisian herself is within
-  this radius, she will not be knocked back, and her affinity with dynamic
-  chaos means she will ``luckily'' avoid being hit by any flying objects.
+  parried the attack without using a perfect defence, they must make a second
+  check to avoid being knocked back from wherever the projectile landed.  If
+  the Erisian herself is within this radius, she will not be knocked back, and
+  her affinity with dynamic chaos means she will ``luckily'' avoid being hit
+  by any flying objects.
   
   The character may make this attack without any ammunition, simply by miming
   an attack using a suitable weapon.  In this case, the target will not suffer

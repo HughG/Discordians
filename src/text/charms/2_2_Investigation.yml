@@ -122,7 +122,9 @@ text: |
   that evidence--otherwise the storyteller chooses one. The targeted
   individual is compelled to henceforth follow any other intention or plan
   which might also have been served by any activity the character can imagine
-  might have left the same traces.
+  might have left the same traces.  The cost in Willpower to resist this
+  influence is reduced by 1 for every year since the occurrence which left the
+  evidence, to a minimum of 0.
 
 --- !Charm
 id: roi

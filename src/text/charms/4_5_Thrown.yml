@@ -15,7 +15,7 @@ text: |
 --- !CharmLayout
 grid:
 - [ate, exc, ctw]
-- [sts, tws, tsfg]
+- [sts, ees, ppp]
 - [pdwr, itw, bpp]
 - [etw, cni, tea]
 --- !Charm
@@ -72,27 +72,85 @@ text: |
   be as good.]
   
 --- !Charm
-id: tws
-name: "(Thrown With Stunning)"
+id: ees
+name: "Elsewhere Explosion Shot"
+cost: 3m, or 5m + 1wp
+mins: {Thrown: 4, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [ate] #[wwa]
+refs:
+- Stealth_sse
 text: |
 
   TODO
+
+  This Charm supplements a Thrown attack by the character, causing a
+  wafer-thin, convoluted sheet of Elsewhere substance to ripple out from the
+  point of impact, disorienting the target as successive parts of it are
+  momentarily shifted into the grey realm.  In the case of a successful
+  attack--one which hits, even if it does not cause damage--the target must
+  roll his (Stamina + Resistance) against the character's (Strength + Thrown).
+  If the target fails this check, he is Stunned.
   
-  [Like Archery bofa but inflicts Stunning instead of Knockback.]
+  By spending an extra two motes and a point of Willpower, the character can
+  attempt to stun all beings within (Essence x 3) yards of the point of
+  impact.  Each must resist by making a contested roll as described above.  If
+  the target dodged or parried the attack without using a perfect defence,
+  they must still attempt to resist if they are within the area of effect.  If
+  the Erisian herself is within this radius, she is unaffected.
+  
+  The character may make this attack without actually throwing his weapon,
+  simply by miming an attack with the weapon he wields.  In this case, the
+  target will not suffer damage from the attack itself, but is at a -4 penalty
+  to his DV, since the only indication of the impact will be a shimmering in
+  the air at the last moment.
+  
+  A second purchase at Essence 4+ keeps the sheet of Elsewhere stable for
+  exactly (Thrown + Essence) ticks, and increases its degree of corrugation
+  until it provides a form of isolation identical to that produced by
+  <<Stealth_sse>>.  This affects a single target, or an area if the additional
+  Essence and Willpower is spent.  In the area case, all those affected are
+  prevented from targeting not only those outside the are, but also each
+  other.  Inventive Erisians have been known to apply this to themselves to
+  avoid damage, but it may leave them unable to do much more than Guard or
+  Aim--or take preparatory actions such as Shape Sorcery.
   
 --- !Charm
-id: tsfg
-name: "(Throwing Self for Grapple)"
+id: ppp
+name: "Pebble Proxy Propulsion"
+cost: 3m or 3m, 1wp
+mins: {Thrown: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [exc, itw] #[fr, qosas]
 text: |
 
   TODO
+
+  This Charm supplements a Thrown action by allowing the character to throw
+  himself as if with his weapon.  This allows him to Jump towards his target,
+  up to normal range of the weapon, or (Essence x 10) if that is less.  If the
+  action is an attack, the character may make an unarmed attack, or one which
+  uses weapons which can be wielded at the same time as his current Thrown
+  weapon (e.g., a smashfist worn while using a bow).  This attack is treated
+  as part of the same attack, using the Thrown attack roll to hit, but the
+  other weapon's details to determine damage in Step 7.  If the attack is an
+  unarmed one, the character may use it to attempt a grapple, using his Thrown
+  rating in place of Martial Arts. This Charm may be used in a flurry, but
+  attacks beyond the first in the flurry cannot be grapples.
   
-  [Allows character to throw himself like a net, as a grapple attack.  Can use
-  Thrown in place of Martial Arts for initial attack.  Can attack with some
-  small range -- Jump distance?  Some kind of bonus?  Bonus if immediately
-  [and/or?] eventually choosing to Break Hold by throwing the opponent away?
-  Maybe, if attack fails, character isn't automatically grappled himself
-  ... but is Knockback'ed???]
+  By spending a point of Willpower the Unhinged can multiply the distance of
+  the Jump by his Essence, up to a maximum of (Essence x 20).  If the attack's
+  range has been extended by other magics, the storyteller may rule that the
+  Jump lasts more than one action.
+  
+  When using this Charm, the character does not actually throw his weapon, and
+  he continues to wield it.  Note also that this Charm need not necessarily be
+  used as an attack: it could be used to allow the character to jump up to a
+  high balcony, for example.
   
 --- !Charm
 id: pdwr

@@ -263,6 +263,34 @@
 <xsl:param name="insert.xref.page.number" select="yes"></xsl:param>
 -->
 
+<!-- xref label customisation. -->
+<xsl:param name="local.l10n.xml" select="document('')"/>
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
+  <l:l10n language="en">
+<!--
+    <l:context name="title">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+-->
+    <l:context name="title-numbered">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+<!--
+    <l:context name="title-unnumbered">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+-->
+    <l:context name="xref">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+      <l:template name="section" text="%t"/>
+    </l:context>
+    <l:context name="xref-number-and-title">
+      <l:template name="chapter" text="Chapter %n: %t"/>
+    </l:context>
+  </l:l10n>
+</l:i18n>
+
+
 <xsl:param name="appendix.autolabel" select="0"></xsl:param>
 
 <!--
@@ -368,32 +396,6 @@
     </xsl:when>
   </xsl:choose>
 </xsl:template>
-
-<xsl:param name="local.l10n.xml" select="document('')"/>
-<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
-  <l:l10n language="en">
-<!--
-    <l:context name="title">
-      <l:template name="chapter" text="Chapter %n: %t"/>
-    </l:context>
--->
-    <l:context name="title-numbered">
-      <l:template name="chapter" text="Chapter %n: %t"/>
-    </l:context>
-<!--
-    <l:context name="title-unnumbered">
-      <l:template name="chapter" text="Chapter %n: %t"/>
-    </l:context>
--->
-    <l:context name="xref">
-      <l:template name="chapter" text="Chapter %n: %t"/>
-    </l:context>
-    <l:context name="xref-number-and-title">
-      <l:template name="chapter" text="Chapter %n: %t"/>
-    </l:context>
-  </l:l10n>
-</l:i18n>
-
 
 
 

@@ -299,7 +299,7 @@ text: |
   
   This Charm gives the character insight into the social norms, pressures and
   desires of a group with which she is interacting.  As long as the Charm
-  remains active, she reduced external penalties on actions related to
+  remains active, she reduces external penalties on actions related to
   understanding and taking advantage of knowledge of the Intimacies,
   Motivation, customs and taboos of a specific group.  The reduction is equal
   to the lower of (her Socialize) and (the Magnitude of those present who
@@ -379,7 +379,7 @@ text: |
   At Essence 4 the duration extends to (Socialize) days, and at Essence 5 to
   (Socialize) weeks.  The character can end this Charm early, but that only
   prevents the contagion spreading further, and does not stop the underlying
-  effect.  Note that the Contagion is a metaphysical Sickness effect and may
+  effect.  Note that the contagion is a metaphysical Sickness effect and may
   be resisted as such.
   
 --- !Charm

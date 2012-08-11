@@ -238,6 +238,30 @@
   <xsl:attribute name="keep-together.within-column">auto</xsl:attribute>
 </xsl:attribute-set>
 
+<!--
+  Give links a blue border, as in White Wolf's own PDFs.
+
+  TODO 2012-08-11 HUGR: Don't display the border in print.
+-->
+<xsl:attribute-set name="xref.properties">
+  <xsl:attribute name="border">0.5pt solid blue</xsl:attribute>
+</xsl:attribute-set>
+
+<!-- Put in page numbers for xrefs -->
+<!--
+  TODO 2012-08-11 HUGR: This crashes FOP 1.0 because of
+
+    https://issues.apache.org/bugzilla/show_bug.cgi?id=52411
+
+  which is a duplicate of
+
+    https://issues.apache.org/bugzilla/show_bug.cgi?id=50276
+
+  which is fixed in "1.1dev".  I'll have to wait until 1.1 is released and
+  MacPorts picks it up.
+
+<xsl:param name="insert.xref.page.number" select="yes"></xsl:param>
+-->
 
 <xsl:param name="appendix.autolabel" select="0"></xsl:param>
 

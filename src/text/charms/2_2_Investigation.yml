@@ -92,7 +92,7 @@ id: iod
 name: "Imposition of Deduction"
 cost: 6m, 1wp
 mins: {Investigation: 3, Essence: 3}
-type: [Supplemental]
+type: [Reflexive (Step 1)]
 keys: [Combo-OK, Compulsion, Social, Stackable]
 dur: Instant
 deps: [erm]
@@ -103,15 +103,18 @@ text: |
   closer to his vision of how things should be, or at least further from their
   own.
 
-  This Charm supplements an Investigation roll to investigate the motivation
-  behind someone's words or actions in a social situation.  If the roll
-  succeeds, the character may state any other intent which might plausibly
-  explain the observed behavior or evidence.  Plausibility is judged by the
-  storyteller, and good stunts should be awarded extra leniency.  The Charm
-  then exterts unnatural mental influence, applying a Compulsion to follow the
-  character's alternative narrative.  This influence costs 3 Willpower to
-  resist, which may be paid immediately, or cumulatively in the same scene or
-  later ones.
+  This Charm follows or is combined with an Investigation roll to uncover the
+  motivation behind someone's words or actions in a social situation.  If the
+  roll succeeds, the character may state any other intent which might
+  plausibly explain the observed behavior or evidence.  Plausibility is judged
+  by the storyteller, and good stunts should be awarded extra leniency.  He
+  then rolls [(Charisma or Manipulation) + Investigation] and, if his
+  successes equal or exceed the target's Dodge MDV, the Charm exterts
+  unnatural mental influence, applying a Compulsion to follow the character's
+  alternative narrative.  The effect is unblockable because the new
+  explanation is only in the character's mind, not stated aloud.  This
+  influence costs 3 Willpower to resist, which may be paid immediately, or
+  cumulatively in the same scene or later ones.
 
   At Investigation 4+, this Charm can also supplement an attempt to
   investigate a scene for non-obvious signs of activity.  In this case a

@@ -11,66 +11,139 @@ text: |
   
   * Tree for throwing things with non-combat effects (magical containment,
     spying, pickpocketing)
+
+  [throw-back counterattack?]
+
+  [Extend range with Elsewhere portals?]
   
 --- !CharmLayout
 grid:
-- [ate, exc, ctw]
+- [ddt, ssf, exc]
 - [sts, ees, ppp]
-- [pdwr, itw, bpp]
-- [etw, cni, tea]
+- [pdwr, dadb, bpp]
+- [etw, gae, tea]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"
 text: |
     
 --- !Charm
-id: ctw
-name: "(Call Thrown Weapon)"
+id: ssf
+name: "Stone-Skipping Fillip"
+cost: 2m per step
+mins: {Thrown: 2, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [exc]
 text: |
 
   TODO
   
-  [Like Archery bbta.  Can be used in a Combo Step 1 to automatically recall
-  the weapon after the attack succeeds or fails -- even if the attack itself
-  botches.]
-  
+  This Charm extends the maximum range of a Thrown weapon, stretching out its
+  flight path by sending it on many momentary hops through Elsewhere.
+  Spending two motes on this Charm doubles the maximum range, spending three
+  triples it, and so on up to a maximum multiple of the character's Essence.
+  However, shots beyond double the base range suffer an external penalty of
+  -1, and beyond triple this range a penalty of -2 applies (which is still an
+  improvement on the default penalties, as described on <<Exalted>>, p. 148).
+
   [Upgrade or second purchase to suspend weapons in Elsewhere?  Or could be
   separate Charm as in Archery.]
   
 --- !Charm
-id: ate
-name: "(Attack Through Elsewhere)"
+id: ddt
+name: "Dart Diversion Tactic"
+cost: 4m
+mins: {Thrown: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: [ssf]
 text: |
 
-  TODO
-  
-  [Like Archery wwa.]
-  
+  They Who Stand in the Doorway surprise their foes by stepping out at just
+  the right time, apparently from nowhere--or possibly just by sticking out a
+  foot.  Likewise they can send their knives and needles through evanescent
+  entrances and exits of Elsewhere.
+
+  This Charm supplements a Thrown attack in a number of ways.  It makes the
+  attack automatically unexpected, unless the target has some way of seeing
+  into Elsewhere.  It also effectively allows attacks to pass through solid
+  objects, although it does not by itself allow the character to accurately
+  target through them.
+
+  At Essence 4+, whether or not the weapon strikes its target, the character
+  may choose to open one last little doorway which causes it to reappear
+  anywhere within a sphere centered on the target and with a radius equal to
+  the full range of the attack.  This can include reappearing directly above
+  the target, in which case the character gains a free extra attack with that
+  weapon on her next action, as it falls onto the target.  This attack is at a
+  -2 external penalty and has its the applied Strength capped at one tenth the
+  number of yards above the target at which the weapon appears, since it is
+  gravity which propels the weapon.  If the target moves substantially before
+  the character's next action, the storyteller may rule that the target avoids
+  the attack automatically--or, given a clever stunt, walks straight into it.
+  This extension of the Charm can also be used to return the weapon to the
+  character's hand.
+
 --- !Charm
 id: sts
 name: "Shadow-Throwing Style"
-cost: X
+cost: 5m, 1wp
 mins: {Thrown: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Illusion]
-dur: Indefinite
-deps: [ate]
+dur: One scene
+deps: [ddt]
+refs:
+- [ODA, Core, 195]
+- [PCP, Core, 202]
 text: |
 
   TODO
   
-  [Creates an Illusion of part of the Erisian's presence (shadow, voice,
-  creaking floorboards etc.) being some short-ish distance away from where it
-  really is, with some variation in details [controllable with a stunt, or
-  always just ``subtly different''?].  Must mime an attack toward the target
-  point at the start of the Charm, and can't move it thereafter, though she
-  may move herself.  Effect a bit like Solar's Observer-Deceiving Attack makes
-  observers roll to guess right between the target location and the Exalt's
-  real location, if she attacks, or takes other actions dependent on her
-  location, such as attempting to lure/persuade people towards/away from her
-  fake location.  Note, however, that that Charm is Instant, so this one can't
-  be as good.]
-  
+  *[TODO: Should this also have attack buffs like <<Thrown_bpp>>, since it can
+  be mimed?  Or should it always be mimed?  Probably ...]*
+
+  The character activates this Charm by making or miming a Thrown attack
+  targeting a being, object or location.  Her attack must hit but need not
+  cause any damage.  For the rest of the scene, she can control an Illusion
+  which is situated at the target point, and can produce visual, auditory or
+  olfactory manifestations of the character, using his appearance at the time
+  the Charm was activated.  The Illusion may be anything from a clear image of
+  the character to subtle hints of her presence--shadows, creaking floorboards
+  and the like.  If it targets a fixed object or location, the Illusion cannot
+  move, but moving objects or beings will carry it with them.
+
+  Initially the character chooses a simple manifestation, containing nothing
+  more complex than a handful of words, and sets it to repeat at a regular or
+  slightly random interval, at her choice.  She may take a miscellaneous
+  action to change the content, in which case she must flurry to take any
+  other non-reflexive actions at the same time.  Alternatively she may take
+  full and detailed control of it, one action at a time, although this
+  inflicts a -2 internal penalty on any other actions in a flurry.
+
+  The character rolls [(Intelligence or Manipulation) + Thrown], and all
+  observers whose MDV is less than the successes on that roll are taken in by
+  the Illusion.  Even those who are not will be distracted for the action on
+  which the Charm is activated, suffering a -2 external penalty to attempts to
+  observe or attack the character.  Resisting the Illusion costs two
+  Willpower.  The illusion does not include a tactile component, so anyone who
+  attempts to strike or otherwise touch it automatically sees through it, and
+  anyone who observes this forces another roll of the aforementioned dice
+  pool, giving them another chance to ignore it.  Also, since the
+  manifestation will not react intelligently without the character's input,
+  the storyteller may judge that a lack of response to others' actions also
+  allows them another roll, or automatic success, to see through it.
+
+  Against those who are fooled, the character adds her Essence in dice to
+  attempts to attack from surprise, or to re-establish surprise, and to any
+  Stealth rolls against them.  Suitable stunts may justify other bonuses or
+  benefits according to the storyteller's judgement.  One can also use the
+  illusion to do such things as lure others away from the character, or
+  towards another point.
+
 --- !Charm
 id: ees
 name: "Elsewhere Explosion Shot"
@@ -79,7 +152,7 @@ mins: {Thrown: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
-deps: [ate] #[wwa]
+deps: [ddt] #[wwa]
 refs:
 - Stealth_sse
 text: |
@@ -93,6 +166,10 @@ text: |
   attack--one which hits, even if it does not cause damage--the target must
   roll his (Stamina + Resistance) against the character's (Strength + Thrown).
   If the target fails this check, he is Stunned.
+
+  *[TODO: Is it okay to do this "even if it does not cause damage"?  Does it
+  need a keyword so that those whose perfects are in soak can still avoid
+  it?  Crippling, maybe?]*
   
   By spending an extra two motes and a point of Willpower, the character can
   attempt to stun all beings within (Essence x 3) yards of the point of
@@ -125,7 +202,7 @@ mins: {Thrown: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
-deps: [exc, itw] #[fr, qosas]
+deps: [exc, dadb] #[fr, qosas]
 text: |
 
   TODO
@@ -163,13 +240,37 @@ text: |
   lower-Essence pre-upgrade effect or first purchase?]
   
 --- !Charm
-id: itw
-name: "(Improvised Thrown Weapons)"
+id: dadb
+name: "Doorknob and Donkey>Barrage"
+cost: 3m; or 3m, 1wp
+mins: {Thrown: 1, Essence: 2}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK]
+dur: One scene
+deps: []
+refs:
+- Melee_baba
+- Archery_qosas
+- <http://forums.white-wolf.com/default.aspx?g=posts&t=57107>
 text: |
 
   TODO
   
-  [Like baba & qosas]
+  This Charm allows the character to use any objects to hand as effective
+  Thrown weapons.  If a suitable stunt can be used to liken it to some real
+  weapon type, the character may use the statistics of that weapon, at the
+  storyteller's discreation.  The character reduces the normal 3-die Accuracy
+  penalty for improvised thrown weapons (<<Exalted>>, p. 127) by her Thrown
+  rating, to a minimum of zero.
+
+  Additionally, by spending a point of Willpower, the character can add her
+  Essence to her effective (Strength + Athletics) total for the purposes of
+  determining the maximum weight of object she can lift, and the range to
+  which she can throw it, although not to its base damage.  The character can
+  lift and thrown such objects as a single attack, rather than requiring a
+  separate miscellaneous action to lift the object before the attack action.
+  This use of the Charm is Obvious.  Also, it may be applicable outside
+  combat--for example, to rapidly clear rubble from a doorway.
   
 --- !Charm
 id: etw
@@ -189,7 +290,7 @@ mins: {Thrown: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion]
 dur: One scene
-deps: [itw]
+deps: [dadb]
 text: |
 
   TODO
@@ -221,21 +322,48 @@ text: |
   of the initial attack.
   
 --- !Charm
-id: cni
-name: "(Create New Intimacy)"
+id: gae
+name: "Golden Apple Enticement"
+cost: 4m, 1wp
+mins: {Thrown: 3, Essence: 2}
+type: [Reflexive, Step 1]
+keys: [Combo-OK, Emotion, Social]
+dur: Instant
+deps: [dadb]
+refs:
+- Archery_pth
+- [HRS, Lunars, 169]
 text: |
 
   TODO
-  
-  [Creates a new Intimacy, toward a thrown object or toward the person or
-  object which it hits.  Affects all who witness the attack, except for the
-  Erisian and the target itself.  Can spend [X] Willpower to resist.  Intimacy
-  appears at full strength and lasts [one day?  one scene?] [and magically
-  resists removal?] by default.  Thereafter it fades at one point per [day?],
-  unless an affected being spends at least one scene acting in a way which
-  reinforces the intimacy, in which case it stabilises.  This Charm does not
-  magically reinforce the intimacy after the first [scene/day], so it may be
-  removed as normal.]
+
+  *[TODO 2012-08-12 HUGR: Check against <<Archery_pth>>, which costs more but
+  works differently.]*
+
+  This Charm supplements a thrown attack, attempting to create an Intimacy
+  around in the action in observers.  Provided the attack is successful, the
+  character rolls his [(Charisma or Manpiulation) + Thrown] and compares it to
+  the MDV of all who witnessed it, including the target.  If the character
+  used any effects to enhance his dice pool for the thrown attack, they also
+  apply to this roll.  All whose MDV is less than or equal to the successes on
+  this roll immediately gain a full-fledged Intimacy of the character's
+  choice, as an unnatural Emotion effect.  The subject of the Intimacy must be
+  the character, the thrown object, or the target, whereas the tone may be any
+  emotion, even if it seems inappropriate to the situation.  Affected beings
+  can spend two points of Willpower to shake off this influence at any time
+  during the scene when this Charm is invoked.  Thereafter the Intimacy loses
+  its magical protection, but likewise affected beings will normally have no
+  desire to lose it, as it becomes a natural Intimacy.  Of course, conflicting
+  Intimacies, persuasion by others and so on may lead them to work against it.
+
+  This Charm can also be applied in Social situations, by simply taking a
+  [(Charisma or Manpiulation) + Thrown] action, without actually making a
+  physical attack--throwing down a guantlet in challenge, releasing a dove at
+  a ceremony, or tossing a bouquet to an object of the character's desire, for
+  instance.  The target in this case is the target of the interaction, not
+  necessarily the person or object struck by the thrown item.  Furthermore,
+  being Reflexive, this Charm can be used in Combos with Charms from other
+  Abilities.
   
 --- !Charm
 id: tea

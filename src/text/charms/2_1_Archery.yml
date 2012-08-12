@@ -10,9 +10,8 @@ text: |
 grid:
 - [bta, qosas, pth]
 - [fr, fafa, tflab]
-- [exc, wwa, hopa]
-- [bbta, bofa, sp]
-- [~, btwt, ~]
+- [exc, wwa, sp]
+- [bbta, bofa, btwt]
 --- !Charm
 id: exc
 name: "(Any Archery>Excellency)"
@@ -24,7 +23,7 @@ id: bbta
 name: "Bow Bends the Air"
 cost: 2m
 mins: {Archery: 2, Essence: 2}
-type: [Reflexive, Step 2]
+type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant
 deps: []
@@ -67,7 +66,7 @@ deps: [exc, bbta]
 text: |
 
   It is hard to defend against things you cannot see or touch, even if you
-  know they are coming.  The Invader of the Faith sends her shot on an
+  know they are coming.  The Soft and Steady Hand sends her shot on an
   esoteric curve through Elsewhere, reappearing at exactly the right time to
   strike the target.
   
@@ -162,6 +161,8 @@ keys: [Combo-OK]
 dur: One scene
 deps: []
 refs:
+- Melee_baba
+- Thrown_dadb
 - <http://forums.white-wolf.com/default.aspx?g=posts&t=57107>
 text: |
 
@@ -219,36 +220,6 @@ text: |
   At Essence 3, the character may additionally spend 1 point of Willpower to
   spread her awareness into another half a moment, allowing her to ignore all
   DV penalties from these attacks (but not from other sources).
-  
---- !Charm
-id: hopa
-name: "Handful of Pebbles Attack"
-cost: 3m or 6m per duplicate
-mins: {Archery: 4, Essence: 3}
-type: [Supplemental]
-keys: [Combo-OK, Obvious]
-dur: Instant
-deps: [fafa]
-text: |
-
-  TODO
-  
-  Just as the Children of Eris are many and disparate in their activities, so
-  are their projectile attacks.  This Charm supplements an Archery attack,
-  splitting one item of ammunition into a number of duplicates up to (her
-  permanent Essence score).  All are aimed at the same target with attack,
-  defense and damage rolled separately for each.  However, each attack is at a
-  -1 accuracy penalty and a -(number of extra attacks) damage penalty; for
-  instance, three attacks would each suffer -1 to accuracy and -2 to damage.
-  If Handful of Pebbles attack is used with ammunition costing more than one
-  dot of Resources per shot or placed in a Combo with Charms that affect the
-  arrow's accuracy or damage, the cost per duplicate is doubled.
-  
-  [TODO: Maybe drop cost -- check Archery changes in recent errata.  Also, add
-  more Discordian flavor/effects?]
-  
-  [TODO: Maybe ditch this Charm and let others re-invent it, since it's quite
-  low on flavour, and now that I have the ``portal gun'' Charm.]
   
 --- !Charm
 id: bta

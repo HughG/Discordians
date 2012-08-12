@@ -170,6 +170,9 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: One scene
 deps: []
+refs:
+- Archery_qosas
+- Thrown_dadb
 reviews:
 - 2011-06-25 RWG
 text: |

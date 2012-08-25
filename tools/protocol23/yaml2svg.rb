@@ -344,9 +344,9 @@ if __FILE__ == $PROGRAM_NAME
   matches = /([0-9])_.*/.match(outfilename)
   division = matches[1].to_i
 
-  process_file(filename) { |group_name, charms, layouts|
+  process_file(filename) { |group, charms, layouts|
     if layouts.length == 0
-      $stderr << "No layout for #{group_name}\n"
+      $stderr << "No layout for #{group.name}\n"
     elsif layouts.length > 1
       p layouts
       $stderr << "Can only handle 1 layout for now\n"

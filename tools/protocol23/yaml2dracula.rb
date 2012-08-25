@@ -61,12 +61,12 @@ window.onload = function() {
     var g = new Graph();
 """
 
-    process_file(filename) { |group_name, charms|
+    process_file(filename) { |group, charms|
       charms.each_value { |charm|
-        add_node(outfile, group_name, charms, charm)
+        add_node(outfile, group.name, charms, charm)
       }
       charms.each_value { |charm|
-        add_edges(outfile, group_name, charms, charm)
+        add_edges(outfile, group.name, charms, charm)
       }
     }
 

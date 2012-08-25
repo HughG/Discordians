@@ -34,9 +34,9 @@ if __FILE__ == $PROGRAM_NAME
   puts $PROGRAM_NAME + "..."
   filename = "./output_yaml/1_3_Martial_Arts.yml"
 #  filename = "./output_yaml/3_5_War.yml"
-  process_file(filename) { |group_name, charms, layouts|
+  process_file(filename) { |group, charms, layouts|
     charms.each_value { |charm|
-      insert_charm($stdout, group_name, charms, charm)
+      insert_charm($stdout, group.name, charms, charm)
     }
   }
 end

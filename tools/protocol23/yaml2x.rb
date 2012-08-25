@@ -56,7 +56,7 @@ end
 
 def process_file(infilename)
   File.open(infilename, mode: "r", encoding: "utf-8") do |infile|
-    group_name = ""
+    group = nil
     charms = {}
     layouts = []
     # charms_by_full_id = {}
@@ -65,21 +65,21 @@ def process_file(infilename)
     docs.each { |doc|
       obj = doc.to_ruby
       if obj.is_a? CharmGroup
-        group_name = obj.name
+        group = obj
       end
       if obj.is_a? CharmLayout
         layouts << obj
       end
       if obj.is_a? Charm
         charm = obj
-        charm.group = group_name
+        charm.group = group.name
         charm.file = infilename
         # p obj.name
         charms[charm.id] = charm
-        # charm_full_id = group_name.downcase[0..2] + "-" + charm.id
+        # charm_full_id = group.name.downcase[0..2] + "-" + charm.id
         # charms_by_full_id[charm_full_id] = charm
       end
     }
-    yield(group_name, charms, layouts)      
+    yield(group, charms, layouts)      
   end
 end

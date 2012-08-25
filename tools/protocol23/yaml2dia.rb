@@ -98,18 +98,18 @@ if __FILE__ == $PROGRAM_NAME
 #     end
 
 
-    process_file(filename) { |group_name, charms|
-#       outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")
+    process_file(filename) { |group, charms|
+#       outfile.puts("indexterm:[-, Charms, #{division_name}, #{group.name}]")
 #       outfile.puts('[options="pgwide"]')
 #       pngfilename = File.basename(filename).sub(/\.yml/, ".png")
-#       outfile.puts("image::./output/#{pngfilename}[#{group_name} Charm Tree]")
+#       outfile.puts("image::./output/#{pngfilename}[#{group.name} Charm Tree]")
 #       outfile.puts
 
-#       outfile.puts("==== " + group_name)
+#       outfile.puts("==== " + group.name)
 #       outfile.puts
 
 #       charms.each_value { |charm|
-#         insert_charm(outfile, group_name, charms, charm)
+#         insert_charm(outfile, group.name, charms, charm)
 #       }
     }
   }

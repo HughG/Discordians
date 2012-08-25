@@ -82,18 +82,24 @@ if __FILE__ == $PROGRAM_NAME
     outfile.puts(":linkcss:")
     outfile.puts
 
-    process_file(filename) { |group_name, charms, layouts|
-      outfile.puts("indexterm:[-, Charms, #{division_name}, #{group_name}]")
+    process_file(filename) { |group, charms, layouts|
+      outfile.puts("indexterm:[-, Charms, #{division_name}, #{group.name}]")
       outfile.puts('[options="pgwide"]')
       imgfilename = File.basename(filename).sub(/\.yml/, ".{charm-image-ext}")
-      outfile.puts("image::{image-dir}#{imgfilename}[#{group_name} Charm Tree]")
+      outfile.puts("image::{image-dir}#{imgfilename}[#{group.name} Charm Tree]")
       outfile.puts
 
-      outfile.puts("==== " + group_name)
+      outfile.puts("==== " + group.name)
+      outfile.puts
+
+      # We never want explict line breaks in CharmGroup text, so automagically
+      # escape any '+' at the end of a line.
+      fixed_text = group.text && group.text.gsub(/\+\s*$/,'&#x2b;')
+      outfile.puts(fixed_text)
       outfile.puts
 
       charms.each_value { |charm|
-        insert_charm(outfile, group_name, charms, charm)
+        insert_charm(outfile, group.name, charms, charm)
       }
     }
   }

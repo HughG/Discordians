@@ -1,7 +1,8 @@
-xgxx# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 --- !CharmGroup
 name: War
 text: |
+
   [TODO: Section intro text]
   
 --- !CharmLayout

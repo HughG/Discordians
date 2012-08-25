@@ -48,9 +48,9 @@ text: |
   -1, and beyond triple this range a penalty of -2 applies (which is still an
   improvement on the default penalties, as described on <<Exalted>>, p. 148).
 
-  [Upgrade or second purchase to suspend weapons in Elsewhere?  Or could be
-  separate Charm as in Archery.]
-  
+  *[TODO: Upgrade or second purchase to suspend weapons in Elsewhere?  Or
+  could be separate Charm as in Archery.]*
+
 --- !Charm
 id: ddt
 name: "Dart Diversion Tactic"
@@ -85,7 +85,7 @@ text: |
   the character's next action, the storyteller may rule that the target avoids
   the attack automatically--or, given a clever stunt, walks straight into it.
   This extension of the Charm can also be used to return the weapon to the
-  character's hand.
+  character's hand.  
 
 --- !Charm
 id: sts

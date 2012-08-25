@@ -3,12 +3,36 @@
 name: Martial Arts
 text: |
 
-  TODO: Something emotional like the Archery one?
+  The Children of Eris are not chosen for being disposed to great heights or
+  depths of spirit and achievement--they are not inherently heroes or
+  horrors--and they do not have their own Hero style of martial arts.  In this
+  field as in all others, though, they are adept at adopting some tricks from
+  whichever sources of inspiration suit them.  They are able to learn Sidereal
+  Martial Arts, and have ways to take on the styles of others, or make any
+  style uniquely their own.
+
+  An Erisian Martial Artist must still find a teacher to instruct her in any
+  given style, except that she may always learn the Quicksilver Hand of Dreams
+  Style without a teacher.  Of note is a peculiar interaction between this
+  style and the Discordian condition: if a being would forget the character
+  due both to use of a Charm of that style, and to the activation of her
+  Recumbent Destiny, that target instead clearly remembers the character--or,
+  perhaps, forgets to forget her.
+
+  *[TODO: Something emotional like the Archery one?]*
   
 --- !CharmLayout
 grid:
-- [form, ff, ~]
-- [eif, fie, ~]
+- [eif, exc, fhe]
+- [ehf, form, ff]
+- [isi, fie, hwi]
+- [sss, sidform, psp]
+--- !Charm
+id: exc
+name: "(Any Martial Arts>Excellency)"
+text: |
+  
+  
 --- !Charm
 id: form
 name: "(Any Form-Type Charm)"
@@ -16,10 +40,16 @@ text: |
   
   
 --- !Charm
+id: sidform
+name: "(Any Sidereal Style>Form-Type Charm)"
+text: |
+  
+  
+--- !Charm
 id: eif
 name: "Emptiness is Form"
 cost: 2m
-mins: {Martial Arts: 3, Essence: 1}
+mins: {Martial Arts: 2, Essence: 1}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
@@ -35,6 +65,59 @@ text: |
   roll higher, he nonetheless acts on tick 0.
   
 --- !Charm
+id: ehf
+name: "Empty Hand Full"
+cost: 3m or 5m
+mins: {Martial Arts: 1, Essence: 2}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK]
+dur: One scene
+deps: [eif]
+text: |
+
+  A martial artist can do great damage with his bare hands, and more using
+  the weapons with which he has honed his skill, but the Voices Whistling are
+  insouciantly ready to turn any handy object into a deadly weapon.
+  
+  This Charm allows the character to reflexively pick up and arm himself with
+  any nearby object which roughly fits the shape of a form weapon for some
+  style he knows.  The object can be used as a mundane weapon of the
+  appropriate type, for Martial Arts attacks and defense, without any
+  penalties due to it being an improvised weapon.
+
+  An unattuned artifact weapon can be used but this raises the Charm’s cost to
+  5 motes, and requires a feat of Strength with a difficulty equal to twice
+  the Strength minimum required to wield it if it were attuned. The character
+  gains no magical material bonuses for this but, if he wields the weapon
+  continuously for the scene, he may choose to immediately attune it at the
+  end of the scene, paying the appropriate cost.
+
+  If the character is disarmed, he can reflexively pay 1 mote to re-activate
+  this Charm for another weapon, which is immediately readied, provided one is
+  within reach.
+  
+--- !Charm
+id: fhe
+name: "Full Hand Empty"
+cost: 3m
+mins: {Martial Arts: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [exc]
+text: |
+
+  The hand of the martial arts expert is empty not only because it holds no
+  weapon, but because it is poised, ready to act in whatever way is required.
+  Going beyond such mundane teachings, the Erisian martial artist realises
+  that the only true empty hand is one which is not there at all.
+  
+  This Charm supplements a Martial Arts attack, the character sending her
+  limbs slicing through Elsewhere to strike distant foes.  She adds twice her
+  Dash distance to the range of the attack, and her attack gains the Reach
+  tag, while her target suffers a -1 external penalty to his DVs.
+
+--- !Charm
 id: ff
 name: "Formless Form"
 cost: -- (+1wp)
@@ -42,26 +125,25 @@ mins: {Martial Arts: 4, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
-deps: [form]
+deps: [exc, form]
 text: |
 
   Masters and Grand-masters spend decades perfecting many forms, but few truly
   understand how to move beyond learning a form, to /being/ the form.
-  
-  [TODO: This whole Charm is a bit pointless if Form-type Charms are becoming
-  Combo-Basic.]
-  
+
   One of the Law who has learned this Charm can use any Form-type Charms she
   knows, without treating that use as a Charm activation, by spending a point
   of Willpower in addition to the Charm's normal cost.  She may still have
   only one Form-type Charm active at any given time.
   
   An additional benefit, though less frequently useful, is that the character
-  can more easily switch between forms.  If she ends one Form-type Charm and
-  activates another in same tick, she regains the motes spent on the Charm
-  just ended, and can use them to pay toward the cost of the new Form-type
-  Charm.  This does not require the expenditure of Willpower (unless she wants
-  to adopt the new Form without a Charm activation).
+  can easily switch between forms.  If she ends one Form-type Charm and
+  activates another in same tick, she can use the motes spent on the Form she
+  abandons to pay towards the new Form-type Charm.  If the new Charm costs
+  less than the previous one, the extra motes are not refunded, but must be
+  regained later as normal.  This does not require the expenditure of
+  Willpower (unless she wants to adopt the new Form without a Charm
+  activation).
   
 --- !Charm
 id: fie
@@ -71,7 +153,7 @@ mins: {Martial Arts: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Obvious]
 dur: One action
-deps: [form, eif]
+deps: [form]
 text: |
 
   Wise men and babies alike think that all things are one.  In combat, then,
@@ -90,7 +172,10 @@ text: |
   but still vanishes immediately.  This means that, for instance, further
   attacks in a flurry cannot target him.  On the other hand, the character may
   do nothing until the tick on which he reappears; indeed, no ticks pass for
-  him, which may be relevant to the duration of some effects.
+  him, which may be relevant to the duration of some effects.  Counterattacks
+  are delayed until the character reappears, meaning he takes that one
+  additional action on his next action tick--provided the attacker has not
+  moved out of range.
   
   The character's anima flares to the 8-10 mote level on the tick when he
   disappears, and again on the tick when he reappears, unless of course it was
@@ -99,5 +184,111 @@ text: |
   character's previous location while he is absent, he reappears at the
   nearest point at which there is space for him.  Depending on the
   storyteller's whim, this could leave him with his back to his opponent.
+  
+--- !Charm
+id: isi
+name: "Inimitable Style>Invention"
+cost: --
+mins: {Martial Arts: 4, Essence: 3}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: [form]
+text: |
+
+  TODO
+  
+  On purchasing this Charm, the character selects a Martial Arts style from
+  which she has mastered a Form-type Charm.  Thereafter, she may develop
+  custom Martial Arts Charms which extend that style.  The first such Charm
+  costs half the normal number of experience points, and may be learned at the
+  same time as this Charm, without any additional training time.  The
+  character may purchase this Charm up to (Essence) times, allowing her to
+  extend a number of different styles.  Note that this Charm does not allow
+  the character to learn Martial Arts Charms from other Exalted types which
+  extend their own Hero styles.  Nothing prevents them from developing their
+  own similar custom Charms, although they are likely to be slightly more
+  expensive or less effective.
+  
+--- !Charm
+id: sss
+name: "Sifu-Scandalizing>Synthesis"
+cost: --
+mins: {Martial Arts: 4, Essence: 4}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: [isi]
+text: |
+
+  TODO
+  
+  Once the character has learned this Charm, she may create Martial Arts
+  Charms which have prerequisites from any number of styles for which she has
+  learned <<Martial_Arts_isi>>, which combine the themes of those styles.
+  
+--- !Charm
+id: hwi
+name: "Hero-Worshipping>Inspiration"
+cost: -- (+1wp)
+mins: {Martial Arts: 4, Essence: 4}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: [form]
+text: |
+
+  TODO
+  
+  On purchasing this Charm, the character selects a Martial Arts Hero style
+  from which she has mastered a Form-type Charm.  Thereafter, she may access
+  the Enhanced benefits of that style by activating its Form-type Charm and
+  paying an additional point of Willpower, which must be committed for the
+  scene.  However, this ability is only available while the character
+  maintains a fully-committed highly positive Intimacy towards the type of
+  being to which the style belongs.  If she allows that Intimacy to lapse, or
+  it is somehow suppressed, removed, or has its tone altered to something less
+  than laudatory, this effect cannot be activated, and indeed terminates if it
+  has already been activated in the scene, releasing the Willpower commitment.
+  Once the situation has been rectified, the character must pay the cost again
+  to reactivate it if desired.
+
+  *[TODO: Is the next para worth it?]*
+
+  Alchemical Exalted do not have their own Hero style, but Erisians do not
+  allow this inconvenient fact to limit their meddling.  A character may
+  choose to learn this Charm for any non-Hero style, in which case paying the
+  extra cost causes any form weapons to become extensions of the character's
+  own body for the duration, making it impossible to disarm the character
+  without specific Crippling effects or similar magic.
+  
+--- !Charm
+id: psp
+name: "Prayer Strip Poker"
+cost: --
+mins: {Martial Arts: 5, Essence: 5}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: [sidform]
+text: |
+
+  TODO
+  
+  This Charm allows the character to create and use prayer strips to use the
+  student and elder sutras for any Sidereal martial arts style from which he
+  has mastered, respectively, the Form-type Charm or the entire style.
+  Unfortuneately the maidens are not inherently disposed to listen to the
+  prayers of Eris' children, so this facility is unreliable.  Casting the
+  relevant prayer strip aloft, the character rolls his (Essence + temporary
+  Willpower).  A single success is enough to coax or trick the Incarnae into
+  allowing the prayer strip to activate, and some choose to spend a point of
+  Willpower to guarantee this success, rather than taking a chance.  Failure
+  sees the prayer strip drift to the ground, whence it can be retrieved with a
+  miscellaneous action.  A botch leads to some "chance" breeze or similar bad
+  luck wafting the prayer strip out of reach--beyond a single Move action, but
+  no further than a single Dash action.  In either case, some other character
+  might snatch it up, or other harm befall it, before the character can
+  retrieve it.
   
 ...

@@ -1,6 +1,15 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Awareness
+text: |
+  
+  TODO: Charm to see into Elsewhere.  Then add Charms to interact with such
+  items (including stealing them), given some contested roll.
+
+  TODO: Charm to see ongoing mental influence.
+
+  TODO: Surprise negator?  Or do I have some in other Abilities?
+
 --- !CharmLayout
 grid:
 - [teo, exc, she]

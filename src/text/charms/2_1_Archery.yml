@@ -264,6 +264,8 @@ type: [Supplemental]
 keys: [Combo-OK, Emotion]
 dur: One scene or Special
 deps: [qosas]
+refs:
+- Thrown_gae
 text: |
 
   As recounted in stories of old, a well-timed magical arrow can influence the

@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Larceny
+text: |
+
+  *[TODO: One for concealing any sorcerous effect(s)?  Or could be in
+  Occult.]*
+
 --- !CharmLayout
 grid:
 - [rpt, exc, iii]

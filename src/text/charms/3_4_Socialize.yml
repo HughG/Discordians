@@ -351,7 +351,30 @@ text: |
 
   TODO
   
-  *[TODO: Hmm, maybe this should be Sorcery?]*
+  *[TODO: Hmm, maybe this should be Sorcery? cf. Hideous Confusion of
+  Tongues.]*
+
+  *[Not sure about the mechanics here, on several fronts.  (1) It currently
+  only works for Keyworded effects, but it could be just as useful, and ought
+  to be easier, to make non-magical emotions or beliefs contagious.  (2) It
+  says "successfully-applied", but by whom, and in what time-span?  Would make
+  more sense if it picked up on any one emotion, belief, or keyworded effect
+  currently applying to the target.  In that case, the original attack may not
+  be known (or there may have been no attack); so, either make it an attack
+  with the target's/character's dice pool against the new victim's Dodge MDV,
+  or make it an infection-style "roll to resist", with a difficulty equal to
+  ... the character's Essence?  (3) HCoT costs 35m and each victim is affected
+  and infectious for (Essence x 2) hours; maybe something similar would be
+  good -- Indefinite effect but the spell ends automatically if all affected
+  targets reach the end of their period of affliction.  That spell also allows
+  victims to be re-infected unless counter-magicked, but this Charm, being
+  non-sorcerous, might not.  On the other hand, when the infection lifts for
+  *this* Charm, we might rule that people still feel or believe the thing the
+  Charm carried to them, but are now able to be persuaded away from it with a
+  single success on a mundane social "attack" to calm them down -- whereas
+  their state of mind/heart would be magically protected while they were
+  infected by this Charm, requiring a magically-enhanced attack to break them
+  free and/or increasing the difficulty to "cure" them.]*
   
   This Charm enables the power of any successfully-applied Compulsion,
   Emotion, Illusion or Servitude effect to extend gradually to a larger target

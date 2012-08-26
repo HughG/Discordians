@@ -52,17 +52,24 @@ cost: 2m
 mins: {Martial Arts: 2, Essence: 1}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Surprise-Negator]
 dur: Instant
 deps: []
+reviews:
+- 2012-08-26 RWG
 text: |
 
   The greatest of sifus are prepared even when they are unprepared; they do
   not move from rest to fighting stance, because the two are one for them.
   Among the Ignorant Children, even the youngest may learn this truth.
   
-  The character can activate this Charm whenever a Join Battle roll is called
-  for.  It adds (Essence) in dice to his roll and, if any other participants
-  roll higher, he nonetheless acts on tick 0.
+  The character can activate this Charm whenever he is subject to attack which
+  is initially unexpected, even if some other effect removes the unexpected
+  quality.  He is able to take his next action on the same tick as the attack,
+  even if this would effectively reduce the Speed of his previous action to 1.
+  This Charm does not by itself remove the unexpected quality from the attack.
+  If the surprise attack is one which requires a Join Battle roll, then the
+  character acts on tick zero, and does not roll.
   
 --- !Charm
 id: ehf
@@ -73,6 +80,12 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 dur: One scene
 deps: [eif]
+refs:
+- Archery_qosas
+- Melee_baba
+- Thrown_dadb
+reviews:
+- 2012-08-26 RWG
 text: |
 
   A martial artist can do great damage with his bare hands, and more using
@@ -80,17 +93,17 @@ text: |
   insouciantly ready to turn any handy object into a deadly weapon.
   
   This Charm allows the character to reflexively pick up and arm himself with
-  any nearby object which roughly fits the shape of a form weapon for some
+  any nearby object which roughly fits the size of a form weapon for some
   style he knows.  The object can be used as a mundane weapon of the
   appropriate type, for Martial Arts attacks and defense, without any
   penalties due to it being an improvised weapon.
 
-  An unattuned artifact weapon can be used but this raises the Charm’s cost to
-  5 motes, and requires a feat of Strength with a difficulty equal to twice
-  the Strength minimum required to wield it if it were attuned. The character
-  gains no magical material bonuses for this but, if he wields the weapon
-  continuously for the scene, he may choose to immediately attune it at the
-  end of the scene, paying the appropriate cost.
+  An unattuned artifact form weapon can instead be used, but this raises the
+  Charm’s cost to 5 motes, and requires a feat of Strength with a difficulty
+  equal to twice the Strength minimum required to wield it if it were attuned.
+  The character gains no magical material bonuses for this but, if he wields
+  the weapon continuously for the scene, he may choose to immediately attune
+  it at the end of the scene, paying the appropriate cost.
 
   If the character is disarmed, he can reflexively pay 1 mote to re-activate
   this Charm for another weapon, which is immediately readied, provided one is
@@ -100,11 +113,15 @@ text: |
 id: fhe
 name: "Full Hand Empty"
 cost: 3m
-mins: {Martial Arts: 3, Essence: 3}
+mins: {Martial Arts: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [exc]
+refs:
+- ["Uncoiling Serpent Prana", Core, 241]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   The hand of the martial arts expert is empty not only because it holds no
@@ -115,17 +132,25 @@ text: |
   This Charm supplements a Martial Arts attack, the character sending her
   limbs slicing through Elsewhere to strike distant foes.  She adds twice her
   Dash distance to the range of the attack, and her attack gains the Reach
-  tag, while her target suffers a -1 external penalty to his DVs.
+  tag, while her target suffers a -1 external penalty to his DVs.  The
+  character cannot effectively make a grapple attack with this Charm, since
+  her limbs extend to their new location only for an instant.  She can,
+  however, use it for Defend Other actions at range.
 
 --- !Charm
 id: ff
 name: "Formless Form"
 cost: -- (+1wp)
-mins: {Martial Arts: 4, Essence: 2}
+mins: {Martial Arts: 5, Essence: 3}
 type: [Permanent]
 keys: [None]
+tags: [Form-Enhancer]
 dur: Permanent
 deps: [exc, form]
+refs:
+- ["Heaven and Earth Stairway", GotMH-UCS, 36]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   Masters and Grand-masters spend decades perfecting many forms, but few truly
@@ -148,12 +173,14 @@ text: |
 --- !Charm
 id: fie
 name: "Form is Emptiness"
-cost: 3m
-mins: {Martial Arts: 4, Essence: 3}
-type: [Reflexive]
+cost: 10m
+mins: {Martial Arts: 4, Essence: 2}
+type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious]
-dur: One action
+dur: One tick
 deps: [form]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   Wise men and babies alike think that all things are one.  In combat, then,
@@ -167,58 +194,49 @@ text: |
   response to an attack, it perfectly defends against that attack, unless it
   is unblockable or undodgeable.  (Together, the requirement that a Form-type
   Charm be active, and the imperfection of defense against unblockable and
-  undodgeable attacks constitute a unique Flaw of Invulnerability.)  In those
-  cases, the character may suffer damage and other effects from the attack,
-  but still vanishes immediately.  This means that, for instance, further
-  attacks in a flurry cannot target him.  On the other hand, the character may
-  do nothing until the tick on which he reappears; indeed, no ticks pass for
-  him, which may be relevant to the duration of some effects.  Counterattacks
-  are delayed until the character reappears, meaning he takes that one
-  additional action on his next action tick--provided the attacker has not
-  moved out of range.
-  
-  The character's anima flares to the 8-10 mote level on the tick when he
-  disappears, and again on the tick when he reappears, unless of course it was
-  already flaring at a higher level; if not, it returns to its previous level
-  on the following tick.  If something else specificially moves into the
-  character's previous location while he is absent, he reappears at the
-  nearest point at which there is space for him.  Depending on the
-  storyteller's whim, this could leave him with his back to his opponent.
+  undodgeable attacks constitute a unique Flaw of Invulnerability.)
+  Vanishing in this way also forfeits any opportunity the character would have
+  had to launch a Counterattack.
   
 --- !Charm
 id: isi
 name: "Inimitable Style>Invention"
 cost: --
-mins: {Martial Arts: 4, Essence: 3}
+mins: {Martial Arts: 5, Essence: 3}
 type: [Permanent]
 keys: [None]
 dur: Permanent
 deps: [form]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   TODO
   
   On purchasing this Charm, the character selects a Martial Arts style from
   which she has mastered a Form-type Charm.  Thereafter, she may develop
-  custom Martial Arts Charms which extend that style.  The first such Charm
-  costs half the normal number of experience points, and may be learned at the
-  same time as this Charm, without any additional training time.  The
-  character may purchase this Charm up to (Essence) times, allowing her to
-  extend a number of different styles.  Note that this Charm does not allow
-  the character to learn Martial Arts Charms from other Exalted types which
-  extend their own Hero styles.  Nothing prevents them from developing their
-  own similar custom Charms, although they are likely to be slightly more
-  expensive or less effective.
+  custom Discordian Charms--based on the Martial Arts Ability--which extend
+  that style.  The character may purchase this Charm up to (Essence) times,
+  allowing her to extend a number of different styles.  Note that this Charm
+  does not allow the character to learn native Martial Arts Charms from other
+  Exalted types which extend their own Hero styles.  Nothing prevents them
+  from developing their own similar custom Charms, although they are likely to
+  be slightly more expensive or less effective.  Charms developed in this way
+  are not part of any Martial Arts style, and have the Native Keyword, so can
+  only be learned by other Discordians who have purchased this Charm for the
+  same Martial Arts style.
   
 --- !Charm
 id: sss
 name: "Sifu-Scandalizing>Synthesis"
 cost: --
-mins: {Martial Arts: 4, Essence: 4}
+mins: {Martial Arts: 5, Essence: 4}
 type: [Permanent]
 keys: [None]
 dur: Permanent
 deps: [isi]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   TODO
@@ -230,38 +248,32 @@ text: |
 --- !Charm
 id: hwi
 name: "Hero-Worshipping>Inspiration"
-cost: -- (+1wp)
-mins: {Martial Arts: 4, Essence: 4}
+cost: -- (+5m)
+mins: {Martial Arts: 5, Essence: 4}
 type: [Permanent]
 keys: [None]
+tags: [Form-Enhancer]
 dur: Permanent
 deps: [form]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   TODO
   
   On purchasing this Charm, the character selects a Martial Arts Hero style
   from which she has mastered a Form-type Charm.  Thereafter, she may access
-  the Enhanced benefits of that style by activating its Form-type Charm and
-  paying an additional point of Willpower, which must be committed for the
-  scene.  However, this ability is only available while the character
-  maintains a fully-committed highly positive Intimacy towards the type of
-  being to which the style belongs.  If she allows that Intimacy to lapse, or
-  it is somehow suppressed, removed, or has its tone altered to something less
-  than laudatory, this effect cannot be activated, and indeed terminates if it
-  has already been activated in the scene, releasing the Willpower commitment.
+  the Enhanced benefits of that style by spending an additional 5 motes when
+  activating its Form-type Charm, which must be committed for the scene.
+  However, this ability is only available while the character maintains a
+  fully-committed highly positive Intimacy towards the type of being to which
+  the style belongs.  If she allows that Intimacy to lapse, or it is somehow
+  suppressed, removed, or has its tone altered to something less than
+  laudatory, this effect cannot be activated, and indeed terminates if it has
+  already been activated in the scene, releasing the Willpower commitment.
   Once the situation has been rectified, the character must pay the cost again
   to reactivate it if desired.
 
-  *[TODO: Is the next para worth it?]*
-
-  Alchemical Exalted do not have their own Hero style, but Erisians do not
-  allow this inconvenient fact to limit their meddling.  A character may
-  choose to learn this Charm for any non-Hero style, in which case paying the
-  extra cost causes any form weapons to become extensions of the character's
-  own body for the duration, making it impossible to disarm the character
-  without specific Crippling effects or similar magic.
-  
 --- !Charm
 id: psp
 name: "Prayer Strip Poker"
@@ -271,6 +283,8 @@ type: [Permanent]
 keys: [None]
 dur: Permanent
 deps: [sidform]
+reviews:
+- 2012-08-26 RWG
 text: |
 
   TODO
@@ -289,6 +303,9 @@ text: |
   luck wafting the prayer strip out of reach--beyond a single Move action, but
   no further than a single Dash action.  In either case, some other character
   might snatch it up, or other harm befall it, before the character can
-  retrieve it.
+  retrieve it.  Furthermore, unlike genuine Sidereal prayer strips, the
+  counterfeit does not gain any magical protection when activated--it cannot
+  dodge or block attacks, and even a single level of bashing damage will
+  destroy it.  The character may take other steps to protect it, of course.
   
 ...

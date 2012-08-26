@@ -249,6 +249,7 @@ keys: [Combo-OK]
 dur: One scene
 deps: []
 refs:
+- Martial_Arts_ehf
 - Melee_baba
 - Archery_qosas
 - <http://forums.white-wolf.com/default.aspx?g=posts&t=57107>

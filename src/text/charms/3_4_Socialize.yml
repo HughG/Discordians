@@ -376,6 +376,13 @@ text: |
   infected by this Charm, requiring a magically-enhanced attack to break them
   free and/or increasing the difficulty to "cure" them.]*
   
+  *[RWG: Have it work on an existing emotion or belief.  For emotions, the
+  existing (Errata) mechanics of the Emotion keyword are enough.  For beliefs,
+  it creates an Intimacy (using the Illusion keyword) towards that belief, and
+  targets' actions are based on Intimacy mechanics.  The spread can use usual
+  proper infection rules.  Anything which demonstrates the affected emotion or
+  belief to observers is enough to provoke a resistance roll in them.]*
+
   This Charm enables the power of any successfully-applied Compulsion,
   Emotion, Illusion or Servitude effect to extend gradually to a larger target
   group, in a contagious manner.  The effect to be extended may come from a

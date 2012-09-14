@@ -12,9 +12,10 @@ text: |
 
 --- !CharmLayout
 grid:
-- [teo, exc, she]
-- [etu, hpp, sit]
-- [~, ufm, tgob]
+- [tgof, ufm, gopd]
+- [etu, hpp, she]
+- [teo, exc, sit]
+
 --- !Charm
 id: exc
 name: "(Any Awareness>Excellency)"
@@ -47,7 +48,7 @@ mins: {Awareness: 3, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 dur: Until next action
-deps: [teo]
+deps: [teo, hpp]
 text: |
 
   TODO
@@ -70,7 +71,7 @@ mins: {Awareness: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
-deps: []
+deps: [ufm]
 text: |
 
   The Wholly Fools see the inner and outer worlds of body and mind as one, and
@@ -83,9 +84,6 @@ text: |
   that the attack occurred, who made it (if he was aware of that), and that he
   defended himself against it, but will have no memory of the intent of the
   attack nor the content of the communication which delivered it.
-  
-  [TODO: Does this need a Flaw of Invulnerability?  Social perfects don't seem
-  to have them, in general.]
   
   On the other hand, the character may activate it on Step 1 to turn his focus
   entirely outward.  This enables him to take one action which ignores any
@@ -138,7 +136,9 @@ mins: {Awareness: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
-deps: [exc]
+deps: []
+refs:
+- ["Sense-Riding Technique", DB, 141]
 text: |
 
   TODO
@@ -180,37 +180,27 @@ type: [Simple]
 keys: [Combo-OK]
 dur: Indefinite
 deps: []
+changes:
+- 2012-09-13 HUGR
 text: |
 
   TODO
   
-  Activating this Charm, the Exalt focuses her attention on a single small
-  object, often a candle flame.  As long as she maintains her commitment of
-  attention and motes, the rate at which she regains Essence, from all
-  sources, is multiplied by ([Essence + 1] ÷ 2) rounded up.  Additionally, she
-  may roll to regain Willpower once every (25 ÷ Essence) hours.
-  
-  [TODO: Being completely unaware of surroundings and time seems rubbish.
-  Maybe just a -(Essence) penalty to Per+Awr and Join Battle?]
-  
+  Activating this Charm, the Exalt focuses her attention on a single point, be
+  it real or imagined--for example, a candle flame.  As long as she maintains
+  her commitment of attention and motes then, for the purposes of regaining
+  motes of Essence, she is regarded as "at ease" when undertaking strenuous
+  activity (regaining four motes per hour) and "completely relaxed" when at
+  ease (for eight motes per hour).  The rate at which she regains Essence,
+  from rest and all other sources, is multiplied by ([Essence + 1] ÷ 2)
+  rounded up.  Additionally, she may roll to regain Willpower once every (25 ÷
+  Essence) hours.  However, the focus required to enhance her recuperation in
+  this way imposes a -4 internal penalty on all actions.
+
   This Charm cannot be used while the character is sleeping or otherwise
   unconscious, and is incompatible with the Charms or other actions which
   require the senses to be focused elsewhere, e.g., Holographic Perception
-  Praxis.  While the Charm is in effect, the character is Inactive: she is
-  completely unaware of her surroundings, and cannot tell the passage of time,
-  though she can tell when she has regained as much Essence as she can.  She
-  may choose to end the Charm normally at any time, in which case she remains
-  Inactive for (Essence) further actions.  If some gentle stimulus affects the
-  character directly, she may ignore it or end the Charm normally.
-  
-  While in this focused state any attacks are unexpected, unless other effects
-  prevent the character from being subject unexpected attacks.  If attacked,
-  or at any time, the character may choose to end her meditation abruptly, in
-  which case she forfeits all Essence regained in the preceding hour, and
-  becomes immediately active, with an effective Join Battle roll of 0.  She
-  cannot attack or counterattack until her next action, only reflexively
-  defend.  She will suffer a (-Essence) internal penalty to all rolls on her
-  first action, this penalty decreasing each action until it reaches 0.
+  Praxis.
   
 --- !Charm
 id: sit
@@ -220,7 +210,7 @@ mins: {Awareness: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
-deps: [hpp, she]
+deps: [exc, she]
 text: |
 
   TODO
@@ -245,48 +235,45 @@ text: |
   gains the character a point of Hodge.
   
 --- !Charm
-id: tgob
-name: "The Gifts of Belief"
-cost: 8m, 1wp
-mins: {Awareness: 4, Essence: 4}
+id: tgof
+name: "The Gifts of Faith"
+cost: 3m
+mins: {Awareness: 2, Essence: 3}
 type: [Reflexive, Step 2]
-keys: [Combo-OK, Shaping]
-dur: Special
-deps: [ufm, sit]
+keys: [Combo-OK]
+dur: Instant
+deps: []
+refs:
+- Integrity_sos
+changes:
+- 2012-09-13 HUGR
 text: |
 
-  Those who are a Law Unto Themselves choose their own beliefs, though they
-  may accept another's viewpoint if it suits them.
+  Those who are a Law Unto Themselves choose their own state of mind and
+  heart, though they may accept another's viewpoint if it suits them.
   
-  This Charm may be activated whenever the character is subject to an Illusion
-  which she could resist in her current state.  Instead of resisting she
-  thoroughly accepts it and, in doing so, is able to make it fully real.  For
-  the avoidance of doubt, Illusions imposed by the Discordian Investigation
-  Charm known as Even False Things are not valid targets for this Charm.
-  
-  The local flows of Essence are Shaped to match it, to a radius of (Essence x
-  10) yards.  Anyone may then be affected by the content of the Illusion:
-  weapons do real damage, bridges can be crossed, with mundane and magical
-  effects using the traits of the Illusion's creator to determine their power
-  (or the minimum trait values, if the creator does not meet them).  These
-  changes disappear if the Illusion's creator ends the effect, or some other
-  effect undoes the Shaping (which ends the Illusion also), or the character
-  has another opportunity to resist the Illusion and successfully does so.
-  However, any consequential changes, such as damage, remain.
-  
-  This is a Shaping effect that can take place in Creation (or any other
-  realm) and makes Shaping attacks and effects as dictated by the content of
-  the Illusion.  An Illusion that mimics powerful supernatural entities or
-  phenomena will only generate effects mimicing that entity or phenomena's
-  effects to the extent that a Shaping action would be able to do so.  The
-  user of this Charm has no special protection from these effects, nor control
-  over them, she simply allows for Shaping effects to reinforce whatever the
-  Illusion would otherwise appear to do.
-  
-  [TODO: How should this affect the Wyld?  One idea (pre-Fair-Folk-errata) is
-  that it should increase the bonuses a character gets for submitting to a
-  Fantasy.  Still need to say what to do with Alterations/Restorations,
-  Evocations and actual Shaping Combat.]
+  This Charm may be activated whenever the character is subject to a hostile
+  Illusion or Emotion effect, imposed by another being, which she could resist
+  in her current state.  Instead of resisting she thoroughly accepts it and,
+  in doing so, strengthens her own will.  She immediately regains as many
+  points of temporary Willpower as she would need to have spent to resist the
+  effect.  She may not take any action herself to throw off the effect until
+  as may scenes have elapsed as points of Willpower she would have had to
+  spend, although external effects might work against it.
+
+  She may be prevented from acquiescing by other effects.  Influence is deemed
+  hostile if the character believes that there is at least a good chance that
+  acquiescing to it will be harmful to her values, goals or interests.  A
+  character cannot apply this Charm's effect to beneficial or neutral mental
+  influence.
+
+  At Awareness 3+ this Charm can also be applied to Compulsion or Servitude
+  effects, and to fantasies employed in Shaping Combat.  At Essence 4+, if the
+  Willpower regained would take her over her permanent Willpower total, she
+  may use those excess points to pay toward any Charms activated in a Combo
+  with this Charm, or any other effects reflexively activated in the same
+  tick, provided that they do not involve resisting or avoiding the influence.
+  After that tick, the excess points are lost.
   
   Use of this Charm does not affect the character's Hodge or Podge rating.
   

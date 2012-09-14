@@ -46,11 +46,10 @@ text: |
   Those who throw themselves at the Foolish Sages may find themselves the
   greater fools.  A character may employ this Charm whenever he uses his Dodge
   DV against an attack, successfully or not, provided the opponent is within
-  touching distance.  This is assumed to be true unless the attack was ranged,
-  or used a weapon with the ``R'' (Reach) tag.  A momentary magical
-  redistribution of forces gives the attacker a penalty of -(character's
-  Essence) to his Dodge DV until his next action, and a -1 external penalty on
-  his next attack roll (but not damage roll).
+  touching distance.  This is assumed to be true unless the attack was ranged.
+  A momentary magical redistribution of forces gives the attacker a penalty of
+  -(character's Essence) to his Dodge DV until his next action, and a -1
+  external penalty on his next attack roll (but not damage roll).
   
 --- !Charm
 id: hpf
@@ -61,84 +60,107 @@ type: [Reflexive, Step 6]
 keys: [Combo-OK, Compulsion]
 dur: Instant
 deps: [aci, cf]
+refs:
+- Melee_hrh
+changes:
+- 2012-09-13 HUGR 
 text: |
 
   Surely, those who bring true understanding of the nature of things should
-  not be hated, but loved?  This Charm convinces an attacker, at least on an
-  unconscious level, that the Priestess of Eris is not worthy of their ire;
-  but, there being a need for balance in all things, someone else has to take
-  the fall.  If the character attempts to dodge an attack and fails, she may
-  activate this Charm to cause the attack to be re-rolled against any other
-  valid target.  If there are no other valid targets, the attack fails
-  altogether, unless it is undodgeable.
-  
-  The attacker may ignore the unnatural mental influence of this Charm by
-  spending a point of temporary Willpower.
+  not be hated, but loved?  This Charm convinces the perpetrator of a
+  non-ranged attack, at least on an unconscious level, that the Priestess of
+  Eris is not worthy of their ire--but, there being a need for balance in all
+  things, someone else has to take the fall.  If the character attempts to
+  dodge such an attack and fails, she may activate this Charm to cause the
+  attack to be re-rolled against any other valid target.  If there are no
+  other valid targets, the attack fails altogether.
+
+  This Charm is not applicable against attacks which are undodgeable.  The
+  attacker may ignore the unnatural mental influence of this Charm by spending
+  a point of temporary Willpower.  This Charm is normally ineffective against
+  ranged attacks because, by the time such an attack can be parried, the
+  attacker can no longer be influenced to redirect it.  However, if the attack
+  is subject to some effect which allows it to be controlled after it is
+  launched, the character will instinctively know this, and can apply this
+  Charm.
   
 --- !Charm
 id: pe
 name: "Perfect Excuse"
-cost: 4m
+cost: -- (+ 5m)
 mins: {Dodge: 4, Essence: 2}
-type: [Reflexive, Step 2]
-keys: [Combo-OK, Obvious]
-dur: Instant
+type: [Permanent]
+keys: [Combo-OK, Compulsion, Obvious]
+dur: Permanent
 deps: [hpf]
+refs:
+- Melee_ama
+reviews:
+- 2011-01-03 RWG Flavorless?
+changes:
+- 2012-09-13 HUGR
 text: |
 
-  Rather than bother attempting to convince his enemy of his righteousness, a
-  powerful Discordian will simply convince the fabric of reality to believe
-  him.  This Charm rearranges the moment to provide a dodge which perfectly
-  defends against any attack, even if it is undodgeable.  This Charm has one
-  of the Four Flaws of Invulnerability.
+  Against the greatest of opponents, it may not be enough to trick reality
+  instead.  Skilled Discordians will tweak space and time, as well as their
+  opponent's minds, to evade blades and blows.
 
-  *[TODO: Should Erisians have the same Flaws as Solars, or something
-   different?]*
+  This Charm extends its prerequisite to apply to undodgeable attacks, for a
+  total cost of nine motes.  If the attacker chooses to resist the Compulsion
+  to redirect his attack, or there is no valid alternative target, this Charm
+  furthermore ensures that a perfectly-placed extended foot will force the
+  attacker to check for Knockdown.  Against ranged attacks, the Compulsion
+  still does not normally apply, and the Knockdown check is only required if
+  the attacker is within Dash range, as the character slips a tripping limb
+  through Elsewhere.
 
-  *[TODO 2011-01-03 HUGR: RWG says power level is okay but it's flavourless.
-  Maybe bump the cost and give it extra effects, e.g., against Social.  Or
-  extra effects plus extra limitations.  Or special FoI.]*
+  This Charm has one of the Discordian Flaws of Invulnerability.
   
 --- !Charm
 id: samt
 name: "Smoke and Mirrors>Technique"
-cost: 3m
+cost: 3m per duplicate
 mins: {Dodge: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Obvious]
-dur: Until next action
+dur: Indefinite
 deps: [exc, aci]
+refs:
+- ["Shadowy Simulacrums of Smoke", BoS2WT, 59]
+reviews:
+- 2011-01-03 RWG
+changes:
+- 2012-09-13 HUGR
 text: |
 
   Not everything can be done with smoke and mirrors, but they come in handy in
   a pinch.  With this Charm, the Foolish Sage appears to split into a number
-  of smoky, slightly translucent copies of himself, equal to (his permanent
-  Essence).  The attacker must roll his (Perception + [attack Ability])
-  against the character's ([Manipulation or Wits] + Dodge) at Step 10 of the
-  attack.  Failure means that she struck one of the smoky duplicates instead,
-  which immediately vanishes.  For a flurry or multiple attack sequence, or
-  for multiple attackers, each action requires a separate roll to succeed, and
-  will eliminate a separate duplicate if it fails.
+  of smoky, slightly translucent duplicates of himself, so he appears as up to
+  (Essence) beings in total.  Assuming an attack is successful at Step 4, the
+  attacker must roll his (Perception + Awareness) against a difficulty of the
+  character's Essence at Step 5 of the attack.  Failure means that she struck
+  one of the smoky duplicates instead, which immediately vanishes.  For a
+  flurry or multiple attack sequence, or for multiple attackers, each action
+  requires a separate roll to succeed, and will eliminate a separate duplicate
+  if it fails.
+
+  Any attack or counterattack the character makes while the duplicates are
+  active is copied by all of them, so defenders suffer an external penalty
+  to their Defense Values equal to (number of remaining duplciates ÷ 2).
   
   At any point the attacker may spend a point of Willpower to ignore the
-  Illusion, after which no further rolls are required.  Similarly, if all the
-  duplicates are destroyed by multiple attacks, subsequent attacks proceed as
-  normal.  At the start of the character's next action, the duplicates
-  disappear.
+  Illusion, after which no further rolls are required to attack, and no
+  further penalties are applied to defense.  Similarly, once all the
+  duplicates are destroyed, subsequent interactions proceed as normal.  If any
+  duplicates remain at the end of the scene, the Charm ends and they
+  disappear.  The character may end the illusion reflexively at any time.
+  Otherwise, the essence for the Charm remains committed until all duplicates
+  are gone.
   
-  Perfect attacks against a single target are affected by this Charm -- the
-  attacker may perfectly hit the wrong target, depending on the roll.
-  However, area effects, environmental hazards and ongoing sources of damage
-  such as poison are not affected.
-
-  *[TODO 2011-01-03 HUGR: RWG says this is a bit over-powerful - or, hard to
-  tell how powerful it is.  For evenly-match traits, it means you avoid (Ess /
-  2) attacks on average for 3m.  Could change it so the duplicates all
-  disappear after the first attack, so they just improve the odds of a single
-  defence.  Could make it Indefinite and non-Stackable, so you can't refresh
-  it till they're all gone. Could make it that you can expend 1 or more dups
-  in response to a single attack, each giving the opponent a -1 ext penalty,
-  or each boosting your DV by 1 (but beware DV cap, based on Excellencies).]*
+  An attack which is unblockable or undodgeable will always hit the true
+  target, leaving any remaining duplicates unchanged.  Also, area effects,
+  environmental hazards and ongoing sources of damage such as poison are not
+  affected.
   
 --- !Charm
 id: vmn

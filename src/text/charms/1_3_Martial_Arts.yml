@@ -19,14 +19,13 @@ text: |
   Recumbent Destiny, that target instead clearly remembers the character--or,
   perhaps, forgets to forget her.
 
-  *[TODO: Something emotional like the Archery one?]*
-  
 --- !CharmLayout
 grid:
 - [eif, exc, fhe]
 - [ehf, form, ff]
 - [isi, fie, hwi]
 - [sss, sidform, psp]
+- [~, lrd, ~]
 --- !Charm
 id: exc
 name: "(Any Martial Arts>Excellency)"
@@ -52,7 +51,7 @@ cost: 2m
 mins: {Martial Arts: 2, Essence: 1}
 type: [Reflexive]
 keys: [Combo-OK]
-tags: [Surprise-Negator]
+tags: [Surprise-Mitigator]
 dur: Instant
 deps: []
 reviews:
@@ -63,13 +62,13 @@ text: |
   not move from rest to fighting stance, because the two are one for them.
   Among the Ignorant Children, even the youngest may learn this truth.
   
-  The character can activate this Charm whenever he is subject to attack which
-  is initially unexpected, even if some other effect removes the unexpected
-  quality.  He is able to take his next action on the same tick as the attack,
-  even if this would effectively reduce the Speed of his previous action to 1.
-  This Charm does not by itself remove the unexpected quality from the attack.
-  If the surprise attack is one which requires a Join Battle roll, then the
-  character acts on tick zero, and does not roll.
+  The character can activate this Charm whenever he is subject to an attack
+  which is initially unexpected, even if some other effect removes the
+  unexpected quality.  He is able to take his next action on the same tick as
+  the attack, even if this would effectively reduce the Speed of his previous
+  action to 1.  This Charm does not by itself remove the unexpected quality
+  from the attack.  If the surprise attack is one which requires a Join Battle
+  roll, then the character acts on tick zero, and does not roll.
   
 --- !Charm
 id: ehf
@@ -154,7 +153,7 @@ reviews:
 text: |
 
   Masters and Grand-masters spend decades perfecting many forms, but few truly
-  understand how to move beyond learning a form, to /being/ the form.
+  understand how to move beyond learning a form, to _being_ the form.
 
   One of the Law who has learned this Charm can use any Form-type Charms she
   knows, without treating that use as a Charm activation, by spending a point
@@ -224,7 +223,9 @@ text: |
   be slightly more expensive or less effective.  Charms developed in this way
   are not part of any Martial Arts style, and have the Native Keyword, so can
   only be learned by other Discordians who have purchased this Charm for the
-  same Martial Arts style.
+  same Martial Arts style.  Additionally, all Charms developed using a given
+  purchase of this Charm have that purchase as a pre-requisite, which may be
+  relevant in Divisional Realignment.
   
 --- !Charm
 id: sss
@@ -307,5 +308,22 @@ text: |
   counterfeit does not gain any magical protection when activated--it cannot
   dodge or block attacks, and even a single level of bashing damage will
   destroy it.  The character may take other steps to protect it, of course.
+
+--- !Charm
+id: lrd
+name: "Lotus Root Distillation"
+cost: --
+mins: {Martial Arts: 5, Essence: 2}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: []
+refs: ["Swallowing the Lotus Root", DotFA-Lords, 59]
+text: |
+
+  This Charm is the Erisian version of the one known to Solars as ``Swallowing
+  the Lotus Root'', which allows learning of Terrestrial Martial Arts Charms
+  at half the normal experience cost, and removes the surcharge for
+  elementally aspected Styles.
   
 ...

@@ -3,8 +3,6 @@
 name: Melee
 text: |
 
-  TODO: Action-longs (maybe as re-purchase?)
-  
 --- !CharmLayout
 grid:
 - [scd, bbt, exc]
@@ -264,26 +262,33 @@ type: [Reflexive, Step 6]
 keys: [Combo-OK, Compulsion]
 dur: Instant
 deps: []
+refs:
+- Dodge_hpf
 reviews:
 - 2011-06-25 RWG
+changes:
+- 2012-09-11 HUGR
 text: |
 
   TODO
+
+  *[TODO: Compare against Dodge_hpf, which has different costs and
+  conditions.]*
   
-  If the character attempts to parry an attack and succeeds (including the use
-  of perfect defenses), she may activate this Charm to cause the attack to be
-  re-rolled against any other valid target.  If she fails to parry it, and it
-  is not unblockable, she may pay 5 motes to activate this Charm.  If the
-  Charm is activated and there are no other valid targets, the attack fails
-  altogether.
+  If the character attempts to parry a non-ranged attack and succeeds
+  (including the use of perfect defenses), she may activate this Charm to
+  cause the attack to be re-rolled against any other valid target.  If she
+  fails to parry it, and it is not unblockable, she may pay 5 motes to
+  activate this Charm.  If the Charm is activated and there are no other valid
+  targets, the attack fails altogether.
   
   The attacker may ignore the unnatural mental influence of this Charm by
-  spending a point of temporary Willpower.
-  
-  *[TODO 2012-01-29 HG: This doesn't make sense as a Compulsion effect, except
-  against Melee and MA attacks.  For Archery & Thrown, the projectile has
-  already left the thrower's hand, so mental influence in Step 6 can't
-  logically make a difference.]*
+  spending a point of temporary Willpower.  This Charm is normally ineffective
+  against ranged attacks because, by the time such an attack can be parried,
+  the attacker can no longer be influenced to redirect it.  However, if the
+  attack is subject to some effect which allows it to be controlled after it
+  is launched, the character will instinctively know this, and can apply this
+  Charm.
   
 --- !Charm
 id: ktt
@@ -322,12 +327,15 @@ text: |
 --- !Charm
 id: ama
 name: "Absent-Minded Absorption"
-cost: 5m or 5m, 1wp
+cost: 5m; or 5m, 1wp
 mins: {Melee: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
 deps: [hrh, rss]
+refs:
+- Archery_tflab
+- Thrown_evr
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -337,6 +345,10 @@ text: |
   wild and artless swing nonetheless happens to end up at the exactly the
   right spot to deflect an impending blow.
   
+  *[TODO: RWG said that Dodge_pe was flavorless because it was a straight
+  perfect, and the first purchase of this Charm is, too.  Should I change
+  it?]*
+
   This Charm allows the Discordian to perfectly defend against any attack,
   even if it is unblockable.  A second purchase at Essence 4+ allows the
   character to pay an additional point of Willpower to send the bulk of his

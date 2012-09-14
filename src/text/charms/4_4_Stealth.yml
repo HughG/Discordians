@@ -3,15 +3,17 @@
 name: Stealth
 text: |
 
-  TODO
-  
-  Need maybe 1 more Charm.
+  *[TODO: Need maybe 1 more Charm.]*
+
+  *[TODO: Something to fake the Scourge Caste silence effects (on self or
+  within Essence yards; p. 95).  Something to fake Night Caste and No Moon
+  Caste anima blackness and identity concealment.]*
   
 --- !CharmLayout
 grid:
 - [exc, hipsa, sse]
 - [ywt, ceop, hsag]
-- [erd, hfr, hioo]
+- [erd, hfr, hoiu]
 - [~, dcp, ~]
 --- !Charm
 id: exc
@@ -29,8 +31,8 @@ keys: [Combo-OK]
 dur: Indefinite
 deps: []
 refs:
-- [Easily-Overlooked Presence Method; Core; 230]
-- [Invisible Statue Spirit; Core; 230]
+- ["Easily-Overlooked Presence Method", Core, 230]
+- ["Invisible Statue Spirit", Core, 230]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -143,57 +145,27 @@ text: |
   beings.
   
 --- !Charm
-id: hioo
-name: "Hide Importance>of Object???"
+id: hoiu
+name: "Hide Object>in Use???"
 cost: 3m
 mins: {Stealth: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Illusion, Stackable, Touch]
 dur: Indefinite
 deps: []
-refs:
-- [Treasure as Trash Misdirection; GotMH-Luna; 26]
-- [Any-Trinket Allure; Ink Monkeys vol. 22; 68]
 reviews:
 - 
 text: |
 
   TODO
   
-  *[TODO: Work out how to ref Ink Monkeys Charms in two places: by volume and
-  in the collected works.]*
-  
-  *[TODO: Dammit, this is basically a duplicate of the Larceny Charm
-  ``Flawless Transfiguration Knack''.  Need to merge the two.  Maybe turn this
-  into a Charm to hide an item altogether, possibly by placing it among
+  *[TODO: Charm to hide an item altogether, possibly by placing it among
   similar items, or even similar shapes -- e.g., hiding a sword among hanging
-  folds of a cloak?]*
-  
-  The character applies this Charm to a mundane object to make make it seem
-  unremarkable.  Resisting this Illusion costs two points of temporary
-  Willpower.  Any or all distinguishing features can be removed, including
-  shaping, coloration, markings, and so on, but the basic nature of the object
-  cannot be changed.  Whether something is remarkable depends on context, so
-  straightening a curved sword might be appropriate in some parts of creation,
-  or the reverse in other places, but it could never be disguised as a staff.
-  The Storyteller is the final arbiter of what is possible.  The disguise can
-  reduce the apparent Resources value of an object by up to (Stealth ÷ 2), to
-  a minimum of one dot, and can disguise perfect, exceptional or fine items as
-  ones of a lesser degree of superiority, or of a standard level of quality.
-  Observers can still provide an accurate description of the object, but that
-  description is likely to match many other instances of its kind.
-  
-  At Essence 3, this Charm can also be applied to artifacts, either to make a
-  unique item appear generic, or even concealing magical items as mundane.
-  The character can create an Illusion which removes unique features from an
-  artifact's appearance, or reduces the apparent Artifact rating of an item by
-  up to (Stealth) dots, to a minimum of zero, or both.
-  
+  folds of a cloak.]*
+    
   At higher Stealth/Ess, apply to objects not in the character's possession,
   and to living beings?  BUT compare to Larceny Charms Instant Image
   Improvisation and Identity Theft.
-  
-  *[NOTE: sort of the opposite of Larceny Charm Value-Adding Veneer.]*
   
 --- !Charm
 id: ywt
@@ -308,7 +280,7 @@ mins: {Stealth: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable]
 dur: Indefinite
-deps: [hfr, hioo]
+deps: [hfr, hoiu]
 refs:
 - [Ceasing to Exist Approach; Sidereals; 172]
 reviews:
@@ -379,7 +351,7 @@ text: |
   its Underworld and Heavenly variants), and will lose even Manse if she
   chooses an unenlightened identity.  However, she gains up to 15 dots of
   Backgrounds appropriate to her new identity.  Those involving power and
-  other people will not extend beyond the Magnitued of people affected by the
+  other people cannot extend beyond the Magnitude of people affected by the
   reversed Recumbent Destiny effect which accompanies this Charm.
   
   At Essence 5+, this hiding of self persists even after death.  The
@@ -396,8 +368,5 @@ text: |
   losing the first completely.  The reversed Recumbent Destiny effect is
   triggered at the same time, so that her new identity is more likely to be
   accepted.
-  
-  *[TODO: Also add follow-on for Survival Charm ``Living-With-Rocks
-   Approach''?]*
   
 ...

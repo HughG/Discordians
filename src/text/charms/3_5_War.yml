@@ -20,16 +20,20 @@ text: |
 --- !Charm
 id: flt
 name: "Friends Like These"
-cost: 4m or 4m, 1wp
+cost: 4m; or 4m, 1wp
 mins: {War: 2, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Compulsion, Social, War]
 dur: Indefinite
 deps: [exc]
+refs:
+- ["The Battle's End", BoS2WT, 69]
 text: |
 
   TODO
   
+  *[TODO: Compare with Spell "The Battle's End".]*
+
   Instructing troops or comrades to avoide hostile or suspicious actions, the
   Discordian attempts to persuade one or more enemy unit(s) that his own unit
   is not a threat.  He rolls ([Charisma or Manipulation] + War) and compares

@@ -116,10 +116,12 @@ cost: "2m per point of target's Essence rating"
 mins: {Occult: 4, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Shaping, Touch]
-dur: Instant
+dur: One action
 deps: [etn]
 reviews:
 - 2012-02-18 RWG
+changes:
+- 2012-09-11 HUGR
 text: |
 
   At times the glories of the Exalted should remain hidden.  This Charm allows

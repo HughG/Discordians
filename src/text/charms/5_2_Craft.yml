@@ -102,7 +102,7 @@ text: |
 --- !Charm
 id: bwr
 name: "By Whim Reforged"
-cost: 5m or 5m, (1wp per rating point)
+cost: 5m; or 5m + 1wp per rating point
 mins: {Craft: 5, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
@@ -249,7 +249,7 @@ text: |
 --- !Charm
 id: est
 name: "Echo-Solidification>Technique"
-cost: 5m or 5m, (1wp per rating point)
+cost: 5m; or 5m + 1wp per rating point
 mins: {Craft: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
@@ -433,12 +433,12 @@ text: |
   action in which the character distills the Erisian element to which she is
   attuned, into a healing draught.  The character must find a location, item
   or other powerful manifestation of the element, as per Erisian Elemental
-  Rejuvenation [TODO: link], and bring suitable tools or equipment to work it
-  (or take it to such tools).  The distillation requires physical crafting
-  work, even though some elements may have non-physical manifestations.  The
-  character must spend (Essence) motes in addition to making a suitable Craft
-  roll.  Success produces a single draft of liquid, whose appearance depends
-  on its source.
+  Rejuvenation (see <<Resistance_eer>>), and bring suitable tools or equipment
+  to work it (or take it to such tools).  The distillation requires physical
+  crafting work, even though some elements may have non-physical
+  manifestations.  The character must spend (Essence) motes in addition to
+  making a suitable Craft roll.  Success produces a single draft of liquid,
+  whose appearance depends on its source.
   
   Drinking the liquid is sufficient to heal (Essence) levels of bashing or
   lethal damage, or to regain one point of Willpower.  This power is only made

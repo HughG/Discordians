@@ -80,6 +80,8 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Compulsion, War]
 dur: Instant
 deps: [exc]
+refs:
+- ["Paralyzing Contradiction", BoS2WT, 54]
 text: |
 
   The Rambling Minstrels add their own magical spin to the simple act of
@@ -106,7 +108,7 @@ text: |
 --- !Charm
 id: tbd
 name: "Turkey-Based Distraction"
-cost: 4m or 4m, 1wp
+cost: 4m; or 4m, 1wp
 mins: {Linguistics: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Social]
@@ -218,12 +220,10 @@ mins: {Linguistics: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Illusion, Stackable]
 dur: One scene
-deps: [zsd]
+deps: []
 text: |
+
   TODO
-  
-  [TODO: This might fit in better as Performance, given the other Charms I
-  have there.]
   
   This Charm supplements an action to Join Battle or Ready Weapons, allowing
   the Erisian Knight to fashion an Illusion of any weapon of his choice by
@@ -367,17 +367,14 @@ text: |
   may take days over a large area.  Also, a being must be able to see the
   whole area at once, to receive the message, and messages written across
   larger areas will fade more quickly.  This Charm allows the message to
-  survive gentle movements and natural wear and tear for up to (Essence x 10)
-  years, but significant changes such as flood, fire or simply painting over a
-  wall will obscure a proportionate amount of the message.  Of course, the
-  character may re-apply the Charm later.
+  survive gentle movements and natural wear and tear indefinitely, but
+  significant changes such as flood, fire or simply painting over a wall will
+  obscure a proportionate amount of the message.  Of course, the character may
+  re-apply the Charm later.
   
   The message may contain mental influence, but the recipient percieves the
   message clearly, so it is not inherently unexpected.  The recipient need not
   share a common language with the author, since the communcation is
   sub-verbal.
-  
-  [TODO: Not sure about ``Ess x 10 years''.  Maybe upgrade duration at higher
-  Essence?]
   
 ...

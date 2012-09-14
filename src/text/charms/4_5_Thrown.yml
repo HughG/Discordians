@@ -3,8 +3,7 @@
 name: Thrown
 text: |
 
-  *[TODO: Everything, plus ... perfect attack; Action-longs (maybe as
-  re-purchase?)]*
+  *[TODO: Everything, plus ... perfect attack]*
   
   * Tree for attacking with surprise, while seeming not to attack, from
     unexpected directions etc.
@@ -12,16 +11,14 @@ text: |
   * Tree for throwing things with non-combat effects (magical containment,
     spying, pickpocketing)
 
-  [throw-back counterattack?]
-
-  [Extend range with Elsewhere portals?]
+  * throw-back counterattack?
   
 --- !CharmLayout
 grid:
-- [ddt, ssf, exc]
-- [sts, ees, ppp]
-- [pdwr, dadb, bpp]
-- [etw, gae, tea]
+- [exc, ssf, ddt]
+- [ppp, sts, ees]
+- [evr, dadb, etw]
+- [bpp, gae, tea]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"
@@ -30,7 +27,7 @@ text: |
 --- !Charm
 id: ssf
 name: "Stone-Skipping Fillip"
-cost: 2m per step
+cost: 2m per step; or 2m per step, 1wp
 mins: {Thrown: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
@@ -48,8 +45,22 @@ text: |
   -1, and beyond triple this range a penalty of -2 applies (which is still an
   improvement on the default penalties, as described on <<Exalted>>, p. 148).
 
-  *[TODO: Upgrade or second purchase to suspend weapons in Elsewhere?  Or
-  could be separate Charm as in Archery.]*
+  A second purchase at Thrown 3 and Essence 3 allows the character to spend a
+  point of Willpower in addition to the mote cost to use the Charm with an
+  Indefinite duration, suspending his weapon in Elsewhere as it leaves his
+  hand.  Step 1 of attack resolution is carried out, including any expenditure
+  of motes for other Charms, but without naming a target.  It remains
+  Elsewhere as long as the character maintains the commitment of motes for
+  this Charm, plus the mote cost of all other Charms, if used in a Combo.  The
+  character can store at most (Essence) weapons in Elsewhere using this Charm.
+
+  The motes may be released at any later point as a reflexive action,
+  including as a counterattack, causing the attack to be resumed.  This does
+  not count as a Charm use.  The character need not be wielding the weapon at
+  the time, though they can still only choose a target which would be valid at
+  the point when the motes are released.  A slight disturbance in the air as
+  the projectile reappears means that this Charm does not in itself make the
+  attack unexpected.
 
 --- !Charm
 id: ddt
@@ -60,6 +71,8 @@ type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
 deps: [ssf]
+refs:
+- Archery_wwa
 text: |
 
   They Who Stand in the Doorway surprise their foes by stepping out at just
@@ -85,7 +98,7 @@ text: |
   the character's next action, the storyteller may rule that the target avoids
   the attack automatically--or, given a clever stunt, walks straight into it.
   This extension of the Charm can also be used to return the weapon to the
-  character's hand.  
+  character's hand.
 
 --- !Charm
 id: sts
@@ -95,7 +108,7 @@ mins: {Thrown: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Illusion]
 dur: One scene
-deps: [ddt]
+deps: [dadb]
 refs:
 - [ODA, Core, 195]
 - [PCP, Core, 202]
@@ -103,18 +116,22 @@ text: |
 
   TODO
   
-  *[TODO: Should this also have attack buffs like <<Thrown_bpp>>, since it can
-  be mimed?  Or should it always be mimed?  Probably ...]*
+  The Erisian makes a throwing motion with her weapon without actually
+  releasing it, or mimes an attack without a weapon, and rolls her attack as
+  normal, targeting a being, object, or location.  The attack causes no
+  damage, is unblockable with mundane weapons or armor, applies a -2 external
+  penalty to the target's DV due to its invisibilty, and is unaffected by
+  Hardness or soak.  Steps 7 and 8 of attack resolution will be irrelevant,
+  unless some unusual Reflexive Charm applies.
 
-  The character activates this Charm by making or miming a Thrown attack
-  targeting a being, object or location.  Her attack must hit but need not
-  cause any damage.  For the rest of the scene, she can control an Illusion
-  which is situated at the target point, and can produce visual, auditory or
-  olfactory manifestations of the character, using his appearance at the time
-  the Charm was activated.  The Illusion may be anything from a clear image of
-  the character to subtle hints of her presence--shadows, creaking floorboards
-  and the like.  If it targets a fixed object or location, the Illusion cannot
-  move, but moving objects or beings will carry it with them.
+  If her attack succeeds then, for the rest of the scene, she can control an
+  Illusion which is situated at the target point, and can produce visual,
+  auditory or olfactory manifestations of the character, using his appearance
+  at the time the Charm was activated.  The Illusion may be anything from a
+  clear image of the character to subtle hints of her presence--shadows,
+  creaking floorboards and the like.  If it targets a fixed object or
+  location, the Illusion cannot move, but moving objects or beings will carry
+  it with them.
 
   Initially the character chooses a simple manifestation, containing nothing
   more complex than a handful of words, and sets it to repeat at a regular or
@@ -147,12 +164,12 @@ text: |
 --- !Charm
 id: ees
 name: "Elsewhere Explosion Shot"
-cost: 3m, or 5m + 1wp
+cost: 3m; or 5m + 1wp
 mins: {Thrown: 4, Essence: 3}
 type: [Supplemental]
-keys: [Combo-OK]
+keys: [Combo-OK, Crippling]
 dur: Instant
-deps: [ddt] #[wwa]
+deps: [ddt]
 refs:
 - Stealth_sse
 text: |
@@ -167,10 +184,6 @@ text: |
   roll his (Stamina + Resistance) against the character's (Strength + Thrown).
   If the target fails this check, he is Stunned.
 
-  *[TODO: Is it okay to do this "even if it does not cause damage"?  Does it
-  need a keyword so that those whose perfects are in soak can still avoid
-  it?  Crippling, maybe?]*
-  
   By spending an extra two motes and a point of Willpower, the character can
   attempt to stun all beings within (Essence x 3) yards of the point of
   impact.  Each must resist by making a contested roll as described above.  If
@@ -197,12 +210,12 @@ text: |
 --- !Charm
 id: ppp
 name: "Pebble Proxy Propulsion"
-cost: 3m or 3m, 1wp
+cost: 3m; or 3m, 1wp
 mins: {Thrown: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
-deps: [exc, dadb] #[fr, qosas]
+deps: [exc, dadb]
 text: |
 
   TODO
@@ -230,14 +243,29 @@ text: |
   high balcony, for example.
   
 --- !Charm
-id: pdwr
-name: "(Perfect Defense With Redirect)"
+id: evr
+name: "Evasion Vector Response"
+cost: -- (+6m)
+mins: {Thrown: 4, Essence: 3}
+type: [Reflexive, Step 2]
+keys: [Combo-OK]
+tags: [Flurry-Breaker]
+dur: Instant
+deps: [ppp]
+refs:
+- Melee_ama
+- Archery_tflab
 text: |
 
   TODO
-  
-  [Like Melee ama.  Maybe deflecting attacks should be a prerequisite Charm,
-  lower-Essence pre-upgrade effect or first purchase?]
+
+  This Charm extends its prerequisite, allowing it to be used to perfectly
+  dodge any attack, even attacks which are undodgeable.  If the opponent is
+  making a flurry of attacks, and the character ends up outside of his
+  opponent's weapon range, then the further attacks in the flurry cannot
+  target the character, unless the attacker has some means of closing the
+  distance again.  This Charm suffers from one of the Discordian Flaws of
+  Invulnerability.
   
 --- !Charm
 id: dadb
@@ -296,12 +324,12 @@ text: |
 
   TODO
   
-  The Erisian makes a throwing or stabbing motion his weapon, without actually
-  releasing it, and rolls an attack as normal.  The attack causes no damage,
-  is unblockable with mundane weapons or armor, applies a -2 external penalty
-  to the target's DV due to its invisibilty, and is unaffected by Hardness or
-  soak.  Steps 7 and 8 of attack resolution will be irrelevant, unless some
-  unusual Reflexive Charm applies.
+  The Erisian makes a throwing motion with his weapon without actually
+  releasing it, or mimes an attack without a weapon, and rolls his attack as
+  normal.  The attack causes no damage, is unblockable with mundane weapons or
+  armor, applies a -2 external penalty to the target's DV due to its
+  invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
+  resolution will be irrelevant, unless some unusual Reflexive Charm applies.
   
   If the attack achieves even one success, this Charm inflicts a Compulsion on
   the target, to stay pinned to the spot.  Resisting the influence costs two
@@ -325,7 +353,7 @@ text: |
 --- !Charm
 id: gae
 name: "Golden Apple Enticement"
-cost: 4m, 1wp
+cost: 5m, 1wp
 mins: {Thrown: 3, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Emotion, Social]
@@ -338,11 +366,11 @@ text: |
 
   TODO
 
-  *[TODO 2012-08-12 HUGR: Check against <<Archery_pth>>, which costs more but
-  works differently.]*
+  *[TODO 2012-08-12 HUGR: Check against <<Archery_pth>>, which is similar but
+  has different cost, duration and detailed effects.]*
 
   This Charm supplements a thrown attack, attempting to create an Intimacy
-  around in the action in observers.  Provided the attack is successful, the
+  around the action in observers.  Provided the attack is successful, the
   character rolls his [(Charisma or Manpiulation) + Thrown] and compares it to
   the MDV of all who witnessed it, including the target.  If the character
   used any effects to enhance his dice pool for the thrown attack, they also
@@ -356,6 +384,8 @@ text: |
   its magical protection, but likewise affected beings will normally have no
   desire to lose it, as it becomes a natural Intimacy.  Of course, conflicting
   Intimacies, persuasion by others and so on may lead them to work against it.
+  Having shaken off the effect, recognising the source costs another point of
+  Willpower.
 
   This Charm can also be applied in Social situations, by simply taking a
   [(Charisma or Manpiulation) + Thrown] action, without actually making a

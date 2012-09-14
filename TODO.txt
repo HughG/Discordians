@@ -1,45 +1,95 @@
-* Charms
+* TODO this week
 
-** Finish
+** Charms: Finish
 - 4 5 Thrown
 - 3 4 Socialize
 - 4 4 Stealth
-- 5 4 Lore (Improve Numerology)
-- 3 1 MA
 
-** TODO (apart from "add fluff")
+** Revision info into frontispiece
+
+** Alpha disclaimer into frontispiece
+- Specific note about anything saying they're like Sidereals.
+
+** Charms: Extra?
 - 1 2 Awareness
-- 1 4 Sail
 - 1 5 Survival
+-- Something like Stealth_dcp, following lwra.
 - 2 1 Archery
-- 2 2 Investigation
-- 2 4 Performance (Reactor)
-- 3 2 Melee (Martial-ready)
-- 3 4 Socialize
-- 4 1 Dodge
-- 4 4 Stealth
-- 4 5 Thrown
-- 5 4 Lore
-- 5 5 Resistance -- has no Charms with Exc as prereq
-
-
-** Extra?
-- 1 1 Athletics
-- 1 2 Awareness
-- 1 5 Survival
-- 2 4 Performance -- see red book
+- 2 4 Performance
+-- Something to fake Nocturnal Fluctuations?
 - 2 5 Ride
 - 4 2 Larceny
-- 5 3 Integrity (perfect Social dodge?)
-- 5 4 Lore
 - 5 5 Resistance
 
+*** Excellencies
 
-** Overall
+- fourth and fifth
+
+** Charms: Update for 2.5
+- Tags
+- Keywords
+-- Native
+-- Martial and Martial-ready
+--- 3 2 Melee (Martial-ready)
+-- Overdrive and Reactor
+--- 2 4 Performance (Reactor)
+- General Charm approaches and costs.
+
+** Creation-Ruling Mandate
+- 5th-Division anima power?
+- Bureaucracy
+- Socialize?
+
+----------------------------------------------------------------------
+
+* Maybe TODO this week
+
+** Flaws of Invulnerability
+- Along Divisional themes, though not tied to character's Division?
+
+** 3_Traits
+- No sobriquets or quotes for Parametadivisions
+
+** Nocturnals
+- Parametadivision
+- Sobriquets
+
+** Ditch Memetic Artifacts
+
+** Charms: Overall
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)
+- Appropriate use of Excellencies as prerequisites.
+-- Resistance has none!
 - Balance per Ability
 - Balance per Division
-- Flavour
-- Check all Charms are actually included in PDF layout (and/or automate check)
+- Maybe Charms which stretch the meaning of an Ability shouldn't be too
+deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
+
+----------------------------------------------------------------------
+
+* Not TODO this week
+
+** Revise summary text in Introduction
+
+** Sobriquets
+
+** Charms: Flavour
+
+** Sorcery
+
+** Panoply
+
+** Elementals
+
+** Sample Characters
+
+** Integration with Anathema
+
+** Protocol 23
+- Factor out
+- Port to Linux and Windows
+- Automate check that all Charms are actually included in the PDF layout
+
+** Online autobuild

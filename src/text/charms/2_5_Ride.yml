@@ -37,7 +37,7 @@ text: |
 --- !Charm
 id: mpt
 name: "Mount-Promoting>Touch"
-cost: 3m or 3m, 1wp
+cost: 3m; or 3m, 1wp
 mins: {Ride: 3, Essence: 3}
 type: [Simple]
 keys: [Touch]

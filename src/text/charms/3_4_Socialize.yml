@@ -18,18 +18,12 @@ text: |
   Something to improve defenses of others, or Defend Other?  Possibly as a
   prereq to Schismatic Innoculation Technique
   
-  Non-social-interaction actions to indirectly affect Intimacies and actions.
-  E.g., something small which triggers a poor harvest or price increase, which
-  then triggers the specific desired response from a social group.
-  (Basically, a disguised long-term social action.)  [Maybe should be
-  Bureaucracy?]
-  
 --- !CharmLayout
 grid:
 - [usa, psa, gsd]
 - [dmi, pca, hci]
 - [hmi, sit, fm]
-- [exc, usn, ce]
+- [exc, usn, eeg]
 - [~, saic, ~]
 --- !Charm
 id: exc
@@ -52,7 +46,7 @@ text: |
 
   TODO
   
-  This Charm supplements a social attack, removing any DV bonuses which the
+  This Charm enhances a social attack, removing any DV bonuses which the
   target being or social group would gain from the attack being in opposition
   to its Intimacies, Virtues or Motivation.  Furthermore, if the attack
   succeeds and was aimed at persuading the target towards a particular belief,
@@ -63,15 +57,8 @@ text: |
   conflicting Intimacies, so building a new one which conflicts with an
   existing Intimacy or Motivation does not necessarily damage the latter,
   though bonuses and penalties from these conflicting values may cancel out.
-  
-  The character can target himself with this Charm, including using it in Step
-  2 as a form of defence.  *[TODO Not clear what I meant there.  Did I mean
-  the character could attack himself, in response to an attack, to give
-  himself a defensive Intimacy?  If so, that doesn't really work, in terms of
-  attack resolution timing.  Maybe it could allow the character to remove any
-  MDV penalties he would have due to his own Intimacies etc.?]* Note that,
-  being Reflexive, this Charm can enhance rolls and be used in Combos with
-  Charms from other Abilities.
+  Note that, being Reflexive, this Charm can enhance rolls and be used in
+  Combos with Charms from other Abilities.
   
 --- !Charm
 id: hci
@@ -146,7 +133,7 @@ cost: 3m, 1wp
 mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
-dur: Instant
+dur: Indefinite
 deps: [dmi]
 reviews:
 - 
@@ -154,18 +141,14 @@ text: |
 
   TODO
   
-  This Charm allows the character to apply the protection of [dmi] on a
-  long-term basis, to himself or another target, but only in relation to a one
-  single Motivation, Intimacy, emotion or intention for each activation of
-  this Charm.  The increased difficulty also applies to attempts to determine
-  the existence or source of any magical effects which cause, maintain or
-  otherwise afffect the chosen aspect, including relevant Emotion and
-  Compulsion effects, and this Charm itself.  The Charm can be applied to a
-  social group of Magnitude up to (Socialize ÷ 2).
-
-  *[TODO: Should this be Indefinite?  If not, then excluding detection of this
-   Charm makes no sense, as it won't be in effect; and, when would it wear
-   off, or how could it be countered?]*
+  This Charm allows the character to apply the protection of
+  <<Socialize_dmi>> on a long-term basis, to himself or another target, but
+  only in relation to a one single Motivation, Intimacy, emotion or intention
+  for each activation of this Charm.  The increased difficulty also applies to
+  attempts to determine the existence or source of any magical effects which
+  cause, maintain or otherwise afffect the chosen aspect, including relevant
+  Emotion and Compulsion effects, and this Charm itself.  The Charm can be
+  applied to a social group of Magnitude up to (Essence + 1).
   
 --- !Charm
 id: psa
@@ -256,7 +239,7 @@ text: |
 id: saic
 name: "Social actions>in combat"
 cost: 2m, 1wp
-mins: {Socialize: 4, Essence: 2}
+mins: {Socialize: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, War]
 dur: One scene
@@ -267,20 +250,14 @@ text: |
 
   TODO
   
-  This Charm allows the character to make social attacks against targets with
-  whom she is joined in battle or mass combat.  The targets must be able to
-  perceive, hear and/or understand her as normal if necessary for the attacks.
-  The character may reflexively spend 1 mote when making non-social attack
-  while this Charm is active, to add a single social attack which neither
-  suffers from multiple action penalties nor increases them for other attacks.
-  A single non-social attack flurried with a single social attack therefore
-  suffers no penalties.
-  
-  *[TODO: Some recent forum thread spoke about Lunar follow-ups to Charismatic
-  Lunar Trick?]*
-
-  *[TODO: Also allow things like reading motivation from combat moves,
-   counting combat as a period of social interaction, etc.]*
+  This Charm allows the character to take social actions in relation to
+  targets with whom she is joined in battle or mass combat.  If those Social
+  Charms require observation or interaction, there must still be some line of
+  sight, communication or similar between her and her targets.  The impact of
+  some actions or Charms may be limited at the Storyteller's discretion.  For
+  example, attempts to read an opponent's intentions may yield only what can
+  be deduced from their battle cries, the things they leap to defend, and so
+  on.
   
 --- !Charm
 id: usn
@@ -337,131 +314,106 @@ text: |
   basis of interacting with or observing even a single individual.
   
 --- !Charm
-id: ce
-name: "Contagious Effect"
-cost: "3m per extra dot of Magnitude, 2wp [or, (3m, 1wp) per dot?]"
+id: eeg
+name: "Epidemic Expression Genesis"
+cost: 4m, 1wp
 mins: {Socialize: 3, Essence: 3}
 type: [Reflexive]
-keys: [Combo-OK, Sickness, Social]
-dur: (Socialize) scenes
+keys: [Combo-OK, Sickness, Social, Stackable]
+dur: Indefinite
 deps: [usn]
-reviews:
-- 
+refs:
+- Lore_cip
+changes:
+- 2012-09-13 HUGR
 text: |
 
   TODO
   
-  *[TODO: Hmm, maybe this should be Sorcery? cf. Hideous Confusion of
-  Tongues.]*
+  This Charm causes a single emotion or belief experienced by the target to
+  spread to others.  The character can choose a feeling or opinion which he
+  has observed or induced in the target, or allow the Storyteller to pick one.
+  The target is then regarded as being infected with a disease with a
+  Virulence equal to the character's Essence, and Untreated and Treated
+  Morbidity ratings of zero--the disease is never directly fatal, though it
+  might lead the afflicted into dangerous actions.  The Difficulty to Treat is
+  equal to the character's Essence if the healer has access to relevant magic,
+  otherwise (Essence x 2).
 
-  *[Not sure about the mechanics here, on several fronts.  (1) It currently
-  only works for Keyworded effects, but it could be just as useful, and ought
-  to be easier, to make non-magical emotions or beliefs contagious.  (2) It
-  says "successfully-applied", but by whom, and in what time-span?  Would make
-  more sense if it picked up on any one emotion, belief, or keyworded effect
-  currently applying to the target.  In that case, the original attack may not
-  be known (or there may have been no attack); so, either make it an attack
-  with the target's/character's dice pool against the new victim's Dodge MDV,
-  or make it an infection-style "roll to resist", with a difficulty equal to
-  ... the character's Essence?  (3) HCoT costs 35m and each victim is affected
-  and infectious for (Essence x 2) hours; maybe something similar would be
-  good -- Indefinite effect but the spell ends automatically if all affected
-  targets reach the end of their period of affliction.  That spell also allows
-  victims to be re-infected unless counter-magicked, but this Charm, being
-  non-sorcerous, might not.  On the other hand, when the infection lifts for
-  *this* Charm, we might rule that people still feel or believe the thing the
-  Charm carried to them, but are now able to be persuaded away from it with a
-  single success on a mundane social "attack" to calm them down -- whereas
-  their state of mind/heart would be magically protected while they were
-  infected by this Charm, requiring a magically-enhanced attack to break them
-  free and/or increasing the difficulty to "cure" them.]*
-  
-  *[RWG: Have it work on an existing emotion or belief.  For emotions, the
-  existing (Errata) mechanics of the Emotion keyword are enough.  For beliefs,
-  it creates an Intimacy (using the Illusion keyword) towards that belief, and
-  targets' actions are based on Intimacy mechanics.  The spread can use usual
-  proper infection rules.  Anything which demonstrates the affected emotion or
-  belief to observers is enough to provoke a resistance roll in them.]*
+  The disease will run its course naturally in (Essence) weeks.  Once the last
+  victim is released from the disease, the Charm ends.  Releasing the
+  commitment of motes from this Charm ends the effects of the disease
+  immediately for all who are affected.  The Magnitude of beings that can
+  be affected concurrently is equal to the character's (Essence + 1).
+  Furthermore, the character can maintain at most (Essence) simultaneous
+  activations of this Charm.
 
-  This Charm enables the power of any successfully-applied Compulsion,
-  Emotion, Illusion or Servitude effect to extend gradually to a larger target
-  group, in a contagious manner.  The effect to be extended may come from a
-  Charm used in a Combo with this Charm but need not do so, nor even from the
-  character at all: it can be applied to an existing, ongoing effect from any
-  source.
-  
-  Every being who interacts with the group, including the character himself,
-  is subject to the same attack or other effect as originally applied.  If
-  that being defends against the attack, spends Willpower to resist it, or
-  otherwise avoids it, they remain immune to the contagion for its full
-  duration.  If not, the original effect applies in full, and they also become
-  contagious.
-  
-  The contagion will spread as long as unaffected beings interact with those
-  affected, until the Magnitude of the total number affected is up to
-  (Socialize) dots greater than the group affected by the original effect.
-  Each such additional dot costs three motes.  If the duration of the original
-  effect is less than that of this Charm, the contagion may continue to
-  spread, but will not re-affect those for whom the duration has passed,
-  though they still count towards the Magnitude limit.  The duration of the
-  original effect is tracked separately for each infected being.
-  
-  At Essence 4 the duration extends to (Socialize) days, and at Essence 5 to
-  (Socialize) weeks.  The character can end this Charm early, but that only
-  prevents the contagion spreading further, and does not stop the underlying
-  effect.  Note that the contagion is a metaphysical Sickness effect and may
-  be resisted as such.
+  In the case of an emotion, infected beings are subject to a corresponding
+  Emotion effect, which persists until the disease is cured.  For beliefs, the
+  disease creates a fully committed Intimacy towards the belief.  If the
+  Intimacy is eroded but the disease is not cured, the character will
+  effectively take a commitment action every scene until it is re-esablished.
+
+  Any action by the target which demonstrates the affected emotion or belief
+  to observers is enough to provoke a resistance roll in them, lest they also
+  become infected.  Even passive aspects of the target such as his appearance
+  may suffice, if appropriate.  In place of the usual (Stamina + Resistance)
+  roll, those subsequently exposed resist using their (Temperance + Integrity)
+  against an emotion, or (Conviction + Integrity) against a belief.  An
+  observer who already regards the emotion or belief positively may spend a
+  point of Willpower to suppress the relevant Virtue and remove its dice from
+  the resistance roll.  Those who resist or are cured become immune until the
+  disease has run its course.  Note that the contagion is a metaphysical
+  Sickness effect and may be resisted as such.
   
 --- !Charm
 id: sit
 name: "Schismatic>Innoculation>Technique"
-cost: 5m, 1wp
-mins: {Socialize: 3, Essence: 2}
+cost: 8m, 1wp
+mins: {Socialize: 4, Essence: 4}
 type: [Simple, 6 long ticks]
-keys: [Combo-OK, Compulsion, Social]
+keys: [Combo-OK, Compulsion, Social, Stackable]
 dur: Instant
 deps: []
-reviews:
-- 
+refs:
+- ["Herd-Strengthening Invocation", Lunars, 170]
+changes:
+- 2012-09-13 HUGR
 text: |
 
   TODO
   
-  *[TODO: Should possibly have higher mins.  Compare with Lunar ``Social Unit
-  Charms''.  Should possibly simplify effects a bit.]*
+  Using this Charm, the Overseer protects a specific existing loyalty
+  (Intimacy) within the Policy of a social group.  Activating the Charm in the
+  presence of at least one member of the group--possibly the character
+  himself--he causes a sebset of the group constituting a single dot of
+  Magnitude to gain a further Intimacy to protecting the chosen loyalty.
+  Resisting this Charm costs 5 points of Loyalty--it is hard for a leader to
+  justify not supporting the organisation's own goals.  A character can stack
+  up to (Essence ÷ 2) activations of this Charm on a single group, to protect
+  multiple Intimacies or to provide several layers of protection to one
+  Intimacy.  However, he must pay the full cost of all activations at once,
+  and the group becomes an invalid target for further activations of this
+  Charm from any source, until all activations have been triggered.
   
-  Using this Charm, the Overseer protects a specific loyalty (Intimacy) within
-  the Policy of a social group.  The character must have spent several hours
-  over the previous month interacting with the group, though not necessarily
-  in an obvious way.  Activating the Charm in the presence of at least one
-  member of the group, the character causes a sub-group of Magnitude up to
-  (character's Essence) to gain a further Intimacy to protecting the chosen
-  loyalty.
-  
-  Any time a group Leader's Loyalty pool is reduced to zero and he implements
-  some action contrary to the loyalty, causing some of the group to split off,
-  two effects come into play.  First, some of the affected members will remain
-  in both the original and split-off group, and work to re-join the two parts
-  in subsequent scenes, and likely undo the implemented action as far as
-  possible.  Secondly, those in the main group work against this foreign
-  influence from within, imposing an internal penalty of (Essence ÷ 2) on the
-  implementation of the action.
-  
-  Additionally, if any effect attempts to remove or weaken the protected
-  loyalty, or impose another which is contradictory, the internal opposition
-  helps the Leader resist this.  Assuming Loyalty can be spent to resist the
-  effect, the amount of Loyalty to resist for a single scene is halved, to a
-  minimum of one, and the total amount of Loyalty the Leader must spend to
-  shake it off is reduced by the character's Essence, again to a minimum of
-  one.  If the Leader cannot validly resist the effect, the group
-  automatically loses a dot of Magnitude as the innoculated members, in a
-  last-ditch attempt to protect their loyalty, all leave at once to form a new
-  group.
+  The Charm's effects are triggered when a group leader's Loyalty pool is
+  reduced to zero and he implements some action contrary to the protected
+  loyalty.  Eroding or removing the protected loyalty, or the Intimacy added
+  by this Charm, are always considered contrary actions.  This causes the
+  group to lose a dot of Magnitude as normal, but some of the affected members
+  will side with both the main and split-off group, and two effects come into
+  play.  First, those members will work to re-join the two parts.
+  Mechanically, this involves taking repeated actions targeting the leader of
+  the splinter group, attempting to build an Intimacy to the original leader,
+  so this will take at least (splinter group leader's Conviction) scenes
+  without magic.  Secondly, those reamining within the group work against the
+  unorthodox action from within, imposing an internal penalty of (character's
+  Essence ÷ 2) on the implementation of the action.
   
 --- !Charm
 id: fm
 name: "Flashmob!"
-cost: 4m or 4m, 1wp
+cost: 4m; or 4m, 1wp
 mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Compulsion, Social]

@@ -31,10 +31,6 @@ text: |
   Charm allows the Exalt to add the lower of her Hodge and Podge ratings to
   her Dodge MDV and Parry MDV against one attack.
   
-  [TODO 2011-09-17 HUGR: Maybe add a 4m perfect social parry in Socialize,
-  since I also have a perfect social dodge for 4m in Awareness, and may add a
-  4m perfect social parry in Socialize.]
-  
 --- !Charm
 id: sdc
 name: "Subtle Daydream>Concoction"
@@ -139,7 +135,8 @@ keys: [None]
 dur: Permanent
 deps: []
 refs:
-- Victory in Defeat; Broken-Winged Crane; 31
+- ["Victory in Defeat", BWC, 31]
+- Awareness_tgof
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -249,15 +246,22 @@ text: |
   can purchase the Charm no more than (Integrity) times and no more than once
   per Virtue.  Each gives the character 3 dots of Virtue Specialty, with the
   breadth and suitability of such Specialties subject to Storyteller approval.
+  For example, a Stone-Carver might take a Compassion Specialty in "acting for
+  the greater good", or "winning new friends", or a Valor Specialty of "in
+  battle against greater numbers", or "reckless bravery".
+
   These dots provide both extra Virtue channels, and extra dice when
   channelling a Virtue, where the Specialty is applicable.  They may stretch
   the meaning of the Virtue quite far: at Essence 4+, if a character wishes to
   suppress a Virtue, and has dots of Specialty in that Virtue which actually
   support suppressing the basic Virtue, she may roll those specialty dice
-  separately and subtract them from the successes from the base roll.
-  
-  [TODO 2012-02-01 RWG: Need to give examples, specially for the ``suppress
-  basic Virtue'' bit.]
+  separately and subtract them from the successes from the base roll, giving a
+  minimum result of zero successes.  For example, consider a character with
+  four dots in Compassion, and two dots of Compassion Specialty in "acting for
+  the greater good".  Faced with the need to sacrifice a small number of
+  innocents to save a larger population, she would roll four dice for her
+  basic Virtue, then separately roll two dice for her Specialty, and subtract
+  the successes of the latter roll from those of the former.
   
 --- !Charm
 id: icc
@@ -293,11 +297,11 @@ text: |
   one of these, and the other may be purchased for half the normal cost of the
   Charm.
   
-  /Policy-Molding Arrogation/: This variant supports Intimacies related to the
+  _Policy-Molding Arrogation_: This variant supports Intimacies related to the
   Policy of a social group.  They must involve supporting, opposing or
   changing in some particular way the Policy of that group.
   
-  /Moot Point Focus/: This variant covers Intimacies related to holding a
+  _Moot Point Focus_: This variant covers Intimacies related to holding a
   specific opinion on some matter which is open to question.  For example, the
   character could choose to believe that slavery is beneficial to slaves or
   that demons are essentially good, but not that there is no price attached to

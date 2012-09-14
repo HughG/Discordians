@@ -69,7 +69,7 @@ id: fhh
 name: "Flotsam Half-Hitch"
 cost: 2m per hl; or 2m per hl, 1wp
 mins: {Sail: 2, Essence: 2}
-type: [Reflexive, Step 10 or Simple, Dramatic Action]
+type: [[Reflexive, Step 10], [Simple, Dramatic Action]]
 keys: [Combo-OK, War]
 dur: Instant
 deps: []
@@ -95,8 +95,6 @@ text: |
   sand-ships or gliders can also be created.  The resulting craft will last as
   long as if it had been constructed normally.  This Charm cannot repair any
   damaged magical powers.
-  
-  *[TODO: Compare the above with personal Resistance Charms?]*
   
 --- !Charm
 id: fs

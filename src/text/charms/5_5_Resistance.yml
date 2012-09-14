@@ -3,6 +3,8 @@
 name: Resistance
 text: |
   *[TODO: essence/wp-gathering or overdrive]*
+
+  *[TODO: Make exc be a prereq of at least one Charm.]*
   
 --- !CharmLayout
 grid:
@@ -241,7 +243,7 @@ text: |
   the Charm must be activated at the moment the keyworded effect applies for
   it to be effective.
   
-  /Tasty Poison Adaptation/: As long as motes are committed to this Charm,
+  _Tasty Poison Adaptation_: As long as motes are committed to this Charm,
   each interval which would require a Stamina + Resistance passes without
   damage, but still allows the substance to gradually leave his system.  The
   Charm only prevents damage; it does not prevent any penalties if the
@@ -255,7 +257,7 @@ text: |
   for alcohol, wean himself off onto that, and survive with no more than a bad
   hangover.
   
-  /Soul-Sickness Transfer/: Any one Sickness effect which would harm the
+  _Soul-Sickness Transfer_: Any one Sickness effect which would harm the
   character may be transformed into a sickness of the heart, severely changing
   the tone of one of his Intimacies.  The character chooses the Intimacy to be
   affected and can propose the new tone, though the Storyteller must agree
@@ -267,7 +269,7 @@ text: |
   prematurely, the Intimacy is restored, but the Sickness returns to run
   whatever remains of its natural course.
   
-  /Puissance as Poultice/: Activated in response to a Crippling effect, this
+  _Puissance as Poultice_: Activated in response to a Crippling effect, this
   Charm allows the character to transfer the destruction to any one of his
   Abilities which is rated 1 or more.  As long as the motes remain committed
   to this Charm, the Crippling effect is held at bay, but the character's

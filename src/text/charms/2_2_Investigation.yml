@@ -49,10 +49,12 @@ id: erm
 name: "Evidence Reweaving Method"
 cost: 3m
 mins: {Investigation: 3, Essence: 2}
-type: [Reflexive, Step 1 or Step 2]
+type: [Supplemental]
 keys: [Combo-OK, Social]
 dur: Instant
 deps: [iai, exc]
+changes:
+- 2012-09-13 HUGR
 text: |
 
   TODO
@@ -67,13 +69,14 @@ text: |
   outright lie sound like a half-truth.  The character can choose the
   conclusions she would lead people to, though the Storyteller may veto
   outlandish ones.
-  
-  If these changes are made, by the character or anyone else, the adjustments
-  will be undetectable by mundane means.  Detection by supernatural means
-  allows the investigator to make the standard contested roll of the
-  character's (Wits + Investigation) versus the other investigator's
-  (Perception + Investigation).  Making the changes takes a tenth of the time
-  it normally would.
+
+  If these changes are subsequently made, by the character or anyone else,
+  then each success from this Charm's roll translates to a point of external
+  penalty on later examinations of the scene, applied as follows.  For every
+  success another character would have gained on a (Perception +
+  Investigation) but for the penalty, he comes to a specific false conclusion.
+  Successes after the penalty yield mostly-correct information, as normal.
+  Making the changes takes a tenth of the time it normally would.
   
   Used in Social situations, this Charm can be used before an attack, or as
   part of one, to learn how to change a target's mind about the truth or
@@ -81,11 +84,7 @@ text: |
   external penalty to their Dodge and Parry Mental Defense Values, equal to
   the character's Investigation, against any Manipulation-based attacks the
   character makes relating to the specific conclusions covered by her (Wits +
-  Investigation) roll.  This penalty lasts until the end of the given Social
-  combat.
-  
-  *[TODO: Is this too powerful?  Maybe the number of ``points of
-  misdirection'' should be half the successes, or something?]*
+  Investigation) roll.  This penalty lasts until the end of the scene.
   
 --- !Charm
 id: iod
@@ -229,8 +228,6 @@ text: |
   scene.  If the character already knows all the target's Intimacies, further
   successful rolls reveal the target's Motivation (or Motivations, in rare
   cases).
-  
-  *[TODO: Rename, given there's also Needle As Compass Method?]*
   
 --- !Charm
 id: stt

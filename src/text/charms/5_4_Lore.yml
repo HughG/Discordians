@@ -2,19 +2,13 @@
 --- !CharmGroup
 name: Lore
 text: |
-
-  TODO
-  
-  * Group/contagious training?  Reallocate dots instead of just adding them?
-
-  * Something for learning things which are no longer known but once were, or are known to only one person.  See "Austral Illuminati" (funding of), and Nara-O?
   
 --- !CharmLayout
 grid:
-- [hmm, asa, erp]
-- [wii, enan, sant]
-- [exc, dlu, rtc]
-- [in, ~, rts]
+- [dr, asa, erp]
+- [hmm, dlu, sant]
+- [wii, exc, rtc]
+- [enan, cip, rts]
 --- !Charm
 id: exc
 name: "(Any Lore Excellency)"
@@ -41,9 +35,10 @@ text: |
   surroundings, or something which is recorded in nearby books, memory
   crystals etc., or something generally known by people nearby.  The range
   depends on the character's Essence rating: at Essence 2, it is 100 yards; at
-  3, 1 mile; at 4, 10 miles, and so on.  The information sought must be
-  something generally known or specifically recorded, so this Charm tends not
-  to be of use in, for example, investigating crime scenes.
+  3, 1 mile; at 4, 10 miles, and so on, to a maximum of 1000 miles at Essence
+  6.  The information sought must be something generally known or specifically
+  recorded, so this Charm tends not to be of use in, for example,
+  investigating crime scenes.
   
   The effect of the Charm differs depending on whether or not the subject is
   something the character would reasonably be expected to know.  If not, this
@@ -52,16 +47,17 @@ text: |
   already know, this Charm reduces the difficulty by at least 1, and possibly
   by more at storyteller discretion, to a minimum of zero.
   
-  *[TODO 2012-02-01 RWG: Give examples of what would count as what level of
-  difficulty reduction.  Maybe connect it with the ``first age library''
-  example below.]*
-  
   The character does not need to speak or read any languages in which the
   information is recorded, nor actually find a partcular book or person to
   consult.  This means that, for example, one of the Authority can enhance her
   chances of success in operating an ancient artifact simply by standing
-  briefly in the middle of a relevant First Age library.  Lastly, bear in mind
-  that things which are generally known may not be correct.
+  briefly in the middle of a relevant First Age library, perhaps reducing the
+  difficulty by three or four, depending on the relevance of the content.
+  Using the same library to learn about the Shogunate would reduce difficulty
+  by one or two points at most, since the Dragon-Blooded sealed off access to
+  such facilities.  It would be unlikely to be of any help in learning about
+  current affairs in the Age of Sorrows.  Bear in mind that, even in halls of
+  gathered lore, things which are generally known may not be correct.
   
 --- !Charm
 id: wii
@@ -166,9 +162,10 @@ keys: [Combo-OK, Shaping, Touch]
 dur: One scene
 deps: [sant]
 refs:
-- [Nature-Reinforcing Allocation; Lunars; 163]
-- [Wolf Pack Training Technique; Lunars; 164]
-- [Burgeoning Wyld Infliction; Lunars; 190]
+- ["Harmonious Academic Methodology", Core, 215]
+- ["Lengendary Scholar Curriculum", Core, 215]
+- ["Nature-Reinforcing Allocation", Lunars, 163]
+- ["Wolf Pack Training Technique", Lunars, 164]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -196,6 +193,26 @@ text: |
   increases to (Essence) weeks per success.
   
   *[TODO: Balance this against Numerology.]*
+
+  *[Hmm ... this balances fine against Solar and Lunar training Charms, but
+  seems odd set against Numerology.  How about the following ... Make it
+  Reflexive, modifying a Numerology action which raises at least one Ability
+  in one being for one week, for which the balance involves a reduction in the
+  same trait for the character, over the same week.  Cost is 10m (no WP) but
+  the character must also commit the Willpower spent on the Numerology action,
+  plus the mote cost of any other Charms which modify that action.  The Charm
+  targets a single affected being, which can spend the appropriate amount of
+  experience immediately to treat that week as adequate training time, gaining
+  access to the increased rating immediately.  If the character releases the
+  mote commitment early, the experience is refunded and the training does not
+  stick, though the Numerology effect continues to play out.  This training
+  cannot raise traits beyond 4, and cannot raise a trait if the balance would
+  take the character's Ability rating below zero.  The character cannot target
+  himself with this Charm.  The Numerology effect may adjust more than one
+  trait at once, but each activation of this Charm affects only one trait.
+  The character can maintain up to (Essence) concurrent activations of this
+  Charm, subject to available motes and Willpower, either on the same target
+  or on multiple targets.  (Stackable.)]*
   
 --- !Charm
 id: rts
@@ -207,9 +224,10 @@ keys: [None]
 dur: Permanent
 deps: [rtc]
 refs:
-- [Nature-Reinforcing Allocation; Lunars; 163]
-- [Wolf Pack Training Technique; Lunars; 164]
-- [Burgeoning Wyld Infliction; Lunars; 190]
+- ["Harmonious Academic Methodology", Core, 215]
+- ["Lengendary Scholar Curriculum", Core, 215]
+- ["Nature-Reinforcing Allocation", Lunars, 163]
+- ["Wolf Pack Training Technique", Lunars, 164]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -222,6 +240,13 @@ text: |
   total.
   
   *[TODO: Balance this against Numerology.]*
+
+  *[Hmm ... how about I just extend the above re-write to add the following
+  (with no increased cost) ... Attributes, Virtues, and Willpower can also be
+  trained, with the restriction that the Balance cannot decrease the
+  character's Attributes or Vitues below 1.  If the character also knows
+  Rewriting the Spine, then a single Mutation bestowed by that Charm can be
+  trained, for each activation of this Charm.]*
   
 --- !Charm
 id: dlu
@@ -233,10 +258,8 @@ keys: [Combo-OK, Obvious, Shaping, Stackable, Touch]
 dur: One scene
 deps: [exc, sant]
 refs:
-- [Nature-Reinforcing Allocation; Lunars; 163]
-- [Wolf Pack Training Technique; Lunars; 164]
-- [Burgeoning Wyld Infliction; Lunars; 190]
-- [Science of Mutation; Lords of Creation; 73]
+- ["Burgeoning Wyld Infliction", Lunars, 190]
+- ["Science of Mutation", Lords of Creation, 73]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -268,7 +291,78 @@ text: |
   Training have the potential to breed true.
   
   *[TODO: Allow Numerology to induce Mutations as well?]*
+
+  *[Hmm ... as with other training Charms, let's rewrite this.  Have it be a
+  Permanent Charm which makes Mutation points a valid trait for Numerology.
+  If the target benefits, by addition of positive Mutations or removal of
+  negative ones, then the balance can be that the target later suffers
+  opposite Mutation changes, or that the character concurrently suffers them.
+  Similarly, if the target is harmed, by removal of positive Mutations or
+  addition of negative ones, the balance must involve later benefit for the
+  target or concurrent harm to the character.  If the balance involves someone
+  temporarily losing Mutation points, it is only a valid balance if that
+  person already had pre-existing points to lose.  For the purpose of balance,
+  the harm or benefit is counted purely in terms of Mutation points, even
+  though some negative Mutations may work out positively in some situations
+  and _vice versa_.]*
+    
+--- !Charm
+id: cip
+name: "Contagious Indoctrination>Practice"
+cost: 5m, 1wp
+mins: {Lore: 3, Essence: 3}
+type: [Reflexive]
+keys: [Combo-OK, Sickness, Stackable, Training]
+dur: Special
+deps: [exc]
+refs:
+- Socialize_eeg
+text: |
+
+  TODO
   
+  This Charm can be used to enhance any Training which a targeted being is
+  undergoing, allows its effects to spread to others.  The target is regarded
+  as being infected with a disease with a Virulence equal to the character's
+  Essence, and Untreated and Treated Morbidity ratings of zero--the disease is
+  never directly fatal, though it might lead the afflicted into dangerous
+  actions.  The Difficulty to Treat is equal to the character's Essence if the
+  healer has access to relevant magic, otherwise (Essence x 2).  Anyone immune
+  to magical Sickness effects will find themselves sadly unable to benefit.
+
+  Anyone who observes the trainee, or someone else already infected, at
+  practice might find inspiration which counts as adequate tutelage.  In place
+  of the usual (Stamina + Resistance) roll, those subsequently exposed resist
+  using their (Conviction + Lore)--a mind too focused or full finds it hard to
+  learn new things serendipitously.  Observers may spend a point of Willpower
+  to suppress their Conviction and remove its dice from the resistance roll.
+  Those who resist or are cured become immune until the disease has run its
+  course.
+
+  Those infected with this spirit of self-improvement can raise the same
+  traits as the trainee, by the same number of dots, but cannot raise any
+  further than the trainee herself.  The disease will last only as long as the
+  original trainee's programme of study.  At that point the Charm ends, though
+  any infected beings who have already begun to study may continue.  Note that
+  this means that the Charm is not applicable to training which happens
+  instantly, as may be the case with self-trained Exalts, for
+  instance. Releasing the commitment of motes from this Charm early ends the
+  effects of the disease immediately for all beyond the original trainee, and
+  their learning will fail, with a refund of any experience spent.  The
+  Magnitude of beings that can be infected concurrently is equal to the
+  character's (Essence + 1).  The character can maintain at most (Essence)
+  simultaneous activations of this Charm, and any one being can be infected
+  from at most one trainee.  This generally means that those infected can be
+  training only one trait, unless the trainee is subject to some Storyteller
+  exemption or other magic which allows him to train more than one trait at
+  once.
+
+  Applied to a member of a mass combat unit, this Charm ensures that all
+  members will receive the training benefits, provided they seclude themselves
+  from contact with outsiders for the training time.  In combination with
+  <<Lore_rtc>>, this Charm allows training of the Drill and--by raising
+  average Valor--Might of a unit.
+
 --- !Charm
 id: asa
 name: "Anima-Swathing>Artifice"
@@ -301,11 +395,6 @@ text: |
   level matching her currently level of expenditure from her Peripheral pool.
   This may result in a totemic-level flare, even though she is not at that
   moment spending Essence.
-  
-  *[TODO: Maybe this and/or ERP should move into Occult, along with
-  Anima-Supressing Intervention?  It already has a lot of Charms, but 2-3 are
-  Sorcery, and I'd like to add one or two more to Lore.  Could move EEE into
-  Lore, but that puts the two Elemental Charms into 5th Division.  Hmm...]*
   
 --- !Charm
 id: erp
@@ -342,15 +431,24 @@ text: |
   nor increase it beyond its maximum.
   
 --- !Charm
-id: in
-name: "(Improve Numerology)"
+id: dr
+name: "Divisional Remodulation"
+cost: 3m
+mins: {Lore: 1, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK]
+dur: Instant
+deps: []
 text: |
 
   TODO
   
-  This Charm allows an Erisian to spend three motes when performing a
-  Numerology action to regard herself as belonging to a different Division,
-  for the purposes of determining the cost of each numerical adjustment.  For
-  example *[TODO: insert example]*.
+  This Charm supplements a Numerology action, allowing an Erisian to spend
+  three motes to regard herself as belonging to a different Division, for the
+  purposes of determining the cost of each numerical adjustment.  For example,
+  an Unbending Arm would normally pay one Numerology point to influence the soak
+  of a physical object, but three for living beings, since that number is
+  favored by the 3rd Division.  Using this Charm to treat himself as belonging
+  to that Division, those costs would be reversed.
   
 ...

@@ -4,6 +4,14 @@
 require "psych"
 require File.expand_path(File.dirname(__FILE__)) + "/yaml2x.rb"
 
+def make_pretty_type(charm_type)
+  pretty_type = charm_type[0]
+  if charm_type.length > 1
+    pretty_type += " (" + charm_type[1] + ")"
+  end
+  return pretty_type
+end
+
 def insert_charm(out, section_name, charms, charm)
 #  $stderr << '  ' << charm.name << "\n"
 
@@ -12,9 +20,12 @@ def insert_charm(out, section_name, charms, charm)
     out.puts("[[#{charm.safe_group}_#{charm.id}]]")
     out.puts("===== #{charm.clean_name}")
     mins = charm.mins.map { |min| min.join(" ") }.join(", ")
-    type = charm.type[0]
-    if charm.type.length > 1
-      type += " (" + charm.type[1] + ")"
+    first_type = charm.type[0]
+    type = nil
+    if first_type.is_a? Array
+      type = charm.type.map { |t| make_pretty_type(t) }.join(", or ")
+    else
+      type = make_pretty_type(charm.type)
     end
     out.puts("[role=\"noindent\"]")
     # Need to have no line break after the indexterm macro, or we get a space

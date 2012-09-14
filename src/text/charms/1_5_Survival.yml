@@ -2,7 +2,11 @@
 --- !CharmGroup
 name: Survival
 text: |
-  TODO: Something for sustenance based on Erisian Element?
+
+  *[TODO: Something for sustenance based on Erisian Element?]*
+
+  *[TODO: Add follow-on for Survival Charm ``Living-With-Rocks Approach'',
+  like Stealth_dcp?]*
   
 --- !CharmLayout
 grid:
@@ -149,12 +153,17 @@ text: |
 --- !Charm
 id: teims
 name: "The Earth is My Sheepdog"
-cost: 4m + 1wp
+cost: 4m, 1wp
 mins: {Survival: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Shaping]
-dur: One scene
+dur: Instant
 deps: [am]
+refs:
+- ["Quarry Revelation Technique", DB, 182]
+- ["Trail-Concealing Measurement", DB, 182]
+- ["Unshakeable Bloodhound Technique", Core, 211]
+- ["Traceless Passage", Core, 211]
 text: |
 
   Where others search intently for those they wish to track, the Discordian
@@ -165,12 +174,14 @@ text: |
   applying subtle Shaping to the environment around said target, to confuse
   them and herd them towards the Lawbreaker.  This imposes an external penalty
   equal to the character's Essence on attempts at evasion by the subject of
-  pursuit.  The alterations to the environment make the path of pursuit more
-  obvious in general, giving a bonus +2 dice to any others attempting to
-  follow the same quarry (or, indeed, the character) for the next day.  The
-  terrain over which pursuit occurs need not actually be earth: even in the
-  Deep Wyld, this Charm makes bizarre but effective changes to the target's
-  surroundings.
+  pursuit.  Even if other effects prevent the character from catching her
+  quarry, this Charm may delay its outright escape, if it cannot gain an
+  advantage of three accumulated successes.  The alterations to the
+  environment make the path of pursuit more obvious in general, giving a bonus
+  +2 dice to any others attempting to follow the same quarry (or, indeed, the
+  character) for the next day.  The terrain over which pursuit occurs need not
+  actually be earth: even in the Deep Wyld, this Charm makes bizarre but
+  effective changes to the target's surroundings.
   
   A being is a valid target for this Charm if the character can see (or
   otherwise sense) them directly, or has a trail to begin with, which is
@@ -181,15 +192,10 @@ text: |
   this Charm by an amount equal to the difference in Essence between the
   character and the source of the effect, to a minimum of zero.
   
-  [TODO: Does the Duration make sense here?  I was thinking of ``a scene'' as
-  covering several rolls in an extended series, but I'm not sure that's how
-  other STs would see it.  Maybe I can say that explicitly?  Or make it be
-  "(Essence) Dramatic Actions'' or something?]
-  
 --- !Charm
 id: lwra
 name: "Living-With-Rocks>Approach"
-cost: 6m + 1wp
+cost: 6m, 1wp
 mins: {Survival: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
@@ -228,7 +234,7 @@ text: |
 --- !Charm
 id: witd
 name: "Whistling>in the Darkness"
-cost: 8m + 1wp
+cost: 8m, 1wp
 mins: {Survival: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
@@ -265,7 +271,7 @@ text: |
 --- !Charm
 id: monu
 name: "Mantra of Necessary Union"
-cost: 4m + 1wp
+cost: 4m, 1wp
 mins: {Survival: 4, Essence: 4}
 type: [Reflexive]
 keys: [Combo-OK, Servitude]

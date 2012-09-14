@@ -3,10 +3,9 @@
 name: Archery
 text: |
 
-  TODO: Perfect attack; Action-longs (maybe as re-purchase?)
+  TODO: Perfect attack
   
 --- !CharmLayout
-# TODO 2012-04-14 HUGR: Two layouts, split at exc
 grid:
 - [bta, qosas, pth]
 - [fr, fafa, tflab]
@@ -63,6 +62,8 @@ type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [exc, bbta]
+refs:
+- Thrown_ddt
 text: |
 
   It is hard to defend against things you cannot see or touch, even if you
@@ -259,7 +260,7 @@ text: |
 --- !Charm
 id: pth
 name: "Piercing the Heart"
-cost: 5m, or 8m + 1wp
+cost: 5m; or 8m, 1wp
 mins: {Archery: 4, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Emotion]
@@ -303,16 +304,24 @@ text: |
 --- !Charm
 id: tflab
 name: "Time Flies Like a Banana"
-cost: 5m or 5m, 1wp
+cost: 5m; or 5m, 1wp
 mins: {Archery: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
 deps: [fafa, pth]
+refs:
+- Melee_ama
+- Thrown_evr
 text: |
 
   TODO
   
+  *[TODO: This does a Defend Other, and can be mimed, without a re-purchase,
+  whereas the equivalent Melee Charm requires repurchase -- although it has
+  one fewer prerequisites.  Should I change it to match?  Maybe it's okay
+  because ranged Defend Other makes more sense with a ranged Ability?]*
+
   This Charm allows the Moonlight Lyre to bend and loop the flow of time,
   loosing an arrow to meet an incoming attack at precisely the right instant
   to knock it off track.  This perfectly defends against any attack, even if
@@ -328,7 +337,7 @@ text: |
 --- !Charm
 id: bofa
 name: "Bolt of Fresh Air"
-cost: 3m, or 5m + 1wp
+cost: 3m; or 5m, 1wp
 mins: {Archery: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Knockback]
@@ -374,12 +383,11 @@ dur: Indefinite
 deps: [bofa]
 refs:
 - [Secure Den Prana; Lunars; 191]
+changes:
+- 2012-09-13 HUGR
 text: |
 
   TODO
-  
-  [TODO: Should mins be 4/4? or just 4/3?  Should duration be Indefinite or
-  One scene?  What should the cost be?  Should probably include Willpower.]
   
   This Charm creates a stable, if short-lived, pair of portals to Elsewhere.
   The first portal is created at the point of impact of the shot to which this
@@ -387,20 +395,22 @@ text: |
   the same weapon) lands.  Subsequent shots alternately relocate the first and
   second portals.  The character cannot choose for a shot not to move a
   portal, unless it lands out of range, or the character uses a different
-  weapon.  [TODO: Is this limitation reasonable?  Or should it be a reflexive
-  (Step 1) choice?  Should it cost a mote each time?]
+  weapon.  Solid and liquid surfaces produce valid impacts, but gas
+  interfaces, magical barriers and so do not, unless further magics somehow
+  effectively render them solid.
   
   When only the first portal is open, objects or beings which enter it are
-  suspended in Elsewhere.  It appears as a flat, translucent grey disc with
-  fringed edges, (Essence x 2) feet wide and with almost no depth.  It can be
-  seen from both sides but can only be entered from the side from which the
-  projectile struck.  Those walking into it from the other side will pass
-  through it as though it were entirely insubstantial.  Those looking through
-  this translucent surface suffer a -2 external penalty to vision, including
-  the accuracy of attacks passing through it.  The space beyond this single
-  portal is featureless grey, has no particular shape, and a volume roughly
-  equal to a sphere with a diameter matching the portal.  If the space is
-  filled before the second portal appears, nothing else can enter.
+  suspended in Elsewhere.  It appears as a translucent grey disc with fringed
+  edges, (Essence x 2) feet wide and with almost no depth, aligned as evenly
+  as possible with the surface struck.  It can be seen from both sides, if the
+  object struck transmits light, but can only be entered from the side from
+  which the projectile struck.  Those walking into it from the other side will
+  pass through it as though it were entirely insubstantial.  Those looking
+  through this translucent surface suffer a -2 external penalty to vision,
+  including the accuracy of attacks passing through it.  The space beyond this
+  single portal is featureless grey, has no particular shape, and a volume
+  roughly equal to a sphere with a diameter matching the portal.  If the space
+  is filled before the second portal appears, nothing else can enter.
   
   When the second portal appears, anything which entered the first portal
   immediately exits through it.  Once both are open, anything passing into

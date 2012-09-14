@@ -3,7 +3,7 @@
 name: Medicine
 --- !CharmLayout
 grid:
-- [exc, psm, sos]
+- [sos, psm, exc]
 - [sod, ssp, mad]
 - [fkp, ahf, vrt]
 - [wwm, ~, ifaab]
@@ -103,7 +103,7 @@ text: |
 --- !Charm
 id: psm
 name: "Plague Substitution>Method"
-cost: 3m + 1wp
+cost: 3m, 1wp
 mins: {Medicine: 3, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
@@ -130,7 +130,7 @@ text: |
 --- !Charm
 id: wwm
 name: "Walking Wounded>Manipulation"
-cost: 7m + 1wp
+cost: 7m, 1wp
 mins: {Medicine: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Shaping, Touch]
@@ -203,8 +203,8 @@ text: |
 
   *[TODO: Insert flavor]*
   
-  This Charm allows an Invader of the Faith to extend the effects of Tasty
-  Poison Treatment to a single source of environmental damage, adding the
+  This Charm allows an Invader of the Faith to extend the effects of
+  <<Medicine_vrt>> to a single source of environmental damage, adding the
   requirement that he keep the motes committed until he is no longer at risk
   of damage.  The Shaping in this case only extends to those parts of the
   environment which come into contact with the Exalt in such a way as to
@@ -215,7 +215,7 @@ text: |
 --- !Charm
 id: sod
 name: "Shadow of Death"
-cost: 5m + 1wp
+cost: 5m, 1wp
 mins: {Medicine: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
@@ -266,17 +266,18 @@ text: |
   Sometimes the whim of the Discordian is to take madness away, rather than to
   bestow it.  This Charm allows the target to spend Willpower to resist
   natural or unnatural mental influence, or the effects of a Charm which can
-  be resisted in that way, without gaining Limit or suffering similar side
-  effects.  Additionally it allows the character to pay some of the target's
-  cost, at a rate of 5m per 1wp, or directly in Willpower.  The character will
-  gain Podge if she contributes Willpower to this cost.
+  be resisted in that way, without gaining Hodge, Podge, or Limit, or
+  suffering similar side effects.  Additionally it allows the character to pay
+  some of the target's cost, at a rate of 5m per 1wp, or directly in
+  Willpower.  The character will gain Podge if she contributes Willpower to
+  this cost.
   
   A character who knows this Charm will automatically notice anyone attempting
   to resist relevant effects within (character's Essence x 10) yards of her,
   and will know if that resistance would trigger Limit Break or similar
   effects.  At such juncture she may choose to assist reflexively with this
   Charm, assuming she has not already used a different Charm in her current
-  action.  The target cannot resist the help form this Charm, even if they
+  action.  The target cannot resist the help from this Charm, even if they
   wanted to, unless they are resistent to Shaping.  Characters may target
   themselves with this Charm.
   
@@ -288,7 +289,7 @@ mins: {Medicine: 5, Essence: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Emotion]
 dur: Instant
-deps: [ssp]
+deps: [exc, ssp]
 reviews:
 - 2012-02-01 RWG
 text: |

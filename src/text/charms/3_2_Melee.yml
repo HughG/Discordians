@@ -137,6 +137,9 @@ type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [ebs]
+refs:
+- Archery_bg
+- Thrown_vpc
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -147,10 +150,10 @@ text: |
   mundane and magical attempts to block it, and sticks to the target through
   feints and ducks.
   
-  This Charm constitutes an attack which is unblockable and undodgeable,
-  making both Parry and Dodge Defense Values inapplicable.  The target must
-  still be in melee range, though the weapon gains the Reach tag if it did not
-  have it already.
+  This Charm supplements a Melee attack to make it unblockable and
+  undodgeable, such that both Parry and Dodge Defense Values inapplicable.
+  The target must still be in melee range, though the weapon gains the Reach
+  tag if it did not have it already.
   
   By spending an additional 2 motes, the attack can reach out over larger
   distances and, unless some magical warding prevents this, through solid
@@ -207,51 +210,34 @@ type: [Simple]
 keys: [Combo-OK, Obvious]
 dur: One scene
 deps: [baba]
+refs:
+- Archery_pps
+- Thrown_adc
+- ["Glorious Solar Saber", Core, 192]
+- ["Glorious Solar Saber", Errata, 23]
 reviews:
 - 2011-06-25 RWG
+updates:
+- 2012-09-15 HUGR Added giving the weapon to others, like DB Thrown DBot5D.
+edition: 2.5
 text: |
 
   TODO
   
   Concentrating for just a fraction of a second, the Overseer imposes her own
   understanding of reality on the space between her hands, conjuring a melee
-  weapon of his choice out of a confluence of Erisian elemental Essence.  If
-  she is a member of the 3rd Division and has changed her anima to a
-  Dragon-Blooded element, she may instead choose to use the element of that
-  anima.  The weapon is treated as a perfect example of its kind, and provides
-  further benefits depending on the element.  Orange allows the character to
-  reflexively spend 1 mote at Step 7 of any successful attack to convert 4
-  levels of bashing damage, or 2 levels of lethal damage, into 1 level of
-  aggravated damage.  (No more than 1 level of aggravated damage can be gained
-  in this way.)  Sweet allows the character to reduce the final number of
-  levels of damage suffered by the target by up to (Essence), with the
-  character regaining half that many motes, or a single point of Willpower.
-  (This is limited by the number of Health Levels the target has remaining: if
-  an attack would cause 10 levels of lethal damage, and the target has only 2
-  levels remaining, then the character can gain at most a single mote, doing
-  no damage to the target.  Also, this effect is appiled after all other
-  effects which might reduce the damage the target would suffer.)  Boom
-  produces a thunderous noise on a successful attack, and forces the target to
-  check for Knockdown with a difficulty of 4; or, if the attack would already
-  have forced a check for Knockdown, it adds the character's (Essence) to the
-  difficulty.  Pungent relases a puff of unpleasant and overwhelming scent on
-  impact, which requires the target to make a reflexive (Stamina + Resistance)
-  roll or suffer a -2 penalty on all actions for the next (Essence) actions,
-  as a Poison effect.  Prickle inflicts a distracting itching sensation, whose
-  location seems to continually move, adding 1 to the Speed of the target's
-  next (Essence) actions, as a Crippling effect.  Dirt gets into the target's
-  eyes, adding a -2 external penalty to all actions requiring sight, for the
-  next (Essence) actions, as a Crippling effect.  Focus makes the target
-  temporary unwilling to divert from her current course, requiring them to
-  fail a COnviction roll or suppress that Virtue each time they want to attack
-  a different target, or to stop attacking, until the end of the scene.  Dream
-  sends the target into partial reverie for the next (Essence) actions,
-  applying a -2 external penalty to their MDVs.  Binding removes 2 points of
-  external penalty from attempts to disarm a target.
-  
-  For the normal elements of Creation, apply the benefits of the
-  Dragon-Blooded Charm Dragon-Graced Weapon.  At the conclusion of the Charm
-  the weapon vanishes in a burst of elementally-aspected Essence.
+  weapon of his choice out of Essence aspected towards an Erisian element of
+  the character's choice.  If she is a member of the 3rd Division and has
+  changed her anima to a Dragon-Blooded element, she may instead choose to use
+  the element of that anima.  The weapon is treated as an exceptional example
+  of its kind, and provides further benefits depending on the element, as
+  described in the Archery Charm <<Archery_pps>>.  For the normal elements of
+  Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced
+  Weapon.  The weapon can be given to others, but cannot be used for any
+  purpose other than Melee attacks, and will vanish if used to attack the
+  character.  The weapon vanishes in a burst of elementally-aspected Essence
+  when the character releases the commitment of motes, or at the end of the
+  scene.
   
 --- !Charm
 id: hrh
@@ -357,7 +343,7 @@ text: |
   attack by him.  The character does not actually have to dash to the being he
   wishes to defend, in this case.  This Charm suffers from one of the
   Discordian Flaws of Invulnerability.
-  
+
 --- !Charm
 id: spr
 name: "Shattered Pond Ripples"
@@ -367,6 +353,9 @@ type: [Extra Action, Speed +1]
 keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [scd]
+refs:
+- Archery_fafa
+- Thrown_ssc
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -375,6 +364,9 @@ text: |
   them, including the rules of space which prevent all things existing at one
   point.  Casting a net of Elsewhere strands across her blade, she causes
   slices of it to appear in several places at once as she strikes.
+
+  *[TODO: This is almost(?) exactly the same as the Archery one, so I should
+  just reference it, not reproduce the entire text.]*
   
   This Charm provides the Exalt with a magical flurry of two or more
   Melee-based attacks.  Each attack costs 3 motes, including the first, and

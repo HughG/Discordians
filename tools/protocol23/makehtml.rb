@@ -110,11 +110,20 @@ def make_html(indir, outdir, outfilename)
     out.print("<link rel='stylesheet' href='style.css'/>\n")
     out.print("</head>\n<body>\n")
 
+    extract_charm_types = lambda {|charm_type|
+      first_type = charm_type[0]
+      if first_type.is_a? Array
+        charm_type.map {|alt_type| alt_type[0]}
+      else
+        charm_type[0..0]
+      end
+    }
+
     write_tag_index_as_html(out,
                             all_charms,
                             lambda {|charm| charm.type},
                             ["Simple", "Reflexive", "Supplemental"],
-                            lambda {|tag_value| tag_value[0..0]})
+                            extract_charm_types)
 
     out.print("</body></html>")
   }

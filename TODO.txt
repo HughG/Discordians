@@ -1,7 +1,6 @@
 * TODO this week
 
 ** Charms: Finish
-- 4 5 Thrown
 - 3 4 Socialize
 - 4 4 Stealth
 
@@ -14,9 +13,6 @@
 - 1 2 Awareness
 - 1 5 Survival
 -- Something like Stealth_dcp, following lwra.
-- 2 1 Archery
-- 2 4 Performance
--- Something to fake Nocturnal Fluctuations?
 - 2 5 Ride
 - 4 2 Larceny
 - 5 5 Resistance
@@ -53,6 +49,7 @@
 ** Nocturnals
 - Parametadivision
 - Sobriquets
+- Performance Charm to fake Nocturnal Fluctuations?
 
 ** Ditch Memetic Artifacts
 

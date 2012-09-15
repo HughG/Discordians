@@ -2,15 +2,14 @@
 --- !CharmGroup
 name: Archery
 text: |
-
-  TODO: Perfect attack
   
 --- !CharmLayout
 grid:
-- [bta, qosas, pth]
-- [fr, fafa, tflab]
-- [exc, wwa, sp]
-- [bbta, bofa, btwt]
+- [pps, qosas, fafa]
+- [bta, pth, tflab]
+- [fr, exc, btwt]
+- [bg, wwa, bofa]
+- [bbta, ~, sp]
 --- !Charm
 id: exc
 name: "(Any Archery>Excellency)"
@@ -202,7 +201,18 @@ type: [Extra Action, Speed +1]
 keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [qosas]
+refs:
+- Melee_spr
+- Thrown_ssc
+- ["Trance of Unheasitating Speed", Core, 187]
+- ["Trance of Unheasitating Speed", Errata, 20]
+- ["Swallows Defend the Nest", DB, 172]
+- ["Swallows Defend the Nest", Errata, 48]
 text: |
+
+  *[TODO: Given the 2.5 errata for "Swallows Defend the Nest" seems a bit
+  no stronger, more expensive, and has higher mins.  Adjust?  Check also Melee
+  and Thrown Charms.]*
 
   The Children of Eris strive against any and all rules which do not suit
   them, including the rules of time which prevent all things happening at
@@ -222,6 +232,77 @@ text: |
   At Essence 3, the character may additionally spend 1 point of Willpower to
   spread her awareness into another half a moment, allowing her to ignore all
   DV penalties from these attacks (but not from other sources).
+  
+--- !Charm
+id: pps
+name: "Psychedelic Peacock Shot"
+cost: 1m or Special
+mins: {Archery: 2, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK, Obvious, Stackable]
+dur: Instant
+deps: [qosas]
+refs:
+- Melee_soei
+- Thrown_adc
+- ["Phantom Arrow Technique", Core, 197]
+- ["Inexhaustible Bolts of Solar Fire", Core, 197]
+- ["Dragon-Graced Arrow", DB, 172]
+- ["Dragon-Graced Arrow", Errata, 48]
+edition: 2.5
+text: |
+
+  TODO
+  
+  This Charm supplements an Archery attack, either adding Erisian elemental
+  effects to the character's existing ammunition, or conjuring a sliver of
+  Essence to act as ammunition itself, aspected towards a element of the
+  character's choice.  If he is a member of the 3rd Division and has changed
+  his anima to a Dragon-Blooded element, he may also choose to use one or more
+  of the normal elements of Creation--for the effects of which see the
+  description of the Dragon-Blooded Charm Dragon-Graced Arrow.
+
+  The effects of the Erisian elements are as follow.  *Orange* allows the
+  character to reflexively spend 1 mote at Step 7 of any successful attack to
+  convert 4 levels of bashing damage, or 2 levels of lethal damage, into 1
+  level of aggravated damage.  No more than 1 level of aggravated damage can
+  be gained in this way.  *Sweet* allows the character to reduce the final
+  number of levels of damage suffered by the target by up to (Essence), with
+  the character regaining half that many motes, or a single point of
+  Willpower.  This is limited by the number of Health Levels the target has
+  remaining: if an attack would cause 10 levels of lethal damage, and the
+  target has only 2 levels remaining, then the character can gain at most a
+  single mote, doing no damage to the target.  Also, this effect is appiled
+  after all other effects which might reduce the damage the target would
+  suffer.  *Boom* produces a thunderous noise on a successful attack, and
+  forces the target to check for Knockdown with a difficulty of 4--or, if the
+  attack would already have forced a check for Knockdown, it adds the
+  character's (Essence) to the difficulty.  *Pungent* relases a puff of
+  unpleasant and overwhelming scent on impact, which requires the target to
+  make a reflexive (Stamina + Resistance) roll or suffer a -2 penalty on all
+  actions for the next (Essence) actions, as a Poison effect.  *Prickle*
+  inflicts a distracting itching sensation, whose location seems to
+  continually move, adding 1 to the Speed of the target's next (Essence)
+  actions, as a Crippling effect.  *Dirt* gets into the target's eyes, adding
+  a -2 external penalty to all actions requiring sight, for the next (Essence)
+  actions, as a Crippling effect.  *Focus* makes the target temporarily
+  unwilling to divert from her current course, requiring her to fail a
+  Conviction roll or suppress that Virtue each time she wants to attack a
+  different target, or to stop attacking, until the end of the scene.  *Dream*
+  sends the target into partial reverie for the next (Essence) actions,
+  applying a -2 external penalty to MDVs.  *Binding* removes 2 points of
+  external penalty from attempts to disarm a target.  For the normal elements
+  of Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced
+  Arrow.
+
+  The character must wield a bow, firewand or other appropriate weapon to use
+  this Charm.  He can stack multiple activations of this Charm in a single
+  attack, to combine several effects into one, in which case the cost is half
+  the number of elements involved.
+
+  *[TODO: This isn't that much better than the DB Charm, except that you can
+  stack without a repurchase.  Should I improve it a little more?  E.g., if
+  you miss, you get half the motes back?]*
   
 --- !Charm
 id: bta
@@ -309,7 +390,7 @@ mins: {Archery: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
-deps: [fafa, pth]
+deps: [exc, fafa]
 refs:
 - Melee_ama
 - Thrown_evr
@@ -372,6 +453,30 @@ text: |
   only indication of the impact will be a shimmering in the air at the last
   moment.
   
+--- !Charm
+id: bg
+name: "Bowyer's Guarantee"
+cost: 5m, 1wp
+mins: {Archery: 5, Essence: 4}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [fr, wwa]
+refs:
+- Melee_fcf
+- Thrown_vpc
+text: |
+
+  TODO
+  
+  This Charm supplements an Archery attack by the character, switching its
+  path into through Elsewhere at just the right moments as to render it
+  unblockable.  If the target manages to dodge or somehow parry the attack,
+  the character can spend at additional 2 motes in Step 4 of attack resolution
+  to redirect it to another target, although this redirected attack is not
+  unblockable.  If some other effect also attempts to redirect the attack, it
+  instead simply misses all targets.
+
 --- !Charm
 id: btwt
 name: "Bull-Takes-Wing>Technique"

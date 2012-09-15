@@ -3,10 +3,10 @@
 name: Athletics
 --- !CharmLayout
 grid:
-- [nbt, exc, fash]
-- [hht, ~, fasu]
 - [ffm, gas, bu]
 - [mopg, ~, ec]
+- [nbt, exc, fash]
+- [hht, ~, fasu]
 --- !Charm
 id: exc
 name: "(Any Athletics>Excellency)"

@@ -91,7 +91,7 @@ id: iod
 name: "Imposition of Deduction"
 cost: 6m, 1wp
 mins: {Investigation: 3, Essence: 3}
-type: [Reflexive (Step 1)]
+type: [Reflexive, Step 1]
 keys: [Combo-OK, Compulsion, Social, Stackable]
 dur: Instant
 deps: [erm]

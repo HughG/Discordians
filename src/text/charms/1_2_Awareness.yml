@@ -13,9 +13,9 @@ text: |
 --- !CharmLayout
 grid:
 - [tgof, ufm, gopd]
-- [etu, hpp, she]
-- [teo, exc, sit]
-
+- [teo, exc, she]
+- [etu, hpp, sit]
+- [~, mtt, ~]
 --- !Charm
 id: exc
 name: "(Any Awareness>Excellency)"
@@ -97,7 +97,7 @@ text: |
 id: hpp
 name: "Holographic>Perception Praxis"
 cost: 3m
-mins: {Awareness: 3, Essence: 2}
+mins: {Awareness: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: One scene
@@ -114,11 +114,11 @@ text: |
   apply over most of the area.  For example, attempting to blind the character
   by shining a light or throwing sand in his eyes will likely be ineffective.
   
-  He cannot be surprised by an attack from behind, from cover etc., and
-  penalties from coordinated attacks are reduced by (Essence).  The character
-  can still be surprised by things which his current senses cannot perceive,
-  e.g., attackers who suddenly materialize, or by things which do not appear
-  dangerous, e.g., a disguised assassin.
+  At Awareness 3, he cannot be surprised by an attack from behind, from cover
+  etc., and penalties from coordinated attacks are reduced by (Essence).  The
+  character can still be surprised by things which his current senses cannot
+  perceive, e.g., attackers who suddenly materialize, or by things which do
+  not appear dangerous, e.g., a disguised assassin.
   
   The power of this Charm applies equally well to any unusual senses which the
   character may have, e.g., to see spirits, sense Essence flows etc.  Magical
@@ -128,6 +128,49 @@ text: |
   listening through a doorway, whereas an Exalt using this Charm is already
   listening from both sides of the doorway.
   
+--- !Charm
+id: mtt
+name: "Manifold>Targeting Technique"
+cost: 3m per attack, 1wp
+mins: {Awareness: 2, Essence: 3}
+type: [Extra Action, Speed +1]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [hpp]
+refs:
+- Archery_fafa
+- Melee_spr
+- Thrown_ssc
+text: |
+
+  TODO
+
+  *[TODO: This is almost(?) exactly the same as the Archery/Melee/Thrown
+  Extra Action Charms: I'm considering replacing all of them with this.]*
+  
+  This Charm provides the Exalt with a magical flurry of two or more physical
+  attacks using the Archery, Martial Arts, Melee, or Thrown Abilities.  Each
+  attack costs 3 motes, including the first, and the character may make a
+  number of attacks up to (her permanent Essence), regardless of the Rate of
+  any weapon involved.  The Charm allows her to make these attacks without
+  multiple action penalties and with a DV penalty equal to the highest penalty
+  for any one attack.  The Speed of the combined actions is one more than the
+  Speed of the longest single action.  For weapons with a Rate less than 1,
+  the character must spend one (or more) of her extra actions reloading or
+  realigning the weapon after each attack.
+  
+  At Awareness 4, if <<Awareness_hpp> is also active the character may ignore
+  all DV penalties from these attacks (but not from other sources), as she
+  perfectly positions herself after each attack to be prepared for all
+  responses.
+  
+  *[TODO: At Awr 4, Ess 4(?) with repurchase(?), cost drops to 2m per attack
+   if HPP is active and each attack is against a separate target.]*
+
+  *[NOTE: For review, this mirrors Feathers and Fins Attack in Archery.]*
+  
+
+
 --- !Charm
 id: she
 name: "Sense-Hopping Excursion"

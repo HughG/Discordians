@@ -3,22 +3,14 @@
 name: Thrown
 text: |
 
-  *[TODO: Everything, plus ... perfect attack]*
-  
-  * Tree for attacking with surprise, while seeming not to attack, from
-    unexpected directions etc.
-  
-  * Tree for throwing things with non-combat effects (magical containment,
-    spying, pickpocketing)
-
-  * throw-back counterattack?
+  *[TODO: throw-back counterattack?]*
   
 --- !CharmLayout
 grid:
 - [exc, ssf, ddt]
 - [ppp, sts, ees]
-- [evr, dadb, etw]
-- [bpp, gae, tea]
+- [evr, dadb, adc]
+- [bpp, gae, ssc]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"
@@ -84,7 +76,7 @@ text: |
   attack automatically unexpected, unless the target has some way of seeing
   into Elsewhere.  It also effectively allows attacks to pass through solid
   objects, although it does not by itself allow the character to accurately
-  target through them.
+  target through them, nor does it bypass armor.
 
   At Essence 4+, whether or not the weapon strikes its target, the character
   may choose to open one last little doorway which causes it to reappear
@@ -108,7 +100,7 @@ mins: {Thrown: 3, Essence: 3}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Illusion]
 dur: One scene
-deps: [dadb]
+deps: [exc]
 refs:
 - [ODA, Core, 195]
 - [PCP, Core, 202]
@@ -164,7 +156,7 @@ text: |
 --- !Charm
 id: ees
 name: "Elsewhere Explosion Shot"
-cost: 3m; or 5m + 1wp
+cost: 3m; or 5m, 1wp
 mins: {Thrown: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Crippling]
@@ -207,6 +199,32 @@ text: |
   avoid damage, but it may leave them unable to do much more than Guard or
   Aim--or take preparatory actions such as Shape Sorcery.
   
+--- !Charm
+id: vpc
+name: "Vanishing Point Convergence"
+cost: 5m, 1wp; or 7m, 1wp
+mins: {Thrown: 5, Essence: 4}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [ddt]
+refs:
+- Archery_bg
+- Melee_fcf
+text: |
+
+  TODO
+
+  This Charm supplements a Thrown attack by the character, applying continuous
+  course corrections by sending it momentarily through Elsewhere, rendering it
+  undodgeable.  It also allows partial bypassing of armor, giving the attack
+  the Piercing tag.
+
+  By spending an extra two motes, the character can make an attack using a
+  sheer filament of the fabric of Elsewhere itself.  This ,does a base damage
+  of zero and a maximum of 1 level of pre-soak damage, but makes the Charm--and
+  any others in a Combo with it--non-obvious, and leaves no traces.
+
 --- !Charm
 id: ppp
 name: "Pebble Proxy Propulsion"
@@ -302,14 +320,35 @@ text: |
   combat--for example, to rapidly clear rubble from a doorway.
   
 --- !Charm
-id: etw
-name: "(Elemental Thrown Weapons)"
+id: adc
+name: "Another Dragon's Claws"
+cost: 3m per weapon; or 3m per activation, 1wp
+mins: {Thrown: 3, Essence: 3}
+type: [Simple]
+keys: [Combo-OK, Obvious, Stackable]
+dur: One scene
+deps: [dadb]
+refs:
+- Archery_pps
+- Melee_soei
+- ["Spirit Weapons", Core, 197]
+- ["Spirit Weapons", Errata, 24]
+- ["Deadly Blades of the Five Dragons", DB, 139]
+- ["Deadly Blades of the Five Dragons", Errata, 23]
+edition: 2.5
 text: |
 
   TODO
   
-  [Like Melee soei; should Archery have the same?  Maybe Elemental effects for
-  Thrown are different.]
+  This Charm duplicates the effect of the Melee Charm <<Melee_soei>>, with the
+  following adjustments.  The character can maintain up to (Essence + Thrown)
+  throwing weapons all aspected towards the same element.  Alternatively, by
+  spending a point of Willpower on activation, the character may stack several
+  Elemental variations of this Charm on individual weapons, still limited to a
+  maximum of (Essence + Thrown) concurrent activations.  For example, a
+  character with three dots in both Thrown and Essence could create three
+  weapons each with two elemental effects, or two with three each, or even one
+  with six effects bound into it.
   
 --- !Charm
 id: bpp
@@ -397,11 +436,30 @@ text: |
   Abilities.
   
 --- !Charm
-id: tea
-name: "(Thrown Extra Action)"
+id: ssc
+name: "Shard Swarm Concentration"
+cost: 3m per attack; or 3m per attack, 1wp
+mins: {Thrown: 4, Essence: 2}
+type: [Extra Action, Speed +1]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [dadb]
+refs:
+- Archery_fafa
+- Melee_spr
+- ["Trance of Unheasitating Speed", Core, 187]
+- ["Trance of Unheasitating Speed", Errata, 20]
+- ["Swallows Defend the Nest", DB, 172]
+- ["Swallows Defend the Nest", Errata, 48]
 text: |
+
   TODO
   
-  [Like Archery fafa.  Maybe needs some variation in the details]
+  This Charm provides the character with a magical flurry of attacks,
+  following the same rules as the Melee Charm <<Melee_spr>>.
+
+  *[TODO: Oddly, neither Solars, DBs nor Sidereals have a Thrown Extra Action
+   Charm, not even with Martial/-ready stuff.  Is it just less useful for that
+   Ability?]*
   
 ...

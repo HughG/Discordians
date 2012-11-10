@@ -11,6 +11,7 @@ OUT=out
 HTML_OUT=$(OUT)/html
 IMG_OUT=$(OUT)/images
 PDF_OUT=$(OUT)/pdf
+STATS_OUT=$(OUT)/stats
 ASC_MED=$(OUT)/asciidoc
 DOT_MED=$(OUT)/dot
 #W=output_wiki
@@ -46,20 +47,24 @@ $(IMG_OUT):
 	$(MKDIR) $(IMG_OUT)
 $(PDF_OUT):
 	$(MKDIR) $(PDF_OUT)
+$(STATS_OUT):
+	$(MKDIR) $(STATS_OUT)
 $(ASC_MED):
 	$(MKDIR) $(ASC_MED)
 $(DOT_MED):
 	$(MKDIR) $(DOT_MED)
 
-html: $(HTML_OUT) $(HTML_OUT)/$(HTML_MAIN)
+html: $(HTML_OUT)/$(HTML_MAIN)
 charms-pdf: $(PDF_OUT)/charms.pdf
 book: $(PDF_OUT)/Discordians.pdf
 test-pdf: $(PDF_OUT)/test.pdf
+stats: $(STATS_OUT)/stats.txt
 
 #wiki: destdir $W/$(MAINWIKI)
 
 $(SCRIPTS)/yaml2dot.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2asciidoc.rb: $(SCRIPTS)/yaml2x.rb
+$(SCRIPTS)/yaml2stats.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2svg.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/makehtml.rb: $(SCRIPTS)/yaml2x.rb
 
@@ -106,6 +111,9 @@ $(PDF_OUT)/Discordians.pdf: $(BOOK_IN)/Discordians.asc $(BOOK_IN)/Discordians-do
 $(PDF_OUT)/test.pdf: $(CHARMS_IN)/test.asc $(CHARMS_IN)/test-docinfo.xml $(CONFIG) $(PDF_OUT)
 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/test.asc
 	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/test.pdf
+
+$(STATS_OUT)/stats.txt: $(CHARMS_IN_LIST) $(SCRIPTS)/yaml2stats.rb $(STATS_OUT)
+	$(SCRIPTS)/yaml2stats.rb $@ $(CHARMS_IN_LIST)
 
 #$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
 #	./makewiki.rb . $W $(MAINWIKI)

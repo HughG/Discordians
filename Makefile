@@ -90,7 +90,7 @@ $(HTML_OUT)/%.html: $(ASC_MED)/%.asc $(IMG_OUT)/%.png $(HTML_OUT)
 $(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
 	$(DOT) -Tpng $< >$@
 
-$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2asciidoc.rb $(IMG_OUT)
+$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2svg.rb $(IMG_OUT)
 	$(SCRIPTS)/yaml2svg.rb $< $@
 
 $(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(CHARMS_IN)/intro.html $(CHARMS_IN)/style.css $(CHARMS_IN)/discordians.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)

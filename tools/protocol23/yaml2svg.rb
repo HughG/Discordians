@@ -20,11 +20,6 @@ include REXML
 #
 # TODO 2012-04-13 HUGR: Allow for multiple layouts.
 #
-# TODO 2012-04-13 HUGR: Get arrow-heads right.
-#
-# TODO 2012-04-13 HUGR: Make source end of arrows always appear "inside" the
-# boxes, even though the destination end must be just touching.
-#
 # TODO 2012-04-13 HUGR: Auto-place multiple layouts?
 
 # Although the body text in the Exalted books is 10pt on 12pt, the Charm boxes
@@ -222,7 +217,67 @@ end
 ARROW_LINE_STYLE = make_style(
   "stroke" => "black",
   "stroke-width" => "0.75",
+#  "stroke-linecap" => "square"
   )
+
+ARROW_HEAD_STYLE = make_style(
+  "fill" => "black",
+  "stroke" => "none",
+  )
+
+def draw_arrow(box, line)
+  # line is the line segment from p1 to p2
+  x1 = line[0][0]
+  y1 = line[0][1]
+  x2 = line[1][0]
+  y2 = line[1][1]  
+
+  # pd is the vector from p1 to p2
+  xd = x2 - x1
+  yd = y2 - y1
+
+  line_length = Math.sqrt(xd*xd + yd*yd)
+
+  # pu is the unit (1mm) vector from p1 to p2
+  xu = xd / line_length
+  yu = yd / line_length
+  # pp is perpendicular to pu
+  xp = yu
+  yp = -xu
+
+  # We want to move the start of the line back a couple of millimetres, 
+  # so that the start appears to flow fully into the box.  We also move the
+  # end back a little, so it doesn't flow over the end of the arrowhead.
+  final_x1 = x1 - 2*xu
+  final_y1 = y1 - 2*yu
+  final_x2 = x2 - 2*xu
+  final_y2 = y2 - 2*yu
+
+  # p_base is the base of the arrowhead, and p_side1 & p_side2 are the sides
+  x_base = x2 - 2.5*xu
+  y_base = y2 - 2.5*yu
+  x_side1 = x2 - 3.5*xu + 1.5*xp
+  y_side1 = y2 - 3.5*yu + 1.5*yp
+  x_side2 = x2 - 3.5*xu - 1.5*xp
+  y_side2 = y2 - 3.5*yu - 1.5*yp
+
+  box.add_element "line", {
+    "style" => ARROW_LINE_STYLE,
+    "x1" => final_x1,
+    "y1" => final_y1,
+    "x2" => final_x2,
+    "y2" => final_y2,
+  }
+
+  points = [
+            [x_base, y_base], [x_side1, y_side1], [x2, y2], [x_side2, y_side2]
+           ]
+  box.add_element "polygon", {
+    "style" => ARROW_HEAD_STYLE,
+    "points" => make_path(points)
+  }
+
+end
 
 def draw_arrows(box, charms, layout)
   cb_rows = layout.grid.length
@@ -271,20 +326,10 @@ def draw_arrows(box, charms, layout)
         dst_x = dst_col * (CB_WIDTH + CB_HORIZ_GAP)
         dst_y = dst_row * (CB_HEIGHT + CB_VERT_GAP)
 
-        box.add_element "line", {
-          "style" => ARROW_LINE_STYLE,
-          "x1" => src_point[0] + src_x,
-          "y1" => src_point[1] + src_y,
-          "x2" => dst_point[0] + dst_x,
-          "y2" => dst_point[1] + dst_y,
-        }
-
-        box.add_element "circle", {
-          "style" => ARROW_LINE_STYLE,
-          "cx" => dst_point[0] + dst_x,
-          "cy" => dst_point[1] + dst_y,
-          "r" => 1.25,
-        }
+        draw_arrow(box, [
+                         [src_point[0] + src_x, src_point[1] + src_y],
+                         [dst_point[0] + dst_x, dst_point[1] + dst_y]
+                        ])
       }
     end
   }

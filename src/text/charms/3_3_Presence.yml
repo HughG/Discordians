@@ -278,13 +278,15 @@ name: "Profile Minimization>Approach"
 cost: 4m
 mins: {Presence: 3, Essence: 3}
 type: [Simple]
-keys: [Combo-OK]
+keys: [Combo-OK, Shaping]
 dur: One scene
 deps: [mlm]
 refs:
 - [One of the Herd; Lunars; 176]
 reviews:
 - 2011-06-25 RWG
+updates:
+- 2012-12-31 HUGR 
 text: |
 
   TODO
@@ -300,10 +302,12 @@ text: |
   does not end.
   
   Afterwards observers will be uncertain about whether the character was
-  present unless they succeed on a single (Wits + Occult) roll, at a
-  difficulty equal to the Exalt's Essence.  This is a side-effect of the
-  character's Recumbent Destiny, rather than unnatural mental influence, and
-  applies regardless of whether that Destiny is active or suppressed.
+  present unless they succeed on the same roll as used to resist the confusion
+  of Recumbent Destiny: (Wits + Integrity) roll, at a difficulty of 1 but with
+  an internal penalty of -(character's Essence), with Discordians themselves
+  adding their Essence in bonus dice.  This power flows from the same source
+  as the character's Recumbent Destiny, rather than using mental influence, so
+  observers cannot spend Willpower to ignore it.
   
 --- !Charm
 id: ewa

@@ -3,23 +3,80 @@
 name: Stealth
 text: |
 
-  *[TODO: Need maybe 1 more Charm.]*
-
-  *[TODO: Something to fake the Scourge Caste silence effects (on self or
-  within Essence yards; p. 95).  Something to fake Night Caste and No Moon
-  Caste anima blackness and identity concealment.]*
-  
 --- !CharmLayout
 grid:
-- [exc, hipsa, sse]
-- [ywt, ceop, hsag]
-- [erd, hfr, hoiu]
-- [~, dcp, ~]
+- [hipsa, ywt, ssp]
+- [wds, exc, yf]
+- [sim, ff, iomas]
+- [sse, ~, tus]
 --- !Charm
 id: exc
 name: "(Any Stealth>Excellency)"
 text: |
+
+--- !Charm
+id: wds
+name: "Witness-Detecting>Sense"
+cost: 2m
+mins: {Stealth: 3, Essence: 2}
+type: [Reflexive]
+keys: [Combo-OK]
+tags: [Surprise-Negator]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+
+  TODO
   
+  The Mid-Day Shadows use this Charm to turn the tables--or other convenient
+  objects--on those who would try to uncover or spoil their schemes.  The
+  character activates it reflexively and subconsciously to notice any
+  concealed observers him within ([Stealth + Essence] x 10) yards.  He gains
+  (Essence) automatic successes on a reflexive (Perception + [Awareness or
+  Stealth]) roll to spot any living being watching him.  Even those using
+  perfect concealment effects become valid targets, though the Storyteller
+  should assign a significant difficulty or give the observer a contesting
+  roll.  Immaterial observers are not valid targets, unless the character has
+  some way to see such beings.
+
+  At Essence 3 the character is able to realize that he is being observed via
+  non-living beings like automata and undead.  He can also notice use of
+  indirect means such as scrying or artifacts, in which case he can try to
+  find the local viewpoint of the effect (if it provides observation from a
+  point) but cannot locate the original observer unless they are within the
+  Charm's normal range.  At Essence 4 this extends to passive recording, be it
+  by use of magitech, sorcery, or other means.
+  
+  In many cases this Charm can remove the quality of surprise from ambushes
+  and similar attacks, but not all.  Surprise attacks by apparently friendly
+  beings in plain sight will remain so, as will those by automated magitech
+  systems or magical wards which do not specifically observe targets in the
+  area they affect.  Similarly, this Charm will not reveal concealed or
+  scrying beings who are not observing the character, for example, those
+  looking in a different direction.  In all cases the Storyteller's decision
+  is final.
+  
+--- !Charm
+id: ssp
+name: "Superior Supine>Position"
+cost: 2m, 1wp
+mins: {Stealth: 2, Essence: 2}
+type: [Simple]
+keys: [Combo-OK, Shaping]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+
+  TODO
+  
+  This Charm is activated in combination with a character's Recumbent Destiny,
+  increasing the difficulty of rolls to remember her clearly by her permanent
+  Essence rating, and converting the existing internal penalty to an external
+  one.
   
 --- !Charm
 id: hipsa
@@ -33,6 +90,7 @@ deps: []
 refs:
 - ["Easily-Overlooked Presence Method", Core, 230]
 - ["Invisible Statue Spirit", Core, 230]
+- Presence_pma
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -60,27 +118,9 @@ text: |
   perceive the character in the tick before he activated it, so the character
   cannot use it to reestablish surprise during battle without first finding
   some other way to hide.
-  
---- !Charm
-id: ceop
-name: "Conceal Evidence>of Passage???"
-cost: xxx
-mins: {Stealth: 3, Essence: 2}
-type: [Reflexive]
-keys: [Combo-OK]
-dur: Indefinite
-deps: []
-refs:
-- [Trackless Passage Style; Dragon-Blooded; 137]
-- [Crafty Observation Method; Core; 213]
-reviews:
-- 
-text: |
 
-  TODO
-  
-  Conceal evidence of passage and actions, effetively getting a free continual
-  ``Conceal Evidence'' action with bonuses.
+  *[TODO: Should this, and other Charms in this Ability, really be Indefinite?
+  Presence_pma is scene-long.  Should check other splats' errata'd Charms.]*
   
 --- !Charm
 id: sse
@@ -90,7 +130,7 @@ mins: {Stealth: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic]
 dur: Indefinite
-deps: [hipsa]
+deps: [sim]
 refs:
 - [Invisible Statue Spirit; Core; 230]
 reviews:
@@ -145,27 +185,62 @@ text: |
   beings.
   
 --- !Charm
-id: hoiu
-name: "Hide Object>in Use???"
-cost: 3m
-mins: {Stealth: 3, Essence: 2}
+id: iomas
+name: "Investment of>Mist and Shadow"
+cost: 3m; or 3m, 1wp
+mins: {Stealth: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Illusion, Stackable, Touch]
 dur: Indefinite
 deps: []
+refs:
+- Larceny_iii
+- Larceny_it
 reviews:
 - 
 text: |
-
+  
   TODO
   
-  *[TODO: Charm to hide an item altogether, possibly by placing it among
-  similar items, or even similar shapes -- e.g., hiding a sword among hanging
-  folds of a cloak.]*
-    
-  At higher Stealth/Ess, apply to objects not in the character's possession,
-  and to living beings?  BUT compare to Larceny Charms Instant Image
-  Improvisation and Identity Theft.
+  The magic of this Charm hides a single object, or set of similar objects, on
+  the character's person which would otherwise be in plain sight. The line of
+  a sword will appear to vanish into the shifting fold lines of the
+  character's clothes, the boots on his feet will seem but as weathered skin,
+  or the crown on his head look like spiked or rumpled hair, or vanish
+  altogether. Resisting this Illusion costs 3 Willpower, which must be paid
+  all at once on first observing the Illusion, or when further chances to
+  resist arise, as described below.
+  
+  The hidden objects still exist, and the Charm's magic does not hide their
+  effects.  Those apparently bare feet will leave boot-prints, and onlookers
+  will see arrows which are loosed from a concealed bow materialize a short
+  way along their flight.  At Essence 2, the Charm's concealment ends a foot
+  or so from the body, for anything no longer in contact with the character.
+  With Essence 3+, the character can spend a point of Willpower in addition to
+  the mote cost to extend this range to (Essence x 5) yards.
+  
+  The first time in a scene that someone observes a visible effect of a
+  concealed item, that observer gains another opportunity to resist the
+  Illusion.  Different effects from later actions may provide further
+  opportunities. Similarly, the first time in a scene that an observer sees
+  the character do something which relies on the existence of the hidden
+  object, she has another opportunity. For example, shooting a concealed bow
+  would allow observers one chance to resist and, if the arrow passed beyond
+  the Charm's range, each would each gain another chance.  Later shots in the
+  scene would not afford more chances to resist, unless they had new
+  consequences, such as killing someone within the Charm's range.
+  
+  Anyone attacked using a hidden object suffers an external penalty of
+  (Stealth ÷ 2) to Defense Values.  The concealment may also be used to make
+  an initial attack unexpected.  Thereafter, targets are aware that they are
+  being attacked with some kind of weapon, even if they can't quite make it
+  out.  The DV penalty from this Charm decreases by one after each attack the
+  character makes, to a minimum of zero.  Any time a target is attacked, she
+  gains another attempt to resist the Illusion, and any time an attack on her
+  hits, the Willpower cost for her is reduced by one, to a minimum of one.
+  
+  *[TODO: Follow-on Charm to apply to objects not in the character's
+  possession, just as <<Stealth_ywt>> follows <<Stealth_hipsa>>?]*
   
 --- !Charm
 id: ywt
@@ -176,6 +251,8 @@ type: [Simple]
 keys: [Combo-OK, War]
 dur: Indefinite
 deps: [exc, hipsa]
+refs:
+- ["Rats in the Basement Style", Lunars, 192]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -196,7 +273,7 @@ text: |
   as a moving large object, but may become suspicious and notice that it
   doesn't quite seem to be in the same place at different points in time.  The
   character may use this Charm on himself alone to allow movement while
-  concealed.  If the Charm is deactived once those concealed have found some
+  concealed.  If the Charm is deactivated once those concealed have found some
   other suitable cover, it provides no benefits on further Awareness checks,
   but ending the Charm does not in itself prompt such a check.
   
@@ -211,14 +288,14 @@ text: |
   as providing equivalent bonus dice to the roll.
   
 --- !Charm
-id: erd
-name: "Extend Recumbent Destiny???"
-cost: xxx
+id: yf
+name: "Yeddims Forgotten"
+cost: (3m, 1wp) per dot of Magnitude
 mins: {Stealth: 4, Essence: 3}
 type: [Simple]
-keys: [Combo-OK, Shaping]
-dur: Indefinite
-deps: [ywt]
+keys: [Shaping, Social, War]
+dur: Instant
+deps: [ssp, ywt]
 refs:
 - [Gift of a Broken Mask; Sidereals; 171]
 reviews:
@@ -227,60 +304,120 @@ text: |
 
   TODO
   
-  Extend Recumbent Destiny to a social or mass combat group ... once I've
-  worked out what RD should really be.  Maybe should be Occult, if RD still
-  works that way.
-  
-  *[TODO: State range.]*
+  This Charm allows the character to extend an application of his Recumbent
+  Destiny to a social or mass combat group, up to a Magnitude equal to his
+  Essence, blurring others' memories of that group.  If any of the group are
+  unaware that this effect is being applied, or unwilling, the character must
+  roll his ([Dexterity, Manipulation, or Wits] + Stealth) and compare it to
+  the group's Dodge MDV, disregarding any bonuses due to relative Magnitude.
+  If the roll succeeds, each member of the group, and the group as a whole if
+  it has a known identity, is subject to the same effects as normally apply
+  when a Discordian covers his tracks in this manner.  The character must have
+  observed either the majority of the group, or its leader acting in that
+  formal capacity, at the chosen onset time, or be observing them now.
+  Sufficiently detailed records of the past, such as memory crystals or
+  magically extracted memories, might stand in for past observation, at the
+  Storyteller's discretion.  Scrying and other indirect magic are acceptable
+  means of current observation.
   
 --- !Charm
-id: hfr
-name: "Hiding From Reality???"
-cost: 10m
+id: sim
+name: "Sensory Interclusion>Method"
+cost: 3m, 1wp
+mins: {Stealth: 3, Essence: 3}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK, Stackable]
+dur: One scene
+deps: []
+refs:
+- [Night Caste anima power; Core; 98]
+- [No Moon anima power; Lunars; 118]
+- [Scourge Caste anima power; Infernals; 95]
+reviews:
+- 
+text: |
+
+  TODO
+  
+  This Charm damps, overloads, or otherwise interferes with perception of the
+  character in any one of the five senses, and it may be activated multiple
+  times to affect several senses together.  The character might shroud herself
+  in silence, enhance one small part of her scent profile massively to trick
+  pursuing beasts, or surround herself with a flurry of lights and shadows to
+  make it harder to identify her.  The effect is to impose an external penalty
+  of (Essence ÷ 2) *[TODO: Is that too much? too little?]* on all attempts
+  using the relevant sense to track, identify, target or--if the sense is
+  suppressed--even detect her.  Choosing the sense of touch will not prevent
+  others from locating her by touch, but it will make her feel like something
+  other than she appears.  This Charm only provides confusion, so it cannot be
+  used for fashioning a disguise, projecting a detailed image, mimicking a
+  particular scent or similar fine work.
+
+  With the trait minimums required for this Charm, its effects cover only the
+  character's immediate person, including whatever she is wearing or carrying.
+  At Stealth 4, she can extend it to cover a radius of up to (Essence x 2)
+  yards.  She must choose the range when activating the Charm, and cannot
+  change it thereafter, the effect remaining centered on her if she moves.  At
+  Essence 4, a second purchase of the Charm allows it to be applied to almost
+  any other exotic senses one could imagine, limited only by the Storyteller.
+  Heat vision, echolocation, and Essence sight are certainly among those
+  affected.
+
+  Power which reveal information via the senses may or may not be affected,
+  depending on how they work and whether they require a roll which fails due
+  to this Charm's penalty.  For example, the Malfean Charm Insignificant
+  Embers Intuition is based on noticing sensory details, so this Charm might
+  defeat it.  On the other hand, while this Charm might prevent others from
+  hearing the character's words, it would not directly contest the Pyrian
+  power of Factual Determination Analysis, if applied by an Infernal who
+  managed to hear her clearly.
+  
+--- !Charm
+id: ff
+name: "Farseer Feint"
+cost: 6m, 1wp
 mins: {Stealth: 4, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Shaping]
-dur: Indefinite
-deps: [ceop]
+dur: Instant
+deps: [exc, sim, wds]
 reviews:
 - 
 text: |
 
   TODO
-  
-  Concealing self from Fate, scrying (Level 3 Geomancy Procedure in Oadenol's
-  Codex) and equivalents in other realms.  (Could help explain why none were
-  found after Usurpation.)  Makes him automatically aware of such attempts?
-  (Maybe also affects use of arcane links, though they're a bit pointless.)
-  
---- !Charm
-id: hsag
-name: "Hide Self as Group???"
-cost: xxx
-mins: {Stealth: 4, Essence: 4}
-type: [Simple]
-keys: [Combo-OK, Shaping]
-dur: Indefinite
-deps: [hipsa, hfr]
-reviews:
-- 
-text: |
 
-  TODO
-  
-  Hide self as a group of apparent extras.
-  
-  See also Survival Charm ``Living-With-Rocks Approach''.
-  
+  This Charm twists apparent reality around the Discordian, but only from the
+  point of view of those viewing or targeting him magically from afar.  This
+  includes but--at the Storyteller's discretion--is not limited to the
+  Thaumaturgical Procedure of Scrying, certain Sorcery and artifacts, Charms
+  which extend the range of existing senses, observation via the Loom of Fate,
+  and use of an arcane link to the character to target him with some effect.
+  The difficulty of the action is increased by his Essence.  If the activity
+  does not normally require a roll this Charm forces a resisted roll, pitting
+  his ([Manipulation or Wits] + Stealth) against an appropriate roll for the
+  observer.  The difficulty for the character is 1 but for the observer it is
+  equal to the character's Essence.  If the activity requires an extended
+  roll, this increased difficulty applies for all rolls, though this Charm is
+  activated only once.
+
+  If a distant observer succeeds in making contact, he or she becomes a valid
+  target for the character's Recumbent Destiny later on.  In the case of
+  someone using an arcane link to target the character, the attacker must
+  succeed in such a contested roll, or else the item fails to act as a link on
+  that occasion.  If the roll is botched, it becomes possible for the
+  character to use the link in the opposite direction, and he will be aware of
+  this.
+
 --- !Charm
-id: dcp
-name: "Deep Cover Persona???"
+id: tus
+name: "The Underlying Self"
 cost: 10m, 2wp
 mins: {Stealth: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable]
 dur: Indefinite
-deps: [hfr, hoiu]
+deps: [ff, iomas]
 refs:
 - [Ceasing to Exist Approach; Sidereals; 172]
 reviews:

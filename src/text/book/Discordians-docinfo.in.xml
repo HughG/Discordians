@@ -1,3 +1,4 @@
+<dummy-root>
 <!--
   article-docinfo.xml
   Example DocBook document information file for article.txt.
@@ -55,6 +56,10 @@
     <contrib>Support and random ideas</contrib>
 </othercredit>
 
+<releaseinfo>
+    Alpha release from <my-version-info/>.
+</releaseinfo>
+
 <abstract>
   <simpara>
     Abstract goes here (possibly including sidebars) ...
@@ -106,3 +111,4 @@
   </revision>
 </revhistory>
 -->
+</dummy-root>

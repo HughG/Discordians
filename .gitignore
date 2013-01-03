@@ -3,3 +3,6 @@ book/Discordians.pdf
 book/Discordians.xml
 book/Discordians.fo
 out
+src/text/book/Discordians-docinfo.xml
+src/text/charms/charms-docinfo.xml
+src/text/charms/test-docinfo.xml

@@ -2,9 +2,6 @@
 
 ** Charms: Finish
 - 3 4 Socialize
-- 4 4 Stealth
-
-** Revision info into frontispiece
 
 ** Alpha disclaimer into frontispiece
 - Specific note about anything saying they're like Sidereals.

@@ -25,6 +25,9 @@ ASCIIDOC=asciidoc
 A2X=a2x
 DOT=/Applications/Graphviz.app/Contents/MacOS/dot
 SHOW_PDF=osascript tools/show_pdf.scpt
+DESCRIBE_GIT_STATUS=tools/version-info/describe-git-status.bash
+COPY_IF_MISSING_OR_DIFF=tools/version-info/copy-if-missing-or-diff.bash
+VERSION_STAMP_DOCINFO=tools/version-info/version-stamp-docinfo.xslt
 
 ### Files
 HTML_MAIN=charms.html
@@ -68,7 +71,7 @@ $(SCRIPTS)/yaml2stats.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2svg.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/makehtml.rb: $(SCRIPTS)/yaml2x.rb
 
-.PHONY: clean tmpclean
+.PHONY: clean tmpclean $(OUT)/version_info.in.txt
 
 .PRECIOUS: $(IMG_OUT)/%.png $(IMG_OUT)/%.svg $(ASC_MED)/%.asc $(DOT_MED)/%.dot
 
@@ -92,6 +95,21 @@ $(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
 
 $(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2svg.rb $(IMG_OUT)
 	$(SCRIPTS)/yaml2svg.rb $< $@
+
+# This is a .PHONY target so that we always check the working copy status,
+# which may have changed if an untracked file has been created or similar.
+$(OUT)/version_info.in.txt:
+	$(DESCRIBE_GIT_STATUS) >$@
+
+# The update script only touches the ".txt" file if it differs from the
+# ".in.txt" file.  That way, we can be sure we always update the version info,
+# but we only force other things to build if it the version info has really
+# changed.
+$(OUT)/version_info.txt: $(OUT)/version_info.in.txt
+	$(COPY_IF_MISSING_OR_DIFF) $< $@
+
+%-docinfo.xml: $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) $(OUT)/version_info.txt
+	xsltproc --param version-info "'`cat $(OUT)/version_info.txt`'" $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) >$@
 
 $(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(CHARMS_IN)/intro.html $(CHARMS_IN)/style.css $(CHARMS_IN)/discordians.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)
 	$(SCRIPTS)/makehtml.rb $(CHARMS_IN) $(HTML_OUT) $(HTML_MAIN)

@@ -233,8 +233,6 @@ text: |
   returns to the same topic in the same scene, the penalty picks up where it
   left off.
   
-  *[TODO: Follow-on of Stealth???]*
-  
 --- !Charm
 id: saic
 name: "Social actions>in combat"
@@ -314,6 +312,47 @@ text: |
   basis of interacting with or observing even a single individual.
   
 --- !Charm
+id: sahp
+name: "Society as Hiding Place???"
+cost: 6m, 1wp
+mins: {Socialize: 3, Essence: 4} # or 3/3?
+type: [Simple]
+keys: [Combo-OK, Illusion] # or Shaping?
+dur: Indefinite
+deps: [usn]
+reviews:
+- 
+text: |
+
+  TODO
+  
+  Under the power of this Charm the Discordian becomes nigh indistinguishable
+  from any other member of a chosen social group. (Bonus if the character is a
+  member, but penalty if Leader.)
+  
+  The character must adopt the Policy of the group as an additional Intimacy,
+  which is fully-formed by this Charm. If this leaves him with more Intimacies
+  than he can sustain, he must discard another, and that Intimacy will not
+  automatically return when this Charm ends. The group-related Intimacy is not
+  magically protected by this Charm, and if it is eroded, the Charm ends.
+  
+  As long as the Intimacy is maintained, the motes are committed, and the
+  character undertakes such actions and duties as would be expected of a
+  member of the group, anyone attempting to locate or identify the character
+  suffers *[TODO: some penalty or opposition]*. If an observer is using an
+  effect which always succeeds, this Charm provokes a roll-off.  Anyone who
+  fails will not recognize the character even if talking to him.  Someone
+  attempting to find him is as likely to find a trail which leads to some
+  other member of the group.  Members of the group other than the character
+  will be recognised as themselves.  Effects such as Infallible Messenger may
+  fail to work, or be delayed until the Charm ends. Even if the character
+  claims to be himself, others will not believe it until they succeed on a
+  roll, or he ends the Charm.
+
+  *[TODO: See Sidereal hiding powers of Resplendent Destinies. Check power
+  level with that and Solar, Lunar, and Alchemical.]*
+  
+--- !Charm
 id: eeg
 name: "Epidemic Expression Genesis"
 cost: 4m, 1wp
@@ -321,7 +360,7 @@ mins: {Socialize: 3, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Sickness, Social, Stackable]
 dur: Indefinite
-deps: [usn]
+deps: []
 refs:
 - Lore_cip
 changes:
@@ -374,7 +413,7 @@ mins: {Socialize: 4, Essence: 4}
 type: [Simple, 6 long ticks]
 keys: [Combo-OK, Compulsion, Social, Stackable]
 dur: Instant
-deps: []
+deps: [hci]
 refs:
 - ["Herd-Strengthening Invocation", Lunars, 170]
 changes:
@@ -418,7 +457,7 @@ mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Compulsion, Social]
 dur: One scene
-deps: [sit]
+deps: [eeg]
 reviews:
 - 
 text: |

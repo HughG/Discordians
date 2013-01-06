@@ -66,7 +66,7 @@ name: "Holding conflicting Intimacies"
 cost: -- (+2m, 1wp)
 mins: {Socialize: 3, Essence: 3}
 type: [Permanent]
-keys: [None]
+keys: [Emotion, Illusion]
 dur: Instant
 deps: [pca]
 reviews:
@@ -75,16 +75,17 @@ text: |
 
   TODO
   
-  This Charm enhances its prerequisite, making the mental influence unnatural
-  and enabling the character to build a fully-fledged Intimacy in the target
-  instantly, if her attack succeeds, but only if it conflicts in some way with
-  one the target already holds.  The new Intimacy is treated as equally valid
-  for all purposes.  From then on, if some effect depends on the Intimacies
-  the target holds, he may regard either or both as taking effect or
-  precedence, as he prefers.  Both will remain indefinitely, but a scene spent
-  reinforcing one subsequently (or any other effect which reinforces it) also
-  counts as weakening the other, and vice versa, unless this Charm is
-  re-invoked.  This Charm does not enhance the character's ability to wear
+  This Charm enhances its prerequisite, making the mental influence unnatural,
+  with either the Emotion or Illusion keyword as appropriate.  The character
+  can choose to build a fully-fledged Intimacy in the target instantly, if
+  her attack succeeds, but only if it conflicts in some way with one the
+  target already holds.  The new Intimacy is treated as equally valid for all
+  purposes.  From then on, if some effect depends on the Intimacies the target
+  holds, he may regard either or both as taking effect or precedence, as he
+  prefers.  Both will remain indefinitely, but a scene spent reinforcing one
+  subsequently (or any other effect which reinforces it) also counts as
+  weakening the other, and vice versa, unless this Charm is successfully
+  applied again.  This Charm does not enhance the character's ability to wear
   away existing Intimacies.
   
   If the target holds more than his maximum number of Intimacies, then an
@@ -124,7 +125,8 @@ text: |
   If the character's MDV would be subject to a penalty because a social attack
   aligns with her Motivation, Virtues or Intimacies, and the attacker does not
   already know these, then the penalty is reduced by (Socialize), to a minimum
-  of zero.
+  of zero.  If the attacker does already know these, this Charm will not be
+  relevant.
   
 --- !Charm
 id: hmi
@@ -285,9 +287,9 @@ text: |
   considered heretical, Bureacracy rolls to guess the local favored form of
   bribes, and so on.  Arbitration of the scope is up to the Storyteller.
   
-  By default, the group to which Charm's effect relates will be the group
+  By default, the group to which Charm's effect relates will be the group to
   which the majority of beings visible (or otherwise clearly perceptible) to
-  the Exalt consider themselves to belong to.  This will most often be a local
+  the Exalt consider themselves to belong.  This will most often be a local
   social grouping such as ``citizens of this town or kingdom''.  If the
   character is aware of more general or more specific groups to which most of
   those present belong, she may select one of those groups, for example,
@@ -360,7 +362,7 @@ mins: {Socialize: 3, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Sickness, Social, Stackable]
 dur: Indefinite
-deps: []
+deps: [usn]
 refs:
 - Lore_cip
 changes:
@@ -457,7 +459,7 @@ mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Compulsion, Social]
 dur: One scene
-deps: [eeg]
+deps: [sit]
 reviews:
 - 
 text: |

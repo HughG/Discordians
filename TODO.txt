@@ -7,7 +7,6 @@
 - 1 2 Awareness
 - 1 5 Survival
 -- Something like Stealth_dcp, following lwra.
-- 2 5 Ride
 - 4 2 Larceny
 - 5 5 Resistance
 
@@ -48,6 +47,7 @@
 ** Ditch Memetic Artifacts
 
 ** Charms: Overall
+- Mote pool extenders?
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)
 - Appropriate use of Excellencies as prerequisites.

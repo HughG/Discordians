@@ -215,7 +215,7 @@ keys: [Combo-OK, Touch]
 dur: One scene
 deps: [iss, ems]
 refs:
-- [SHFA, Core, p. 236]
+- ["Sometimes Horses Fly Approach", Core, 236]
 text: |
 
   The chaos in the soul of a Priest of Eris can inspire his mount to unnatural
@@ -230,7 +230,8 @@ text: |
   extended by repeated applications.
   
   [TODO: This is probably too cheap, has too few prereqs and/or has min Ess
-  too low, as compared with SHFA.]
+  too low, as compared with the Solar Charm "Sometimes Horses Fly Approach",
+  which hasn't been errata'd down.]
   
 --- !Charm
 id: hup

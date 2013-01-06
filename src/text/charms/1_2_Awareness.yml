@@ -3,19 +3,14 @@
 name: Awareness
 text: |
   
-  TODO: Charm to see into Elsewhere.  Then add Charms to interact with such
-  items (including stealing them), given some contested roll.
-
-  TODO: Charm to see ongoing mental influence.
-
   TODO: Surprise negator?  Or do I have some in other Abilities?
 
 --- !CharmLayout
 grid:
 - [tgof, ufm, gopd]
-- [teo, exc, she]
-- [etu, hpp, sit]
-- [~, mtt, ~]
+- [sots, exc, she]
+- [teo, hpp, sit]
+- [etu, xxx, mtt]
 --- !Charm
 id: exc
 name: "(Any Awareness>Excellency)"
@@ -49,6 +44,8 @@ type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 dur: Until next action
 deps: [teo, hpp]
+changes:
+- 2013-01-06 HUGR Only works against further attacks if from same source.
 text: |
 
   TODO
@@ -58,10 +55,35 @@ text: |
   applicable even if the character has used some other effect to make it no
   longer unexpected: it works because the attacker believes their attack is a
   surprise.  The character is permitted a counterattack against the original
-  attack, and against any other attacks, unexpected or not, until her next
-  action.  This Charm does not guarantee that a counterattack is possible
-  (e.g., ranged attackers may not be valid targets), only that the opportunity
-  exists.
+  attack, and against any other attacks from the same source, unexpected or
+  not, until her next action.  This Charm does not make a counterattack
+  possible if the attacker is an invalid target, for example by virtue of
+  being out of range, or immaterial.
+  
+--- !Charm
+id: xxx
+name: "XXX"
+cost: 2m or 4m
+mins: {Awareness: 4, Essence: 2}
+type: [Reflexive]
+keys: [Combo-OK]
+dur: Instant
+deps: [etu]
+tags: [Surprise-Negator]
+text: |
+
+  TODO
+  
+  This Charm removes the unexpected quality from any one such physical or
+  social attack by a sentient being.  This generally includes animals but
+  excludes natural plants, mindless undead, and automata.  By spending an
+  additional two motes, the character also reveals any immediate mindless
+  threats posing mortal danger to him.  This covers attacks by the above
+  categories of beings, and adds (Essence) automatic successes to any valid
+  Awareness roll to notice poison, concealed pits, or even social threats, if
+  the character could validly notice them.  For example, he might notice
+  suppressed shock in the faces around him as he makes to do something which
+  is punishable by death according to local law.
   
 --- !Charm
 id: gopd
@@ -320,4 +342,25 @@ text: |
   
   Use of this Charm does not affect the character's Hodge or Podge rating.
   
+--- !Charm
+id: sots
+name: "Shadows on the Soul"
+cost: 3m, 1wp
+mins: {Awareness: 3, Essence: 3}
+type: [Simple]
+keys: [Combo-OK]
+dur: One scene
+deps: [tgof]
+text: |
+
+  Building on deep insight into the means by which words of power can dominate
+  her own mind, a child of Chaos can see it happening in others.
+  
+  While this Charm is active, any ongoing Illusion, Emotion, Compulsion,
+  Servitude or Total Control effects active on any beings she can perceive
+  become Obvious to her senses.  She is aware of the general content of the
+  effect, but not its source.
+
+  *[TODO: Upgrade/re-purchase to see possession, controlling sorcery etc.?]*
+
 ...

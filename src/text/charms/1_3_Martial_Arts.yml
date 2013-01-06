@@ -271,9 +271,9 @@ text: |
   the style belongs.  If she allows that Intimacy to lapse, or it is somehow
   suppressed, removed, or has its tone altered to something less than
   laudatory, this effect cannot be activated, and indeed terminates if it has
-  already been activated in the scene, releasing the Willpower commitment.
-  Once the situation has been rectified, the character must pay the cost again
-  to reactivate it if desired.
+  already been activated in the scene, releasing the mote commitment.  Once
+  the situation has been rectified, the character must pay the cost again to
+  reactivate it if desired.
 
 --- !Charm
 id: psp

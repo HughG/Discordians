@@ -4,7 +4,6 @@
 - Specific note about anything saying they're like Sidereals.
 
 ** Charms: Extra?
-- 1 2 Awareness
 - 1 5 Survival
 -- Something like Stealth_dcp, following lwra.
 - 4 2 Larceny
@@ -39,11 +38,6 @@
 ** 3_Traits
 - No sobriquets or quotes for Parametadivisions
 
-** Nocturnals
-- Parametadivision
-- Sobriquets
-- Performance Charm to fake Nocturnal Fluctuations?
-
 ** Ditch Memetic Artifacts
 
 ** Charms: Overall
@@ -57,6 +51,11 @@
 - Maybe Charms which stretch the meaning of an Ability shouldn't be too
 deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
+
+** Nocturnals
+- Parametadivision
+- Sobriquets
+- Performance Charm to fake Nocturnal Fluctuations?
 
 ----------------------------------------------------------------------
 

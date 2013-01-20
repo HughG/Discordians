@@ -6,10 +6,9 @@ text: |
 --- !CharmLayout
 grid:
 - [scd, bbt, exc]
-- [spr, ebs, fcf]
+- [hrh, ebs, fcf]
+- [ama, rss, ktt]
 - [soei, baba, eoa]
-- [hrh, rss, ktt]
-- [~, ama, ~]
 --- !Charm
 id: exc
 name: "(Any Melee>Excellency)"
@@ -216,9 +215,7 @@ refs:
 - ["Glorious Solar Saber", Core, 192]
 - ["Glorious Solar Saber", Errata, 23]
 reviews:
-- 2011-06-25 RWG
-updates:
-- 2012-09-15 HUGR Added giving the weapon to others, like DB Thrown DBot5D.
+- 2013-01-20 RWG
 edition: 2.5
 text: |
 
@@ -227,17 +224,17 @@ text: |
   Concentrating for just a fraction of a second, the Overseer imposes her own
   understanding of reality on the space between her hands, conjuring a melee
   weapon of his choice out of Essence aspected towards an Erisian element of
-  the character's choice.  If she is a member of the 3rd Division and has
-  changed her anima to a Dragon-Blooded element, she may instead choose to use
-  the element of that anima.  The weapon is treated as an exceptional example
-  of its kind, and provides further benefits depending on the element, as
-  described in the Archery Charm <<Archery_pps>>.  For the normal elements of
-  Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced
-  Weapon.  The weapon can be given to others, but cannot be used for any
-  purpose other than Melee attacks, and will vanish if used to attack the
-  character.  The weapon vanishes in a burst of elementally-aspected Essence
-  when the character releases the commitment of motes, or at the end of the
-  scene.
+  the character's choice.  If she is a member of <<Parameta_Seed_from_Tree>>
+  and has changed her anima to a Dragon-Blooded element, she may instead
+  choose to use the element of that anima.  The weapon is treated as an
+  exceptional example of its kind, and provides further benefits depending on
+  the element, as described in the Archery Charm <<Archery_pps>>.  For the
+  normal elements of Creation, apply the benefits of the Dragon-Blooded Charm
+  Dragon-Graced Weapon.  The weapon can be given to others, but cannot be used
+  for any purpose other than Melee attacks, and will vanish if used to attack
+  the character.  The weapon vanishes in a burst of elementally-aspected
+  Essence when the character releases the commitment of motes, or at the end
+  of the scene.
   
 --- !Charm
 id: hrh
@@ -343,46 +340,6 @@ text: |
   attack by him.  The character does not actually have to dash to the being he
   wishes to defend, in this case.  This Charm suffers from one of the
   Discordian Flaws of Invulnerability.
-
---- !Charm
-id: spr
-name: "Shattered Pond Ripples"
-cost: 3m per attack; or 3m per attack, 1wp
-mins: {Melee: 4, Essence: 2}
-type: [Extra Action, Speed +1]
-keys: [Combo-OK, Obvious]
-dur: Instant
-deps: [scd]
-refs:
-- Archery_fafa
-- Thrown_ssc
-reviews:
-- 2011-06-25 RWG
-text: |
-
-  The Children of Eris rail against strictures and structures which offend
-  them, including the rules of space which prevent all things existing at one
-  point.  Casting a net of Elsewhere strands across her blade, she causes
-  slices of it to appear in several places at once as she strikes.
-
-  *[TODO: This is almost(?) exactly the same as the Archery one, so I should
-  just reference it, not reproduce the entire text.]*
-  
-  This Charm provides the Exalt with a magical flurry of two or more
-  Melee-based attacks.  Each attack costs 3 motes, including the first, and
-  the character may make a number of attacks up to (her permanent Essence),
-  regardless of the weapon's Rate.  The Charm allows her to make these attacks
-  without multiple action penalties and with a DV penalty equal to the highest
-  penalty for any one attack.  The Speed of the combined actions is one more
-  than the Speed of the longest single action.  For weapons with a Rate less
-  than 1, the character must spend one (or more) of her extra actions
-  realigning the momentum of the weapon after each attack.
-  
-  At Essence 3, the character may additionally spend 1 point of Willpower to
-  add an unpredictable shift to her own physical presence, allowing her to
-  ignore all DV penalties from these attacks (but not from other sources).
-  
-  *[NOTE: For review, this mirrors Feathers and Fins Attack in Archery.]*
   
 --- !Charm
 id: eoa

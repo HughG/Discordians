@@ -3,14 +3,13 @@
 name: Awareness
 text: |
   
-  TODO: Surprise negator?  Or do I have some in other Abilities?
 
 --- !CharmLayout
 grid:
 - [tgof, ufm, gopd]
 - [sots, exc, she]
 - [teo, hpp, sit]
-- [etu, xxx, mtt]
+- [etu, ees, mtt]
 --- !Charm
 id: exc
 name: "(Any Awareness>Excellency)"
@@ -61,18 +60,25 @@ text: |
   being out of range, or immaterial.
   
 --- !Charm
-id: xxx
-name: "XXX"
+id: ees
+name: "Execution Echo Sense"
 cost: 2m or 4m
 mins: {Awareness: 4, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 dur: Instant
 deps: [etu]
+refs:
+- ["Surprise Anticipation Method", Core, 226]
+reviews:
+- 2013-01-20 RWG
 tags: [Surprise-Negator]
 text: |
 
-  TODO
+  In the moment one moves from decision to action, ripples and echoes begin to
+  spread.  The Ignorant Children are at one with those around them, and can
+  feel the moment in the mind of its instigator, before the wave-front even
+  reaches them.
   
   This Charm removes the unexpected quality from any one such physical or
   social attack by a sentient being.  This generally includes animals but
@@ -83,8 +89,10 @@ text: |
   Awareness roll to notice poison, concealed pits, or even social threats, if
   the character could validly notice them.  For example, he might notice
   suppressed shock in the faces around him as he makes to do something which
-  is punishable by death according to local law.
-  
+  is punishable by death according to local law.  The character cannot
+  activate this Charm while asleep, Inactive, or otherwise normally unable to
+  act.
+
 --- !Charm
 id: gopd
 name: "Gaze of>Perfect Disregard"
@@ -160,15 +168,12 @@ keys: [Combo-OK, Obvious]
 dur: Instant
 deps: [hpp]
 refs:
-- Archery_fafa
-- Melee_spr
-- Thrown_ssc
+- ["Many-Armed Monkey Style", Lunars, 193]
+reviews:
+- 2013-01-20 RWG
 text: |
 
   TODO
-
-  *[TODO: This is almost(?) exactly the same as the Archery/Melee/Thrown
-  Extra Action Charms: I'm considering replacing all of them with this.]*
   
   This Charm provides the Exalt with a magical flurry of two or more physical
   attacks using the Archery, Martial Arts, Melee, or Thrown Abilities.  Each
@@ -181,17 +186,15 @@ text: |
   the character must spend one (or more) of her extra actions reloading or
   realigning the weapon after each attack.
   
-  At Awareness 4, if <<Awareness_hpp>> is also active the character may ignore
-  all DV penalties from these attacks (but not from other sources), as she
-  perfectly positions herself after each attack to be prepared for all
+  With Awareness 4, if <<Awareness_hpp>> is also active the character may
+  ignore all DV penalties from these attacks (but not from other sources), as
+  she perfectly positions herself after each attack to be prepared for all
   responses.
   
-  *[TODO: At Awr 4, Ess 4(?) with repurchase(?), cost drops to 2m per attack
-   if HPP is active and each attack is against a separate target.]*
-
-  *[NOTE: For review, this mirrors Feathers and Fins Attack in Archery.]*
-  
-
+  A second purchase at Awareness 4 and Essence 4 reduces the cost to 5 motes
+  and 1 Willpower in total, providing (Essence) attacks, but this variation
+  can only be used if <<Awareness_hpp> is active and each attack is against a
+  separate target.
 
 --- !Charm
 id: she
@@ -351,6 +354,8 @@ type: [Simple]
 keys: [Combo-OK]
 dur: One scene
 deps: [tgof]
+reviews:
+- 2013-01-20 RWG
 text: |
 
   Building on deep insight into the means by which words of power can dominate
@@ -360,7 +365,9 @@ text: |
   Servitude or Total Control effects active on any beings she can perceive
   become Obvious to her senses.  She is aware of the general content of the
   effect, but not its source.
-
-  *[TODO: Upgrade/re-purchase to see possession, controlling sorcery etc.?]*
+  
+  With Awareness 4 and Essence 4, the character can also see most other forms
+  of magical control, at the Storyteller's discretion--for example, demonic
+  possession, spells such as Sorcerer's Irresistable Puppetry, and so on.
 
 ...

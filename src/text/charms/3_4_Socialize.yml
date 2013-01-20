@@ -5,26 +5,13 @@ text: |
 
   TODO
   
-  Also need one or more out-of-ability Charms: Investigation, Medicine,
-  (combat -- but also 3rd Div), Dodge, Occult (prayer, Cult?), Stealth (hiding
-  among a society, as Sidereals do), Bur(?)
-  
-  Something to hide/split/multiply the leader of a social group, so he's
-  harder to attack.  Or boost his stats with those of others, or based on the
-  group (e.g., on its Magnitude)?
-  
-  *[TODO: See Lunars' Mirror Sight Dismay.]*
-  
-  Something to improve defenses of others, or Defend Other?  Possibly as a
-  prereq to Schismatic Innoculation Technique
-  
 --- !CharmLayout
 grid:
 - [usa, psa, gsd]
 - [dmi, pca, hci]
 - [hmi, sit, fm]
 - [exc, usn, eeg]
-- [~, saic, ~]
+- [saic, ~, sahp]
 --- !Charm
 id: exc
 name: "(Any Socialize>Excellency)"
@@ -34,14 +21,14 @@ text: |
 --- !Charm
 id: pca
 name: "Persuade re>consequence of action"
-cost: 2m [or, 3m?]
+cost: 3m
 mins: {Socialize: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
 deps: []
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -242,10 +229,10 @@ cost: 2m, 1wp
 mins: {Socialize: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, War]
-dur: One scene
+dur: Instant
 deps: []
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -254,10 +241,10 @@ text: |
   targets with whom she is joined in battle or mass combat.  If those Social
   Charms require observation or interaction, there must still be some line of
   sight, communication or similar between her and her targets.  The impact of
-  some actions or Charms may be limited at the Storyteller's discretion.  For
-  example, attempts to read an opponent's intentions may yield only what can
-  be deduced from their battle cries, the things they leap to defend, and so
-  on.
+  some actions or Charms may be limited at the Storyteller's discretion, and
+  effective attacks may require some stunting.  For example, attempts to read
+  an opponent's intentions may yield only what can be deduced from their
+  battle cries, the things they leap to defend, and so on.
   
 --- !Charm
 id: usn
@@ -317,42 +304,45 @@ text: |
 id: sahp
 name: "Society as Hiding Place???"
 cost: 6m, 1wp
-mins: {Socialize: 3, Essence: 4} # or 3/3?
+mins: {Socialize: 3, Essence: 3}
 type: [Simple]
-keys: [Combo-OK, Illusion] # or Shaping?
+keys: [Combo-OK, Shaping]
 dur: Indefinite
 deps: [usn]
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
   
   Under the power of this Charm the Discordian becomes nigh indistinguishable
-  from any other member of a chosen social group. (Bonus if the character is a
-  member, but penalty if Leader.)
+  from any other member of a chosen social group.
   
   The character must adopt the Policy of the group as an additional Intimacy,
   which is fully-formed by this Charm. If this leaves him with more Intimacies
   than he can sustain, he must discard another, and that Intimacy will not
   automatically return when this Charm ends. The group-related Intimacy is not
-  magically protected by this Charm, and if it is eroded, the Charm ends.
+  magically protected by this Charm, and if it is eroded, the Charm ends.  It
+  is however magically enhanced in that, for the duration of the Charm, any of
+  the character's actions which conflict with that Intimacy suffer an external
+  penalty equal to his Essence.
   
   As long as the Intimacy is maintained, the motes are committed, and the
-  character undertakes such actions and duties as would be expected of a
-  member of the group, anyone attempting to locate or identify the character
-  suffers *[TODO: some penalty or opposition]*. If an observer is using an
-  effect which always succeeds, this Charm provokes a roll-off.  Anyone who
-  fails will not recognize the character even if talking to him.  Someone
-  attempting to find him is as likely to find a trail which leads to some
-  other member of the group.  Members of the group other than the character
-  will be recognised as themselves.  Effects such as Infallible Messenger may
-  fail to work, or be delayed until the Charm ends. Even if the character
-  claims to be himself, others will not believe it until they succeed on a
-  roll, or he ends the Charm.
+  character fervently undertakes such actions and duties as would be expected
+  of a member of the group, anyone attempting to locate or identify the
+  character suffers an external penalty equal to his permanent Essence.  If an
+  observer is using an effect which always succeeds, this Charm provokes a
+  roll-off.  Anyone who fails will not recognize the character even if talking
+  to him.  Someone attempting to find him is as likely to find a trail which
+  leads to some other member of the group.  Members of the group other than
+  the character will be recognised as themselves.  Effects such as Infallible
+  Messenger may fail to work, or be delayed until the Charm ends. Even if the
+  character claims to be himself, others will not believe it until they
+  succeed on a roll, or he ends the Charm.
 
-  *[TODO: See Sidereal hiding powers of Resplendent Destinies. Check power
-  level with that and Solar, Lunar, and Alchemical.]*
+  If the character is the Leader of his chosen group, the penalty he suffers
+  for acting against its policy is doubled, while the penalty for pursuers is
+  halved.
   
 --- !Charm
 id: eeg

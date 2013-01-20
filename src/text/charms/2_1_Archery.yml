@@ -5,11 +5,11 @@ text: |
   
 --- !CharmLayout
 grid:
-- [pps, qosas, fafa]
-- [bta, pth, tflab]
-- [fr, exc, btwt]
-- [bg, wwa, bofa]
-- [bbta, ~, sp]
+- [pps, qosas, pth]
+- [bta, tflab, btwt]
+- [fr, exc, bofa]
+- [bg, wwa, sp]
+- [~, bbta, ~]
 --- !Charm
 id: exc
 name: "(Any Archery>Excellency)"
@@ -193,47 +193,6 @@ text: |
   to function as such after the scene ends.
   
 --- !Charm
-id: fafa
-name: "Feathers and Fins Attack"
-cost: 3m per attack; or 3m per attack, 1wp
-mins: {Archery: 4, Essence: 2}
-type: [Extra Action, Speed +1]
-keys: [Combo-OK, Obvious]
-dur: Instant
-deps: [qosas]
-refs:
-- Melee_spr
-- Thrown_ssc
-- ["Trance of Unheasitating Speed", Core, 187]
-- ["Trance of Unheasitating Speed", Errata, 20]
-- ["Swallows Defend the Nest", DB, 172]
-- ["Swallows Defend the Nest", Errata, 48]
-text: |
-
-  *[TODO: Given the 2.5 errata for "Swallows Defend the Nest" seems a bit
-  no stronger, more expensive, and has higher mins.  Adjust?  Check also Melee
-  and Thrown Charms.]*
-
-  The Children of Eris strive against any and all rules which do not suit
-  them, including the rules of time which prevent all things happening at
-  once.  Pulling a handful of instants together around her, she launches
-  several separate attacks in one.
-  
-  This Charm provides the Exalt with a magical flurry of two or more
-  Archery-based attacks.  Each attack costs 3 motes, including the first, and
-  the character may make a number of attacks up to (her permanent Essence),
-  regardless of the weapon's Rate.  The Charm allows her to make these attacks
-  without multiple action penalties and with a DV penalty equal to the highest
-  penalty for any one attack.  The Speed of the combined actions is one more
-  than the Speed of the longest single action.  For weapons with a Rate less
-  than 1, the character must spend one (or more) of her extra actions
-  reloading the weapon after each attack.
-  
-  At Essence 3, the character may additionally spend 1 point of Willpower to
-  spread her awareness into another half a moment, allowing her to ignore all
-  DV penalties from these attacks (but not from other sources).
-  
---- !Charm
 id: pps
 name: "Psychedelic Peacock Shot"
 cost: 1m or Special
@@ -242,6 +201,8 @@ type: [Supplemental]
 keys: [Combo-OK, Obvious, Stackable]
 dur: Instant
 deps: [qosas]
+reviews:
+- 2013-01-20 RWG
 refs:
 - Melee_soei
 - Thrown_adc
@@ -257,10 +218,10 @@ text: |
   This Charm supplements an Archery attack, either adding Erisian elemental
   effects to the character's existing ammunition, or conjuring a sliver of
   Essence to act as ammunition itself, aspected towards a element of the
-  character's choice.  If he is a member of the 3rd Division and has changed
-  his anima to a Dragon-Blooded element, he may also choose to use one or more
-  of the normal elements of Creation--for the effects of which see the
-  description of the Dragon-Blooded Charm Dragon-Graced Arrow.
+  character's choice.  If he is a member of <<Parameta_Seed_from_Tree>> and
+  has changed his anima to a Dragon-Blooded element, he may also choose to use
+  one or more of the normal elements of Creation--for the effects of which see
+  the description of the Dragon-Blooded Charm Dragon-Graced Arrow.
 
   The effects of the Erisian elements are as follow.  *Orange* allows the
   character to reflexively spend 1 mote at Step 7 of any successful attack to
@@ -272,7 +233,7 @@ text: |
   Willpower.  This is limited by the number of Health Levels the target has
   remaining: if an attack would cause 10 levels of lethal damage, and the
   target has only 2 levels remaining, then the character can gain at most a
-  single mote, doing no damage to the target.  Also, this effect is appiled
+  single mote, doing no damage to the target.  Also, this effect is applied
   after all other effects which might reduce the damage the target would
   suffer.  *Boom* produces a thunderous noise on a successful attack, and
   forces the target to check for Knockdown with a difficulty of 4--or, if the
@@ -299,10 +260,6 @@ text: |
   this Charm.  He can stack multiple activations of this Charm in a single
   attack, to combine several effects into one, in which case the cost is half
   the number of elements involved.
-
-  *[TODO: This isn't that much better than the DB Charm, except that you can
-  stack without a repurchase.  Should I improve it a little more?  E.g., if
-  you miss, you get half the motes back?]*
   
 --- !Charm
 id: bta
@@ -390,7 +347,9 @@ mins: {Archery: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
 dur: Instant
-deps: [exc, fafa]
+deps: [exc, qosas]
+reviews:
+- 2013-01-20 RWG
 refs:
 - Melee_ama
 - Thrown_evr
@@ -398,22 +357,20 @@ text: |
 
   TODO
   
-  *[TODO: This does a Defend Other, and can be mimed, without a re-purchase,
-  whereas the equivalent Melee Charm requires repurchase -- although it has
-  one fewer prerequisites.  Should I change it to match?  Maybe it's okay
-  because ranged Defend Other makes more sense with a ranged Ability?]*
-
   This Charm allows the Moonlight Lyre to bend and loop the flow of time,
   loosing an arrow to meet an incoming attack at precisely the right instant
-  to knock it off track.  This perfectly defends against any attack, even if
-  it is unblockable.  Furthermore, the character can use this Charm in a
-  Defend Other action to defend any other being who would be a valid target
-  for an Archery attack by her, by shooting down an attack as it heads toward
-  that target.  By spending 1 point of Willpower, the character can even apply
+  to knock it off track.  This perfectly parries any attack, even if it is
+  unblockable.  By spending 1 point of Willpower, the character can even apply
   this Charm without ammunition, by miming it with a suitable weapon.  In this
   case, the Charm gains the Obvious keyword, as a strange ripple of distorted
-  moments passes through the air on the way to deflect the attack.  This Charm
-  is subject to one of the Discordian Flaws of Invulnerability.
+  moments passes through the air on the way to deflect the attack.
+  
+  With a second purchase at Essence 4+, the character can use this Charm in a
+  Defend Other action to defend any other being who would be a valid target
+  for an Archery attack by her, by shooting down an attack as it heads toward
+  that target.
+
+  This Charm is subject to one of the Discordian Flaws of Invulnerability.
   
 --- !Charm
 id: bofa
@@ -456,7 +413,7 @@ text: |
 --- !Charm
 id: bg
 name: "Bowyer's Guarantee"
-cost: 5m, 1wp
+cost: 5m, 1wp; or 7m, 1wp
 mins: {Archery: 5, Essence: 4}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
@@ -465,17 +422,20 @@ deps: [fr, wwa]
 refs:
 - Melee_fcf
 - Thrown_vpc
+- ["Lightning Stroke Attack", Lunars, 154]
+reviews:
+- 2013-01-20 RWG
 text: |
 
   TODO
   
   This Charm supplements an Archery attack by the character, switching its
   path into through Elsewhere at just the right moments as to render it
-  unblockable.  If the target manages to dodge or somehow parry the attack,
-  the character can spend at additional 2 motes in Step 4 of attack resolution
-  to redirect it to another target, although this redirected attack is not
-  unblockable.  If some other effect also attempts to redirect the attack, it
-  instead simply misses all targets.
+  unblockable and undodgeable.  If the target manages to somehow dodge or
+  parry the attack, the character can spend at additional 2 motes in Step 4 of
+  attack resolution to redirect it to another target, although this redirected
+  attack is no longer unblockable or undodgeable.  If some other effect also
+  attempts to redirect the attack, it instead simply misses all targets.
 
 --- !Charm
 id: btwt
@@ -487,7 +447,7 @@ keys: [Combo-OK, Obvious]
 dur: Indefinite
 deps: [bofa]
 refs:
-- [Secure Den Prana; Lunars; 191]
+- ["Secure Den Prana", Lunars, 191]
 changes:
 - 2012-09-13 HUGR
 text: |

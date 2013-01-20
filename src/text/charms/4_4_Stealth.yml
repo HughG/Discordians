@@ -25,7 +25,7 @@ tags: [Surprise-Negator]
 dur: Instant
 deps: []
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -33,13 +33,11 @@ text: |
   The Mid-Day Shadows use this Charm to turn the tables--or other convenient
   objects--on those who would try to uncover or spoil their schemes.  The
   character activates it reflexively and subconsciously to notice any
-  concealed observers him within ([Stealth + Essence] x 10) yards.  He gains
-  (Essence) automatic successes on a reflexive (Perception + [Awareness or
-  Stealth]) roll to spot any living being watching him.  Even those using
-  perfect concealment effects become valid targets, though the Storyteller
-  should assign a significant difficulty or give the observer a contesting
-  roll.  Immaterial observers are not valid targets, unless the character has
-  some way to see such beings.
+  concealed living beings observing him within ([Stealth + Essence] x 10)
+  yards.  He gains (Essence) automatic successes on a reflexive (Perception +
+  [Awareness or Stealth]) roll to spot any living being watching him.  This
+  effect can contest perfect concealment effects.  Immaterial observers are
+  not valid targets, unless the character has some way to see such beings.
 
   At Essence 3 the character is able to realize that he is being observed via
   non-living beings like automata and undead.  He can also notice use of
@@ -68,7 +66,7 @@ keys: [Combo-OK, Shaping]
 dur: Instant
 deps: []
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -132,7 +130,7 @@ keys: [Combo-Basic]
 dur: Indefinite
 deps: [sim]
 refs:
-- [Invisible Statue Spirit; Core; 230]
+- ["Invisible Statue Spirit", Core, 230]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -188,7 +186,7 @@ text: |
 id: iomas
 name: "Investment of>Mist and Shadow"
 cost: 3m; or 3m, 1wp
-mins: {Stealth: 2, Essence: 2}
+mins: {Stealth: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion, Stackable, Touch]
 dur: Indefinite
@@ -197,7 +195,7 @@ refs:
 - Larceny_iii
 - Larceny_it
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
   
   TODO
@@ -297,9 +295,9 @@ keys: [Shaping, Social, War]
 dur: Instant
 deps: [ssp, ywt]
 refs:
-- [Gift of a Broken Mask; Sidereals; 171]
+- ["Gift of a Broken Mask", Sidereals, 171]
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -330,11 +328,11 @@ keys: [Combo-OK, Stackable]
 dur: One scene
 deps: []
 refs:
-- [Night Caste anima power; Core; 98]
-- [No Moon anima power; Lunars; 118]
-- [Scourge Caste anima power; Infernals; 95]
+- ["Night Caste anima power", Core, 98]
+- ["No Moon anima power", Lunars, 118]
+- ["Scourge Caste anima power", Infernals, 95]
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -345,23 +343,24 @@ text: |
   in silence, enhance one small part of her scent profile massively to trick
   pursuing beasts, or surround herself with a flurry of lights and shadows to
   make it harder to identify her.  The effect is to impose an external penalty
-  of (Essence ÷ 2) *[TODO: Is that too much? too little?]* on all attempts
-  using the relevant sense to track, identify, target or--if the sense is
-  suppressed--even detect her.  Choosing the sense of touch will not prevent
-  others from locating her by touch, but it will make her feel like something
-  other than she appears.  This Charm only provides confusion, so it cannot be
-  used for fashioning a disguise, projecting a detailed image, mimicking a
-  particular scent or similar fine work.
+  equal to her permanent Essence on all attempts using the relevant sense to
+  track, identify, target or--if the sense is suppressed--even detect her.
+  Choosing the sense of touch will not prevent others from locating her by
+  touch, but it will make her feel like something other than she appears.
+  This Charm only provides confusion, so it cannot be used for fashioning a
+  disguise, projecting a detailed image, mimicking a particular scent or
+  similar fine work.
 
   With the trait minimums required for this Charm, its effects cover only the
   character's immediate person, including whatever she is wearing or carrying.
   At Stealth 4, she can extend it to cover a radius of up to (Essence x 2)
   yards.  She must choose the range when activating the Charm, and cannot
   change it thereafter, the effect remaining centered on her if she moves.  At
-  Essence 4, a second purchase of the Charm allows it to be applied to almost
-  any other exotic senses one could imagine, limited only by the Storyteller.
-  Heat vision, echolocation, and Essence sight are certainly among those
-  affected.
+  Essence 4+, if multiple activations of the Charm are stacked the Willpower
+  cost applies only to the first activation.  A second purchase at Essence 4+
+  allows the Charm to be applied to almost any other exotic senses one could
+  imagine, limited only by the Storyteller.  Heat vision, echolocation, and
+  Essence sight are certainly among those affected.
 
   Power which reveal information via the senses may or may not be affected,
   depending on how they work and whether they require a roll which fails due
@@ -372,17 +371,21 @@ text: |
   power of Factual Determination Analysis, if applied by an Infernal who
   managed to hear her clearly.
   
+  This Charm was originally developed to help with mimicry of certain castes
+  of other Exalt types, but creative Discordians have found many other uses
+  for it.
+
 --- !Charm
 id: ff
 name: "Farseer Feint"
 cost: 6m, 1wp
 mins: {Stealth: 4, Essence: 3}
-type: [Reflexive, Step 1 or Step 2]
+type: [Reflexive]
 keys: [Combo-OK, Shaping]
-dur: Instant
+dur: One scene
 deps: [exc, sim, wds]
 reviews:
-- 
+- 2013-01-20 RWG
 text: |
 
   TODO
@@ -393,13 +396,14 @@ text: |
   Thaumaturgical Procedure of Scrying, certain Sorcery and artifacts, Charms
   which extend the range of existing senses, observation via the Loom of Fate,
   and use of an arcane link to the character to target him with some effect.
-  The difficulty of the action is increased by his Essence.  If the activity
-  does not normally require a roll this Charm forces a resisted roll, pitting
-  his ([Manipulation or Wits] + Stealth) against an appropriate roll for the
-  observer.  The difficulty for the character is 1 but for the observer it is
-  equal to the character's Essence.  If the activity requires an extended
-  roll, this increased difficulty applies for all rolls, though this Charm is
-  activated only once.
+  The character may activate this Charm reflexively whenever he is targeted by
+  such an effect.  The difficulty of the action is increased by his Essence.
+  If the activity does not normally require a roll this Charm forces a
+  resisted roll, pitting his ([Manipulation or Wits] + Stealth) against an
+  appropriate roll for the observer.  The difficulty for the character is 1
+  but for the observer it is equal to the character's Essence.  If the
+  activity requires an extended roll, this increased difficulty applies for
+  all rolls, though this Charm is activated only once.
 
   If a distant observer succeeds in making contact, he or she becomes a valid
   target for the character's Recumbent Destiny later on.  In the case of
@@ -419,7 +423,7 @@ keys: [Combo-OK, Shaping, Stackable]
 dur: Indefinite
 deps: [ff, iomas]
 refs:
-- [Ceasing to Exist Approach; Sidereals; 172]
+- ["Ceasing to Exist Approach", Sidereals, 172]
 reviews:
 - 2012-02-01 RWG
 text: |

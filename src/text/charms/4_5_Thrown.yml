@@ -10,7 +10,7 @@ grid:
 - [exc, ssf, ddt]
 - [ppp, sts, ees]
 - [evr, dadb, adc]
-- [bpp, gae, ssc]
+- [bpp, ~, gae]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"
@@ -102,8 +102,8 @@ keys: [Combo-OK, Illusion]
 dur: One scene
 deps: [exc]
 refs:
-- [ODA, Core, 195]
-- [PCP, Core, 202]
+- ["Observer-Deceiving Attack", Core, 195]
+- ["Phantom-Conjuring Performance", Core, 202]
 text: |
 
   TODO
@@ -211,19 +211,20 @@ deps: [ddt]
 refs:
 - Archery_bg
 - Melee_fcf
+reviews:
+- 2013-01-20 RWG
 text: |
 
   TODO
 
   This Charm supplements a Thrown attack by the character, applying continuous
   course corrections by sending it momentarily through Elsewhere, rendering it
-  undodgeable.  It also allows partial bypassing of armor, giving the attack
-  the Piercing tag.
+  unblockable and undodgeable.
 
   By spending an extra two motes, the character can make an attack using a
-  sheer filament of the fabric of Elsewhere itself.  This ,does a base damage
+  sheer filament of the fabric of Elsewhere itself.  This does a base damage
   of zero and a maximum of 1 level of pre-soak damage, but makes the Charm--and
-  any others in a Combo with it--non-obvious, and leaves no traces.
+  any others in a Combo with it--non-Obvious, and leaves no traces.
 
 --- !Charm
 id: ppp
@@ -322,7 +323,7 @@ text: |
 --- !Charm
 id: adc
 name: "Another Dragon's Claws"
-cost: 3m per weapon; or 3m per activation, 1wp
+cost: (1m or 2m) per weapon; or, (1m or 2m) per activation, 1wp
 mins: {Thrown: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Stackable]
@@ -334,12 +335,14 @@ refs:
 - ["Spirit Weapons", Core, 197]
 - ["Spirit Weapons", Errata, 24]
 - ["Deadly Blades of the Five Dragons", DB, 139]
-- ["Deadly Blades of the Five Dragons", Errata, 23]
+- ["Deadly Blades of the Five Dragons", Errata, 33]
+reviews:
+- 2013-01-20 RWG
 edition: 2.5
 text: |
 
   TODO
-  
+
   This Charm duplicates the effect of the Melee Charm <<Melee_soei>>, with the
   following adjustments.  The character can maintain up to (Essence + Thrown)
   throwing weapons all aspected towards the same element.  Alternatively, by
@@ -348,7 +351,9 @@ text: |
   maximum of (Essence + Thrown) concurrent activations.  For example, a
   character with three dots in both Thrown and Essence could create three
   weapons each with two elemental effects, or two with three each, or even one
-  with six effects bound into it.
+  with six effects bound into it.  The cost per weapon or activation is one
+  mote if the elemental effect is applied to an existing weapon, or two motes
+  if the Charm is used to conjure weapons from nothing.
   
 --- !Charm
 id: bpp
@@ -434,32 +439,5 @@ text: |
   necessarily the person or object struck by the thrown item.  Furthermore,
   being Reflexive, this Charm can be used in Combos with Charms from other
   Abilities.
-  
---- !Charm
-id: ssc
-name: "Shard Swarm Concentration"
-cost: 3m per attack; or 3m per attack, 1wp
-mins: {Thrown: 4, Essence: 2}
-type: [Extra Action, Speed +1]
-keys: [Combo-OK, Obvious]
-dur: Instant
-deps: [dadb]
-refs:
-- Archery_fafa
-- Melee_spr
-- ["Trance of Unheasitating Speed", Core, 187]
-- ["Trance of Unheasitating Speed", Errata, 20]
-- ["Swallows Defend the Nest", DB, 172]
-- ["Swallows Defend the Nest", Errata, 48]
-text: |
-
-  TODO
-  
-  This Charm provides the character with a magical flurry of attacks,
-  following the same rules as the Melee Charm <<Melee_spr>>.
-
-  *[TODO: Oddly, neither Solars, DBs nor Sidereals have a Thrown Extra Action
-   Charm, not even with Martial/-ready stuff.  Is it just less useful for that
-   Ability?]*
   
 ...

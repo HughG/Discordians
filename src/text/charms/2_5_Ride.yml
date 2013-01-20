@@ -216,6 +216,8 @@ dur: One scene
 deps: [iss, ems]
 refs:
 - ["Sometimes Horses Fly Approach", Core, 236]
+reviews:
+- 2013-01-20 RWG
 text: |
 
   The chaos in the soul of a Priest of Eris can inspire his mount to unnatural
@@ -228,10 +230,6 @@ text: |
   protected from environmental damage (e.g., from running across lava fields,
   or swimming through the body of Kimbery).  The Charm's duration may be
   extended by repeated applications.
-  
-  [TODO: This is probably too cheap, has too few prereqs and/or has min Ess
-  too low, as compared with the Solar Charm "Sometimes Horses Fly Approach",
-  which hasn't been errata'd down.]
   
 --- !Charm
 id: hup

@@ -6,8 +6,6 @@
 ** Charms: Extra?
 - 1 5 Survival
 -- Something like Stealth_dcp, following lwra.
-- 4 2 Larceny
-- 5 5 Resistance
 
 *** Excellencies
 
@@ -41,7 +39,7 @@
 ** Ditch Memetic Artifacts
 
 ** Charms: Overall
-- Mote pool extenders?
+- Mote pool expanders
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)
 - Appropriate use of Excellencies as prerequisites.
@@ -74,6 +72,8 @@ deep into Charm trees, otherwise they might not be so widely used.
 ** Elementals
 
 ** Sample Characters
+
+** Make Charm xrefs (and others?) include page number with name.
 
 ** Integration with Anathema
 

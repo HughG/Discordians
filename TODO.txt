@@ -1,19 +1,9 @@
 * TODO this week
 
-** Alpha disclaimer into frontispiece
-- Specific note about anything saying they're like Sidereals.
-
-** Charms: Extra?
-- 1 5 Survival
--- Something like Stealth_dcp, following lwra.
-
-*** Excellencies
-
-- fourth and fifth
-
 ** Charms: Update for 2.5
 - Tags
 - Keywords
+-- Fate (Sidereal Charms vs. "Might from Will" anima power)
 -- Native
 -- Martial and Martial-ready
 --- 3 2 Melee (Martial-ready)
@@ -21,22 +11,25 @@
 --- 2 4 Performance (Reactor)
 - General Charm approaches and costs.
 
-** Creation-Ruling Mandate
-- 5th-Division anima power?
-- Bureaucracy
-- Socialize?
+** Charms: Extra?
+- 1 5 Survival
+-- Something like Stealth_dcp, following lwra.
+
+** Divisions and Parametadivisions
+- Quotes
+- Symbols
+- Anima powers
+-- Might from Will
+-- Sub-Division
+- Text
+-- Division of Labor
 
 ----------------------------------------------------------------------
 
 * Maybe TODO this week
 
-** Flaws of Invulnerability
-- Along Divisional themes, though not tied to character's Division?
-
 ** 3_Traits
 - No sobriquets or quotes for Parametadivisions
-
-** Ditch Memetic Artifacts
 
 ** Charms: Overall
 - Mote pool expanders
@@ -49,11 +42,17 @@
 - Maybe Charms which stretch the meaning of an Ability shouldn't be too
 deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
+- Remove specific mention of Hodge and Podge as much as possible.
+- Remove mention of orange anima glow.
+- Remove mention of sobriquets which now belong to Parametadivisons -- if I
+want to keep that idea.
+- Links to bibitems.
 
-** Nocturnals
-- Parametadivision
-- Sobriquets
-- Performance Charm to fake Nocturnal Fluctuations?
+** Editorial
+- Fix case of "Backgrounds" and "Storyteller".
+- Look for extra hyphens left in by conversion from OpenOffice.
+
+** Online autobuild
 
 ----------------------------------------------------------------------
 
@@ -61,9 +60,20 @@ deep into Charm trees, otherwise they might not be so widely used.
 
 ** Revise summary text in Introduction
 
+** Society
+
+*** Cabals
+
+- The Friends of Sessen Douji
+
 ** Sobriquets
 
 ** Charms: Flavour
+
+** Creation-Ruling Mandate
+- 5th-Division anima power?
+- Bureaucracy
+- Socialize?
 
 ** Sorcery
 
@@ -73,6 +83,16 @@ deep into Charm trees, otherwise they might not be so widely used.
 
 ** Sample Characters
 
+** Divisions and Parametadivisions
+
+*** Nocturnals
+- Parametadivision (Warp from Weft? Or should they be Night from Day, and
+``Lunars'' be ... Skin from Soul/Bone, Heart from Whole, ... ?)
+- Sobriquets
+- Performance Charm to fake Nocturnal Fluctuations?
+
+*** Dragon Kings
+
 ** Make Charm xrefs (and others?) include page number with name.
 
 ** Integration with Anathema
@@ -81,5 +101,3 @@ deep into Charm trees, otherwise they might not be so widely used.
 - Factor out
 - Port to Linux and Windows
 - Automate check that all Charms are actually included in the PDF layout
-
-** Online autobuild

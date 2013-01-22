@@ -56,13 +56,38 @@
     <contrib>Support and random ideas</contrib>
 </othercredit>
 
+<othercredit>
+    <firstname>John</firstname>
+    <othername role='mi'>H</othername>
+    <surname>Marshall</surname>
+    <contrib>Review comments</contrib>
+</othercredit>
+
 <releaseinfo>
     Alpha release from <my-version-info/>.
 </releaseinfo>
 
 <abstract>
   <simpara>
-    Abstract goes here (possibly including sidebars) ...
+
+    This is an alpha release of *The Manual of Exalted Prowess--Discordians*.
+    I, Hugh Greene, the original author, hereby disclaim all copyright over
+    it.  That said, it is a derived work based on the *Exalted* intellectual
+    property of White Wolf, so their lawyers are likely to come after you if
+    you try to make money from this.  (Their website used to contain a
+    specific license for derived works, and I would reference it, but I can't
+    find it now.)
+
+  </simpara>
+  <simpara>
+
+    Anyone in White Wolf is, as far as I'm concerned, welcome to make money
+    from this.  However, the tool-chain I used to produce the PDF version
+    makes use of the OFFO Hyphenation Library (offo.sourceforge.net), which
+    does not allow commercial use by default.  I expect that another
+    hyphenation source could be used with FOP, or a commercial license agreed
+    with the OFFO authors, but I don't know.
+
   </simpara>
 </abstract>
 

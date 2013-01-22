@@ -108,7 +108,7 @@ $(OUT)/version_info.in.txt:
 $(OUT)/version_info.txt: $(OUT)/version_info.in.txt
 	$(COPY_IF_MISSING_OR_DIFF) $< $@
 
-%-docinfo.xml: $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) $(OUT)/version_info.txt
+$(BOOK_IN)/%-docinfo.xml: $(BOOK_IN)/$(@:.xml=.in.xml) $(OUT)/version_info.txt $(VERSION_STAMP_DOCINFO)
 	xsltproc --param version-info "'`cat $(OUT)/version_info.txt`'" $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) >$@
 
 $(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(CHARMS_IN)/intro.html $(CHARMS_IN)/style.css $(CHARMS_IN)/discordians.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)

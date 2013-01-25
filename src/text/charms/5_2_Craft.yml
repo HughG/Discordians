@@ -6,7 +6,7 @@ grid:
 - [ics, exc, rrt]
 - [ort, bem, est]
 - [bwr, cpc, rwrt]
-- [eee, eed, prp]
+- [eeoe, eed, prp]
 --- !Charm
 id: exc
 name: "(Any Craft>Excellency)"
@@ -95,7 +95,7 @@ text: |
   For instance, a daiklave might be reformed into a shield, having appropriate
   armor bonuses for the relevant magical material, instead of weapon bonuses.
   Or, a reconfigure manse might contain traps which are equally as deadly as
-  in its original form, but different in mechanism.  The storyteller is the
+  in its original form, but different in mechanism.  The Storyteller is the
   arbiter of what changes are possible.  This Charm does not remove the need
   for tools.
   
@@ -116,7 +116,7 @@ text: |
   
   This Charm provides a dramatic action in which the Stone-Carver combines two
   existing objects into a single new one.  He can choose the basic form and
-  function of the resulting object, but the storyteller may restrict
+  function of the resulting object, but the Storyteller may restrict
   possibilities, add unexpected extra features, or override the result
   completely.  The end product can be a straight combination of two things, as
   when a boat and cart are combined to produce a vehicle which can travel as
@@ -195,7 +195,7 @@ text: |
   Essence) hours or days depending on the scale of the object.  The knowledge
   gained reduces the difficulty of the Craft roll to produce an identical item
   by 1, to a minimum of 1, and reduces the construction time by up to half.
-  The time reduction is at the storyteller's discretion: large, long-term
+  The time reduction is at the Storyteller's discretion: large, long-term
   projects involving many laborers cannot be sped up so easily.  There is no
   limit on the Resources rating of mundane objects which can be analysed, but
   the character must have the relevant Craft rated at least 3.
@@ -296,7 +296,7 @@ text: |
   the standard magical materials is possible, but requires effort equivalent
   to smelting them in the first place (Oadenol's Codex, p. 23).  Unique
   magical ingredients may be destroyed, transmuted or salvagable in some other
-  way, at the storyteller's whim.
+  way, at the Storyteller's whim.
   
 --- !Charm
 id: cpc
@@ -357,7 +357,7 @@ text: |
   protected.
   
 --- !Charm
-id: eee
+id: eeoe
 name: "Edifying Embodiment>of Efficacy"
 cost: 6m, 1wp
 mins: {Craft: 3, Essence: 3}
@@ -420,7 +420,7 @@ mins: {Craft: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
-deps: [eee]
+deps: [eeoe]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -466,7 +466,7 @@ text: |
   to adpot it as her familiar.  The object may be a pre-existing item, or one
   crafted specially for the purpose.  This awakening takes several hours, or
   even days, of careful craft-work, after which the character's Familiar
-  background increases by one dot.  It may be necessary to apply the Charm
+  Background increases by one dot.  It may be necessary to apply the Charm
   several times to reach the necessary rating, depending on the size,
   complexity and usefulness of the object.
   
@@ -477,7 +477,7 @@ text: |
   have some expert understanding in relation to their purview.  Also, since
   objects do not sleep, they may have some use as watch-keepers.  Its levels
   of mobility, intelligence and so on are dependent on the number of dots of
-  the Familiar background which the Storyteller allows the player to buy.
+  the Familiar Background which the Storyteller allows the player to buy.
   
   The character can maintain at most one familiar through use of this Charm,
   though she may have more by other means.  Applying the Charm to another

@@ -87,7 +87,7 @@ text: |
   -2 external penalty and has its the applied Strength capped at one tenth the
   number of yards above the target at which the weapon appears, since it is
   gravity which propels the weapon.  If the target moves substantially before
-  the character's next action, the storyteller may rule that the target avoids
+  the character's next action, the Storyteller may rule that the target avoids
   the attack automatically--or, given a clever stunt, walks straight into it.
   This extension of the Charm can also be used to return the weapon to the
   character's hand.
@@ -143,13 +143,13 @@ text: |
   anyone who observes this forces another roll of the aforementioned dice
   pool, giving them another chance to ignore it.  Also, since the
   manifestation will not react intelligently without the character's input,
-  the storyteller may judge that a lack of response to others' actions also
+  the Storyteller may judge that a lack of response to others' actions also
   allows them another roll, or automatic success, to see through it.
 
   Against those who are fooled, the character adds her Essence in dice to
   attempts to attack from surprise, or to re-establish surprise, and to any
   Stealth rolls against them.  Suitable stunts may justify other bonuses or
-  benefits according to the storyteller's judgement.  One can also use the
+  benefits according to the Storyteller's judgement.  One can also use the
   illusion to do such things as lure others away from the character, or
   towards another point.
 
@@ -253,7 +253,7 @@ text: |
   
   By spending a point of Willpower the Unhinged can multiply the distance of
   the Jump by his Essence, up to a maximum of (Essence x 20).  If the attack's
-  range has been extended by other magics, the storyteller may rule that the
+  range has been extended by other magics, the Storyteller may rule that the
   Jump lasts more than one action.
   
   When using this Charm, the character does not actually throw his weapon, and
@@ -307,7 +307,7 @@ text: |
   This Charm allows the character to use any objects to hand as effective
   Thrown weapons.  If a suitable stunt can be used to liken it to some real
   weapon type, the character may use the statistics of that weapon, at the
-  storyteller's discreation.  The character reduces the normal 3-die Accuracy
+  Storyteller's discretion.  The character reduces the normal 3-die Accuracy
   penalty for improvised thrown weapons (<<Exalted>>, p. 127) by her Thrown
   rating, to a minimum of zero.
 

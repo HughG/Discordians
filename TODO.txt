@@ -11,25 +11,26 @@
 --- 2 4 Performance (Reactor)
 - General Charm approaches and costs.
 
-** Charms: Extra?
-- 1 5 Survival
--- Something like Stealth_dcp, following lwra.
-
 ** Divisions and Parametadivisions
 - Quotes
 - Symbols
 - Anima powers
 -- Might from Will
 -- Sub-Division
-- Text
--- Division of Labor
+
+** Characters
+- Fix Kou-an's location
+
+** Docinfo
+- Review credit for Elizabeth
+- Fix formatting and tiny last para.
 
 ----------------------------------------------------------------------
 
 * Maybe TODO this week
 
 ** 3_Traits
-- No sobriquets or quotes for Parametadivisions
+- Quotes for Parametadivisions
 
 ** Charms: Overall
 - Mote pool expanders
@@ -44,8 +45,7 @@ deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
 - Remove specific mention of Hodge and Podge as much as possible.
 - Remove mention of orange anima glow.
-- Remove mention of sobriquets which now belong to Parametadivisons -- if I
-want to keep that idea.
+- Remove mention of sobriquets which now belong to Parametadivisons.
 - Links to bibitems.
 
 ** Editorial

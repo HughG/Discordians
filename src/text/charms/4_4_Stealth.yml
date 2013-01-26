@@ -423,6 +423,7 @@ keys: [Combo-OK, Shaping, Stackable]
 dur: Indefinite
 deps: [ff, iomas]
 refs:
+- Survival_ci
 - ["Ceasing to Exist Approach", Sidereals, 172]
 reviews:
 - 2012-02-01 RWG
@@ -458,6 +459,11 @@ text: |
   belonging to a Parametadivision, up to her current Essence, although this
   choice is risky because she is granted no particular magic to mimic the
   powers of such beings.
+
+  Detecting the ongoing activation of this Charm on her person, as well as any
+  activated in a Combo with it, is impossible without a perfect effect.  Even
+  then, this Charm forces a roll-off against the character's ([Manipulation or
+  Wits] + Stealth + Essence).
   
   If the character chooses an unenlightened identity, she cannot spend motes
   except to subconsciously activate non-Obvious Reflexive Charms using her
@@ -498,9 +504,9 @@ text: |
   At Essence 5+, this hiding of self persists even after death.  The
   character's death will not end the Charm's effects and, if the Storyteller
   decides that Discordian Exaltations pass on to new hosts, then the new host
-  will not experience the effects of Exaltation, or be aware of his power,
-  until the trigger conditions are satisfied.  This may be part of the reason
-  why no Erisian Exalts have been seen for a long time.
+  will not experience the effects of Exaltation, or be aware of her power,
+  until one of the trigger conditions is satisfied.  This may be part of the
+  reason why no Erisian Exalts have been seen for a long time.
   
   Lastly, this Charm is Stackable: the character can activate as many
   simultaneous hidden identities at once as her temporary Willpower pool

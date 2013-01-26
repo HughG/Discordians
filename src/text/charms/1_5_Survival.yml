@@ -2,18 +2,13 @@
 --- !CharmGroup
 name: Survival
 text: |
-
-  *[TODO: Something for sustenance based on Erisian Element?]*
-
-  *[TODO: Add follow-on for Survival Charm ``Living-With-Rocks Approach'',
-  like <<Stealth_tus>>?]*
   
 --- !CharmLayout
 grid:
-- [witd, dbr, bib]
-- [monu, wotch, lwra]
-- [exc, fafa, teims]
-- [~, am, ~]
+- [dbr, exc, am]
+- [bib, wotch, teims]
+- [fafa, witd, lwra]
+- [monu, ~, ci]
 --- !Charm
 id: exc
 name: "(Any Survival>Excellency)"
@@ -200,7 +195,7 @@ mins: {Survival: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 dur: Indefinite
-deps: [dbr, wotch, am]
+deps: [wotch, witd]
 text: |
 
   ``Idealism lives with rules. Realism lives with rocks.'' - Professor
@@ -231,6 +226,100 @@ text: |
   
   Use of this Charm gains the character a point of Podge.
   
+--- !Charm
+id: ci
+name: "Cryptic Inhabitation"
+cost: 10m, 2wp
+mins: {Survival: 5, Essence: 4}
+type: [Simple]
+keys: [Combo-OK, Shaping]
+dur: Indefinite
+deps: [lwra]
+refs:
+- Stealth_tus
+- ["Assumption of the Land's Heart", GWM, 159]
+- ["Ceasing to Exist Approach", Sidereals, 172]
+reviews:
+- 
+text: |
+
+  Sometimes the confusion of Recumbent Destiny is not enough to get a
+  Discordian out of trouble; or, he needs to lie low until exactly the right
+  moment to work his Chaos.  In such cases, the concealment of this powerful
+  Charm can be just what is needed.
+
+  Activating this Charm, the Anchorite suffuses his being into an expanse of
+  land, becoming immaterial and present at every point within the area.  He
+  remains distantly aware of goings-on within the region while hidden, and can
+  name up to (Essence) trigger conditions when activating this Charm, which
+  will draw his attention more clearly to certain situations, to give him the
+  option of ending his concealment.  The trigger conditions must be things
+  which he could observe with his senses--natural or magically enhanced--and
+  understand.  For example, a trigger of "a wealthy merchant passes through"
+  will activate if and only if someone comes along who _appears_ to be a
+  wealthy merchant.
+
+  The Charm functions in any realm of reality, although using it within
+  Autochthonia or Malfeas has a slight risk of drawing the attention of the
+  Maker or the Yozi, if only subconsciously.  The character can choose any
+  area up to (Survival x Essence x Essence) square miles, and may leave gaps
+  within this region.  In the Wyld, he can spread himself across (Essence - 3)
+  waypoints, plus the journeys joining them.  He cannot include spaces warded
+  against immaterial beings, though he may spread himself around them.  If an
+  area is warded after the Charm is acivated, it is cut out of the Charm's
+  effect area until the ward is removed.  If the ward covers the entire area
+  of the Charm, the ward ends.  Linear barriers, rather than area wards, do
+  not cause these problems.
+
+  While hidden, the character needs no sustenance, and cannot be harmed unless
+  explicitly targeted with magic.  He can apply his senses as if he were
+  present at any location within the region, and can change this location as a
+  miscellaneous action, but his awareness is at a -4 external penalty.  If any
+  of the trigger conditions happens within the Charm's range, however, he will
+  be instantly aware of the fact, and can observe the relevant location
+  without this penalty for one scene.  He cannot observe areas warded against
+  scrying, though linear barriers are not a problem, since he can move his
+  awareness to either side of such a barrier.  He may be able to observe areas
+  warded against immaterial beings by the simple expedient of "standing"
+  outside and looking in.
+
+  Aside from watching, the character can activate non-Obvious Charms which do
+  not rely on his physical form, and can use artifacts which do not rely on
+  his or their physical form.  He can use Numerology but not Sorcery.  He can
+  also cause the environment he inhabits to act in cosmetic ways equivalent to
+  the normal proceses of least gods and the like.  This has no mechanical
+  effect by itself but allows him some facility to stunt actions.  He cannot
+  Join Battle, Debate or War except during the scene and at the location of a
+  trigger event, and even then he is limited to the above actions, and cannot
+  make physical or social attacks.  He can end the Charm at any time as a
+  miscellaneous action, and may appear in his previous form at any point
+  within its area when he does so.
+
+  Detecting the character as an immaterial being is impossible without
+  magic--the natural senses of other immaterial beings are not enough--and
+  even then is done at an external penalty equal to his ([Stamina or
+  Appearance] + Survival).  Success will not find an individual being, rather
+  a spread-out presence.  Indeed, unless observers know what they are looking
+  for, they may interpret this as some form of magic, Wyld taint, or other
+  strange effect.  However, what they see will be enough to target him with
+  effects which apply to an area, or are not location-related.  Detecting the
+  ongoing activation of this Charm over the area, as well as any activated in
+  a Combo with it, is impossible without a perfect effect.  Even then, this
+  Charm forces a roll-off against the character's ([Stamina or Appearance] +
+  Survival + Essence).
+
+  At Essence 5+, this hiding of self persists even after death.  The
+  character's death will not end the Charm's effects and, if the Storyteller
+  decides that Discordian Exaltations pass on to new hosts, then the new host
+  will not experience the effects of Exaltation, or be aware of his power,
+  until the trigger conditions are satisfied.  At such times, the mortal will
+  have a vision of the trigger event, and may choose to take on the Exaltion
+  offered to him--unknown yet intuitively understood.  When he does so, he may
+  also choose to be physically transported to the trigger location or any
+  other location within the original area of the Charm, even if it is in
+  another realm of reality.  How he survives there and how he gets back
+  afterwards are quetions for later.
+
 --- !Charm
 id: witd
 name: "Whistling>in the Darkness"

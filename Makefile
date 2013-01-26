@@ -122,7 +122,7 @@ $(PDF_OUT)/charms.pdf: $(CHARMS_IN)/charms.asc $(CHARMS_IN)/charms-docinfo.xml $
 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/charms.asc
 	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/charms.pdf
 
-$(PDF_OUT)/Discordians.pdf: $(BOOK_IN)/Discordians.asc $(BOOK_IN)/Discordians-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(PDF_OUT)
+$(PDF_OUT)/Discordians.pdf: $(BOOK_IN)/Discordians.asc $(BOOK_IN)/Discordians-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(BOOK_IN)/Discordians.asc
 	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/Discordians.pdf
 

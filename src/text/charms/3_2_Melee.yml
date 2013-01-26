@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Melee
-text: |
-
 --- !CharmLayout
 grid:
 - [scd, bbt, exc]
@@ -22,6 +20,7 @@ cost: 2m
 mins: {Melee: 2, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
+tags: [Weapon-Retrieval, Weapon-Stashing]
 dur: Instant
 deps: []
 reviews:
@@ -29,10 +28,7 @@ reviews:
 text: |
 
   TODO
-  
-  *[TODO: Review once Ink Monkeys have finished playing around with
-  Martial-ready stuff.]*
-  
+    
   This Charm summons the Erisian's Melee weapon to his hand, from any point up
   to (Essence x 2) yards away.  The weapon must be one which the character
   owns.  It travels via Elsewhere, meaning that most bindings, even magical
@@ -105,10 +101,11 @@ text: |
 --- !Charm
 id: ebs
 name: "Elusive Blade Stroke"
-cost: 1m, 1wp
+cost: 4m
 mins: {Melee: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
+tags: ["Unexpected Attack"]
 dur: Instant
 deps: [bbt]
 reviews:
@@ -130,10 +127,11 @@ text: |
 --- !Charm
 id: fcf
 name: "Foe-Cleaving Flow"
-cost: 5m, 1wp; or 7m, 1wp
+cost: 11m or 13m
 mins: {Melee: 5, Essence: 4}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
+tags: ["Perfect Attack"]
 dur: Instant
 deps: [ebs]
 refs:
@@ -168,6 +166,7 @@ cost: 3m or 5m
 mins: {Melee: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: ["Weapon Improvisation"]
 dur: One scene
 deps: []
 refs:
@@ -207,6 +206,7 @@ cost: 3m, 1wp
 mins: {Melee: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious]
+tags: ["Elemental Attack"]
 dur: One scene
 deps: [baba]
 refs:
@@ -226,15 +226,15 @@ text: |
   weapon of his choice out of Essence aspected towards an Erisian element of
   the character's choice.  If she is a member of <<Parameta_Seed_from_Tree>>
   and has changed her anima to a Dragon-Blooded element, she may instead
-  choose to use the element of that anima.  The weapon is treated as an
-  exceptional example of its kind, and provides further benefits depending on
-  the element, as described in the Archery Charm <<Archery_pps>>.  For the
-  normal elements of Creation, apply the benefits of the Dragon-Blooded Charm
-  Dragon-Graced Weapon.  The weapon can be given to others, but cannot be used
-  for any purpose other than Melee attacks, and will vanish if used to attack
-  the character.  The weapon vanishes in a burst of elementally-aspected
-  Essence when the character releases the commitment of motes, or at the end
-  of the scene.
+  choose to use the element of that anima.  The weapon is treated as a fine
+  example of its kind, showing clear signs of the type of Essence, and
+  provides further benefits depending on the element, as described in the
+  Archery Charm <<Archery_pps>>.  For the normal elements of Creation, apply
+  the benefits of the Dragon-Blooded Charm Dragon-Graced Weapon.  The weapon
+  can be given to others, but cannot be used for any purpose other than Melee
+  attacks, and will vanish if used to attack the character.  The weapon
+  vanishes in a burst of elementally-aspected Essence when the character
+  releases the commitment of motes, or at the end of the scene.
   
 --- !Charm
 id: hrh
@@ -243,6 +243,7 @@ cost: 3m or 5m
 mins: {Melee: 3, Essence: 2}
 type: [Reflexive, Step 6]
 keys: [Combo-OK, Compulsion]
+tags: ["Attack Redirection"]
 dur: Instant
 deps: []
 refs:
@@ -255,7 +256,7 @@ text: |
 
   TODO
 
-  *[TODO: Compare against Dodge_hpf, which has different costs and
+  *[TODO: Compare against <<Dodge_hpf>>, which has different costs and
   conditions.]*
   
   If the character attempts to parry a non-ranged attack and succeeds
@@ -310,7 +311,7 @@ text: |
 --- !Charm
 id: ama
 name: "Absent-Minded Absorption"
-cost: 5m; or 5m, 1wp
+cost: 11m or 13m
 mins: {Melee: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
@@ -328,18 +329,18 @@ text: |
   wild and artless swing nonetheless happens to end up at the exactly the
   right spot to deflect an impending blow.
   
-  *[TODO: RWG said that Dodge_pe was flavorless because it was a straight
+  *[TODO: RWG said that <<Dodge_pe>> was flavorless because it was a straight
   perfect, and the first purchase of this Charm is, too.  Should I change
   it?]*
 
   This Charm allows the Discordian to perfectly defend against any attack,
   even if it is unblockable.  A second purchase at Essence 4+ allows the
-  character to pay an additional point of Willpower to send the bulk of his
-  weapon through a twist in Elsewhere and apply a perfect Defend Other action
-  on any being within Dash range, who would be a valid target for a Melee
-  attack by him.  The character does not actually have to dash to the being he
-  wishes to defend, in this case.  This Charm suffers from one of the
-  Discordian Flaws of Invulnerability.
+  character to pay an additional two motes to send the bulk of his weapon
+  through a twist in Elsewhere and apply a perfect Defend Other action on any
+  being within Dash range, who would be a valid target for a Melee attack by
+  him.  The character does not actually have to dash to the being he wishes to
+  defend, in this case.  This Charm suffers from one of the Discordian Flaws
+  of Invulnerability.
   
 --- !Charm
 id: eoa

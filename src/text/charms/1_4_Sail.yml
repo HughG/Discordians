@@ -20,6 +20,7 @@ cost: 2m
 mins: {Sail: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, War]
+tags: [Sense-Enhancer]
 dur: Instant
 deps: [exc]
 text: |
@@ -29,7 +30,7 @@ text: |
   
   This Charm supplements an attempt by a sailing character to detect moving
   objects or static hazards in the environment through which the vehicle is
-  travelling -- in the case of a boat, for example, the surrounding air and
+  travelling--in the case of a boat, for example, the surrounding air and
   water.  The range of this sense is (Essence x 2) miles.  It does not give a
   clear image of any objects, but will normally be able to distinguish at
   least between rocks, constructed vehicles and natural creatures, on the
@@ -51,6 +52,7 @@ cost: --
 mins: {Sail: 4, Essence: 2}
 type: [Permanent]
 keys: [Combo-OK, War]
+tags: [Sense-Enhancer]
 dur: Permanent
 deps: [rri]
 text: |
@@ -71,6 +73,7 @@ cost: 2m per hl; or 2m per hl, 1wp
 mins: {Sail: 2, Essence: 2}
 type: [[Reflexive, Step 10], [Simple, Dramatic Action]]
 keys: [Combo-OK, War]
+tags: [Vehicle-Enhancer]
 dur: Instant
 deps: []
 text: |
@@ -103,6 +106,7 @@ cost: -- (+ 4m)
 mins: {Sail: 4, Essence: 2}
 type: [Permanent]
 keys: [Obvious, Touch, War]
+tags: [Vehicle-Enhancer]
 dur: Permanent
 deps: [fhh]
 text: |
@@ -126,12 +130,13 @@ cost: 7m, 1wp
 mins: {Sail: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping, War]
+tags: [Tracking-Mitigator]
 dur: One scene
 deps: [rri, fs]
 text: |
 
   The ever-shifting curves of water, the manifold cracks of the earth, the
-  fragments of cloud in the sky -- all these provide ample hiding places, if
+  fragments of cloud in the sky--all these provide ample hiding places, if
   only one can think small enough.  This Charm subtly shapes the surrounding
   environment to reduce any successes on attempts to notice or track it to
   zero, after all modifiers have been applied.  If this effect is opposed by a
@@ -205,6 +210,7 @@ cost: 6m
 mins: {Sail: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
+tags: [Movement-Enhancer, Vehicle-Enhancer, Tracking-Mitigator]
 dur: Five days
 deps: [fhh, siatm]
 text: |
@@ -243,6 +249,7 @@ cost: 10m, (1wp per individual)
 mins: {Sail: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK]
+tags: [Movement-Enhancer]
 dur: One day
 deps: [sofd]
 text: |
@@ -282,6 +289,7 @@ cost: -- (+ 3m, 1wp)
 mins: {Sail: 5, Essence: 4}
 type: [Permanent]
 keys: [Obvious, War]
+tags: [Vehicle-Enhancer, Group-Enhancer]
 dur: Permanent
 deps: [exc]
 text: |

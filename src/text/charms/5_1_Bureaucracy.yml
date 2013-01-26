@@ -349,8 +349,8 @@ text: |
   the mission as their Motivation.  If the new goal is in line with the
   organization's original Motivation, then they will drop all other activities
   to pursue it for the first (Essence) days, throwing financial and political
-  caution to the winds (although not ignoring the need to eat and sleep --
-  work/life balance is important, y'know).
+  caution to the winds (although not ignoring the need to eat and
+  sleep--work/life balance is important, y'know).
   
 --- !Charm
 id: ln
@@ -463,10 +463,10 @@ text: |
   successful, the decision will go the way the character desires, unless the
   Leader spends three points of Loyalty immediately.  As with
   <<Bureaucracy_rcm>>, there is nothing to prevent the organization from
-  changing the decision later, depending on its Motivation and tendencies --
-  unless, of course, it's too late.  The decision will not be changed back for
-  at least (character's Essence) days, however, without further magical
-  intervention.
+  changing the decision later, depending on its Motivation and
+  tendencies--unless, of course, it's too late.  The decision will not be
+  changed back for at least (character's Essence) days, however, without
+  further magical intervention.
   
   This Charm is only effective upon decisions which the organization was
   already intending to make, and has not yet settled.  It cannot force a group

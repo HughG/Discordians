@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Survival
-text: |
-  
 --- !CharmLayout
 grid:
 - [dbr, exc, am]
@@ -22,6 +20,7 @@ cost: 3m
 mins: {Survival: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: ["Environmental Damage Mitigator"]
 dur: Instant
 deps: [exc]
 text: |
@@ -40,6 +39,7 @@ cost: 3m
 mins: {Survival: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: [Tracking-Mitigator]
 dur: Instant
 deps: [exc]
 text: |
@@ -64,6 +64,7 @@ cost: 3m
 mins: {Survival: 2, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: [Summoning]
 dur: Instant
 deps: [exc]
 text: |
@@ -90,6 +91,7 @@ cost: 5m
 mins: {Survival: 3, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Stackable, Obvious]
+tags: ["Environmental Damage Mitigator", "Healing Self"]
 dur: One scene
 deps: [dbr]
 text: |
@@ -120,6 +122,7 @@ cost: 4m
 mins: {Survival: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion]
+tags: [Disguise]
 dur: Indefinite
 deps: [wotch]
 text: |
@@ -152,6 +155,7 @@ cost: 4m, 1wp
 mins: {Survival: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Shaping]
+tags: [Tracking]
 dur: Instant
 deps: [am]
 refs:
@@ -194,6 +198,7 @@ cost: 6m, 1wp
 mins: {Survival: 4, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
+tags: [Concealment, Disguise]
 dur: Indefinite
 deps: [wotch, witd]
 text: |
@@ -210,7 +215,7 @@ text: |
   (Appearance + Survival) versus the observer's (Perception + Occult), with an
   external penalty equal to the character's Survival.  Attacks or
   environmental damage will only affect the character if it would affect the
-  corresponding environment -- fire would damage a tree, but not a rock.
+  corresponding environment--fire would damage a tree, but not a rock.
   
   While under the effects of this Charm, the character is regarded as
   Inactive, although she is not actually unconscious and retains her full
@@ -233,6 +238,7 @@ cost: 10m, 2wp
 mins: {Survival: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
+tags: [Concealment]
 dur: Indefinite
 deps: [lwra]
 refs:
@@ -327,6 +333,7 @@ cost: 8m, 1wp
 mins: {Survival: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
+tags: [Navigation, Sustenance]
 dur: Indefinite
 deps: []
 text: |
@@ -364,6 +371,7 @@ cost: 4m, 1wp
 mins: {Survival: 4, Essence: 4}
 type: [Reflexive]
 keys: [Combo-OK, Servitude]
+tags: [Group-Enhancer]
 dur: Indefinite (Special)
 deps: [witd]
 text: |

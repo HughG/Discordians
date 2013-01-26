@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Awareness
-text: |
-  
-
 --- !CharmLayout
 grid:
 - [tgof, ufm, gopd]
@@ -23,6 +20,7 @@ cost: 1m
 mins: {Awareness: 3, Essence: 1}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: [Sensory-Penalty-Mitigator]
 dur: Instant
 deps: [exc]
 text: |
@@ -41,6 +39,7 @@ cost: 4m
 mins: {Awareness: 3, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
+tags: [Surprise-Mitigator]
 dur: Until next action
 deps: [teo, hpp]
 changes:
@@ -66,13 +65,13 @@ cost: 2m or 4m
 mins: {Awareness: 4, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Surprise-Negator]
 dur: Instant
 deps: [etu]
 refs:
 - ["Surprise Anticipation Method", Core, 226]
 reviews:
 - 2013-01-20 RWG
-tags: [Surprise-Negator]
 text: |
 
   In the moment one moves from decision to action, ripples and echoes begin to
@@ -100,6 +99,7 @@ cost: 4m
 mins: {Awareness: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
+tags: ["Perfect Social Defense", UMI-Mitigator]
 dur: Instant
 deps: [ufm]
 text: |
@@ -130,6 +130,7 @@ cost: 3m
 mins: {Awareness: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Sense-Enhancer, Surprise-Negator]
 dur: One scene
 deps: []
 text: |
@@ -203,6 +204,7 @@ cost: 4m
 mins: {Awareness: 3, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
+tags: [Sense-Enhancer, Posession]
 dur: Indefinite
 deps: []
 refs:
@@ -246,6 +248,7 @@ cost: 3m
 mins: {Awareness: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
+tags: [Regain-Enhancer]
 dur: Indefinite
 deps: []
 changes:
@@ -309,6 +312,7 @@ cost: 3m
 mins: {Awareness: 2, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
+tags: [UMI-Mitigator]
 dur: Instant
 deps: []
 refs:

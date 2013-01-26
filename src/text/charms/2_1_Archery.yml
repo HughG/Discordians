@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Archery
-text: |
-  
 --- !CharmLayout
 grid:
 - [pps, qosas, pth]
@@ -23,14 +21,12 @@ cost: 2m
 mins: {Archery: 2, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
+tags: [Weapon-Retrieval, Weapon-Stashing]
 dur: Instant
 deps: []
 text: |
 
   TODO
-  
-  [TODO: Review once Ink Monkeys have finished playing around with
-  Martial-ready stuff.]
   
   This Charm, applied in Step 1 of attack resolution, summons the Erisian's
   Archery weapon to his hand, from any point up to (Essence x 2) yards away.
@@ -78,8 +74,8 @@ text: |
   natural soak, or soak added by Charms.  It furthermore effectively allows
   shots to pass through solid objects, though some magical wards may prevent
   this.  If the character cannot otherwise percieve the target through any
-  such objects, the attack will suffer an external penalty as severe as
-  blindness (-4), unless some other effect improves the situation.
+  such objects, the attack will suffer a -4 external penalty--as severe as
+  blindness--unless some other effect improves the situation.
   
 --- !Charm
 id: sp
@@ -88,6 +84,7 @@ cost: 2m, 1wp
 mins: {Archery: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
+tags: ["Prepared Attack"]
 dur: Indefinite
 deps: [wwa]
 text: |
@@ -106,11 +103,12 @@ text: |
   
   The motes may be released at any later point as a reflexive action,
   including as a counterattack, causing the attack to be resumed.  This does
-  not count as a Charm use.  The character need not be wielding the weapon at
-  the time, though they can still only choose a target which would be valid at
-  the point when the motes are released.  A slight disturbance in the air as
-  the projectile reappears means that this Charm does not in itself make the
-  attack unexpected.
+  not count as a Charm use, and need not be in the same battle, allowing him
+  to attack without readying a weapon.  The character need not be wielding the
+  weapon at the time, though he can still only choose a target which would be
+  valid at the point when the motes are released.  A slight disturbance in the
+  air as the projectile reappears means that this Charm does not in itself
+  make the attack unexpected.
   
 --- !Charm
 id: fr
@@ -119,6 +117,7 @@ cost: 3m
 mins: {Archery: 3, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Obvious]
+tags: ["Attack Retry"]
 dur: Instant
 deps: [exc]
 refs:
@@ -158,6 +157,7 @@ cost: 3m or 5m
 mins: {Archery: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: ["Weapon Improvisation"]
 dur: One scene
 deps: []
 refs:
@@ -199,6 +199,7 @@ cost: 1m or Special
 mins: {Archery: 2, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Obvious, Stackable]
+tags: ["Elemental Attack"]
 dur: Instant
 deps: [qosas]
 reviews:
@@ -210,7 +211,6 @@ refs:
 - ["Inexhaustible Bolts of Solar Fire", Core, 197]
 - ["Dragon-Graced Arrow", DB, 172]
 - ["Dragon-Graced Arrow", Errata, 48]
-edition: 2.5
 text: |
 
   TODO
@@ -218,10 +218,12 @@ text: |
   This Charm supplements an Archery attack, either adding Erisian elemental
   effects to the character's existing ammunition, or conjuring a sliver of
   Essence to act as ammunition itself, aspected towards a element of the
-  character's choice.  If he is a member of <<Parameta_Seed_from_Tree>> and
-  has changed his anima to a Dragon-Blooded element, he may also choose to use
-  one or more of the normal elements of Creation--for the effects of which see
-  the description of the Dragon-Blooded Charm Dragon-Graced Arrow.
+  character's choice.  Any mundane kind of ammunition can be formed, with an
+  appearance clearly showing the type of Essence, and is treated as fine
+  equipment.  If he is a member of <<Parameta_Seed_from_Tree>> and has changed
+  his anima to a Dragon-Blooded element, he may also choose to use one or more
+  of the normal elements of Creation--for the effects of which see the
+  description of the Dragon-Blooded Charm Dragon-Graced Arrow.
 
   The effects of the Erisian elements are as follow.  *Orange* allows the
   character to reflexively spend 1 mote at Step 7 of any successful attack to
@@ -268,6 +270,7 @@ cost: 3m or 3m, 1wp
 mins: {Archery: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
+tags: [Movement-Enhancer]
 dur: Instant
 deps: [fr, qosas]
 text: |
@@ -310,9 +313,9 @@ text: |
 
   As recounted in stories of old, a well-timed magical arrow can influence the
   course of people's lives.  Erisians bring these legends to life with
-  Piercing the Heart: the Exalt mimes shooting an arrow, firewand or similar
-  -- a weapon is required, but no ammunition is actually used -- and sends an
-  invisible bolt of Essence, carrying emotional influence towards a single
+  Piercing the Heart: the Exalt mimes shooting an arrow, firewand or
+  similar--a weapon is required, but no ammunition is actually used--and sends
+  an invisible bolt of Essence, carrying emotional influence towards a single
   target.  The attack causes no damage, is unblockable with mundane weapons or
   armor, applies a -2 external penalty to the target's DV due to its
   invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
@@ -342,10 +345,11 @@ text: |
 --- !Charm
 id: tflab
 name: "Time Flies Like a Banana"
-cost: 5m; or 5m, 1wp
+cost: 10m; or 10m, 1wp
 mins: {Archery: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
+tags: ["Perfect Defense"]
 dur: Instant
 deps: [exc, qosas]
 reviews:
@@ -361,7 +365,7 @@ text: |
   loosing an arrow to meet an incoming attack at precisely the right instant
   to knock it off track.  This perfectly parries any attack, even if it is
   unblockable.  By spending 1 point of Willpower, the character can even apply
-  this Charm without ammunition, by miming it with a suitable weapon.  In this
+  this Charm without ammunition or even weapon, by miming the shot.  In this
   case, the Charm gains the Obvious keyword, as a strange ripple of distorted
   moments passes through the air on the way to deflect the attack.
   
@@ -413,10 +417,11 @@ text: |
 --- !Charm
 id: bg
 name: "Bowyer's Guarantee"
-cost: 5m, 1wp; or 7m, 1wp
+cost: 11m or 13m
 mins: {Archery: 5, Essence: 4}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
+tags: ["Perfect Attack"]
 dur: Instant
 deps: [fr, wwa]
 refs:

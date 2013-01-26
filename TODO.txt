@@ -1,6 +1,15 @@
 * TODO this week
 
 ** Charms: Update for 2.5
+- General changes
+-- Check anything which improves/stacks weapon/armor stats or Rate
+-- Perfect defenses are at least 4m more expensive
+-- Perfect attacks may be a little more expensive
+-- Tick-long and action-long defenses are a little more expensive
+-- Combos are free, so "non-Charm activation" Charms are pointless
+-- Crippling is easier to resist, in a couple of Charms
+-- No perfect equipment
+-- Mote gain is not "up to 5 motes" but "up to damage"
 - Tags
 - Keywords
 -- Fate (Sidereal Charms vs. "Might from Will" anima power)

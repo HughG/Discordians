@@ -20,6 +20,7 @@ cost: 2m
 mins: {Athletics: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Balance-Enhancer]
 dur: One scene
 deps: []
 text: |
@@ -43,6 +44,7 @@ cost: 2m; or 5m, 1wp
 mins: {Athletics: 4, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Movement-Enhancer]
 dur: Instant
 deps: []
 text: |
@@ -65,6 +67,7 @@ cost: 6m, 1wp
 mins: {Athletics: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Obvious]
+tags: [Movement-Enhancer]
 dur: Indefinite
 deps: [ffm, gas]
 text: |
@@ -98,6 +101,7 @@ cost: 2m
 mins: {Athletics: 2, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Knockback]
+tags: [Grapple-Breaker]
 dur: Instant
 deps: []
 text: |
@@ -121,7 +125,7 @@ text: |
   would not otherwise start on that tick.  The Aim action has all the usual
   benefits and penalties; in particular, the character suffers a two-die
   internal penalty if he chooses to Aim, then decides not to attack the target
-  on his next action.  If his next action *does* begin on the next tick, he
+  on his next action.  If his next action _does_ begin on the next tick, he
   gains a two-die head start if he chooses to Aim.
   
 --- !Charm
@@ -131,6 +135,7 @@ cost: 3m
 mins: {Athletics: 3, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Knockback]
+tags: [Grapple-Breaker, Attribute-Enhancer]
 dur: Instant
 deps: [gas, bu]
 text: |
@@ -162,6 +167,7 @@ cost: 2m + 3m per dot
 mins: {Athletics: 3, Essence: 2}
 type: [Simple]
 keys: [None]
+tags: [Attribute-Enhancer]
 dur: One scene
 deps: [exc]
 text: |
@@ -186,6 +192,7 @@ cost: 4m, 1wp
 mins: {Athletics: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
+tags: [Movement-Enhancer]
 dur: Indefinite
 deps: [nbt]
 text: |
@@ -216,6 +223,7 @@ cost: 1m per point
 mins: {Athletics: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: [Flurry-Enhancer, Onslaught-Mitigator]
 dur: Instant
 deps: [exc]
 text: |
@@ -245,6 +253,7 @@ cost: 5m, 1wp
 mins: {Athletics: 5, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: [Flurry-Enhancer, Onslaught-Mitigator]
 dur: One scene
 deps: [fash]
 text: |

@@ -34,7 +34,7 @@ text: |
   
 --- !Charm
 id: form
-name: "(Any Form-Type Charm)"
+name: "(Any Martial Arts>Form-Type Charm)"
 text: |
   
   
@@ -77,6 +77,7 @@ cost: 3m or 5m
 mins: {Martial Arts: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
+tags: ["Weapon Improvisation"]
 dur: One scene
 deps: [eif]
 refs:
@@ -155,10 +156,12 @@ text: |
   Masters and Grand-masters spend decades perfecting many forms, but few truly
   understand how to move beyond learning a form, to _being_ the form.
 
-  One of the Law who has learned this Charm can use any Form-type Charms she
-  knows, without treating that use as a Charm activation, by spending a point
-  of Willpower in addition to the Charm's normal cost.  She may still have
-  only one Form-type Charm active at any given time.
+  One of the Law who has learned this Charm can use any Martial Arts Form-Type
+  Charm she knows in a Combo with any other Charms with the Combo-Basic or
+  Combo-OK keywords, by spending a point of Willpower in addition to the
+  Charm's normal cost.  (Effectively, this gives the Form-Type Charm the
+  Combo-OK keyword.)  She may still have only one Form-type Charm active at
+  any given time.
   
   An additional benefit, though less frequently useful, is that the character
   can easily switch between forms.  If she ends one Form-type Charm and
@@ -176,6 +179,7 @@ cost: 10m
 mins: {Martial Arts: 4, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious]
+tags: ["Semi-Perfect Defense"]
 dur: One tick
 deps: [form]
 reviews:
@@ -189,13 +193,13 @@ text: |
   
   The Whistling Voice can only use this Charm while he has a Form-type Charm
   active.  When this Charm is activated, he retreats momentarily to gather
-  himself -- not into a meditative state, but into Elsewhere.  If invoked in
+  himself--not into a meditative state, but into Elsewhere.  If invoked in
   response to an attack, it perfectly defends against that attack, unless it
   is unblockable or undodgeable.  (Together, the requirement that a Form-type
   Charm be active, and the imperfection of defense against unblockable and
-  undodgeable attacks constitute a unique Flaw of Invulnerability.)
-  Vanishing in this way also forfeits any opportunity the character would have
-  had to launch a Counterattack.
+  undodgeable attacks constitute a unique Flaw of Invulnerability.)  Vanishing
+  in this way also forfeits any opportunity the character would have had to
+  launch a Counterattack.
   
 --- !Charm
 id: isi

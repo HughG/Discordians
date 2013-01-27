@@ -36,19 +36,19 @@ def insert_charm(out, section_name, charms, charm)
       |t| ["Simple", "Reflexive", "Supplemental"].include?(t)
     }
     interesting_types.each { |type|
-      out.puts("indexterm:[charm-by-type, #{type}, #{charm.clean_name} (#{charm.group})]")
+      out.print("indexterm:[charm-by-type, #{type}, #{charm.clean_name} (#{charm.group})]")
     }
     # Add index entry for any interesting keywords
     interesting_keys = charm.keys.reject {
       |k| ["Combo-Basic", "Combo-OK", "None"].include?(k)
     }
     interesting_keys.each { |key|
-      out.puts("indexterm:[charm-by-keyword, #{key}, #{charm.clean_name} (#{charm.group})]")
+      out.print("indexterm:[charm-by-keyword, #{key}, #{charm.clean_name} (#{charm.group})]")
     }
     # Add index entry for each tag
     if charm.tags then
       charm.tags.each { |tag|
-        out.puts("indexterm:[charm-by-tag, #{tag}, #{charm.clean_name} (#{charm.group})]")
+        out.print("indexterm:[charm-by-tag, #{tag}, #{charm.clean_name} (#{charm.group})]")
       }
     end
     # Need to have no line break after the last use of the indexterm macro, or

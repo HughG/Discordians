@@ -1,27 +1,25 @@
 * TODO this week
 
+** Charms
+- Name Socialize Charms
+
 ** Charms: Update for 2.5
-- General changes
--- Check anything which improves/stacks weapon/armor stats or Rate
--- Perfect defenses are at least 4m more expensive
--- Perfect attacks may be a little more expensive
--- Tick-long and action-long defenses are a little more expensive
--- Combos are free, so "non-Charm activation" Charms are pointless
--- Crippling is easier to resist, in a couple of Charms
--- No perfect equipment
--- Mote gain is not "up to 5 motes" but "up to damage"
-- Tags
 - Keywords
--- Fate (Sidereal Charms vs. "Might from Will" anima power)
 -- Native
 -- Martial and Martial-ready
 -- Overdrive and Reactor
 - General Charm approaches and costs.
 
-** Divisions and Parametadivisions
-- Anima powers
--- Might from Will
--- Sub-Division
+** Formatting
+- No line breaks after indexterm in book text.
+
+** Character Creation
+- Mechanics vs. 2.5
+- Move "Thematics" text
+
+----------------------------------------------------------------------
+
+* Maybe TODO this week
 
 ** Characters
 - Fix Kou-an's location
@@ -31,13 +29,12 @@
 - Standard needs [, ], /, ÷, ..., bullet, nbsp?
 - Small caps needs /, ÷?, ..., nbsp?
 
-----------------------------------------------------------------------
-
-* Maybe TODO this week
-
 ** 3_Traits
 - Quotes for Parametadivisions
 - Symbols for Divisions
+
+** Formatting
+- Make only the first index lines fully justified.  (May need FOP upgrade.)
 
 ** Charms: Overall
 - Mote pool expanders
@@ -54,10 +51,6 @@ deep into Charm trees, otherwise they might not be so widely used.
 - Remove mention of orange anima glow.
 - Remove mention of sobriquets which now belong to Parametadivisons.
 - Links to bibitems.
-
-** Editorial
-- Fix case of "Backgrounds" and "Storyteller".
-- Look for extra hyphens left in by conversion from OpenOffice.
 
 ** Online autobuild
 

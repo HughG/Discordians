@@ -402,7 +402,7 @@ name: "Essence Reflux Prana"
 cost: 2m plus 1m per 2 motes, 1wp
 mins: {Lore: 3, Essence: 2}
 type: [Simple]
-keys: [Combo-OK, Obvious, Touch]
+keys: [Combo-OK, Obvious, Touch, Reactor]
 dur: One scene
 deps: [asa, sant]
 refs:
@@ -450,5 +450,8 @@ text: |
   of a physical object, but three for living beings, since that number is
   favored by the 3rd Division.  Using this Charm to treat himself as belonging
   to that Division, those costs would be reversed.
+
+  This Charm does not alter the surcharge required to use an Excellency for
+  Attributes in other Divisions.
   
 ...

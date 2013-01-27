@@ -206,7 +206,7 @@ cost: 3m, 1wp
 mins: {Melee: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious]
-tags: ["Elemental Attack"]
+tags: ["Elemental Attack", "Weapon Creation"]
 dur: One scene
 deps: [baba]
 refs:

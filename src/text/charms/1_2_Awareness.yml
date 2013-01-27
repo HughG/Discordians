@@ -20,7 +20,7 @@ cost: 1m
 mins: {Awareness: 3, Essence: 1}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: [Sensory-Penalty-Mitigator]
+tags: ["Sensory Penalty Mitigator"]
 dur: Instant
 deps: [exc]
 text: |

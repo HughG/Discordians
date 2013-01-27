@@ -209,7 +209,8 @@ name: "Glory-Stealing Arrogance"
 cost: 3m, 1wp
 mins: {Performance: 4, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
-keys: [Combo-OK, Shaping]
+keys: [Combo-OK, Shaping, Reactor]
+tags: ["Stunt-Enhancer"]
 dur: One scene
 deps: [lfaa]
 text: |
@@ -239,8 +240,6 @@ text: |
   but area effects can.  The mathematically apt will note that activating this
   effect for a 1-die stunt is pointless.
   
-  *[TODO: Add Reactor keyword when reviewing all Charms for new Charm tech.]*
-  
 --- !Charm
 id: ddr
 name: "Dramatic Death Rehearsal"
@@ -248,6 +247,7 @@ cost: 5m
 mins: {Performance: 5, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion]
+tags: ["Perfect Defense"]
 dur: Instant
 deps: [gsa]
 text: |
@@ -305,7 +305,7 @@ text: |
   to play beyond the end of one scene, however, they must spend again or come
   under the Charm's effects.  After spending a total of three points of
   Willpower against the effects of this Charm, a given individual will be free
-  of its effects.  The target group must be able to hear or see the character
-  for this Charm to work.
+  of its effects for the remainder of the story.  The target group must be
+  able to hear or see the character for this Charm to work.
   
 ...

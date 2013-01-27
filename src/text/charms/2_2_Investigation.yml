@@ -20,6 +20,7 @@ cost: 4m
 mins: {Investigation: 2, Essence: 1}
 type: [Simple, Speed 1, DV -0]
 keys: [Combo-OK, Stackable]
+tags: [Sense-Enhancer]
 dur: Indefinite
 deps: []
 text: |
@@ -135,6 +136,7 @@ cost: 3m or 6m
 mins: {Investigation: 3, Essence: 2}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Social, Stackable]
+tags: [UMI-Mitigator]
 dur: One scene
 deps: []
 text: |
@@ -369,6 +371,7 @@ cost: 8m, 1wp
 mins: {Investigation: 4, Essence: 4}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: [Sense-Enhancer]
 dur: One scene
 deps: [pds, kna]
 text: |

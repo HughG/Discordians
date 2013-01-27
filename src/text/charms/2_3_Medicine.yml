@@ -20,6 +20,7 @@ cost: 2m per point of penalty ignored
 mins: {Medicine: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Touch]
+tags: ["Wound Penalty Mitigator"]
 dur: One scene
 deps: []
 text: |
@@ -46,6 +47,7 @@ cost: 3m per lhl converted; or 5m per ahl converted + 1wp
 mins: {Medicine: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Touch]
+tags: [Healing]
 dur: Instant
 deps: [ahf]
 text: |
@@ -68,6 +70,7 @@ cost: 2m
 mins: {Medicine: 1, Essence: 1}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion]
+tags: ["Sickness Mitigator"]
 dur: Instant
 deps: []
 text: |
@@ -107,6 +110,7 @@ cost: 3m, 1wp
 mins: {Medicine: 3, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
+tags: ["Sickness Mitigator"]
 dur: Instant
 deps: [exc, sos]
 text: |
@@ -134,6 +138,7 @@ cost: 7m, 1wp
 mins: {Medicine: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Shaping, Touch]
+tags: ["Crippling Mitigator"]
 dur: Instant
 deps: [fkp]
 text: |
@@ -164,6 +169,7 @@ cost: (4 + Toxicity)m
 mins: {Medicine: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Shaping, Touch]
+tags: [Healing, "Poison Mitigator"]
 dur: Special
 deps: [ahf]
 text: |
@@ -197,6 +203,7 @@ cost: --
 mins: {Medicine: 4, Essence: 3}
 type: [Permanent]
 keys: [None]
+tags: [Healing, "Environmental Damage Mitigator"]
 dur: Indefinite
 deps: [vrt]
 text: |
@@ -259,6 +266,7 @@ cost: 3m + Special
 mins: {Medicine: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Shaping]
+tags: [UMI-Mitigator, Limit-Mitigator]
 dur: Instant
 deps: [sod]
 text: |
@@ -288,6 +296,7 @@ cost: 8m, plus 1wp per point adjustment
 mins: {Medicine: 5, Essence: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Emotion]
+tags: [Limit-Adjuster]
 dur: Instant
 deps: [exc, ssp]
 reviews:

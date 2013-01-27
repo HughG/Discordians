@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Socialize
-text: |
-
-  TODO
-  
 --- !CharmLayout
 grid:
 - [usa, psa, gsd]
@@ -146,6 +142,7 @@ cost: 3m or 5m
 mins: {Socialize: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 9]
 keys: [Combo-OK, Social]
+tags: ["Perfect Social Attack"]
 dur: Instant
 deps: [pca]
 reviews:
@@ -169,6 +166,7 @@ cost: 4m
 mins: {Socialize: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
+tags: ["Perfect Social Defense"]
 dur: Instant
 deps: [psa]
 reviews:
@@ -198,6 +196,7 @@ cost: 3m
 mins: {Socialize: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Social]
+tags: ["Unexpected Social Attack"]
 dur: Instant
 deps: [psa]
 reviews:
@@ -231,6 +230,8 @@ type: [Reflexive]
 keys: [Combo-OK, War]
 dur: Instant
 deps: []
+refs:
+- War_btt
 reviews:
 - 2013-01-20 RWG
 text: |
@@ -244,7 +245,9 @@ text: |
   some actions or Charms may be limited at the Storyteller's discretion, and
   effective attacks may require some stunting.  For example, attempts to read
   an opponent's intentions may yield only what can be deduced from their
-  battle cries, the things they leap to defend, and so on.
+  battle cries, the things they leap to defend, and so on.  In mass combat,
+  only solo units, commanders, and special characters can be targeted, unless
+  the social attack targets a group.
   
 --- !Charm
 id: usn
@@ -307,6 +310,7 @@ cost: 6m, 1wp
 mins: {Socialize: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
+tags: ["Concealment"]
 dur: Indefinite
 deps: [usn]
 reviews:
@@ -404,6 +408,7 @@ cost: 8m, 1wp
 mins: {Socialize: 4, Essence: 4}
 type: [Simple, 6 long ticks]
 keys: [Combo-OK, Compulsion, Social, Stackable]
+tags: ["Group Enhancer"]
 dur: Instant
 deps: [hci]
 refs:

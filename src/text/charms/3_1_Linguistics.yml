@@ -78,6 +78,7 @@ cost: 3m
 mins: {Linguistics: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Compulsion, War]
+tags: ["Action-Delayer"]
 dur: Instant
 deps: [exc]
 refs:
@@ -112,6 +113,7 @@ cost: 4m; or 4m, 1wp
 mins: {Linguistics: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Social]
+tags: ["Perfect Social Defense"]
 dur: Instant
 deps: [mm]
 text: |
@@ -219,6 +221,7 @@ cost: (2m, plus 2m per dot of rating), 1wp
 mins: {Linguistics: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Illusion, Stackable]
+tags: ["Weapon Creation"]
 dur: One scene
 deps: []
 text: |
@@ -308,7 +311,7 @@ text: |
   cost to either party.
   
   The target must be within range, where the base range is (Essence x 100)
-  yards, with each additional 2 motes spend multiplying the range by 10.  If
+  yards, with each additional 2 motes spent multiplying the range by 10.  If
   the target is in some other realm of existence, the message can still reach
   them at an additional cost of 1 point of Willpower, provided some connection
   exists between the realms, which the character could traverse.  The

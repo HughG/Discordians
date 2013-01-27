@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: War
-text: |
-
-  TODO: Section intro text
-  
 --- !CharmLayout
 grid:
 - [flt, exc, btt]
@@ -74,15 +70,15 @@ text: |
   expressions and gesturing will suffice.
   
   The Charm exerts an unnatural mental influence to persuade the target group
-  will believe that they are not opposed to the character's group, but do
-  oppose the indicated enemy.  The character's player rolls ([Charisma or
-  Manipulation] + War) and compares the total against the MDV of the leader of
-  the target group (using War as the relevant ability).  If that MDV is less
-  than the total rolled by the Taskmaster, the Illusion takes effect.  The
-  group leader can resist the Illusion by spending 3 points of Willpower; this
-  cost drops to 1 if either the character's group is a known enemy or has
-  previously been hostile, or the proposed new enemy is an existing firm ally
-  of the target group.
+  that they are not opposed to the character's group, but do oppose the
+  indicated enemy.  The character's player rolls ([Charisma or Manipulation] +
+  War) and compares the total against the MDV of the leader of the target
+  group (using War as the relevant ability).  If that MDV is less than the
+  total rolled by the Taskmaster, the Illusion takes effect.  The group leader
+  can resist the Illusion by spending 3 points of Willpower; this cost drops
+  to 1 if either the character's group is a known enemy or has previously been
+  hostile, or the proposed new enemy is an existing firm ally of the target
+  group.
   
   The character's group need not attack the new enemy, though the target group
   is not compelled to do so either: they will not necessarily rush in as
@@ -100,17 +96,19 @@ type: [Supplemental]
 keys: [Combo-OK, War]
 dur: Instant
 deps: []
+refs:
+- Socialize_saic
 text: |
 
   TODO
   
   This Charm supplements a Social attack, making it possible to use it during
-  War, to directly target a commander or special character in another unit.
-  Depending on whether the Social attack requires visual or verbal contact,
-  the target may need to be in visual or auditory range.  The Charm
-  momentarily draws the attention of the target, so these ranges are judged
-  without the distractions of war, as if there were no other combatants or
-  battle sounds present.  Appropriate cover, environmental effects or other
+  War, to directly target a solo unit, commander, or special character in
+  another unit.  Depending on whether the Social attack requires visual or
+  verbal contact, the target may need to be in visual or auditory range.  The
+  Charm momentarily draws the attention of the target, so these ranges are
+  judged without the distractions of war, as if there were no other combatants
+  or battle sounds present.  Appropriate cover, environmental effects or other
   protections may rule out the individual as a valid target, however.  This
   Charm is explicitly permitted to supplement actions from any other Ability.
   
@@ -121,6 +119,7 @@ cost: 4m, 1wp
 mins: {War: 4, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, War]
+tags: ["Surprise-Mitigator"]
 dur: One scene
 deps: [exc, btt]
 text: |
@@ -177,6 +176,7 @@ cost: 4m
 mins: {War: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, War]
+tags: ["Movement-Enhancer"]
 dur: One scene
 deps: [prf]
 text: |
@@ -198,6 +198,7 @@ cost: 5m, 1wp
 mins: {War: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, War]
+tags: ["Mount-Enhancer"]
 dur: Indefinite
 deps: [prf]
 text: |

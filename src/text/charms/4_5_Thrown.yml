@@ -18,7 +18,7 @@ name: "Stone-Skipping Fillip"
 cost: 2m per step; or 2m per step, 1wp
 mins: {Thrown: 2, Essence: 2}
 type: [Supplemental]
-tags: [Range-Extender, "Weapon-Stashing"]
+tags: [Range-Extender, "Prepared Attack"]
 keys: [Combo-OK]
 dur: Instant
 deps: [exc]
@@ -328,7 +328,7 @@ cost: (1m or 2m) per weapon; or, (1m or 2m) per activation, 1wp
 mins: {Thrown: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Stackable]
-tags: ["Elemental Attack"]
+tags: ["Elemental Attack", "Weapon Creation"]
 dur: One scene
 deps: [dadb]
 refs:

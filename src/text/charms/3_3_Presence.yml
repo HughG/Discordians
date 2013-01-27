@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Presence
-text: |
-  TODO
-  
 --- !CharmLayout
 grid:
 - [mtm, exc, opomt]
@@ -22,6 +19,7 @@ cost: -- (+1wp)
 mins: {Presence: 1, Essence: 2}
 type: [Permanent]
 keys: [None]
+tags: ["UMI-Adjuster"]
 dur: Permanent
 deps: []
 reviews:
@@ -119,7 +117,7 @@ name: "Mind-Luring Mien"
 cost: 3m
 mins: {Presence: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
-keys: [Combo-OK, Compulsion, Obvious, Social]
+keys: [Combo-OK, Compulsion, Obvious, Social, War]
 dur: (Essence) actions
 deps: []
 reviews:
@@ -316,6 +314,7 @@ cost: 3m
 mins: {Presence: 3, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Overdrive]
+tags: ["Stunt-Enhancer"]
 dur: One scene
 deps: [mlm]
 reviews:

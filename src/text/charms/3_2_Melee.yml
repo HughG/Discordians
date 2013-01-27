@@ -166,7 +166,7 @@ cost: 3m or 5m
 mins: {Melee: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: ["Weapon Improvisation"]
+tags: ["Weapon Improvization"]
 dur: One scene
 deps: []
 refs:
@@ -315,6 +315,7 @@ cost: 11m or 13m
 mins: {Melee: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
+tags: ["Perfect Defense"]
 dur: Instant
 deps: [hrh, rss]
 refs:

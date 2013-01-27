@@ -3,7 +3,7 @@
 name: Integrity
 --- !CharmLayout
 grid:
-- [roe, sos2, iiov]
+- [roe, sos, iiov]
 - [ror, exc, icc]
 - [umd, sdc, uoth]
 - [cof, ddt, ~]
@@ -53,11 +53,11 @@ text: |
   Intimacies or Motivation.
   
   In the case of natural mental influence, this Charm automatically defeats
-  it.  For unnatural mental influence the contest is between their (Essence +
-  Integrity) and the (Essence + Ability) of the Charm used (or caster's
-  [Essence + Occult] for spells).  In either case, if she fails the roll she
-  may still spend Willpower to resist the effect, if applicable.  If she
-  botches the roll, she is automatically affected and for the rest of the
+  it.  For unnatural mental influence the contest is between the character's
+  (Essence + Integrity) and the (Essence + Ability) of the Charm used, or the
+  caster's (Essence + Occult) for spells.  In either case, if she fails the
+  roll she may still spend Willpower to resist the effect, if applicable.  If
+  she botches the roll, she is automatically affected and for the rest of the
   scene cannot spend Willpower to resist that one effect.
   
   Similarly, if some effect threatens to directly lower any of the character's
@@ -84,6 +84,7 @@ cost: 5m
 mins: {Integrity: 4, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion, Social]
+tags: ["Perfect Social Defense"]
 dur: Instant
 deps: [sdc]
 reviews:
@@ -107,6 +108,7 @@ cost: 10m, 2wp
 mins: {Integrity: 4, Essence: 4}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
+tags: ["Perfect UMI Defense"]
 dur: One scene
 deps: [sdc]
 reviews:
@@ -126,12 +128,13 @@ text: |
   consequences are still delayed until the end of the scene.
   
 --- !Charm
-id: sos2
+id: sos
 name: "Savor of Submission"
 cost: -- (1wp)
 mins: {Integrity: 1, Essence: 2}
 type: [Permanent]
 keys: [None]
+tags: ["Limit-Adjuster"]
 dur: Permanent
 deps: []
 refs:
@@ -143,7 +146,7 @@ text: |
 
   TODO
   
-  Whenever the character is subject to hostlie unnatural mental influence and
+  Whenever the character is subject to hostile unnatural mental influence and
   could pay Willpower to resist it (that is, she has sufficient temporary
   Willpower), she may instead choose to submit to it and pay a single point of
   Willpower to reduce her Podge rating by one point, to a minimum of zero.
@@ -167,6 +170,7 @@ cost: --
 mins: {Integrity: 2, Essence: 2}
 type: [Permanent]
 keys: [Stackable]
+tags: ["Willpower Pool Extender"]
 dur: Permanent
 deps: []
 reviews:
@@ -202,7 +206,7 @@ keys: [Combo-OK, Obvious, Touch]
 dur: Instant
 deps: [roe]
 refs:
-- [Will-Bolstering Method; Core; 217]
+- ["Will-Bolstering Method", Core, 217]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -318,6 +322,7 @@ cost: 4m, 1wp
 mins: {Integrity: 4, Essence: 3}
 type: [Reflexive]
 keys: [None]
+tags: ["Group-Enhancer", "Domain Monitoring"]
 dur: Indefinite
 deps: [exc, icc]
 reviews:
@@ -328,7 +333,7 @@ text: |
   
   This Charm enhances the Discordian's power of self-determination, allowing
   her to share it with others.  It is activated in connection with an
-  organisation or social group about which the character holds an Intimacy.
+  organization or social group about which the character holds an Intimacy.
   When a social attack is made against the group, the character can respond as
   if the attack had been made against her.  She will become instantly aware of
   any such attack to which she could so respond, no matter where she is, and

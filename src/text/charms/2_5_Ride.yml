@@ -70,7 +70,7 @@ cost: 5m, 1wp
 mins: {Ride: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
-tags: ["Sense-Enhancer", "Area Observation"]
+tags: ["Sense-Enhancer", "Domain Monitoring"]
 dur: Indefinite
 deps: [mpt]
 text: |

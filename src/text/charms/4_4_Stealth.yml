@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Stealth
-text: |
-
 --- !CharmLayout
 grid:
 - [hipsa, ywt, ssp]
@@ -21,7 +19,7 @@ cost: 2m
 mins: {Stealth: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
-tags: [Surprise-Negator]
+tags: ["Sense-Enhancer", "Surprise-Negator"]
 dur: Instant
 deps: []
 reviews:
@@ -63,6 +61,7 @@ cost: 2m, 1wp
 mins: {Stealth: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Shaping]
+tags: ["Recumbent Destiny Enhancer"]
 dur: Instant
 deps: []
 reviews:
@@ -83,6 +82,7 @@ cost: 4m
 mins: {Stealth: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
+tags: ["Concealment"]
 dur: Indefinite
 deps: []
 refs:
@@ -127,6 +127,7 @@ cost: 6m, 1wp
 mins: {Stealth: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-Basic]
+tags: ["Concealment"]
 dur: Indefinite
 deps: [sim]
 refs:
@@ -189,6 +190,7 @@ cost: 3m; or 3m, 1wp
 mins: {Stealth: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion, Stackable, Touch]
+tags: ["Concealment"]
 dur: Indefinite
 deps: []
 refs:
@@ -201,13 +203,14 @@ text: |
   TODO
   
   The magic of this Charm hides a single object, or set of similar objects, on
-  the character's person which would otherwise be in plain sight. The line of
+  the character's person which would otherwise be in plain sight.  The line of
   a sword will appear to vanish into the shifting fold lines of the
   character's clothes, the boots on his feet will seem but as weathered skin,
   or the crown on his head look like spiked or rumpled hair, or vanish
-  altogether. Resisting this Illusion costs 3 Willpower, which must be paid
-  all at once on first observing the Illusion, or when further chances to
-  resist arise, as described below.
+  altogether.  The Illusion cannot disguise the object as something else, only
+  make it appear to be absent.  Resisting this Illusion costs 3 Willpower,
+  which must be paid all at once on first observing the Illusion, or when
+  further chances to resist arise, as described below.
   
   The hidden objects still exist, and the Charm's magic does not hide their
   effects.  Those apparently bare feet will leave boot-prints, and onlookers
@@ -237,8 +240,9 @@ text: |
   gains another attempt to resist the Illusion, and any time an attack on her
   hits, the Willpower cost for her is reduced by one, to a minimum of one.
   
-  *[TODO: Follow-on Charm to apply to objects not in the character's
-  possession, just as <<Stealth_ywt>> follows <<Stealth_hipsa>>?]*
+  With Stealth 5, if the character applies this to an object which he _owns_,
+  it will remain hidden even if it leaves his person, provided he sustains the
+  mote commitment for the Charm.
   
 --- !Charm
 id: ywt
@@ -247,6 +251,7 @@ cost: 4m, 1wp
 mins: {Stealth: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, War]
+tags: ["Concealment", "Group-Enhancer"]
 dur: Indefinite
 deps: [exc, hipsa]
 refs:
@@ -282,7 +287,7 @@ text: |
   similar to normal attempts at concealment in battle, the character rolls
   ([Dexterity or Manipulation] + Stealth - Magnitude).  The unit need not have
   cover but, if it does, the Storyteller may assign additional bonuses, for
-  example treating any DV bonuses against ranged attaks (Exalted Core, p. 147)
+  example treating any DV bonuses against ranged attaks (<<Exalted>>, p. 147)
   as providing equivalent bonus dice to the roll.
   
 --- !Charm
@@ -292,6 +297,7 @@ cost: (3m, 1wp) per dot of Magnitude
 mins: {Stealth: 4, Essence: 3}
 type: [Simple]
 keys: [Shaping, Social, War]
+tags: ["Concealment", "Group-Enhancer", "Recumbent Destiny Enhancer"]
 dur: Instant
 deps: [ssp, ywt]
 refs:
@@ -325,6 +331,7 @@ cost: 3m, 1wp
 mins: {Stealth: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Stackable]
+tags: ["Concealment"]
 dur: One scene
 deps: []
 refs:
@@ -382,6 +389,7 @@ cost: 6m, 1wp
 mins: {Stealth: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Shaping]
+tags: ["Concealment", "Recumbent Destiny Enhancer"]
 dur: One scene
 deps: [exc, sim, wds]
 reviews:
@@ -420,6 +428,7 @@ cost: 10m, 2wp
 mins: {Stealth: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Stackable]
+tags: ["Concealment", "Disguise", "Recumbent Destiny Enhancer"]
 dur: Indefinite
 deps: [ff, iomas]
 refs:

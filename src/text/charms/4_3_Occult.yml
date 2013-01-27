@@ -19,6 +19,7 @@ cost: 3m, 1wp, plus 1m per level of effect
 mins: {Occult: 3, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: ["Elemental Attack", "Elemental Adjuster", "Elemental Defense"]
 dur: Instant
 deps: []
 reviews:
@@ -31,14 +32,19 @@ text: |
   Activating it costs 3 motes and one point of Willpower; the character can
   then spend up to (Essence) further motes to modify manifestations of her
   Divisional or Parametadivisional element.  Each mote spent can either halve
-  or double the effect of any phenomena related to the element.
+  or double the effect of any phenomena related to the element
+
   Alternatively, on successfully touching a target, the Erisian can either add
   one level of lethal or bashing damage (for physical manifestations) or
   reduce the target's temporary Willpower by 1 point (for mental or emotional
   manifestations).  In this case, the attack will be accompanied by a
   manifestation of the Erisian element, in one or more senses.  If the attack
   is blocked or parried, this Charm is inapplicable.
-  
+
+  *[TODO: What should this do for specific bonuses or penalties caused by
+  other Discordian Charms which rely on an Erisian Element, such as
+  <<Archery_pps>>?]*
+
 --- !Charm
 id: sw
 name: "Spirit Whiskers"
@@ -46,6 +52,7 @@ cost: 3m
 mins: {Occult: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK]
+tags: ["Sense-Enhancer"]
 dur: One scene
 deps: []
 reviews:
@@ -92,8 +99,11 @@ cost: 6m
 mins: {Occult: 5, Essence: 2}
 type: [Simple]
 keys: [None]
+tags: ["Sense-Enhancer"]
 dur: One scene
 deps: [exc, sw]
+refs:
+- Awareness_sots
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -136,7 +146,7 @@ text: |
 --- !Charm
 id: rio
 name: "Ritual>of Instant Ordination"
-cost: 10+m, 1wp
+cost: 10m+, 1wp
 mins: {Occult: 4, Essence: 3}
 type: [Simple]
 keys: [Shaping]
@@ -148,14 +158,14 @@ text: |
 
   Why should the Discordians get all the fun?  This closely-guarded ritual
   allows a Wild Child to grant another willing being the ability to use one of
-  her own Charms.  As long as the target has this Charm, she will be unable to
-  use it, though she may recall it before the end of the scene as a reflexive
-  action.  The target is treated as having the necessary Essence and Ability
-  minimums, if it doesn't already, solely for the purpose of using that Charm
-  and making any rolls it involves.  If the target does not already have a
-  mote pool, it is treated as having 10 motes, which can only be used for the
-  purpose of activating that Charm, and vanish at the end of the scene in
-  which the target first uses the Charm.  If the Charm costs more than 10
+  her own Charms.  As long as the target has this Charm, the character will be
+  unable to use it, though she may recall it before the end of the scene as a
+  reflexive action.  The target is treated as having the necessary Essence and
+  Ability minimums, if it doesn't already, solely for the purpose of using
+  that Charm and making any rolls it involves.  If the target does not already
+  have a mote pool, it is treated as having 10 motes, which can only be used
+  for the purpose of activating that Charm, and vanish at the end of the scene
+  in which the target first uses the Charm.  If the Charm costs more than 10
   motes to activate, the character must commit additional motes, up to the
   cost of a single activation.
   
@@ -286,7 +296,7 @@ reviews:
 - 2012-02-18 RWG
 text: |
 
-  The Beloved of the Most Beatiful get away with breaking all sorts of rules,
+  The Beloved of the Most Beautiful get away with breaking all sorts of rules,
   and they have gained limited access to the Solar's most powerful spells.
   Specifically, they steal them.
   

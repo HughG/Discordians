@@ -77,7 +77,7 @@ cost: 3m or 5m
 mins: {Martial Arts: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: ["Weapon Improvisation"]
+tags: ["Weapon Improvization"]
 dur: One scene
 deps: [eif]
 refs:
@@ -188,7 +188,7 @@ text: |
 
   Wise men and babies alike think that all things are one.  In combat, then,
   we all strike only at ourselves, and even the most seasoned sage is wearied
-  by this realisation at times.  But if all is one, where can one find respite
+  by this realization at times.  But if all is one, where can one find respite
   from this?  Why, in Limbo, of course, where there are no things!
   
   The Whistling Voice can only use this Charm while he has a Form-type Charm

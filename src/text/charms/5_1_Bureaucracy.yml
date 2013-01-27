@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Bureaucracy
-
 --- !CharmLayout
 grid:
-- [exc, bbb, bots]
 - [ici, fam, wwws]
-- [pps, dbp, mu]
-- [bpp, mom, rcm]
-- [mrp, ~, ln]
+- [pps, dbp, bots]
+- [bpp, mom, mu]
+- [mrp, ln, rcm]
+- [exc, bbb, btt]
 --- !Charm
 id: exc
 name: "(Any Bureaucracy>Excellency)"
@@ -63,6 +62,7 @@ cost: 5m, 1wp
 mins: {Bureaucracy: 3, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social]
+tags: ["Background-Manipulation"]
 dur: One scene
 deps: [fam]
 reviews:
@@ -116,15 +116,16 @@ cost: 8m
 mins: {Bureaucracy: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion, Social]
+tags: ["Project-Manipulator"]
 dur: Indefinite
 deps: [fam]
 reviews:
 - 2012-08-26 RWG
 text: |
 
-  *[TODO: more fluff]* With knowledge of the overt and covert roles and
-  communication channels in an organization, the Exalt is able to arrange for
-  her own pet project to be achieved without drawing attention to it.
+  With knowledge of the overt and covert roles and communication channels in
+  an organization, the Exalt is able to arrange for her own pet project to be
+  achieved without drawing attention to it.
 
   Activating this Charm causes some subset of an organization to carry out a
   project without mentioning it to anyone beyond the group or otherwise
@@ -148,7 +149,8 @@ text: |
   enforced, so they may be persuaded otherwise without the Leader spending
   Loyalty points.
 
-  *[TODO: This Charm, especially, needs to say how it works in the CRM.]*
+  *[TODO: This Charm, especially, needs to say how it works in the
+  Creation-Ruling Mandate.]*
   
 --- !Charm
 id: bots
@@ -157,6 +159,7 @@ cost: 10m, 1wp
 mins: {Bureaucracy: 5, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social]
+tags: ["Project-Manipulator"]
 dur: Instant
 deps: [wwws]
 refs:
@@ -232,6 +235,54 @@ text: |
   right.
   
 --- !Charm
+id: btt
+name: "Bond-Trading Treaty"
+cost: 15m, 2wp
+mins: {Bureaucracy: 4, Essence: 4}
+type: [Simple, Dramatic Action]
+keys: [Combo-OK, Shaping]
+dur: Instant
+deps: [bbb]
+refs:
+- ["Eclipse Anima power", Core, 100]
+- ["Drowning in Negotiation Style", DB, 164]
+reviews:
+- 
+text: |
+
+  TODO
+
+  This Charm allows a Discordian to trade burdens with one who is bound by a
+  magically enforced oath.  The Discordian character gains the requirements
+  and penalties of the target’s oath, and the target takes on a new oath,
+  agreed with and sworn to the character, with the same penalties as the
+  original. An oath can only be traded in this fashion if the being which
+  originally enforced it had a lower Essence than the Exalt herself.  This
+  effect requires the two to shake hands (or otherwise touch) and the target
+  must be willing.  The same conditions apply to unwilling parties as in the
+  case of <<Bureaucracy_bbb>>.  Each character must also be a valid target for
+  the new oath.  For instance, even the mightiest Discordian could not use
+  this power to shift the oaths binding the Yozi, as they are too specific to
+  each one of those great beings.
+
+  Alternatively, the character may exchange existing oaths applying to any two
+  willing beings.  Both the conditions and penalties of the oaths are swapped.
+  As in the previous case, each target's oath must be applicable to the other,
+  and the effects enforcing each oath must have been applied by a being with
+  an Essence less than the character's.
+
+  In either case, the exchange persists indefinitely unless this Charm is
+  re-activated to restore willing targets to their original state, or the
+  character dies.
+
+  This power applies not only to oaths sanctified by Eclipse-caste Solars, but
+  also to those enforced by certain Dragon-Blooded Charms, to Fair Folk oaths,
+  and so on.  Exchanging a Fair Folk adjuration requires the recipient to
+  commit the necessary motes.  Other types of magical enforcement may involve
+  other complications.
+
+  
+--- !Charm
 id: mom
 name: "Memorandum>of Misunderstanding"
 cost: 5m, 1wp
@@ -248,7 +299,7 @@ text: |
   fundamental issue, for an organization, of exactly what it is supposed to be
   doing.  Employing this charm, the player rolls ([Charisma or Manipulation] +
   Bureaucracy + Essence) with a difficulty equal to the leader's MDV.  If
-  successful, the organization forgets its Motivation; it will not act against
+  successful, the organization forgets its Motivation--it will not act against
   it (unless otherwise compelled) but neither will it act in support of it,
   with the leader likely to spend Loyalty points to resist external attempts
   to persuade the organization to do so.  The leader may also spend Loyalty to
@@ -519,6 +570,7 @@ cost: 3m, 1wp
 mins: {Bureaucracy: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Stackable]
+tags: ["Domain Monitoring"]
 dur: Indefinite
 deps: [fam]
 refs:

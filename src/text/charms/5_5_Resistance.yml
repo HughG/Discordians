@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Resistance
-text: |
-  *[TODO: essence/wp-gathering or overdrive]*
-
-  *[TODO: Make exc be a prereq of at least one Charm.]*
-  
 --- !CharmLayout
 grid:
 - [oou, sss, iss]
@@ -16,7 +11,6 @@ grid:
 id: exc
 name: "(Any Resistance>Excellency)"
 text: |
-  n/a
   
 --- !Charm
 id: cbt
@@ -65,11 +59,11 @@ text: |
   the character to carry a small piece of stone in his pocket.
   
   Solid objects generally have a Hardness equal to their soak, as described in
-  Exalted, pp. 153-154.  If touching another being, the relevant Hardness and
-  soak is taken from that being's armor, if it is wearing any, otherwise from
-  its natural values (including any magical enhancements).  In either case,
-  the character's Hardness is set to the borrowed value, if it is not already
-  greater, while the soak he takes on is added to his natural soak.
+  <<Exalted>>, pp. 153-154.  If touching another being, the relevant Hardness
+  and soak is taken from that being's armor, if it is wearing any, otherwise
+  from its natural values (including any magical enhancements).  In either
+  case, the character's Hardness is set to the borrowed value, if it is not
+  already greater, while the soak he takes on is added to his natural soak.
   
   This Charm is made Obvious by the fact that the character briefly comes to
   resemble the source of his improved toughness.  For objects, his skin takes
@@ -123,10 +117,11 @@ text: |
 --- !Charm
 id: iia
 name: "Infinite Impact>Absorption"
-cost: 5m
+cost: 10m
 mins: {Resistance: 4, Essence: 3}
 type: [Reflexive, Step 7]
 keys: [Combo-OK, Obvious]
+tags: ["Perfect Defense"]
 dur: Instant
 deps: [iss]
 reviews:
@@ -155,20 +150,21 @@ cost: 2m per level
 mins: {Resistance: 2, Essence: 2}
 type: [Simple]
 keys: [Combo-OK, Obvious, Shaping]
+tags: ["Healing"]
 dur: Instant
 deps: []
 refs:
-- [Lunars; Bruise-Relief Method; 159]
-- [Lunars; Halting the Scarlet Flow; 160]
-- [Infernals; Wholeness Rightly Assumed; 134]
+- ["Bruise-Relief Method", Lunars, 159]
+- ["Halting the Scarlet Flow", Lunars, 160]
+- ["Wholeness Rightly Assumed", Infernals, 134]
 reviews:
 - 2012-02-18 RWG
 text: |
 
   TODO
   
-  For two motes she spends, this Charm heals one level of bashing damage from
-  the character, up to a maximum of (Essence) levels.  At Essence 3, the
+  For each two motes she spends, this Charm heals one level of bashing damage
+  from the character, up to a maximum of (Essence) levels.  At Essence 3, the
   character can instead choose to convert one level of lethal to bashing for
   every two motes spent.  The character cannot heal lethal damage completely
   without activating this Charm twice, in a flurry or on separate actions.
@@ -192,6 +188,7 @@ cost: 5m, 1wp
 mins: {Resistance: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
+tags: ["Healing"]
 dur: Indefinite
 deps: [oou, sss]
 reviews:
@@ -227,6 +224,7 @@ cost: 3m
 mins: {Resistance: 3, Essence: 2}
 type: [Reflexive, Step 10]
 keys: [Combo-OK, Stackable]
+tags: ["Crippling-Mitigator", "Poison-Mitigator", "Sickness-Mitigator"]
 dur: Indefinite
 deps: [oou]
 reviews:

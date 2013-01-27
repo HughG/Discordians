@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Lore
-text: |
-  
 --- !CharmLayout
 grid:
 - [dr, asa, erp]
@@ -69,7 +67,7 @@ keys: [Combo-OK]
 dur: Instant
 deps: [hmm]
 refs:
-- [Eye of the Cat; Lunars; 179]
+- ["Eye of the Cat", Lunars, 179]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -370,10 +368,12 @@ cost: 2m
 mins: {Lore: 1, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
+tags: ["Concealment", "Disguise"]
 dur: One scene
 deps: []
 refs:
-- [Soft Presence Prana; Sidereals; 170; with errata]
+- ["Soft Presence Practice", Sidereals, 170]
+- ["Soft Presence Practice", Errata, 74]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -406,7 +406,7 @@ keys: [Combo-OK, Obvious, Touch, Reactor]
 dur: One scene
 deps: [asa, sant]
 refs:
-- [Essence-Lending Method; Core; 217]
+- ["Essence-Lending Method", Core, 217]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -437,6 +437,7 @@ cost: 3m
 mins: {Lore: 1, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: ["Numerology-Enhancer"]
 dur: Instant
 deps: []
 text: |

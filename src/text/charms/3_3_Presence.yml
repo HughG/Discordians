@@ -6,14 +6,14 @@ grid:
 - [mtm, exc, opomt]
 - [ppi, htt, ppp]
 - [ipa, mlm, ewa]
-- [sos1, pma, ~]
+- [sos, pma, ~]
 --- !Charm
 id: exc
 name: "(Any Presence>Excellency)"
 text: |
   
 --- !Charm
-id: sos1
+id: sos
 name: "Softening of Suasion"
 cost: -- (+1wp)
 mins: {Presence: 1, Essence: 2}
@@ -280,7 +280,7 @@ keys: [Combo-OK, Shaping]
 dur: One scene
 deps: [mlm]
 refs:
-- [One of the Herd; Lunars; 176]
+- ["One of the Herd", Lunars, 176]
 reviews:
 - 2011-06-25 RWG
 updates:
@@ -347,7 +347,7 @@ text: |
   This Charm benefits any action in which the character co-ordinates her
   efforts with others.  She need not lead the action, and it need not be a
   Presence-based action.  The action may be covered under the teamwork rules
-  (Exalted Core, p. 125) or it may be a coordinated attack (Exalted Core,
+  (<<Exalted>>, p. 125) or it may be a coordinated attack (<<Exalted>>,
   p. 144).  For teamwork actions where all charcters can apply their full
   effort, it adds one die per participant, to a maximum of (Presence +
   Essence).  For actions where additional participants can contribute only

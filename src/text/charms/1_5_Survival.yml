@@ -25,7 +25,7 @@ dur: Instant
 deps: [exc]
 text: |
 
-  Most find comfort behind the ordered walls of civilisation, but the Daughter
+  Most find comfort behind the ordered walls of civilization, but the Daughter
   of Eris smiles and laughs among the chaos of the wildest places.  This Charm
   supplements a roll to resist environmental damage.  It allows the character
   to add (Survival ÷ 2) successes to the (Stamina + Resistance) roll, and
@@ -238,7 +238,7 @@ cost: 10m, 2wp
 mins: {Survival: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping]
-tags: [Concealment]
+tags: ["Concealment", "Domain Monitoring"]
 dur: Indefinite
 deps: [lwra]
 refs:

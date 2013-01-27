@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Larceny
-text: |
-
-  TODO
-
 --- !CharmLayout
 grid:
 - [rpt, exc, iii]
@@ -24,6 +20,7 @@ cost: 2m, or 2m, 1wp
 mins: {Larceny: 3, Essence: 2}
 type: [Simple, Speed 5]
 keys: [Combo-OK]
+tags: ["Object-Stashing", "Weapon-Stashing"]
 dur: Indefinite
 deps: []
 reviews:
@@ -93,6 +90,7 @@ cost: 4m, 1wp
 mins: {Larceny: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Obvious, Shaping]
+tags: ["Movement-Enhancer"]
 dur: Instant
 deps: [oct]
 reviews:
@@ -173,11 +171,12 @@ text: |
   
 --- !Charm
 id: iii
-name: "Instant>Image Improvisation"
+name: "Instant>Image Improvization"
 cost: 3m
 mins: {Larceny: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: ["Disguise"]
 dur: Instant
 deps: [exc]
 reviews:
@@ -199,6 +198,7 @@ cost: 4m
 mins: {Larceny: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
+tags: ["Disguise"]
 dur: Instant
 deps: [exc]
 refs:
@@ -249,6 +249,7 @@ cost: 3m, 1wp
 mins: {Larceny: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: ["Disguise"]
 dur: Instant
 deps: [stk, iii]
 reviews:
@@ -275,6 +276,7 @@ cost: 10m, 1wp
 mins: {Larceny: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK, Shaping, Touch]
+tags: ["Disguise"]
 dur: Indefinite
 deps: [nrm, stk]
 reviews:
@@ -322,6 +324,7 @@ cost: 4m
 mins: {Larceny: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion, Emotion]
+tags: ["Disguise"]
 dur: Instant
 deps: [stk]
 refs:

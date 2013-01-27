@@ -15,7 +15,7 @@ text: |
   
 --- !Charm
 id: ii
-name: "Implausible Improvisation"
+name: "Implausible Improvization"
 cost: 1m
 mins: {Performance: 1, Essence: 1}
 type: [Simple]
@@ -243,7 +243,7 @@ text: |
 --- !Charm
 id: ddr
 name: "Dramatic Death Rehearsal"
-cost: 5m
+cost: 10m
 mins: {Performance: 5, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion]

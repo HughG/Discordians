@@ -157,7 +157,7 @@ cost: 3m or 5m
 mins: {Archery: 1, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: ["Weapon Improvisation"]
+tags: ["Weapon Improvization"]
 dur: One scene
 deps: []
 refs:
@@ -365,9 +365,9 @@ text: |
   loosing an arrow to meet an incoming attack at precisely the right instant
   to knock it off track.  This perfectly parries any attack, even if it is
   unblockable.  By spending 1 point of Willpower, the character can even apply
-  this Charm without ammunition or even weapon, by miming the shot.  In this
-  case, the Charm gains the Obvious keyword, as a strange ripple of distorted
-  moments passes through the air on the way to deflect the attack.
+  this Charm without ammunition, by miming the shot.  In this case, the Charm
+  gains the Obvious keyword, as a strange ripple of distorted moments passes
+  through the air on the way to deflect the attack.
   
   With a second purchase at Essence 4+, the character can use this Charm in a
   Defend Other action to defend any other being who would be a valid target

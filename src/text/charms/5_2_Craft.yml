@@ -20,6 +20,7 @@ cost: 3m
 mins: {Craft: 2, Essence: 1}
 type: [Supplemental]
 keys: [Combo-OK, Touch]
+tags: ["Object Improvization"]
 dur: Instant
 deps: [exc]
 reviews:
@@ -253,6 +254,7 @@ cost: 5m; or 5m + 1wp per rating point
 mins: {Craft: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
+tags: ["Object Improvization"]
 dur: One scene
 deps: [bem]
 reviews:
@@ -308,7 +310,7 @@ keys: [Combo-OK, Touch]
 dur: One scene
 deps: []
 refs:
-- (Object-Strengthening Touch; Core; 211)
+- ["Object-Strengthening Touch", Core, 211]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -387,9 +389,9 @@ text: |
   
   The object may be a symbolic representation of the relevant discipline,
   rather than an item to be used in practice.  The trainee must establish
-  ownership (Exalted, p. 238) of the object and treat it with care, at least
-  until the normal training time has passed and any experience debt is paid
-  off.  If this effort is not put in, or the object is lost, discarded or
+  ownership (<<Exalted>>, p. 238) of the object and treat it with care, at
+  least until the normal training time has passed and any experience debt is
+  paid off.  If this effort is not put in, or the object is lost, discarded or
   damaged before then, the dot of Ability is lost, though any experience spent
   on it is regained.  Once the training time and debt is gone, however, the
   object may be passed on for someone else to gain its benefits. Damaged
@@ -419,6 +421,7 @@ cost: 3m+, 1wp
 mins: {Craft: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
+tags: ["Healing"]
 dur: Instant
 deps: [eeoe]
 reviews:
@@ -453,6 +456,7 @@ cost: 10m, 1wp
 mins: {Craft: 3, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch, Training]
+tags: ["Familiar Creation"]
 dur: Instant
 deps: [cpc]
 reviews:

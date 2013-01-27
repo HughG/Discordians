@@ -223,7 +223,8 @@ cost: 1m per point
 mins: {Athletics: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: [Flurry-Enhancer, Onslaught-Mitigator]
+tags: ["Flurry-Enhancer", "Multiple Attack Mitigator"]
+tags: []
 dur: Instant
 deps: [exc]
 text: |
@@ -253,7 +254,7 @@ cost: 5m, 1wp
 mins: {Athletics: 5, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
-tags: [Flurry-Enhancer, Onslaught-Mitigator]
+tags: ["Flurry-Enhancer", "Multiple Attack Mitigator"]
 dur: One scene
 deps: [fash]
 text: |

@@ -19,6 +19,7 @@ cost: 2m
 mins: {Dodge: 2, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
+tags: ["Counterattack-Breaker"]
 dur: Instant
 deps: []
 text: |
@@ -87,10 +88,11 @@ text: |
 --- !Charm
 id: pe
 name: "Perfect Excuse"
-cost: -- (+ 5m)
+cost: -- (+ 6m)
 mins: {Dodge: 4, Essence: 2}
 type: [Permanent]
 keys: [Combo-OK, Compulsion, Obvious]
+tags: ["Perfect Defense"]
 dur: Permanent
 deps: [hpf]
 refs:
@@ -101,12 +103,14 @@ changes:
 - 2012-09-13 HUGR
 text: |
 
+  *[TODO: RWG reckons this is flavorless.]*
+
   Against the greatest of opponents, it may not be enough to trick reality
   instead.  Skilled Discordians will tweak space and time, as well as their
   opponent's minds, to evade blades and blows.
 
   This Charm extends its prerequisite to apply to undodgeable attacks, for a
-  total cost of nine motes.  If the attacker chooses to resist the Compulsion
+  total cost of ten motes.  If the attacker chooses to resist the Compulsion
   to redirect his attack, or there is no valid alternative target, this Charm
   furthermore ensures that a perfectly-placed extended foot will force the
   attacker to check for Knockdown.  Against ranged attacks, the Compulsion
@@ -115,6 +119,10 @@ text: |
   through Elsewhere.
 
   This Charm has one of the Discordian Flaws of Invulnerability.
+
+  *[TODO: Maybe weakness against ranged, plus the fact that the opponent can
+  spend Willpower to resist, are FoI enough by themselves.  Maybe increase wp
+  cost to resist?  Maybe let it work against ranged as well?]*
   
 --- !Charm
 id: samt
@@ -169,6 +177,7 @@ cost: 5m
 mins: {Dodge: 4, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK]
+tags: ["Multiple Attack Mitigator"]
 dur: Until next action
 deps: [samt]
 text: |
@@ -195,12 +204,15 @@ cost: 8m, 1wp
 mins: {Dodge: 5, Essence: 4}
 type: [Simple]
 keys: [Combo-OK]
+tags: ["Multiple Attack Mitigator"]
 dur: One scene
 deps: [vmn]
 text: |
 
+  *[TODO: more fluff]*
+
   Some of the most powerful Mid-day Shadows go even futher in turning their
-  enemies' hostility against them.  *[TODO: more fluff]*
+  enemies' hostility against them.
   
   This Charm extends the effects of Villain Multiplication Nature to a whole
   scene.  In addition, if the character tries but fails to dodge a single
@@ -217,6 +229,7 @@ cost: 4m
 mins: {Dodge: 4, Essence: 3}
 type: [Reflexive, Step 9]
 keys: [Combo-Basic, Counterattack]
+tags: ["Flurry-Breaker", "Movement-Enhancer"]
 dur: Instant
 deps: [exc]
 text: |
@@ -253,6 +266,7 @@ cost: -- (+3m per dot of Magnitude + 1wp)
 mins: {Dodge: 5, Essence: 4}
 type: [Permanent]
 keys: [Combo-Basic, War]
+tags: ["Flurry-Breaker", "Group-Enhancer", "Movement-Enhancer"]
 dur: Permanent
 deps: [gss]
 text: |

@@ -317,6 +317,7 @@ dur: Instant
 deps: []
 refs:
 - Integrity_sos
+- ["Victory in Defeat", BWC, 31]
 changes:
 - 2012-09-13 HUGR
 text: |
@@ -352,12 +353,15 @@ text: |
 --- !Charm
 id: sots
 name: "Shadows on the Soul"
-cost: 3m, 1wp
+cost: 4m
 mins: {Awareness: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK]
+tags: ["Sense-Enhancer"]
 dur: One scene
 deps: [tgof]
+refs:
+- Occult_etn
 reviews:
 - 2013-01-20 RWG
 text: |

@@ -15,14 +15,10 @@
 -- Fate (Sidereal Charms vs. "Might from Will" anima power)
 -- Native
 -- Martial and Martial-ready
---- 3 2 Melee (Martial-ready)
 -- Overdrive and Reactor
---- 2 4 Performance (Reactor)
 - General Charm approaches and costs.
 
 ** Divisions and Parametadivisions
-- Quotes
-- Symbols
 - Anima powers
 -- Might from Will
 -- Sub-Division
@@ -30,9 +26,10 @@
 ** Characters
 - Fix Kou-an's location
 
-** Docinfo
-- Review credit for Elizabeth
-- Fix formatting and tiny last para.
+** Fonts
+- Need standard and small caps.
+- Standard needs [, ], /, ÷, ..., bullet, nbsp?
+- Small caps needs /, ÷?, ..., nbsp?
 
 ----------------------------------------------------------------------
 
@@ -40,6 +37,7 @@
 
 ** 3_Traits
 - Quotes for Parametadivisions
+- Symbols for Divisions
 
 ** Charms: Overall
 - Mote pool expanders

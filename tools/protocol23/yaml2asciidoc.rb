@@ -21,15 +21,38 @@ def insert_charm(out, section_name, charms, charm)
     out.puts("===== #{charm.clean_name}")
     mins = charm.mins.map { |min| min.join(" ") }.join(", ")
     first_type = charm.type[0]
-    type = nil
+    pretty_type = nil
+    types_for_index = nil
     if first_type.is_a? Array
-      type = charm.type.map { |t| make_pretty_type(t) }.join(", or ")
+      pretty_type = charm.type.map { |t| make_pretty_type(t) }.join(", or ")
+      types_for_index = charm.type.map {|alt_type| alt_type[0]}
     else
-      type = make_pretty_type(charm.type)
+      pretty_type = make_pretty_type(charm.type)
+      types_for_index = charm.type[0..0]
     end
     out.puts("[role=\"noindent\"]")
-    # Need to have no line break after the indexterm macro, or we get a space
-    # at the start of the paragraph.
+    # Add index entry for interesting types
+    interesting_types = types_for_index.reject {
+      |t| ["Simple", "Reflexive", "Supplemental"].include?(t)
+    }
+    interesting_types.each { |type|
+      out.puts("indexterm:[charm-by-type, #{type}, #{charm.clean_name} (#{charm.group})]")
+    }
+    # Add index entry for any interesting keywords
+    interesting_keys = charm.keys.reject {
+      |k| ["Combo-Basic", "Combo-OK", "None"].include?(k)
+    }
+    interesting_keys.each { |key|
+      out.puts("indexterm:[charm-by-keyword, #{key}, #{charm.clean_name} (#{charm.group})]")
+    }
+    # Add index entry for each tag
+    if charm.tags then
+      charm.tags.each { |tag|
+        out.puts("indexterm:[charm-by-tag, #{tag}, #{charm.clean_name} (#{charm.group})]")
+      }
+    end
+    # Need to have no line break after the last use of the indexterm macro, or
+    # we get a space at the start of the paragraph.
     out.print("indexterm:[charm, #{charm.clean_name} (#{charm.group})]")
     cost = charm.cost
     if cost == "--" then
@@ -37,7 +60,7 @@ def insert_charm(out, section_name, charms, charm)
     end
     out.puts("*Cost:* #{charm.cost}; " +
              "*Mins:* #{mins}; " +
-             "*Type:* #{type} +")
+             "*Type:* #{pretty_type} +")
     out.puts("*Keywords:* #{charm.keys.join(', ')} +")
     out.puts("*Duration:* #{charm.dur} +")
     out.print("*Prerequisite Charms:* ")

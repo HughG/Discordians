@@ -16,7 +16,9 @@
       <shortaffil>Director, M. Behn School of Coop. Eng.</shortaffil>
 -->
       <jobtitle>Indepenent Hacker</jobtitle>
+<!--
       <orgname>[TODO: Insert Discordian made-up stuff here]</orgname>
+-->
     </affiliation>
   </author>
 
@@ -63,16 +65,28 @@
     <contrib>Review comments</contrib>
 </othercredit>
 
+<othercredit>
+    <firstname>Elizabeth</firstname>
+    <surname>Corbett</surname>
+    <contrib>Review comments</contrib>
+</othercredit>
+
 <releaseinfo>
-    Alpha release from <my-version-info/>.
+    Alpha release from <my-version-info/>.  Source available from github at <ulink url="https://github.com/HughG/Discordians">https://github.com/HughG/Discordians</ulink>.
 </releaseinfo>
 
-<abstract>
+<copyright>
+  <year>2009-2012</year>
+  <holder>... Kopyleft!</holder>
+</copyright>
+
+<legalnotice>
   <simpara>
 
-    This is an alpha release of *The Manual of Exalted Prowess--Discordians*.
-    I, Hugh Greene, the original author, hereby disclaim all copyright over
-    it.  That said, it is a derived work based on the *Exalted* intellectual
+    This is an alpha release of <emphasis role="strong">The Manual of Exalted
+    Prowess&#x2014;Discordians</emphasis>.  I, Hugh Greene, the original
+    author, hereby disclaim all copyright over it.  That said, it is a derived
+    work based on the <emphasis role="strong">Exalted</emphasis> intellectual
     property of White Wolf, so their lawyers are likely to come after you if
     you try to make money from this.  (Their website used to contain a
     specific license for derived works, and I would reference it, but I can't
@@ -89,31 +103,6 @@
     with the OFFO authors, but I don't know.
 
   </simpara>
-</abstract>
-
-<copyright>
-  <year>2009-2012</year>
-  <holder>... Kopyleft!</holder>
-</copyright>
-
-<legalnotice>
-  <simpara>
-    All Rights Reversed.  You may do what you like with this text.
-    [TODO: Insert something about White Wolf terms and lawyers.]
-  </simpara>
-<!--
-  <simpara>
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-  </simpara>
-  <simpara>
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-  </simpara>
--->
 </legalnotice>
 
 <!--

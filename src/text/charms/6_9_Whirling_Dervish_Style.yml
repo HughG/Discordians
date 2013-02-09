@@ -1,0 +1,212 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Whirling_Dervish_Style
+text: |
+
+  The form weapons of this style are whips, fighting chains, ropes, sashes,
+  and artifact equivalents such as the Dire Chain and Essence Lash.  The style
+  can be practised in light armor, but nothing more substantial.
+
+
+  [Give Discordians generic MA Extra Action Charm?]
+
+  [Live Wire Style has 4m scene-long "no offhand penalties for dual-wield" at 2/2.]
+  
+--- !CharmLayout
+grid:
+- []
+--- !Charm
+id: esd
+name: "Errant Spiral Defense"
+cost: 3m
+mins: {Martial Arts: 2, Essence: 2}
+type: [Reflexive, Step 2]
+keys: [Combo-OK]
+dur: Instant
+deps: []
+refs:
+- ["Flame-Flicker Stance", DB, 205]
+reviews:
+- 
+text: |
+  
+  The mystic whirls and spins to distance himself from the distractions of the
+  physical world, to lead him towards a higher awareness. His motion also has
+  a practical side-effect, confusing his opponents and making him harder to
+  hit.  This Charm adds his Martial Arts rating to his Dodge DV.  If he
+  successfully dodges an attack, this Charm costs a cumulative 1m less to
+  activate on his next action, to a minimum of 1 on the 3rd and subsequent
+  successful consecutive dodge. If he is not attacked on his next action, or
+  does not activate it, or fails to dodge the attack, then this discount is
+  lost and the Charm's cost returns to the full 3m the next time it is
+  activated.  This Charm cannot be activated if the character is restrained
+  from moving.
+
+--- !Charm
+id: sbs
+name: "Swaying Bough Strike"
+cost: 2m
+mins: {Martial Arts: 3, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK, Knockback]
+dur: Instant
+deps: []
+refs:
+- ["Heaven Thunder Hammer", Core, 242]
+- ["Ox-Stunning Blow", Core, 243]
+reviews:
+- 
+text: |
+
+  The wild whirling of the XXX is both a shield to himself, and a threat to
+  his enemies, or anyone who gets too close.
+
+  This Charm supplements an attack made while the character spins.  Any
+  successful hit causes the target to check for Knockdown, and the target in
+  fact suffers Knockback if she fails the check.  Although an attempt to knock
+  down an opponent by sweeping with a chain or similar weapon normally suffers
+  a -2 penalty (<<Exalted>>, p.153), an attack supplemented with this Charm
+  does not.  This Charm cannot be activated if the character is restrained
+  from moving.
+
+--- !Charm
+id: fub
+name: "Foe-Unburdening Blessing"
+cost: 2m
+mins: {Martial Arts: 3, Essence: 2}
+type: [Reflexive, Step 1]
+keys: [Combo-OK]
+dur: Instant
+deps: []
+reviews:
+- 
+text: |
+
+  Hands sweeping through the air in complex patterns of near-prayer, the wise
+  XXX meditates on the notion that all beings are one, and all conflict
+  folly.  Therefore, he seeks to end it swiftly, by relieving his opponent of
+  his means of attack.
+  
+  This Charm gives the character's weapon or unarmed attack the D (disarming)
+  tag if it did not already have it, giving it a +2 Accuracy bonus for the
+  disarming attempt.  Furthermore, the character adds his (Martial Arts ÷ 2)
+  in automatic successes.  If he manages to disarm his opponent, he cannot
+  hold or break the weapon but throws it three yards for every success on the
+  attack.
+
+--- !Charm
+id: vrm
+name: "Veil-Raising Meditation"
+cost: 3m, 1wp
+mins: {Martial Arts: 4, Essence: 2}
+type: [Reflexive, Step 1]
+keys: [Combo-OK]
+dur: One scene
+deps: []
+reviews:
+- 
+text: |
+
+  As his dizzy speed blurs his outline in the eyes of his opponents, so this
+  Charm blurs the line between the material and immaterial, as the XXX catches
+  a glimpse of the spirit world.  He is able to see, hear, and target any
+  immaterial being who is joined in battle with him as friend or foe, to whom
+  he has prayed in the last week, or to whom he has an Intimacy.
+
+--- !Charm
+id: wdf
+name: "Whirling Dervish Form"
+cost: 5m
+mins: {Martial Arts: 4, Essence: 2}
+type: [Simple]
+keys: [Combo-Basic, Form-type]
+dur: One scene
+deps: []
+reviews:
+- 
+text: |
+
+  Mastering the Form of this Style, the XXX's spiritual and physical motive
+  frequencies begin to resonate, granting him a supernatural grace, even when
+  he appears at rest, and an unwavering connection to the spirit world.
+
+  In the physical realm, this Form allows the character to Dash and to Rise
+  from Prone with Speed 3 and a DV penalty of -0.
+
+  He is able to see and hear--but not physically target--those immaterial
+  beings described in <<Whirling_Dervish_Style_vrm>>.  The cost of activating
+  that Charm drops to 3m and, as an exception to the normal Combo rules, it
+  may be activated in combination with this Charm.
+
+  Lastly, his semi-meditative spinning becomes a form of subliminal prayer,
+  enhancing his connection with any allies who are valid recipients for
+  such--typically spirits, demons, and beings with the Cult Background.  He or
+  any such ally can take a Coordinate Attack action, which must involve him,
+  with a reduced Speed of 3.  Organizing the attack is done with a roll of
+  ([Dexterity or Charisma] + [Martial Arts or War]).
+
+--- !Charm
+id: wwt
+name: "Wind-Whipping Technique"
+cost: 5m
+mins: {Martial Arts: 5, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Crippling, Obvious]
+dur: Instant
+deps: []
+refs:
+- ["Crashing Wave Throw", Core, 243]
+reviews:
+- 
+text: |
+
+  The XXX's whirling seems manic and random to those who are untutored, but in
+  fact the footsteps and arm gestures are improvised from a detailed language
+  of religious expression.  With sufficient experience, this fluid precision
+  can be applied in combat also.  This Charm applies magical manipulation of
+  the style's form weapons to allow the character to grapple at a distance of
+  up to 10 yards.  There are two consequences of this extended range.
+
+  The first is that, once an opponent is retrained at a distance using this
+  Charm, gaining control of the clinch does not allow them to grapple the
+  character unless they can close the distance with a Move action.  Instead
+  they get an opportunity to disarm the character, with an external penalty of
+  -1 rather than the usual -2.  As usual, disarming is not possible if the
+  character's weapons are natural or strapped to his body.  If the character
+  chooses to close the distance voluntarily, or is forced to do so by
+  circumstances, this benefit is lost.
+
+  The second side-effect is due to the leverage provided by the extra length
+  of the weapon, and the momentum from the character's spinning.  If a
+  grappled opponent is immediately and successfully thrown, the distance is
+  multiplied by the character's Essence and, even though this inflicts no
+  damage, the target must check for Stunning at a difficulty equal to the
+  character's ([Essence + Martial Arts] ÷ 2).  If used in a Combo with a Charm
+  carrying the Knockdown keyword, the distance is further multiplied by the
+  character's Martial Arts rating.  The stunning inflicted by this throw is a
+  Crippling effect.
+
+  This Charm cannot be used if the character is not wielding a form weapon.
+
+
+- 5/3 Materialize ally.  Indefinite; Stackable; allows one ally who would normally be immaterial to materialize or dematerialize at no cost, as a miscellaneous action.  If character is prevented from moving, the Charm ends.  When the Charm ends, the target reverts to its previous state.
+
+
+- 4/3 Whirling shield. Tick long? Perfect? Not if currently grappling? Reduce Accuracy to increase DV?
+
+refs: ["Water Dragon Defense", DB, 207, "gives -1 Acc and -3 ext pen to opponents for (Ess actions), for 1m, at 2/1"]
+refs: ["Portentous Comet Deflecting Mode", DB, 156, "gives perfect parry of non-magical attacks after activation roll, for 3m, 1wp, at 5/3, Instant, Reflexive (Step 5), Obvious."]
+
+
+- 4/2 4m, 1wp; Extra Action; Instant
+
+ref: ["Hammer on Iron Technique", Core, 243]
+
+[Fluff]
+
+This Charm provides a magical flurry of (Essence) Martial Arts actions.  [Check errata re Rate.]  The attacks can be against a single target, or against separate targets provided all are in range without the character having to move further than her Move distance.  The DV penalty for the flurry is equal to the highest penalty for any one of the attacks.
+
+- 5/4 Travelling Without Moving. Attack, and parry ranged, at N * weapon Reach, without moving. Also Defend Other? Unexpected? 1m to recall disarmed weapons? Shield even if grappling?  Hmm, or, make the character temporarily immaterial?
+
+ref: ["Uncoiling Serpent Prana", Core, 241, "gives (Essence x 2) yards to unarmed for 3m at 5/3, with obvious"]
+

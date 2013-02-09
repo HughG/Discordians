@@ -5,9 +5,9 @@ name: Socialize
 grid:
 - [usa, psa, gsd]
 - [dmi, pca, hci]
-- [hmi, sit, fm]
-- [exc, usn, eeg]
-- [saic, ~, sahp]
+- [hmi, sit, fgi]
+- [exc, mcc, eeg]
+- [saic, ~, bhc]
 --- !Charm
 id: exc
 name: "(Any Socialize>Excellency)"
@@ -250,8 +250,8 @@ text: |
   the social attack targets a group.
   
 --- !Charm
-id: usn
-name: "Understanding social norms"
+id: mcc
+name: "Moral Compass Calibration"
 cost: 5m, 1wp
 mins: {Socialize: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
@@ -304,15 +304,15 @@ text: |
   basis of interacting with or observing even a single individual.
   
 --- !Charm
-id: sahp
-name: "Society as Hiding Place???"
+id: bhc
+name: "Brother-Hooded Cloak"
 cost: 6m, 1wp
 mins: {Socialize: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 tags: ["Concealment"]
 dur: Indefinite
-deps: [usn]
+deps: [mcc]
 reviews:
 - 2013-01-20 RWG
 text: |
@@ -352,11 +352,11 @@ text: |
 id: eeg
 name: "Epidemic Expression Genesis"
 cost: 4m, 1wp
-mins: {Socialize: 3, Essence: 3}
+mins: {Socialize: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Sickness, Social, Stackable]
 dur: Indefinite
-deps: [usn]
+deps: [fgi]
 refs:
 - Lore_cip
 changes:
@@ -447,14 +447,14 @@ text: |
   Essence ÷ 2) on the implementation of the action.
   
 --- !Charm
-id: fm
-name: "Flashmob!"
-cost: 4m; or 4m, 1wp
-mins: {Socialize: 4, Essence: 3}
+id: fgi
+name: "Flock-Gulling Instigation"
+cost: 4m, 1wp
+mins: {Socialize: 3, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Compulsion, Social]
 dur: One scene
-deps: [sit]
+deps: [mcc]
 reviews:
 - 
 text: |

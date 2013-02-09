@@ -10,11 +10,7 @@
 -- Overdrive and Reactor
 - General Charm approaches and costs.
 
-** Formatting
-- No line breaks after indexterm in book text.
-
 ** Character Creation
-- Mechanics vs. 2.5
 - Move "Thematics" text
 
 ----------------------------------------------------------------------
@@ -22,7 +18,8 @@
 * Maybe TODO this week
 
 ** Characters
-- Fix Kou-an's location
+- Fix Kou-an's location (or keep location and change story -- heading to
+Varangia?)
 
 ** Fonts
 - Need standard and small caps.
@@ -31,7 +28,7 @@
 
 ** 3_Traits
 - Quotes for Parametadivisions
-- Symbols for Divisions
+- Images for Divisional Symbols
 
 ** Formatting
 - Make only the first index lines fully justified.  (May need FOP upgrade.)
@@ -48,7 +45,6 @@
 deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
 - Remove specific mention of Hodge and Podge as much as possible.
-- Remove mention of orange anima glow.
 - Remove mention of sobriquets which now belong to Parametadivisons.
 - Links to bibitems.
 

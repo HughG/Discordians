@@ -12,6 +12,7 @@ HTML_OUT=$(OUT)/html
 IMG_OUT=$(OUT)/images
 PDF_OUT=$(OUT)/pdf
 STATS_OUT=$(OUT)/stats
+DRAC_OUT=$(OUT)/drac
 ASC_MED=$(OUT)/asciidoc
 DOT_MED=$(OUT)/dot
 #W=output_wiki
@@ -38,6 +39,7 @@ HTML=$(CHARMS_IN_LIST:.yml=.html)
 ASC=$(CHARMS_IN_LIST:.yml=.asc)
 SVG=$(CHARMS_IN_LIST:.yml=.svg)
 PNG=$(CHARMS_IN_LIST:.yml=.png)
+DRAC=$(CHARMS_IN_LIST:.yml=_drac.html)
 CONFIG=$(CONF_IN)/asciidoc/* $(CONF_IN)/asciidoc/docbook-xsl/* $(CONF_IN)/fop/* $(FONTS_IN)/goudy-3.1/*
 
 export FOP_HYPHENATION_PATH=tools/fop/offo-hyphenation-binary/fop-hyph.jar
@@ -52,6 +54,8 @@ $(PDF_OUT):
 	$(MKDIR) $(PDF_OUT)
 $(STATS_OUT):
 	$(MKDIR) $(STATS_OUT)
+$(DRAC_OUT):
+	$(MKDIR) $(DRAC_OUT)
 $(ASC_MED):
 	$(MKDIR) $(ASC_MED)
 $(DOT_MED):
@@ -61,14 +65,16 @@ html: $(HTML_OUT)/$(HTML_MAIN)
 charms-pdf: $(PDF_OUT)/charms.pdf
 book: $(PDF_OUT)/Discordians.pdf
 test-pdf: $(PDF_OUT)/test.pdf
+drac: $(DRAC:$(CHARMS_IN)/%=$(DRAC_OUT)/%)
 stats: $(STATS_OUT)/stats.txt
 
 #wiki: destdir $W/$(MAINWIKI)
 
 $(SCRIPTS)/yaml2dot.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2asciidoc.rb: $(SCRIPTS)/yaml2x.rb
-$(SCRIPTS)/yaml2stats.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2svg.rb: $(SCRIPTS)/yaml2x.rb
+$(SCRIPTS)/yaml2stats.rb: $(SCRIPTS)/yaml2x.rb
+$(SCRIPTS)/yaml2dracula.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/makehtml.rb: $(SCRIPTS)/yaml2x.rb
 
 .PHONY: clean tmpclean $(OUT)/version_info.in.txt
@@ -95,6 +101,9 @@ $(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
 
 $(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2svg.rb $(IMG_OUT)
 	$(SCRIPTS)/yaml2svg.rb $< $@
+
+$(DRAC_OUT)/%_drac.html: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2dracula.rb $(DRAC_OUT)
+	$(SCRIPTS)/yaml2dracula.rb $< $@
 
 # This is a .PHONY target so that we always check the working copy status,
 # which may have changed if an untracked file has been created or similar.

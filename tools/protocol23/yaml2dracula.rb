@@ -9,24 +9,20 @@ def beads(bead, no_bead, count)
   bead_array.join(" ")
 end
 
-def add_node(out, section_name, charms, charm)
-  #p charm
-
+def add_node(out, trait_name, charms, charm)
+  min_trait = 1
   min_ess = 1
-  min_att = 1
   if charm.mins
+    min_trait = charm.mins[trait_name].to_i
     min_ess = charm.mins['Essence'].to_i
-    min_att = charm.mins[section_name].to_i
   end
   out.puts "g.addNode(" +
     "\"#{charm.id}\", " +
-    "{\"label\": \"#{charm.id} #{min_ess}/#{min_att}\"}" +
+    "{\"label\": \"#{charm.id} #{min_trait}/#{min_ess}\"}" +
     ");"
 end
 
-def add_edges(out, section_name, charms, charm)
-  #p charm
-
+def add_edges(out, charms, charm)
   deps = charm.deps
   has_deps = (deps and not deps.empty?)
   if has_deps
@@ -37,7 +33,6 @@ def add_edges(out, section_name, charms, charm)
 end
 
 if __FILE__ == $PROGRAM_NAME
-#  puts $PROGRAM_NAME + "..."
   filename = $*[0]
   outfilename = $*[1]
 
@@ -45,9 +40,9 @@ if __FILE__ == $PROGRAM_NAME
     outfile.puts """
 <html><head>
 <meta http-equiv='content-type' content='text/html; charset=ISO-8859-1'></head><body><header>
-    <script type='text/javascript' src='dracula/raphael-min.js'></script>
-    <script type='text/javascript' src='dracula/graffle.js'></script>
-    <script type='text/javascript' src='dracula/graph.js'></script>
+    <script type='text/javascript' src='../../tools/dracula/raphael-min.js'></script>
+    <script type='text/javascript' src='../../tools/dracula/graffle.js'></script>
+    <script type='text/javascript' src='../../tools/dracula/graph.js'></script>
     <script type='text/javascript'>
 <!--
 
@@ -63,10 +58,10 @@ window.onload = function() {
 
     process_file(filename) { |group, charms|
       charms.each_value { |charm|
-        add_node(outfile, group.name, charms, charm)
+        add_node(outfile, group.trait, charms, charm)
       }
       charms.each_value { |charm|
-        add_edges(outfile, group.name, charms, charm)
+        add_edges(outfile, charms, charm)
       }
     }
 

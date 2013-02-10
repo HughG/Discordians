@@ -107,13 +107,13 @@ ESSENCE_DOT_STYLE = make_style(
   "stroke" => "#dcc593",
   "stroke-width" => "0.3",
   )
-GROUP_DOT_STYLE = make_style(
+TRAIT_DOT_STYLE = make_style(
   "fill" => "#ff0000",
   "stroke" => "#dc9393",
   "stroke-width" => "0.3",
   )
 
-def draw_dots(box, x, y, essence_rating, group_rating)
+def draw_dots(box, x, y, essence_rating, trait_rating)
   for d in 0..4
     draw_dot(
       box, x, y,
@@ -122,8 +122,8 @@ def draw_dots(box, x, y, essence_rating, group_rating)
       )
     draw_dot(
       box, x, y,
-      false, d, d < group_rating,
-      GROUP_DOT_STYLE, EMPTY_DOT_STYLE
+      false, d, d < trait_rating,
+      TRAIT_DOT_STYLE, EMPTY_DOT_STYLE
       )
   end
 end
@@ -194,13 +194,13 @@ def draw_text(box, x, y, text_lines)
 
 end
 
-def draw_charm(box, x, y, charm)
+def draw_charm(box, x, y, charm, trait_name)
   draw_outline(box, x, y)
 
   if (charm.mins != nil)
     essence_dots = charm.mins["Essence"]
-    group_dots = charm.mins[charm.group]
-    draw_dots(box, x, y, essence_dots, group_dots)
+    trait_dots = charm.mins[trait_name]
+    draw_dots(box, x, y, essence_dots, trait_dots)
   end
 
   if (false)
@@ -335,7 +335,7 @@ def draw_arrows(box, charms, layout)
   }
 end
 
-def draw_layout(charms, layout, outfilename)
+def draw_layout(group, charms, layout, outfilename)
   File.open(outfilename, "w") { |outfile|
     raw_charms = charms.values
     cb_rows = layout.grid.length
@@ -372,7 +372,7 @@ def draw_layout(charms, layout, outfilename)
 
         x = col * (CB_WIDTH + CB_HORIZ_GAP)
         y = row * (CB_HEIGHT + CB_VERT_GAP)
-        draw_charm(box, x, y, charm)
+        draw_charm(box, x, y, charm, group.trait)
       end
     end
 
@@ -397,7 +397,7 @@ if __FILE__ == $PROGRAM_NAME
       $stderr << "Can only handle 1 layout for now\n"
       exit(-1)
     else
-      draw_layout(charms, layouts[0], outfilename)
+      draw_layout(group, charms, layouts[0], outfilename)
     end
   }
 end

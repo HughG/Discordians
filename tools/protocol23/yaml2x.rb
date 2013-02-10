@@ -7,9 +7,15 @@ class CharmGroup
   attr_accessor \
     :name, # string
     :text # string
+  attr_writer \
+    :trait # string
+
+  def trait
+    @trait or @name
+  end
 
   def to_s
-    puts @name, @text
+    puts @name, @trait, @text
   end
 end
 

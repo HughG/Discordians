@@ -9,22 +9,22 @@ def beads(bead, no_bead, count)
   bead_array.join(" ")
 end
 
-def insert_charm(out, section_name, charms, charm)
+def insert_charm(out, trait_name, charms, charm)
   #p charm
 
   return if charm.name == "."
 
   min_ess = ""
-  min_att = ""
+  min_trait = ""
   if charm.mins
     min_ess = beads("•", "¤", charm.mins['Essence'].to_i)
-    min_att = beads("•", "¤", charm.mins[section_name].to_i)
+    min_trait = beads("•", "¤", charm.mins[trait_name].to_i)
   end
   deps = charm.deps
   has_deps = (deps and not deps.empty?)
   charm_name = if has_deps then charm.name else charm.name.upcase end
   charm_name.gsub!(/\>/, '\\n')
-  out.puts("\t#{charm.id} [label=\"{#{min_ess}|#{charm_name}|#{min_att}}\"];")
+  out.puts("\t#{charm.id} [label=\"{#{min_ess}|#{charm_name}|#{min_trait}}\"];")
   if has_deps
     deps.each { |dep|
       out.print("\t", dep, " -> ", charm.id, ";\n")
@@ -44,7 +44,7 @@ if __FILE__ == $PROGRAM_NAME
 
     process_file(filename) { |group, charms, layouts|
       charms.each_value { |charm|
-        insert_charm(outfile, group.name, charms, charm)
+        insert_charm(outfile, group.trait, charms, charm)
       }
     }
 

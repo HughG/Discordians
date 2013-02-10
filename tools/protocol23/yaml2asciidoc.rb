@@ -54,10 +54,6 @@ def insert_charm(out, section_name, charms, charm)
     # Need to have no line break after the last use of the indexterm macro, or
     # we get a space at the start of the paragraph.
     out.print("indexterm:[charm, #{charm.clean_name} (#{charm.group})]")
-    cost = charm.cost
-    if cost == "--" then
-      cost = "--&#x200B;"
-    end
     out.puts("*Cost:* #{charm.cost}; " +
              "*Mins:* #{mins}; " +
              "*Type:* #{pretty_type} +")
@@ -81,7 +77,6 @@ def insert_charm(out, section_name, charms, charm)
                 }.join(", "))
     end
     out.puts
-    # out.puts(" +")
   end
   out.puts
   # We never want explict line breaks in Charm text, so automagically escape

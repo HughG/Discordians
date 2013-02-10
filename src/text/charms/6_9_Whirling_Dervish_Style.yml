@@ -3,17 +3,36 @@
 name: Whirling_Dervish_Style
 text: |
 
+  The term "whirling dervish" is used casually in the South to refer to any
+  holy man or woman who makes rapid and reptitive rotation or other movement
+  part of their routine of prayer and meditation.  Mostly these are simply
+  ways of distracting the mind from quotidian matters.  Some evolve into
+  structured and stylized systems of movement which are treated as prayer in
+  themselves.  A few--most often wandering mendicants who need to be able to
+  protect themselves--have taken this practice further, evolving it into a
+  martial art, and from their mortal attempts certain Exalts have drawn this
+  Celestial style.
+
+  It has been seen occasionally across the South, but is most popular near
+  An-Teng, where a more relaxed attitude to worship of Terrestrial gods helps
+  its practitioners avoid trouble with Immaculate monks.  Strictly speaking,
+  there is nothing heretical in this style, but it has lead more than one
+  Dragon-Blooded devotee to form a particularly close relationship--in terms
+  of work, prayer, and possibly more--with a single god, in defiance of the
+  Realm's official calendar of worship, and attitude to Terrestrial gods in
+  general.
+  
   The form weapons of this style are whips, fighting chains, ropes, sashes,
-  and artifact equivalents such as the Dire Chain and Essence Lash.  The style
-  can be practised in light armor, but nothing more substantial.
+  and artifact equivalents such as the Dire Chain and Essence Lash.  Most of
+  the Charms can also be used with unarmed attacks.  The style can be
+  practised in light armor, but nothing more substantial.
 
-
-  [Give Discordians generic MA Extra Action Charm?]
-
-  [Live Wire Style has 4m scene-long "no offhand penalties for dual-wield" at 2/2.]
+  Although none are known to have bothered to learn it so far, this style
+  could be particularly useful to gods.
   
 --- !CharmLayout
 grid:
+- esd, vrp, sbs, fub, vrm, wdf, wwm, btsl, fpt, dosv
 - []
 --- !Charm
 id: esd
@@ -41,6 +60,29 @@ text: |
   lost and the Charm's cost returns to the full 3m the next time it is
   activated.  This Charm cannot be activated if the character is restrained
   from moving.
+
+--- !Charm
+id: vrp
+name: "Vortex Regulation Practice"
+cost: 1m
+mins: {Martial Arts: 3, Essence: 1}
+type: [Reflexive]
+keys: [Combo-OK]
+dur: One scene
+deps: []
+refs:
+- ["Whistling Analog Signal", Alchemicals, 175]
+reviews:
+- 
+text: |
+  
+  Few take up the challenge of using this style's form weapons because, as
+  they soon discover (<<SotM>>, p. 156), chain and rope weapons need at least
+  five feet of free space around them to be swung effectively.  Through long
+  practise of the apparently-random movements of this style, however, a XXX
+  can avoid this restriction.  This Charm allows the character to use the
+  style's form weapons without needing any extra free space around him as
+  compared to shorter martial arts weapons.
 
 --- !Charm
 id: sbs
@@ -131,12 +173,14 @@ text: |
   he appears at rest, and an unwavering connection to the spirit world.
 
   In the physical realm, this Form allows the character to Dash and to Rise
-  from Prone with Speed 3 and a DV penalty of -0.
+  from Prone with Speed 3 and a DV penalty of -0.  As an exception to the
+  normal Combo rules, he can activate <<Whirling_Dervish_Style_vrp>> together
+  with this Form-type Charm.
 
   He is able to see and hear--but not physically target--those immaterial
   beings described in <<Whirling_Dervish_Style_vrm>>.  The cost of activating
-  that Charm drops to 3m and, as an exception to the normal Combo rules, it
-  may be activated in combination with this Charm.
+  that Charm drops to 3m and, again as an exception to the normal Combo rules,
+  it may be activated in combination with this Charm.
 
   Lastly, his semi-meditative spinning becomes a form of subliminal prayer,
   enhancing his connection with any allies who are valid recipients for
@@ -146,8 +190,8 @@ text: |
   ([Dexterity or Charisma] + [Martial Arts or War]).
 
 --- !Charm
-id: wwt
-name: "Wind-Whipping Technique"
+id: wwm
+name: "Wind-Whipping Method"
 cost: 5m
 mins: {Martial Arts: 5, Essence: 3}
 type: [Supplemental]
@@ -188,25 +232,75 @@ text: |
 
   This Charm cannot be used if the character is not wielding a form weapon.
 
+--- !Charm
+id: btsl
+name: "Beckoning the Spirit Lover"
+cost: 4m, 1wp
+mins: {Martial Arts: 4, Essence: 4}
+type: [Simple]
+keys: [Combo-OK]
+dur: Indefinite
+deps: []
+reviews:
+- 
+text: |
 
-- 5/3 Materialize ally.  Indefinite; Stackable; allows one ally who would normally be immaterial to materialize or dematerialize at no cost, as a miscellaneous action.  If character is prevented from moving, the Charm ends.  When the Charm ends, the target reverts to its previous state.
+  Becoming more familiar with the spirit world, the XXX learns that it has its
+  own strife just as the physical does.  Some might despair at this but, by
+  accepting it, he is able to drawn upon the experience and aid of its
+  inhabitants.
 
+  This Charm targets an ally of the character who is Joined in Battle with
+  him--most likely a spirit to whom he offers worship.  As long as it remains
+  active, that character can activate any Charms which allow him or her to
+  materialize or dematerialize, without paying any Essence towards them, as a
+  miscellaneous action with Speed 6.
 
-- 4/3 Whirling shield. Tick long? Perfect? Not if currently grappling? Reduce Accuracy to increase DV?
+--- !Charm
+id: fpt
+name: "Flailing Pirouette Technique"
+cost: 5m
+mins: {Martial Arts: 4, Essence: 3}
+type: [Extra Action]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: []
+refs:
+- ["Striking Serpent Speed", Core, 242]
+- ["Hammer on Iron Technique", Core, 243]
+reviews:
+- 
+text: |
+  
+  As his constant gyrations carry him further into the spiritual realm, the
+  XXX's physical movements surpasses mortal means and eye, carrying him
+  careening between foes on an unpredictable and unstoppable path.
+  
+  This Charm provides a magical flurry of Martial Arts actions.  The character
+  rolls (Martial Arts + Essence)--without use of Excellences or similar
+  Charms--and gains one action per success, plus one action.  The attacks
+  ignore weapon Rate and can be against a single target, or against separate
+  targets.  The character may Move reflexively before each attack and after
+  the last.  The DV penalty for the flurry is equal to the highest penalty for
+  any one of the attacks.
 
-refs: ["Water Dragon Defense", DB, 207, "gives -1 Acc and -3 ext pen to opponents for (Ess actions), for 1m, at 2/1"]
-refs: ["Portentous Comet Deflecting Mode", DB, 156, "gives perfect parry of non-magical attacks after activation roll, for 3m, 1wp, at 5/3, Instant, Reflexive (Step 5), Obvious."]
-
-
-- 4/2 4m, 1wp; Extra Action; Instant
-
-ref: ["Hammer on Iron Technique", Core, 243]
-
-[Fluff]
-
-This Charm provides a magical flurry of (Essence) Martial Arts actions.  [Check errata re Rate.]  The attacks can be against a single target, or against separate targets provided all are in range without the character having to move further than her Move distance.  The DV penalty for the flurry is equal to the highest penalty for any one of the attacks.
-
-- 5/4 Travelling Without Moving. Attack, and parry ranged, at N * weapon Reach, without moving. Also Defend Other? Unexpected? 1m to recall disarmed weapons? Shield even if grappling?  Hmm, or, make the character temporarily immaterial?
-
-ref: ["Uncoiling Serpent Prana", Core, 241, "gives (Essence x 2) yards to unarmed for 3m at 5/3, with obvious"]
-
+--- !Charm
+id: dosv
+name: "Dance of Seven Veils"
+cost: 4m, 1wp
+mins: {Martial Arts: 5, Essence: 4}
+type: [Reflexive, Step 1 or Step 5]
+keys: [Combo-OK, Obvious]
+dur: (Essence) actions
+deps: []
+reviews:
+- 
+text: |
+  
+  At the pinnacle of this Style, the XXX finally achieves union with the world
+  his motion worships, bridging the gap between the physical and spiritual
+  realms.  Upon activating this Charm, for a number of actions equal to his
+  Essence rating, he is able to become either material or immaterial whenever
+  he takes a Move or Dash action.  On the tick on which he would take his next
+  action after this Charm, he returns to the state he had before it was
+  activated.

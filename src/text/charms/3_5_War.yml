@@ -97,7 +97,7 @@ keys: [Combo-OK, War]
 dur: Instant
 deps: []
 refs:
-- Socialize_saic
+- Socialize_fpt
 text: |
 
   TODO

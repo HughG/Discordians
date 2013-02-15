@@ -3,11 +3,11 @@
 name: Socialize
 --- !CharmLayout
 grid:
-- [usa, psa, gsd]
-- [dmi, pca, hci]
-- [hmi, sit, fgi]
+- [sts, icc, rar]
+- [tdh, vas, fsp]
+- [tto, sit, fgi]
 - [exc, mcc, eeg]
-- [saic, ~, bhc]
+- [fpt, ~, bhc]
 --- !Charm
 id: exc
 name: "(Any Socialize>Excellency)"
@@ -15,8 +15,8 @@ text: |
   
   
 --- !Charm
-id: pca
-name: "Persuade re>consequence of action"
+id: vas
+name: "Vehement Agreement Slant"
 cost: 3m
 mins: {Socialize: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
@@ -44,14 +44,14 @@ text: |
   Combos with Charms from other Abilities.
   
 --- !Charm
-id: hci
-name: "Holding conflicting Intimacies"
+id: fsp
+name: "Factious Soul Persuasion"
 cost: -- (+2m, 1wp)
 mins: {Socialize: 3, Essence: 3}
 type: [Permanent]
 keys: [Emotion, Illusion]
 dur: Instant
-deps: [pca]
+deps: [vas]
 reviews:
 - 
 text: |
@@ -84,14 +84,14 @@ text: |
   wasted.
   
 --- !Charm
-id: dmi
-name: "Disguising Motivation>and Intimacies"
+id: tdh
+name: "The Dissimulated Heart"
 cost: 4m
 mins: {Socialize: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK, Social]
 dur: One scene
-deps: [pca]
+deps: [vas]
 reviews:
 - 
 text: |
@@ -112,14 +112,14 @@ text: |
   relevant.
   
 --- !Charm
-id: hmi
-name: "Hiding Motivation>and Intimacies"
+id: tto
+name: "The Tenet Obfuscate"
 cost: 3m, 1wp
 mins: {Socialize: 4, Essence: 3}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
 dur: Indefinite
-deps: [dmi]
+deps: [tdh]
 reviews:
 - 
 text: |
@@ -127,7 +127,7 @@ text: |
   TODO
   
   This Charm allows the character to apply the protection of
-  <<Socialize_dmi>> on a long-term basis, to himself or another target, but
+  <<Socialize_tdh>> on a long-term basis, to himself or another target, but
   only in relation to a one single Motivation, Intimacy, emotion or intention
   for each activation of this Charm.  The increased difficulty also applies to
   attempts to determine the existence or source of any magical effects which
@@ -136,15 +136,15 @@ text: |
   applied to a social group of Magnitude up to (Essence + 1).
   
 --- !Charm
-id: psa
-name: "Perfect social attack"
+id: icc
+name: "Incisive Counterpoint Contortion"
 cost: 3m or 5m
 mins: {Socialize: 3, Essence: 2}
 type: [Reflexive, Step 1 or Step 9]
-keys: [Combo-OK, Social]
+keys: [Combo-OK, Counterattack, Social]
 tags: ["Perfect Social Attack"]
 dur: Instant
-deps: [pca]
+deps: [vas]
 reviews:
 - 
 text: |
@@ -160,15 +160,17 @@ text: |
   Counterattack against any Social attack, which is again unblockable.
   
 --- !Charm
-id: gsd
-name: "General social defence"
+id: rar
+name: "Raconteur's Artful Riposte"
 cost: 4m
 mins: {Socialize: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Social]
 tags: ["Perfect Social Defense"]
 dur: Instant
-deps: [psa]
+deps: [icc]
+refs:
+- ["Hard-Nosed Denial Style", Lunars, 168]
 reviews:
 - 
 text: |
@@ -190,15 +192,15 @@ text: |
   decreases by 1 over subsequent actions until it reaches zero.
   
 --- !Charm
-id: usa
-name: "Unexpected social attack"
+id: sts
+name: "Surreptitious Topic Switch"
 cost: 3m
 mins: {Socialize: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Social]
 tags: ["Unexpected Social Attack"]
 dur: Instant
-deps: [psa]
+deps: [icc]
 reviews:
 - 
 text: |
@@ -222,8 +224,8 @@ text: |
   left off.
   
 --- !Charm
-id: saic
-name: "Social actions>in combat"
+id: fpt
+name: "Fleeting Parley Tactic"
 cost: 2m, 1wp
 mins: {Socialize: 4, Essence: 3}
 type: [Reflexive]
@@ -239,15 +241,18 @@ text: |
   TODO
   
   This Charm allows the character to take social actions in relation to
-  targets with whom she is joined in battle or mass combat.  If those Social
-  Charms require observation or interaction, there must still be some line of
-  sight, communication or similar between her and her targets.  The impact of
-  some actions or Charms may be limited at the Storyteller's discretion, and
-  effective attacks may require some stunting.  For example, attempts to read
-  an opponent's intentions may yield only what can be deduced from their
-  battle cries, the things they leap to defend, and so on.  In mass combat,
-  only solo units, commanders, and special characters can be targeted, unless
-  the social attack targets a group.
+  targets with whom she is Joined in Battle or War.  If those Social Charms
+  require observation or interaction, there must still be some line of sight,
+  communication or similar between her and her targets, though they need not
+  be in speaking distance.  The speed duration of Social Charms, where it is
+  measured in long ticks or social actions, is scaled to the appropriate
+  length for the type of physical combat.  Those whose duration is shorter or
+  longer act as normal.  The impact of some actions or Charms may be limited
+  at the Storyteller's discretion, and effective attacks may require some
+  stunting.  For example, attempts to read an opponent's intentions may yield
+  only what can be deduced from their battle cries, the things they leap to
+  defend, and so on.  In mass combat, only solo units, commanders, and special
+  characters can be targeted, unless the social attack targets a group.
   
 --- !Charm
 id: mcc
@@ -410,7 +415,7 @@ type: [Simple, 6 long ticks]
 keys: [Combo-OK, Compulsion, Social, Stackable]
 tags: ["Group Enhancer"]
 dur: Instant
-deps: [hci]
+deps: [fsp]
 refs:
 - ["Herd-Strengthening Invocation", Lunars, 170]
 changes:

@@ -41,7 +41,7 @@ text: |
 id: gas
 name: "Ground-Avoiding Step"
 cost: 2m; or 5m, 1wp
-mins: {Athletics: 4, Essence: 2}
+mins: {Athletics: 2, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK]
 tags: [Movement-Enhancer]
@@ -56,7 +56,7 @@ text: |
   
   This Charm allows the character to multiply his vertical jumping distance by
   his Essence, and makes his horizontal jumping distance the same, for a
-  single action.  Alternatively, by spending 5 motes and 1 Willpower at the
+  single action.  At Athletics 3, by spending 5 motes and 1 Willpower at the
   moment of impact, the character may subtract (Essence x 5) from the number
   of dice rolled for falling damage.
   

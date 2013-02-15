@@ -74,7 +74,7 @@ text: |
 id: ehf
 name: "Empty Hand Full"
 cost: 3m or 5m
-mins: {Martial Arts: 1, Essence: 2}
+mins: {Martial Arts: 2, Essence: 2}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 tags: ["Weapon Improvization"]

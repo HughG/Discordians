@@ -96,7 +96,7 @@ text: |
 id: etn
 name: "Ethereal Trawling Net"
 cost: 6m
-mins: {Occult: 5, Essence: 2}
+mins: {Occult: 4, Essence: 2}
 type: [Simple]
 keys: [None]
 tags: ["Sense-Enhancer"]

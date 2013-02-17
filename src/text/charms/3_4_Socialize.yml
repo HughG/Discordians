@@ -4,9 +4,9 @@ name: Socialize
 --- !CharmLayout
 grid:
 - [sts, icc, rar]
-- [tdh, vas, fsp]
-- [tto, sit, fgi]
-- [exc, mcc, eeg]
+- [vas, fsp, mcc]
+- [tdh, sit, fgi]
+- [tto, exc, eeg]
 - [fpt, ~, bhc]
 --- !Charm
 id: exc
@@ -262,7 +262,7 @@ mins: {Socialize: 2, Essence: 2}
 type: [Simple, Speed 6 in long ticks]
 keys: [Combo-OK, Social, Stackable]
 dur: One scene
-deps: [exc]
+deps: []
 reviews:
 - 2012-04-14 RWG
 text: |
@@ -317,7 +317,7 @@ type: [Simple]
 keys: [Combo-OK, Shaping]
 tags: ["Concealment"]
 dur: Indefinite
-deps: [mcc]
+deps: [exc]
 reviews:
 - 2013-01-20 RWG
 text: |
@@ -361,7 +361,7 @@ mins: {Socialize: 4, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Sickness, Social, Stackable]
 dur: Indefinite
-deps: [fgi]
+deps: [exc, fgi]
 refs:
 - Lore_cip
 changes:
@@ -415,7 +415,7 @@ type: [Simple, 6 long ticks]
 keys: [Combo-OK, Compulsion, Social, Stackable]
 tags: ["Group Enhancer"]
 dur: Instant
-deps: [fsp]
+deps: [exc, fsp]
 refs:
 - ["Herd-Strengthening Invocation", Lunars, 170]
 changes:

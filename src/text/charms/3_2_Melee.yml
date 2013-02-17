@@ -3,10 +3,10 @@
 name: Melee
 --- !CharmLayout
 grid:
-- [scd, bbt, exc]
-- [hrh, ebs, fcf]
-- [ama, rss, ktt]
-- [soei, baba, eoa]
+- [baba, bbt, ebs]
+- [ktt, scd, fcf]
+- [rss, ama, hrh]
+- [soei, exc, eoa]
 --- !Charm
 id: exc
 name: "(Any Melee>Excellency)"
@@ -74,7 +74,7 @@ mins: {Melee: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
-deps: [exc, scd]
+deps: [baba, scd]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -208,7 +208,7 @@ type: [Simple]
 keys: [Combo-OK, Obvious]
 tags: ["Elemental Attack", "Weapon Creation"]
 dur: One scene
-deps: [baba]
+deps: [exc]
 refs:
 - Archery_pps
 - Thrown_adc
@@ -283,7 +283,7 @@ type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack]
 tags: [Flurry-Breaker]
 dur: Instant
-deps: [rss]
+deps: [rss, baba]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -351,7 +351,7 @@ mins: {Melee: 4, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
 dur: One scene
-deps: [baba]
+deps: [exc]
 reviews:
 - 2011-06-25 RWG
 text: |

@@ -3,9 +3,9 @@
 name: War
 --- !CharmLayout
 grid:
-- [flt, exc, btt]
-- [eomf, sin, bii]
-- [prf, mlws, bum]
+- [btt, flt, eomf]
+- [bii, mlws, bum]
+- [prf, sin, exc]
 - [~, cmbf, ~]
 --- !Charm
 id: exc
@@ -21,7 +21,7 @@ mins: {War: 2, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Compulsion, Social, War]
 dur: Indefinite
-deps: [exc]
+deps: [btt]
 refs:
 - ["The Battle's End", BoS2WT, 69]
 text: |
@@ -121,7 +121,7 @@ type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, War]
 tags: ["Surprise-Mitigator"]
 dur: One scene
-deps: [exc, btt]
+deps: [btt]
 text: |
 
   A Overseer interprets the systems around her clearly, reading in them
@@ -200,7 +200,7 @@ type: [Supplemental]
 keys: [Combo-OK, War]
 tags: ["Mount-Enhancer"]
 dur: Indefinite
-deps: [prf]
+deps: [exc, prf]
 text: |
 
   This Charm supplements a Change Formation action, allowing a unit containing

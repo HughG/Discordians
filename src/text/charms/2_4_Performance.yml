@@ -3,10 +3,10 @@
 name: Performance
 --- !CharmLayout
 grid:
-- [lfaa, gsa, ddr]
-- [ii, exc, shf]
-- [tonc, iss, shr]
-- [~, mit, ~]
+- [mit, ii, tonc]
+- [exc, shr, iss]
+- [ddr, lfaa, shf]
+- [~, gsa, ~]
 --- !Charm
 id: exc
 name: "(Any Performance>Excellency)"
@@ -21,7 +21,7 @@ mins: {Performance: 1, Essence: 1}
 type: [Simple]
 keys: [Combo-OK]
 dur: One scene
-deps: [exc]
+deps: []
 text: |
 
   The Wondering Minstrels do whatever they can to engage the hearts and minds
@@ -143,7 +143,7 @@ mins: {Performance: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Emotion, Social]
 dur: Instant
-deps: [exc, shr]
+deps: [ii, shr]
 text: |
 
   TODO
@@ -168,7 +168,7 @@ mins: {Performance: 4, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Social, Training]
 dur: Instant
-deps: [exc, shr]
+deps: [shr, lfaa]
 text: |
 
   TODO
@@ -249,7 +249,7 @@ type: [Reflexive, Step 9]
 keys: [Combo-OK, Counterattack, Illusion]
 tags: ["Perfect Defense"]
 dur: Instant
-deps: [gsa]
+deps: [exc]
 text: |
 
   We know not the moment of our deaths (unless we're unlucky enough to feature
@@ -285,7 +285,7 @@ mins: {Performance: 4, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Illusion, Social, War, Stackable]
 dur: Indefinite
-deps: [iss]
+deps: [exc]
 text: |
 
   Music may soothe the savage beast, or it may make things even worse.
@@ -296,9 +296,11 @@ text: |
   the character's Essence, to a minimum of 0, for as long as she continues to
   perform.  Alternatively, the character can provide all affected targets with
   (Essence) bonus dice to all rolls for one chosen Virtue, or Willpower, for
-  the duration.  In mass combat, this Charm may be used to alter Drill, Morale
-  or the effective number of Relays.  Although this Charm is Stackable,
-  stacked uses cannot benefit the same Trait.
+  the duration.  For natural fauna, be they of Creation, the Underworld,
+  Malfeas or elsewhere, the character may elect to reduce their Control Rating
+  instead.  In mass combat, this Charm may be used to alter Drill, Morale or
+  the effective number of Relays.  Although this Charm is Stackable, stacked
+  uses cannot benefit the same Trait.
   
   At any time each member of the group may pay one point of temporary
   Willpower to resist the influence for one scene.  If the character continues

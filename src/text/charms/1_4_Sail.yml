@@ -3,10 +3,10 @@
 name: Sail
 --- !CharmLayout
 grid:
-- [bofb, fhh, siatm]
-- [exc, fs, sofd]
-- [rri, sbtw, cop]
-- [wmi, ~, ~]
+- [wmi, siatm, exc]
+- [rri, bofb, sofd]
+- [sbtw, fhh, cop]
+- [~, fs, ~]
 --- !Charm
 id: exc
 name: "(Any Sail Excellency)"
@@ -22,7 +22,9 @@ type: [Supplemental]
 keys: [Combo-OK, War]
 tags: [Sense-Enhancer]
 dur: Instant
-deps: [exc]
+deps: []
+refs:
+- ["Fine Passage Negotiating Style", DB, 170]
 text: |
 
   The primal chaos of the sea and the winding currents of the air hold few
@@ -212,7 +214,7 @@ type: [Simple]
 keys: [Combo-OK]
 tags: [Movement-Enhancer, Vehicle-Enhancer, Tracking-Mitigator]
 dur: Five days
-deps: [fhh, siatm]
+deps: [exc, fhh]
 text: |
 
   One way or another, the Children of Eris seem to have avoided being bound by

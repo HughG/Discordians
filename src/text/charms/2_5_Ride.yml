@@ -3,9 +3,9 @@
 name: Ride
 --- !CharmLayout
 grid:
-- [exc, ems, hup]
-- [iss, ssa, mpt]
-- [prm, hal, brw]
+- [prm, hal, iss]
+- [exc, hup, ems]
+- [brw, mpt, ssa]
 --- !Charm
 id: exc
 name: "(Any Ride Excellency)"
@@ -20,7 +20,7 @@ mins: {Ride: 2, Essence: 2}
 type: [Permanent]
 keys: [None]
 dur: Permanent
-deps: [exc]
+deps: []
 text: |
 
   The chaotic nature of the Steady Hand gives her an innate affinity with
@@ -72,7 +72,7 @@ type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 tags: ["Sense-Enhancer", "Domain Monitoring"]
 dur: Indefinite
-deps: [mpt]
+deps: [exc]
 text: |
 
   TODO
@@ -196,7 +196,7 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Touch, War]
 tags: ["Mount-Enhancer"]
 dur: Instant
-deps: []
+deps: [iss]
 text: |
 
   A connection to the wild nature of mounts can be used to soothe them, as
@@ -220,7 +220,7 @@ type: [Simple]
 keys: [Combo-OK, Touch]
 tags: ["Mount-Enhancer"]
 dur: One scene
-deps: [iss, ems]
+deps: [ems, mpt]
 refs:
 - ["Sometimes Horses Fly Approach", Core, 236]
 reviews:
@@ -247,7 +247,7 @@ type: [Simple]
 keys: [Touch, Obvious]
 tags: ["Concealment", "Posession"]
 dur: Indefinite
-deps: [mpt, ems]
+deps: [exc, prm]
 text: |
 
   At times the Heart-Strung have a burning desire to really get under the skin

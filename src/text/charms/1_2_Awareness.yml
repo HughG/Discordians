@@ -22,7 +22,7 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK]
 tags: ["Sensory Penalty Mitigator"]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   TODO
@@ -206,7 +206,7 @@ type: [Simple]
 keys: [Combo-OK]
 tags: [Sense-Enhancer, Posession]
 dur: Indefinite
-deps: []
+deps: [exc]
 refs:
 - ["Sense-Riding Technique", DB, 141]
 text: |
@@ -281,7 +281,7 @@ mins: {Awareness: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Illusion]
 dur: Indefinite
-deps: [exc, she]
+deps: [she]
 text: |
 
   TODO
@@ -359,7 +359,7 @@ type: [Simple]
 keys: [Combo-OK]
 tags: ["Sense-Enhancer"]
 dur: One scene
-deps: [tgof]
+deps: [exc, tgof]
 refs:
 - Occult_etn
 reviews:

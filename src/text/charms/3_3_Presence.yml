@@ -3,10 +3,10 @@
 name: Presence
 --- !CharmLayout
 grid:
-- [mtm, exc, opomt]
-- [ppi, htt, ppp]
-- [ipa, mlm, ewa]
-- [sos, pma, ~]
+- [sos, mlm, opomt]
+- [pma, ewa, ipa]
+- [ppi, exc, htt]
+- [mtm, ~, ppp]
 --- !Charm
 id: exc
 name: "(Any Presence>Excellency)"
@@ -148,7 +148,7 @@ mins: {Presence: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion, Emotion, War, Social]
 dur: One scene
-deps: [ppi, mlm]
+deps: [mlm, opomt]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -278,7 +278,7 @@ mins: {Presence: 3, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Shaping]
 dur: One scene
-deps: [mlm]
+deps: [sos]
 refs:
 - ["One of the Herd", Lunars, 176]
 reviews:
@@ -337,7 +337,7 @@ mins: {Presence: 2, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK]
 dur: Instant
-deps: [exc]
+deps: []
 reviews:
 - 2011-06-25 RWG
 text: |

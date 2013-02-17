@@ -3,10 +3,10 @@
 name: Linguistics
 --- !CharmLayout
 grid:
-- [zsd, ftt, tti]
-- [fwt, exc, mm]
-- [eks, nac, tbd]
-- [~, lwalt, ~]
+- [zsd, mm, tti]
+- [ftt, eks, tbd]
+- [exc, nac, lwalt]
+- [~, fwt, ~]
 --- !Charm
 id: exc
 name: "(Any Linguistics>Excellency)"
@@ -51,7 +51,7 @@ mins: {Linguistics: 3, Essence: 2}
 type: [Reflexive]
 keys: [Combo-OK, Obvious, Social]
 dur: One scene
-deps: [exc]
+deps: [mm]
 text: |
 
   TODO
@@ -80,7 +80,7 @@ type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Compulsion, War]
 tags: ["Action-Delayer"]
 dur: Instant
-deps: [exc]
+deps: []
 refs:
 - ["Paralyzing Contradiction", BoS2WT, 54]
 text: |
@@ -144,7 +144,7 @@ mins: {Linguistics: 3, Essence: 2}
 type: [Extra Action]
 keys: [Combo-OK, Obvious, Social, War]
 dur: Instant
-deps: [exc, zsd]
+deps: [zsd]
 text: |
 
   ``Out of chaos comes order,'' a wise man said more than once.  The Knights
@@ -167,7 +167,9 @@ mins: {Linguistics: 4, Essence: 3}
 type: [Simple]
 keys: [Combo-OK, Social, Stackable, War]
 dur: Indefinite
-deps: [ftt]
+deps: [mm]
+refs:
+- ["Poisoned Tongue Technique", DB, 130]
 text: |
 
   TODO
@@ -223,7 +225,7 @@ type: [Supplemental]
 keys: [Combo-OK, Illusion, Stackable]
 tags: ["Weapon Creation"]
 dur: One scene
-deps: []
+deps: [exc]
 text: |
 
   TODO
@@ -296,7 +298,7 @@ mins: {Linguistics: 3, Essence: 3}
 type: [Simple, Speed 6, DV -3]
 keys: [Combo-OK, Social, War]
 dur: Instant
-deps: []
+deps: [exc]
 text: |
 
   TODO

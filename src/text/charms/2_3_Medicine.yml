@@ -3,8 +3,8 @@
 name: Medicine
 --- !CharmLayout
 grid:
-- [sos, psm, exc]
 - [sod, ssp, mad]
+- [exc, sos, psm]
 - [fkp, ahf, vrt]
 - [wwm, ~, ifaab]
 --- !Charm
@@ -112,7 +112,7 @@ type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
 tags: ["Sickness Mitigator"]
 dur: Instant
-deps: [exc, sos]
+deps: [sos, ahf]
 text: |
 
   Most healers use observation, skill and judgement to determine the nature of
@@ -227,7 +227,7 @@ mins: {Medicine: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Illusion]
 dur: One scene or Special
-deps: []
+deps: [exc]
 text: |
 
   The greatest of martial artists can kill their foes with a single blow, but
@@ -298,7 +298,7 @@ type: [Reflexive, Step 2]
 keys: [Combo-OK, Obvious, Emotion]
 tags: [Limit-Adjuster]
 dur: Instant
-deps: [exc, ssp]
+deps: [ssp]
 reviews:
 - 2012-02-01 RWG
 text: |

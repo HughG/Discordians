@@ -3,10 +3,10 @@
 name: Survival
 --- !CharmLayout
 grid:
-- [dbr, exc, am]
-- [bib, wotch, teims]
-- [fafa, witd, lwra]
-- [monu, ~, ci]
+- [fafa, am, dbr]
+- [wotch, teims, bib]
+- [lwra, exc, witd]
+- [ci, ~, monu]
 --- !Charm
 id: exc
 name: "(Any Survival>Excellency)"
@@ -22,7 +22,7 @@ type: [Supplemental]
 keys: [Combo-OK]
 tags: ["Environmental Damage Mitigator"]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   Most find comfort behind the ordered walls of civilization, but the Daughter
@@ -41,7 +41,7 @@ type: [Supplemental]
 keys: [Combo-OK]
 tags: [Tracking-Mitigator]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   Strange snakes are proverbially said to lie with their forked tongues.
@@ -66,7 +66,7 @@ type: [Supplemental]
 keys: [Combo-OK]
 tags: [Summoning]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   The balance between order and chaos is closely linked to the balance between
@@ -157,7 +157,7 @@ type: [Supplemental]
 keys: [Combo-OK, Shaping]
 tags: [Tracking]
 dur: Instant
-deps: [am]
+deps: [am, wotch]
 refs:
 - ["Quarry Revelation Technique", DB, 182]
 - ["Trail-Concealing Measurement", DB, 182]
@@ -200,7 +200,7 @@ type: [Simple]
 keys: [Combo-OK, Shaping]
 tags: [Concealment, Disguise]
 dur: Indefinite
-deps: [wotch, witd]
+deps: [exc, wotch]
 text: |
 
   ``Idealism lives with rules. Realism lives with rocks.'' - Professor
@@ -373,7 +373,7 @@ type: [Reflexive]
 keys: [Combo-OK, Servitude]
 tags: [Group-Enhancer]
 dur: Indefinite (Special)
-deps: [witd]
+deps: [exc, witd]
 text: |
 
   The beautiful Chaos which is life must sometimes make a trade-off between

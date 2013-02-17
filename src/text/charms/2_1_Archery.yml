@@ -3,11 +3,11 @@
 name: Archery
 --- !CharmLayout
 grid:
-- [pps, qosas, pth]
-- [bta, tflab, btwt]
-- [fr, exc, bofa]
-- [bg, wwa, sp]
-- [~, bbta, ~]
+- [tflab, qosas, pps]
+- [fr, bta, pth]
+- [bg, exc, btwt]
+- [bbta, wwa, bofa]
+- [~, sp, ~]
 --- !Charm
 id: exc
 name: "(Any Archery>Excellency)"
@@ -56,7 +56,7 @@ mins: {Archery: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK, Obvious]
 dur: Instant
-deps: [exc, bbta]
+deps: [bbta]
 refs:
 - Thrown_ddt
 text: |
@@ -119,7 +119,7 @@ type: [Reflexive, Step 9]
 keys: [Combo-OK, Obvious]
 tags: ["Attack Retry"]
 dur: Instant
-deps: [exc]
+deps: []
 refs:
 - Porridge
 text: |
@@ -272,7 +272,7 @@ type: [Supplemental]
 keys: [Combo-OK, Obvious]
 tags: [Movement-Enhancer]
 dur: Instant
-deps: [fr, qosas]
+deps: [exc, qosas]
 text: |
 
   TODO
@@ -306,7 +306,7 @@ mins: {Archery: 4, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Emotion]
 dur: One scene or Special
-deps: [qosas]
+deps: [exc]
 refs:
 - Thrown_gae
 text: |
@@ -351,7 +351,7 @@ type: [Reflexive, Step 2]
 keys: [Combo-OK]
 tags: ["Perfect Defense"]
 dur: Instant
-deps: [exc, qosas]
+deps: [fr, qosas]
 reviews:
 - 2013-01-20 RWG
 refs:
@@ -450,7 +450,7 @@ mins: {Archery: 5, Essence: 3}
 type: [Reflexive]
 keys: [Combo-OK, Obvious]
 dur: Indefinite
-deps: [bofa]
+deps: [exc, bofa]
 refs:
 - ["Secure Den Prana", Lunars, 191]
 changes:

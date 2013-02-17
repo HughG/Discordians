@@ -4,7 +4,7 @@ name: Presence
 --- !CharmLayout
 grid:
 - [sos, mlm, opomt]
-- [pma, ewa, ipa]
+- [pma, ewa, idp]
 - [ppi, exc, htt]
 - [mtm, ~, ppp]
 --- !Charm
@@ -141,17 +141,21 @@ text: |
   and social situations.
   
 --- !Charm
-id: ipa
-name: "Instant Parley Agreement"
-cost: 3m
+id: idp
+name: "Instant Diplomacy Ploy"
+cost: 4m
 mins: {Presence: 3, Essence: 2}
 type: [Supplemental]
 keys: [Combo-OK, Compulsion, Emotion, War, Social]
 dur: One scene
 deps: [mlm, opomt]
+refs:
+- ["The Battle's End", BoS2WT, 69]
 reviews:
 - 2011-06-25 RWG
 text: |
+  
+  *[TODO: Compare with Spell "The Battle's End".]*
 
   The first step to winning is not to be defeated, and sometimes the best
   defense is to give no offense.  This Charm supplements a Presence-based
@@ -159,16 +163,17 @@ text: |
   debate or about to join or, in mass combat, the leader of a unit with
   Magnitude up to the Erisian's Essence.  The roll is an attempt to persuade
   the participants that battle (or social conflict) is not a good idea after
-  all, at least for the moment.  Each target or unit which is successfully
-  affected is persuaded to refrain from attacking.  The effect lasts for the
-  rest of the scene, or until any affected individual or unit makes another
-  Join Battle, Join War or Join Debate roll.  If a target has been wounded in
-  an exchange already, from the character or others who are clearly his
-  allies, they gain a number bonus dice to defend against the attack equal to
-  the number of Health levels or (for social units) Loyalty points lost so
-  far.  The target individual or unit leader must be able to hear or see the
-  character for this Charm to work, though they do not need to share a
-  language.
+  all, at least for the moment.  The targets must be able to understand the
+  character, unless some other effect makes this unnecessary.  Each target or
+  unit which is successfully affected is persuaded to refrain from attacking.
+  The effect lasts for the rest of the scene, or until any affected individual
+  or unit makes another Join Battle, Join War or Join Debate roll.  If a
+  target has been wounded in an exchange already, from the character or others
+  who are clearly his allies, they gain a number bonus dice to defend against
+  the attack equal to the number of Health levels or (for social units)
+  Loyalty points lost so far.  The target individual or unit leader must be
+  able to hear or see the character for this Charm to work, though they do not
+  need to share a language.
   
   The initial effect is an unnatural mental influence of Compulsion and may be
   resisted by spending a point of temporary Willpower.  Any compelled

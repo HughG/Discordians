@@ -163,7 +163,7 @@ name: "Storm-In-A-Teacup>Method"
 cost: (Special)m, 1wp
 mins: {Sail: 3, Essence: 3}
 type: [Simple, Dramatic Action]
-keys: [Combo-OK, Compulsion]
+keys: [Combo-OK]
 dur: Indefinite
 deps: []
 text: |
@@ -172,24 +172,18 @@ text: |
   patterns of weather, but that doesn't prevent them from being their usual
   meddling selves when it suits them.
   
-  Using this Charm, the Travelling Sailsman subverts the instructions given to
-  local weather spirits, and stores the effects of current weather for later
-  use.  The weather in the affected area will revert to a gentle breeze, not
-  quite dead calm.  This is achieved by unnatural mental influence on the
-  local spirits, which they may resist as a group if at least two-thirds spend
-  1 Willpower each, in which case the character gains a single point of Hodge.
-  The will of the weather will be stored in some fist-sized, non-magical
-  vessel of the character's choice, either pre-constructed or improvised from
-  materials at hand.
+  Using this Charm, the Travelling Sailsman stores the effects of current
+  weather for later use.  Releasing weather from one realm in another may have
+  unexpected effects.  The conditions in the affected area will revert to a
+  gentle breeze, not quite dead calm.  The elemental or other forces will be
+  stored in some fist-sized, non-magical vessel of the character's choice,
+  either pre-constructed or improvised from materials at hand.
   
   The weather remains stored until the container is destroyed, the character
   releases the commitment of motes, or the character moves farther from the
   container than the range affected.  At that point, the stored weather
-  instructions are released upon the local spirits, to be carried out as
-  originally intended, albeit at a different time.  If the release occurs in a
-  significantly different location, the spirits in that location may
-  separately choose to resist these new instructions, again possibly gaining
-  the character a point of Hodge.
+  patterns are released upon the local environment, to be unfold as they would
+  have originally, albeit at a different time and place.
   
   The maximum area of effect is (Essence x 10) square miles, and must be a
   roughly circular area centered on the character.  The cost depends on the
@@ -197,13 +191,13 @@ text: |
   to 30 square miles, 8 motes up to 40 and so on.  The weather to be affected
   must be controlled by beings of Essence no more than the character's own,
   which may also limit the affected area.
-  
-  The effects of this Charm are not limited to weather goverened by spirits of
-  Air or Water, but may be applied to any transient environmental effects of
-  equivalent type and power, such as the Omen Weather which heralds demons
-  into Creation.  As with most Discordian Charms, this one applies in various
-  realms, not only in Creation, although the effects of releasing weather from
-  one realm in another are unpredictable.
+
+  In Creation this Charm achieves its effect by subverting the instructions
+  given to local weather spirits, but it will work just as well on any
+  equivalent force in or from other realms of reality, including the Omen
+  Weather which precedes demons entering Creation.  Those learning this Charm
+  are warned that the effects of releasing weather from one realm in another
+  are unpredictable.
   
 --- !Charm
 id: sofd

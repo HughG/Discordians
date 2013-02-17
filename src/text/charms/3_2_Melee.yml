@@ -249,30 +249,25 @@ deps: []
 refs:
 - Dodge_hpf
 reviews:
-- 2011-06-25 RWG
-changes:
-- 2012-09-11 HUGR
+- 2013-02-17 RWG
 text: |
 
   TODO
-
-  *[TODO: Compare against <<Dodge_hpf>>, which has different costs and
-  conditions.]*
   
   If the character attempts to parry a non-ranged attack and succeeds
-  (including the use of perfect defenses), she may activate this Charm to
-  cause the attack to be re-rolled against any other valid target.  If she
-  fails to parry it, and it is not unblockable, she may pay 5 motes to
+  (including the use of perfect defenses), she may activate this Charm for 3
+  motes to cause the attack to be re-rolled against any other valid target.
+  If she fails to parry it, and it is not unblockable, she may pay 5 motes to
   activate this Charm.  If the Charm is activated and there are no other valid
   targets, the attack fails altogether.
   
   The attacker may ignore the unnatural mental influence of this Charm by
-  spending a point of temporary Willpower.  This Charm is normally ineffective
-  against ranged attacks because, by the time such an attack can be parried,
-  the attacker can no longer be influenced to redirect it.  However, if the
-  attack is subject to some effect which allows it to be controlled after it
-  is launched, the character will instinctively know this, and can apply this
-  Charm.
+  spending two points of temporary Willpower.  This Charm is normally
+  ineffective against ranged attacks because, by the time such an attack can
+  be parried, the attacker can no longer be influenced to redirect it.
+  However, if the attack is subject to some effect which allows it to be
+  controlled after it is launched, the character will instinctively know this,
+  and can apply this Charm.
   
 --- !Charm
 id: ktt
@@ -330,10 +325,6 @@ text: |
   wild and artless swing nonetheless happens to end up at the exactly the
   right spot to deflect an impending blow.
   
-  *[TODO: RWG said that <<Dodge_pe>> was flavorless because it was a straight
-  perfect, and the first purchase of this Charm is, too.  Should I change
-  it?]*
-
   This Charm allows the Discordian to perfectly defend against any attack,
   even if it is unblockable.  A second purchase at Essence 4+ allows the
   character to pay an additional two motes to send the bulk of his weapon

@@ -16,10 +16,10 @@ text: |
 --- !Charm
 id: flt
 name: "Friends Like These"
-cost: 4m; or 4m, 1wp
+cost: 3m; or 3m, 1wp
 mins: {War: 2, Essence: 2}
 type: [Simple, Speed 5 in long ticks]
-keys: [Combo-OK, Compulsion, Social, War]
+keys: [Combo-OK, Compulsion, War]
 dur: Indefinite
 deps: [btt]
 refs:
@@ -34,15 +34,16 @@ text: |
   Discordian attempts to persuade one or more enemy unit(s) that his own unit
   is not a threat.  He rolls ([Charisma or Manipulation] + War) and compares
   the total against the MDV of the commander of any enemy unit he encounters
-  (using War or Socialize as the relevant ability, as applicable).  As long as
-  his unit does not attack, and is not observed taking opposing actions (such
-  as sapping, theft of resources, poisoning of supplies etc.), enemy units
-  whose MDV is less than the total rolled by the Taskmaster will not choose to
-  attack, detain or otherwise or oppose his unit.  The character can choose to
-  spend a point of Willpower on the Charm to give it the Compulsion keyword,
-  in which case it becomes unnatural mental influence, and succeeds
-  automatically against each enemy unit encountered, unless that unit's leader
-  spends a point of Willpower to resist.
+  (using War or Socialize as the relevant ability, as applicable).  He need
+  not directly interact with the other unit, and therefore need not share a
+  common language.  As long as his unit does not attack, and is not observed
+  taking opposing actions (such as sapping, theft of resources, poisoning of
+  supplies etc.), enemy units whose MDV is less than the total rolled by the
+  Taskmaster will not choose to attack, detain or otherwise or oppose his
+  unit.  The character can choose to spend a point of Willpower on the Charm
+  to give it the Compulsion keyword, in which case it becomes unnatural mental
+  influence, and succeeds automatically against each enemy unit encountered,
+  unless that unit's leader spends a point of Willpower to resist.
   
   The Charm's effects end immediately if the unit becomes engage in open
   hostilities.  If they are observed undertaking sabotage or similar indirect

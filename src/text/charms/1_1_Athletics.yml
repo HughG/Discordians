@@ -6,12 +6,11 @@ grid:
 - [ffm, gas, bu]
 - [mopg, ~, ec]
 - [nbt, exc, fash]
-- [hht, ~, fasu]
+- [hht, nfr, fasu]
 --- !Charm
 id: exc
 name: "(Any Athletics>Excellency)"
 text: |
-  
   
 --- !Charm
 id: ffm
@@ -166,7 +165,7 @@ name: "Narcissus Blossom>Technique"
 cost: 2m + 3m per dot
 mins: {Athletics: 3, Essence: 2}
 type: [Simple]
-keys: [None]
+keys: [Combo-OK]
 tags: [Attribute-Enhancer]
 dur: One scene
 deps: [exc]
@@ -184,7 +183,32 @@ text: |
   be spread across several.  Each dot applied increases the cost of the Charm
   by 3 motes, though the player need not apply all the dots.  The dice added
   count towards the total which may be added by Charms.
+
+  At Essence 4+, the Charm's duration extends to Indefinite.
+
+--- !Charm
+id: nfr
+name: "Narcissus' Face Reflected"
+cost: -- (+2m, 1wp)
+mins: {Athletics: 4, Essence: 3}
+type: [Permanent]
+keys: [Combo-OK, Emotion]
+tags: [Attribute-Enhancer]
+dur: Permanent
+deps: [nbt]
+text: |
+
+  TODO
   
+  This Charm allows the character to extend the benefits of its prerequisites
+  to a group equal in Magnitude to the character's Essence, inspiring them to
+  greater achievements through his own perfection.  All affected beings
+  temporarily gain a positive Intimacy to the character, as an Emotion effect.
+  The tone of the Intimacy must be one of awe, lust, infatuation or other
+  inspiring attraction.  Resisting this costs two points of temporary
+  Willpower, but doing so means that the target does not benefit from the
+  Attribute enhancements.
+
 --- !Charm
 id: hht
 name: "Hurtling Hermit Technique"

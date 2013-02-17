@@ -91,12 +91,11 @@ text: |
   objects or beings are the same as those described for Stone Skin
   Substitution.
   
-  The character suffers at most minimum damage (usually, the attacker's
-  Essence in dice), while the receiving object suffers full damage.  If the
-  damage is insufficient to overcome the Hardness of the object then the force
-  rebounds.  If the attack is hand-to-hand rather than ranged, then the
-  attacker must check for Knockdown if the damage exceeds (attacker's Stamina
-  + Resistance).
+  The character suffers at most minimum damage, while the receiving object
+  suffers full damage.  If the damage is insufficient to overcome the Hardness
+  of the object then the force rebounds.  If the attack is hand-to-hand rather
+  than ranged, then the attacker must check for Knockdown if the damage
+  exceeds (attacker's Stamina + Resistance).
   
   The character may also activate this Charm if subject to a
   magically-enhanced Knockback effect which causes additional damage on
@@ -117,8 +116,8 @@ text: |
 --- !Charm
 id: iia
 name: "Infinite Impact>Absorption"
-cost: 10m
-mins: {Resistance: 4, Essence: 3}
+cost: 11m
+mins: {Resistance: 5, Essence: 3}
 type: [Reflexive, Step 7]
 keys: [Combo-OK, Obvious]
 tags: ["Perfect Defense"]
@@ -132,16 +131,13 @@ text: |
   
   This Charm perfectly absorbs the effects of any physical attack, reducing
   the raw damage to zero after all other effects.  The defense is achieved by
-  a concentration of Erisian Essence at the relevant points of contact, so it
-  is accompanied by a vivid manifestation of such.  This will not be enough to
-  cause any damage or significantly distract attackers, but a clever
-  description may pave the way for later stunts.
+  a concentration of Erisian Essence at the relevant points of contact, and
+  is accompanied by a vivid and focused manifestation of such.  An attacker in
+  melee range will be subjected to an instantaneous environmental damage
+  effect inflicting (Essence) dice of bashing Damage and with a Trauma rating
+  of (Essence).  At Essence 5+ the damage becomes lethal.
   
-  *[TODO: Need an FoI, and maybe more flavour.]*
-  
-  *[TODO: With repurchase at Essence 4, spend +2m to impose external penalty
-  on others for next action due to Erisian Essence manifestation.  Maybe list
-  Element-specific penalties.]*
+  This Charm is subject to one of the Discordian Flaws of Invulnerability.
   
 --- !Charm
 id: oou

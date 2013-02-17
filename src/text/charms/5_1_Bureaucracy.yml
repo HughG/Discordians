@@ -148,9 +148,6 @@ text: |
   project is to be kept secret, but their belief is no longer magically
   enforced, so they may be persuaded otherwise without the Leader spending
   Loyalty points.
-
-  *[TODO: This Charm, especially, needs to say how it works in the
-  Creation-Ruling Mandate.]*
   
 --- !Charm
 id: bots

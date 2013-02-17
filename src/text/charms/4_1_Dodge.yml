@@ -4,9 +4,9 @@ name: Dodge
 --- !CharmLayout
 grid:
 - [cf, aci, samt]
-- [hpf, exc, vmn]
-- [pe, gss, ema]
-- [~, mse, ~]
+- [apf, exc, vmn]
+- [xxx, gss, ema]
+- [pe, mse, ~]
 --- !Charm
 id: exc
 name: "(Any Dodge>Excellency)"
@@ -53,76 +53,80 @@ text: |
   external penalty on his next attack roll (but not damage roll).
   
 --- !Charm
-id: hpf
-name: "Hostility-Proof Facade"
+id: apf
+name: "Aggression-Proof Facade"
 cost: 4m
 mins: {Dodge: 3, Essence: 2}
 type: [Reflexive, Step 6]
-keys: [Combo-OK, Compulsion]
+keys: [Combo-OK, Illusion]
+tags: ["Attack Redirection"]
 dur: Instant
 deps: [aci, cf]
 refs:
 - Melee_hrh
-changes:
-- 2012-09-13 HUGR 
+reviews:
+- 2013-02-17 RWG
 text: |
 
-  Surely, those who bring true understanding of the nature of things should
-  not be hated, but loved?  This Charm convinces the perpetrator of a
-  non-ranged attack, at least on an unconscious level, that the Priestess of
-  Eris is not worthy of their ire--but, there being a need for balance in all
-  things, someone else has to take the fall.  If the character attempts to
-  dodge such an attack and fails, she may activate this Charm to cause the
-  attack to be re-rolled against any other valid target.  If there are no
-  other valid targets, the attack fails altogether.
+  TODO
+  
+  This Charm attempts to confuse an attacker as to the character's exact
+  location--and, there being a need for balance in all things, arange for
+  someone else to take the fall.  If the character attempts to dodge an attack
+  and fails, she may activate this Charm to cause the attack to be re-rolled
+  against any other valid target.  If there are no other valid targets, the
+  attack fails altogether.
 
   This Charm is not applicable against attacks which are undodgeable.  The
   attacker may ignore the unnatural mental influence of this Charm by spending
-  a point of temporary Willpower.  This Charm is normally ineffective against
-  ranged attacks because, by the time such an attack can be parried, the
-  attacker can no longer be influenced to redirect it.  However, if the attack
-  is subject to some effect which allows it to be controlled after it is
-  launched, the character will instinctively know this, and can apply this
-  Charm.
+  two points of temporary Willpower.
   
+--- !Charm
+id: xxx
+name: "XXX"
+cost: 4m
+mins: {Dodge: 4, Essence: 2}
+type: [Reflexive, Step 6]
+keys: [Combo-OK, Social]
+tags: ["Attack Redirection"]
+dur: Instant
+deps: [apf, exc]
+text: |
+
+  TODO
+
+  This Charm upgrades its prerequisite to allow the character to redirect
+  mental influence, natural or otherwise, if she attempts to dodge it and
+  fails.
+
 --- !Charm
 id: pe
 name: "Perfect Excuse"
-cost: -- (+ 6m)
+cost: 10m; or 12m, 1wp
 mins: {Dodge: 4, Essence: 2}
 type: [Permanent]
 keys: [Combo-OK, Compulsion, Obvious]
 tags: ["Perfect Defense"]
 dur: Permanent
-deps: [hpf]
+deps: [gss]
 refs:
 - Melee_ama
 reviews:
-- 2011-01-03 RWG Flavorless?
-changes:
-- 2012-09-13 HUGR
+- 2011-02-17 RWG
 text: |
-
-  *[TODO: RWG reckons this is flavorless.]*
 
   Against the greatest of opponents, it may not be enough to trick reality
   instead.  Skilled Discordians will tweak space and time, as well as their
   opponent's minds, to evade blades and blows.
 
-  This Charm extends its prerequisite to apply to undodgeable attacks, for a
-  total cost of ten motes.  If the attacker chooses to resist the Compulsion
-  to redirect his attack, or there is no valid alternative target, this Charm
-  furthermore ensures that a perfectly-placed extended foot will force the
-  attacker to check for Knockdown.  Against ranged attacks, the Compulsion
-  still does not normally apply, and the Knockdown check is only required if
-  the attacker is within Dash range, as the character slips a tripping limb
-  through Elsewhere.
+  This Charm causes the character to flicker momentarily into and back out of
+  Elsewhere, perfectly dodging any attack, even if it is undodgeable.  A
+  second purchase at Essence 4+ allows the character to spend an additional
+  two motes and one point of Willpower to redirect his opponent's attack
+  through Elsewhere, to any other valid target within (Dodge) yards, excluding
+  the attacker herself.
 
   This Charm has one of the Discordian Flaws of Invulnerability.
-
-  *[TODO: Maybe weakness against ranged, plus the fact that the opponent can
-  spend Willpower to resist, are FoI enough by themselves.  Maybe increase wp
-  cost to resist?  Maybe let it work against ranged as well?]*
   
 --- !Charm
 id: samt
@@ -132,7 +136,7 @@ mins: {Dodge: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Obvious]
 dur: Indefinite
-deps: [exc, aci]
+deps: [apf, exc]
 refs:
 - ["Shadowy Simulacrums of Smoke", BoS2WT, 59]
 reviews:
@@ -179,7 +183,7 @@ type: [Reflexive, Step 2]
 keys: [Combo-OK]
 tags: ["Multiple Attack Mitigator"]
 dur: Until next action
-deps: [samt]
+deps: [cf]
 text: |
 
   Erisians laugh in the face of danger (or sometimes behind its back), and
@@ -226,22 +230,22 @@ text: |
 id: gss
 name: "Grey-Space Shuffle"
 cost: 4m
-mins: {Dodge: 4, Essence: 3}
+mins: {Dodge: 4, Essence: 2}
 type: [Reflexive, Step 9]
 keys: [Combo-Basic, Counterattack]
 tags: ["Flurry-Breaker", "Movement-Enhancer"]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   TODO
   
   This Charm allows the Unhinged to instantly transport herself for a short
-  distance, if she has used her Dodge DV to respond to an attack.  The
-  distance is determined by rolling the charcter's [Wits + Dodge] and
-  multiplying the successes by her normal Move distance.  This movement
-  happens instantly, going via Elsewhere, but uses up the character's Move
-  action.
+  distance, if she has attempted to dodge an attack, regardless of whether or
+  not she succeeds.  The distance is determined by rolling the charcter's
+  (Wits + Dodge) and multiplying the successes by her normal Move distance.
+  This movement happens instantly, going via Elsewhere, but uses up the
+  character's Move action.
   
   The character can choose the direction of movement but must travel the full
   distance rolled, and must know (or at least firmly believe) that there is a
@@ -268,7 +272,7 @@ type: [Permanent]
 keys: [Combo-Basic, War]
 tags: ["Flurry-Breaker", "Group-Enhancer", "Movement-Enhancer"]
 dur: Permanent
-deps: [gss]
+deps: [exc, gss]
 text: |
 
   Discordians often work alone, but friends are important, too.
@@ -280,8 +284,8 @@ text: |
   in this fashion, the Charm cost increases by one point of Willpower, plus 3
   motes per dot of Magnitude of the group.
   
-  The distance in this case determined by rolling the charcter's [Wits +
-  Dodge] and multiplying the successes by her normal Dash (not Move) distance.
+  The distance in this case determined by rolling the charcter's (Wits +
+  Dodge) and multiplying the successes by her normal Dash (not Move) distance.
   The Charm can only be applied in response to an attack on (or an area attack
   which includes) any member of the group, and only when it would be valid for
   the character herself (who may not be the actual target) to try to dodge the

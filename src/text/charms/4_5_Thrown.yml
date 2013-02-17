@@ -400,14 +400,14 @@ text: |
 id: gae
 name: "Golden Apple Enticement"
 cost: 5m, 1wp
-mins: {Thrown: 3, Essence: 2}
+mins: {Thrown: 4, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Emotion, Social]
-dur: Instant
+dur: One scene
 deps: [dadb]
 refs:
 - Archery_pth
-- [HRS, Lunars, 169]
+- ["Herd Reinforcement Stance", Lunars, 169]
 text: |
 
   TODO
@@ -415,31 +415,30 @@ text: |
   *[TODO 2012-08-12 HUGR: Check against <<Archery_pth>>, which is similar but
   has different cost, duration and detailed effects.]*
 
-  This Charm supplements a thrown attack, attempting to create an Intimacy
-  around the action in observers.  Provided the attack is successful, the
-  character rolls his [(Charisma or Manpiulation) + Thrown] and compares it to
-  the MDV of all who witnessed it, including the target.  If the character
-  used any effects to enhance his dice pool for the thrown attack, they also
-  apply to this roll.  All whose MDV is less than or equal to the successes on
-  this roll immediately gain a full-fledged Intimacy of the character's
-  choice, as an unnatural Emotion effect.  The subject of the Intimacy must be
-  the character, the thrown object, or the target, whereas the tone may be any
-  emotion, even if it seems inappropriate to the situation.  Affected beings
-  can spend two points of Willpower to shake off this influence at any time
-  during the scene when this Charm is invoked.  Thereafter the Intimacy loses
-  its magical protection, but likewise affected beings will normally have no
-  desire to lose it, as it becomes a natural Intimacy.  Of course, conflicting
-  Intimacies, persuasion by others and so on may lead them to work against it.
-  Having shaken off the effect, recognising the source costs another point of
-  Willpower.
+  This Charm is activated when taking a Thrown action, though it need not be
+  an attack, and is an attempt to create an Intimacy around the action in
+  observers.  Provided the action is successful, the character rolls his
+  [(Charisma or Manpiulation) + Thrown] and compares it to the MDV of all who
+  witnessed it, including the target if any.  If the character used any
+  effects to enhance his dice pool for the action, they can also apply to this
+  roll, at no extra cost.  All whose MDV is less than or equal to the
+  successes on this roll immediately gain a full-fledged Intimacy of the
+  character's choice, as an unnatural Emotion effect.  The subject of the
+  Intimacy must be the character, the thrown object, or the target, whereas
+  the tone may be any emotion, even if it seems inappropriate to the
+  situation.  Affected beings can spend two points of Willpower to shake off
+  this influence at any time during the scene when this Charm is invoked.
+  Thereafter the Intimacy loses its magical protection, but likewise affected
+  beings will normally have no desire to lose it, as it becomes a natural
+  Intimacy.  Of course, conflicting Intimacies, persuasion by others and so on
+  may lead them to work against it.  Having shaken off the effect, recognising
+  the source costs another point of Willpower.
 
-  This Charm can also be applied in Social situations, by simply taking a
-  [(Charisma or Manpiulation) + Thrown] action, without actually making a
-  physical attack--throwing down a guantlet in challenge, releasing a dove at
-  a ceremony, or tossing a bouquet to an object of the character's desire, for
-  instance.  The target in this case is the target of the interaction, not
-  necessarily the person or object struck by the thrown item.  Furthermore,
-  being Reflexive, this Charm can be used in Combos with Charms from other
-  Abilities.
+  This Charm can also be applied in Social situations--throwing down a
+  guantlet in challenge, releasing a dove at a ceremony, or tossing a bouquet
+  to an object of the character's desire, for instance.  The target in this
+  case is the target of the interaction, not necessarily the person or object
+  struck by the thrown item.  Furthermore, being Reflexive, this Charm can be
+  used in Combos with Charms from other Abilities.
   
 ...

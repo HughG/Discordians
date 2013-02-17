@@ -1,17 +1,23 @@
 * TODO this week
 
-** Charms
-- Name Socialize Charms
-
 ** Charms: Update for 2.5
 - Keywords
 -- Native
 -- Martial and Martial-ready
 -- Overdrive and Reactor
-- General Charm approaches and costs.
+
+** Charms: other
+- Ride: effect on non-animals.
+- Appropriate use of Excellencies as prerequisites.
+-- 1: 1
+-- 2: done
+-- 3: done
+-- 4: 1 2 3 4 5
+-- 5: 1 2 3 4 5
+-- Resistance has none!
 
 ** Character Creation
-- Move "Thematics" text
+- Move "Thematics" text.
 
 ----------------------------------------------------------------------
 
@@ -21,25 +27,19 @@
 - Fix Kou-an's location (or keep location and change story -- heading to
 Varangia?)
 
-** Fonts
-- Need standard and small caps.
-- Standard needs [, ], /, ÷, ..., bullet, nbsp?
-- Small caps needs /, ÷?, ..., nbsp?
-
 ** 3_Traits
 - Quotes for Parametadivisions
 - Images for Divisional Symbols
+- Notes on which Charms are good for posing as which other Exalted types.
 
 ** Formatting
-- Make only the first index lines fully justified.  (May need FOP upgrade.)
+- Make only the first index lines fully justified.  (May need FOP upgrade.
+Or, just replace spaces with nbsp?)
 
 ** Charms: Overall
 - Mote pool expanders
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)
-- Appropriate use of Excellencies as prerequisites.
--- Resistance has none!
-- Balance per Ability
 - Balance per Division
 - Maybe Charms which stretch the meaning of an Ability shouldn't be too
 deep into Charm trees, otherwise they might not be so widely used.
@@ -47,8 +47,6 @@ deep into Charm trees, otherwise they might not be so widely used.
 - Remove specific mention of Hodge and Podge as much as possible.
 - Remove mention of sobriquets which now belong to Parametadivisons.
 - Links to bibitems.
-
-** Online autobuild
 
 ----------------------------------------------------------------------
 
@@ -80,6 +78,8 @@ deep into Charm trees, otherwise they might not be so widely used.
 ** Sample Characters
 
 ** Divisions and Parametadivisions
+
+** Online autobuild
 
 *** Nocturnals
 - Parametadivision (Warp from Weft? Or should they be Night from Day, and

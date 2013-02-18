@@ -3,10 +3,10 @@
 name: Occult
 --- !CharmLayout
 grid:
-- [exc, etn, asi]
-- [ves, sw, rtm]
-- [eee, rio, cfp]
-- [tss, sss, pss]
+- [sw, etn, asi]
+- [rio, ves, rtm]
+- [eee, cfp, exc]
+- [tcs, scs, aas]
 --- !Charm
 id: exc
 name: "(Any Occult>Excellency)"
@@ -101,7 +101,7 @@ type: [Simple]
 keys: [None]
 tags: ["Sense-Enhancer"]
 dur: One scene
-deps: [exc, sw]
+deps: [sw]
 refs:
 - Awareness_sots
 reviews:
@@ -177,7 +177,7 @@ mins: {Occult: 5, Essence: 4}
 type: [Simple]
 keys: [Shaping, Touch]
 dur: Indefinite
-deps: [rio]
+deps: [exc, rio]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -205,7 +205,7 @@ mins: {Occult: 5, Essence: 4}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-Basic, Shaping, Touch]
 dur: Indefinite
-deps: [etn]
+deps: [exc, etn]
 reviews:
 - 2012-02-18 RWG
 updates:
@@ -244,7 +244,7 @@ text: |
   applying to the character who used this Charm.
   
 --- !Charm
-id: tss
+id: tcs
 name: "Triangular Circle>Sorcery"
 cost: --
 mins: {Occult: 3, Essence: 3}
@@ -265,14 +265,14 @@ text: |
   versions may be purchased separately by the same character.
   
 --- !Charm
-id: sss
+id: scs
 name: "Square Circle>Sorcery"
 cost: --
 mins: {Occult: 4, Essence: 4}
 type: [Permanent]
 keys: [None]
 dur: Instant
-deps: [tss]
+deps: [tcs]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -284,14 +284,14 @@ text: |
   purchased separately by the same character.
   
 --- !Charm
-id: pss
+id: aas
 name: "Appropriation>of Adamantine Sorcery"
 cost: 10m, 1wp
 mins: {Occult: 5, Essence: 5}
 type: [Reflexive, Step 2]
 keys: [Combo-Basic]
 dur: Indefinite
-deps: [sss, cfp]
+deps: [scs, cfp]
 reviews:
 - 2012-02-18 RWG
 text: |

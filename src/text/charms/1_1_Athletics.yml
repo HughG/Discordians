@@ -3,10 +3,10 @@
 name: Athletics
 --- !CharmLayout
 grid:
-- [ffm, gas, bu]
-- [mopg, ~, ec]
-- [nbt, exc, fash]
-- [hht, nfr, fasu]
+- [gas, ec, bu]
+- [exc, mopg, ffm]
+- [nbt, nfr, fash]
+- [hht, ~, fasu]
 --- !Charm
 id: exc
 name: "(Any Athletics>Excellency)"
@@ -68,7 +68,7 @@ type: [Simple]
 keys: [Combo-OK, Shaping, Obvious]
 tags: [Movement-Enhancer]
 dur: Indefinite
-deps: [ffm, gas]
+deps: [exc, gas]
 text: |
 
   Many fools regard a self-centered attitude as a bad thing, but the Law Unto
@@ -168,7 +168,7 @@ type: [Simple]
 keys: [Combo-OK]
 tags: [Attribute-Enhancer]
 dur: One scene
-deps: [exc]
+deps: []
 text: |
 
   The perfection of the physical form based on athletic prowess can have
@@ -193,21 +193,25 @@ cost: -- (+2m, 1wp)
 mins: {Athletics: 4, Essence: 3}
 type: [Permanent]
 keys: [Combo-OK, Emotion]
-tags: [Attribute-Enhancer]
+tags: ["Attribute-Enhancer", "Group-Enhancer"]
 dur: Permanent
-deps: [nbt]
+deps: [nbt, exc]
 text: |
 
   TODO
   
   This Charm allows the character to extend the benefits of its prerequisites
   to a group equal in Magnitude to the character's Essence, inspiring them to
-  greater achievements through his own perfection.  All affected beings
-  temporarily gain a positive Intimacy to the character, as an Emotion effect.
-  The tone of the Intimacy must be one of awe, lust, infatuation or other
-  inspiring attraction.  Resisting this costs two points of temporary
-  Willpower, but doing so means that the target does not benefit from the
-  Attribute enhancements.
+  greater achievements through her own perfection.  All beings who can see the
+  character--or otherwise perceive her physical grace--temporarily gain a
+  positive Intimacy to her, as an Emotion effect, and simultaneously gain the
+  same Attribute improvements.  The tone of the Intimacy must be one of awe,
+  lust, adoration or other inspiring attraction.  If there are any unwilling
+  observers, the character must roll ([Dexterity or Appearance] + Athletics)
+  and compare her successes to the Mental Defense Values of those observers.
+  Any whose MDV is greater are immune, while others must pay two points of
+  Willpower to resist.  Resisting means that the target neither takes on the
+  Intimacy nor benefits from the Attribute enhancements.
 
 --- !Charm
 id: hht
@@ -250,7 +254,7 @@ keys: [Combo-OK]
 tags: ["Flurry-Enhancer", "Multiple Attack Mitigator"]
 tags: []
 dur: Instant
-deps: [exc]
+deps: [ffm]
 text: |
 
   Focussing her mind and body on the current moment, the Ignorant Child is

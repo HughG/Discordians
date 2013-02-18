@@ -5,8 +5,8 @@ name: Thrown
 grid:
 - [ssf, ddt, ees]
 - [exc, sts, vpc]
-- [ppp, dadb, adc]
-- [evr, bpp, gae]
+- [gae, dadb, ppp]
+- [bpp, adc, evr]
 --- !Charm
 id: exc
 name: "(Any Thrown>Excellency)"
@@ -21,7 +21,7 @@ type: [Supplemental]
 tags: [Range-Extender, "Prepared Attack"]
 keys: [Combo-OK]
 dur: Instant
-deps: [exc]
+deps: []
 text: |
 
   TODO
@@ -234,7 +234,7 @@ type: [Supplemental]
 tags: [Movement-Enhancer]
 keys: [Combo-OK, Obvious]
 dur: Instant
-deps: [exc, dadb]
+deps: [dadb]
 text: |
 
   TODO
@@ -404,7 +404,7 @@ mins: {Thrown: 4, Essence: 2}
 type: [Reflexive, Step 1]
 keys: [Combo-OK, Emotion, Social]
 dur: One scene
-deps: [dadb]
+deps: [exc, dadb]
 refs:
 - Archery_pth
 - ["Herd Reinforcement Stance", Lunars, 169]

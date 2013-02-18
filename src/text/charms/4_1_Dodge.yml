@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 --- !CharmGroup
 name: Dodge
 --- !CharmLayout
 grid:
-- [cf, aci, samt]
-- [apf, exc, vmn]
-- [xxx, gss, ema]
-- [pe, mse, ~]
+- [cf, arf, aci]
+- [vmn, idt, samt]
+- [ema, exc, mse]
+- [~, gss, pe]
 --- !Charm
 id: exc
 name: "(Any Dodge>Excellency)"
@@ -53,8 +53,8 @@ text: |
   external penalty on his next attack roll (but not damage roll).
   
 --- !Charm
-id: apf
-name: "Aggression-Proof Facade"
+id: arf
+name: "Aggression-Reflecting Facade"
 cost: 4m
 mins: {Dodge: 3, Essence: 2}
 type: [Reflexive, Step 6]
@@ -82,15 +82,15 @@ text: |
   two points of temporary Willpower.
   
 --- !Charm
-id: xxx
-name: "XXX"
+id: idt
+name: "Influence-Diverting Trance"
 cost: 4m
 mins: {Dodge: 4, Essence: 2}
 type: [Reflexive, Step 6]
 keys: [Combo-OK, Social]
 tags: ["Attack Redirection"]
 dur: Instant
-deps: [apf, exc]
+deps: [arf, exc]
 text: |
 
   TODO
@@ -136,7 +136,7 @@ mins: {Dodge: 3, Essence: 3}
 type: [Reflexive, Step 2]
 keys: [Combo-OK, Illusion, Obvious]
 dur: Indefinite
-deps: [apf, exc]
+deps: [arf, exc]
 refs:
 - ["Shadowy Simulacrums of Smoke", BoS2WT, 59]
 reviews:

@@ -4,9 +4,9 @@ name: Stealth
 --- !CharmLayout
 grid:
 - [hipsa, ywt, ssp]
-- [wds, exc, yf]
-- [sim, ff, iomas]
-- [sse, ~, tus]
+- [exc, sse, yf]
+- [tus, ff, sim]
+- [iomas, ~, wds]
 --- !Charm
 id: exc
 name: "(Any Stealth>Excellency)"
@@ -129,7 +129,7 @@ type: [Simple]
 keys: [Combo-Basic]
 tags: ["Concealment"]
 dur: Indefinite
-deps: [sim]
+deps: [exc, sim]
 refs:
 - ["Invisible Statue Spirit", Core, 230]
 reviews:
@@ -253,7 +253,7 @@ type: [Simple]
 keys: [Combo-OK, War]
 tags: ["Concealment", "Group-Enhancer"]
 dur: Indefinite
-deps: [exc, hipsa]
+deps: [hipsa]
 refs:
 - ["Rats in the Basement Style", Lunars, 192]
 reviews:
@@ -391,7 +391,7 @@ type: [Reflexive]
 keys: [Combo-OK, Shaping]
 tags: ["Concealment", "Recumbent Destiny Enhancer"]
 dur: One scene
-deps: [exc, sim, wds]
+deps: [sim, wds]
 reviews:
 - 2013-01-20 RWG
 text: |
@@ -430,7 +430,7 @@ type: [Simple]
 keys: [Combo-OK, Shaping, Stackable]
 tags: ["Concealment", "Disguise", "Recumbent Destiny Enhancer"]
 dur: Indefinite
-deps: [ff, iomas]
+deps: [exc, ff, iomas]
 refs:
 - Survival_ci
 - ["Ceasing to Exist Approach", Sidereals, 172]

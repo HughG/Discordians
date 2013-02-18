@@ -3,10 +3,10 @@
 name: Craft
 --- !CharmLayout
 grid:
-- [ics, exc, rrt]
-- [ort, bem, est]
-- [bwr, cpc, rwrt]
-- [eeoe, eed, prp]
+- [ics, bem, rrt]
+- [ort, exc, est]
+- [bwr, cpc, prp]
+- [rwrt, eeoe, eed]
 --- !Charm
 id: exc
 name: "(Any Craft>Excellency)"
@@ -22,7 +22,7 @@ type: [Supplemental]
 keys: [Combo-OK, Touch]
 tags: ["Object Improvization"]
 dur: Instant
-deps: [exc]
+deps: []
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -108,7 +108,7 @@ mins: {Craft: 5, Essence: 3}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch]
 dur: Instant or Indefinite
-deps: [ort]
+deps: [exc, ort]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -165,7 +165,7 @@ mins: {Craft: 3, Essence: 2}
 type: [Simple, Dramatic Action]
 keys: [Combo-OK]
 dur: Instant
-deps: [exc]
+deps: [ics]
 reviews:
 - 2012-02-01 RWG
 text: |
@@ -458,7 +458,7 @@ type: [Simple, Dramatic Action]
 keys: [Combo-OK, Touch, Training]
 tags: ["Familiar Creation"]
 dur: Instant
-deps: [cpc]
+deps: [exc, cpc]
 reviews:
 - 2012-02-01 RWG
 text: |

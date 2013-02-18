@@ -3,10 +3,10 @@
 name: Larceny
 --- !CharmLayout
 grid:
-- [rpt, exc, iii]
-- [oct, stk, icc]
-- [wh, vav, it]
-- [~, nrm, ~]
+- [stk, icc, iii]
+- [vav, it, nrm]
+- [wh, exc, rpt]
+- [~, oct, ~]
 --- !Charm
 id: exc
 name: "(Any Larceny>Excellency)"
@@ -54,7 +54,7 @@ mins: {Larceny: 5, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
 dur: Instant
-deps: [oct, exc]
+deps: [oct]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -92,7 +92,7 @@ type: [Simple]
 keys: [Combo-OK, Obvious, Shaping]
 tags: ["Movement-Enhancer"]
 dur: Instant
-deps: [oct]
+deps: [exc, oct]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -119,7 +119,7 @@ mins: {Larceny: 3, Essence: 3}
 type: [Reflexive, Step 1 or Step 2]
 keys: [Combo-OK, Social]
 dur: Instant
-deps: []
+deps: [exc]
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -178,7 +178,7 @@ type: [Supplemental]
 keys: [Combo-OK]
 tags: ["Disguise"]
 dur: Instant
-deps: [exc]
+deps: []
 reviews:
 - 2011-06-25 RWG
 text: |
@@ -200,7 +200,7 @@ type: [Supplemental]
 keys: [Combo-OK, Illusion]
 tags: ["Disguise"]
 dur: Instant
-deps: [exc]
+deps: []
 refs:
 - ["Treasure as Trash Misdirection", GotMH-Luna, 26]
 - ["Any-Trinket Allure", Ink Monkeys vol. 22, 68]

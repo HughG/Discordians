@@ -3,10 +3,10 @@
 name: Resistance
 --- !CharmLayout
 grid:
-- [oou, sss, iss]
-- [arr, eer, iia]
-- [csm, csp, csis]
-- [~, cbt, ~]
+- [sss, iss, iia]
+- [csp, csm, eer]
+- [csis, exc, oou]
+- [cbt, ~, arr]
 --- !Charm
 id: exc
 name: "(Any Resistance>Excellency)"
@@ -186,7 +186,7 @@ type: [Simple]
 keys: [Combo-OK]
 tags: ["Healing"]
 dur: Indefinite
-deps: [oou, sss]
+deps: [exc, oou]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -310,7 +310,7 @@ mins: {Resistance: 3, Essence: 3}
 type: [Simple]
 keys: [Shaping, Obvious]
 dur: Instant
-deps: [csp]
+deps: [exc, csp]
 reviews:
 - 2012-02-18 RWG
 text: |
@@ -337,7 +337,7 @@ mins: {Resistance: 3, Essence: 3}
 type: [Permanent]
 keys: [Shaping]
 dur: Permanent
-deps: [csp]
+deps: [exc, csp]
 reviews:
 - 2012-02-18 RWG
 text: |

@@ -8,13 +8,6 @@
 
 ** Charms: other
 - Ride: effect on non-animals.
-- Appropriate use of Excellencies as prerequisites.
--- 1: 1
--- 2: done
--- 3: done
--- 4: 1 2 3 4 5
--- 5: 1 2 3 4 5
--- Resistance has none!
 
 ** Character Creation
 - Move "Thematics" text.

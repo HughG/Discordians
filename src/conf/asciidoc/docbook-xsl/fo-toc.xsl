@@ -41,21 +41,22 @@
 </xsl:attribute-set>
 
 <!-- http://www.sagehill.net/docbookxsl/PrintToc.html -->
+<!--
 <xsl:param name="toc.image.filename">../book/Discordians_Title_Backdrop.png</xsl:param>
 <xsl:template name="table.of.contents.titlepage.before.recto">
   <fo:block
       padding-top="1.5in" padding-bottom="2.5in"
       text-align="center"
       >
-<!--
+<! - -
       border="dashed purple">
--->
+- - >
     <fo:external-graphic
 	block-progression-dimension="1.5in"
       >
-<!--
+<! - -
 	border="solid thick purple">
--->
+- - >
       <xsl:attribute name="src">
 	<xsl:call-template name="fo-external-image">
 	  <xsl:with-param name="filename" select="$toc.image.filename"/>
@@ -64,6 +65,8 @@
     </fo:external-graphic>
   </fo:block>
 </xsl:template>
+-->
+
 <xsl:attribute-set name="table.of.contents.titlepage.recto.style">
 <!--
   <xsl:attribute name="border">solid orange</xsl:attribute>

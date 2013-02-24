@@ -300,7 +300,9 @@ def draw_arrows(box, charms, layout)
     if charm.deps != nil
       charm.deps.each { |dep|
         src_pos = charm_grid_pos[dep]
-        # puts "#{dep}@#{src_pos} -> #{charm.id}@#{dst_pos}"
+        if not (src_pos and dst_pos) then
+          puts "ERROR: #{dep}@#{src_pos} -> #{charm.id}@#{dst_pos}"
+        end
         src_to_dst_dir = [
           dst_pos[0] <=> src_pos[0],
           dst_pos[1] <=> src_pos[1]

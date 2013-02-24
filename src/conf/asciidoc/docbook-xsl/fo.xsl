@@ -302,6 +302,7 @@
     <l:context name="xref">
       <l:template name="chapter" text="Chapter %n: %t"/>
       <l:template name="section" text="%t"/>
+      <l:template name="page.citation" text=" on p. %p"/>
     </l:context>
     <l:context name="xref-number-and-title">
       <l:template name="chapter" text="Chapter %n: %t"/>

@@ -54,7 +54,17 @@ def insert_charm(out, section_name, charms, charm)
     # Add index entry for each tag
     if charm.tags then
       charm.tags.each { |tag|
-        out.print("indexterm:[charm-by-tag, #{tag}, #{charm.clean_name} (#{charm.group})]")
+
+        # NOTE 2013-02-24 HUGR: This is a hack to work around the problem that
+        # FOP 1.0 doesn't seem to handle index entries with
+        # "text-align='left'" and "text-align-last='justify'".  It justifies
+        # all the lines, meaning that index terms which have sub-terms get
+        # stretched out to the full column width, with extra space added
+        # around existing spaces.  FOP cuts off the index term if I replace the
+        # plain spaces with non-breaking spaces, but a 1/em space works to keep
+        # the words together.  Yuk.
+        tag = tag.gsub(" ", "&#x2005;")
+        out.print("indexterm:[charm-by-tag, #{tag},#{charm.clean_name} (#{charm.group})]")
       }
     end
     # Need to have no line break after the last use of the indexterm macro, or

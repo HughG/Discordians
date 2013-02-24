@@ -18,9 +18,9 @@
     Index
 -->
 <!--
-    Three columns in index
+    Stick with the 2-column default, even though Exalted books have three,
+    Because I have extra information in my indices.
 -->
-<xsl:param name="column.count.index" select="3"/>
 <xsl:param name="column.gap.index">10pt</xsl:param>
 <!--
     Allow specialised indices, for "Index of Charms"
@@ -43,6 +43,7 @@
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="index.entry.properties">
+  <xsl:attribute name="text-align">start</xsl:attribute>
   <xsl:attribute name="text-align-last">justify</xsl:attribute>
 <!--
   <xsl:attribute name="border">dashed orange</xsl:attribute>

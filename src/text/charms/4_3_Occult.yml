@@ -39,11 +39,9 @@ text: |
   reduce the target's temporary Willpower by 1 point (for mental or emotional
   manifestations).  In this case, the attack will be accompanied by a
   manifestation of the Erisian element, in one or more senses.  If the attack
-  is blocked or parried, this Charm is inapplicable.
-
-  *[TODO: What should this do for specific bonuses or penalties caused by
-  other Discordian Charms which rely on an Erisian Element, such as
-  <<Archery_pps>>?]*
+  is blocked or parried, this Charm is inapplicable.  This second usage can be
+  combined with other Discordian combat charms which involve Erisian Elements,
+  such as <<Archery_pps>>.
 
 --- !Charm
 id: sw

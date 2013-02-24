@@ -18,8 +18,11 @@
 <xsl:param name="toc.section.depth" select="'0'"/>
 <xsl:param name="autotoc.label.separator">: </xsl:param>
 <xsl:attribute-set name="toc.line.properties">
-  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
-  <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="font-family">LibertinageBasicSC</xsl:attribute>
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="14 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
   <xsl:attribute name="margin-left">0.4in</xsl:attribute>
   <xsl:attribute name="margin-right">0.6in</xsl:attribute>
   <xsl:attribute name="line-height">160%</xsl:attribute>

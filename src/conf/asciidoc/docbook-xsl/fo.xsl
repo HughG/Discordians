@@ -14,13 +14,9 @@
 <!--
     TODO 2012-03-12 HUGR: Background image(s) for sidebars.
 
-    TODO 2012-03-24 HUGR: Credits page.
-
     TODO 2012-03-25 HUGR: Make INDEX & character sheeet heading smaller.  Need to fiddle with page templates.
 
     TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
-
-    TODO 2012-03-30 HUGR: Sort out smart quotes.
 
     TODO 2012-03-30 HUGR: Use bibliography stuff.
 -->
@@ -37,6 +33,14 @@
 <xsl:import href="common.xsl"/>
 
 <xsl:param name="fop1.extensions" select="1" />
+
+
+<!--
+    NOTE 2013-02-04 HUGR: Temporary font size overrides, until I override the
+    titlepage templates.
+-->
+<xsl:param name="title.font.size.factor" select="'1'"/>
+
 
 <xsl:include href="fo-page.xsl"/>
 <xsl:include href="fo-bibliography.xsl"/>
@@ -96,7 +100,10 @@
   <xsl:attribute name="hyphenate">false</xsl:attribute>
   <xsl:attribute name="text-align">start</xsl:attribute>
   <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
-  <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="14 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
   <xsl:attribute name="line-height">120%</xsl:attribute>
 <!--
   <xsl:attribute name="space-after">6pt</xsl:attribute>
@@ -273,7 +280,7 @@
     </l:context>
 -->
     <l:context name="title-numbered">
-      <l:template name="chapter" text="Chapter %n: %t"/>
+      <l:template name="chapter" text="Chapter %n: %t"/>
     </l:context>
 <!--
     <l:context name="title-unnumbered">
@@ -297,7 +304,9 @@
   Chapter heading customisation.
 -->
 <xsl:attribute-set name="preface.titlepage.recto.style">
+<!--
   <xsl:attribute name="background-image">url('src/text/book/Discordians_Title_Backdrop.png')</xsl:attribute>
+-->
   <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
@@ -307,10 +316,14 @@
 -->
   <xsl:attribute name="min-height">300pt</xsl:attribute>
   <xsl:attribute name="height">300pt</xsl:attribute>
+<!--
   <xsl:attribute name="color">white</xsl:attribute>
+-->
 </xsl:attribute-set>
 <xsl:attribute-set name="chapter.titlepage.recto.style">
+<!--
   <xsl:attribute name="background-image">url('src/text/book/Discordians_Title_Backdrop.png')</xsl:attribute>
+-->
   <xsl:attribute name="background-repeat">no-repeat</xsl:attribute>
   <xsl:attribute name="background-position-horizontal">center</xsl:attribute>
   <xsl:attribute name="padding-top">36pt</xsl:attribute>
@@ -320,7 +333,9 @@
 -->
   <xsl:attribute name="min-height">300pt</xsl:attribute>
   <xsl:attribute name="height">300pt</xsl:attribute>
+<!--
   <xsl:attribute name="color">white</xsl:attribute>
+-->
 </xsl:attribute-set>
 <xsl:attribute-set name="chapter.titlepage.recto.style">
   <xsl:attribute name="padding-top">24pt</xsl:attribute>
@@ -339,8 +354,12 @@
 <!--
   <xsl:attribute name="border">solid red</xsl:attribute>
 -->
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="24 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
   <xsl:attribute name="text-align">center</xsl:attribute>
-  <xsl:attribute name="line-height">120%</xsl:attribute>
+  <xsl:attribute name="line-height">100%</xsl:attribute>
 </xsl:attribute-set>
 
 
@@ -403,62 +422,6 @@
 <xsl:include href="fo-toc.xsl"/>
 <xsl:include href="fo-index.xsl"/>
 
-
-
-
-
-
-<!-- Section heading properties -->
-<xsl:attribute-set name="section.title.properties">
-  <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
-  <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
-  <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
-  <xsl:attribute name="line-height">170%</xsl:attribute>
-  <xsl:attribute name="hyphenate">false</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="section.title.level1.properties">
-  <xsl:attribute name="font-size">24pt</xsl:attribute>
-  <xsl:attribute name="line-height">120%</xsl:attribute>
-  <xsl:attribute name="margin-bottom">10pt</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="section.title.level2.properties">
-  <xsl:attribute name="font-size">18pt</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="section.title.level3.properties">
-  <xsl:attribute name="font-size">14pt</xsl:attribute>
-</xsl:attribute-set>
-
-<!-- Indent paragraphs -->
-<xsl:attribute-set name="normal.para.spacing">
-  <xsl:attribute name="space-before.optimum">0pt</xsl:attribute>
-  <xsl:attribute name="space-before.minimum">0pt</xsl:attribute>
-  <xsl:attribute name="space-before.maximum">0pt</xsl:attribute>
-  <xsl:attribute name="text-indent">18pt</xsl:attribute>
-</xsl:attribute-set>
-
-<!-- Don't indent specially-marked paragraphs -->
-<xsl:attribute-set name="noindent.para.spacing">
-  <xsl:attribute name="space-before.optimum">0pt</xsl:attribute>
-  <xsl:attribute name="space-before.minimum">0pt</xsl:attribute>
-  <xsl:attribute name="space-before.maximum">0pt</xsl:attribute>
-  <xsl:attribute name="text-indent">0pt</xsl:attribute>
-</xsl:attribute-set>
-<xsl:template match="simpara[@role='noindent']">
-  <xsl:variable name="keep.together">
-    <xsl:call-template name="pi.dbfo_keep-together"/>
-  </xsl:variable>
-  <fo:block xsl:use-attribute-sets="noindent.para.spacing">
-    <xsl:if test="$keep.together != ''">
-      <xsl:attribute name="keep-together.within-column"><xsl:value-of
-                      select="$keep.together"/></xsl:attribute>
-    </xsl:if>
-    <xsl:call-template name="anchor"/>
-    <xsl:apply-templates/>
-  </fo:block>
-</xsl:template>
 
 
 

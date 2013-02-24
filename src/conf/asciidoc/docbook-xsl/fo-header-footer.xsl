@@ -126,7 +126,7 @@
 </xsl:attribute-set>
 -->
 <xsl:attribute-set name="footer.content.properties">
-  <xsl:attribute name="font-family">Artisan12</xsl:attribute>
+  <xsl:attribute name="font-family">LibertinageBasicSC</xsl:attribute>
 </xsl:attribute-set>
 <!--
 <xsl:param name="footer.column.widths">1 8 1</xsl:param>
@@ -344,7 +344,7 @@
 	  </xsl:call-template> 
 	  <xsl:text> </xsl:text>
 	  <xsl:apply-templates select="." mode="label.markup"/>
-	  <xsl:text> &#x00b7; </xsl:text>
+	  <xsl:text> &#x2022; </xsl:text>
 	</xsl:if>
 	<xsl:apply-templates select="." mode="title.markup"/>
       </xsl:when>

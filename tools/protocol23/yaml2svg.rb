@@ -162,7 +162,7 @@ end
 TEXT_STYLE = make_style(
   "fill" => "#000000",
   "text-anchor" => "middle",
-  "font-family" => "Artisan12",
+  "font-family" => "Libertinage",
   "font-style" => "normal",
   "font-weight" => "500" # Normal
   )

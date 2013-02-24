@@ -1,24 +1,14 @@
 * TODO this week
 
-** Charms: Update for 2.5
-- Keywords
--- Native
--- Martial and Martial-ready
--- Overdrive and Reactor
-
-** Charms: other
-- Ride: effect on non-animals.
-
-** Character Creation
-- Move "Thematics" text.
-
 ----------------------------------------------------------------------
 
 * Maybe TODO this week
 
-** Characters
-- Fix Kou-an's location (or keep location and change story -- heading to
-Varangia?)
+** Protocol 23
+- Factor out
+
+** Charms: other
+- Ride: effect on non-animals.
 
 ** 3_Traits
 - Quotes for Parametadivisions
@@ -44,6 +34,12 @@ deep into Charm trees, otherwise they might not be so widely used.
 ----------------------------------------------------------------------
 
 * Not TODO this week
+
+** Charms: Update for 2.5
+- Keywords
+-- Native
+-- Martial and Martial-ready
+-- Overdrive and Reactor
 
 ** Revise summary text in Introduction
 
@@ -88,5 +84,3 @@ deep into Charm trees, otherwise they might not be so widely used.
 
 ** Protocol 23
 - Factor out
-- Port to Linux and Windows
-- Automate check that all Charms are actually included in the PDF layout

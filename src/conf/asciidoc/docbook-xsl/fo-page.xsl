@@ -13,8 +13,6 @@
 
     TODO 2012-03-24 HUGR: Background image for page numbers.
 
-    TODO 2012-03-24 HUGR: Leading zeros in page numbers.
-
     TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
 
     TODO 2012-03-31 HUGR: Try doing page numbers using a margin note?
@@ -48,7 +46,7 @@
 -->
 </xsl:template>
 
-<xsl:param name="title.font.family" select="'Artisan12'"/>
+<xsl:param name="title.font.family" select="'LibertinageBasicSC'"/>
 <xsl:param name="body.font.family" select="'GoudyStMTT'"/>
 <xsl:param name="body.font.master">10</xsl:param>
 <xsl:param name="body.font.size">
@@ -227,22 +225,40 @@
   <xsl:attribute name="space-before.minimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.optimum">6pt</xsl:attribute>
   <xsl:attribute name="space-before.maximum">6pt</xsl:attribute>
-  <xsl:attribute name="line-height">170%</xsl:attribute>
+  <xsl:attribute name="space-after.minimum">3pt</xsl:attribute>
+  <xsl:attribute name="space-after.optimum">3pt</xsl:attribute>
+  <xsl:attribute name="font-weight">normal</xsl:attribute>
+  <xsl:attribute name="hyphenate">false</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level1.properties">
-  <xsl:attribute name="font-size">24pt</xsl:attribute>
-  <xsl:attribute name="line-height">120%</xsl:attribute>
-  <xsl:attribute name="margin-bottom">10pt</xsl:attribute>
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="20 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
+  <xsl:attribute name="line-height">105%</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level2.properties">
-  <xsl:attribute name="font-size">18pt</xsl:attribute>
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="18 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
+  <xsl:attribute name="line-height">105%</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="section.title.level3.properties">
-  <xsl:attribute name="font-size">14pt</xsl:attribute>
+  <xsl:attribute name="font-size">
+    <xsl:value-of select="14 * $title.font.size.factor"/>
+    <xsl:text>pt</xsl:text>
+  </xsl:attribute>
+  <xsl:attribute name="line-height">105%</xsl:attribute>
 </xsl:attribute-set>
+
+<!--
+    Section levels 4 and 5 aren't supported by AsciiDoc by default.
+-->
+
 
 <!-- Indent paragraphs -->
 <xsl:attribute-set name="normal.para.spacing">

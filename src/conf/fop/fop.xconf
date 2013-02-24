@@ -90,8 +90,11 @@ the location of this file.
           <font-triplet name="GoudyStMTT" style="italic" weight="bold"/>
         </font>
 
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/artisan12.ttf">
-          <font-triplet name="Artisan12" style="normal" weight="normal"/>
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/OSP_Libertinage/Libertinage.ttf">
+          <font-triplet name="Libertinage" style="normal" weight="normal"/>
+        </font>
+        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/LibertinageBasicSC/LibertinageBasicSC.ttf">
+          <font-triplet name="LibertinageBasicSC" style="normal" weight="normal"/>
         </font>
       </fonts>
 

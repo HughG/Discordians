@@ -1,8 +1,8 @@
-* TODO this week
+* TODO
 
 ----------------------------------------------------------------------
 
-* Maybe TODO this week
+* TODO for next release
 
 ** Protocol 23
 - Factor out
@@ -41,8 +41,6 @@ deep into Charm trees, otherwise they might not be so widely used.
 -- Martial and Martial-ready
 -- Overdrive and Reactor
 
-** Revise summary text in Introduction
-
 ** Society
 
 *** Cabals
@@ -66,7 +64,8 @@ deep into Charm trees, otherwise they might not be so widely used.
 
 ** Sample Characters
 
-** Divisions and Parametadivisions
+** Divisions
+- Images for Divisional symbols
 
 ** Online autobuild
 
@@ -79,8 +78,6 @@ deep into Charm trees, otherwise they might not be so widely used.
 *** Dragon Kings
 
 ** Make Charm xrefs (and others?) include page number with name.
+- Needs FOP 1.1
 
 ** Integration with Anathema
-
-** Protocol 23
-- Factor out

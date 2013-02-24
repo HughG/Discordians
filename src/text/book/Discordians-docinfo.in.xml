@@ -1,55 +1,21 @@
 <dummy-root>
-<!--
-  article-docinfo.xml
-  Example DocBook document information file for article.txt.
--->
+
+<edition>1.0a1</edition>
 
 <authorgroup>
   <author>
-<!--
-    <honorific>Dr</honorific>
--->
     <firstname>Hugh</firstname>
     <surname>Greene</surname>
     <affiliation>
-<!--
-      <shortaffil>Director, M. Behn School of Coop. Eng.</shortaffil>
--->
       <jobtitle>Indepenent Hacker</jobtitle>
-<!--
-      <orgname>[TODO: Insert Discordian made-up stuff here]</orgname>
--->
     </affiliation>
   </author>
-
-<!--
-  <editor>
-    <firstname>Peter</firstname>
-    <surname>Pan</surname>
-    <lineage>Sr.</lineage>
-    <othername>Spiderman</othername>
-    <authorblurb>
-      <para>
-      Peter's a super hero in his spare time.
-      </para>
-    </authorblurb>
-  </editor>
--->
 </authorgroup>
 
 <othercredit>
     <firstname>Richard</firstname>
     <surname>Greene</surname>
     <contrib>Advice, inspiration, and detailed review</contrib>
-<!--
-    <othername role='mi'>T</othername>
-    <affiliation>
-      <shortaffil>ATI</shortaffil>
-      <jobtitle>Senior Application Analyst</jobtitle>
-      <orgname>Foobar, Inc.</orgname>
-      <orgdiv>Application Development</orgdiv>
-    </affiliation>
--->
 </othercredit>
 
 <othercredit>
@@ -72,11 +38,11 @@
 </othercredit>
 
 <releaseinfo>
-    Alpha release from <my-version-info/>.  Source available from github at <ulink url="https://github.com/HughG/Discordians">https://github.com/HughG/Discordians</ulink>.
+    Release 1.0a1 from <my-version-info/>.  Source available from github at <ulink url="https://github.com/HughG/Discordians">https://github.com/HughG/Discordians</ulink>.
 </releaseinfo>
 
 <copyright>
-  <year>2009-2012</year>
+  <year>2009-2013</year>
   <holder>... Kopyleft!</holder>
 </copyright>
 
@@ -105,24 +71,15 @@
   </simpara>
 </legalnotice>
 
-<!--
 <revhistory>
   <revision>
-    <revnumber>1.1</revnumber>
-    <date>May 2009</date>
-    <authorinitials>PP</authorinitials>
+    <revnumber>1.0a1</revnumber>
+    <date>2013-02-24</date>
+    <authorinitials>HG</authorinitials>
     <revremark>
-      Updates.
-    </revremark>
-  </revision>
-  <revision>
-    <revnumber>1.0</revnumber>
-    <date>October 2003</date>
-    <authorinitials>PP</authorinitials>
-    <revremark>
-      First release.
+      First public release.
     </revremark>
   </revision>
 </revhistory>
--->
+
 </dummy-root>

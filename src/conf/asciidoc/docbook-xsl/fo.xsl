@@ -254,6 +254,18 @@
   <xsl:attribute name="border">0.5pt solid blue</xsl:attribute>
 </xsl:attribute-set>
 
+<!--
+    Don't put the title name in italics for chapter and appendix in xrefs,
+    which is the default in the DocBook stylesheets.
+-->
+<xsl:template match="chapter|appendix" mode="insert.title.markup">
+  <xsl:param name="purpose"/>
+  <xsl:param name="xrefstyle"/>
+  <xsl:param name="title"/>
+
+  <xsl:copy-of select="$title"/>
+</xsl:template>
+
 <!-- Put in page numbers for xrefs -->
 <!--
   TODO 2012-08-11 HUGR: This crashes FOP 1.0 because of

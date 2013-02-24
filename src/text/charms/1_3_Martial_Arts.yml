@@ -304,11 +304,11 @@ text: |
   allowing the prayer strip to activate, and some choose to spend a point of
   Willpower to guarantee this success, rather than taking a chance.  Failure
   sees the prayer strip drift to the ground, whence it can be retrieved with a
-  miscellaneous action.  A botch leads to some "chance" breeze or similar bad
-  luck wafting the prayer strip out of reach--beyond a single Move action, but
-  no further than a single Dash action.  In either case, some other character
-  might snatch it up, or other harm befall it, before the character can
-  retrieve it.  Furthermore, unlike genuine Sidereal prayer strips, the
+  miscellaneous action.  A botch leads to some ``chance'' breeze or similar
+  bad luck wafting the prayer strip out of reach--beyond a single Move action,
+  but no further than a single Dash action.  In either case, some other
+  character might snatch it up, or other harm befall it, before the character
+  can retrieve it.  Furthermore, unlike genuine Sidereal prayer strips, the
   counterfeit does not gain any magical protection when activated--it cannot
   dodge or block attacks, and even a single level of bashing damage will
   destroy it.  The character may take other steps to protect it, of course.

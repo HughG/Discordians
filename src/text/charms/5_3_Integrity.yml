@@ -250,9 +250,9 @@ text: |
   can purchase the Charm no more than (Integrity) times and no more than once
   per Virtue.  Each gives the character 3 dots of Virtue Specialty, with the
   breadth and suitability of such Specialties subject to Storyteller approval.
-  For example, a Stone-Carver might take a Compassion Specialty in "acting for
-  the greater good", or "winning new friends", or a Valor Specialty of "in
-  battle against greater numbers", or "reckless bravery".
+  For example, a Stone-Carver might take a Compassion Specialty in ``acting
+  for the greater good'', or ``winning new friends'', or a Valor Specialty of
+  ``in battle against greater numbers'', or ``reckless bravery''.
 
   These dots provide both extra Virtue channels, and extra dice when
   channelling a Virtue, where the Specialty is applicable.  They may stretch
@@ -261,8 +261,8 @@ text: |
   support suppressing the basic Virtue, she may roll those specialty dice
   separately and subtract them from the successes from the base roll, giving a
   minimum result of zero successes.  For example, consider a character with
-  four dots in Compassion, and two dots of Compassion Specialty in "acting for
-  the greater good".  Faced with the need to sacrifice a small number of
+  four dots in Compassion, and two dots of Compassion Specialty in ``acting
+  for the greater good''.  Faced with the need to sacrifice a small number of
   innocents to save a larger population, she would roll four dice for her
   basic Virtue, then separately roll two dice for her Specialty, and subtract
   the successes of the latter roll from those of the former.

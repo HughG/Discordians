@@ -208,7 +208,7 @@ text: |
   a -1 penalty to DV if attacking in close combat.  If the unit was originally
   a standard mounted unit, these adjustments are doubled.  The Charm is not
   applicable if the unit was already mounted on beasts using howdahs.  The
-  ``steeds" are treated as having a control rating of 0, and the Abilities of
+  ``steeds'' are treated as having a control rating of 0, and the Abilities of
   the riders are not capped by their Ride ability, since those below them
   remain equally well-trained soldiers.  The movement rate of the unit is
   reduced by 25%.

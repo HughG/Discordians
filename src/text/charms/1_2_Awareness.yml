@@ -260,8 +260,8 @@ text: |
   Activating this Charm, the Exalt focuses her attention on a single point, be
   it real or imagined--for example, a candle flame.  As long as she maintains
   her commitment of attention and motes then, for the purposes of regaining
-  motes of Essence, she is regarded as "at ease" when undertaking strenuous
-  activity (regaining four motes per hour) and "completely relaxed" when at
+  motes of Essence, she is regarded as ``at ease'' when undertaking strenuous
+  activity (regaining four motes per hour) and ``completely relaxed'' when at
   ease (for eight motes per hour).  The rate at which she regains Essence,
   from rest and all other sources, is multiplied by ([Essence + 1] ÷ 2)
   rounded up.  Additionally, she may roll to regain Willpower once every (25 ÷
@@ -270,8 +270,7 @@ text: |
 
   This Charm cannot be used while the character is sleeping or otherwise
   unconscious, and is incompatible with the Charms or other actions which
-  require the senses to be focused elsewhere, e.g., Holographic Perception
-  Praxis.
+  require the senses to be focused elsewhere, e.g., <<Awareness_hpp>>.
   
 --- !Charm
 id: sit

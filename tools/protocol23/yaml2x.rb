@@ -58,6 +58,10 @@ class Charm
     return @safe_group unless @safe_group.nil?
     @safe_group = group.gsub(/ /, "_")
   end
+
+  def is_placeholder
+    return ((@name[0] == '('[0]) and (@name[-1,1] == ')'[-1,1]))
+  end
 end
 
 def process_file(infilename)

@@ -22,7 +22,7 @@ end
 def insert_charm(out, section_name, charms, charm)
 #  $stderr << '  ' << charm.name << "\n"
 
-  return if charm.name[0] == '('[0]
+  return if charm.is_placeholder
   if charm.name != '.'
     out.puts("[b]#{charm.clean_name}[/b]")
     out.print("[SPOILER]")

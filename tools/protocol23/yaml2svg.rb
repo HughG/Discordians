@@ -211,6 +211,8 @@ def draw_charm(box, x, y, charm, trait_name)
   if charm.deps.nil? or charm.deps.empty?
     text_lines.map! {|s| s.upcase}
   end
+  # Special magic for the names of Excellencies: replace "--" with ": ".
+  text_lines.map! {|s| s.gsub("--", ": ")}
   draw_text(box, x, y, text_lines)
 end
 

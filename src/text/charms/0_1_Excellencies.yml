@@ -1,0 +1,166 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Excellencies and Related Charms
+trait: (Ability)
+--- !CharmLayout
+grid:
+- [exc1, exc2, exc3]
+- [~, exc, ~]
+- [ins1, exc4, ins2]
+--- !Charm
+id: exc1
+name: "First (Ability)>Excellency--Essence>Overwhelming"
+cost: 1m per die
+mins: {(Ability): 1, Essence: 1}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK]
+tags: ["Excellency"]
+dur: Instant
+deps: []
+text: |
+
+  Each mote spend on this charm adds 1 die to the pool for the relevant roll,
+  to a maximum of (Ability + stunt rating) motes.  If used to enhance a static
+  value, roll the number of dice provided by this Charm and add one to the
+  static value for each success.
+
+  With a suitable stunt and a surcharge, can be used to enhance an action
+  using any _other_ Ability. The action cannot involve activation of Charms
+  from the other Ability, though it may involve the effects of Permanent
+  Charms or those which are not counted as a Charm activation.  The surcharge
+  is 1m for Abilities in the same Division, 2m for those in a neighboring
+  Division, or 4m for those in the other two Divisions.  The maximum number of
+  dice which can be added is based on the _lower_ of the two Abilities--the
+  Ability for which this Excellency has been purchased and the other Ability
+  for which it is being activated.  If this Charm is used in combination with
+  the Second or Third Excellencies, the surcharge is paid only once for the
+  action, not once for each Excellency activated.  This flexibility explicitly
+  does not extend to allowing an Excellency in one Ability to be used as a
+  prerequisite for a Charm in another, only to affect rolls or static values
+  based on other Abilities.
+
+--- !Charm
+id: exc2
+name: "Second (Ability)>Excellency--Essence>Triumphant"
+cost: 2m per success
+mins: {(Ability): 1, Essence: 1}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK]
+tags: ["Excellency"]
+dur: Instant
+deps: []
+text: |
+
+  This Charm adds one guaranteed success to a dice roll, or one to a static
+  value, for every two motes spent, to a maximum of (Ability + stunt rating)
+  motes.  Each success purchased is the equivalent of adding two dice with the
+  First Excellency or any other dice-adding Charm, and counts toward the
+  Discordian dice-adding limit.  This Excellency can be used to enhance
+  actions from other Abilities in the same manner as the First Excellency.
+
+--- !Charm
+id: exc3
+name: "Third (Ability)>Excellency--Essence>Revisited"
+cost: 2m
+mins: {(Ability): 1, Essence: 1}
+type: [Reflexive, Step 4 for attacker or Step 6 for defender]
+keys: [Combo-OK]
+tags: ["Excellency"]
+dur: Instant
+deps: []
+text: |
+
+  A character invokes this Charm after making a roll based on the chosen
+  Ability, tipping the balance in her favor for a moment, in the knowledge
+  that it will tip back before long.  It adds (Ability ÷ 2) automatic
+  successes to the roll, or increases a static value by a like amount.
+  Successes added by this Excellency do _not_ count towards the Discordian
+  limit on dice added by Charms.  However, the next non-trivial use of that
+  Ability is subject to an equal external penalty.  The Storyteller is free to
+  decide what constitutes an important use--the intent is to prevent a player
+  freeing a character from this looming redress by taking some irrelevant
+  action such as tying a shoelace.
+
+  This Excellency can be used to enhance actions from other Abilities in the
+  same manner as the First Excellency.  Unlike the Third Excellency of several
+  other types of Exalt, it _can_ be used in Combos with the First and Second
+  Excellencies.
+
+--- !Charm
+id: exc
+name: "(Any (Ability) Excellency)"
+deps: [exc1, exc2, exc3]
+text: |
+
+--- !Charm
+id: exc4
+name: "(Ability) Efforts Discounted"
+cost: 2m+, 1wp
+mins: {(Ability): 4, Essence: 3}
+type: [Simple]
+keys: [Combo-OK]
+tags: ["Excellency"]
+dur: One scene
+deps: [exc]
+text: |
+
+  Each two motes spent on this Charm reduces the cost of the first three
+  Excellencies by one for the scene, when used with the selected Ability.  It
+  recudes the cost by no more than the character's permanent Essence, and to a
+  minimum of zero motes.  It cannot be used to reduce the cost when an
+  Excellency is stretched to apply to other Abilities.
+
+--- !Charm
+id: ins1
+name: "First (Ability)>Insolency--Essence>Confounding"
+cost: 3m
+mins: {(Ability): 2, Essence: 2}
+type: [Reflexive, Step 4 for _defender_]
+keys: [Combo-OK, Shaping]
+tags: ["Insolency"]
+dur: Instant
+deps: []
+text: |
+
+  *[TODO: Needs reviewing/play-testing for game balance.]*
+
+  A Discordian activates this Charm specifically to counter the efforts of
+  those engaged in dynamic imbalance against him.  It forces the target to
+  re-roll his action and accept the less desirable of the two results.  If the
+  target uses some Charm or other power which allows a re-roll, the cost of
+  both are spent but no re-roll takes place, and the target keeps the original
+  roll.  This Charm cannot be used to oppose actions which do not involve a
+  roll, nor can it be used to affect static values.  It does not alter the
+  target's being or traits in a permanent way, only the transitory playing out
+  of an action, so many Shaping defences--such as the Lawgiver's
+  Integrity-Protecting Prana or the Pyrian Ego-Infused Pattern Primacy--will
+  not prevent its effects.  Like the Excellencies, Insolencies can be used
+  against actions from other Abilities, by paying a like surcharge.
+
+--- !Charm
+id: ins2
+name: "Second (Ability)>Insolency--Essence>Ominous"
+cost: 3m or 6m
+mins: {(Ability): 4, Essence: 3}
+type: [Reflexive, Step 2]
+keys: [Combo-OK, Shaping]
+tags: ["Insolency"]
+dur: Instant
+deps: []
+text: |
+
+  *[TODO: Needs reviewing/play-testing for game balance.]*
+
+  At times the interference of Erisian Exalts is subtle and elaborate, at
+  others more direct.  This Charm targets another being making a roll or using
+  a static value.  Spending three motes on this Charm increases the target
+  number for the opponent to 8 or reduces a static value to three-quarters of
+  its normal, while spending six motes increases the target value to 9 or
+  reduces a static value by half.  Reduced static values are rounded up and
+  cannot be reduced to zero.  Rolled actions also cannot botch, always
+  achieving at least one success.  This Charm can only be applied against
+  actions which affect the character directly, be it individually or as part
+  of a group.  Again, this Insolency can oppose actions from other Abilities
+  for a surcharge.
+
+...

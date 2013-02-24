@@ -15,7 +15,7 @@ end
 def insert_charm(out, section_name, charms, charm)
 #  $stderr << '  ' << charm.name << "\n"
 
-  return if charm.name[0] == '('[0]
+  return if charm.is_placeholder
   if charm.name != '.'
     out.puts("[[#{charm.safe_group}_#{charm.id}]]")
     out.puts("===== #{charm.clean_name}")

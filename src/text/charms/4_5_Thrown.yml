@@ -58,7 +58,7 @@ cost: 4m
 mins: {Thrown: 3, Essence: 3}
 type: [Supplemental]
 keys: [Combo-OK]
-tags: ["Attack Retry"]
+tags: ["Attack Retry", "Unexpected Attack"]
 dur: Instant
 deps: [ssf]
 refs:

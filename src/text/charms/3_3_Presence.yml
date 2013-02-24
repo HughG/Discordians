@@ -155,8 +155,6 @@ reviews:
 - 2011-06-25 RWG
 text: |
   
-  *[TODO: Compare with Spell "The Battle's End".]*
-
   The first step to winning is not to be defeated, and sometimes the best
   defense is to give no offense.  This Charm supplements a Presence-based
   social attack targeting up to (Essence x 5) individuals joined in battle or
@@ -165,7 +163,8 @@ text: |
   the participants that battle (or social conflict) is not a good idea after
   all, at least for the moment.  The targets must be able to understand the
   character, unless some other effect makes this unnecessary.  Each target or
-  unit which is successfully affected is persuaded to refrain from attacking.
+  unit which is successfully affected--that is, whose Mental Defense Value is
+  less than the character's successes--is persuaded to refrain from attacking.
   The effect lasts for the rest of the scene, or until any affected individual
   or unit makes another Join Battle, Join War or Join Debate roll.  If a
   target has been wounded in an exchange already, from the character or others

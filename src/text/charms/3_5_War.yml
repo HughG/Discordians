@@ -22,13 +22,9 @@ type: [Simple, Speed 5 in long ticks]
 keys: [Combo-OK, Compulsion, War]
 dur: Indefinite
 deps: [btt]
-refs:
-- ["The Battle's End", BoS2WT, 69]
 text: |
 
   TODO
-  
-  *[TODO: Compare with Spell "The Battle's End".]*
 
   Instructing troops or comrades to avoide hostile or suspicious actions, the
   Discordian attempts to persuade one or more enemy unit(s) that his own unit

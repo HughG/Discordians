@@ -12,19 +12,19 @@
 -->
 
 <!--
-    TODO 2012-03-24 HUGR: Proper background image for header.
+    TODO 2012-03-24 hughg: Proper background image for header.
 
-    TODO 2012-03-24 HUGR: Proper background image for outer margin.
+    TODO 2012-03-24 hughg: Proper background image for outer margin.
 
-    TODO 2012-03-24 HUGR: ... or combine the above two into page background?
+    TODO 2012-03-24 hughg: ... or combine the above two into page background?
 
-    TODO 2012-03-24 HUGR: Background image for page numbers.
+    TODO 2012-03-24 hughg: Background image for page numbers.
 
-    TODO 2012-03-24 HUGR: Leading zeros in page numbers.
+    TODO 2012-03-24 hughg: Leading zeros in page numbers.
 
-    TODO 2012-03-24 HUGR: Footer rule.
+    TODO 2012-03-24 hughg: Footer rule.
 
-    TODO 2012-03-31 HUGR: Try doing page numbers using a margin note?
+    TODO 2012-03-31 hughg: Try doing page numbers using a margin note?
 -->
 
 <!DOCTYPE xsl:stylesheet [

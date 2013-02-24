@@ -208,7 +208,7 @@ refs:
 reviews:
 - 2011-06-25 RWG
 changes:
-- 2012-09-13 HUGR
+- 2012-09-13 hughg
 text: |
 
   TODO
@@ -333,7 +333,7 @@ refs:
 reviews:
 - 2011-06-25 RWG
 changes:
-- 2012-09-13 HUGR Allow a bigger decrease in Resource, to match STK; Instant
+- 2012-09-13 hughg Allow a bigger decrease in Resource, to match STK; Instant
 text: |
 
   TODO

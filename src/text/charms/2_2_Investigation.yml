@@ -55,7 +55,7 @@ keys: [Combo-OK, Social]
 dur: Instant
 deps: [iaoi]
 changes:
-- 2012-09-13 HUGR
+- 2012-09-13 hughg
 text: |
 
   TODO

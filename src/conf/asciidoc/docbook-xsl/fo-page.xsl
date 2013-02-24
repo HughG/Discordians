@@ -3,19 +3,19 @@
 -->
 
 <!--
-    TODO 2012-03-24 HUGR: Credits page.
+    TODO 2012-03-24 hughg: Credits page.
 
-    TODO 2012-03-24 HUGR: Proper background image for header.
+    TODO 2012-03-24 hughg: Proper background image for header.
 
-    TODO 2012-03-24 HUGR: Proper background image for outer margin.
+    TODO 2012-03-24 hughg: Proper background image for outer margin.
 
-    TODO 2012-03-24 HUGR: ... or combine the above two into page background?
+    TODO 2012-03-24 hughg: ... or combine the above two into page background?
 
-    TODO 2012-03-24 HUGR: Background image for page numbers.
+    TODO 2012-03-24 hughg: Background image for page numbers.
 
-    TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
+    TODO 2012-03-26 hughg: First-of-chapter pages are always like right pages, even if they're left pages.
 
-    TODO 2012-03-31 HUGR: Try doing page numbers using a margin note?
+    TODO 2012-03-31 hughg: Try doing page numbers using a margin note?
 -->
 
 <!DOCTYPE xsl:stylesheet [

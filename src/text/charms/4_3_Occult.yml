@@ -131,7 +131,7 @@ deps: [etn]
 reviews:
 - 2012-02-18 RWG
 changes:
-- 2012-09-11 HUGR
+- 2012-09-11 hughg
 text: |
 
   At times the glories of the Exalted should remain hidden.  This Charm allows

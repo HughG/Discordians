@@ -365,7 +365,7 @@ deps: [exc, fgi]
 refs:
 - Lore_cip
 changes:
-- 2012-09-13 HUGR
+- 2012-09-13 hughg
 text: |
 
   TODO
@@ -419,7 +419,7 @@ deps: [exc, fsp]
 refs:
 - ["Herd-Strengthening Invocation", Lunars, 170]
 changes:
-- 2012-09-13 HUGR
+- 2012-09-13 hughg
 text: |
 
   TODO

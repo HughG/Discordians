@@ -82,7 +82,7 @@
   </xsl:variable>
 
 <!--
-    NOTE 2012-03-26 HUGR: Use copy-of instead of value-of here, otherwise we
+    NOTE 2012-03-26 hughg: Use copy-of instead of value-of here, otherwise we
     can't use fo:leader in the separators, because it has a value of "".
 -->
   <xsl:choose>
@@ -143,7 +143,7 @@
   </xsl:param>
 
 <!--
-    NOTE 2012-03-26 HUGR: Test using the implicit "boolean()" call of the
+    NOTE 2012-03-26 hughg: Test using the implicit "boolean()" call of the
     xsl:when element, instead of the expression "index.foo.separator != ''".
     For a separator which is a string, the result is the same.  For one which
     is a node-set, such as

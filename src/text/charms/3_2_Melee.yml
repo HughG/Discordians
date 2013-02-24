@@ -53,7 +53,7 @@ deps: []
 reviews:
 - 2011-06-25 RWG
 updates:
-- 2012-04-14 HUGR: Seems too expensive for what it does, at least at Ess 2.
+- 2012-04-14 hughg: Seems too expensive for what it does, at least at Ess 2.
 text: |
 
   A successful warrior grows to understand of the ebb and flow, balance and

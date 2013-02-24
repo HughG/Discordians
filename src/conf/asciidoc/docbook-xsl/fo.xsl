@@ -12,13 +12,13 @@
 -->
 
 <!--
-    TODO 2012-03-12 HUGR: Background image(s) for sidebars.
+    TODO 2012-03-12 hughg: Background image(s) for sidebars.
 
-    TODO 2012-03-25 HUGR: Make INDEX & character sheeet heading smaller.  Need to fiddle with page templates.
+    TODO 2012-03-25 hughg: Make INDEX & character sheeet heading smaller.  Need to fiddle with page templates.
 
-    TODO 2012-03-26 HUGR: First-of-chapter pages are always like right pages, even if they're left pages.
+    TODO 2012-03-26 hughg: First-of-chapter pages are always like right pages, even if they're left pages.
 
-    TODO 2012-03-30 HUGR: Use bibliography stuff.
+    TODO 2012-03-30 hughg: Use bibliography stuff.
 -->
 
 <!DOCTYPE xsl:stylesheet [
@@ -36,7 +36,7 @@
 
 
 <!--
-    NOTE 2013-02-04 HUGR: Temporary font size overrides, until I override the
+    NOTE 2013-02-04 hughg: Temporary font size overrides, until I override the
     titlepage templates.
 -->
 <xsl:param name="title.font.size.factor" select="'1'"/>
@@ -148,7 +148,7 @@
       <xsl:variable name="content">
 	<xsl:choose>
 	  <!--
-	      HUGR 2012-03-30: Allow sidebars to use pgwide.properties.
+	      hughg 2012-03-30: Allow sidebars to use pgwide.properties.
 	  -->
 	  <xsl:when test="$pgwide = '1'">
 	    <fo:block xsl:use-attribute-sets="pgwide.properties
@@ -248,7 +248,7 @@
 <!--
   Give links a blue border, as in White Wolf's own PDFs.
 
-  TODO 2012-08-11 HUGR: Don't display the border in print.
+  TODO 2012-08-11 hughg: Don't display the border in print.
 -->
 <xsl:attribute-set name="xref.properties">
   <xsl:attribute name="border">0.5pt solid blue</xsl:attribute>
@@ -268,7 +268,7 @@
 
 <!-- Put in page numbers for xrefs -->
 <!--
-  TODO 2012-08-11 HUGR: This crashes FOP 1.0 because of
+  TODO 2012-08-11 hughg: This crashes FOP 1.0 because of
 
     https://issues.apache.org/bugzilla/show_bug.cgi?id=52411
 
@@ -541,7 +541,7 @@
       </xsl:attribute>
     </xsl:when>
 <!--
-    NOTE 2012-05-14 HUGR: Not sure if I need an explicit role tag, or if
+    NOTE 2012-05-14 hughg: Not sure if I need an explicit role tag, or if
     I can just say that all tables are striped, unless they're in sidebars.
 
     <xsl:when test="$tabrole = 'striped'">

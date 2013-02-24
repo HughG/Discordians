@@ -454,7 +454,7 @@ deps: [exc, bofa]
 refs:
 - ["Secure Den Prana", Lunars, 191]
 changes:
-- 2012-09-13 HUGR
+- 2012-09-13 hughg
 text: |
 
   TODO

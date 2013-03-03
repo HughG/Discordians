@@ -4,50 +4,25 @@
 
 * TODO for next release
 
-** Protocol 23
-- Factor out
-
-** Charms: other
-- Ride: effect on non-animals.
-
-** 3_Traits
-- Quotes for Parametadivisions
-- Images for Divisional Symbols
-- Notes on which Charms are good for posing as which other Exalted types.
-
-** Formatting
-- Make only the first index lines fully justified.  (May need FOP upgrade.
-Or, just replace spaces with nbsp?)
-
 ** Charms: Overall
-- Mote pool expanders
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)
 - Balance per Division
-- Maybe Charms which stretch the meaning of an Ability shouldn't be too
-deep into Charm trees, otherwise they might not be so widely used.
 - Review all which aren't explicitly tagged.
-- Remove specific mention of Hodge and Podge as much as possible.
-- Remove mention of sobriquets which now belong to Parametadivisons.
-- Links to bibitems.
 
 ----------------------------------------------------------------------
 
-* Not TODO this week
+* Not TODO any time soon
 
 ** Charms: Update for 2.5
 - Keywords
--- Native
 -- Martial and Martial-ready
--- Overdrive and Reactor
 
 ** Society
 
 *** Cabals
 
 - The Friends of Sessen Douji
-
-** Sobriquets
 
 ** Charms: Flavour
 
@@ -64,20 +39,4 @@ deep into Charm trees, otherwise they might not be so widely used.
 
 ** Sample Characters
 
-** Divisions
-- Images for Divisional symbols
-
 ** Online autobuild
-
-*** Nocturnals
-- Parametadivision (Warp from Weft? Or should they be Night from Day, and
-``Lunars'' be ... Skin from Soul/Bone, Heart from Whole, ... ?)
-- Sobriquets
-- Performance Charm to fake Nocturnal Fluctuations?
-
-*** Dragon Kings
-
-** Make Charm xrefs (and others?) include page number with name.
-- Needs FOP 1.1
-
-** Integration with Anathema

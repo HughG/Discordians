@@ -17,14 +17,14 @@ def insert_charm(out, trait_name, charms, charm)
   min_ess = ""
   min_trait = ""
   if charm.mins
-    min_ess = beads("•", "¤", charm.mins['Essence'].to_i)
-    min_trait = beads("•", "¤", charm.mins[trait_name].to_i)
+    min_ess = beads("×", "¤", charm.mins['Essence'].to_i)
+    min_trait = beads("×", "¤", charm.mins[trait_name].to_i)
   end
   deps = charm.deps
   has_deps = (deps and not deps.empty?)
   charm_name = if has_deps then charm.name else charm.name.upcase end
   charm_name.gsub!(/\>/, '\\n')
-  out.puts("\t#{charm.id} [label=\"{#{min_ess}|#{charm_name}|#{min_trait}}\"];")
+  out.puts("\t#{charm.id} [label=<{#{min_ess}|#{charm_name}|#{min_trait}}>];")
   if has_deps
     deps.each { |dep|
       out.print("\t", dep, " -> ", charm.id, ";\n")
@@ -38,7 +38,7 @@ if __FILE__ == $PROGRAM_NAME
   filename = $*[0]
   outfilename = $*[1]
 
-  File.open(outfilename, "w") { |outfile|
+  File.open(outfilename, "w:UTF-8") { |outfile|
     outfile.puts("digraph foo {")
     outfile.puts("\tnode [shape=Mrecord,fontname=Libertinage,fontsize=10,width=1.9,height=1,fixedsize];")
 

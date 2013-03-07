@@ -121,9 +121,8 @@ if __FILE__ == $PROGRAM_NAME
     end
 
   File.open(outfilename, "w") { |outfile|
-#     outfile.puts(":doctype: book")
     outfile.puts(":themedir: ..")
-    outfile.puts(":theme: discordians")
+    outfile.puts(":theme: protocol23-charm-page")
     outfile.puts(":linkcss:")
     outfile.puts
 

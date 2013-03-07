@@ -4,6 +4,7 @@ SCRIPTS=tools/protocol23
 # Input
 CONF_IN=src/conf
 FONTS_IN=src/fonts
+HTML_IN=src/text/html
 CHARMS_IN=src/text/charms
 BOOK_IN=src/text/book
 # Output / Intermediate
@@ -16,20 +17,23 @@ BBCODE_OUT=$(OUT)/bbcode
 STATS_OUT=$(OUT)/stats
 ASC_MED=$(OUT)/asciidoc
 DOT_MED=$(OUT)/dot
-#W=output_wiki
+#WW_WIKI_OUT=$(OUT)/ww_wiki
 
 ### Tools
 MKDIR=mkdir -p
 RM=rm -rf
 CP=cp -f
 TOUCH=touch
-ASCIIDOC=asciidoc
-A2X=a2x
+RUBY=/opt/local/bin/ruby1.9
+XSLT=/opt/local/bin/xsltproc
+ASCIIDOC=/opt/local/bin/asciidoc
+A2X=/opt/local/bin/a2x
 DOT=/Applications/Graphviz.app/Contents/MacOS/dot
-SHOW_PDF=osascript tools/show_pdf.scpt
-DESCRIBE_GIT_STATUS=tools/version-info/describe-git-status.bash
-COPY_IF_MISSING_OR_DIFF=tools/version-info/copy-if-missing-or-diff.bash
-VERSION_STAMP_DOCINFO=tools/version-info/version-stamp-docinfo.xslt
+SHOW_PDF=/usr/bin/osascript tools/show_pdf.scpt
+DESCRIBE_GIT_STATUS=./tools/version-info/describe-git-status.bash
+COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
+VERSION_STAMP_DOCINFO=./tools/version-info/version-stamp-docinfo.xslt
+PROTOCOL23_DEPS=$(SCRIPTS)/yaml2x.rb
 
 ### Files
 HTML_MAIN=charms.html
@@ -46,7 +50,9 @@ CONFIG=$(CONF_IN)/asciidoc/* $(CONF_IN)/asciidoc/docbook-xsl/* $(CONF_IN)/fop/* 
 
 export FOP_HYPHENATION_PATH=tools/fop/offo-hyphenation-binary/fop-hyph.jar
 
-all: html # charms-pdf wiki
+include project.mk
+
+all: html book
 
 $(HTML_OUT):
 	$(MKDIR) $(HTML_OUT)
@@ -66,14 +72,12 @@ $(DOT_MED):
 	$(MKDIR) $(DOT_MED)
 
 html: $(HTML_OUT)/$(HTML_MAIN)
-charms-pdf: $(PDF_OUT)/charms.pdf
-book: $(PDF_OUT)/Discordians.pdf
+book: $(PDF_OUT)/$(PROJECT_NAME).pdf
 test-pdf: $(PDF_OUT)/test.pdf
 drac: $(DRAC:$(CHARMS_IN)/%=$(DRAC_OUT)/%)
 bbcode: $(BBCODE:$(CHARMS_IN)/%=$(BBCODE_OUT)/%)
 stats: $(STATS_OUT)/stats.txt
-
-#wiki: destdir $W/$(MAINWIKI)
+#wiki: $(WW_WIKI_OUT)/$(MAINWIKI)
 
 $(SCRIPTS)/yaml2dot.rb: $(SCRIPTS)/yaml2x.rb
 $(SCRIPTS)/yaml2asciidoc.rb: $(SCRIPTS)/yaml2x.rb
@@ -88,16 +92,16 @@ $(SCRIPTS)/makehtml.rb: $(SCRIPTS)/yaml2x.rb
 .PRECIOUS: $(IMG_OUT)/%.png $(IMG_OUT)/%.svg $(ASC_MED)/%.asc $(DOT_MED)/%.dot
 
 clean:
-	-$(RM) $(OUT) # $W
+	-$(RM) $(OUT)
 
 tmpclean:
-	-$(RM) src/*~ src/*/*~ $(OUT)/*~ $(OUT)/*/*~ # $W/*~
+	-$(RM) src/*~ src/*/*~ $(OUT)/*~ $(OUT)/*/*~
 
-$(DOT_MED)/%.dot: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2dot.rb $(DOT_MED)
-	$(SCRIPTS)/yaml2dot.rb $< $@
+$(DOT_MED)/%.dot: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2dot.rb $(PROTOCOL23_DEPS) $(DOT_MED)
+	$(RUBY) $(SCRIPTS)/yaml2dot.rb $< $@
 
-$(ASC_MED)/%.asc: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2asciidoc.rb $(ASC_MED)
-	$(SCRIPTS)/yaml2asciidoc.rb $< $@
+$(ASC_MED)/%.asc: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2asciidoc.rb $(PROTOCOL23_DEPS) $(ASC_MED)
+	$(RUBY) $(SCRIPTS)/yaml2asciidoc.rb $< $@
 
 $(HTML_OUT)/%.html: $(ASC_MED)/%.asc $(IMG_OUT)/%.png $(HTML_OUT)
 	$(ASCIIDOC) --attribute=image-dir=../images/ --attribute=charm-image-ext=png --out-file=$@ $<
@@ -105,14 +109,14 @@ $(HTML_OUT)/%.html: $(ASC_MED)/%.asc $(IMG_OUT)/%.png $(HTML_OUT)
 $(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
 	$(DOT) -Tpng $< >$@
 
-$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2svg.rb $(IMG_OUT)
-	$(SCRIPTS)/yaml2svg.rb $< $@
+$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2svg.rb $(PROTOCOL23_DEPS) $(IMG_OUT)
+	$(RUBY) $(SCRIPTS)/yaml2svg.rb $< $@
 
-$(DRAC_OUT)/%_drac.html: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2dracula.rb $(DRAC_OUT)
-	$(SCRIPTS)/yaml2dracula.rb $< $@
+$(DRAC_OUT)/%_drac.html: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2dracula.rb $(PROTOCOL23_DEPS) $(DRAC_OUT)
+	$(RUBY) $(SCRIPTS)/yaml2dracula.rb $< $@
 
-$(BBCODE_OUT)/%_bbcode.txt: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2bbcode.rb $(BBCODE_OUT)
-	$(SCRIPTS)/yaml2bbcode.rb $< $@
+$(BBCODE_OUT)/%_bbcode.txt: $(CHARMS_IN)/%.yml $(SCRIPTS)/yaml2bbcode.rb $(PROTOCOL23_DEPS) $(BBCODE_OUT)
+	$(RUBY) $(SCRIPTS)/yaml2bbcode.rb $< $@
 
 # This is a .PHONY target so that we always check the working copy status,
 # which may have changed if an untracked file has been created or similar.
@@ -127,30 +131,20 @@ $(OUT)/version_info.txt: $(OUT)/version_info.in.txt
 	$(COPY_IF_MISSING_OR_DIFF) $< $@
 
 $(BOOK_IN)/%-docinfo.xml: $(BOOK_IN)/$(@:.xml=.in.xml) $(OUT)/version_info.txt $(VERSION_STAMP_DOCINFO)
-	xsltproc --param version-info "'`cat $(OUT)/version_info.txt`'" $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) >$@
+	$(XSLT) --param version-info "'`cat $(OUT)/version_info.txt`'" $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) >$@
 
-$(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(CHARMS_IN)/intro.html $(CHARMS_IN)/style.css $(CHARMS_IN)/discordians.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)
-	$(SCRIPTS)/makehtml.rb $(CHARMS_IN) $(HTML_OUT) $(HTML_MAIN)
+$(HTML_OUT)/$(HTML_MAIN): $(SCRIPTS)/makehtml.rb $(PROTOCOL23_DEPS) $(HTML_IN)/protocol23-basic-page.css $(HTML_IN)/protocol23-charm-page.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)
+	$(SCRIPTS)/makehtml.rb $(CHARMS_IN) $(HTML_OUT) $(HTML_MAIN) $(PROJECT_NAME)
 	$(TOUCH) $(HTML_OUT)/$(HTML_MAIN)
-	$(CP) $(CHARMS_IN)/intro.html $(HTML_OUT)
-	$(CP) $(CHARMS_IN)/style.css $(HTML_OUT)
-	$(CP) $(CHARMS_IN)/discordians.css $(HTML_OUT)
+	$(CP) $(HTML_IN)/protocol23-basic-page.css $(HTML_OUT)
+	$(CP) $(HTML_IN)/protocol23-charm-page.css $(HTML_OUT)
 
-$(PDF_OUT)/charms.pdf: $(CHARMS_IN)/charms.asc $(CHARMS_IN)/charms-docinfo.xml $(CONFIG) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
-	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/charms.asc
-	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/charms.pdf
+$(PDF_OUT)/%.pdf: $(BOOK_IN)/%.asc $(BOOK_IN)/%-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
+	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(@:$(PDF_OUT)/%.pdf=$(BOOK_IN)/%.asc)
+	$(SHOW_PDF) $(CURDIR)/$@
 
-$(PDF_OUT)/Discordians.pdf: $(BOOK_IN)/Discordians.asc $(BOOK_IN)/Discordians-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
-	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(BOOK_IN)/Discordians.asc
-	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/Discordians.pdf
-
-$(PDF_OUT)/test.pdf: $(CHARMS_IN)/test.asc $(CHARMS_IN)/test-docinfo.xml $(CONFIG) $(PDF_OUT)
-	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(CHARMS_IN)/test.asc
-	$(SHOW_PDF) $(CURDIR)/$(PDF_OUT)/test.pdf
-
-$(STATS_OUT)/stats.txt: $(CHARMS_IN_LIST) $(SCRIPTS)/yaml2stats.rb $(STATS_OUT)
+$(STATS_OUT)/stats.txt: $(CHARMS_IN_LIST) $(SCRIPTS)/yaml2stats.rb $(PROTOCOL23_DEPS) $(STATS_OUT)
 	$(SCRIPTS)/yaml2stats.rb $@ $(CHARMS_IN_LIST)
 
-#$W/$(MAINWIKI): 6_3_Lotus_Tree_Style.txt ./makewiki.rb
-#	./makewiki.rb . $W $(MAINWIKI)
-#	cp -f intro.html $D/intro.html
+#$(WW_WIKI_OUT)/$(MAINWIKI): 6_1_Whirling_Dervish_Style.txt ./makewiki.rb
+#	./makewiki.rb . $(WW_WIKI_OUT) $(MAINWIKI)

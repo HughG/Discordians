@@ -35,19 +35,28 @@ def write_tag_index_as_html(out, all_charms, get_tags, excluded_tags,
   }
 end
 
-def make_html(indir, outdir, outfilename)
+def make_html(indir, outdir, outfilename, projectname)
   all_charms = {}
 
   File.open(outdir + "/framed-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms</title></head>\n")
+    out.print("<html><head><title>#{projectname}: Charms</title></head>\n")
     out.print("<frameset cols='20%, 80%'>\n")
     out.print("<frame src='indices-for-", outfilename, "'/>\n")
     out.print("<frame name='text' src='intro.html'/>\n")
     out.print("</frameset></html>\n")
   }
 
+  File.open(outdir + "/intro.html", "w") { |out|
+    out.print("<html><head><title>#{projectname}: Charms</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
+    out.print("</head>\n<body>\n")
+    out.print("<h1>#{projectname}: Charms</h1>\n")
+    out.print("<p>Click the links to the left to view the Charms.</p>\n")
+    out.print("</body></html>\n")
+  }
+
   File.open(outdir + "/indices-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charm Indices</title></head>\n")
+    out.print("<html><head><title>#{projectname}: Charm Indices</title></head>\n")
     out.print("<frameset rows='15%, 85%'>\n")
     out.print("<frame src='index-selector-for-", outfilename, "'/>\n")
     out.print("<frame name='selected-index' src='index-by-division-for-", outfilename, "'/>\n")
@@ -55,10 +64,10 @@ def make_html(indir, outdir, outfilename)
   }
 
   File.open(outdir + "/index-selector-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charm Indices</title></head>\n")
-    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("<html><head><title>#{projectname}: Charm Indices</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
     out.print("</head>\n<body>\n")
-    out.print("<h4>Discordian Charms</h4>\n")
+    out.print("<h4>#{projectname}: Charms</h4>\n")
     out.print("<a target='selected-index' href='index-by-division-for-", outfilename,
               "'>by Division</a><br/>\n")
     out.print("<a target='selected-index' href='index-by-type-for-", outfilename,
@@ -71,8 +80,8 @@ def make_html(indir, outdir, outfilename)
   }
 
   File.open(outdir + "/index-by-division-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms by Division</title></head>\n")
-    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("<html><head><title>#{projectname}: Charms by Division</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
     out.print("</head>\n<body>\n")
 
     Dir[indir + "/?_?_*.yml"].each { |file|
@@ -80,7 +89,9 @@ def make_html(indir, outdir, outfilename)
       division = matches[1].to_i
       subsec = matches[2].to_i
       if (subsec == 1)
-        if (division == 6)
+        if (division == 0)
+          out.print("<h3>General Charms</h3>")
+        elsif (division == 6)
           out.print("<h3>Martial Arts</h3>")
         else
           out.print("<h3>", division,
@@ -106,8 +117,8 @@ def make_html(indir, outdir, outfilename)
   }
 
   File.open(outdir + "/index-by-type-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms by Type</title></head>\n")
-    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("<html><head><title>#{projectname}: Charms by Type</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
     out.print("</head>\n<body>\n")
 
     extract_charm_types = lambda {|charm_type|
@@ -129,8 +140,8 @@ def make_html(indir, outdir, outfilename)
   }
 
   File.open(outdir + "/index-by-keyword-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms by Keyword</title></head>\n")
-    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("<html><head><title>#{projectname}: Charms by Keyword</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
     out.print("</head>\n<body>\n")
 
     write_tag_index_as_html(out,
@@ -142,8 +153,8 @@ def make_html(indir, outdir, outfilename)
   }
 
   File.open(outdir + "/index-by-tag-for-" + outfilename, "w") { |out|
-    out.print("<html><head><title>Discordian Charms by Tag</title></head>\n")
-    out.print("<link rel='stylesheet' href='style.css'/>\n")
+    out.print("<html><head><title>#{projectname}: Charms by Tag</title>\n")
+    out.print("<link rel='stylesheet' href='protocol23-basic-page.css'/>\n")
     out.print("</head>\n<body>\n")
 
     write_tag_index_as_html(out,
@@ -155,4 +166,4 @@ def make_html(indir, outdir, outfilename)
   }
 end
 
-make_html($*[0] ,$*[1], $*[2])
+make_html($*[0] ,$*[1], $*[2], $*[3])

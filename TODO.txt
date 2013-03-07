@@ -4,6 +4,11 @@
 
 * TODO for next release
 
+** Factor out Protocol23
+- Make "division" names configurable in HTML (and PDF?).
+- Don't have absolute paths in fop.xconf.
+- Remove shebangs from Ruby scripts.
+
 ** Charms: Overall
 - Enough Essence 2 Charms in each Ability
 - Enough magic at Essence 2 for Survival (e.g., perfects)

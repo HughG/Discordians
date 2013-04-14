@@ -1,0 +1,340 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Drive
+--- !CharmLayout
+--- !Charm
+id: exc
+name: "(Any Drive Excellency)"
+text: |
+  
+
+--- !Charm
+id: wcrn
+name: "Wild-Child Racer Nature"
+cost: --
+mins: {Drive: 2, Essence: 2}
+type: [Permanent]
+keys: [None]
+dur: Permanent
+deps: []
+refs:
+- ["Silver Slick Maneuver", Shards, 167]
+text: |
+
+  The makers of Modern vehicles may see their creations as striving towards
+  mechanical perfection but every driver knows that, when the rubber hits the
+  road, a hundred unpredictable factors come into play.  The Children of Eris
+  get the best from their vehicles when they embrace this conflict.  This
+  Charm permanently enhances the Discordian's driving abilities, providing the
+  following benefits.
+
+  * Driving at more than half maximum speed requires a piloting roll as
+  normal, but the character adds (Drive ÷ 2) automatic successes.  When
+  travelling at greater than maximum Speed, this increases to (Drive)
+  successes.
+
+  * Any Maneuverability penalties for a vehicle are converted to bonuses.  If
+  another effect would reduce such penalties or provide bonuses, it is applied
+  after this benefit.
+
+  * The character will never botch a Piloting roll.  Attempts to regain
+  control after a failed Piloting roll add (Essence ÷ 2) in automatic
+  successes.
+
+  * In a chase, the Hazard gained from a Cunning Maneuver or a Weave action is
+  reduced to +0, while that from a Dangerous Maneuver becomes -2.
+
+--- !Charm
+id: rrsc
+name: "Rainbow-Riding Stunt Car"
+cost: 3m or 2m
+mins: {Drive: 3, Essence: 2}
+type: [Simple]
+keys: [Combo-OK, Stackable]
+dur: One scene
+deps: [wcrn]
+refs:
+- Archery_pps
+- Performance_gsa
+text: |
+
+  *[TODO: fluff]*
+
+  For the rest of the scene in which this Charm is activated, the character
+  can pay one mote reflexively to convert up to (Essence ÷ 2) stunt dice to
+  automatic successes, for driving-related stunts, or those performed from or
+  targeting a vehicle, when they resonate with any one chosen Erisian Element.
+  The Charm can be activated for multiple elements concurrently, with each
+  activation after the first costing just 2 motes.
+
+  The Storyteller is the arbiter of what count as resonant themes, actions, or
+  objects, but some examples are as follows.  *Orange* could cover traffic
+  cones and other paraphenalia of construction work, plus typical Meruvian
+  taxis and school buses.  *Sweet* describes particularly stylish vehicles, or
+  especially compassionate actions.  *Boom* is generally not too hard to find
+  in urban environments and car chases.  *Pungent* envrionments exist in
+  street-markets, dockyards, and run-down or underground areas.  *Prickle* can
+  be present when trailing another vehicle or being followed, taking a
+  Stalk/Hide action in a chase, or in minor violations of traffic laws.
+  *Dirt* is, as with Boom, widespread in its literal sense, but cars in bus
+  lanes or shopping malls are not where they are wanted, and a heavy
+  motorcycle roaring past a funeral procession might be regarded as
+  distasteful, depending on the deceased.  *Focus* is seen in literally
+  unswerving pursuit of a goal or target, disregarding obstacles, and can be
+  in Close In actions in a chase.  *Dream* can be seen in attempts at the
+  impossible, or sometimes in heedless disregard for safety while attending to
+  something else, such as when ploughing through a red light.  *Binding*
+  relates to such things as tow ropes, road blocks, wheel clamps, stop signs
+  and lights, and so on.
+
+--- !Charm
+id: lkl
+name: "Levi-Kinesis Legend"
+cost: 6m, 1wp
+mins: {Drive: 3, Essence: 2}
+type: [Simple]
+keys: [Combo-OK, Stackable]
+dur: One scene
+deps: [dsc, rrsc]
+refs:
+- Ride_ssa
+text: |
+
+  (Like Ride_ssa: allows vehicle to travel as normal on or through one medium
+  which it could not normally traverse.)
+
+--- !Charm
+id: dsc
+name: "Dashboard Saint Communion"
+cost: 3m, 1wp
+mins: {Drive: 1, Essence: 2}
+type: [Simple]
+keys: [Combo-OK]
+tags: ["Vehicle-Enhancer"]
+dur: One scene
+deps: []
+refs:
+- Craft_prp
+text: |
+
+  In the Modern age spirits are hunted and guardian angels largely neglected,
+  but Discordians know that each being's world-view can be as important as
+  anyone else's.  Activating this Charm draws the guardian angel of a vehicle
+  to wakefulness and thereby instils in it an Intimacy of grateful loyalty to
+  the character.  For artifact vehicles, he must be the attuned owner for the
+  Charm to function, but for mundane vehicles he need not even be the owner.
+  This Charm can also call to the inherent energies of plasmic vehicles in the
+  Underworld, fantastic conveyances in the Wyld, and so on in other realms.
+
+  The awakened least god is able to help guide its mobile home, which has
+  several benefits for the driver.  Piloting rolls for vehicles travelling
+  between half maximum and maximum Speed become reflexive.  Going over maximum
+  speed requires Piloting rolls as miscellaneous actions, but the
+  Maneuverability penalty is reduced to -1, and failure only causes an
+  automatic crash for rolls with difficulty 5+.  In a Chase, the driver may
+  take an Activate Charm or Attack action as if he were a passenger.  As long
+  as the Charm remains active, the vehicle itself applies an external penalty
+  equal to the character's (Drive ÷ 2) to all Piloting rolls by anyone else,
+  unless the character first gives permission while touching the vehicle.
+
+  Re-activating the Charm in successive scenes costs only 3m.  With Drive 3+
+  and Essence 3+, the duration extends to Indefinite, and another benefit is
+  provided.  The vehicle can be left unattended with basic instructions, as
+  long as the character remains within (Essence x 100) yards.  Instructions
+  can be given in person, or by prayer (or other telepathic communication)
+  with a difficulty of 2.  In the latter case, the character can use (Drive ÷
+  2) in place of Performance if preferred.  Each instruction costs 2 motes.
+
+  * It can unlock only for specific beings, who must previously have touched
+  the vehicle while this Charm is active, so that the character can identify
+  them to the vehicle.  This personal keying does not prevent attempts to
+  Bypass Security and force entry to the vehicle.
+
+  * It can drive off and maintain a regular or random holding pattern within
+  radius of the character, at the character's instruction or when unauthorized
+  beings attempt to enter or otherwise interfere with it.
+
+  * It can drive towards the character by the most direct safe route.
+
+--- !Charm
+id: gard
+name: "Guardian Angel Recruitment Drive"
+cost: 3m, 1wp
+mins: {Drive: 4, Essence: 3}
+type: [Simple, Dramatic Action]
+keys: [Combo-OK]
+tags: ["Sense-Enhancer", "Domain Monitoring"]
+dur: Indefinite
+deps: [exc, dsc]
+refs:
+- Ride_brw
+text: |
+
+  *[TODO: fluff]*
+
+  (Like Ride_brw, but instead of drawing on the awareness of living beings, it
+  taps into that of the guardian angels of non-artifact objects.  Rather than
+  leading a procession, the character drives a circuit of the area, stopping
+  to provide respectful attention and interaction to at least one significant
+  example of each type of object whose spirits he wishes to call on.  The
+  character will thereafter become aware of certain events as perceived by the
+  least gods of all instances of such objects within the area.  At Storyteller
+  discretion, the maximum warded area may be reduced to as little as (Essence
+  x 10) square miles in urban areas and other places dense with complex
+  physical objects, as the magic of the Charm can sustain a connection with
+  only so many spirits.  This Charm alerts the character to any being that the
+  least gods regard as alien, foreign, not belonging, or any event that
+  strikes them as particularly unusual.  Quite what the least gods of urban
+  objects regard as noteworthy is up to the Storyteller, who must also
+  consider their limited perceptive abilities as compared to natural animals.)
+
+--- !Charm
+id: pss
+name: "Pineal Sat-Nav Substitute"
+cost: 3m, 1wp
+mins: {Drive: 3, Essence: 2}
+type: [Simple]
+keys: [Combo-OK, War]
+tags: [Sense-Enhancer]
+dur: One scene
+deps: []
+refs:
+- ["Fine Passage Negotiating Style", DB, 170]
+- Sail_rri
+text: |
+
+  *[TODO: fluff]*
+  
+  This Charm enhances attempts by a driving character to detect dangerous
+  moving objects or static hazards in the environment through which the
+  vehicle is travelling--for example, roadblocks and diversions, swing bridges
+  soon to open, vehicles on a collision course from a side street, and so on.
+  Vehicles in general will not register as hazards unless they are about to do
+  something clearly dangerous, or can easily be identified as belonging to
+  some hostile category by the character's senses, such as police cars if the
+  character has done something illegal, or helicopters overhead if they are
+  attempting to avoid notice.
+
+  The range of this sense is (Essence) miles.  It does not give a clear image
+  of any objects, but will normally be able to distinguish at least between
+  buildings and other fixed constructions, vehicles, and natural creatures, on
+  the basis of their rough shape.  Anything down to the size of a human will
+  be noticeable, including its approximate location, speed and heading.  As
+  well as providing a sense of nearby dangers, this Charm adds (Drive ÷ 2)
+  dice to any Piloting or other Drive roll related to covered hazards in the
+  area, or attempts to find the best route through traffic.  This bonus also
+  applies to attempts to oppose Stealth effects used by beings or vehicles
+  moving within the covered radius.  It does not apply to any which teleport,
+  move immaterially (unless the character can also sense such things), or
+  otherwise do not traverse the covered space.  In a chase, external Hazards
+  which fall into the described categories are reduced by (Essence ÷ 2).
+  
+--- !Charm
+id: jda
+name: "Junkyard Derby Ace"
+cost: 2m per hl; or 2m per hl, 1wp
+mins: {Drive: 2, Essence: 2}
+type: [[Reflexive, Step 10], [Simple, Dramatic Action]]
+keys: [Combo-OK, War]
+tags: [Vehicle-Enhancer]
+dur: Instant
+deps: []
+refs:
+- Sail_fhh
+text: |
+
+  (Like Sail_fhh.)
+  
+--- !Charm
+id: cap
+name: "Chaos Armor Plating"
+cost: -- (+ 4m)
+mins: {Drive: 4, Essence: 2}
+type: [Permanent]
+keys: [Obvious, Touch, War]
+tags: [Vehicle-Enhancer]
+dur: Permanent
+deps: [jda]
+refs:
+- Sail_fs
+text: |
+
+  (Like Sail_fs.)
+  
+--- !Charm
+id: idt
+name: "Instant Diversion Tactic"
+cost: 4m
+mins: {Drive: 3, Essence: 3}
+type: [Reflexive, Step 1]
+keys: [Combo-OK, Shaping]
+tags: ["Flurry-Breaker"]
+dur: Instant
+deps: [pss]
+text: |
+
+  (The vehicle jumps through a pair of ephemeral Elsewhere portals,
+  re-appearing at any point within (Essence x 2) times its normal per-tick
+  movement distance, travelling in any desired direction.  In a chase, this
+  adds (Drive) automatic successes to the (Dexterity + Drive) roll to reach
+  the end of the leg.  The brave or foolhardy may use this to jump through
+  solid objects, into mid-air, and so on.)
+
+--- !Charm
+id: rtn
+name: "Road to Nowhere"
+cost: 7m, (1wp, plus 1wp per passenger)
+mins: {Drive: 5, Essence: 3}
+type: [Simple]
+keys: [Combo-OK, Shaping, War]
+tags: ["Movement-Enhancer", "Tracking-Mitigator"]
+dur: One scene
+deps: [idt, cap]
+text: |
+  
+  *[TODO: fluff]* (Like a mixture of Sail_cop and Sail_sbtw.)
+
+  When a Discordian driver activates this Charm, his vehicle begins to hop
+  briefly through Elsewhere from time to time, allowing it to cover distance
+  as if it were travelling at its maximum speed, but requiring Piloting rolls
+  as if it were travelling below half maximum in a straight line.  The driver
+  need have no regard for traffic, nor vehicle-sized obstacles, nor turns, and
+  the vehicle makes no more noise than it would at normal speeds.
+
+  The vehicle also automatically takes its hops when it would be noticed by
+  any active or passive observing system, or any being actively seeking or
+  pursuing it, up to and including means on the level of the Loom of Fate.
+  This reduces successes on any attempts to notice or track it to zero, after
+  all modifiers have been applied.  If this effect is opposed by a perfect
+  perception effect, add the character's Essence in automatic successes to the
+  opposed roll.
+
+--- !Charm
+id: artr
+name: "All Roads to Roam"
+cost: 6m
+mins: {Drive: 4, Essence: 3}
+type: [Simple]
+keys: [Combo-OK]
+tags: [Movement-Enhancer, Vehicle-Enhancer, Tracking-Mitigator]
+dur: Five days
+deps: [exc, jda]
+text: |
+  
+  (Like Sail_sofd.)
+    
+--- !Charm
+id: fcr
+name: "Fleet Car Resonance"
+cost: -- (+ 3m, 1wp)
+mins: {Drive: 5, Essence: 4}
+type: [Permanent]
+keys: [Obvious, War]
+tags: ["Vehicle-Enhancer", "Group-Enhancer"]
+dur: Permanent
+deps: [exc]
+text: |
+
+  (Like Sail_bofb.)
+  
+...

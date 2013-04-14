@@ -1,0 +1,513 @@
+# -*- coding: utf-8 -*-
+--- !CharmGroup
+name: Firearms
+--- !CharmLayout
+grid:
+- [tflab, qosas, pps]
+- [fr, bta, pth]
+- [bg, exc, btwt]
+- [bbta, wwa, bofa]
+- [~, sp, ~]
+--- !Charm
+id: exc
+name: "(Any Firearms>Excellency)"
+text: |
+  
+--- !Charm
+id: bbta
+name: "Bow Bends the Air"
+cost: 2m
+mins: {Firearms: 2, Essence: 2}
+type: [Reflexive, Step 1]
+keys: [Combo-OK]
+tags: [Weapon-Retrieval, Weapon-Stashing]
+dur: Instant
+deps: []
+text: |
+
+  TODO
+  
+  This Charm, applied in Step 1 of attack resolution, summons the Erisian's
+  Firearms weapon to his hand, from any point up to (Essence x 2) yards away.
+  The weapon must be one which the character owns.  It travels via Elsewhere,
+  meaning that most bindings, even magical ones, will not prevent it from
+  returning to his hand.  The character may use this Charm to reflexively
+  ready a weapon and attack in the same action.
+  
+  The character may also apply this Charm to any reusable ammunition from an
+  attack, summoning it back to his hand either before or after raw damage is
+  calculated.  If the ammunition is summoned back before the damage
+  calculation, no damage is done and no poison or other contact effects apply,
+  but the target may still take advantage of any counterattacks available.  If
+  the ammunition is specifically destroyed, it cannot be summoned back.
+  
+  A second purchase at Firearms 3 and Essence 3 allows the character to use the
+  Charm with an Indefinite duration, applied to a weapon, suspending it in
+  Elsewhere.  It will remain there as long as the motes remain committed.
+  When they are reflexively released, it will appear in his hand, or fall to
+  the ground at his feet if both hands are occupied.
+  
+--- !Charm
+id: wwa
+name: "Witch Way Arrow"
+cost: 4m
+mins: {Firearms: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+dur: Instant
+deps: [bbta]
+refs:
+- Thrown_ddt
+text: |
+
+  It is hard to defend against things you cannot see or touch, even if you
+  know they are coming.  The Soft and Steady Hand sends her shot on an
+  esoteric curve through Elsewhere, reappearing at exactly the right time to
+  strike the target.
+  
+  This Charm supplements an Firearms attack in a number of ways.  It applies a
+  -2 external penalty to the defender's DVs, unless he or she can somehow see
+  into Elsewhere.  It causes the attack to ignore any Hardness or soak due to
+  armour or any similar protections beyond the target's own skin, and to
+  ignore DV bonuses due to cover.  It does not cause the attack to ignore
+  natural soak, or soak added by Charms.  It furthermore effectively allows
+  shots to pass through solid objects, though some magical wards may prevent
+  this.  If the character cannot otherwise percieve the target through any
+  such objects, the attack will suffer a -4 external penalty--as severe as
+  blindness--unless some other effect improves the situation.
+  
+--- !Charm
+id: sp
+name: "Suspended Perforation"
+cost: 2m, 1wp
+mins: {Firearms: 4, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+tags: ["Prepared Attack"]
+dur: Indefinite
+deps: [wwa]
+text: |
+
+  TODO
+  
+  This Charm supplements a character's Firearms attack by suspending it within
+  Elsewhere immediately after he launches it, ready to be resumed at a later
+  point in time.  Step 1 of attack resolution is carried out, including any
+  expenditure of motes for other Charms, but without naming a target.  The
+  arrow, jet of flame or other projectile is fired but vanishes.  It remains
+  Elsewhere as long as the character maintains the commitment of motes for
+  this Charm, plus the mote cost of all other Charms, if used in a Combo.  The
+  character can store at most (Essence) projectiles in Elsewhere using this
+  Charm.
+  
+  The motes may be released at any later point as a reflexive action,
+  including as a counterattack, causing the attack to be resumed.  This does
+  not count as a Charm use, and need not be in the same battle, allowing him
+  to attack without readying a weapon.  The character need not be wielding the
+  weapon at the time, though he can still only choose a target which would be
+  valid at the point when the motes are released.  A slight disturbance in the
+  air as the projectile reappears means that this Charm does not in itself
+  make the attack unexpected.
+  
+--- !Charm
+id: fr
+name: "Fletcher's Rejoinder"
+cost: 3m
+mins: {Firearms: 3, Essence: 2}
+type: [Reflexive, Step 9]
+keys: [Combo-OK, Obvious]
+tags: ["Attack Retry"]
+dur: Instant
+deps: []
+refs:
+- Porridge
+text: |
+
+  Even things that go wrong can go right sometimes.  With the Fletcher's
+  Rejoinder, an Exalt's mischievous will is extended into her projectile,
+  allowing attacks which miss to loop around and return for a second attack.
+  
+  This Charm enhances an Firearms attack such that, if the attack fails because
+  the arrow missed (whether due to the attacker's inaccuracy or the target
+  dodging), or was deflected by Hardness or a parry, then the projectile
+  returns, allowing the same attack to be re-rolled on the following tick,
+  with no speed cost or DV penalty.  If the attack fails because of the
+  target's soak, the arrow falls harmlessly to the ground and the Charm is
+  ineffective; similarly if the arrow is otherwise destroyed or its flight
+  specifically ended on the first attack.  If the first attack was part of a
+  Combo, the second attack may optionally have the same Combo applied, with
+  the cost paid again.  This Charm itself may be used on the second attack,
+  alone or as part of a Combo, enabling third and further attacks, but each
+  attack beyond the second is at a cumulative -1 penalty to accuracy and
+  damage.
+  
+  Some Discordians have been known to use this Charm and deliberately miss on
+  their first attack.  In this case, the second attack is treated similarly to
+  an ambush: roll the attacker's (Dexterity + Firearms) against the defender's
+  (Wits + Awareness), with appropriate penalties or bonuses depending on the
+  defender's wariness.  Failure gives the defender a Dodge and Parry DV of 0.
+  However, if the defender has already seen this technique used in the same
+  story, they gain a +2 bonus to the contested roll.
+  
+--- !Charm
+id: qosas
+name: "Quiver of>Sticks and Stones"
+cost: 3m or 5m
+mins: {Firearms: 1, Essence: 2}
+type: [Reflexive, Step 1 or Step 2]
+keys: [Combo-OK]
+tags: ["Weapon Improvization"]
+dur: One scene
+deps: []
+refs:
+- Martial_Arts_ehf
+- Melee_baba
+- Thrown_dadb
+- <http://forums.white-wolf.com/default.aspx?g=posts&t=57107>
+text: |
+
+  TODO
+  
+  This Charm allows the Moonlight Lyre to use any vaguely suitable small
+  objects as ammunition for her bow, flame piece or other Firearms weapon.  The
+  effects of any standard type of arrow may be reproduced, though the
+  Storyteller may apply bonuses or penalties depending on materials available.
+  Dust, grains, pebbles and so on may be used as firewand ammunition, but the
+  range will be halved unless the substance is easily flammable, and the
+  damage will be be bashing, not lethal, unless it is particularly hard and
+  sharp.  Reloading with easily reachable objects from her surroundings will
+  take the character no longer than normal for the weapon in question.  The
+  Storyteller may impose a Speed penalty, or require extra actions to reload,
+  if suitable objects are harder to reach, however.
+  
+  Unless other effects apply, the improvised items of ammunition must be
+  normal, physical objects, though they might be magical objects.  They must
+  be of approximately normal size and weight for the weapon in question, but
+  they need not be particuarly aerodynamic.  This Charm removes any accuracy
+  penalties which the character would otherwise suffer due to these weapons
+  being improvised.
+  
+  By spending a further 2 motes, the Discordian can also improvise any mundane
+  sort of bow if vaguely suitable materials are available.  The bow will cease
+  to function as such after the scene ends.
+  
+--- !Charm
+id: pps
+name: "Psychedelic Peacock Shot"
+cost: 1m or Special
+mins: {Firearms: 2, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK, Obvious, Stackable]
+tags: ["Elemental Attack", "Weapon Creation"]
+dur: Instant
+deps: [qosas]
+reviews:
+- 2013-01-20 RWG
+refs:
+- Melee_soei
+- Thrown_adc
+- ["Phantom Arrow Technique", Core, 197]
+- ["Inexhaustible Bolts of Solar Fire", Core, 197]
+- ["Dragon-Graced Arrow", DB, 172]
+- ["Dragon-Graced Arrow", Errata, 48]
+text: |
+
+  TODO
+  
+  This Charm supplements an Firearms attack, either adding Erisian elemental
+  effects to the character's existing ammunition, or conjuring a sliver of
+  Essence to act as ammunition itself, aspected towards a element of the
+  character's choice.  Any mundane kind of ammunition can be formed, with an
+  appearance clearly showing the type of Essence, and is treated as fine
+  equipment.  If he is a member of <<Parameta_Seed_from_Tree>> and has changed
+  his anima to a Dragon-Blooded element, he may also choose to use one or more
+  of the normal elements of Creation--for the effects of which see the
+  description of the Dragon-Blooded Charm Dragon-Graced Arrow.
+
+  The effects of the Erisian elements are as follow.  *Orange* allows the
+  character to reflexively spend 1 mote at Step 7 of any successful attack to
+  convert 4 levels of bashing damage, or 2 levels of lethal damage, into 1
+  level of aggravated damage.  No more than 1 level of aggravated damage can
+  be gained in this way.  *Sweet* allows the character to reduce the final
+  number of levels of damage suffered by the target by up to (Essence), with
+  the character regaining half that many motes, or a single point of
+  Willpower.  This is limited by the number of Health Levels the target has
+  remaining: if an attack would cause 10 levels of lethal damage, and the
+  target has only 2 levels remaining, then the character can gain at most a
+  single mote, doing no damage to the target.  Also, this effect is applied
+  after all other effects which might reduce the damage the target would
+  suffer.  *Boom* produces a thunderous noise on a successful attack, and
+  forces the target to check for Knockdown with a difficulty of 4--or, if the
+  attack would already have forced a check for Knockdown, it adds the
+  character's (Essence) to the difficulty.  *Pungent* relases a puff of
+  unpleasant and overwhelming scent on impact, which requires the target to
+  make a reflexive (Stamina + Resistance) roll or suffer a -2 penalty on all
+  actions for the next (Essence) actions, as a Poison effect.  *Prickle*
+  inflicts a distracting itching sensation, whose location seems to
+  continually move, adding 1 to the Speed of the target's next (Essence)
+  actions, as a Crippling effect.  *Dirt* gets into the target's eyes, adding
+  a -2 external penalty to all actions requiring sight, for the next (Essence)
+  actions, as a Crippling effect.  *Focus* makes the target temporarily
+  unwilling to divert from her current course, requiring her to fail a
+  Conviction roll or suppress that Virtue each time she wants to attack a
+  different target, or to stop attacking, until the end of the scene.  *Dream*
+  sends the target into partial reverie for the next (Essence) actions,
+  applying a -2 external penalty to MDVs.  *Binding* removes 2 points of
+  external penalty from attempts to disarm a target.  For the normal elements
+  of Creation, apply the benefits of the Dragon-Blooded Charm Dragon-Graced
+  Arrow.
+
+  The character must wield a bow, firewand or other appropriate weapon to use
+  this Charm.  He can stack multiple activations of this Charm in a single
+  attack, to combine several effects into one, in which case the cost is half
+  the number of elements involved.
+  
+--- !Charm
+id: bta
+name: "Becoming the Arrow"
+cost: 3m or 3m, 1wp
+mins: {Firearms: 3, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+tags: [Movement-Enhancer]
+dur: Instant
+deps: [exc, qosas]
+text: |
+
+  TODO
+  
+  This Charm supplements an Firearms action by allowing the character to use
+  himself as ammunition.  This allows him to Jump towards his target, up to
+  one fifth the range which the attack would otherwise have.  If the action is
+  an attack, the character may make an unarmed attack, or one which uses
+  weapons which can be wielded at the same time as his current Firearms weapon
+  (e.g., a smashfist worn while using a bow).  This attack gains the Knockback
+  keyword, and is treated as part of the same attack, using the Firearms attack
+  roll to hit, but the other weapon's details to determine damage in Step 7.
+  This Charm may be used in a flurry, but attacks beyond the first in the
+  flurry do not gain the Knockback keyword from this Charm.
+  
+  By spending a point of Willpower the Soft and Steady Hand can Jump up to the
+  full range of his weapon.  If the attack's range has been extended by other
+  magics, the Storyteller may rule that the Jump lasts more than one action.
+  
+  When using this Charm, the character may make a (Dexterity + Firearms) roll
+  to catch his weapon as he jumps, and take it with him if successful.
+  Failure means that the weapon remains at the origin of the jump.  Note also
+  that this Charm need not necessarily be used as an attack: it could be used
+  to allow the character to jump up to a high balcony, for example.
+  
+--- !Charm
+id: pth
+name: "Piercing the Heart"
+cost: 5m; or 8m, 1wp
+mins: {Firearms: 4, Essence: 2}
+type: [Supplemental]
+keys: [Combo-OK, Emotion]
+dur: One scene or Special
+deps: [exc]
+refs:
+- Thrown_gae
+text: |
+
+  As recounted in stories of old, a well-timed magical arrow can influence the
+  course of people's lives.  Erisians bring these legends to life with
+  Piercing the Heart: the Exalt mimes shooting an arrow, firewand or
+  similar--a weapon is required, but no ammunition is actually used--and sends
+  an invisible bolt of Essence, carrying emotional influence towards a single
+  target.  The attack causes no damage, is unblockable with mundane weapons or
+  armor, applies a -2 external penalty to the target's DV due to its
+  invisibilty, and is unaffected by Hardness or soak.  Steps 7 and 8 of attack
+  resolution will be irrelevant, unless some unusual Reflexive Charm applies.
+  
+  If the attack achieves even one success, this Charm inspires any one desired
+  emotion intensely for one scene.  Resisting the influence costs two
+  Willpower, and will make the target aware of the attempt at unnatural
+  influence.
+  
+  By spending an additional 3 motes and 1 Willpower, the Exalt can cause the
+  emotion to fade gradually over the course of (character's Essence) days.
+  After the first scene, the effect can be resisted for only 1 Willpower.
+  However, even once they have resisted it, the target will tend to regard the
+  temporary emotional aberrance as having been genuinely their own,
+  fabricating some convincing explanation for themselves, until the Charm's
+  duration ends.  If they are to recognise and remember the unnatural effect
+  once the Charm has ended, they must spend a further 2 Willpower, after which
+  they become permanently aware of what happened.  Witnesses may spend 1
+  Willpower to realise the source of the emotion provided they saw the Exalt's
+  attack, but they may do this at any time at or after that initial attack.
+  
+  Using this attack does not end any Stealth effects on the character, unless
+  the target successfully resists the influence using Willpower at the moment
+  of the initial attack.
+  
+--- !Charm
+id: tflab
+name: "Time Flies Like a Banana"
+cost: 10m; or 10m, 1wp
+mins: {Firearms: 4, Essence: 3}
+type: [Reflexive, Step 2]
+keys: [Combo-OK]
+tags: ["Perfect Defense"]
+dur: Instant
+deps: [fr, qosas]
+reviews:
+- 2013-01-20 RWG
+refs:
+- Melee_ama
+- Thrown_evr
+text: |
+
+  TODO
+  
+  This Charm allows the Moonlight Lyre to bend and loop the flow of time,
+  loosing an arrow to meet an incoming attack at precisely the right instant
+  to knock it off track.  This perfectly parries any attack, even if it is
+  unblockable.  By spending 1 point of Willpower, the character can even apply
+  this Charm without ammunition, by miming the shot.  In this case, the Charm
+  gains the Obvious keyword, as a strange ripple of distorted moments passes
+  through the air on the way to deflect the attack.
+  
+  With a second purchase at Essence 4+, the character can use this Charm in a
+  Defend Other action to defend any other being who would be a valid target
+  for an Firearms attack by her, by shooting down an attack as it heads toward
+  that target.
+
+  This Charm is subject to one of the Discordian Flaws of Invulnerability.
+  
+--- !Charm
+id: bofa
+name: "Bolt of Fresh Air"
+cost: 3m; or 5m, 1wp
+mins: {Firearms: 4, Essence: 3}
+type: [Supplemental]
+keys: [Combo-OK, Knockback]
+dur: Instant
+deps: [wwa]
+text: |
+
+  TODO
+  
+  This Charm supplements an Firearms-based attack by the character, rapidly
+  opening and closing a semi-stable portal to Elsewhere at the point of
+  impact, causing a violent upsetting of the target's balance.  The target
+  must roll his (Stamina + Resistance) against the character's (Strength +
+  Firearms).  The attack must hit (i.e., not be dodged or parried), but need
+  not inflict damage.  If the target fails this check, he is knocked prone (as
+  a Knockdown effect, rather than Knockback).
+  
+  By spending an extra two motes and a point of Willpower, the character can
+  force all beings within (Essence x 3) yards of the point of impact to check
+  for Knockback, each rolling (Stamina + Resistance) againt the character's
+  (Strength + Firearms).  Inanimate objects up to roughly human mass will, if
+  they are not fastened down, also be knocked back.  If the target dodged or
+  parried the attack without using a perfect defence, they must make a second
+  check to avoid being knocked back from wherever the projectile landed.  If
+  the Erisian herself is within this radius, she will not be knocked back, and
+  her affinity with dynamic chaos means she will ``luckily'' avoid being hit
+  by any flying objects.
+  
+  The character may make this attack without any ammunition, simply by miming
+  an attack using a suitable weapon.  In this case, the target will not suffer
+  damage from the attack itself, but is at a -4 penalty to his DV, since the
+  only indication of the impact will be a shimmering in the air at the last
+  moment.
+  
+--- !Charm
+id: bg
+name: "Bowyer's Guarantee"
+cost: 11m or 13m
+mins: {Firearms: 5, Essence: 4}
+type: [Supplemental]
+keys: [Combo-OK, Obvious]
+tags: ["Perfect Attack"]
+dur: Instant
+deps: [fr, wwa]
+refs:
+- Melee_fcf
+- Thrown_vpc
+- ["Lightning Stroke Attack", Lunars, 154]
+reviews:
+- 2013-01-20 RWG
+text: |
+
+  TODO
+  
+  This Charm supplements an Firearms attack by the character, switching its
+  path into through Elsewhere at just the right moments as to render it
+  unblockable and undodgeable.  If the target manages to somehow dodge or
+  parry the attack, the character can spend at additional 2 motes in Step 4 of
+  attack resolution to redirect it to another target, although this redirected
+  attack is no longer unblockable or undodgeable.  If some other effect also
+  attempts to redirect the attack, it instead simply misses all targets.
+
+--- !Charm
+id: btwt
+name: "Bull-Takes-Wing>Technique"
+cost: 4m, 1wp
+mins: {Firearms: 5, Essence: 3}
+type: [Reflexive]
+keys: [Combo-OK, Obvious]
+dur: Indefinite
+deps: [exc, bofa]
+refs:
+- ["Secure Den Prana", Lunars, 191]
+changes:
+- 2012-09-13 hughg
+text: |
+
+  TODO
+  
+  This Charm creates a stable, if short-lived, pair of portals to Elsewhere.
+  The first portal is created at the point of impact of the shot to which this
+  Charm is applied, and the second wherever the character's next shot (with
+  the same weapon) lands.  Subsequent shots alternately relocate the first and
+  second portals.  The character cannot choose for a shot not to move a
+  portal, unless it lands out of range, or the character uses a different
+  weapon.  Solid and liquid surfaces produce valid impacts, but gas
+  interfaces, magical barriers and so do not, unless further magics somehow
+  effectively render them solid.
+  
+  When only the first portal is open, objects or beings which enter it are
+  suspended in Elsewhere.  It appears as a translucent grey disc with fringed
+  edges, (Essence x 2) feet wide and with almost no depth, aligned as evenly
+  as possible with the surface struck.  It can be seen from both sides, if the
+  object struck transmits light, but can only be entered from the side from
+  which the projectile struck.  Those walking into it from the other side will
+  pass through it as though it were entirely insubstantial.  Those looking
+  through this translucent surface suffer a -2 external penalty to vision,
+  including the accuracy of attacks passing through it.  The space beyond this
+  single portal is featureless grey, has no particular shape, and a volume
+  roughly equal to a sphere with a diameter matching the portal.  If the space
+  is filled before the second portal appears, nothing else can enter.
+  
+  When the second portal appears, anything which entered the first portal
+  immediately exits through it.  Once both are open, anything passing into
+  either portal immediately reappears from the other.  In any case, objects
+  and beings emerge from one portal with the same speed they had when they
+  entered the other, but with their direction of movement adjusted as if the
+  two portals were back to back.  Anyone looking into either portal from its
+  active side will see the view from the other portal.  Anyone looking at
+  either portal from the other side, however, will see straight through it.
+  In both cases, vision is still subject to the -2 penalty due to the grey
+  haze of a thin layer of Elsewhere.  Any number of beings or object may pass
+  freely through the portals at a time, provided they fit through, as if they
+  formed a mundane doorway.
+  
+  As long as there is only a single portal, any being or automaton may find a
+  way back out on a successful Willpower roll, against a difficulty of the
+  Discordian's Essence, in which case they similarly emerge at their original
+  speed, but moving in the opposite direction.
+  
+  The portals cannot be moved except by the character taking further shots.
+  They can be at most (Essence x 100) yards apart, and shots which land
+  further from the relevant portal will not cause its twin to move.  It is
+  explicitly permitted for the character to fire a shot through a portal,
+  which will cause that portal to relocate when it hits, provided the distance
+  limit is not exceeded.  It is not impossible to have each portal in a
+  different realm of existence, if the character manages to fire through some
+  other other pre-existing gateway.  In that case, the distance is calculated
+  as the sum of two straight lines, from each portal to the pre-existing
+  gateway.
+  
+...

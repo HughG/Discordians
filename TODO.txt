@@ -4,6 +4,10 @@
 
 * TODO for next release
 
+** Make cross-platform
+- Use SCons
+- Record paths and versions of tools actually used to build.
+
 ** Factor out Protocol23
 - Make "division" names configurable in HTML (and PDF?).
 - Don't have absolute paths in fop.xconf.

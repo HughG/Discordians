@@ -142,9 +142,6 @@ print "@ called install"
 # tmpclean:
 # 	-$(RM) src/*~ src/*/*~ $(OUT)/*~ $(OUT)/*/*~
 
-# $(DOT_MED)/%.dot: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2dot.rb $(PROTOCOL23_DEPS) $(DOT_MED)
-# 	$(RUBY) $(PROTOCOL23)/yaml2dot.rb $< $@
-
 env['YAML2DOT'] = os.path.join(env['PROTOCOL23'], 'yaml2dot.rb')
 build_dot = Builder(
     action = '$RUBY $YAML2DOT $SOURCE $TARGET',
@@ -154,10 +151,6 @@ build_dot = Builder(
 env.Append(BUILDERS = {'YamlToDot' : build_dot})
 #env.YamlToDot('build/text/charms/1_1_Athletics', 'src/text/charms/1_1_Athletics')
 # TODO 2013-03-10 hughg: Factor in script deps and output dir.
-
-#$(ASC_MED)/%.asc: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2asciidoc.rb $(PROTOCOL23_DEPS) $(ASC_MED)
-#	$(RUBY) $(PROTOCOL23)/yaml2asciidoc.rb $< $@
-
 
 env['YAML2ASC'] = os.path.join(env['PROTOCOL23'], 'yaml2asciidoc.rb')
 build_asc = Builder(
@@ -199,6 +192,14 @@ env.Append(BUILDERS = {'DotToPng' : build_png})
 # #     suffix='svg',
 # #     src_suffix='yml'
 # # )
+env['YAML2SVG'] = os.path.join(env['PROTOCOL23'], 'yaml2svg.rb')
+build_svg = Builder(
+    action = '$RUBY $YAML2SVG $SOURCE $TARGET',
+    suffix = 'svg',
+    src_suffix = 'yml'
+)
+env.Append(BUILDERS = {'YamlToSvg' : build_svg})
+
 # TODO 2013-03-10 hughg: Factor in script deps and output dir.
 
 #$(DRAC_OUT)/%_drac.html: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2dracula.rb $(PROTOCOL23_DEPS) $(DRAC_OUT)
@@ -248,9 +249,8 @@ env.Append(BUILDERS = {'DotToPng' : build_png})
 # 	$(CP) $(HTML_IN)/protocol23-basic-page.css $(HTML_OUT)
 # 	$(CP) $(HTML_IN)/protocol23-charm-page.css $(HTML_OUT)
 
-# $(PDF_OUT)/%.pdf: $(BOOK_IN)/%.asc $(BOOK_IN)/%-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
-# 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(@:$(PDF_OUT)/%.pdf=$(BOOK_IN)/%.asc)
-# 	$(SHOW_PDF) $(CURDIR)/$@
+################################################################
+# PDF
 
 env['CHARM_DIR'] = \
     os.path.abspath(os.path.join('build', 'text', 'charms')) + os.sep
@@ -258,14 +258,15 @@ OFFO_HYPHENATION_JAR = 'tools/fop/offo-hyphenation-binary/fop-hyph.jar'
 env['ENV']['FOP_HYPHENATION_PATH'] = OFFO_HYPHENATION_JAR
 
 # Custom emitter to add dependencies on config files etc.
+EXTRA_PDF_SOURCES = [
+    OFFO_HYPHENATION_JAR,
+    Glob('src/conf/asciidoc/*'),
+    Glob('src/conf/asciidoc/docbook-xsl/*'),
+    Glob('src/conf/fop/*'),
+    Glob('src/fonts/*/*')
+    ]
 def a2x_emitter(target, source, env):
-    extra_sources = [
-        OFFO_HYPHENATION_JAR,
-        'src/conf/asciidoc/docbook45.conf',
-        Glob('src/conf/asciidoc/docbook-xsl/*.xsl'),
-        'src/conf/fop/fop.xconf'
-        ]
-    return target, (source + extra_sources)
+    return target, (source + EXTRA_PDF_SOURCES)
 
 build_pdf = Builder(
 #    action = 'set',
@@ -277,16 +278,19 @@ build_pdf = Builder(
 env.Append(BUILDERS = {'AscToPdf' : build_pdf})
 
 book = env.AscToPdf('build/text/book/Discordians')
-#Depends(book, Glob('src/text/charms/*.yml'))
-#Depends(book, Glob('build/text/charms/*.asc'))
 
+# Really I should have a custom Scanner for Discordians.asc which works out
+# the dependencies backwards, but I'll just forward-chain for now.
+Depends(book, 'src/text/book/Discordians-docinfo.xml')
+Depends(book, Glob('src/text/book/*.asc'))
 charms_yml = Glob('src/text/charms/*.yml')
 charms_yml_in_build = [str(f).replace('src', 'build') for f in charms_yml]
 charms_asc = Flatten(map(env.YamlToAsc, charms_yml_in_build))
-#charms_asc = env.YamlToAsc(Glob('src/text/charms/*.yml'))
 Depends(book, charms_asc)
+charms_svg = Flatten(map(env.YamlToSvg, charms_yml_in_build))
+Depends(book, charms_svg)
 
-
+# Show the PDF after it builds.
 env.AddPostAction(book, "$SHOW_PDF " + str(book[0]))
 
 

@@ -9,3 +9,4 @@ src/text/charms/test-docinfo.xml
 .sconsign.dblite
 *.pyc
 SConsLocal/Config.py
+build

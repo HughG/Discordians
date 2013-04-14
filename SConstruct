@@ -4,47 +4,7 @@ print "@ start"
 
 env = Environment()
 # Add the parent environment's path to our search path for tools.
-env.Append(PATH = os.getenv('PATH'))
-
-if sys.platform.startswith('win32'):
-    DEFAULT_EXE_EXTS = ['exe', 'com']
-else:
-    DEFAULT_EXE_EXTS = ('',)
-
-# From http://code.activestate.com/recipes/52224-find-a-file-given-a-search-path/
-def SearchPath(name, path=None, exts=DEFAULT_EXE_EXTS):
-  """Search PATH for a binary.
-
-  Args:
-    name: the filename to search for
-    path: the optional path string (default: os.environ['PATH')
-    exts: optional list/tuple of extensions to try (default: ('',))
-
-  Returns:
-    The abspath to the binary or None if not found.
-  """
-  path = path or os.getenv('PATH')
-  full_exts = [os.extsep + ext for ext in exts if ext is not '']
-  if '' in exts:
-      full_exts.append('')
-  for dir in path.split(os.pathsep):
-      for ext in full_exts:
-          binpath = os.path.join(dir, name) + ext
-          if os.path.exists(binpath):
-              return os.path.abspath(binpath)
-  return None
-
-print "@ def'd SearchPath"
-
-def DefaultExecutableFromPath(env, tool_key, tool_name=None):
-    if tool_name is None:
-        tool_name = string.lower(tool_key)
-    # Could call env.SetDefault, but instead we check whether the tool_key
-    # is present, to avoid searching the path if it is.
-    if not tool_key in env:
-        tool_path = SearchPath(tool_name)
-        if tool_path is not None:
-            env[tool_key] = tool_path
+env.Append(ENV = { 'PATH' : os.getenv('PATH') })
 
 # Load machine-specific config, if it exists.  This can override defaults.
 LOCAL_CONFIG_FULL_PATH = os.path.join('SConsLocal', 'Config.py')
@@ -55,10 +15,25 @@ if os.path.isfile(LOCAL_CONFIG_FULL_PATH):
 
 print "@ done local config"
 
-DefaultExecutableFromPath(env, 'RUBY')
-DefaultExecutableFromPath(env, 'dot')
+def default_executable_from_path(env, tool_key, tool_name=None):
+    if tool_name is None:
+        tool_name = string.lower(tool_key)
+    # Could call env.SetDefault, but instead we check whether the tool_key
+    # is present, to avoid searching the path if it is.
+    if not tool_key in env:
+        tool_path = env.WhereIs(tool_name)
+        if tool_path is not None:
+            env[tool_key] = tool_path
+
+for exe in ['RUBY', 'DOT', 'XSLT', 'ASCIIDOC', 'A2X']:
+    default_executable_from_path(env, exe)
 
 print "@ done default tools"
+
+def make_add_script_dependency_emitter(script_key):
+    def add_script_dependency(target, source, env):
+        return target, (source + [env[script_key]])
+    return add_script_dependency
 
 env['PROTOCOL23'] = 'tools/protocol23'
 
@@ -88,11 +63,6 @@ env['PROTOCOL23'] = 'tools/protocol23'
 # RM=rm -rf
 # CP=cp -f
 # TOUCH=touch
-# RUBY=/opt/local/bin/ruby1.9
-# XSLT=/opt/local/bin/xsltproc
-# ASCIIDOC=/opt/local/bin/asciidoc
-# A2X=/opt/local/bin/a2x
-# DOT=/Applications/Graphviz.app/Contents/MacOS/dot
 # SHOW_PDF=/usr/bin/osascript tools/show_pdf.scpt
 # DESCRIBE_GIT_STATUS=./tools/version-info/describe-git-status.bash
 # COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
@@ -122,7 +92,6 @@ env.Install('distrib', Glob('*.pdf'))
 
 print "@ called install"
 
-# export FOP_HYPHENATION_PATH=tools/fop/offo-hyphenation-binary/fop-hyph.jar
 
 # include project.mk
 
@@ -189,11 +158,15 @@ env.Append(BUILDERS = {'YamlToDot' : build_dot})
 #$(ASC_MED)/%.asc: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2asciidoc.rb $(PROTOCOL23_DEPS) $(ASC_MED)
 #	$(RUBY) $(PROTOCOL23)/yaml2asciidoc.rb $< $@
 
-# build_asc = Builder(
-#     '$RUBY $PROTOCOL23/yaml2asciidoc.rb $SOURCE $TARGET',
-#     suffix='asc',
-#     src_suffix='yml'
-# )
+
+env['YAML2ASC'] = os.path.join(env['PROTOCOL23'], 'yaml2asciidoc.rb')
+build_asc = Builder(
+    action = '$RUBY $YAML2ASC $SOURCE $TARGET',
+    suffix = 'asc',
+    src_suffix = 'yml',
+    emitter = make_add_script_dependency_emitter('YAML2ASC')
+)
+env.Append(BUILDERS = {'YamlToAsc' : build_asc})
 # TODO 2013-03-10 hughg: Factor in script deps and output dir.
 
 #$(HTML_OUT)/%.html: $(ASC_MED)/%.asc $(IMG_OUT)/%.png $(HTML_OUT)
@@ -278,6 +251,45 @@ env.Append(BUILDERS = {'DotToPng' : build_png})
 # $(PDF_OUT)/%.pdf: $(BOOK_IN)/%.asc $(BOOK_IN)/%-docinfo.xml $(CONFIG) $(BOOK_IN_LIST) $(ASC:$(CHARMS_IN)/%=$(ASC_MED)/%) $(SVG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(PDF_OUT)
 # 	$(A2X) -vv -k --asciidoc-opts "--conf-file=$(CONF_IN)/asciidoc/docbook45.conf --attribute=image-dir=$(IMG_OUT)/ --attribute=charm-image-ext=svg --attribute=charm-dir=$(CURDIR)/$(ASC_MED)/" -f pdf --fop --xsl-file=$(CONF_IN)/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c $(CONF_IN)/fop/fop.xconf -d" -D $(PDF_OUT) $(@:$(PDF_OUT)/%.pdf=$(BOOK_IN)/%.asc)
 # 	$(SHOW_PDF) $(CURDIR)/$@
+
+env['CHARM_DIR'] = \
+    os.path.abspath(os.path.join('build', 'text', 'charms')) + os.sep
+OFFO_HYPHENATION_JAR = 'tools/fop/offo-hyphenation-binary/fop-hyph.jar'
+env['ENV']['FOP_HYPHENATION_PATH'] = OFFO_HYPHENATION_JAR
+
+# Custom emitter to add dependencies on config files etc.
+def a2x_emitter(target, source, env):
+    extra_sources = [
+        OFFO_HYPHENATION_JAR,
+        'src/conf/asciidoc/docbook45.conf',
+        Glob('src/conf/asciidoc/docbook-xsl/*.xsl'),
+        'src/conf/fop/fop.xconf'
+        ]
+    return target, (source + extra_sources)
+
+build_pdf = Builder(
+#    action = 'set',
+    action = '$A2X -vv -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D build $SOURCE',
+    suffix = 'pdf',
+    src_suffix = 'asc',
+    emitter = a2x_emitter
+)
+env.Append(BUILDERS = {'AscToPdf' : build_pdf})
+
+book = env.AscToPdf('build/text/book/Discordians')
+#Depends(book, Glob('src/text/charms/*.yml'))
+#Depends(book, Glob('build/text/charms/*.asc'))
+
+charms_yml = Glob('src/text/charms/*.yml')
+charms_yml_in_build = [str(f).replace('src', 'build') for f in charms_yml]
+charms_asc = Flatten(map(env.YamlToAsc, charms_yml_in_build))
+#charms_asc = env.YamlToAsc(Glob('src/text/charms/*.yml'))
+Depends(book, charms_asc)
+
+
+env.AddPostAction(book, "$SHOW_PDF " + str(book[0]))
+
+
 
 #$(STATS_OUT)/stats.txt: $(CHARMS_IN_LIST) $(PROTOCOL23)/yaml2stats.rb $(PROTOCOL23_DEPS) $(STATS_OUT)
 #	$(PROTOCOL23)/yaml2stats.rb $@ $(CHARMS_IN_LIST)

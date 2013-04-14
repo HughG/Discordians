@@ -96,11 +96,16 @@ def process_file(infilename)
       if charm.deps and charm.mins then
         charm.deps.each { |dep_id|
           dep = charms[dep_id]
+          if not dep then
+            $stderr.puts("Charm #{charm.name} (#{charm.id}) has " +
+                         "undefined dependency '#{dep_id}'.")
+            Kernel.exit(false)
+          end
           if dep.mins then
             charm.mins.each { |min_name, min_value|
               dep_min_value = dep.mins[min_name]
               if dep_min_value and dep_min_value > min_value then
-                $stderr.puts("Charm #{charm.name} needs " +
+                $stderr.puts("Charm #{charm.name} (#{charm.id}) needs " +
                              "#{min_name} #{min_value} " +
                              "but prerequisite #{dep.name} needs " +
                              "#{dep_min_value}.")

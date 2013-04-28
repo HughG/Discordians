@@ -270,7 +270,7 @@ def a2x_emitter(target, source, env):
 
 build_pdf = Builder(
 #    action = 'set',
-    action = '$A2X -vv -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D build $SOURCE',
+    action = '$A2X -vv -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
     suffix = 'pdf',
     src_suffix = 'asc',
     emitter = a2x_emitter
@@ -291,7 +291,7 @@ charms_svg = Flatten(map(env.YamlToSvg, charms_yml_in_build))
 Depends(book, charms_svg)
 
 # Show the PDF after it builds.
-env.AddPostAction(book, "$SHOW_PDF " + str(book[0]))
+env.AddPostAction(book, "$SHOW_PDF " + str(book[0].abspath))
 
 
 

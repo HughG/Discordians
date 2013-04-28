@@ -342,6 +342,7 @@ end
 def draw_layout(group, charms, layout, outfilename)
   File.open(outfilename, "w") { |outfile|
     raw_charms = charms.values
+    return if (layout == nil or layout.grid == nil)
     cb_rows = layout.grid.length
 
     doc = Document.new

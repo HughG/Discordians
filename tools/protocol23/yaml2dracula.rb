@@ -40,9 +40,9 @@ if __FILE__ == $PROGRAM_NAME
     outfile.puts """
 <html><head>
 <meta http-equiv='content-type' content='text/html; charset=ISO-8859-1'></head><body><header>
-    <script type='text/javascript' src='../../tools/dracula/raphael-min.js'></script>
-    <script type='text/javascript' src='../../tools/dracula/graffle.js'></script>
-    <script type='text/javascript' src='../../tools/dracula/graph.js'></script>
+    <script type='text/javascript' src='../scripts/dracula/raphael-min.js'></script>
+    <script type='text/javascript' src='../scripts/dracula/graffle.js'></script>
+    <script type='text/javascript' src='../scripts/dracula/graph.js'></script>
     <script type='text/javascript'>
 <!--
 

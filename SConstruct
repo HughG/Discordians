@@ -39,12 +39,17 @@ for exe in ['RUBY', 'DOT', 'XSLT', 'ASCIIDOC', 'A2X']:
 
 print "@ done default tools"
 
+env['PROTOCOL23'] = 'tools/protocol23'
+env['YAML2X'] = os.path.join(env['PROTOCOL23'], 'yaml2x.rb')
+
+# SCons isn't smart enough to follow the dependency from each script to
+# "yaml2x.rb", so we have to add that explicitly.  Ideally this would be done
+# with a custom scanner to read the Ruby scripts recursively for dependencies.
 def make_add_script_dependency_emitter(script_key):
     def add_script_dependency(target, source, env):
-        return target, (source + [env[script_key]])
+        return target, (source + [env[script_key], env['YAML2X']])
     return add_script_dependency
 
-env['PROTOCOL23'] = 'tools/protocol23'
 PROTOCOL23_CSS_IN = 'src/text/html/'
 PROTOCOL23_CSS_OUT = 'build/text/charms/'
 PROTOCOL23_PAGE_CSS_FILE = 'protocol23-charm-page.css'
@@ -185,12 +190,12 @@ env['YAML2DOT'] = os.path.join(env['PROTOCOL23'], 'yaml2dot.rb')
 build_dot = Builder(
     action = '$RUBY $YAML2DOT $SOURCE $TARGET',
     suffix = 'dot',
-    src_suffix = 'yml'
+    src_suffix = 'yml',
+    emitter = make_add_script_dependency_emitter('YAML2DOT')
 )
 env.Append(BUILDERS = {'YamlToDot' : build_dot})
 charms_dot = Flatten(map(env.YamlToDot, charms_yml_in_build))
 ##print "charms_dot: ", [str(f) for f in charms_dot]
-# TODO 2013-03-10 hughg: Factor in script deps.
 
 ################################################################
 # Per-Charm-Tree ASC (from YML)
@@ -205,7 +210,6 @@ build_asc = Builder(
 env.Append(BUILDERS = {'YamlToAsc' : build_asc})
 charms_asc = Flatten(map(env.YamlToAsc, charms_yml_in_build))
 ##print "charms_asc: ", [str(f) for f in charms_asc]
-# TODO 2013-03-10 hughg: Factor in script deps.
 
 ################################################################
 # Per-Charm-Tree PNG (from DOT)
@@ -221,8 +225,6 @@ build_png = Builder(
 env.Append(BUILDERS = {'DotToPng' : build_png})
 charms_png = Flatten(map(env.DotToPng, charms_dot))
 ##print "charms_png: ", [str(f) for f in charms_png]
-#env.DotToPng('build/text/charms/1_1_Athletics', 'src/text/charms/1_1_Athletics')
-# TODO 2013-03-10 hughg: Factor in tool dep.
 
 ################################################################
 # Per-Charm-Tree HTML (from ASC; also depends on PNG and unique CSS)
@@ -242,7 +244,6 @@ charms_html = Flatten(map(env.AscToHtml, charms_asc))
 # re-build the HTML for PNG changes.
 for html, png in zip(charms_html, charms_png):
     Requires(html, png)
-# TODO 2013-03-10 hughg: Factor in tool dep
 
 # Extra rules to add dependencies on CSS files.  We use Requires instead of
 # Depends because we don't actually need to re-build the HTML for CSS changes.
@@ -259,12 +260,12 @@ env['YAML2SVG'] = os.path.join(env['PROTOCOL23'], 'yaml2svg.rb')
 build_svg = Builder(
     action = '$RUBY $YAML2SVG $SOURCE $TARGET',
     suffix = 'svg',
-    src_suffix = 'yml'
+    src_suffix = 'yml',
+    emitter = make_add_script_dependency_emitter('YAML2SVG')
 )
 env.Append(BUILDERS = {'YamlToSvg' : build_svg})
 charms_svg = Flatten(map(env.YamlToSvg, charms_yml_in_build))
 ##print "charms_svg: ", [str(f) for f in charms_svg]
-# TODO 2013-03-10 hughg: Factor in script deps.
 
 ################################################################
 # Per-Charm-Tree dracula-based HTML (from YML)
@@ -278,12 +279,12 @@ env['YAML2DRACULA'] = os.path.join(env['PROTOCOL23'], 'yaml2dracula.rb')
 build_drac_html = Builder(
     action = '$RUBY $YAML2DRACULA $SOURCE $TARGET',
     suffix = 'drac.html',
-    src_suffix = 'yml'
+    src_suffix = 'yml',
+    emitter = make_add_script_dependency_emitter('YAML2DRACULA')
 )
 env.Append(BUILDERS = {'YamlToDracHtml' : build_drac_html})
 charms_drac_html = Flatten(map(env.YamlToDracHtml, charms_yml_in_build))
 ##print "charms_drac_html: ", [str(f) for f in charms_drac_html]
-# TODO 2013-03-10 hughg: Factor in script deps.
 
 # Extra rules to add dependencies on JavaScript libraries.  We use Requires
 # instead of Depends because we don't actually need to re-build the HTML for
@@ -340,9 +341,6 @@ for d in charms_drac_html:
 ################################################################
 # HTML
 
-# TODO 2013-06-22 hughg: Factor in script deps.
-# $(HTML_OUT)/$(HTML_MAIN): $(PROTOCOL23)/makehtml.rb $(PROTOCOL23_DEPS) ...
-
 # Custom emitter to add dependencies on config files etc.
 env['HTML_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
 env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
@@ -352,7 +350,8 @@ build_html_main = Builder(
 env.Append(BUILDERS = {'BuildHtmlMain' : build_html_main})
 html = env.BuildHtmlMain(
     '$HTML_OUT/charms.html',
-    charms_yml
+    charms_yml,
+    emitter = make_add_script_dependency_emitter('MAKEHTML')
 )
 
 # We also need to make the per-page HTML, and grab the overall CSS file.  We

@@ -134,26 +134,7 @@ env.Install('distrib', Glob('*.pdf'))
 print "@ called install"
 
 
-# include project.mk
-
 # all: html book
-
-# $(HTML_OUT):
-# 	$(MKDIR) $(HTML_OUT)
-# $(IMG_OUT):
-# 	$(MKDIR) $(IMG_OUT)
-# $(PDF_OUT):
-# 	$(MKDIR) $(PDF_OUT)
-# $(STATS_OUT):
-# 	$(MKDIR) $(STATS_OUT)
-# $(DRAC_OUT):
-# 	$(MKDIR) $(DRAC_OUT)
-# $(BBCODE_OUT):
-# 	$(MKDIR) $(BBCODE_OUT)
-# $(ASC_MED):
-# 	$(MKDIR) $(ASC_MED)
-# $(DOT_MED):
-# 	$(MKDIR) $(DOT_MED)
 
 # html: $(HTML_OUT)/$(HTML_MAIN)
 # book: $(PDF_OUT)/$(PROJECT_NAME).pdf
@@ -162,14 +143,6 @@ print "@ called install"
 # bbcode: $(BBCODE:$(CHARMS_IN)/%=$(BBCODE_OUT)/%)
 # stats: $(STATS_OUT)/stats.txt
 # #wiki: $(WW_WIKI_OUT)/$(MAINWIKI)
-
-# $(PROTOCOL23)/yaml2dot.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/yaml2asciidoc.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/yaml2svg.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/yaml2stats.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/yaml2dracula.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/yaml2bbcode.rb: $(PROTOCOL23)/yaml2x.rb
-# $(PROTOCOL23)/makehtml.rb: $(PROTOCOL23)/yaml2x.rb
 
 # .PHONY: clean tmpclean $(OUT)/version_info.in.txt
 

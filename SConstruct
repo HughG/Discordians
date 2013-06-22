@@ -69,28 +69,6 @@ protocol23_basic_css_targets = map(
     PROTOCOL23_BASIC_CSS_SOURCES
     )
 
-
-# ### Locations
-# # Tools
-# PROTOCOL23=tools/protocol23
-# # Input
-# CONF_IN=src/conf
-# FONTS_IN=src/fonts
-# HTML_IN=src/text/html
-# CHARMS_IN=src/text/charms
-# BOOK_IN=src/text/book
-# # Output / Intermediate
-# OUT=out
-# HTML_OUT=$(OUT)/html
-# IMG_OUT=$(OUT)/images
-# PDF_OUT=$(OUT)/pdf
-# DRAC_OUT=$(OUT)/drac
-# BBCODE_OUT=$(OUT)/bbcode
-# STATS_OUT=$(OUT)/stats
-# ASC_MED=$(OUT)/asciidoc
-# DOT_MED=$(OUT)/dot
-# #WW_WIKI_OUT=$(OUT)/ww_wiki
-
 # Record charm input file paths (and equivalent paths in the output dir).
 charms_in = 'src/text/charms/'
 env['CHARMS_IN'] = charms_in
@@ -108,20 +86,6 @@ charms_yml_in_build = [str(f).replace('src/', 'build/') for f in charms_yml]
 # DESCRIBE_GIT_STATUS=./tools/version-info/describe-git-status.bash
 # COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
 # VERSION_STAMP_DOCINFO=./tools/version-info/version-stamp-docinfo.xslt
-# PROTOCOL23_DEPS=$(PROTOCOL23)/yaml2x.rb
-
-# ### Files
-# HTML_MAIN=charms.html
-# #MAINWIKI=charms_wiki.txt
-# CHARMS_IN_LIST=$(wildcard $(CHARMS_IN)/*.yml)
-# BOOK_IN_LIST=$(wildcard $(BOOK_IN)/*.asc)
-# HTML=$(CHARMS_IN_LIST:.yml=.html)
-# ASC=$(CHARMS_IN_LIST:.yml=.asc)
-# SVG=$(CHARMS_IN_LIST:.yml=.svg)
-# PNG=$(CHARMS_IN_LIST:.yml=.png)
-# DRAC=$(CHARMS_IN_LIST:.yml=_drac.html)
-# BBCODE=$(CHARMS_IN_LIST:.yml=_bbcode.txt)
-# CONFIG=$(CONF_IN)/asciidoc/* $(CONF_IN)/asciidoc/docbook-xsl/* $(CONF_IN)/fop/* $(FONTS_IN)/goudy-3.1/*
 
 print "@ done other env config"
 
@@ -145,8 +109,6 @@ print "@ called install"
 # #wiki: $(WW_WIKI_OUT)/$(MAINWIKI)
 
 # .PHONY: clean tmpclean $(OUT)/version_info.in.txt
-
-# .PRECIOUS: $(IMG_OUT)/%.png $(IMG_OUT)/%.svg $(ASC_MED)/%.asc $(DOT_MED)/%.dot
 
 #clean:
 #	-$(RM) $(OUT)
@@ -186,9 +148,6 @@ charms_asc = Flatten(map(env.YamlToAsc, charms_yml_in_build))
 
 ################################################################
 # Per-Charm-Tree PNG (from DOT)
-
-#$(IMG_OUT)/%.png: $(DOT_MED)/%.dot $(IMG_OUT)
-#	$(DOT) -Tpng $< >$@
 
 build_png = Builder(
     action = '$DOT -Tpng $SOURCE >$TARGET',
@@ -355,7 +314,6 @@ def a2x_emitter(target, source, env):
     return target, (source + EXTRA_PDF_SOURCES)
 
 build_pdf = Builder(
-#    action = 'set',
     action = '$A2X -vv -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
     suffix = 'pdf',
     src_suffix = 'asc',

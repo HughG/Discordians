@@ -45,6 +45,25 @@ def make_add_script_dependency_emitter(script_key):
     return add_script_dependency
 
 env['PROTOCOL23'] = 'tools/protocol23'
+PROTOCOL23_CSS_IN = 'src/text/html/'
+PROTOCOL23_CSS_OUT = 'build/text/charms/'
+PROTOCOL23_PAGE_CSS_FILE = 'protocol23-charm-page.css'
+PROTOCOL23_BASIC_CSS_FILE = 'protocol23-basic-page.css'
+PROTOCOL23_PAGE_CSS_SOURCES = [PROTOCOL23_CSS_IN + PROTOCOL23_PAGE_CSS_FILE]
+PROTOCOL23_PAGE_CSS_TARGETS = [PROTOCOL23_CSS_OUT + PROTOCOL23_PAGE_CSS_FILE]
+PROTOCOL23_BASIC_CSS_SOURCES = [PROTOCOL23_CSS_IN + PROTOCOL23_BASIC_CSS_FILE]
+PROTOCOL23_BASIC_CSS_TARGETS = [PROTOCOL23_CSS_OUT + PROTOCOL23_BASIC_CSS_FILE]
+protocol23_page_css_targets = map(
+    lambda t, s: Command(t, s, Copy("$TARGET", "$SOURCE")),
+    PROTOCOL23_PAGE_CSS_TARGETS,
+    PROTOCOL23_PAGE_CSS_SOURCES
+    )
+protocol23_basic_css_targets = map(
+    lambda t, s: Command(t, s, Copy("$TARGET", "$SOURCE")),
+    PROTOCOL23_BASIC_CSS_TARGETS,
+    PROTOCOL23_BASIC_CSS_SOURCES
+    )
+
 
 # ### Locations
 # # Tools
@@ -206,21 +225,29 @@ charms_png = Flatten(map(env.DotToPng, charms_dot))
 # TODO 2013-03-10 hughg: Factor in tool dep.
 
 ################################################################
-# Per-Charm-Tree HTML (from ASC; also depends on PNG)
+# Per-Charm-Tree HTML (from ASC; also depends on PNG and unique CSS)
 
 build_html = Builder(
-    action = '$ASCIIDOC --attribute=image-dir=../images/ --attribute=charm-image-ext=png --out-file=$TARGET $SOURCE',
+    action = '$ASCIIDOC --attribute=image-dir=./ --attribute=charm-image-ext=png --out-file=$TARGET $SOURCE',
     suffix = 'html',
     src_suffix = 'asc'
 )
 env.Append(BUILDERS = {'AscToHtml' : build_html})
 charms_html = Flatten(map(env.AscToHtml, charms_asc))
 ##print "charms_html: ", [str(f) for f in charms_html]
+
 # Record the additional dependency of the HTML files on the PNGs.  This relies
 # on the fact that there's a 1-to-1 mapping, so we can just use Python's zip.
+# We use Requires instead of Depends because we don't actually need to
+# re-build the HTML for PNG changes.
 for html, png in zip(charms_html, charms_png):
-    Depends(html, png)
+    Requires(html, png)
 # TODO 2013-03-10 hughg: Factor in tool dep
+
+# Extra rules to add dependencies on CSS files.  We use Requires instead of
+# Depends because we don't actually need to re-build the HTML for CSS changes.
+for d in charms_html:
+    Requires(d, protocol23_page_css_targets)
 
 ################################################################
 # Per-Charm-Tree SVG (from YML)
@@ -258,7 +285,9 @@ charms_drac_html = Flatten(map(env.YamlToDracHtml, charms_yml_in_build))
 ##print "charms_drac_html: ", [str(f) for f in charms_drac_html]
 # TODO 2013-03-10 hughg: Factor in script deps.
 
-# Extra rules to add dependencies on JavaScript libraries.
+# Extra rules to add dependencies on JavaScript libraries.  We use Requires
+# instead of Depends because we don't actually need to re-build the HTML for
+# JS changes.
 DRAC_FILE_PATTERN = 'text/scripts/dracula/*'
 EXTRA_DRAC_SOURCES = Glob('src/' + DRAC_FILE_PATTERN)
 EXTRA_DRAC_TARGETS = Glob('build/' + DRAC_FILE_PATTERN)
@@ -268,7 +297,7 @@ drac_targets = map(
     EXTRA_DRAC_SOURCES
     )
 for d in charms_drac_html:
-    Depends(d, drac_targets)
+    Requires(d, drac_targets)
 
 
 ################################################################
@@ -311,35 +340,28 @@ for d in charms_drac_html:
 ################################################################
 # HTML
 
-# $(HTML_OUT)/$(HTML_MAIN): $(PROTOCOL23)/makehtml.rb $(PROTOCOL23_DEPS) $(HTML_IN)/protocol23-basic-page.css $(HTML_IN)/protocol23-charm-page.css $(HTML:$(CHARMS_IN)/%=$(HTML_OUT)/%) $(PNG:$(CHARMS_IN)/%=$(IMG_OUT)/%) $(HTML_OUT)
-# 	$(PROTOCOL23)/makehtml.rb $(CHARMS_IN) $(HTML_OUT) $(HTML_MAIN) $(PROJECT_NAME)
-# 	$(CP) $(HTML_IN)/protocol23-basic-page.css $(HTML_OUT)
-# 	$(CP) $(HTML_IN)/protocol23-charm-page.css $(HTML_OUT)
-
 # TODO 2013-06-22 hughg: Factor in script deps.
 # $(HTML_OUT)/$(HTML_MAIN): $(PROTOCOL23)/makehtml.rb $(PROTOCOL23_DEPS) ...
 
 # Custom emitter to add dependencies on config files etc.
 env['HTML_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
-
-EXTRA_HTML_MAIN_SOURCES = [
-    Glob('$HTML_IN/protocol23-*.css'),
-    ]
-def html_main_emitter(target, source, env):
-    return target, (source + EXTRA_HTML_MAIN_SOURCES)
-
 env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
 build_html_main = Builder(
-    action = '$RUBY $MAKEHTML $CHARMS_IN $HTML_OUT ${TARGET.file} $PROJECT_NAME',
-    emitter = html_main_emitter
+    action = '$RUBY $MAKEHTML $CHARMS_IN $HTML_OUT ${TARGET.file} $PROJECT_NAME'
 )
 env.Append(BUILDERS = {'BuildHtmlMain' : build_html_main})
 html = env.BuildHtmlMain(
-    '${HTML_OUT}/charms.html',
+    '$HTML_OUT/charms.html',
     charms_yml
 )
-Depends(html, charms_html)
-Depends(html, charms_png)
+
+# We also need to make the per-page HTML, and grab the overall CSS file.  We
+# use Requires instead of Depends because we don't actually need to re-build
+# the overall HTML if just the per-page HTML changes (e.g., if the script for
+# generating the per-page HTML changes).
+Requires(html, charms_html)
+Requires(html, protocol23_basic_css_targets)
+
 
 ################################################################
 # PDF
@@ -371,8 +393,11 @@ env.Append(BUILDERS = {'AscToPdf' : build_pdf})
 
 book = env.AscToPdf('build/text/book/Discordians')
 
+# Add other dependencies.  Here we really do want Depends, not Requires, since
+# we need to rebuild the PDF if any of these things change.
+#
 # Really I should have a custom Scanner for Discordians.asc which works out
-# the dependencies backwards, but I'll just forward-chain for now.
+# the dependencies backwards, but I'll just forward-chain using "*.asc" for now.
 Depends(book, 'src/text/book/Discordians-docinfo.xml')
 Depends(book, Glob('src/text/book/*.asc'))
 Depends(book, charms_asc)

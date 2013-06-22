@@ -77,12 +77,29 @@ charms_yml = Glob(charms_in + '*.yml')
 charms_yml_in_build = [str(f).replace('src/', 'build/') for f in charms_yml]
 ##print "charms_yml_in_build: ", charms_yml_in_build
 
+def add_protocol23_builder(
+    builder_name,
+    script_name,
+    file_suffix
+):
+    env_var_name = script_name.upper()
+    env[env_var_name] = os.path.join(env['PROTOCOL23'], script_name + '.rb')
+    builder = Builder(
+        action = ('$RUBY $%s $SOURCE $TARGET' % env_var_name),
+        suffix = file_suffix,
+        src_suffix = 'yml',
+        emitter = make_add_script_dependency_emitter(env_var_name)
+        )
+    env.Append(BUILDERS = {builder_name : builder})
+    # We can't just map the "builder" object directly as a method.  We have to
+    # retrieve it as a property from "env", because there's lots of magic
+    # in there somewhere.
+    outputs = Flatten(map(env.__dict__[builder_name], charms_yml_in_build))
+    ##print "Output for", builder_name, ":", map(str, outputs)
+    return outputs
+
+
 # ### Tools
-# MKDIR=mkdir -p
-# RM=rm -rf
-# CP=cp -f
-# TOUCH=touch
-# SHOW_PDF=/usr/bin/osascript tools/show_pdf.scpt
 # DESCRIBE_GIT_STATUS=./tools/version-info/describe-git-status.bash
 # COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
 # VERSION_STAMP_DOCINFO=./tools/version-info/version-stamp-docinfo.xslt
@@ -121,30 +138,12 @@ print "@ called install"
 ################################################################
 # Per-Charm-Tree DOT (from YML)
 
-env['YAML2DOT'] = os.path.join(env['PROTOCOL23'], 'yaml2dot.rb')
-build_dot = Builder(
-    action = '$RUBY $YAML2DOT $SOURCE $TARGET',
-    suffix = 'dot',
-    src_suffix = 'yml',
-    emitter = make_add_script_dependency_emitter('YAML2DOT')
-)
-env.Append(BUILDERS = {'YamlToDot' : build_dot})
-charms_dot = Flatten(map(env.YamlToDot, charms_yml_in_build))
-##print "charms_dot: ", [str(f) for f in charms_dot]
+charms_dot = add_protocol23_builder('YamlToDot', 'yaml2dot', 'dot')
 
 ################################################################
 # Per-Charm-Tree ASC (from YML)
 
-env['YAML2ASC'] = os.path.join(env['PROTOCOL23'], 'yaml2asciidoc.rb')
-build_asc = Builder(
-    action = '$RUBY $YAML2ASC $SOURCE $TARGET',
-    suffix = 'asc',
-    src_suffix = 'yml',
-    emitter = make_add_script_dependency_emitter('YAML2ASC')
-)
-env.Append(BUILDERS = {'YamlToAsc' : build_asc})
-charms_asc = Flatten(map(env.YamlToAsc, charms_yml_in_build))
-##print "charms_asc: ", [str(f) for f in charms_asc]
+charms_asc = add_protocol23_builder('YamlToAsc', 'yaml2asciidoc', 'asc')
 
 ################################################################
 # Per-Charm-Tree PNG (from DOT)
@@ -185,19 +184,7 @@ for d in charms_html:
 ################################################################
 # Per-Charm-Tree SVG (from YML)
 
-#$(IMG_OUT)/%.svg: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2svg.rb $(PROTOCOL23_DEPS) $(IMG_OUT)
-#	$(RUBY) $(PROTOCOL23)/yaml2svg.rb $< $@
-
-env['YAML2SVG'] = os.path.join(env['PROTOCOL23'], 'yaml2svg.rb')
-build_svg = Builder(
-    action = '$RUBY $YAML2SVG $SOURCE $TARGET',
-    suffix = 'svg',
-    src_suffix = 'yml',
-    emitter = make_add_script_dependency_emitter('YAML2SVG')
-)
-env.Append(BUILDERS = {'YamlToSvg' : build_svg})
-charms_svg = Flatten(map(env.YamlToSvg, charms_yml_in_build))
-##print "charms_svg: ", [str(f) for f in charms_svg]
+charms_svg = add_protocol23_builder('YamlToSvg', 'yaml2svg', 'svg')
 
 ################################################################
 # Per-Charm-Tree dracula-based HTML (from YML)
@@ -206,17 +193,8 @@ charms_svg = Flatten(map(env.YamlToSvg, charms_yml_in_build))
 # library to produce a simple draggable representation of the Charm tree,
 # for trying out specific layouts for PDF, to be encoded in the YAML files.
 
-
-env['YAML2DRACULA'] = os.path.join(env['PROTOCOL23'], 'yaml2dracula.rb')
-build_drac_html = Builder(
-    action = '$RUBY $YAML2DRACULA $SOURCE $TARGET',
-    suffix = 'drac.html',
-    src_suffix = 'yml',
-    emitter = make_add_script_dependency_emitter('YAML2DRACULA')
-)
-env.Append(BUILDERS = {'YamlToDracHtml' : build_drac_html})
-charms_drac_html = Flatten(map(env.YamlToDracHtml, charms_yml_in_build))
-##print "charms_drac_html: ", [str(f) for f in charms_drac_html]
+charms_drac_html = \
+    add_protocol23_builder('YamlToDracHtml', 'yaml2dracula', 'drac.html')
 
 # Extra rules to add dependencies on JavaScript libraries.  We use Requires
 # instead of Depends because we don't actually need to re-build the HTML for
@@ -238,16 +216,8 @@ for d in charms_drac_html:
 #
 # For posting to the Exalted Forums :-)
 
-#$(BBCODE_OUT)/%_bbcode.txt: $(CHARMS_IN)/%.yml $(PROTOCOL23)/yaml2bbcode.rb $(PROTOCOL23_DEPS) $(BBCODE_OUT)
-#	$(RUBY) $(PROTOCOL23)/yaml2bbcode.rb $< $@
-# # build_dot = Builder(
-# #     '$RUBY $PROTOCOL23/yaml2bbcode.rb $SOURCE $TARGET',
-# #     suffix='_bbcode.txt',
-# #     src_suffix='yml'
-# # )
-# TODO 2013-03-10 hughg: Factor in script deps.
-# TODO 2013-03-10 hughg: Will the suffix bit work, since it's not preceded by '.'?
-# Could use 'X.bbcode.txt', I suppose.
+charms_bbcode = \
+    add_protocol23_builder('YamlToBBCode', 'yaml2bbcode', 'bbcode.txt')
 
 ################################################################
 
@@ -273,7 +243,6 @@ for d in charms_drac_html:
 ################################################################
 # HTML
 
-# Custom emitter to add dependencies on config files etc.
 env['HTML_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
 env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
 build_html_main = Builder(

@@ -22,7 +22,7 @@ AddOption(
 
 def ShowParseProgress(message):
     if GetOption('verbose'):
-        print "Protocol23: " + message
+        print "protocol23: " + message
 
 ################################################################
 
@@ -137,7 +137,12 @@ def add_protocol23_builder(
 ShowParseProgress("done other env config")
 
 
+# Build into a separate directory called "build", and don't copy source files
+# into there (duplicate=0).
 VariantDir('build', 'src', duplicate=0)
+# Clean the build directory whenever we're cleaning anything.  Otherwise
+# empty dirs are left behind.
+Clean('.', 'build')
 
 ShowParseProgress("called VariantDir")
 
@@ -233,6 +238,7 @@ drac_targets = map(
 for d in charms_drac_html:
     Requires(d, drac_targets)
 
+drac_alias = env.Alias('drac', charms_drac_html)
 
 ################################################################
 # Per-Charm-Tree BBCode text (from YML)
@@ -241,7 +247,7 @@ for d in charms_drac_html:
 
 charms_bbcode = \
     add_protocol23_builder('YamlToBBCode', 'yaml2bbcode', 'bbcode.txt')
-env.Alias('bbcode', charms_bbcode)
+bbcode_alias = env.Alias('bbcode', charms_bbcode)
 
 
 ################################################################
@@ -268,13 +274,31 @@ env.Alias('bbcode', charms_bbcode)
 ################################################################
 # HTML
 
+def html_emitter(target, source, env):
+    script_dep_emitter = make_add_script_dependency_emitter('MAKEHTML')
+    extra_targets = []
+    for t in target:
+        t_dir = str(t.dir)
+        t_name = str(t.name)
+        for prefix in [
+            "index-by-division",
+            "index-by-keyword",
+            "index-by-tag",
+            "index-by-type",
+            "index-selector",
+            "indices"
+        ]:
+            extra_targets.append(os.path.join(t_dir, prefix + "-for-" + t_name))
+        extra_targets.append(os.path.join(t_dir, "intro.html"))
+    return script_dep_emitter((target + extra_targets), source, env)
+
 # NOTE 2013-06-30 hughg: The "${TARGET.file}" trick is documented in the man
 # page under "Variable Substitution", but not in the user guide.
 
 env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
 build_html_main = Builder(
     action = '$RUBY $MAKEHTML $CHARMS_IN $CHARMS_OUT ${TARGET.file} $PROJECT_NAME',
-    emitter = make_add_script_dependency_emitter('MAKEHTML')
+    emitter = html_emitter
 )
 env.Append(BUILDERS = {'BuildHtmlMain' : build_html_main})
 env['HTML_TARGET'] = '${CHARMS_OUT}charms.html'
@@ -308,8 +332,15 @@ EXTRA_PDF_SOURCES = [
     Glob('src/conf/fop/*'),
     Glob('src/fonts/*/*')
     ]
+
 def a2x_emitter(target, source, env):
-    return target, (source + EXTRA_PDF_SOURCES)
+    extra_targets = []
+    for t in target:
+        t_dir = str(t.dir)
+        (t_base, t_ext) = os.path.splitext(str(t.name))
+        extra_targets.append(os.path.join(t_dir, t_base + ".fo"))
+        extra_targets.append(os.path.join(t_dir, t_base + ".xml"))
+    return (target + extra_targets), (source + EXTRA_PDF_SOURCES)
 
 env['A2X_VERBOSE'] = '-vv' if GetOption('verbose') else ''
 build_pdf = Builder(
@@ -324,6 +355,7 @@ PDF_TARGET_WITHOUT_EXT = 'build/text/book/${PROJECT_NAME}'
 env['PDF_TARGET'] = PDF_TARGET_WITHOUT_EXT + ".pdf"
 book = env.AscToPdf(PDF_TARGET_WITHOUT_EXT)
 book_alias = env.Alias('book', env['PDF_TARGET'])
+pdf_alias = env.Alias('pdf', env['PDF_TARGET'])
 
 # Add other dependencies.  Here we really do want Depends, not Requires, since
 # we need to rebuild the PDF if any of these things change.
@@ -341,13 +373,21 @@ env.AddPostAction(book, "$SHOW_PDF " + str(book[0].abspath))
 ################################################################
 # Stats on the Charms
 
+def stats_emitter(target, source, env):
+    script_dep_emitter = make_add_script_dependency_emitter('YAML2STATS')
+    extra_targets = [
+        os.path.join(str(t.dir), "division_" + str(t.name)) \
+            for t in target
+    ]
+    return script_dep_emitter((target + extra_targets), source, env)
+
 # NOTE 2013-06-30 hughg: Can't just use add_protocol23_builder here because
 # there's one target an multiple sources, so the target comes first.  Might
 # refactor all scripts to be target-first, or use an options, one day.
 env['YAML2STATS'] = os.path.join(env['PROTOCOL23'], 'yaml2stats.rb')
 build_stats = Builder(
     action = '$RUBY $YAML2STATS $TARGET $SOURCE',
-    emitter = make_add_script_dependency_emitter('YAML2STATS')
+    emitter = stats_emitter
 )
 env.Append(BUILDERS = {'BuildStats' : build_stats})
 env['STATS_TARGET'] = '${CHARMS_OUT}stats.txt'
@@ -355,7 +395,7 @@ stats = env.BuildStats(
     env['STATS_TARGET'],
     charms_yml
 )
-env.Alias('stats', env['STATS_TARGET'])
+stats_alias = env.Alias('stats', env['STATS_TARGET'])
 
 ################################################################
 
@@ -363,6 +403,21 @@ env.Alias('stats', env['STATS_TARGET'])
 #	./makewiki.rb . $(WW_WIKI_OUT) $(MAINWIKI)
 
 ################################################################
+
+env.Alias('charms', [
+    html_alias,
+    drac_alias,
+    stats_alias,
+    bbcode_alias
+])
+
+env.Alias('all', [
+    html_alias,
+    drac_alias,
+    book_alias,
+    stats_alias,
+    bbcode_alias
+])
 
 ShowParseProgress("set up all targets")
 
@@ -383,6 +438,7 @@ Build Targets:
     drac    HTML files with draggable Charm trees, for choosing layouts.
               ${CHARMS_OUT}*.drac.html
 
+    pdf
     book    The whole book as a PDF (slow).
               $PDF_TARGET
 
@@ -391,6 +447,12 @@ Build Targets:
 
     bbcode  Charms in BBCode format, for posting to the Exalted Forums.
               ${CHARMS_OUT}*.bbcode.txt
+
+    charms  Targets covering just Charms: html, drac, stats, bbcode.
+
+    all     All of the above.
+
+Type 'scons -c .' to clean everything, including empty build directories.
 """, raw = 1)) # 'raw = 1' preserves whitespace
 
 ################################################################

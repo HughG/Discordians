@@ -41,8 +41,8 @@ text: |
   
   As well as providing an instantaneous picture of the character's
   surroundings, this Charm adds the character's Sail rating in dice to her
-  next action, if it is a roll to navigation through the area covered, or
-  prediction weather for that area.  Beyond that action, moving objects might
+  next action, if it is a roll to navigate through the area covered, or
+  predict weather for that area.  Beyond that action, moving objects might
   have changes course, or interfering spirits invalidated the prediction, so
   the bonus no longer applies.  Stormy weather or other disturbances may apply
   an external penalty, normally no worse than -2.

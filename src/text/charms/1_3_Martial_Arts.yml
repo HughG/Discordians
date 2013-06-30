@@ -328,6 +328,9 @@ text: |
   This Charm is the Erisian version of the one known to Solars as ``Swallowing
   the Lotus Root'', which allows learning of Terrestrial Martial Arts Charms
   at half the normal experience cost, and removes the surcharge for
-  elementally aspected Styles.
+  elementally aspected Styles.  Note that unlearning this Charm during
+  <<Divisional_Realignment>> means that the character must re-pay any savings
+  made on Terrestrial Martial Arts learned up till that point, which may put
+  her into experience debt.
   
 ...

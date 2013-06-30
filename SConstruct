@@ -100,7 +100,11 @@ env['CHARMS_IN'] = 'src/text/charms/'
 charms_yml = Glob(env['CHARMS_IN'] + '*.yml')
 ##print "charms_yml: ", [str(f) for f in charms_yml]
 env['CHARMS_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
-charms_yml_in_build = Glob(env['CHARMS_OUT'] + '*.yml')
+# NOTE 2013-06-30 HughG: We don't use "Glob(env['CHARMS_IN'] + '*.yml')"
+# to define charms_yml_in_build, because there are no *.yml files in the
+# output directory, so Glob will return an empty collection.  We just want
+# a list of hypothetical filenames, to be modified elsewhere later.
+charms_yml_in_build = [str(f).replace('src/', 'build/') for f in charms_yml]
 ##print "charms_yml_in_build: ", charms_yml_in_build
 
 def add_protocol23_builder(

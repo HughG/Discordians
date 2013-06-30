@@ -1,8 +1,34 @@
 import imp, os, string, sys
 
-print "@ start"
+# See "Help" section at the end for some orientation.
+
+################################################################
+# Boostrapping
 
 env = Environment()
+
+# Building the book is slow, so don't build anything by default.
+Default(None)
+
+if len(COMMAND_LINE_TARGETS) == 0 and not GetOption('help'):
+    print "Type 'scons -h' for a list of build targets and options."
+
+AddOption(
+    "--verbose",
+    dest = 'verbose',
+    action = 'store_true',
+    help = 'Show verbose build information.'
+)
+
+def ShowParseProgress(message):
+    if GetOption('verbose'):
+        print "Protocol23: " + message
+
+################################################################
+
+
+ShowParseProgress("start")
+
 # Add the parent environment's path to our search path for tools.
 env.Append(ENV = { 'PATH' : os.getenv('PATH') })
 
@@ -11,18 +37,18 @@ LOCAL_CONFIG_FULL_PATH = os.path.join('SConsLocal', 'Config.py')
 if os.path.isfile(LOCAL_CONFIG_FULL_PATH):
     from SConsLocal.Config import Config
     Config(env)
-    print "@ read local config"
+    ShowParseProgress("read local config")
 
-print "@ done local config"
+ShowParseProgress("considered local config")
 
 # Load project-specific config, if it exists.  This can override defaults.
 PROJECT_CONFIG_FULL_PATH = os.path.join('SConsProject', 'Config.py')
 if os.path.isfile(PROJECT_CONFIG_FULL_PATH):
     from SConsProject.Config import Config
     Config(env)
-    print "@ read project config"
+    ShowParseProgress("read project config")
 
-print "@ done project config"
+ShowParseProgress("considered project config")
 
 def default_executable_from_path(env, tool_key, tool_name=None):
     if tool_name is None:
@@ -37,7 +63,7 @@ def default_executable_from_path(env, tool_key, tool_name=None):
 for exe in ['RUBY', 'DOT', 'XSLT', 'ASCIIDOC', 'A2X']:
     default_executable_from_path(env, exe)
 
-print "@ done default tools"
+ShowParseProgress("done default tools")
 
 env['PROTOCOL23'] = 'tools/protocol23'
 env['YAML2X'] = os.path.join(env['PROTOCOL23'], 'yaml2x.rb')
@@ -70,11 +96,11 @@ protocol23_basic_css_targets = map(
     )
 
 # Record charm input file paths (and equivalent paths in the output dir).
-charms_in = 'src/text/charms/'
-env['CHARMS_IN'] = charms_in
-charms_yml = Glob(charms_in + '*.yml')
+env['CHARMS_IN'] = 'src/text/charms/'
+charms_yml = Glob(env['CHARMS_IN'] + '*.yml')
 ##print "charms_yml: ", [str(f) for f in charms_yml]
-charms_yml_in_build = [str(f).replace('src/', 'build/') for f in charms_yml]
+env['CHARMS_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
+charms_yml_in_build = Glob(env['CHARMS_OUT'] + '*.yml')
 ##print "charms_yml_in_build: ", charms_yml_in_build
 
 def add_protocol23_builder(
@@ -104,26 +130,19 @@ def add_protocol23_builder(
 # COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
 # VERSION_STAMP_DOCINFO=./tools/version-info/version-stamp-docinfo.xslt
 
-print "@ done other env config"
+ShowParseProgress("done other env config")
+
 
 VariantDir('build', 'src', duplicate=0)
 
-print "@ called VariantDir"
+ShowParseProgress("called VariantDir")
+
 
 env.Install('distrib', Glob('*.pdf'))
 
-print "@ called install"
+ShowParseProgress("called Install")
 
-
-# all: html book
-
-# html: $(HTML_OUT)/$(HTML_MAIN)
-# book: $(PDF_OUT)/$(PROJECT_NAME).pdf
-# test-pdf: $(PDF_OUT)/test.pdf
-# drac: $(DRAC:$(CHARMS_IN)/%=$(DRAC_OUT)/%)
-# bbcode: $(BBCODE:$(CHARMS_IN)/%=$(BBCODE_OUT)/%)
-# stats: $(STATS_OUT)/stats.txt
-# #wiki: $(WW_WIKI_OUT)/$(MAINWIKI)
+################################################################
 
 # .PHONY: clean tmpclean $(OUT)/version_info.in.txt
 
@@ -218,6 +237,8 @@ for d in charms_drac_html:
 
 charms_bbcode = \
     add_protocol23_builder('YamlToBBCode', 'yaml2bbcode', 'bbcode.txt')
+env.Alias('bbcode', charms_bbcode)
+
 
 ################################################################
 
@@ -243,17 +264,21 @@ charms_bbcode = \
 ################################################################
 # HTML
 
-env['HTML_OUT'] = env['CHARMS_IN'].replace('src/', 'build/')
+# NOTE 2013-06-30 hughg: The "${TARGET.file}" trick is documented in the man
+# page under "Variable Substitution", but not in the user guide.
+
 env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
 build_html_main = Builder(
-    action = '$RUBY $MAKEHTML $CHARMS_IN $HTML_OUT ${TARGET.file} $PROJECT_NAME'
-)
-env.Append(BUILDERS = {'BuildHtmlMain' : build_html_main})
-html = env.BuildHtmlMain(
-    '$HTML_OUT/charms.html',
-    charms_yml,
+    action = '$RUBY $MAKEHTML $CHARMS_IN $CHARMS_OUT ${TARGET.file} $PROJECT_NAME',
     emitter = make_add_script_dependency_emitter('MAKEHTML')
 )
+env.Append(BUILDERS = {'BuildHtmlMain' : build_html_main})
+env['HTML_TARGET'] = '${CHARMS_OUT}charms.html'
+html = env.BuildHtmlMain(
+    env['HTML_TARGET'],
+    charms_yml
+)
+html_alias = env.Alias('html', env['HTML_TARGET'])
 
 # We also need to make the per-page HTML, and grab the overall CSS file.  We
 # use Requires instead of Depends because we don't actually need to re-build
@@ -282,15 +307,19 @@ EXTRA_PDF_SOURCES = [
 def a2x_emitter(target, source, env):
     return target, (source + EXTRA_PDF_SOURCES)
 
+env['A2X_VERBOSE'] = '-vv' if GetOption('verbose') else ''
 build_pdf = Builder(
-    action = '$A2X -vv -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
+    action = '$A2X $A2X_VERBOSE -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
     suffix = 'pdf',
     src_suffix = 'asc',
     emitter = a2x_emitter
 )
 env.Append(BUILDERS = {'AscToPdf' : build_pdf})
 
-book = env.AscToPdf('build/text/book/Discordians')
+PDF_TARGET_WITHOUT_EXT = 'build/text/book/${PROJECT_NAME}'
+env['PDF_TARGET'] = PDF_TARGET_WITHOUT_EXT + ".pdf"
+book = env.AscToPdf(PDF_TARGET_WITHOUT_EXT)
+book_alias = env.Alias('book', env['PDF_TARGET'])
 
 # Add other dependencies.  Here we really do want Depends, not Requires, since
 # we need to rebuild the PDF if any of these things change.
@@ -306,19 +335,58 @@ Depends(book, charms_svg)
 env.AddPostAction(book, "$SHOW_PDF " + str(book[0].abspath))
 
 ################################################################
+# Stats on the Charms
 
-#$(STATS_OUT)/stats.txt: $(CHARMS_IN_LIST) $(PROTOCOL23)/yaml2stats.rb $(PROTOCOL23_DEPS) $(STATS_OUT)
-#	$(PROTOCOL23)/yaml2stats.rb $@ $(CHARMS_IN_LIST)
-# # charms_in_list = ???
-# # stats_output_dir = ???
-# # Stats('$(STATS_OUT)/stats.txt', Split("""
-# #   charms_in_list
-# #   $(PROTOCOL23)/yaml2stats.rb
-# #   $(PROTOCOL23_DEPS)
-# #   stats_output_dir
-# # """)
+# NOTE 2013-06-30 hughg: Can't just use add_protocol23_builder here because
+# there's one target an multiple sources, so the target comes first.  Might
+# refactor all scripts to be target-first, or use an options, one day.
+env['YAML2STATS'] = os.path.join(env['PROTOCOL23'], 'yaml2stats.rb')
+build_stats = Builder(
+    action = '$RUBY $YAML2STATS $TARGET $SOURCE',
+    emitter = make_add_script_dependency_emitter('YAML2STATS')
+)
+env.Append(BUILDERS = {'BuildStats' : build_stats})
+env['STATS_TARGET'] = '${CHARMS_OUT}stats.txt'
+stats = env.BuildStats(
+    env['STATS_TARGET'],
+    charms_yml
+)
+env.Alias('stats', env['STATS_TARGET'])
 
 ################################################################
 
 #$(WW_WIKI_OUT)/$(MAINWIKI): 6_1_Whirling_Dervish_Style.txt ./makewiki.rb
 #	./makewiki.rb . $(WW_WIKI_OUT) $(MAINWIKI)
+
+################################################################
+
+ShowParseProgress("set up all targets")
+
+################################################################
+# Help.  (This comes at the end so we can include output path details.)
+
+Help(env.subst("""
+Type 'scons <options> <build target[s]>' for one or more of these Build Targets.
+
+Options:
+    --verbose   Show verbose build information.
+
+Build Targets:
+
+    html    An HTML frameset showing all Charms with tree diagrams.
+              ${HTML_TARGET}
+
+    drac    HTML files with draggable Charm trees, for choosing layouts.
+              ${CHARMS_OUT}*.drac.html
+
+    book    The whole book as a PDF (slow).
+              $PDF_TARGET
+
+    stats   Statistics about the Charms.
+              $STATS_TARGET
+
+    bbcode  Charms in BBCode format, for posting to the Exalted Forums.
+              ${CHARMS_OUT}*.bbcode.txt
+""", raw = 1)) # 'raw = 1' preserves whitespace
+
+################################################################

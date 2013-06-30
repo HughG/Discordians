@@ -38,7 +38,7 @@ end
 def make_html(indir, outdir, outfilename, projectname)
   all_charms = {}
 
-  File.open(outdir + "/framed-" + outfilename, "w") { |out|
+  File.open(outdir + "/" + outfilename, "w") { |out|
     out.print("<html><head><title>#{projectname}: Charms</title></head>\n")
     out.print("<frameset cols='20%, 80%'>\n")
     out.print("<frame src='indices-for-", outfilename, "'/>\n")

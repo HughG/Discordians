@@ -65,7 +65,7 @@ for exe in ['RUBY', 'DOT', 'XSLT', 'ASCIIDOC', 'A2X']:
 
 ShowParseProgress("done default tools")
 
-env['PROTOCOL23'] = 'tools/protocol23'
+env['PROTOCOL23'] = 'src/protocol23/tools/yaml'
 env['YAML2X'] = os.path.join(env['PROTOCOL23'], 'yaml2x.rb')
 
 # SCons isn't smart enough to follow the dependency from each script to
@@ -76,7 +76,7 @@ def make_add_script_dependency_emitter(script_key):
         return target, (source + [env[script_key], env['YAML2X']])
     return add_script_dependency
 
-PROTOCOL23_CSS_IN = 'src/text/html/'
+PROTOCOL23_CSS_IN = 'src/protocol23/text/html/'
 PROTOCOL23_CSS_OUT = 'build/text/charms/'
 PROTOCOL23_PAGE_CSS_FILE = 'protocol23-charm-page.css'
 PROTOCOL23_BASIC_CSS_FILE = 'protocol23-basic-page.css'
@@ -224,7 +224,7 @@ charms_drac_html = \
 # Extra rules to add dependencies on JavaScript libraries.  We use Requires
 # instead of Depends because we don't actually need to re-build the HTML for
 # JS changes.
-DRAC_FILE_PATTERN = 'text/scripts/dracula/*'
+DRAC_FILE_PATTERN = 'protocol23/tools/dracula/*'
 EXTRA_DRAC_SOURCES = Glob('src/' + DRAC_FILE_PATTERN)
 EXTRA_DRAC_TARGETS = Glob('build/' + DRAC_FILE_PATTERN)
 drac_targets = map(
@@ -298,7 +298,7 @@ Requires(html, protocol23_basic_css_targets)
 version_info_in = env.Command(
     'build/version_info.in.txt',
     [],
-    './tools/version-info/describe-git-status.bash >$TARGET'
+    './src/protocol23/tools/version-info/describe-git-status.bash >$TARGET'
 )
 # AlwaysBuild really means "always build if directly or indirectly specified
 # as a target".  The point is that it ignores the up-to-date status of its
@@ -327,7 +327,7 @@ version_info = env.Command(
     Copy("$TARGET", "$SOURCE")
 )
 
-env['VERSION_STAMP_DOCINFO']='./tools/version-info/version-stamp-docinfo.xslt'
+env['VERSION_STAMP_DOCINFO']='./src/protocol23/tools/version-info/version-stamp-docinfo.xslt'
 doc_info = env.Command(
     'build/text/book/${PROJECT_NAME}-docinfo.xml',
     'src/text/book/${PROJECT_NAME}-docinfo.in.xml',
@@ -341,16 +341,16 @@ Depends(doc_info, version_info)
 
 env['CHARM_DIR'] = \
     os.path.abspath(os.path.join('build', 'text', 'charms')) + os.sep
-OFFO_HYPHENATION_JAR = 'tools/fop/offo-hyphenation-binary/fop-hyph.jar'
+OFFO_HYPHENATION_JAR = 'src/protocol23/tools/fop/offo-hyphenation-binary/fop-hyph.jar'
 env['ENV']['FOP_HYPHENATION_PATH'] = OFFO_HYPHENATION_JAR
 
 # Custom emitter to add dependencies on config files etc.
 EXTRA_PDF_SOURCES = [
     OFFO_HYPHENATION_JAR,
-    Glob('src/conf/asciidoc/*'),
-    Glob('src/conf/asciidoc/docbook-xsl/*'),
-    Glob('src/conf/fop/*'),
-    Glob('src/fonts/*/*'),
+    Glob('src/protocol23/conf/asciidoc/*'),
+    Glob('src/protocol23/conf/asciidoc/docbook-xsl/*'),
+    Glob('src/protocol23/conf/fop/*'),
+    Glob('src/protocol23/fonts/*/*'),
     Glob('build/text/book/*.asc')
     ]
 
@@ -365,7 +365,7 @@ def a2x_emitter(target, source, env):
 
 env['A2X_VERBOSE'] = '-vv' if GetOption('verbose') else ''
 build_pdf = Builder(
-    action = '$A2X $A2X_VERBOSE -k --asciidoc-opts "--conf-file=src/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
+    action = '$A2X $A2X_VERBOSE -k --asciidoc-opts "--conf-file=src/protocol23/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/protocol23/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/protocol23/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
     suffix = 'pdf',
     src_suffix = 'asc',
     emitter = a2x_emitter

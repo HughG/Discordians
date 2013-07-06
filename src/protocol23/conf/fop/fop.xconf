@@ -10,6 +10,11 @@ and will have no effect if used unchanged.
 Relative config url's will be resolved relative to
 the location of this file.
 
+NOTE 2013-06-07 HUGR: "relative to the location of this file" above isn't
+quite right: when this config file is passed with the "-c" option, as in
+protocol23, then paths (and base URLs) are relative to the working directory,
+which I'll assume is the parent of the "src" folder.
+
 -->
 
 <!-- NOTE: This is the version of the configuration -->
@@ -17,6 +22,9 @@ the location of this file.
 
   <!-- Base URL for resolving relative URLs -->
   <base>.</base>
+
+  <!-- Font Base URL for resolving relative font URLs -->
+  <font-base>./src/protocol23/fonts/</font-base>
   
   <!-- Source resolution in dpi (dots/pixels per inch) for determining the size of pixels in SVG and bitmap images, default: 72dpi -->
   <source-resolution>72</source-resolution>
@@ -68,40 +76,24 @@ the location of this file.
         (normal = 400, bold = 700)
         -->
 
-        <!--
-        <font metrics-url="arial.xml" kerning="yes" embed-url="arial.ttf">
-          <font-triplet name="Arial" style="normal" weight="normal"/>
-          <font-triplet name="ArialMT" style="normal" weight="normal"/>
-        </font>
-        <font metrics-url="arialb.xml" kerning="yes" embed-url="arialb.ttf">
-          <font-triplet name="Arial" style="normal" weight="bold"/>
-          <font-triplet name="ArialMT" style="normal" weight="bold"/>
-        </font>
-        -->
-
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Condensed.ttf">
+        <font embed-url="goudy-3.1/GoudyStMTT-Condensed.ttf">
           <font-triplet name="GoudyStMTT" style="normal" weight="normal"/>
         </font>
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Condensed-Bold.ttf">
+        <font embed-url="goudy-3.1/GoudyStMTT-Condensed-Bold.ttf">
           <font-triplet name="GoudyStMTT" style="normal" weight="bold"/>
         </font>
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/goudy-3.1/GoudyStMTT-Italic.ttf">
+        <font embed-url="goudy-3.1/GoudyStMTT-Italic.ttf">
           <font-triplet name="GoudyStMTT" style="italic" weight="normal"/>
           <font-triplet name="GoudyStMTT" style="italic" weight="bold"/>
         </font>
 
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/OSP_Libertinage/Libertinage.ttf">
+        <font embed-url="OSP_Libertinage/Libertinage.ttf">
           <font-triplet name="Libertinage" style="normal" weight="normal"/>
         </font>
-        <font embed-url="file:///Users/hughg/Documents/Projects/play/Gaming/Discordians/src/fonts/LibertinageBasicSC/LibertinageBasicSC.ttf">
+        <font embed-url="LibertinageBasicSC/LibertinageBasicSC.ttf">
           <font-triplet name="LibertinageBasicSC" style="normal" weight="normal"/>
         </font>
       </fonts>
-
-      <!-- This option lets you specify additional options on an XML handler -->
-      <!--xml-handler namespace="http://www.w3.org/2000/svg">
-        <stroke-text>false</stroke-text>
-      </xml-handler-->
 
     </renderer>
 

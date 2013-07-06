@@ -85,12 +85,12 @@ PROTOCOL23_PAGE_CSS_TARGETS = [PROTOCOL23_CSS_OUT + PROTOCOL23_PAGE_CSS_FILE]
 PROTOCOL23_BASIC_CSS_SOURCES = [PROTOCOL23_CSS_IN + PROTOCOL23_BASIC_CSS_FILE]
 PROTOCOL23_BASIC_CSS_TARGETS = [PROTOCOL23_CSS_OUT + PROTOCOL23_BASIC_CSS_FILE]
 protocol23_page_css_targets = map(
-    lambda t, s: Command(t, s, Copy("$TARGET", "$SOURCE")),
+    lambda t, s: env.Command(t, s, Copy("$TARGET", "$SOURCE")),
     PROTOCOL23_PAGE_CSS_TARGETS,
     PROTOCOL23_PAGE_CSS_SOURCES
     )
 protocol23_basic_css_targets = map(
-    lambda t, s: Command(t, s, Copy("$TARGET", "$SOURCE")),
+    lambda t, s: env.Command(t, s, Copy("$TARGET", "$SOURCE")),
     PROTOCOL23_BASIC_CSS_TARGETS,
     PROTOCOL23_BASIC_CSS_SOURCES
     )
@@ -129,17 +129,14 @@ def add_protocol23_builder(
     return outputs
 
 
-# ### Tools
-# DESCRIBE_GIT_STATUS=./tools/version-info/describe-git-status.bash
-# COPY_IF_MISSING_OR_DIFF=./tools/version-info/copy-if-missing-or-diff.bash
-# VERSION_STAMP_DOCINFO=./tools/version-info/version-stamp-docinfo.xslt
-
 ShowParseProgress("done other env config")
 
 
-# Build into a separate directory called "build", and don't copy source files
-# into there (duplicate=0).
-VariantDir('build', 'src', duplicate=0)
+# Build into a separate directory called "build".  We leave the default SCons
+# behaviour of copying source files into the build directory, because we need
+# that for AsciiDoc's "docinfo" feature to work, since we're generating part
+# of the docinfo (the git version info) on the fly.
+VariantDir('build', 'src')
 # Clean the build directory whenever we're cleaning anything.  Otherwise
 # empty dirs are left behind.
 Clean('.', 'build')
@@ -231,7 +228,7 @@ DRAC_FILE_PATTERN = 'text/scripts/dracula/*'
 EXTRA_DRAC_SOURCES = Glob('src/' + DRAC_FILE_PATTERN)
 EXTRA_DRAC_TARGETS = Glob('build/' + DRAC_FILE_PATTERN)
 drac_targets = map(
-    lambda t, s: Command(t, s, Copy("$TARGET", "$SOURCE")),
+    lambda t, s: env.Command(t, s, Copy("$TARGET", "$SOURCE")),
     EXTRA_DRAC_TARGETS,
     EXTRA_DRAC_SOURCES
     )
@@ -249,27 +246,6 @@ charms_bbcode = \
     add_protocol23_builder('YamlToBBCode', 'yaml2bbcode', 'bbcode.txt')
 bbcode_alias = env.Alias('bbcode', charms_bbcode)
 
-
-################################################################
-
-# This is a .PHONY target so that we always check the working copy status,
-# which may have changed if an untracked file has been created or similar.
-# $(OUT)/version_info.in.txt:
-# 	$(DESCRIBE_GIT_STATUS) >$@
-
-# The update script only touches the ".txt" file if it differs from the
-# ".in.txt" file.  That way, we can be sure we always update the version info,
-# but we only force other things to build if it the version info has really
-# changed.
-#$(OUT)/version_info.txt: $(OUT)/version_info.in.txt
-#	$(COPY_IF_MISSING_OR_DIFF) $< $@
-#
-# hughg: This isn't needed with SCons, because it'll only rebuild downstream from
-# version_info.txt if the file's contents actually changed, by MD5 :-)
-
-#$(BOOK_IN)/%-docinfo.xml: $(BOOK_IN)/$(@:.xml=.in.xml) $(OUT)/version_info.txt $(VERSION_STAMP_DOCINFO)
-#	$(XSLT) --param version-info "'`cat $(OUT)/version_info.txt`'" $(VERSION_STAMP_DOCINFO) $(@:.xml=.in.xml) >$@
-# TODO 2013-03-10 hughg: Builder for this will be trickier ...
 
 ################################################################
 # HTML
@@ -317,6 +293,50 @@ Requires(html, protocol23_basic_css_targets)
 
 
 ################################################################
+# Version control information (for inclusion in PDF)
+
+version_info_in = env.Command(
+    'build/version_info.in.txt',
+    [],
+    './tools/version-info/describe-git-status.bash >$TARGET'
+)
+# AlwaysBuild really means "always build if directly or indirectly specified
+# as a target".  The point is that it ignores the up-to-date status of its
+# inputs, when it's run.
+AlwaysBuild(version_info_in)
+
+# Whenever we generate the version info, read the line (minus line ending)
+# into the 'env' construction environment, so the doc_info builder can use it.
+def read_version_info_action(target, source, env):
+    f = open(str(target[0]), 'r')
+    try:
+        env['VERSION_INFO'] = f.readline().rstrip()
+        return None
+    finally:
+        f.close()
+env.AddPostAction(version_info_in, read_version_info_action)
+
+# This copy command produces the file which the PDF target actually depends on.
+# The target file here isn't used directly, it's just used as an up-to-date
+# check to trigger a re-build of the docinfo.xml.  This works because the SCons
+# Copy does nothing if source and target have the same MD5, so this won't force
+# the PDF to rebuild unless the source control info really has changed :-)
+version_info = env.Command(
+    'build/version_info.txt',
+    version_info_in,
+    Copy("$TARGET", "$SOURCE")
+)
+
+env['VERSION_STAMP_DOCINFO']='./tools/version-info/version-stamp-docinfo.xslt'
+doc_info = env.Command(
+    'build/text/book/${PROJECT_NAME}-docinfo.xml',
+    'src/text/book/${PROJECT_NAME}-docinfo.in.xml',
+    '$XSLT --param version-info "\'$VERSION_INFO\'" $VERSION_STAMP_DOCINFO $SOURCE >$TARGET'
+)
+Depends(doc_info, version_info)
+
+
+################################################################
 # PDF
 
 env['CHARM_DIR'] = \
@@ -330,7 +350,8 @@ EXTRA_PDF_SOURCES = [
     Glob('src/conf/asciidoc/*'),
     Glob('src/conf/asciidoc/docbook-xsl/*'),
     Glob('src/conf/fop/*'),
-    Glob('src/fonts/*/*')
+    Glob('src/fonts/*/*'),
+    Glob('build/text/book/*.asc')
     ]
 
 def a2x_emitter(target, source, env):
@@ -360,12 +381,12 @@ pdf_alias = env.Alias('pdf', env['PDF_TARGET'])
 # Add other dependencies.  Here we really do want Depends, not Requires, since
 # we need to rebuild the PDF if any of these things change.
 #
-# Really I should have a custom Scanner for Discordians.asc which works out
+# Really I should have a custom Scanner for ${PROJECT_NAME}.asc which works out
 # the dependencies backwards, but I'll just forward-chain using "*.asc" for now.
-Depends(book, 'src/text/book/Discordians-docinfo.xml')
-Depends(book, Glob('src/text/book/*.asc'))
+Depends(book, env.subst('build/text/book/${PROJECT_NAME}-docinfo.xml'))
 Depends(book, charms_asc)
 Depends(book, charms_svg)
+Depends(book, doc_info)
 
 # Show the PDF after it builds.
 env.AddPostAction(book, "$SHOW_PDF " + str(book[0].abspath))

@@ -4,6 +4,7 @@ def Protocol23(env):
     from SCons.Script import COMMAND_LINE_TARGETS
     from SCons.Script.Main import AddOption
     from SCons.Defaults import Copy
+    from SCons.Builder import Builder
 
     # See "Help" section at the end for some orientation.
 
@@ -102,7 +103,7 @@ def Protocol23(env):
     ):
         env_var_name = script_name.upper()
         env[env_var_name] = os.path.join(env['PROTOCOL23'], script_name + '.rb')
-        builder = env.Builder(
+        builder = Builder(
             action = ('$RUBY $%s $SOURCE $TARGET' % env_var_name),
             suffix = file_suffix,
             src_suffix = 'yml',
@@ -152,7 +153,7 @@ def Protocol23(env):
     ################################################################
     # Per-Charm-Tree PNG (from DOT)
 
-    build_png = env.Builder(
+    build_png = Builder(
         action = '$DOT -Tpng $SOURCE >$TARGET',
         suffix = 'png',
         src_suffix = 'dot'
@@ -164,7 +165,7 @@ def Protocol23(env):
     ################################################################
     # Per-Charm-Tree HTML (from ASC; also depends on PNG and unique CSS)
 
-    build_html = env.Builder(
+    build_html = Builder(
         action = '$ASCIIDOC --attribute=image-dir=./ --attribute=charm-image-ext=png --out-file=$TARGET $SOURCE',
         suffix = 'html',
         src_suffix = 'asc'
@@ -251,7 +252,7 @@ def Protocol23(env):
     # page under "Variable Substitution", but not in the user guide.
 
     env['MAKEHTML'] = os.path.join(env['PROTOCOL23'], 'makehtml.rb')
-    build_html_main = env.Builder(
+    build_html_main = Builder(
         action = '$RUBY $MAKEHTML $CHARMS_IN $CHARMS_OUT ${TARGET.file} $PROJECT_NAME',
         emitter = html_emitter
     )
@@ -344,7 +345,7 @@ def Protocol23(env):
         return (target + extra_targets), (source + EXTRA_PDF_SOURCES)
 
     env['A2X_VERBOSE'] = '-vv' if env.GetOption('verbose') else ''
-    build_pdf = env.Builder(
+    build_pdf = Builder(
         action = '$A2X $A2X_VERBOSE -k --asciidoc-opts "--conf-file=src/protocol23/conf/asciidoc/docbook45.conf --attribute=image-dir=$CHARM_DIR --attribute=charm-image-ext=svg --attribute=charm-dir=$CHARM_DIR" -f pdf --fop --xsl-file=src/protocol23/conf/asciidoc/docbook-xsl/fo.xsl --fop-opts "-c src/protocol23/conf/fop/fop.xconf -d" -D ${TARGET.dir} $SOURCE',
         suffix = 'pdf',
         src_suffix = 'asc',
@@ -386,7 +387,7 @@ def Protocol23(env):
     # there's one target an multiple sources, so the target comes first.  Might
     # refactor all scripts to be target-first, or use an options, one day.
     env['YAML2STATS'] = os.path.join(env['PROTOCOL23'], 'yaml2stats.rb')
-    build_stats = env.Builder(
+    build_stats = Builder(
         action = '$RUBY $YAML2STATS $TARGET $SOURCE',
         emitter = stats_emitter
     )

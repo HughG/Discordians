@@ -62,11 +62,11 @@
   <simpara>
 
     Anyone in White Wolf is, as far as I'm concerned, welcome to make money
-    from this.  However, the tool-chain I used to produce the PDF version
-    makes use of the OFFO Hyphenation Library (offo.sourceforge.net), which
-    does not allow commercial use by default.  I expect that another
-    hyphenation source could be used with FOP, or a commercial license agreed
-    with the OFFO authors, but I don't know.
+    from this.  However, be aware of licensing restrictions on the fonts,
+    libraries, and other tools involved.  For example, producing the PDF
+    version makes use of the OFFO Hyphenation Library (offo.sourceforge.net),
+    which requires that some files are renamed if modified (for example, to
+    provide better hyphenation of Exalted terms).
 
   </simpara>
 </legalnotice>

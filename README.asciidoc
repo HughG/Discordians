@@ -2,16 +2,17 @@ This repository contains the source for the book *The Manual of Exalted
 Power--Discordians*, which is an extension of the *Exalted* 2nd edition game
 line produced by White Wolf.
 
-It also contains a number of scripts and configuration files which could be
-used to create similar fan-works.  I plan to factor these out into a separate
-repository, under the name *Protocol 23*.  For the moment they only run on my
-machine (Mac OS 10.6), and include some hard-coded absolute paths
-(+fop.xconf+, and the shebangs in the Ruby scripts), but should be usable on
-other Unix-alike systems with a little work.
+In order to build it, you will need to add the *protocol23* tools under the
+'src' folder, and set up some machine-local configuration.
+* Clone <https://github.com/HughG/protocol23> to "src/protocol23".
+* Create a file "SConsLocal/Config.py" to set up paths to necessary tools,
+using one of the existing files in that folder as an example.
+* then run "scons --help" in the root folder of _this_ repo for instructions.
 
-While I regard my part of this work as Kopyleft there are, as ever, some legal
-restrictions.  Being partly a derived work based on White Wolf's intellectual
-property, anyone (other than them) who tries to sell this is liable to hear
-from their lawyers.  On the other hand, some of the resources I've used--fonts
-and hyphenation information--are subject to ``open source'' licenses.  In
-particular, the OFFO hyphenation library is _not_ free for commercial use.
+While I regard my part of this work as Public Domain / Kopyleft there are, as
+ever, some legal restrictions.  Being partly a derived work based on White
+Wolf's intellectual property, anyone (other than them) who tries to sell this
+is liable to hear from their lawyers.  On the other hand, some of the
+resources I've used--fonts and hyphenation information--are subject to ``open
+source'' licenses.  In particular, the OFFO hyphenation library contains files
+which must be renamed if modified.
